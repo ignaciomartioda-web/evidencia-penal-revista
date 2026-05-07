@@ -844,19 +844,39 @@ body {
 }
 
 /* =========================================
-   RESPONSIVE DESIGN (MOBILE & TABLET)
+   UX / TOUCH TARGETS / ENTIRE ROW CLICKABLE
+========================================= */
+
+.editorial-item, .feature-card {
+    position: relative;
+}
+
+.editorial-item a, .feature-card a {
+    text-decoration: none;
+}
+
+/* Hacer toda la tarjeta o fila clickeable en móvil y escritorio de forma intuitiva */
+.editorial-item a.toc-title::before, .feature-card a.card-link::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (LUXURY EDITORIAL)
 ========================================= */
 
 @media (max-width: 992px) {
-    /* Grids */
+    /* Grids: 12 columnas a 2 columnas */
     .hero-feature-cards {
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
     
     .article-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .article-marginalia {
@@ -868,16 +888,47 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Hardware Acceleration & Fluid Degradation */
+    .fluid-mercury, .fluid-electric {
+        will-change: transform;
+        transform: translateZ(0); /* Force GPU */
+        opacity: 0.3 !important; /* Más sutil en móvil */
+    }
+
+    /* Backdrop Blur para lectura perfecta sobre fluidos */
+    .article-content, .hero-content, .editorial-list {
+        backdrop-filter: blur(20px);
+        background: rgba(10, 10, 10, 0.6);
+        border-radius: 12px;
+        padding: 1.5rem;
+    }
+
+    /* Tipografía Escalar (Clamp) */
+    .magazine-title {
+        font-size: clamp(2.5rem, 8vw, 6.5rem);
+        letter-spacing: -1px;
+    }
+
+    .article-title {
+        font-size: clamp(2rem, 6vw, 4rem);
+        line-height: 1.2;
+    }
+
+    body {
+        font-size: clamp(1rem, 1.2vw, 1.15rem);
+        line-height: 1.6;
+    }
+
     /* Header & Nav */
     .header-container {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         text-align: center;
     }
     
     .logos {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
     }
     
     .separator {
@@ -885,68 +936,68 @@ body {
     }
 
     .nav-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 12px 24px; /* Touch target 48px */
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.05);
     }
 
     /* Hero Section */
     .hero-section {
         min-height: auto;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-
-    .hero-content {
-        padding: 0 1rem;
-    }
-
-    .magazine-title {
-        font-size: 3.5rem;
-        letter-spacing: -2px;
-    }
-
-    .magazine-subtitle {
-        font-size: 1.2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .hero-feature-cards {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
         transform: translateY(0);
-        margin-top: 3rem;
+        margin-top: 2rem;
+        padding: 0;
     }
 
-    /* Editorial List */
+    /* Editorial List: Aire y Touch Targets */
     .editorial-item {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 1.5rem 1rem;
+        gap: 1.2rem;
+        padding: 2rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     
     .editorial-item:hover {
-        padding-left: 1.5rem;
+        padding-left: 2rem; /* Menor salto en móvil */
+        background-color: rgba(255,255,255,0.02);
     }
 
     .item-number {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .item-content .toc-title {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        line-height: 1.4;
     }
 
     .item-action {
         text-align: left;
     }
 
-    /* Article Pages */
-    .glass-header {
-        padding: 3rem 1.5rem;
+    .item-action a {
+        display: inline-block;
+        padding: 12px 0; /* Touch Target */
+        font-size: 1.1rem;
     }
 
-    .article-title {
-        font-size: 2.2rem;
+    /* Article Pages */
+    .glass-header {
+        padding: 2.5rem 1rem;
     }
 
     /* Team Grid */
@@ -956,7 +1007,10 @@ body {
 }
 
 @media (max-width: 480px) {
-    .magazine-title {
-        font-size: 2.8rem;
+    .editorial-list {
+        padding: 1rem;
+    }
+    .hero-feature-cards {
+        gap: 1.5rem;
     }
 }
