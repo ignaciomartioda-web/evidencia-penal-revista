@@ -122,19 +122,22 @@ body {
     letter-spacing: 1px;
 }
 
-/* Hero Section Premium */
-.hero-section {
+/* Hero Section Premium (Monolith) */
+.hero-section.hero-monolith {
     max-width: 1400px;
     margin: 2rem auto 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #000000;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
     position: relative;
     animation: abyssPulse 18s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+    min-height: 85vh;
 }
 
 /* Radical Fluid Engine */
@@ -182,86 +185,98 @@ body {
     background-color: #D4AF37; /* Softer, elegant gold/yellow */
     opacity: 0;
     mix-blend-mode: screen;
-    animation: electricEruption 18s cubic-bezier(0.7, 0, 0.3, 1) infinite;
+    animation: electricEruption 25s cubic-bezier(0.7, 0, 0.3, 1) infinite; /* Slowed down */
 }
 
-.hero-content {
-    padding: 5rem 4rem;
+.hero-content.monolith-content {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: var(--color-blanco);
     position: relative;
     z-index: 10;
+    flex-grow: 1; /* Empuja los logos abajo si hay espacio */
+    margin-bottom: 4rem; /* Aire para los logos */
 }
 
 .magazine-kicker {
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 1vw, 0.9rem);
     font-weight: 800;
     color: var(--color-ba-amarillo);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out 0.2s forwards;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.8);
     position: relative;
 }
 
-.magazine-title {
-    font-size: 5.5rem;
-    font-family: var(--font-academica);
-    font-weight: 700;
+/* Magazine Title (Minimalist Institutional) */
+.magazine-title.massive-title {
+    font-size: clamp(3rem, 8vw, 6.5rem);
     line-height: 1;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: slideInLeft 0.8s ease-out 0.4s forwards;
-    text-shadow: 0 10px 30px rgba(0,0,0,1);
+    font-family: var(--font-academica); /* Serif académico institucional */
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.8); /* Sutil */
     position: relative;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
 }
 
-.magazine-title .highlight {
-    color: var(--color-ba-amarillo);
-    font-family: var(--font-institucional);
+.magazine-title.massive-title .highlight {
+    font-family: var(--font-institucional); /* Inter para contraste institucional */
     font-weight: 800;
-    display: block;
-    font-size: 4rem;
-    letter-spacing: -2px;
+    color: var(--color-ba-amarillo);
 }
 
-.magazine-subtitle {
-    font-size: 1.25rem;
+/* Abstract subtitle */
+.abstract-subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     color: #A0AEC0;
     font-weight: 300;
-    max-width: 90%;
+    max-width: 600px;
+    margin: 3rem auto 0;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out 0.6s forwards;
     text-shadow: 0 4px 15px rgba(0,0,0,0.9);
     position: relative;
 }
 
-.hero-image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.hero-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right center;
-    display: block;
-    animation: slowZoom 8s ease-out forwards;
-}
-
-.hero-overlay {
+/* Hero Logos Bottom */
+.hero-logos-wrapper {
     position: absolute;
-    inset: 0;
-    background: 
-        linear-gradient(to right, #000000 0%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 95%),
-        linear-gradient(to top, #000000 0%, rgba(0,0,0,0) 15%),
-        linear-gradient(to bottom, #000000 0%, rgba(0,0,0,0) 15%);
+    bottom: 2.5rem;
+    left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+.hero-logo-ba {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    height: 40px;
+}
+
+.hero-logo-separator {
+    width: 1px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.hero-logo-text {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.75rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.3;
 }
 
 /* Hero Feature Cards (Reference 1) */
