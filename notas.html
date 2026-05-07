@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lectura de Notas | Evidencia Penal</title>
-    <!-- Google Fonts: Inter y Playfair Display -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Lectura | Evidencia Penal</title>
+    <!-- Tipografía GCBA -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Institucional GCBA -->
+    <!-- Cabecera Institucional -->
     <header class="gcba-header">
         <div class="header-container">
             <div class="logos">
-                <img src="https://buenosaires.gob.ar/assets/img/logos/LogoBA.svg" alt="Gobierno de la Ciudad de Buenos Aires" class="logo-gcba">
+                <img src="img/logo-ba.svg" alt="Gobierno de la Ciudad de Buenos Aires" class="logo-ba">
+                <div class="separator"></div>
+                <div class="agency-title">
+                    <span class="direccion">Subsecretaría de Política Criminal y Asuntos Penitenciarios</span>
+                </div>
             </div>
-            <div class="ministerio-info">
-                <span class="ministerio">Ministerio de Seguridad</span>
-                <span class="subsecretaria">Subsecretaría de Política Criminal y Asuntos Penitenciarios</span>
+            <div class="magazine-meta">
+                <span>Investigación Estratégica</span>
             </div>
         </div>
     </header>
@@ -26,20 +29,28 @@
     <nav class="global-navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-link">Inicio</a>
-            <a href="notas.html" class="nav-link active">Notas</a>
+            <a href="notas.html" class="nav-link active">Publicaciones</a>
             <a href="secciones.html" class="nav-link">Secciones</a>
             <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
         </div>
     </nav>
 
     <!-- Revista Principal -->
-    <main class="magazine-container" style="margin-top: 4rem;">
+    <main class="magazine-container">
         <!-- Artículo Principal Estructura -->
-        <article class="article-layout" id="main-article">
-            <!-- Título y metadatos -->
-            <header class="article-header">
-                <h2 class="article-title" id="dyn-title">Cargando artículo...</h2>
-                <div class="article-authors" id="dyn-author"></div>
+        <article class="article-layout" id="doc1">
+            <!-- Título y metadatos con efecto de cristal -->
+            <header class="article-header glass-header">
+                <div class="fluid-engine-mini">
+                    <div class="fluid-mercury fluid-1"></div>
+                    <div class="fluid-electric"></div>
+                </div>
+                <div class="header-overlay-article"></div>
+                <div class="header-content-article">
+                    <span class="article-category">Gestión Estratégica</span>
+                    <h2 class="article-title" id="dyn-title">El Nuevo Paradigma Penitenciario</h2>
+                    <div class="article-authors" id="dyn-author">Dirección de Política Criminal • 2026</div>
+                </div>
             </header>
 
             <!-- Grid asimétrico (Contenido + Marginalia) -->
