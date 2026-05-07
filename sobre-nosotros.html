@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Evidencia Penal</title>
+    <!-- Google Fonts: Inter y Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .about-section {
+            max-width: 900px;
+            margin: 0 auto 6rem;
+            padding: 0 2rem;
+            color: var(--color-gris-oscuro);
+        }
+        .about-section h2 {
+            font-family: var(--font-academica);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--color-gris-oscuro);
+        }
+        .about-section h3 {
+            font-family: var(--font-institucional);
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-negro);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .team-member {
+            background-color: var(--color-blanco);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+        }
+        .team-member h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .team-member p {
+            font-size: 0.9rem;
+            color: var(--color-gris-medio);
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Institucional GCBA -->
+    <header class="gcba-header">
+        <div class="header-container">
+            <div class="logos">
+                <img src="https://buenosaires.gob.ar/assets/img/logos/LogoBA.svg" alt="Gobierno de la Ciudad de Buenos Aires" class="logo-gcba">
+            </div>
+            <div class="ministerio-info">
+                <span class="ministerio">Ministerio de Seguridad</span>
+                <span class="subsecretaria">Subsecretaría de Política Criminal y Asuntos Penitenciarios</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación Global -->
+    <nav class="global-navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="notas.html" class="nav-link">Notas</a>
+            <a href="secciones.html" class="nav-link">Secciones</a>
+            <a href="sobre-nosotros.html" class="nav-link active">Sobre Nosotros</a>
+        </div>
+    </nav>
+
+    <!-- Sobre Nosotros -->
+    <main class="magazine-container" style="margin-top: 4rem;">
+        <section class="about-section">
+            <span class="section-label" style="display: block; margin-bottom: 1rem; color: var(--color-ba-amarillo); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Misión Institucional</span>
+            <h2>Política Criminal Basada en Datos</h2>
+            
+            <p><strong>Evidencia Penal</strong> es la publicación oficial de la Subsecretaría de Política Criminal y Asuntos Penitenciarios del Ministerio de Seguridad de la Ciudad Autónoma de Buenos Aires. Nuestro objetivo es establecer un puente riguroso entre el conocimiento científico-académico y la gestión pública operativa.</p>
+            
+            <p>En el marco de la reciente creación del Servicio Penitenciario de CABA, resulta imperativo contar con un espacio de reflexión, análisis normativo y divulgación de resultados empíricos que guíen el diseño de infraestructuras de alojamiento, programas de tratamiento y estrategias de reducción de la reincidencia.</p>
+
+            <h3>Comité Editorial</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Dirección General</h4>
+                    <p>Subsecretaría de Política Criminal y Asuntos Penitenciarios</p>
+                </div>
+                <div class="team-member">
+                    <h4>Coordinación Académica</h4>
+                    <p>Gerencia de Investigación y Datos Penitenciarios</p>
+                </div>
+                <div class="team-member">
+                    <h4>Asesoría Legal</h4>
+                    <p>Dirección General de Asuntos Jurídicos y Normativa</p>
+                </div>
+                <div class="team-member">
+                    <h4>Innovación Tecnológica</h4>
+                    <p>Área de Sistemas Biométricos y Seguridad Integral</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="gcba-footer">
+        <div class="footer-container">
+            <p><strong>Evidencia Penal</strong> - Revista de Política Criminal</p>
+            <p>&copy; 2026 Gobierno de la Ciudad Autónoma de Buenos Aires. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
