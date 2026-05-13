@@ -1,1 +1,9 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="200" height="50"><rect width="100%" height="100%" fill="transparent"/><text x="0" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#F4C700">Buenos Aires</text><text x="0" y="65" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#333333">Ciudad</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
+  <!-- Círculo BA (Pantone 116 C) -->
+  <circle cx="50" cy="50" r="42" fill="#FEDD00"/>
+  <text x="50" y="65" font-family="'Nunito', sans-serif" font-size="44" font-weight="900" fill="#000000" text-anchor="middle">BA</text>
+  
+  <!-- Texto Buenos Aires Ciudad (Tipografía Institucional Stacked) -->
+  <text x="105" y="45" font-family="'Nunito', sans-serif" font-size="28" font-weight="800" fill="#000000">Buenos Aires</text>
+  <text x="105" y="78" font-family="'Nunito', sans-serif" font-size="28" font-weight="800" fill="#000000">Ciudad</text>
+</svg>

@@ -92,25 +92,28 @@ body {
 }
 
 .logo-ba {
-    height: 45px;
+    height: 55px; /* Ajuste para que el texto sea legible */
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .separator {
-    width: 1px;
-    height: 35px;
-    background-color: #E2E8F0;
-}
-
-.agency-title {
-    display: flex;
-    flex-direction: column;
+    width: 2px; /* Más marcado estilo BAstrap */
+    height: 45px;
+    background-color: #FEDD00; /* Separador en amarillo institucional */
+    opacity: 0.8;
 }
 
 .agency-title .direccion {
     font-size: 1.1rem;
     color: var(--color-gris-oscuro);
-    font-weight: 800;
-    letter-spacing: -0.3px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 350px;
 }
 
 .magazine-meta {
@@ -1039,4 +1042,78 @@ body {
     .hero-feature-cards {
         gap: 1.5rem;
     }
+}
+
+/* ==========================================================================
+   SISTEMA DE INTERACCIÓN: ILUMINACIÓN GCBA (INTELIGENCIA / DASHBOARD)
+   ========================================================================== */
+
+/* 1. Tarjetas Interactivas (Módulos de Artículos) */
+.gcba-interactive-card {
+    background-color: var(--color-gris-oscuro);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+}
+
+/* Pseudo-elemento para el barrido de luz interna */
+.gcba-interactive-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(232, 195, 0, 0.08), transparent);
+    transition: left 0.6s ease;
+    z-index: -1;
+}
+
+/* Estado Hover: Iluminación de Bordes y Resplandor */
+.gcba-interactive-card:hover {
+    border-color: rgba(232, 195, 0, 0.6); /* Borde Amarillo GCBA */
+    background-color: #1f252e; /* Ligero aclarado del fondo */
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.8), /* Sombra de profundidad */
+        0 0 15px rgba(232, 195, 0, 0.15), /* Resplandor exterior primario */
+        inset 0 0 20px rgba(232, 195, 0, 0.05); /* Resplandor interior */
+    transform: translateY(-4px);
+}
+
+.gcba-interactive-card:hover::before {
+    left: 200%; /* Ejecuta el barrido de luz */
+}
+
+/* 2. Títulos Iluminados (Tipografía Dinámica) */
+.gcba-glowing-title {
+    font-family: var(--font-academica, 'Playfair Display', serif);
+    color: var(--color-blanco);
+    font-weight: 700;
+    transition: color 0.3s ease, text-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* La tarjeta controla la iluminación del título al hacer hover en toda su área */
+.gcba-interactive-card:hover .gcba-glowing-title,
+.gcba-glowing-title:hover {
+    color: var(--color-ba-amarillo);
+    text-shadow: 
+        0 0 10px rgba(232, 195, 0, 0.4),
+        0 0 20px rgba(232, 195, 0, 0.2);
+}
+
+/* 3. Metadatos y Enlaces de Acción (Dashboard Data Style) */
+.gcba-data-label {
+    font-family: var(--font-institucional, 'Inter', sans-serif);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.3s ease;
+}
+
+.gcba-interactive-card:hover .gcba-data-label {
+    color: var(--color-ba-amarillo);
+    opacity: 0.8;
 }
