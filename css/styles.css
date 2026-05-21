@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    /* Premium GCBA Palette */
-    --color-ba-amarillo: #E8C300;
-    --color-ba-amarillo-hover: #D1B000;
-    --color-gris-oscuro: #1A1F26; /* Deeper, sleeker dark gray */
-    --color-gris-medio: #5B6A7D;
-    --color-gris-claro: #F8F9FA;
+    /* Premium GCBA - Margen y Evidencia Palette */
+    --color-azul-noche: #153244;
+    --color-ba-cyan: #8DE2D6;
+    --color-rojo-ladrillo: #8B2E2E;
+    --color-arena: #E8E4DC;
+    --color-arena-claro: #F5F3EF;
+
+    /* Semantic Mappings */
+    --color-ba-amarillo: var(--color-rojo-ladrillo); /* Yellow maps to Rojo Ladrillo for technical urgency */
+    --color-ba-amarillo-hover: #752626;
+    --color-gris-oscuro: var(--color-azul-noche); /* Dark gray becomes Azul Noche */
+    --color-gris-medio: #4A5B66; /* Slate gray */
+    --color-gris-claro: var(--color-arena); /* Light gray becomes Arena */
     --color-blanco: #FFFFFF;
-    --color-negro: #0A0A0A;
+    --color-negro: #0B161D; /* Dark slate */
 
     /* Typographies */
     --font-institucional: 'Inter', sans-serif; /* Modern, clean */
     --font-academica: 'Playfair Display', serif; /* Sophisticated academic */
     
     /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
-    --shadow-md: 0 8px 24px rgba(26,31,38,0.08);
+    --shadow-sm: 0 2px 8px rgba(21, 50, 68, 0.08);
+    --shadow-md: 0 8px 24px rgba(21, 50, 68, 0.12);
 }
 
 * {
@@ -27,7 +34,7 @@
 
 body {
     font-family: var(--font-institucional);
-    background-color: var(--color-blanco);
+    background-color: var(--color-arena-claro);
     color: var(--color-negro);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -51,7 +58,7 @@ body {
 .global-navbar {
     background-color: var(--color-gris-oscuro);
     padding: 1rem 0;
-    border-bottom: 3px solid var(--color-ba-amarillo);
+    border-bottom: 3px solid var(--color-ba-cyan);
     position: sticky;
     top: 0;
     z-index: 200;
@@ -81,7 +88,7 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--color-ba-amarillo);
+    color: var(--color-ba-cyan);
     background-color: rgba(255,255,255,0.05);
 }
 
@@ -104,7 +111,7 @@ body {
 .separator {
     width: 2px; /* Más marcado estilo BAstrap */
     height: 45px;
-    background-color: #FEDD00; /* Separador en amarillo institucional */
+    background-color: var(--color-ba-cyan); /* Separador en cyan institucional */
     opacity: 0.8;
 }
 
@@ -134,7 +141,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #000000;
+    background-color: var(--color-negro);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -157,8 +164,8 @@ body {
 .fluid-mercury {
     position: absolute;
     border-radius: 50%;
-    background-color: #3B4455;
-    opacity: 0.6;
+    background-color: var(--color-rojo-ladrillo);
+    opacity: 0.12;
 }
 
 .fluid-1 {
@@ -174,7 +181,8 @@ body {
     height: 800px;
     bottom: -300px;
     right: -200px;
-    background-color: #1A1F26;
+    background-color: var(--color-azul-noche);
+    opacity: 0.45;
     animation: mercuryFlow 22s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate-reverse;
 }
 
@@ -185,8 +193,8 @@ body {
     bottom: -500px;
     left: -300px;
     border-radius: 50%;
-    background-color: #D4AF37; /* Softer, elegant gold/yellow */
-    opacity: 0;
+    background-color: var(--color-ba-cyan); /* Cyan glowing background */
+    opacity: 0.08;
     mix-blend-mode: screen;
     animation: electricEruption 25s cubic-bezier(0.7, 0, 0.3, 1) infinite; /* Slowed down */
 }
@@ -207,7 +215,7 @@ body {
 .magazine-kicker {
     font-size: clamp(0.75rem, 1vw, 0.9rem);
     font-weight: 800;
-    color: var(--color-ba-amarillo);
+    color: var(--color-ba-cyan); /* Cyan for high contrast on dark backgrounds */
     letter-spacing: 3px;
     margin-bottom: 1.5rem;
     opacity: 0;
@@ -231,7 +239,11 @@ body {
 .magazine-title.massive-title .highlight {
     font-family: var(--font-institucional); /* Inter para contraste institucional */
     font-weight: 800;
-    color: var(--color-ba-amarillo);
+    color: var(--color-rojo-ladrillo); /* Default to Rojo Ladrillo for light layouts */
+}
+
+.hero-section .highlight {
+    color: var(--color-ba-cyan) !important; /* Overridden to Cyan for readability on dark background */
 }
 
 /* Abstract subtitle */
@@ -285,7 +297,7 @@ body {
 /* Hero Feature Cards (Reference 1) */
 .hero-feature-cards {
     max-width: 1200px;
-    margin: -5rem auto 6rem;
+    margin: 3rem auto 6rem; /* Cambiado de -5rem a 3rem para generar espacio estético */
     position: relative;
     z-index: 10;
     display: grid;
@@ -323,7 +335,7 @@ body {
     background: linear-gradient(
         120deg,
         transparent,
-        rgba(255, 234, 0, 0.1),
+        rgba(141, 226, 214, 0.15),
         transparent
     );
     transition: 0.6s;
@@ -335,8 +347,8 @@ body {
 
 .feature-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(255, 234, 0, 0.4);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.7), 0 0 20px rgba(255, 234, 0, 0.1);
+    border-color: rgba(141, 226, 214, 0.45);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.7), 0 0 20px rgba(141, 226, 214, 0.15);
 }
 
 .feature-card h3 {
@@ -370,10 +382,15 @@ body {
 }
 
 /* Rediseño de Índice Editorial (Reference 2) */
+/* Rediseño de Índice Editorial (Reference 2) */
 .editorial-list {
     max-width: 1200px;
     margin: 0 auto 6rem;
-    padding: 0 2rem;
+    padding: 3rem 4rem;
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    border: 1px solid rgba(21, 50, 68, 0.08);
+    box-shadow: var(--shadow-md);
 }
 
 .editorial-header {
@@ -408,7 +425,7 @@ body {
     grid-template-columns: 80px 1fr 180px;
     align-items: center;
     padding: 2.5rem 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(21, 50, 68, 0.1);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     background-color: transparent;
     position: relative;
@@ -428,7 +445,7 @@ body {
 }
 
 .editorial-item:hover {
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: rgba(21, 50, 68, 0.03);
     padding-left: 3rem;
 }
 
@@ -440,14 +457,14 @@ body {
     font-family: var(--font-institucional);
     font-size: 1.5rem;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(21, 50, 68, 0.35);
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .editorial-item:hover .item-number {
     color: var(--color-ba-amarillo);
     transform: translateX(5px);
-    text-shadow: 0 0 15px rgba(255, 234, 0, 0.5);
+    text-shadow: 0 0 15px rgba(141, 226, 214, 0.4);
 }
 
 .item-content {
@@ -468,14 +485,14 @@ body {
 .item-content .toc-title {
     font-family: var(--font-academica);
     font-size: 1.75rem;
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
     font-weight: 700;
     letter-spacing: -0.5px;
     transition: color 0.3s ease;
 }
 
 .editorial-item:hover .toc-title {
-    color: #FFFFFF;
+    color: var(--color-rojo-ladrillo);
 }
 
 .item-action {
@@ -486,8 +503,8 @@ body {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--color-blanco);
+    border: 1px solid rgba(21, 50, 68, 0.2);
+    color: var(--color-gris-oscuro);
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 800;
@@ -495,6 +512,61 @@ body {
     letter-spacing: 1px;
     border-radius: 2px;
     transition: all 0.3s ease;
+}
+
+.item-action a:hover {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    border-color: var(--color-gris-oscuro);
+}
+
+/* Botones Editoriales Premium (Readability & Transitions) */
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--color-rojo-ladrillo);
+    color: var(--color-blanco) !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid var(--color-rojo-ladrillo);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 10px rgba(139, 46, 46, 0.2);
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-gris-oscuro);
+    border-color: var(--color-gris-oscuro);
+    color: var(--color-ba-cyan) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(21, 50, 68, 0.25);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid var(--color-gris-oscuro);
+    color: var(--color-gris-oscuro);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(21, 50, 68, 0.15);
 }
 
 .glass-header {
@@ -629,6 +701,7 @@ body {
     border-radius: 12px;
     margin-bottom: 4rem;
     position: relative;
+    border-left: 6px solid var(--color-rojo-ladrillo);
 }
 
 .abstract-box::before {
@@ -725,6 +798,24 @@ body {
     color: var(--color-gris-oscuro);
     font-weight: 800;
     letter-spacing: -0.5px;
+}
+
+.body-text {
+    font-family: var(--font-institucional);
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--color-gris-oscuro);
+    letter-spacing: -0.01em;
+}
+
+.body-text h3 {
+    font-family: var(--font-academica);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-gris-oscuro);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
 }
 
 .body-text p {
@@ -829,9 +920,9 @@ body {
 }
 
 @keyframes abyssPulse {
-    0% { background-color: #000000; }
-    50% { background-color: #0a0800; }
-    100% { background-color: #000000; }
+    0% { background-color: var(--color-negro); }
+    50% { background-color: var(--color-azul-noche); }
+    100% { background-color: var(--color-negro); }
 }
 
 /* =========================================
@@ -857,7 +948,7 @@ body {
 }
 
 .toc-title {
-    color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
     margin: 0;
 }
 
@@ -1066,19 +1157,19 @@ body {
     position: absolute;
     top: 0; left: -100%;
     width: 50%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(232, 195, 0, 0.08), transparent);
+    background: linear-gradient(90deg, transparent, rgba(141, 226, 214, 0.1), transparent);
     transition: left 0.6s ease;
     z-index: -1;
 }
 
 /* Estado Hover: Iluminación de Bordes y Resplandor */
 .gcba-interactive-card:hover {
-    border-color: rgba(232, 195, 0, 0.6); /* Borde Amarillo GCBA */
-    background-color: #1f252e; /* Ligero aclarado del fondo */
+    border-color: rgba(141, 226, 214, 0.6); /* Borde Cyan GCBA */
+    background-color: #1A3E54; /* Ligero aclarado del fondo usando la paleta institucional */
     box-shadow: 
         0 10px 30px rgba(0, 0, 0, 0.8), /* Sombra de profundidad */
-        0 0 15px rgba(232, 195, 0, 0.15), /* Resplandor exterior primario */
-        inset 0 0 20px rgba(232, 195, 0, 0.05); /* Resplandor interior */
+        0 0 15px rgba(141, 226, 214, 0.15), /* Resplandor exterior primario */
+        inset 0 0 20px rgba(141, 226, 214, 0.05); /* Resplandor interior */
     transform: translateY(-4px);
 }
 
@@ -1097,10 +1188,10 @@ body {
 /* La tarjeta controla la iluminación del título al hacer hover en toda su área */
 .gcba-interactive-card:hover .gcba-glowing-title,
 .gcba-glowing-title:hover {
-    color: var(--color-ba-amarillo);
+    color: var(--color-ba-cyan);
     text-shadow: 
-        0 0 10px rgba(232, 195, 0, 0.4),
-        0 0 20px rgba(232, 195, 0, 0.2);
+        0 0 10px rgba(141, 226, 214, 0.5),
+        0 0 20px rgba(141, 226, 214, 0.25);
 }
 
 /* 3. Metadatos y Enlaces de Acción (Dashboard Data Style) */
@@ -1114,6 +1205,22 @@ body {
 }
 
 .gcba-interactive-card:hover .gcba-data-label {
-    color: var(--color-ba-amarillo);
+    color: var(--color-ba-cyan);
     opacity: 0.8;
+}
+
+/* Card link contrast & readability within dark interactive cards */
+.gcba-interactive-card .card-link {
+    color: var(--color-ba-cyan);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gcba-interactive-card:hover .card-link {
+    color: var(--color-blanco);
+    padding-left: 5px;
+}
+
+/* Ensure paragraph text within dark cards has high contrast and is readable */
+.gcba-interactive-card p {
+    color: rgba(255, 255, 255, 0.75) !important;
 }

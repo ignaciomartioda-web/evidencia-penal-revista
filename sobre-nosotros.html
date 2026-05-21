@@ -42,19 +42,25 @@
         }
         .team-member {
             background-color: var(--color-blanco);
-            background-color: #0d0d0d;
             padding: 2rem;
-            border-radius: 0;
-            border: 1px solid #333;
+            border-radius: 8px;
+            border: 1px solid rgba(21, 50, 68, 0.1);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-rojo-ladrillo);
+            box-shadow: var(--shadow-md);
         }
         .team-member h4 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
-            color: #fff;
+            color: var(--color-gris-oscuro);
         }
         .team-member p {
             font-size: 0.9rem;
-            color: #b3b3b3;
+            color: var(--color-gris-medio);
             margin-bottom: 0;
         }
     </style>
