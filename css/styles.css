@@ -250,7 +250,7 @@ p {
 }
 
 .abstract-subtitle {
-    font-size: clamp(1rem, 1.3vw, 1.25rem);
+    font-size: clamp(1.05rem, 1.4vw, 1.25rem);
     color: #A0AEC0;
     font-weight: 300;
     max-width: 650px;
@@ -281,386 +281,299 @@ p {
 }
 
 /* ==========================================================================
-   FARO CINEMÁTICO INTERACTIVO (NANO BANANA 2)
+   FARO ICONOGRÁFICO SVG INTERACTIVO Y EFECTO ILUMINA TODO
    ========================================================================== */
 
-.faro-cinema-wrapper {
-    position: relative;
+.hero-glowing-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 25% 45%, rgba(141, 226, 214, 0.22) 0%, transparent 60%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    opacity: 0.35;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 6;
+}
+
+/* Cuando se pasa el mouse sobre el monolito o el faro, se ilumina todo el fondo */
+.hero-section.hero-monolith:hover .hero-glowing-overlay {
+    opacity: 0.75;
+    background: radial-gradient(circle at 25% 45%, rgba(141, 226, 214, 0.35) 0%, rgba(232, 228, 220, 0.05) 45%, transparent 70%);
+}
+
+.hero-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 5rem;
+    align-items: start;
+    max-width: 1200px;
     width: 100%;
-    max-width: 320px;
-    height: 400px;
-    border-radius: var(--radius-container);
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-left-column {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lighthouse-widget-wrapper {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.door-faro-container {
+    position: relative;
+    width: 240px;
+    height: 240px;
     overflow: hidden;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(141, 226, 214, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background-color: var(--color-negro);
+    border: 2px solid rgba(141, 226, 214, 0.3);
+    border-radius: 50%;
+    background-color: #05080E;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.8), 0 0 20px rgba(141, 226, 214, 0.15);
+    z-index: 10;
     cursor: pointer;
     transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
-.faro-cinema-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+.door-faro-container:hover {
+    border-color: var(--color-ba-cyan);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.9), 0 0 35px rgba(141, 226, 214, 0.3);
 }
 
-.faro-cinema-wrapper:hover .faro-cinema-image {
-    transform: scale(1.06);
-}
-
-.faro-cinema-wrapper:hover {
-    border-color: rgba(141, 226, 214, 0.6);
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(141, 226, 214, 0.25);
-}
-
-/* Haz de luz giratorio interactivo */
-.faro-cinema-beam {
+.lighthouse-scene {
     position: absolute;
-    top: 55px; /* Altura de la lámpara en el arte */
-    left: 50%;
-    width: 900px;
-    height: 300px;
-    background: radial-gradient(circle at 0% 50%, rgba(141, 226, 214, 0.6) 0%, rgba(141, 226, 214, 0.04) 55%, transparent 75%);
-    clip-path: polygon(0 45%, 100% 10%, 100% 90%, 0 55%);
-    transform-origin: 0% 50%;
-    transform: rotate(5deg);
-    mix-blend-mode: screen;
-    pointer-events: none;
-    opacity: 0.75;
-    z-index: 15;
-    animation: cinemaBeamSweep 9s ease-in-out infinite alternate;
-    will-change: transform, opacity;
-}
-
-@keyframes cinemaBeamSweep {
-    0% { transform: rotate(-10deg) scaleY(0.85); opacity: 0.55; }
-    100% { transform: rotate(18deg) scaleY(1.15); opacity: 0.9; }
-}
-
-.faro-cinema-flash {
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    width: 16px;
-    height: 16px;
-    background-color: var(--color-blanco);
-    border-radius: 50%;
-    box-shadow: 0 0 25px 8px var(--color-ba-cyan);
-    mix-blend-mode: screen;
-    pointer-events: none;
-    z-index: 16;
-    animation: cinemaFlashPulse 3s infinite alternate;
-}
-
-@keyframes cinemaFlashPulse {
-    0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.6; }
-    100% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
-}
-
-/* =========================================
-   BENTO GRIDS & CARDS (DESIGN_VARIANCE: 7)
-   ========================================= */
-
-.hero-feature-cards {
-    max-width: 1200px;
-    margin: 3rem auto 6rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    padding: 0 2rem;
-}
-
-.feature-card {
-    background-color: rgba(26, 31, 38, 0.4);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 3rem 2rem;
-    border-radius: var(--radius-container);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.feature-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(141, 226, 214, 0.45);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 20px rgba(141, 226, 214, 0.1);
-}
-
-.feature-card h3 {
-    font-family: var(--font-institucional);
-    font-size: 1.25rem;
-    color: var(--color-blanco);
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-.feature-card p {
-    font-size: 0.95rem;
-    color: #E2E8F0;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.card-link {
-    font-weight: 800;
-    font-size: 0.8rem;
-    color: var(--color-ba-cyan);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.2s ease;
-}
-
-/* =========================================
-   TARJETAS INTERACTIVAS (DASHBOARD GCBA)
-   ========================================= */
-
-.gcba-interactive-card {
-    background-color: var(--color-gris-oscuro);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-container);
-    padding: 2.5rem;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
-.gcba-interactive-card::before {
-    content: '';
+.svg-lighthouse {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: showLighthouse 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+@keyframes showLighthouse {
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Haz de luz de la linterna (al cy=75 en el SVG, centrado en x=110) */
+.external-light-beam {
+    position: absolute;
+    top: calc(82px - 200px); /* Centrado vertical en la linterna */
+    left: 50%;
+    width: 1100px;
+    height: 400px;
+    background: radial-gradient(circle at 0% 50%, rgba(141, 226, 214, 0.5) 0%, rgba(141, 226, 214, 0.03) 60%, transparent 80%);
+    clip-path: polygon(0 48%, 100% 15%, 100% 85%, 0 52%);
+    transform-origin: 0% 50%;
+    transform: rotate(0deg);
+    z-index: 15;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    opacity: 0.8;
+    will-change: transform, opacity;
+    animation: externalBeamSweep 8s ease-in-out infinite alternate;
+}
+
+@keyframes externalBeamSweep {
+    0% { transform: rotate(-12deg) scaleY(0.9); }
+    100% { transform: rotate(20deg) scaleY(1.1); }
+}
+
+/* Las puertas que abren al iniciar */
+.door-panel {
     position: absolute;
     top: 0;
-    left: -100%;
+    bottom: 0;
     width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(141, 226, 214, 0.08), transparent);
-    transition: left 0.6s ease;
-    z-index: -1;
+    background: linear-gradient(135deg, #161D26 0%, #030508 100%);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    backface-visibility: hidden;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
-.gcba-interactive-card:hover {
-    border-color: rgba(141, 226, 214, 0.5);
-    background-color: #16364A;
-    box-shadow: 
-        0 12px 30px rgba(0, 0, 0, 0.6),
-        0 0 15px rgba(141, 226, 214, 0.12);
-    transform: translateY(-4px);
+.left-door {
+    left: 0;
+    border-right: 1.5px solid var(--color-ba-cyan);
+    transform-origin: left center;
+    animation: swingOpenLeft 2.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    justify-content: flex-end;
 }
 
-.gcba-interactive-card:hover::before {
-    left: 200%;
+.right-door {
+    right: 0;
+    border-left: 1.5px solid var(--color-ba-cyan);
+    transform-origin: right center;
+    animation: swingOpenRight 2.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    justify-content: flex-start;
 }
 
-.gcba-glowing-title {
-    font-family: var(--font-academica);
-    color: var(--color-blanco);
-    font-weight: 700;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+@keyframes swingOpenLeft {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(-115deg); opacity: 0; }
 }
 
-.gcba-interactive-card:hover .gcba-glowing-title {
-    color: var(--color-ba-cyan);
-    text-shadow: 0 0 10px rgba(141, 226, 214, 0.4);
+@keyframes swingOpenRight {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(115deg); opacity: 0; }
 }
 
-.gcba-data-label {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.gcba-interactive-card p {
-    color: rgba(255, 255, 255, 0.8) !important;
+.door-handle {
+    width: 3px;
+    height: 32px;
+    background-color: var(--color-ba-cyan);
+    margin: 6px;
+    opacity: 0.8;
+    border-radius: 1.5px;
 }
 
 /* =========================================
-   ÍNDICE EDITORIAL (REGISTRO ACADÉMICO)
+   BENTO GRIDS & CARDS (DESIGN_VARIANCE: 8)
    ========================================= */
 
-.editorial-list {
-    max-width: 1200px;
-    margin: 0 auto 6rem;
-    padding: 3rem 4rem;
-    background-color: var(--color-blanco);
-    border-radius: var(--radius-container);
+.expediente-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.expediente-folder {
+    background-color: #FFFFFF;
     border: 1px solid var(--color-arena);
-    box-shadow: var(--shadow-md);
-}
-
-.editorial-header {
-    margin-bottom: 3rem;
-}
-
-.editorial-header h2 {
-    font-family: var(--font-academica);
-    font-size: 2.5rem;
-    color: var(--color-gris-oscuro);
-    font-weight: 700;
-}
-
-.editorial-items {
+    border-top: 4px solid var(--color-azul-noche);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius-container);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
     display: flex;
     flex-direction: column;
-}
-
-.editorial-item {
-    display: grid;
-    grid-template-columns: 80px 1fr 180px;
-    align-items: center;
-    padding: 2.5rem 2rem;
-    border-top: 1px solid rgba(21, 50, 68, 0.08);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
 }
 
-.editorial-item::after {
+.expediente-folder:hover {
+    transform: translateY(-6px);
+    border-top-color: var(--color-rojo-ladrillo);
+    box-shadow: var(--shadow-md);
+}
+
+.expediente-folder.card-destacada {
+    grid-column: span 2;
+    border-top: 4px solid var(--color-rojo-ladrillo);
+}
+
+.expediente-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 1rem;
+}
+
+.expediente-id {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-gris-medio);
+}
+
+/* ==========================================================================
+   TABLERO DE LECTURA (TOC + VISOR UNIFICADO) - DESIGN_VARIANCE: 8
+   ========================================================================== */
+
+.tablero-seccion {
+    max-width: 1400px;
+    margin: 6rem auto;
+    padding: 6rem 2rem;
+    border-top: 1px solid var(--color-arena);
+    border-bottom: 1px solid var(--color-arena);
+    scroll-margin-top: 100px;
+}
+
+.tablero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 2.9fr;
+    gap: 4.5rem;
+    align-items: start;
+}
+
+.tablero-sidebar {
+    border-right: 1px solid var(--color-arena);
+    padding-right: 3rem;
+    position: sticky;
+    top: 120px;
+}
+
+.toc-interactive-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.toc-card {
+    padding: 1.5rem;
+    border-radius: var(--radius-container);
+    border: 1px solid var(--color-arena);
+    background-color: var(--color-blanco);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.toc-card::after {
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0; top: 0; bottom: 0;
     width: 4px;
-    height: 100%;
     background-color: var(--color-rojo-ladrillo);
     transform: scaleY(0);
     transition: transform 0.3s ease;
 }
 
-.editorial-item:hover {
-    background-color: rgba(21, 50, 68, 0.02);
-    padding-left: 3rem;
+.toc-card:hover {
+    border-color: rgba(21, 50, 68, 0.3);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-sm);
 }
 
-.editorial-item:hover::after {
+.toc-card.active {
+    border-color: var(--color-rojo-ladrillo);
+    background-color: var(--color-blanco);
+    box-shadow: var(--shadow-md);
+    transform: translateX(6px);
+}
+
+.toc-card.active::after {
     transform: scaleY(1);
 }
 
-.item-number {
-    font-family: var(--font-mono);
-    font-size: 1.3rem;
-    color: var(--color-rojo-ladrillo);
-    opacity: 0.6;
-}
-
-.item-content .toc-section {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--color-gris-medio);
-    letter-spacing: 1px;
-    margin-bottom: 0.3rem;
-    display: block;
-}
-
-.item-content .toc-title {
-    font-family: var(--font-academica);
-    font-size: 1.6rem;
-    color: var(--color-gris-oscuro);
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.editorial-item:hover .toc-title {
+.toc-card.active h4 {
     color: var(--color-rojo-ladrillo);
 }
 
-.item-action {
-    text-align: right;
-}
-
-.item-action button, .item-action a {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: transparent;
-    border: 1px solid rgba(21, 50, 68, 0.15);
-    color: var(--color-gris-oscuro);
-    text-decoration: none;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: var(--radius-interactive);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.item-action button:hover, .item-action a:hover {
-    background-color: var(--color-gris-oscuro);
-    color: var(--color-blanco);
-    border-color: var(--color-gris-oscuro);
-}
-
-/* =========================================
-   BOTONES Y ACCESIBILIDAD (WCAG AA CONTRAST)
-   ========================================= */
-
-.btn-primary {
-    display: inline-block;
-    padding: 1rem 2.2rem;
-    background-color: var(--color-rojo-ladrillo);
-    color: var(--color-blanco) !important;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    border-radius: var(--radius-interactive);
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(139, 46, 46, 0.2);
-    border: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: var(--color-azul-noche);
-    color: var(--color-ba-cyan) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(21, 50, 68, 0.25);
-}
-
-.btn-outline {
-    display: inline-block;
-    padding: 1rem 2.2rem;
-    background-color: transparent;
-    border: 2px solid var(--color-gris-oscuro);
-    color: var(--color-gris-oscuro);
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    border-radius: var(--radius-interactive);
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-outline:hover {
-    background-color: var(--color-gris-oscuro);
-    color: var(--color-blanco);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(21, 50, 68, 0.15);
-}
-
-/* ==========================================================================
-   VISOR DE ARTÍCULOS INTEGRADO (SPA IN-PLACE)
-   ========================================================================== */
-
-.visor-seccion {
-    max-width: 1400px;
-    margin: 4rem auto 6rem;
-    padding: 6rem 2rem;
-    border-top: 1px solid var(--color-arena);
-    border-bottom: 1px solid var(--color-arena);
-}
-
+/* Visor dinámico */
 .article-layout {
     transition: opacity 0.4s ease, transform 0.4s ease;
     will-change: transform, opacity;
@@ -671,17 +584,56 @@ p {
     transform: translateY(10px);
 }
 
+.gcba-interactive-card {
+    background-color: var(--color-gris-oscuro);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-container);
+    padding: 4rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.gcba-interactive-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(141, 226, 214, 0.08), transparent);
+    transition: left 0.6s ease;
+    z-index: -1;
+}
+
+.gcba-interactive-card:hover::before {
+    left: 200%;
+}
+
+.gcba-glowing-title {
+    font-family: var(--font-academica);
+    color: var(--color-blanco);
+    font-weight: 700;
+}
+
+.gcba-data-label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .article-grid {
     display: grid;
     grid-template-columns: 8fr 4fr;
-    gap: 4rem;
+    gap: 3.5rem;
+    margin-top: 3.5rem;
 }
 
 .abstract-box {
     background-color: var(--color-arena);
     padding: 2.5rem 3rem;
     border-radius: var(--radius-container);
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
     position: relative;
     border-left: 6px solid var(--color-rojo-ladrillo);
 }
@@ -794,6 +746,106 @@ p {
     margin-bottom: 1.5rem;
 }
 
+/* ==========================================================================
+   INSTITUCIÓN Y CONVOCATORIA (UNIFICADA)
+   ========================================================================== */
+
+.institucion-seccion {
+    max-width: 1400px;
+    margin: 0 auto 6rem;
+    padding: 0 2rem;
+    scroll-margin-top: 100px;
+}
+
+.institucion-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.comite-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.comite-card {
+    background-color: var(--color-blanco);
+    padding: 1.8rem;
+    border-radius: var(--radius-container);
+    border: 1px solid var(--color-arena);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.comite-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-rojo-ladrillo);
+}
+
+.convocatoria-card {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-arena);
+    border-radius: var(--radius-container);
+    padding: 3.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+/* =========================================
+   BOTONES E ACCESIBILIDAD (WCAG AA CONTRAST)
+   ========================================= */
+
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    background-color: var(--color-rojo-ladrillo);
+    color: var(--color-blanco) !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: var(--radius-interactive);
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(139, 46, 46, 0.2);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-azul-noche);
+    color: var(--color-ba-cyan) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(21, 50, 68, 0.25);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    background-color: transparent;
+    border: 2px solid var(--color-gris-oscuro);
+    color: var(--color-gris-oscuro);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: var(--radius-interactive);
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(21, 50, 68, 0.15);
+}
+
 /* =========================================
    FOOTER INSTITUCIONAL
    ========================================= */
@@ -817,7 +869,7 @@ p {
 }
 
 /* =========================================
-   ANIMACIONES CORE (transform & opacity)
+   ANIMACIONES CORE
    ========================================= */
 
 @keyframes fadeInUp {
@@ -852,22 +904,67 @@ p {
    RESPONSIVIDAD Y DEGRADACIÓN MÓVIL
    ========================================= */
 
-@media (max-width: 992px) {
-    .hero-feature-cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+@media (max-width: 1024px) {
+    .tablero-grid {
+        grid-template-columns: 1fr;
     }
-    
-    .article-grid {
+    .tablero-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--color-arena);
+        padding-right: 0;
+        padding-bottom: 2.5rem;
+        position: static;
+    }
+    .toc-interactive-list {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+    .toc-interactive-list::-webkit-scrollbar {
+        display: none;
+    }
+    .toc-card {
+        flex: 0 0 260px;
+    }
+    .toc-card.active {
+        transform: translateY(-2px);
+    }
+    .toc-card::after {
+        left: 0; right: 0; bottom: 0; top: auto;
+        height: 4px; width: auto;
+        transform: scaleX(0);
+    }
+    .toc-card.active::after {
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-grid-container {
         grid-template-columns: 1fr;
         gap: 3rem;
+        padding: 3rem 1.5rem;
+        text-align: center;
     }
-
-    .article-marginalia {
-        border-left: none;
-        border-top: 1px solid var(--color-arena);
-        padding-left: 0;
-        padding-top: 3rem;
+    .hero-right-column {
+        align-items: center;
+        text-align: center;
+    }
+    .external-light-beam {
+        top: calc(82px - 200px);
+        left: 50%;
+        transform-origin: 0% 50%;
+        animation: externalBeamSweepMobile 8s ease-in-out infinite alternate;
+    }
+    .institucion-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .comite-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -877,16 +974,13 @@ p {
         gap: 1.5rem;
         text-align: center;
     }
-    
     .logos {
         flex-direction: column;
         gap: 1rem;
     }
-    
     .separator {
         display: none;
     }
-
     .nav-container {
         gap: 1rem;
         overflow-x: auto;
@@ -895,40 +989,37 @@ p {
         -webkit-overflow-scrolling: touch;
         flex-wrap: nowrap;
     }
-
     .nav-link {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
         border: 1px solid rgba(255,255,255,0.15);
         border-radius: 20px;
     }
-
-    .hero-feature-cards {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 0 1rem;
-    }
-
-    .editorial-item {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 2rem 1.5rem;
-    }
-
-    .item-action {
-        text-align: left;
-    }
-
-    .bento-grid-investigacion {
+    .expediente-grid {
         grid-template-columns: 1fr;
     }
-    
-    .bento-card.destacada {
+    .expediente-folder.card-destacada {
         grid-column: span 1;
     }
-
-    .faro-cinema-wrapper {
-        margin: 0 auto;
-        height: 350px;
+    .article-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
+    .article-marginalia {
+        border-left: none;
+        border-top: 1px solid var(--color-arena);
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+    .comite-grid {
+        grid-template-columns: 1fr;
+    }
+    .convocatoria-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@keyframes externalBeamSweepMobile {
+    0% { transform: rotate(72deg) scaleY(0.95); }
+    100% { transform: rotate(108deg) scaleY(1.05); }
 }

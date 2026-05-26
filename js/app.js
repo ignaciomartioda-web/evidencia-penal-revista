@@ -55,12 +55,12 @@ const ARTICULOS_REVISTA = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Inicializando motor SPA de Evidencia Penal...");
+    console.log("Inicializando motor de 4 secciones SPA...");
     
-    // Control de enlaces activos en Navbar al hacer clic
+    // Control de enlaces activos en Navbar
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+        link.addEventListener('click', () => {
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
         });
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const hashVal = window.location.hash.substring(1);
         if (ARTICULOS_REVISTA[hashVal]) {
             currentDoc = hashVal;
-            // Esperar un instante para que cargue la estructura y desplazar
             setTimeout(() => {
                 const target = document.getElementById('visor-seccion');
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
@@ -87,18 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
         cargarArticuloLocal(currentDoc);
     }
 
-    // Scroll Spy básico para resaltar el menú activo al hacer scroll
+    // Scroll Spy básico para resaltar el menú activo
     window.addEventListener('scroll', scrollSpy);
 });
 
-// Función global para ser invocada desde los botones de los artículos
+// Función global para cambiar de artículo de forma interactiva e instantánea
 function cargarArticuloDesdeEnlace(docId) {
     if (!ARTICULOS_REVISTA[docId]) return;
     
     const visor = document.getElementById('articulo-visor');
     if (!visor) return;
 
-    // Animación de salida (Fade Out)
+    // Transición de salida (Fade Out)
     visor.classList.add('loading-fade');
 
     setTimeout(() => {
@@ -106,7 +105,21 @@ function cargarArticuloDesdeEnlace(docId) {
         cargarArticuloLocal(docId);
         window.history.pushState(null, null, `#${docId}`);
 
-        // Animación de entrada (Fade In)
+        // Actualizar tarjetas del índice (TOC)
+        document.querySelectorAll('.toc-card').forEach(card => {
+            card.classList.remove('active');
+            const h4 = card.querySelector('h4');
+            const span = card.querySelector('span');
+            if (h4) h4.style.color = '';
+            if (span) span.style.color = '';
+        });
+        
+        const activeCard = document.getElementById(`toc-${docId}`);
+        if (activeCard) {
+            activeCard.classList.add('active');
+        }
+
+        // Transición de entrada (Fade In)
         visor.classList.remove('loading-fade');
 
         // Desplazamiento suave al visor
@@ -125,6 +138,11 @@ function cargarArticuloLocal(docId) {
     const articulo = ARTICULOS_REVISTA[docId];
     if (articulo) {
         renderArticle(articulo);
+        
+        // Sincronizar también la clase activa en el TOC
+        document.querySelectorAll('.toc-card').forEach(card => card.classList.remove('active'));
+        const activeCard = document.getElementById(`toc-${docId}`);
+        if (activeCard) activeCard.classList.add('active');
     }
 }
 
@@ -156,7 +174,7 @@ function renderArticle(data) {
 async function conectarBaseDatos(docId) {
     try {
         const app = new Realm.App({ id: STITCH_APP_ID });
-        console.log("Conectado a MongoDB Realm. Sincronizando datos...");
+        console.log("Conectado a MongoDB Realm. Obteniendo datos para:", docId);
         cargarArticuloLocal(docId);
     } catch (e) {
         console.error("Fallo de conexión a Realm. Utilizando fallback local.", e);
@@ -164,26 +182,24 @@ async function conectarBaseDatos(docId) {
     }
 }
 
-// Resalta la barra de navegación basada en el scroll actual
+// Resalta la barra de navegación basada en el scroll actual (Simplificado a 4 secciones)
 function scrollSpy() {
-    const sections = ['inicio', 'secciones', 'visor-seccion', 'sobre-nosotros', 'convocatorias'];
+    const sections = ['inicio', 'secciones', 'visor-seccion', 'sobre-nosotros'];
     const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
     
     sections.forEach(id => {
         const el = document.getElementById(id);
         if (el) {
-            const top = el.offsetTop - 120;
+            const top = el.offsetTop - 150;
             const bottom = top + el.offsetHeight;
             
             if (scrollPos >= top && scrollPos < bottom) {
                 document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
                 
-                // Mapeo especial para resaltar la pestaña adecuada
                 let targetId = 'link-inicio';
                 if (id === 'secciones') targetId = 'link-secciones';
                 if (id === 'visor-seccion') targetId = 'link-articulos';
                 if (id === 'sobre-nosotros') targetId = 'link-nosotros';
-                if (id === 'convocatorias') targetId = 'link-convocatorias';
                 
                 const activeLink = document.getElementById(targetId);
                 if (activeLink) activeLink.classList.add('active');
