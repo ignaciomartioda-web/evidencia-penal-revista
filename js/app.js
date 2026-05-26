@@ -105,18 +105,14 @@ function cargarArticuloDesdeEnlace(docId) {
         cargarArticuloLocal(docId);
         window.history.pushState(null, null, `#${docId}`);
 
-        // Actualizar tarjetas del índice (TOC)
-        document.querySelectorAll('.toc-card').forEach(card => {
-            card.classList.remove('active');
-            const h4 = card.querySelector('h4');
-            const span = card.querySelector('span');
-            if (h4) h4.style.color = '';
-            if (span) span.style.color = '';
+        // Actualizar items del índice (TOC)
+        document.querySelectorAll('.toc-item').forEach(item => {
+            item.classList.remove('active');
         });
         
-        const activeCard = document.getElementById(`toc-${docId}`);
-        if (activeCard) {
-            activeCard.classList.add('active');
+        const activeItem = document.getElementById(`toc-${docId}`);
+        if (activeItem) {
+            activeItem.classList.add('active');
         }
 
         // Transición de entrada (Fade In)
@@ -140,9 +136,9 @@ function cargarArticuloLocal(docId) {
         renderArticle(articulo);
         
         // Sincronizar también la clase activa en el TOC
-        document.querySelectorAll('.toc-card').forEach(card => card.classList.remove('active'));
-        const activeCard = document.getElementById(`toc-${docId}`);
-        if (activeCard) activeCard.classList.add('active');
+        document.querySelectorAll('.toc-item').forEach(item => item.classList.remove('active'));
+        const activeItem = document.getElementById(`toc-${docId}`);
+        if (activeItem) activeItem.classList.add('active');
     }
 }
 

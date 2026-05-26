@@ -41,64 +41,53 @@
     <!-- Contenido Unificado (SPA de 4 Secciones) -->
     <main class="magazine-container">
 
-        <!-- 1. Hero Monolith (El Faro Iconográfico SVG con Efecto Ilumina Todo) -->
+        <!-- 1. Hero Monolith (El Faro Iconográfico Lineal y Efecto Ilumina Todo) -->
         <section class="hero-section hero-monolith" id="inicio">
             <!-- Capa de iluminación de portada interactiva -->
             <div class="hero-glowing-overlay"></div>
-
-            <div class="fluid-engine" style="opacity: 0.3;">
-                <div class="fluid-mercury fluid-1"></div>
-                <div class="fluid-mercury fluid-2"></div>
-                <div class="fluid-electric"></div>
-            </div>
             
-            <div class="hero-grid-container" style="z-index: 10;">
+            <div class="hero-grid-container">
                 <div class="hero-left-column">
                     <div class="lighthouse-widget-wrapper">
-                        <!-- Puerta y Faro SVG Iconográfico Depurado -->
-                        <div class="door-faro-container" onclick="document.getElementById('link-articulos').click();">
+                        <!-- Puerta y Faro SVG Lineal Depurado -->
+                        <div class="door-faro-container" onclick="document.getElementById('link-articulos').click();" aria-label="Explorar publicaciones">
                             <div class="lighthouse-scene">
                                 <svg class="svg-lighthouse" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Estrellas minimalistas de fondo -->
-                                    <circle cx="45" cy="50" r="1.5" fill="#FFFFFF" opacity="0.4" />
-                                    <circle cx="175" cy="65" r="1.5" fill="#FFFFFF" opacity="0.5" />
-                                    <circle cx="80" cy="35" r="2" fill="#FFFFFF" opacity="0.3" />
-                                    <circle cx="140" cy="45" r="1.5" fill="#FFFFFF" opacity="0.6" />
+                                    <!-- Luz de fondo sutil -->
+                                    <circle cx="110" cy="68" r="28" fill="var(--color-ba-cyan)" opacity="0.15" style="filter: blur(8px);" />
+                                    <circle cx="110" cy="68" r="10" fill="var(--color-ba-cyan)" opacity="0.3" style="filter: blur(2px);" />
                                     
-                                    <!-- Base/Terreno rocoso -->
-                                    <path d="M 10 180 Q 110 165 210 180 L 210 220 L 10 220 Z" fill="#090E17" />
-                                    <path d="M 65 180 L 155 180 L 165 172 L 55 172 Z" fill="#141C26" />
-
-                                    <!-- Estructura del Faro (Líneas depuradas) -->
-                                    <polygon points="80,180 92,90 128,90 140,180" fill="#F5F3EF" />
-                                    <!-- Franja de color institucional del Ministerio (Rojo Ladrillo) -->
-                                    <polygon points="82.6,160 86.6,120 133.4,120 137.4,160" fill="var(--color-rojo-ladrillo)" />
-                                    <polygon points="80,180 82.6,160 137.4,160 140,180" fill="#153244" />
+                                    <!-- Línea de tierra/base minimalista -->
+                                    <line x1="55" y1="185" x2="165" y2="185" stroke="var(--color-azul-noche)" stroke-width="1.5" stroke-linecap="round" />
                                     
-                                    <!-- Ventanas de control -->
-                                    <rect x="106" y="100" width="8" height="12" rx="4" fill="#0B161D" />
-                                    <rect x="106" y="134" width="8" height="12" rx="4" fill="#0B161D" />
+                                    <!-- Torre cónica estilizada lineal -->
+                                    <path d="M 82 185 L 98 80 L 122 80 L 138 185 Z" fill="none" stroke="var(--color-azul-noche)" stroke-width="1.5" stroke-linejoin="round" />
+                                    
+                                    <!-- Franja central de acento (Rojo Ladrillo) -->
+                                    <path d="M 90.5 130 L 129.5 130 L 126 95 L 94 95 Z" fill="var(--color-rojo-ladrillo)" />
+                                    
+                                    <!-- Líneas horizontales de acento -->
+                                    <line x1="89" y1="130" x2="131" y2="130" stroke="var(--color-azul-noche)" stroke-width="1.5" />
+                                    <line x1="94" y1="95" x2="126" y2="95" stroke="var(--color-azul-noche)" stroke-width="1.5" />
                                     
                                     <!-- Balcón del faro -->
-                                    <rect x="88" y="85" width="44" height="5" rx="2" fill="#153244" />
+                                    <line x1="92" y1="80" x2="128" y2="80" stroke="var(--color-azul-noche)" stroke-width="3" stroke-linecap="round" />
                                     
-                                    <!-- Linterna de cristal (Faro) -->
-                                    <rect x="94" y="65" width="32" height="20" fill="none" stroke="#153244" stroke-width="2.5" />
-                                    <line x1="102" y1="65" x2="102" y2="85" stroke="#153244" stroke-width="1.5" />
-                                    <line x1="110" y1="65" x2="110" y2="85" stroke="#153244" stroke-width="1.5" />
-                                    <line x1="118" y1="65" x2="118" y2="85" stroke="#153244" stroke-width="1.5" />
+                                    <!-- Estructura de la linterna de trazo puro -->
+                                    <line x1="101" y1="80" x2="101" y2="60" stroke="var(--color-azul-noche)" stroke-width="1.5" />
+                                    <line x1="110" y1="80" x2="110" y2="60" stroke="var(--color-azul-noche)" stroke-width="1" />
+                                    <line x1="119" y1="80" x2="119" y2="60" stroke="var(--color-azul-noche)" stroke-width="1.5" />
                                     
-                                    <!-- Cúpula superior del faro -->
-                                    <path d="M 94 65 Q 110 46 126 65 Z" fill="#153244" />
-                                    <line x1="110" y1="46" x2="110" y2="38" stroke="#153244" stroke-width="2" />
-                                    <circle cx="110" cy="38" r="2.5" fill="var(--color-ba-cyan)" />
-
-                                    <!-- Foco emisor y resplandor interior -->
-                                    <circle cx="110" cy="75" r="18" fill="var(--color-ba-cyan)" opacity="0.4" style="filter: blur(4px);" />
-                                    <circle cx="110" cy="75" r="5" fill="#FFFFFF" />
+                                    <!-- Cúpula superior arqueada -->
+                                    <path d="M 97 60 Q 110 44 123 60 Z" fill="var(--color-azul-noche)" />
+                                    <line x1="110" y1="44" x2="110" y2="35" stroke="var(--color-azul-noche)" stroke-width="1.5" stroke-linecap="round" />
+                                    <circle cx="110" cy="35" r="1.5" fill="var(--color-rojo-ladrillo)" />
+                                    
+                                    <!-- Foco emisor de luz central -->
+                                    <circle cx="110" cy="68" r="3.5" fill="var(--color-rojo-ladrillo)" />
                                 </svg>
                             </div>
-                            <!-- Hojas de la puerta del umbral interactiva -->
+                            <!-- Paneles de la puerta de marfil interactiva -->
                             <div class="door-panel left-door">
                                 <div class="door-handle"></div>
                             </div>
@@ -106,18 +95,18 @@
                                 <div class="door-handle"></div>
                             </div>
                         </div>
-                        <!-- Haz de luz externo gigante que barre la portada -->
+                        <!-- Haz de luz externo barrido interactivo -->
                         <div class="external-light-beam"></div>
                     </div>
                 </div>
 
-                <div class="hero-right-column" style="padding-left: 2rem;">
+                <div class="hero-right-column">
                     <p class="magazine-kicker">PUBLICACIÓN INSTITUCIONAL DIGITAL</p>
-                    <h1 class="magazine-title massive-title" style="margin-bottom: 1.5rem; letter-spacing: -2.5px;">
+                    <h1 class="magazine-title massive-title">
                         Evidencia <span class="highlight">Penal</span>
                     </h1>
                     <p class="magazine-subtitle abstract-subtitle">
-                        Investigación aplicada y datos empíricos para la construcción del nuevo Servicio Penitenciario y de Reintegración Social de la Ciudad Autónoma de Buenos Aires.
+                        Investigación aplicada y datos empíricos para el nuevo Servicio Penitenciario y de Reintegración Social de la Ciudad Autónoma de Buenos Aires.
                     </p>
                 </div>
             </div>
@@ -128,102 +117,81 @@
         </section>
 
         <!-- 2. Ejes Temáticos (Bento Grid Asimétrico - Sección 2) -->
-        <section id="secciones" style="max-width: 1200px; margin: 0 auto 8rem; padding: 0 2rem; scroll-margin-top: 100px;">
-            <div style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 2rem; margin-bottom: 4rem;">
-                <span class="mono-tag" style="color: var(--color-gris-medio);">[ CAPAS DE CONOCIMIENTO ]</span>
-                <h2 style="font-family: var(--font-academica); font-size: 2.5rem; color: var(--color-gris-oscuro); margin-top: 1rem;">
-                    Estructura del Saber Penitenciario
-                </h2>
-                <p style="color: var(--color-gris-medio); font-size: 1.2rem; font-weight: 300; margin-top: 0.5rem;">
-                    Cada sección es un estrato documental para el análisis empírico y la toma de decisiones.
-                </p>
+        <!-- 2. Ejes Temáticos (Diseño Editorial Columnar - Sección 2) -->
+        <section id="secciones" class="ejes-seccion">
+            <div class="ejes-header">
+                <span class="mono-tag">[ EJES DOCUMENTALES ]</span>
+                <h2>Estructura del Saber Penitenciario</h2>
+                <p>Estratificación del análisis empírico y metodologías aplicadas a la gestión pública.</p>
             </div>
             
-            <div class="expediente-grid">
-                <!-- Eje 1 - Tarjeta Bento Ancha -->
-                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc1')" class="expediente-folder card-destacada">
-                    <div>
-                        <div class="expediente-header">
-                            <span class="expediente-id">[EXP-GESTION-6923]</span>
-                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">Explorar Eje &rarr;</span>
-                        </div>
-                        <h3 style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
-                            Doctrina y Gestión
-                        </h3>
-                        <p style="color: var(--color-gris-medio); font-size: 1.05rem; line-height: 1.8; font-weight: 300;">
-                            Modelos econométricos, marcos organizativos e infraestructura para la prevención del delito situacional en el Servicio Penitenciario de CABA.
-                        </p>
+            <div class="ejes-grid">
+                <!-- Eje 1 -->
+                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc1')" class="eje-columna">
+                    <div class="eje-meta">
+                        <span class="eje-numero">01</span>
+                        <span class="eje-id">[EXP-GESTION-6923]</span>
                     </div>
-                    <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gris-medio);">
-                        <span>Registros Activos</span>
-                        <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Vol. I - Eje Principal</span>
-                    </div>
+                    <h3>Doctrina y Gestión</h3>
+                    <p>Modelos organizativos, infraestructura y prevención situacional en el Servicio Penitenciario de la Ciudad.</p>
+                    <span class="eje-enlace">Explorar Publicación &rarr;</span>
                 </a>
 
                 <!-- Eje 2 -->
-                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc2')" class="expediente-folder">
-                    <div>
-                        <div class="expediente-header">
-                            <span class="expediente-id">[EXP-CRIM-APLICADA]</span>
-                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">&rarr;</span>
-                        </div>
-                        <h3 style="font-family: var(--font-academica); font-size: 1.5rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
-                            Investigación Aplicada
-                        </h3>
-                        <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.7; font-weight: 300;">
-                            Estudios empíricos y análisis de sesgos en algoritmos analíticos predictivos para la toma de decisiones judiciales.
-                        </p>
+                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc2')" class="eje-columna">
+                    <div class="eje-meta">
+                        <span class="eje-numero">02</span>
+                        <span class="eje-id">[EXP-CRIM-APLICADA]</span>
                     </div>
-                    <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gris-medio);">
-                        <span>Datos de Campo</span>
-                        <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Trazable</span>
-                    </div>
+                    <h3>Investigación Aplicada</h3>
+                    <p>Estudios empíricos y auditoría de sesgos en algoritmos analíticos para la toma de decisiones judiciales.</p>
+                    <span class="eje-enlace">Explorar Publicación &rarr;</span>
                 </a>
 
                 <!-- Eje 3 -->
-                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc3')" class="expediente-folder">
-                    <div>
-                        <div class="expediente-header">
-                            <span class="expediente-id">[EXP-INTEGRACION-RS]</span>
-                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">&rarr;</span>
-                        </div>
-                        <h3 style="font-family: var(--font-academica); font-size: 1.5rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
-                            Reintegración Social
-                        </h3>
-                        <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.7; font-weight: 300;">
-                            Arquitectura modular pedagógica y programas de reinserción tecnológica activa aplicados al egreso penitenciario.
-                        </p>
+                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc3')" class="eje-columna">
+                    <div class="eje-meta">
+                        <span class="eje-numero">03</span>
+                        <span class="eje-id">[EXP-INTEGRACION-RS]</span>
                     </div>
-                    <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gris-medio);">
-                        <span>Políticas Públicas</span>
-                        <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Impacto Digital</span>
-                    </div>
+                    <h3>Reintegración Social</h3>
+                    <p>Arquitectura pedagógica y programas de reinserción tecnológica activa aplicados al egreso penal.</p>
+                    <span class="eje-enlace">Explorar Publicación &rarr;</span>
                 </a>
             </div>
         </section>
 
-        <!-- 3. Tablero de Lectura (TOC + Visor Unificado - Sección 3) -->
+        <!-- 3. Tablero de Lectura (Índice Lineal + Visor Editorial - Sección 3) -->
         <section class="tablero-seccion" id="visor-seccion">
             <div class="tablero-grid">
-                <!-- Columna Izquierda: Índice Interactivo (TOC) -->
+                <!-- Columna Izquierda: Índice Tipográfico Limpio (TOC) -->
                 <aside class="tablero-sidebar">
-                    <span class="mono-tag" style="color: var(--color-rojo-ladrillo); display: block; margin-bottom: 0.5rem;">[ EDICIÓN ACTIVA ]</span>
-                    <h2 style="font-family: var(--font-academica); font-size: 2rem; color: var(--color-azul-noche); margin-bottom: 2.5rem; font-weight: 700;">Publicaciones</h2>
+                    <span class="mono-tag">[ EDICIÓN ACTIVA ]</span>
+                    <h2>Publicaciones</h2>
                     
                     <div class="toc-interactive-list">
-                        <div class="toc-card active" id="toc-doc1" onclick="cargarArticuloDesdeEnlace('doc1')">
-                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-rojo-ladrillo); font-weight: bold; display: block; margin-bottom: 0.3rem;">EJE 01 • PREVENCIÓN</span>
-                            <h4 style="font-family: var(--font-academica); font-size: 1.15rem; color: var(--color-azul-noche); font-weight: 700; margin: 0; line-height: 1.3;">Prevención Espacial Urbana</h4>
+                        <div class="toc-item active" id="toc-doc1" onclick="cargarArticuloDesdeEnlace('doc1')">
+                            <span class="toc-number">01</span>
+                            <div class="toc-meta">
+                                <span class="toc-eje">Doctrina y Gestión</span>
+                                <h4 class="toc-title">Prevención Espacial Urbana</h4>
+                            </div>
                         </div>
                         
-                        <div class="toc-card" id="toc-doc2" onclick="cargarArticuloDesdeEnlace('doc2')">
-                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gris-medio); font-weight: bold; display: block; margin-bottom: 0.3rem;">EJE 02 • ALGORITMOS</span>
-                            <h4 style="font-family: var(--font-academica); font-size: 1.15rem; color: var(--color-azul-noche); font-weight: 700; margin: 0; line-height: 1.3;">Algoritmos y Sesgos</h4>
+                        <div class="toc-item" id="toc-doc2" onclick="cargarArticuloDesdeEnlace('doc2')">
+                            <span class="toc-number">02</span>
+                            <div class="toc-meta">
+                                <span class="toc-eje">Investigación Aplicada</span>
+                                <h4 class="toc-title">Algoritmos y Sesgos</h4>
+                            </div>
                         </div>
 
-                        <div class="toc-card" id="toc-doc3" onclick="cargarArticuloDesdeEnlace('doc3')">
-                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gris-medio); font-weight: bold; display: block; margin-bottom: 0.3rem;">EJE 03 • TECNOLOGÍA</span>
-                            <h4 style="font-family: var(--font-academica); font-size: 1.15rem; color: var(--color-azul-noche); font-weight: 700; margin: 0; line-height: 1.3;">Reinserción Digital</h4>
+                        <div class="toc-item" id="toc-doc3" onclick="cargarArticuloDesdeEnlace('doc3')">
+                            <span class="toc-number">03</span>
+                            <div class="toc-meta">
+                                <span class="toc-eje">Reintegración Social</span>
+                                <h4 class="toc-title">Reinserción Digital</h4>
+                            </div>
                         </div>
                     </div>
                 </aside>
@@ -231,25 +199,23 @@
                 <!-- Columna Derecha: Visor de Artículos -->
                 <div class="tablero-content">
                     <article class="article-layout" id="articulo-visor">
-                        <header class="gcba-interactive-card">
-                            <div class="header-content-article" style="position: relative; z-index: 2;">
-                                <span class="gcba-data-label" id="dyn-category-badge" style="display: inline-block; margin-bottom: 1rem; padding: 0.5rem 1.5rem; border: 1px solid var(--color-ba-cyan); border-radius: var(--radius-interactive); color: var(--color-ba-cyan); font-weight: bold;">Doctrina y Gestión</span>
-                                <h2 class="gcba-glowing-title" id="dyn-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 1.5rem 0; line-height: 1.25;">Cargando publicación...</h2>
-                                <div style="width: 60px; height: 3px; background-color: var(--color-ba-cyan); margin: 2rem 0 1.5rem 0;"></div>
-                                <div class="article-authors" id="dyn-author" style="font-family: var(--font-institucional); color: rgba(255,255,255,0.75); font-size: 1rem; letter-spacing: 0.5px;">Subsecretaría de Política Criminal</div>
-                            </div>
+                        <header class="articulo-header">
+                            <span class="articulo-badge" id="dyn-category-badge">Doctrina y Gestión</span>
+                            <h2 class="articulo-title" id="dyn-title">Cargando publicación...</h2>
+                            <div class="articulo-divider"></div>
+                            <div class="articulo-meta" id="dyn-author">Subsecretaría de Política Criminal</div>
                         </header>
 
                         <div class="article-grid">
                             <div class="article-content">
                                 <div class="abstract-box">
-                                    <h3>Resumen</h3>
+                                    <h3 class="abstract-title">Resumen</h3>
                                     <p id="dyn-abstract">Obteniendo datos de la publicación...</p>
                                     <div class="keywords" id="dyn-keywords"></div>
                                 </div>
                                 
                                 <div class="body-text" id="dyn-body">
-                                    <!-- Inyectado vía js -->
+                                    <!-- Inyectado dinámicamente -->
                                 </div>
                             </div>
 
@@ -268,109 +234,100 @@
             </div>
         </section>
 
-        <!-- Tablero de Métricas (Sección de Soporte) -->
-        <section style="padding: 0 2rem; margin-bottom: 8rem;">
-            <div class="dashboard-control">
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <span class="mono-tag" style="color: var(--color-ba-cyan);">[ TRAZABILIDAD Y MÉTRICAS DE MARCA ]</span>
-                    <h2 style="font-family: var(--font-academica); font-size: 2.2rem; margin: 1.5rem 0; font-weight: 400; line-height: 1.3;">
-                        Materia Bruta &rarr; Análisis &rarr; Decisión Pública
-                    </h2>
-                    <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.15rem; line-height: 1.8; font-weight: 300;">
-                        No especulamos, registramos. Medimos la circulación y el impacto del conocimiento científico para asegurar que sirva de insumo real a los actores de la política criminal.
-                    </p>
+        <!-- Tablero de Métricas (Fila Tipográfica Unificada) -->
+        <section class="metricas-seccion">
+            <div class="metricas-container">
+                <div class="metricas-header">
+                    <span class="mono-tag">[ IMPACTO CIENTÍFICO ]</span>
+                    <h2>Trazabilidad de la Información</h2>
+                    <p>Circulación e impacto del conocimiento empírico en la política criminal local.</p>
                 </div>
                 
-                <div class="dashboard-grid">
-                    <div class="metric-card">
+                <div class="metricas-grid">
+                    <div class="metric-columna">
                         <div class="metric-value">1.240+</div>
                         <div class="metric-label">Descargas de Documentos</div>
                     </div>
-                    <div class="metric-card">
+                    <div class="metric-columna">
                         <div class="metric-value">4.850+</div>
                         <div class="metric-label">Lectores Calificados</div>
                     </div>
-                    <div class="metric-card">
+                    <div class="metric-columna">
                         <div class="metric-value">32</div>
                         <div class="metric-label">Artículos Recibidos</div>
                     </div>
-                    <div class="metric-card">
+                    <div class="metric-columna">
                         <div class="metric-value">100%</div>
                         <div class="metric-label">Acceso Abierto (CC BY)</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Institución y Convocatoria Unificadas (Sección 4) -->
-        <section id="sobre-nosotros" class="institucion-seccion" style="scroll-margin-top: 100px;">
+                   <!-- 4. Institución y Convocatoria Unificadas (Sección 4) -->
+        <section id="sobre-nosotros" class="institucion-seccion">
             <div class="institucion-grid">
                 <!-- Columna Izquierda: Institucional -->
-                <div>
-                    <span class="mono-tag" style="color: var(--color-rojo-ladrillo); font-weight: 800; display: block; margin-bottom: 1rem;">Misión Institucional</span>
-                    <h2 style="font-family: var(--font-academica); font-size: 2.2rem; color: var(--color-gris-oscuro); margin-bottom: 2rem; font-weight: 700; line-height: 1.3;">Política Criminal Basada en Datos</h2>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--color-gris-oscuro);">
+                <div class="institucion-col">
+                    <span class="mono-tag">[ MISIÓN INSTITUCIONAL ]</span>
+                    <h2>Política Criminal Basada en Datos</h2>
+                    <p class="institucion-text">
                         <strong>Evidencia Penal</strong> es la publicación oficial de la Subsecretaría de Política Criminal y Asuntos Penitenciarios del Ministerio de Seguridad de la Ciudad Autónoma de Buenos Aires. Establecemos un puente riguroso entre el conocimiento científico-académico y la gestión pública operativa.
                     </p>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 3.5rem; color: var(--color-gris-oscuro);">
-                        En el marco del nuevo Servicio Penitenciario de CABA, es imperativo contar con un espacio de reflexión, análisis normativo y divulgación de resultados empíricos que guíen los programas de tratamiento y estrategias de reinserción.
+                    <p class="institucion-text">
+                        En el marco del nuevo Servicio Penitenciario de la Ciudad, es imperativo contar con un espacio de reflexión, análisis normativo y divulgación de resultados empíricos que guíen los programas de tratamiento y estrategias de reinserción.
                     </p>
 
-                    <h3 style="font-family: var(--font-institucional); font-size: 1.3rem; font-weight: 800; margin-bottom: 1.5rem; color: var(--color-negro);">Comité Editorial</h3>
+                    <h3 class="comite-title">Comité Editorial</h3>
                     <div class="comite-grid">
-                        <div class="comite-card">
-                            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem; color: var(--color-gris-oscuro); font-weight: 700;">Dirección General</h4>
-                            <p style="font-size: 0.85rem; color: var(--color-gris-medio); margin-bottom: 0;">Subsecretaría de Política Criminal y Asuntos Penitenciarios</p>
+                        <div class="comite-info">
+                            <h4>Dirección General</h4>
+                            <p>Subsecretaría de Política Criminal y Asuntos Penitenciarios</p>
                         </div>
-                        <div class="comite-card">
-                            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem; color: var(--color-gris-oscuro); font-weight: 700;">Coordinación</h4>
-                            <p style="font-size: 0.85rem; color: var(--color-gris-medio); margin-bottom: 0;">Gerencia de Investigación y Datos Penitenciarios</p>
+                        <div class="comite-info">
+                            <h4>Coordinación</h4>
+                            <p>Gerencia de Investigación y Datos Penitenciarios</p>
                         </div>
-                        <div class="comite-card">
-                            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem; color: var(--color-gris-oscuro); font-weight: 700;">Asesoría Legal</h4>
-                            <p style="font-size: 0.85rem; color: var(--color-gris-medio); margin-bottom: 0;">Dirección General de Asuntos Jurídicos y Normativa</p>
+                        <div class="comite-info">
+                            <h4>Asesoría Legal</h4>
+                            <p>Dirección General de Asuntos Jurídicos y Normativa</p>
                         </div>
-                        <div class="comite-card">
-                            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem; color: var(--color-gris-oscuro); font-weight: 700;">Innovación</h4>
-                            <p style="font-size: 0.85rem; color: var(--color-gris-medio); margin-bottom: 0;">Área de Sistemas Biométricos y Seguridad Integral</p>
+                        <div class="comite-info">
+                            <h4>Innovación</h4>
+                            <p>Área de Sistemas Biométricos y Seguridad Integral</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Columna Derecha: Convocatoria (Call for Papers) -->
-                <div class="convocatoria-card">
-                    <span class="mono-tag" style="color: var(--color-rojo-ladrillo); font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">Call for Papers</span>
-                    <h2 style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-gris-oscuro); margin: 1.5rem 0 2.5rem; font-weight: 700; line-height: 1.35;">Envío de Artículos - Vol. 2</h2>
+                <!-- Columna Derecha: Convocatoria (Call for Papers sin caja oscura) -->
+                <div class="convocatoria-col">
+                    <span class="mono-tag">[ CONVOCATORIA ABIERTA ]</span>
+                    <h2>Recepción de Artículos - Vol. 2</h2>
                     
-                    <div style="display: flex; flex-direction: column; gap: 2rem;">
-                        <div style="display: flex; gap: 1.5rem;">
-                            <div style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-rojo-ladrillo); font-weight: 800; line-height: 1;">01</div>
-                            <div>
-                                <h4 style="font-family: var(--font-institucional); font-size: 1.1rem; color: var(--color-gris-oscuro); margin-bottom: 0.3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">Eje Temático</h4>
-                                <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.6; margin: 0;">Artículos inéditos de política criminal, criminología empírica o gestión penitenciaria orientados a datos locales.</p>
+                    <div class="convocatoria-requisitos">
+                        <div class="requisito-item">
+                            <div class="requisito-numero">01</div>
+                            <div class="requisito-texto">
+                                <h4>Ejes Temáticos</h4>
+                                <p>Artículos inéditos de política criminal, criminología empírica o gestión penitenciaria orientados a datos locales.</p>
                             </div>
                         </div>
 
-                        <div style="display: flex; gap: 1.5rem;">
-                            <div style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-rojo-ladrillo); font-weight: 800; line-height: 1;">02</div>
-                            <div>
-                                <h4 style="font-family: var(--font-institucional); font-size: 1.1rem; color: var(--color-gris-oscuro); margin-bottom: 0.3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">Normas APA 7</h4>
-                                <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.6; margin: 0;">Extensión de 15 a 20 páginas (.docx), con referencias y citas estructuradas en estricto formato APA 7ma edición.</p>
+                        <div class="requisito-item">
+                            <div class="requisito-numero">02</div>
+                            <div class="requisito-texto">
+                                <h4>Normas APA 7</h4>
+                                <p>Extensión de 15 a 20 páginas (.docx), con referencias y citas estructuradas en estricto formato APA 7ma edición.</p>
                             </div>
                         </div>
 
-                        <div style="display: flex; gap: 1.5rem;">
-                            <div style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-rojo-ladrillo); font-weight: 800; line-height: 1;">03</div>
-                            <div>
-                                <h4 style="font-family: var(--font-institucional); font-size: 1.1rem; color: var(--color-gris-oscuro); margin-bottom: 0.3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">Pares Ciegos</h4>
-                                <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.6; margin: 0;">Evaluación mediante sistema de revisión por pares doble ciego para garantizar el rigor y el anonimato académico.</p>
+                        <div class="requisito-item">
+                            <div class="requisito-numero">03</div>
+                            <div class="requisito-texto">
+                                <h4>Pares Ciegos</h4>
+                                <p>Evaluación mediante sistema de revisión por pares doble ciego para garantizar el rigor y el anonimato académico.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div style="margin-top: 3.5rem; text-align: center; border-top: 1px solid var(--color-arena); padding-top: 2rem;">
-                        <p style="font-size: 0.95rem; color: var(--color-gris-oscuro); margin-bottom: 1.5rem; font-weight: 600;">Recepción del Volumen 2 abierta hasta el 30 de Agosto de 2026.</p>
-                        <a href="mailto:convocatorias@evidenciapenal.gob.ar?subject=Envio de Articulo - Evidencia Penal" class="btn-primary" style="width: 100%;">Enviar Manuscrito &rarr;</a>
+                    <div class="convocatoria-cta">
+                        <p>Recepción del Volumen 2 abierta hasta el 30 de Agosto de 2026.</p>
+                        <a href="mailto:convocatorias@evidenciapenal.gob.ar?subject=Envio de Articulo - Evidencia Penal" class="btn-primary">Enviar Manuscrito &rarr;</a>
                     </div>
                 </div>
             </div>
