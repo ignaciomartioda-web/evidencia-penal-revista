@@ -6,11 +6,9 @@
     <meta name="description" content="Evidencia Penal - Revista Digital de Política Criminal y Asuntos Penitenciarios del Gobierno de la Ciudad Autónoma de Buenos Aires.">
     <title>Evidencia Penal | CABA</title>
     <link rel="icon" type="image/svg+xml" href="img/logo-ba.svg">
-    <!-- Tipografías: Nunito (institucional), Merriweather (académica), Share Tech Mono (materia prima/datos) -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Tipografías Unificadas: Inter (institucional), Playfair Display (académica), Share Tech Mono (materia prima/datos) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- MongoDB Realm SDK -->
-    <script src="https://unpkg.com/realm-web@1.7.0/dist/bundle.iife.js"></script>
 </head>
 <body>
     <!-- Cabecera Institucional -->
@@ -24,7 +22,7 @@
                 </div>
             </div>
             <div class="magazine-meta">
-                <span style="font-family: 'Share Tech Mono', monospace; font-size: 0.8rem; letter-spacing: 2px; color: var(--color-ba-amarillo);">REG.LEY-6923.6924</span>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 2px; color: var(--color-rojo-ladrillo);">REG.LEY-6923.6924</span>
                 <span style="display:block; font-size:0.75rem;">Vol. 1, No. 1 • 2026</span>
             </div>
         </div>
@@ -40,9 +38,8 @@
         </div>
     </nav>
 
-    <!-- Estilos Adicionales del Partido Conceptual (La Evidencia como Luz, El Expediente, El Umbral) -->
+    <!-- Estilos de la Portada - Integrados en CSS unificado o localizados para el Widget Faro -->
     <style>
-        /* Visualización de la Puerta y el Faro Abstracto en el Lateral */
         .hero-grid-container {
             display: grid;
             grid-template-columns: 1fr 2.2fr;
@@ -86,10 +83,10 @@
             width: 220px;
             height: 220px;
             overflow: hidden;
-            border: 2px solid rgba(141, 226, 214, 0.45); /* Cyan border */
+            border: 2px solid rgba(141, 226, 214, 0.45);
             border-radius: 50%;
             background-color: #04060A;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7), 0 0 25px rgba(141, 226, 214, 0.2); /* Cyan glow shadow */
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7), 0 0 25px rgba(141, 226, 214, 0.2);
             z-index: 10;
         }
 
@@ -115,18 +112,17 @@
             to { opacity: 1; transform: scale(1); }
         }
 
-        /* Haz de luz externo gigante que sale directamente de la bombilla del faro */
         .external-light-beam {
             position: absolute;
-            top: calc(75px - 200px); /* Lamp is at cy=75px. Height is 400px, so half height is 200px. Aligns the vertical center exactly with the lamp. */
+            top: calc(75px - 200px);
             left: 50%;
             width: 1100px;
             height: 400px;
             background: radial-gradient(circle at 0% 50%, rgba(141, 226, 214, 0.5) 0%, rgba(141, 226, 214, 0.03) 65%, transparent 80%);
             clip-path: polygon(0 48%, 100% 12%, 100% 88%, 0 52%);
             transform-origin: 0% 50%;
-            transform: rotate(0deg); /* Points rightwards on desktop to sweep across the text column */
-            z-index: 15; /* Projects in front of the lighthouse frame and across the screen */
+            transform: rotate(0deg);
+            z-index: 15;
             mix-blend-mode: screen;
             pointer-events: none;
             opacity: 0;
@@ -142,7 +138,6 @@
             100% { transform: rotate(25deg) scaleY(1.1); }
         }
 
-        /* Puertas Batientes (Giran sobre bisagras de lado en 3D en lugar de deslizarse) */
         .door-panel {
             position: absolute;
             top: 0;
@@ -203,7 +198,6 @@
                 text-align: center;
             }
             .external-light-beam {
-                /* Redireccionar haz hacia abajo en tablets/móviles con barrido más estrecho */
                 top: calc(75px - 200px);
                 left: 50%;
                 transform-origin: 0% 50%;
@@ -216,11 +210,11 @@
             100% { transform: rotate(105deg) scaleY(1.05); }
         }
 
-        /* Umbral Transición (Encierro a Reintegración) */
+        /* Umbral Transición */
         .umbral-banner {
             max-width: 1400px;
             margin: 0 auto;
-            border-radius: 12px;
+            border-radius: var(--radius-container);
             background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%);
             border: 1px solid rgba(255, 255, 255, 0.05);
             padding: 4rem;
@@ -243,36 +237,29 @@
         }
 
         .mono-tag {
-            font-family: 'Share Tech Mono', monospace;
+            font-family: var(--font-mono);
             font-size: 0.85rem;
-            color: var(--color-ba-amarillo);
+            color: var(--color-ba-cyan);
             letter-spacing: 2px;
             text-transform: uppercase;
         }
 
-        .umbral-banner .mono-tag,
-        .dashboard-control .mono-tag,
-        .process-banner .mono-tag,
-        .gcba-interactive-card .mono-tag {
-            color: var(--color-ba-cyan);
-        }
-
-        /* El Expediente como Capa de Conocimiento */
+        /* Estructura del Archivo como Bento Grid Asimétrico (DESIGN_VARIANCE: 6) */
         .expediente-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: 1fr 1fr; /* Grid asimétrico */
             gap: 2.5rem;
             margin-top: 3rem;
         }
         
         .expediente-folder {
             background-color: #FFFFFF;
-            border: 1px solid rgba(0,0,0,0.08);
-            border-top: 4px solid var(--color-gris-oscuro);
+            border: 1px solid var(--color-arena);
+            border-top: 4px solid var(--color-azul-noche);
             padding: 3rem 2.5rem;
-            border-radius: 4px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-            transition: var(--transition-revelacion);
+            border-radius: var(--radius-container);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: flex;
@@ -282,24 +269,17 @@
             overflow: hidden;
         }
 
-        .expediente-folder::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-color: rgba(141, 226, 214, 0.04);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            pointer-events: none;
-        }
-
         .expediente-folder:hover {
-            transform: translateY(-8px);
-            border-top-color: var(--color-ba-amarillo);
-            box-shadow: 0 16px 36px rgba(0,0,0,0.06);
+            transform: translateY(-6px);
+            border-top-color: var(--color-rojo-ladrillo);
+            border-left-color: var(--color-arena);
+            border-right-color: var(--color-arena);
+            box-shadow: var(--shadow-md);
         }
 
-        .expediente-folder:hover::before {
-            opacity: 1;
+        .expediente-folder.card-destacada {
+            grid-column: span 2; /* Ocupa todo el ancho superior */
+            border-top: 4px solid var(--color-rojo-ladrillo);
         }
 
         .expediente-header {
@@ -312,17 +292,17 @@
         }
 
         .expediente-id {
-            font-family: 'Share Tech Mono', monospace;
+            font-family: var(--font-mono);
             font-size: 0.9rem;
             color: var(--color-gris-medio);
         }
 
-        /* El Dato como Materia Prima (Tablero de Control) */
+        /* Tablero de Control de Datos */
         .dashboard-control {
             background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%);
             color: #FFFFFF;
             padding: 5rem 4rem;
-            border-radius: 12px;
+            border-radius: var(--radius-container);
             max-width: 1400px;
             margin: 0 auto 6rem;
             border: 1px solid rgba(255,255,255,0.05);
@@ -339,15 +319,15 @@
         .metric-card {
             border-left: 2px solid rgba(255,255,255,0.1);
             padding-left: 1.5rem;
-            transition: all 0.3s ease;
+            transition: border-color 0.3s ease;
         }
 
         .metric-card:hover {
-            border-left-color: var(--color-ba-amarillo);
+            border-left-color: var(--color-ba-cyan);
         }
 
         .metric-value {
-            font-family: 'Share Tech Mono', monospace;
+            font-family: var(--font-mono);
             font-size: 2.5rem;
             color: #FFFFFF;
             font-weight: bold;
@@ -367,6 +347,8 @@
             .umbral-banner { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem; }
             .dashboard-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
             .dashboard-control { padding: 3rem 2rem; }
+            .expediente-grid { grid-template-columns: 1fr; }
+            .expediente-folder.card-destacada { grid-column: span 1; }
         }
 
         @media (max-width: 576px) {
@@ -374,13 +356,12 @@
         }
     </style>
 
-    <!-- Revista Principal -->
+    <!-- Contenido Principal -->
     <main class="magazine-container">
 
-        <!-- 1. Hero Cover (La Evidencia como Faro / Luz en la Oscuridad) -->
+        <!-- 1. Hero Monolith (La Evidencia como Faro / Luz en la Oscuridad) -->
         <section class="hero-section hero-monolith">
-
-            <div class="fluid-engine" style="opacity: 0.4;">
+            <div class="fluid-engine" style="opacity: 0.35;">
                 <div class="fluid-mercury fluid-1"></div>
                 <div class="fluid-mercury fluid-2"></div>
                 <div class="fluid-electric"></div>
@@ -388,55 +369,40 @@
             
             <div class="hero-grid-container" style="z-index: 10;">
                 <div class="hero-left-column">
-                    <!-- Contenedor del widget para centrar y alinear el haz de luz -->
                     <div class="lighthouse-widget-wrapper">
-                        <!-- Ilustración Interactiva: Puerta que se abre revelando el Faro -->
+                        <!-- Puerta y Faro Abstracto -->
                         <div class="door-faro-container">
                             <div class="lighthouse-scene">
                                 <svg class="svg-lighthouse" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Estrellas minimalistas de fondo -->
                                     <circle cx="45" cy="50" r="1.5" fill="#FFFFFF" opacity="0.4" />
                                     <circle cx="175" cy="65" r="1.5" fill="#FFFFFF" opacity="0.5" />
                                     <circle cx="80" cy="35" r="2" fill="#FFFFFF" opacity="0.3" />
                                     <circle cx="140" cy="45" r="1.5" fill="#FFFFFF" opacity="0.6" />
                                     
-                                    <!-- Terreno/Rocas minimalistas y base -->
                                     <path d="M 10 180 Q 110 165 210 180 L 210 220 L 10 220 Z" fill="#0E131F" />
                                     <path d="M 65 180 L 155 180 L 165 172 L 55 172 Z" fill="#1A202C" />
 
-                                    <!-- Cuerpo del faro (Diseño minimalista pero claro y de proporciones correctas) -->
                                     <polygon points="80,180 92,90 128,90 140,180" fill="#FFFFFF" />
-                                    
-                                    <!-- Banda amarilla institucional de la Ciudad -->
-                                    <polygon points="82.6,160 86.6,120 133.4,120 137.4,160" fill="var(--color-ba-amarillo)" />
-                                    
-                                    <!-- Banda oscura inferior para contraste y cimiento -->
+                                    <polygon points="82.6,160 86.6,120 133.4,120 137.4,160" fill="var(--color-rojo-ladrillo)" />
                                     <polygon points="80,180 82.6,160 137.4,160 140,180" fill="#1A1F26" />
                                     
-                                    <!-- Ventanas de control del faro -->
                                     <rect x="106" y="100" width="8" height="12" rx="4" fill="#04060A" />
                                     <rect x="106" y="134" width="8" height="12" rx="4" fill="#04060A" />
                                     
-                                    <!-- Balcón del faro -->
                                     <rect x="88" y="85" width="44" height="5" rx="2" fill="#1A1F26" />
-                                    
-                                    <!-- Linterna o cúpula acristalada -->
                                     <rect x="94" y="65" width="32" height="20" fill="none" stroke="#1A1F26" stroke-width="2" />
                                     <line x1="102" y1="65" x2="102" y2="85" stroke="#1A1F26" stroke-width="1.5" />
                                     <line x1="110" y1="65" x2="110" y2="85" stroke="#1A1F26" stroke-width="1.5" />
                                     <line x1="118" y1="65" x2="118" y2="85" stroke="#1A1F26" stroke-width="1.5" />
                                     
-                                    <!-- Cúpula superior -->
                                     <path d="M 94 65 Q 110 48 126 65 Z" fill="#1A1F26" />
                                     <line x1="110" y1="48" x2="110" y2="40" stroke="#1A1F26" stroke-width="2" />
-                                    <circle cx="110" cy="40" r="2.5" fill="var(--color-ba-amarillo)" />
+                                    <circle cx="110" cy="40" r="2.5" fill="var(--color-ba-cyan)" />
 
-                                    <!-- Luz del faro encendida (resplandor interno localizado en la linterna cy=75) -->
                                     <circle cx="110" cy="75" r="16" fill="var(--color-ba-cyan)" opacity="0.35" style="filter: blur(5px);" />
                                     <circle cx="110" cy="75" r="5" fill="#FFFFFF" />
                                 </svg>
                             </div>
-                            <!-- Hojas de la puerta del umbral (se abren de lado revelando la luz) -->
                             <div class="door-panel left-door">
                                 <div class="door-handle"></div>
                             </div>
@@ -444,17 +410,16 @@
                                 <div class="door-handle"></div>
                             </div>
                         </div>
-                        <!-- Haz de luz externo alineado exactamente con la bombilla (cx=110, cy=75) -->
                         <div class="external-light-beam"></div>
                     </div>
                 </div>
 
                 <div class="hero-right-column">
-                    <p class="magazine-kicker" style="letter-spacing: 4px; font-weight: 800;">PUBLICACIÓN INSTITUCIONAL DIGITAL</p>
+                    <p class="magazine-kicker">PUBLICACIÓN INSTITUCIONAL DIGITAL</p>
                     <h1 class="magazine-title massive-title" style="margin-bottom: 1.5rem;">
                         Evidencia <span class="highlight">Penal</span>
                     </h1>
-                    <p class="magazine-subtitle abstract-subtitle" style="font-weight: 300; max-width: 750px; margin-top: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+                    <p class="magazine-subtitle abstract-subtitle">
                         Investigación aplicada y datos empíricos para la construcción del nuevo Servicio Penitenciario y de Reintegración Social de la Ciudad Autónoma de Buenos Aires.
                     </p>
                 </div>
@@ -465,18 +430,18 @@
             </div>
         </section>
 
-    <!-- 1.1 Proceso Legislativo (Ley 6.923) -->
-    <section class="legislative-process" style="padding: 0 2rem; margin-bottom: 6rem;">
-        <div class="process-banner" style="background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%); border: 1px solid rgba(255,255,255,0.05); padding: 3rem; border-radius: 12px; color: #FFF; text-align: center;">
-            <span class="mono-tag" style="color: var(--color-ba-cyan);">[ PROCESO LEGISLATIVO ]</span>
-            <h2 style="font-family: var(--font-academica); font-size: 2.2rem; margin: 1.5rem 0; line-height: 1.3;">Ley 6.923 – Marco Legal del Sistema Penal de CABA</h2>
-            <p style="font-size: 1.1rem; line-height: 1.7; max-width: 800px; margin: 0 auto;">
-                La Ley 6.923 establece la arquitectura institucional y normativa que sustenta el Servicio Penitenciario y la Reintegración Social de la Ciudad. Este proceso legislativo es el eje central que guía cada una de nuestras secciones de conocimiento, datos y gestión.
-            </p>
-        </div>
-    </section>
+        <!-- 2. Proceso Legislativo (Ley 6.923) -->
+        <section class="legislative-process" style="padding: 0 2rem; margin-bottom: 6rem;">
+            <div class="process-banner" style="background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%); border: 1px solid rgba(255,255,255,0.05); padding: 4.5rem 3rem; border-radius: var(--radius-container); color: #FFF; text-align: center;">
+                <span class="mono-tag">[ PROCESO LEGISLATIVO ]</span>
+                <h2 style="font-family: var(--font-academica); font-size: 2.2rem; margin: 1.5rem 0; line-height: 1.3;">Ley 6.923 - Marco Legal del Sistema Penal de CABA</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85);">
+                    La Ley 6.923 establece la arquitectura institucional y normativa que sustenta el Servicio Penitenciario y la Reintegración Social de la Ciudad. Este proceso legislativo es el eje central que guía cada una de nuestras secciones de conocimiento, datos y gestión.
+                </p>
+            </div>
+        </section>
 
-        <!-- 2. Umbral de Gestión (El cimiento institucional de las Leyes 6.923 y 6.924) -->
+        <!-- 3. Umbral de Gestión (Leyes 6.923 y 6.924) -->
         <section style="padding: 0 2rem; margin-bottom: 8rem;">
             <div class="umbral-banner">
                 <div>
@@ -490,18 +455,18 @@
                 </div>
                 <div style="border-left: 1px solid rgba(255,255,255,0.1); padding-left: 3rem; display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
                     <div>
-                        <h4 style="font-family: var(--font-institucional); font-weight: 700; color: var(--color-ba-cyan); margin-bottom: 0.5rem;">AUTORIDAD INSTITUCIONAL</h4>
+                        <h4 style="font-family: var(--font-institucional); font-weight: 700; color: var(--color-ba-cyan); margin-bottom: 0.5rem; text-transform: uppercase;">Autoridad Institucional</h4>
                         <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.95rem; line-height: 1.6; margin: 0;">Respaldada por el Ministerio de Justicia de la Ciudad, garantizando la trazabilidad científica de los estudios.</p>
                     </div>
                     <div>
-                        <h4 style="font-family: var(--font-institucional); font-weight: 700; color: var(--color-ba-cyan); margin-bottom: 0.5rem;">CONOCIMIENTO APLICADO</h4>
+                        <h4 style="font-family: var(--font-institucional); font-weight: 700; color: var(--color-ba-cyan); margin-bottom: 0.5rem; text-transform: uppercase;">Conocimiento Aplicado</h4>
                         <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.95rem; line-height: 1.6; margin: 0;">Investigaciones y documentos técnicos conectados directamente con la gestión penitenciaria en curso.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. El Archivo como Construcción (Ejes Temáticos organizados como Carpetas de Registro) -->
+        <!-- 4. Ejes Temáticos (Bento Grid Asimétrico - DESIGN_VARIANCE: 6) -->
         <section style="max-width: 1200px; margin: 0 auto 8rem; padding: 0 2rem;">
             <div style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 2rem; margin-bottom: 4rem;">
                 <span class="mono-tag" style="color: var(--color-gris-medio);">[ CAPAS DE CONOCIMIENTO ]</span>
@@ -515,70 +480,70 @@
             
             <div class="expediente-grid">
                 
-                <!-- Carpeta 1 -->
-                <a href="secciones.html" class="expediente-folder">
+                <!-- Carpeta 1 - Tarjeta Destacada Bento -->
+                <a href="notas.html#doc1" class="expediente-folder card-destacada">
                     <div>
                         <div class="expediente-header">
                             <span class="expediente-id">[EXP-GESTION-6923]</span>
-                            <span style="font-size: 1.2rem;">&rarr;</span>
+                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">&rarr;</span>
                         </div>
-                        <h3 style="font-family: var(--font-academica); font-size: 1.6rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
+                        <h3 style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
                             Doctrina y Gestión
                         </h3>
-                        <p style="color: var(--color-gris-medio); font-size: 1rem; line-height: 1.7; font-weight: 300;">
-                            Análisis técnico, marcos normativos y doctrina organizativa orientada a la consolidación del Servicio Penitenciario de CABA.
+                        <p style="color: var(--color-gris-medio); font-size: 1.05rem; line-height: 1.8; font-weight: 300;">
+                            Modelos econométricos, marcos organizativos e infraestructura para la prevención del delito situacional en el Servicio Penitenciario de CABA.
                         </p>
                     </div>
                     <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gris-medio);">
                         <span>Registros Activos</span>
-                        <span style="color: var(--color-ba-amarillo); font-weight: 800;">Vol. I</span>
+                        <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Vol. I - Eje Principal</span>
                     </div>
                 </a>
 
                 <!-- Carpeta 2 -->
-                <a href="secciones.html" class="expediente-folder">
+                <a href="notas.html#doc2" class="expediente-folder">
                     <div>
                         <div class="expediente-header">
                             <span class="expediente-id">[EXP-CRIM-APLICADA]</span>
                             <span style="font-size: 1.2rem;">&rarr;</span>
                         </div>
-                        <h3 style="font-family: var(--font-academica); font-size: 1.6rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
+                        <h3 style="font-family: var(--font-academica); font-size: 1.5rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
                             Investigación Aplicada
                         </h3>
-                        <p style="color: var(--color-gris-medio); font-size: 1rem; line-height: 1.7; font-weight: 300;">
-                            Estudios criminológicos de campo, estadísticas descriptivas y análisis de política criminal basados en evidencia pura y testeada.
+                        <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.7; font-weight: 300;">
+                            Estudios empíricos y análisis de sesgos en algoritmos analíticos predictivos para la toma de decisiones judiciales.
                         </p>
                     </div>
                     <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gris-medio);">
-                        <span>Datos Empíricos</span>
-                        <span style="color: var(--color-ba-amarillo); font-weight: 800;">Trazable</span>
+                        <span>Datos de Campo</span>
+                        <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Trazable</span>
                     </div>
                 </a>
 
                 <!-- Carpeta 3 -->
-                <a href="secciones.html" class="expediente-folder">
+                <a href="notas.html#doc3" class="expediente-folder">
                     <div>
                         <div class="expediente-header">
                             <span class="expediente-id">[EXP-INTEGRACION-RS]</span>
                             <span style="font-size: 1.2rem;">&rarr;</span>
                         </div>
-                        <h3 style="font-family: var(--font-academica); font-size: 1.6rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
+                        <h3 style="font-family: var(--font-academica); font-size: 1.5rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
                             Reintegración Social
                         </h3>
-                        <p style="color: var(--color-gris-medio); font-size: 1rem; line-height: 1.7; font-weight: 300;">
-                            Metodologías de reinserción, medición de reincidencia y evaluación del impacto de los programas del SPyRS de la Ciudad.
+                        <p style="color: var(--color-gris-medio); font-size: 0.95rem; line-height: 1.7; font-weight: 300;">
+                            Arquitectura modular pedagógica y programas de reinserción tecnológica activa aplicados al egreso penitenciario.
                         </p>
                     </div>
                     <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gris-medio);">
                         <span>Políticas Públicas</span>
-                        <span style="color: var(--color-ba-amarillo); font-weight: 800;">Impacto</span>
+                        <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Impacto Digital</span>
                     </div>
                 </a>
 
             </div>
         </section>
 
-        <!-- 4. El Dato como Materia Prima (Tablero de Control e Impacto de Gestión) -->
+        <!-- 5. Tablero de Métricas de Control (Dato como Materia Prima) -->
         <section style="padding: 0 2rem;">
             <div class="dashboard-control">
                 <div style="max-width: 800px; margin: 0 auto; text-align: center;">
@@ -592,32 +557,27 @@
                 </div>
                 
                 <div class="dashboard-grid">
-                    
                     <div class="metric-card">
                         <div class="metric-value">1.240+</div>
-                        <div class="metric-label">Descargas de Documentos Técnicos</div>
+                        <div class="metric-label">Descargas de Documentos</div>
                     </div>
-                    
                     <div class="metric-card">
                         <div class="metric-value">4.850+</div>
-                        <div class="metric-label">Lectores Únicos Calificados</div>
+                        <div class="metric-label">Lectores Calificados</div>
                     </div>
-                    
                     <div class="metric-card">
                         <div class="metric-value">32</div>
-                        <div class="metric-label">Artículos Recibidos para Vol. 2</div>
+                        <div class="metric-label">Artículos Recibidos</div>
                     </div>
-                    
                     <div class="metric-card">
                         <div class="metric-value">100%</div>
-                        <div class="metric-label">Acceso Abierto (Licencia CC BY)</div>
+                        <div class="metric-label">Acceso Abierto (CC BY)</div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- 5. Últimas Publicaciones (El Registro en Formato Índice) -->
+        <!-- 6. Índice de Publicaciones Activas -->
         <section class="editorial-list" style="margin-bottom: 8rem;">
             <div class="editorial-header">
                 <span class="mono-tag" style="color: var(--color-gris-medio);">[ REGISTRO ACADÉMICO V.1 ]</span>
@@ -626,38 +586,37 @@
             
             <div class="editorial-items">
                 <div class="editorial-item">
-                    <div class="item-number" style="font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; color: var(--color-ba-amarillo);">01.</div>
+                    <div class="item-number">01.</div>
                     <div class="item-content">
-                        <span class="toc-section" style="font-family: 'Share Tech Mono', monospace;">DOC-PENAL-6923</span>
-                        <a href="notas.html#doc1" style="text-decoration: none;"><h3 class="toc-title">Avances en la consolidación del Servicio Penitenciario de CABA</h3></a>
+                        <span class="toc-section">DOC-PENAL-6923</span>
+                        <a href="notas.html#doc1" style="text-decoration: none;"><h3 class="toc-title">Economía del delito y prevención espacial urbana</h3></a>
                     </div>
                     <div class="item-action"><a href="notas.html#doc1">Leer Documento &nearr;</a></div>
                 </div>
                 
                 <div class="editorial-item">
-                    <div class="item-number" style="font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; color: var(--color-ba-amarillo);">02.</div>
+                    <div class="item-number">02.</div>
                     <div class="item-content">
-                        <span class="toc-section" style="font-family: 'Share Tech Mono', monospace;">DOSSIER-CIBER</span>
-                        <a href="notas.html#doc2" style="text-decoration: none;"><h3 class="toc-title">Inteligencia Penitenciaria: El fin de la era analógica</h3></a>
+                        <span class="toc-section">ALGO-ETICA-DATA</span>
+                        <a href="notas.html#doc2" style="text-decoration: none;"><h3 class="toc-title">Algoritmos predictivos y sesgos penitenciarios</h3></a>
                     </div>
                     <div class="item-action"><a href="notas.html#doc2">Acceso Full &nearr;</a></div>
                 </div>
 
                 <div class="editorial-item">
-                    <div class="item-number" style="font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; color: var(--color-ba-amarillo);">03.</div>
+                    <div class="item-number">03.</div>
                     <div class="item-content">
-                        <span class="toc-section" style="font-family: 'Share Tech Mono', monospace;">TECH-DAT-CRIM</span>
-                        <a href="notas.html#doc3" style="text-decoration: none;"><h3 class="toc-title">Ciberseguridad en el tratamiento de datos criminales</h3></a>
+                        <span class="toc-section">TECH-REINSERCION</span>
+                        <a href="notas.html#doc3" style="text-decoration: none;"><h3 class="toc-title">Arquitectura penitenciaria y reinserción digital</h3></a>
                     </div>
                     <div class="item-action"><a href="notas.html#doc3">PDF Interactivo &nearr;</a></div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. Participación: Convocatorias y Contacto (Diseño Modular) -->
-        <section style="max-width: 1200px; margin: 0 auto 6rem; padding: 0 2rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 6rem;">
+        <!-- 7. Convocatorias y Contacto -->
+        <section style="max-width: 1200px; margin: 0 auto 6rem; padding: 0 2rem; border-top: 1px solid var(--color-arena); padding-top: 6rem;">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem;">
-                
                 <div>
                     <span class="mono-tag">[ CONVOCATORIA EN CURSO ]</span>
                     <h3 style="font-family: var(--font-academica); font-size: 2rem; color: var(--color-gris-oscuro); margin: 1.5rem 0 1rem;">Call for Papers: Vol. 2</h3>
@@ -675,7 +634,6 @@
                     </p>
                     <a href="mailto:contacto@evidenciapenal.gob.ar" class="btn-outline">Enviar Correo</a>
                 </div>
-
             </div>
         </section>
     </main>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros | Evidencia Penal</title>
-    <!-- Google Fonts: Inter y Playfair Display -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Tipografías Unificadas: Inter (institucional), Playfair Display (académica), Share Tech Mono (materia prima/datos) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
         .about-section {
@@ -16,13 +16,13 @@
         }
         .about-section h2 {
             font-family: var(--font-academica);
-            font-size: 2.8rem;
+            font-size: clamp(2.2rem, 5vw, 2.8rem);
             font-weight: 700;
             margin-bottom: 2rem;
         }
         .about-section p {
             font-size: 1.1rem;
-            line-height: 1.8;
+            line-height: 1.85;
             margin-bottom: 1.5rem;
             color: var(--color-gris-oscuro);
         }
@@ -30,8 +30,8 @@
             font-family: var(--font-institucional);
             font-size: 1.5rem;
             font-weight: 800;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
             color: var(--color-negro);
         }
         .team-grid {
@@ -42,9 +42,9 @@
         }
         .team-member {
             background-color: var(--color-blanco);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid rgba(21, 50, 68, 0.1);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius-container);
+            border: 1px solid var(--color-arena);
             box-shadow: var(--shadow-sm);
             transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
@@ -54,14 +54,21 @@
             box-shadow: var(--shadow-md);
         }
         .team-member h4 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 0.5rem;
             color: var(--color-gris-oscuro);
+            font-weight: 700;
         }
         .team-member p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--color-gris-medio);
             margin-bottom: 0;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -77,7 +84,7 @@
                 </div>
             </div>
             <div class="magazine-meta">
-                <span>Institucional</span>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px; color: var(--color-rojo-ladrillo);">INSTITUCIONAL</span>
             </div>
         </div>
     </header>
@@ -95,7 +102,7 @@
     <!-- Sobre Nosotros -->
     <main class="magazine-container" style="margin-top: 4rem;">
         <section class="about-section">
-            <span class="section-label" style="display: block; margin-bottom: 1rem; color: var(--color-ba-amarillo); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Misión Institucional</span>
+            <span class="section-label" style="display: block; margin-bottom: 1rem; color: var(--color-rojo-ladrillo); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Misión Institucional</span>
             <h2>Política Criminal Basada en Datos</h2>
             
             <p><strong>Evidencia Penal</strong> es la publicación oficial de la Subsecretaría de Política Criminal y Asuntos Penitenciarios del Ministerio de Seguridad de la Ciudad Autónoma de Buenos Aires. Nuestro objetivo es establecer un puente riguroso entre el conocimiento científico-académico y la gestión pública operativa.</p>
