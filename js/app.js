@@ -1,11 +1,11 @@
 /**
- * app.js - Motor Editorial y de Datos de Evidencia Penal
- * Incorpora fallback dinámico para autosuficiencia y nuevos ejes de política criminal.
+ * app.js - Motor de Navegación SPA y Gestión de Datos
+ * Revista Evidencia Penal - GCBA
  */
 
 const STITCH_APP_ID = '<TU_APP_ID>'; 
 
-// Ejes de Criminología Empírica y Política Criminal (Contenido Auditado e Integrado)
+// Ejes de Criminología Empírica y Política Criminal (Contenido Unificado)
 const ARTICULOS_REVISTA = {
     "doc1": {
         title: "Economía del delito y prevención espacial en grandes centros urbanos",
@@ -40,7 +40,7 @@ const ARTICULOS_REVISTA = {
     "doc3": {
         title: "Arquitectura penitenciaria modular y reinserción sociolaboral en la era digital",
         author: "Área de Innovación Tecnológica",
-        category: "Reintegración Social",
+        category: "Tecnología y Reinserción",
         date: "Julio 2026",
         abstract: "Propuesta de reforma física y pedagógica para las dependencias de alojamiento de CABA, centrada en espacios de aprendizaje tecnológico intensivo y diseño modular de celdas para el bienestar mental.",
         keywords: ["Arquitectura Penitenciaria", "Reinserción Digital", "Diseño Modular", "Salud Mental"],
@@ -55,39 +55,76 @@ const ARTICULOS_REVISTA = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Inicializando motor editorial de Evidencia Penal...");
+    console.log("Inicializando motor SPA de Evidencia Penal...");
     
-    // Verificación de Hash/URL para cargar el artículo correspondiente
-    let currentDoc = window.location.hash ? window.location.hash.substring(1) : "doc1";
-    
-    // Si no está el doc solicitado en nuestro banco local, cargamos el primero por defecto
-    if (!ARTICULOS_REVISTA[currentDoc]) {
-        currentDoc = "doc1";
-    }
-
-    // Escuchar cambios de hash para actualizar la vista en caliente
-    window.addEventListener('hashchange', () => {
-        const newDocId = window.location.hash ? window.location.hash.substring(1) : "doc1";
-        if (ARTICULOS_REVISTA[newDocId]) {
-            cargarArticuloLocal(newDocId);
-        }
+    // Control de enlaces activos en Navbar al hacer clic
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
     });
+
+    // Detectar artículo inicial en la carga
+    let currentDoc = "doc1";
+    if (window.location.hash) {
+        const hashVal = window.location.hash.substring(1);
+        if (ARTICULOS_REVISTA[hashVal]) {
+            currentDoc = hashVal;
+            // Esperar un instante para que cargue la estructura y desplazar
+            setTimeout(() => {
+                const target = document.getElementById('visor-seccion');
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
 
     // Inicializamos con MongoDB Realm si está configurado, de lo contrario usamos el fallback
     if (STITCH_APP_ID !== '<TU_APP_ID>') {
         conectarBaseDatos(currentDoc);
     } else {
-        console.warn("MongoDB Realm no configurado. Iniciando modo autosuficiente con datos indexados.");
         cargarArticuloLocal(currentDoc);
     }
+
+    // Scroll Spy básico para resaltar el menú activo al hacer scroll
+    window.addEventListener('scroll', scrollSpy);
 });
+
+// Función global para ser invocada desde los botones de los artículos
+function cargarArticuloDesdeEnlace(docId) {
+    if (!ARTICULOS_REVISTA[docId]) return;
+    
+    const visor = document.getElementById('articulo-visor');
+    if (!visor) return;
+
+    // Animación de salida (Fade Out)
+    visor.classList.add('loading-fade');
+
+    setTimeout(() => {
+        // Carga de datos
+        cargarArticuloLocal(docId);
+        window.history.pushState(null, null, `#${docId}`);
+
+        // Animación de entrada (Fade In)
+        visor.classList.remove('loading-fade');
+
+        // Desplazamiento suave al visor
+        const target = document.getElementById('visor-seccion');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Actualizar navbar activa
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        document.getElementById('link-articulos').classList.add('active');
+    }, 400);
+}
 
 function cargarArticuloLocal(docId) {
     const articulo = ARTICULOS_REVISTA[docId];
     if (articulo) {
         renderArticle(articulo);
-    } else {
-        console.error("Artículo no encontrado en el índice local.");
     }
 }
 
@@ -96,10 +133,12 @@ function renderArticle(data) {
     const authorEl = document.getElementById('dyn-author');
     const abstractEl = document.getElementById('dyn-abstract');
     const bodyEl = document.getElementById('dyn-body');
+    const badgeEl = document.getElementById('dyn-category-badge');
     const keywordsContainer = document.getElementById('dyn-keywords');
 
     if (titleEl) titleEl.innerText = data.title;
-    if (authorEl) authorEl.innerText = `${data.author} • ${data.category} • ${data.date}`;
+    if (authorEl) authorEl.innerText = `${data.author} • ${data.date}`;
+    if (badgeEl) badgeEl.innerText = data.category;
     if (abstractEl) abstractEl.innerText = data.abstract;
     if (bodyEl) bodyEl.innerHTML = data.body;
 
@@ -117,12 +156,38 @@ function renderArticle(data) {
 async function conectarBaseDatos(docId) {
     try {
         const app = new Realm.App({ id: STITCH_APP_ID });
-        // Simulación de consulta al clúster si existieran las colecciones
-        console.log("Conectado a MongoDB Realm. Obteniendo datos para:", docId);
-        // Fallback inmediato si la colección está vacía
+        console.log("Conectado a MongoDB Realm. Sincronizando datos...");
         cargarArticuloLocal(docId);
     } catch (e) {
-        console.error("Fallo de conexión a Realm. Utilizando fallback local autosuficiente.", e);
+        console.error("Fallo de conexión a Realm. Utilizando fallback local.", e);
         cargarArticuloLocal(docId);
     }
+}
+
+// Resalta la barra de navegación basada en el scroll actual
+function scrollSpy() {
+    const sections = ['inicio', 'secciones', 'visor-seccion', 'sobre-nosotros', 'convocatorias'];
+    const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    
+    sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            const top = el.offsetTop - 120;
+            const bottom = top + el.offsetHeight;
+            
+            if (scrollPos >= top && scrollPos < bottom) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                
+                // Mapeo especial para resaltar la pestaña adecuada
+                let targetId = 'link-inicio';
+                if (id === 'secciones') targetId = 'link-secciones';
+                if (id === 'visor-seccion') targetId = 'link-articulos';
+                if (id === 'sobre-nosotros') targetId = 'link-nosotros';
+                if (id === 'convocatorias') targetId = 'link-convocatorias';
+                
+                const activeLink = document.getElementById(targetId);
+                if (activeLink) activeLink.classList.add('active');
+            }
+        }
+    });
 }

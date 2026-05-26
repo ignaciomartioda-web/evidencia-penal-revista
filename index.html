@@ -28,339 +28,22 @@
         </div>
     </header>
 
-    <!-- Navegación Global -->
+    <!-- Navegación Global (SPA Smooth Scroll) -->
     <nav class="global-navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-link active">Inicio</a>
-            <a href="notas.html" class="nav-link">Publicaciones</a>
-            <a href="secciones.html" class="nav-link">Secciones</a>
-            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="#inicio" class="nav-link active" id="link-inicio">Inicio</a>
+            <a href="#visor-seccion" class="nav-link" id="link-articulos">Publicaciones</a>
+            <a href="#secciones" class="nav-link" id="link-secciones">Secciones</a>
+            <a href="#sobre-nosotros" class="nav-link" id="link-nosotros">Sobre Nosotros</a>
+            <a href="#convocatorias" class="nav-link" id="link-convocatorias">Convocatoria</a>
         </div>
     </nav>
 
-    <!-- Estilos de la Portada - Integrados en CSS unificado o localizados para el Widget Faro -->
-    <style>
-        .hero-grid-container {
-            display: grid;
-            grid-template-columns: 1fr 2.2fr;
-            gap: 5rem;
-            align-items: start;
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 4rem 2rem 2rem;
-            z-index: 10;
-            position: relative;
-        }
-
-        .hero-left-column {
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            align-self: start;
-        }
-
-        .hero-right-column {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        .lighthouse-widget-wrapper {
-            position: relative;
-            width: 220px;
-            height: 220px;
-            margin-bottom: 2.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .door-faro-container {
-            position: relative;
-            width: 220px;
-            height: 220px;
-            overflow: hidden;
-            border: 2px solid rgba(141, 226, 214, 0.45);
-            border-radius: 50%;
-            background-color: #04060A;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7), 0 0 25px rgba(141, 226, 214, 0.2);
-            z-index: 10;
-        }
-
-        .lighthouse-scene {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-        }
-
-        .svg-lighthouse {
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            opacity: 0;
-            transform: scale(0.95);
-            animation: showLighthouse 1.5s cubic-bezier(0.16, 1, 0.3, 1) 1s forwards;
-        }
-
-        @keyframes showLighthouse {
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .external-light-beam {
-            position: absolute;
-            top: calc(75px - 200px);
-            left: 50%;
-            width: 1100px;
-            height: 400px;
-            background: radial-gradient(circle at 0% 50%, rgba(141, 226, 214, 0.5) 0%, rgba(141, 226, 214, 0.03) 65%, transparent 80%);
-            clip-path: polygon(0 48%, 100% 12%, 100% 88%, 0 52%);
-            transform-origin: 0% 50%;
-            transform: rotate(0deg);
-            z-index: 15;
-            mix-blend-mode: screen;
-            pointer-events: none;
-            opacity: 0;
-            animation: showBeam 1.2s ease-out 1.2s forwards, externalBeamSweep 8s ease-in-out infinite alternate;
-        }
-
-        @keyframes showBeam {
-            to { opacity: 1; }
-        }
-
-        @keyframes externalBeamSweep {
-            0% { transform: rotate(-15deg) scaleY(0.9); }
-            100% { transform: rotate(25deg) scaleY(1.1); }
-        }
-
-        .door-panel {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 50%;
-            background: linear-gradient(135deg, #1A1F26 0%, #05070A 100%);
-            z-index: 5;
-            display: flex;
-            align-items: center;
-            backface-visibility: hidden;
-            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .left-door {
-            left: 0;
-            border-right: 1.5px solid var(--color-ba-cyan);
-            transform-origin: left center;
-            animation: swingOpenLeft 2.0s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
-            justify-content: flex-end;
-        }
-
-        .right-door {
-            right: 0;
-            border-left: 1.5px solid var(--color-ba-cyan);
-            transform-origin: right center;
-            animation: swingOpenRight 2.0s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
-            justify-content: flex-start;
-        }
-
-        @keyframes swingOpenLeft {
-            0% { transform: rotateY(0); }
-            100% { transform: rotateY(-110deg); opacity: 0; }
-        }
-
-        @keyframes swingOpenRight {
-            0% { transform: rotateY(0); }
-            100% { transform: rotateY(110deg); opacity: 0; }
-        }
-
-        .door-handle {
-            width: 3px;
-            height: 32px;
-            background-color: var(--color-ba-cyan);
-            margin: 6px;
-            opacity: 0.8;
-            border-radius: 1.5px;
-        }
-
-        @media (max-width: 992px) {
-            .hero-grid-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-                padding: 3rem 1.5rem;
-                text-align: center;
-            }
-            .hero-right-column {
-                align-items: center;
-                text-align: center;
-            }
-            .external-light-beam {
-                top: calc(75px - 200px);
-                left: 50%;
-                transform-origin: 0% 50%;
-                animation: showBeam 1.2s ease-out 1.2s forwards, externalBeamSweepMobile 8s ease-in-out infinite alternate;
-            }
-        }
-
-        @keyframes externalBeamSweepMobile {
-            0% { transform: rotate(75deg) scaleY(0.95); }
-            100% { transform: rotate(105deg) scaleY(1.05); }
-        }
-
-        /* Umbral Transición */
-        .umbral-banner {
-            max-width: 1400px;
-            margin: 0 auto;
-            border-radius: var(--radius-container);
-            background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 4rem;
-            color: #FFFFFF;
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 6rem;
-        }
-        .umbral-banner::after {
-            content: '';
-            position: absolute;
-            top: 0; right: 0; bottom: 0;
-            width: 50%;
-            background: radial-gradient(circle at right, rgba(141, 226, 214, 0.08) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .mono-tag {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--color-ba-cyan);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        /* Estructura del Archivo como Bento Grid Asimétrico (DESIGN_VARIANCE: 6) */
-        .expediente-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Grid asimétrico */
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-        
-        .expediente-folder {
-            background-color: #FFFFFF;
-            border: 1px solid var(--color-arena);
-            border-top: 4px solid var(--color-azul-noche);
-            padding: 3rem 2.5rem;
-            border-radius: var(--radius-container);
-            box-shadow: var(--shadow-sm);
-            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .expediente-folder:hover {
-            transform: translateY(-6px);
-            border-top-color: var(--color-rojo-ladrillo);
-            border-left-color: var(--color-arena);
-            border-right-color: var(--color-arena);
-            box-shadow: var(--shadow-md);
-        }
-
-        .expediente-folder.card-destacada {
-            grid-column: span 2; /* Ocupa todo el ancho superior */
-            border-top: 4px solid var(--color-rojo-ladrillo);
-        }
-
-        .expediente-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            padding-bottom: 1rem;
-        }
-
-        .expediente-id {
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            color: var(--color-gris-medio);
-        }
-
-        /* Tablero de Control de Datos */
-        .dashboard-control {
-            background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%);
-            color: #FFFFFF;
-            padding: 5rem 4rem;
-            border-radius: var(--radius-container);
-            max-width: 1400px;
-            margin: 0 auto 6rem;
-            border: 1px solid rgba(255,255,255,0.05);
-            position: relative;
-        }
-
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 3rem;
-            margin-top: 4rem;
-        }
-
-        .metric-card {
-            border-left: 2px solid rgba(255,255,255,0.1);
-            padding-left: 1.5rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .metric-card:hover {
-            border-left-color: var(--color-ba-cyan);
-        }
-
-        .metric-value {
-            font-family: var(--font-mono);
-            font-size: 2.5rem;
-            color: #FFFFFF;
-            font-weight: bold;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-        }
-
-        .metric-label {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            line-height: 1.4;
-        }
-
-        @media (max-width: 992px) {
-            .umbral-banner { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem; }
-            .dashboard-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-            .dashboard-control { padding: 3rem 2rem; }
-            .expediente-grid { grid-template-columns: 1fr; }
-            .expediente-folder.card-destacada { grid-column: span 1; }
-        }
-
-        @media (max-width: 576px) {
-            .dashboard-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-
-    <!-- Contenido Principal -->
+    <!-- Contenido Unificado (SPA) -->
     <main class="magazine-container">
 
-        <!-- 1. Hero Monolith (La Evidencia como Faro / Luz en la Oscuridad) -->
-        <section class="hero-section hero-monolith">
+        <!-- 1. Hero Monolith (El Faro Cinemático de Nano Banana 2) -->
+        <section class="hero-section hero-monolith" id="inicio">
             <div class="fluid-engine" style="opacity: 0.35;">
                 <div class="fluid-mercury fluid-1"></div>
                 <div class="fluid-mercury fluid-2"></div>
@@ -369,48 +52,11 @@
             
             <div class="hero-grid-container" style="z-index: 10;">
                 <div class="hero-left-column">
-                    <div class="lighthouse-widget-wrapper">
-                        <!-- Puerta y Faro Abstracto -->
-                        <div class="door-faro-container">
-                            <div class="lighthouse-scene">
-                                <svg class="svg-lighthouse" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="45" cy="50" r="1.5" fill="#FFFFFF" opacity="0.4" />
-                                    <circle cx="175" cy="65" r="1.5" fill="#FFFFFF" opacity="0.5" />
-                                    <circle cx="80" cy="35" r="2" fill="#FFFFFF" opacity="0.3" />
-                                    <circle cx="140" cy="45" r="1.5" fill="#FFFFFF" opacity="0.6" />
-                                    
-                                    <path d="M 10 180 Q 110 165 210 180 L 210 220 L 10 220 Z" fill="#0E131F" />
-                                    <path d="M 65 180 L 155 180 L 165 172 L 55 172 Z" fill="#1A202C" />
-
-                                    <polygon points="80,180 92,90 128,90 140,180" fill="#FFFFFF" />
-                                    <polygon points="82.6,160 86.6,120 133.4,120 137.4,160" fill="var(--color-rojo-ladrillo)" />
-                                    <polygon points="80,180 82.6,160 137.4,160 140,180" fill="#1A1F26" />
-                                    
-                                    <rect x="106" y="100" width="8" height="12" rx="4" fill="#04060A" />
-                                    <rect x="106" y="134" width="8" height="12" rx="4" fill="#04060A" />
-                                    
-                                    <rect x="88" y="85" width="44" height="5" rx="2" fill="#1A1F26" />
-                                    <rect x="94" y="65" width="32" height="20" fill="none" stroke="#1A1F26" stroke-width="2" />
-                                    <line x1="102" y1="65" x2="102" y2="85" stroke="#1A1F26" stroke-width="1.5" />
-                                    <line x1="110" y1="65" x2="110" y2="85" stroke="#1A1F26" stroke-width="1.5" />
-                                    <line x1="118" y1="65" x2="118" y2="85" stroke="#1A1F26" stroke-width="1.5" />
-                                    
-                                    <path d="M 94 65 Q 110 48 126 65 Z" fill="#1A1F26" />
-                                    <line x1="110" y1="48" x2="110" y2="40" stroke="#1A1F26" stroke-width="2" />
-                                    <circle cx="110" cy="40" r="2.5" fill="var(--color-ba-cyan)" />
-
-                                    <circle cx="110" cy="75" r="16" fill="var(--color-ba-cyan)" opacity="0.35" style="filter: blur(5px);" />
-                                    <circle cx="110" cy="75" r="5" fill="#FFFFFF" />
-                                </svg>
-                            </div>
-                            <div class="door-panel left-door">
-                                <div class="door-handle"></div>
-                            </div>
-                            <div class="door-panel right-door">
-                                <div class="door-handle"></div>
-                            </div>
-                        </div>
-                        <div class="external-light-beam"></div>
+                    <!-- Contenedor del Faro Modernizado de Alta Resolución -->
+                    <div class="faro-cinema-wrapper" onclick="document.getElementById('link-articulos').click();">
+                        <img src="img/faro_portada.png" alt="Faro Evidencia Penal" class="faro-cinema-image">
+                        <div class="faro-cinema-beam"></div>
+                        <div class="faro-cinema-flash"></div>
                     </div>
                 </div>
 
@@ -430,7 +76,7 @@
             </div>
         </section>
 
-        <!-- 2. Proceso Legislativo (Ley 6.923) -->
+        <!-- 2. Proceso Legislativo -->
         <section class="legislative-process" style="padding: 0 2rem; margin-bottom: 6rem;">
             <div class="process-banner" style="background: linear-gradient(135deg, var(--color-azul-noche) 0%, var(--color-negro) 100%); border: 1px solid rgba(255,255,255,0.05); padding: 4.5rem 3rem; border-radius: var(--radius-container); color: #FFF; text-align: center;">
                 <span class="mono-tag">[ PROCESO LEGISLATIVO ]</span>
@@ -441,33 +87,8 @@
             </div>
         </section>
 
-        <!-- 3. Umbral de Gestión (Leyes 6.923 y 6.924) -->
-        <section style="padding: 0 2rem; margin-bottom: 8rem;">
-            <div class="umbral-banner">
-                <div>
-                    <span class="mono-tag">[ HITO FUNDACIONAL ]</span>
-                    <h2 style="font-family: var(--font-academica); font-size: 2.2rem; color: #FFFFFF; margin: 1.5rem 0; line-height: 1.3;">
-                        Construyendo un modelo penal propio para la Ciudad
-                    </h2>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.15rem; line-height: 1.8; font-weight: 300;">
-                        La sanción de las Leyes 6.923 y 6.924 marca una ruptura histórica en CABA. Evidencia Penal BA nace para acompañar e instrumentar la transición hacia un Servicio Penitenciario enfocado en la Reintegración Social y la toma de decisiones basada en datos empíricos concretos.
-                    </p>
-                </div>
-                <div style="border-left: 1px solid rgba(255,255,255,0.1); padding-left: 3rem; display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
-                    <div>
-                        <h4 style="font-family: var(--font-institucional); font-weight: 700; color: var(--color-ba-cyan); margin-bottom: 0.5rem; text-transform: uppercase;">Autoridad Institucional</h4>
-                        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.95rem; line-height: 1.6; margin: 0;">Respaldada por el Ministerio de Justicia de la Ciudad, garantizando la trazabilidad científica de los estudios.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-family: var(--font-institucional); font-weight: 700; color: var(--color-ba-cyan); margin-bottom: 0.5rem; text-transform: uppercase;">Conocimiento Aplicado</h4>
-                        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.95rem; line-height: 1.6; margin: 0;">Investigaciones y documentos técnicos conectados directamente con la gestión penitenciaria en curso.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Ejes Temáticos (Bento Grid Asimétrico - DESIGN_VARIANCE: 6) -->
-        <section style="max-width: 1200px; margin: 0 auto 8rem; padding: 0 2rem;">
+        <!-- 3. Ejes Temáticos / Secciones (Bento Grid Asimétrico - DESIGN_VARIANCE: 7) -->
+        <section id="secciones" style="max-width: 1200px; margin: 0 auto 8rem; padding: 0 2rem; scroll-margin-top: 100px;">
             <div style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 2rem; margin-bottom: 4rem;">
                 <span class="mono-tag" style="color: var(--color-gris-medio);">[ CAPAS DE CONOCIMIENTO ]</span>
                 <h2 style="font-family: var(--font-academica); font-size: 2.5rem; color: var(--color-gris-oscuro); margin-top: 1rem;">
@@ -479,13 +100,12 @@
             </div>
             
             <div class="expediente-grid">
-                
                 <!-- Carpeta 1 - Tarjeta Destacada Bento -->
-                <a href="notas.html#doc1" class="expediente-folder card-destacada">
+                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc1')" class="expediente-folder card-destacada">
                     <div>
                         <div class="expediente-header">
                             <span class="expediente-id">[EXP-GESTION-6923]</span>
-                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">&rarr;</span>
+                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">Leer Eje &rarr;</span>
                         </div>
                         <h3 style="font-family: var(--font-academica); font-size: 1.8rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
                             Doctrina y Gestión
@@ -501,11 +121,11 @@
                 </a>
 
                 <!-- Carpeta 2 -->
-                <a href="notas.html#doc2" class="expediente-folder">
+                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc2')" class="expediente-folder">
                     <div>
                         <div class="expediente-header">
                             <span class="expediente-id">[EXP-CRIM-APLICADA]</span>
-                            <span style="font-size: 1.2rem;">&rarr;</span>
+                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">&rarr;</span>
                         </div>
                         <h3 style="font-family: var(--font-academica); font-size: 1.5rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
                             Investigación Aplicada
@@ -521,11 +141,11 @@
                 </a>
 
                 <!-- Carpeta 3 -->
-                <a href="notas.html#doc3" class="expediente-folder">
+                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc3')" class="expediente-folder">
                     <div>
                         <div class="expediente-header">
                             <span class="expediente-id">[EXP-INTEGRACION-RS]</span>
-                            <span style="font-size: 1.2rem;">&rarr;</span>
+                            <span style="font-size: 1.2rem; color: var(--color-rojo-ladrillo); font-weight: bold;">&rarr;</span>
                         </div>
                         <h3 style="font-family: var(--font-academica); font-size: 1.5rem; color: var(--color-gris-oscuro); margin-bottom: 1rem; font-weight: 700;">
                             Reintegración Social
@@ -539,12 +159,96 @@
                         <span style="color: var(--color-rojo-ladrillo); font-weight: 800;">Impacto Digital</span>
                     </div>
                 </a>
-
             </div>
         </section>
 
-        <!-- 5. Tablero de Métricas de Control (Dato como Materia Prima) -->
-        <section style="padding: 0 2rem;">
+        <!-- 4. Visor de Artículos Integrado (SPA In-Place Reader) -->
+        <section class="visor-seccion" id="visor-seccion" style="scroll-margin-top: 100px;">
+            <article class="article-layout" id="articulo-visor">
+                <!-- Cabecera del Artículo -->
+                <header class="gcba-interactive-card" style="text-align: center; margin-bottom: 4rem; padding: 5rem 2rem;">
+                    <div class="header-content-article" style="position: relative; z-index: 2;">
+                        <span class="gcba-data-label" id="dyn-category-badge" style="display: inline-block; margin-bottom: 1rem; padding: 0.5rem 1.5rem; border: 1px solid var(--color-ba-cyan); border-radius: var(--radius-interactive); color: var(--color-ba-cyan);">Cargando...</span>
+                        <h2 class="gcba-glowing-title" id="dyn-title" style="font-size: clamp(2.2rem, 5vw, 3.2rem); margin: 1.5rem 0; line-height: 1.2;">Cargando publicación...</h2>
+                        <div style="width: 80px; height: 4px; background-color: var(--color-ba-cyan); margin: 2rem auto;"></div>
+                        <div class="article-authors" id="dyn-author" style="font-family: var(--font-institucional); color: rgba(255,255,255,0.75); font-size: 1.1rem; letter-spacing: 1px;">Por el Observatorio CABA</div>
+                    </div>
+                </header>
+
+                <!-- Grid de Lectura Asimétrico (DESIGN_VARIANCE: 7) -->
+                <div class="article-grid">
+                    <!-- Cuerpo -->
+                    <div class="article-content">
+                        <div class="abstract-box">
+                            <h3>Resumen</h3>
+                            <p id="dyn-abstract">Obteniendo datos de la publicación...</p>
+                            <div class="keywords" id="dyn-keywords"></div>
+                        </div>
+                        
+                        <div class="body-text" id="dyn-body">
+                            <!-- Inyectado vía js -->
+                        </div>
+                    </div>
+
+                    <!-- Notas Marginales -->
+                    <aside class="article-marginalia">
+                        <div class="marginalia-block">
+                            <span class="marginalia-number">Registro Académico</span>
+                            <p>Esta publicación es de acceso abierto (CC BY). Las conclusiones metodológicas cuentan con trazabilidad institucional.</p>
+                        </div>
+                        <div class="marginalia-block highlight-quote">
+                            <p>La evidencia empírica aplicada es el faro que orienta la decisión y la política pública moderna.</p>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </section>
+
+        <!-- 5. Índice de Publicaciones -->
+        <section class="editorial-list" id="articulos" style="scroll-margin-top: 100px;">
+            <div class="editorial-header">
+                <span class="mono-tag" style="color: var(--color-gris-medio);">[ REGISTRO ACADÉMICO V.1 ]</span>
+                <h2 style="margin-top: 0.5rem;">Publicaciones Destacadas</h2>
+            </div>
+            
+            <div class="editorial-items">
+                <div class="editorial-item">
+                    <div class="item-number">01.</div>
+                    <div class="item-content">
+                        <span class="toc-section">DOC-PENAL-6923</span>
+                        <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc1')" class="toc-title">Economía del delito y prevención espacial urbana</a>
+                    </div>
+                    <div class="item-action">
+                        <button onclick="cargarArticuloDesdeEnlace('doc1')">Leer &nearr;</button>
+                    </div>
+                </div>
+                
+                <div class="editorial-item">
+                    <div class="item-number">02.</div>
+                    <div class="item-content">
+                        <span class="toc-section">ALGO-ETICA-DATA</span>
+                        <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc2')" class="toc-title">Algoritmos predictivos y sesgos penitenciarios</a>
+                    </div>
+                    <div class="item-action">
+                        <button onclick="cargarArticuloDesdeEnlace('doc2')">Leer &nearr;</button>
+                    </div>
+                </div>
+
+                <div class="editorial-item">
+                    <div class="item-number">03.</div>
+                    <div class="item-content">
+                        <span class="toc-section">TECH-REINSERCION</span>
+                        <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc3')" class="toc-title">Arquitectura penitenciaria y reinserción digital</a>
+                    </div>
+                    <div class="item-action">
+                        <button onclick="cargarArticuloDesdeEnlace('doc3')">Leer &nearr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Tablero de Métricas (Materia Prima) -->
+        <section style="padding: 0 2rem; margin-bottom: 6rem;">
             <div class="dashboard-control">
                 <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                     <span class="mono-tag" style="color: var(--color-ba-cyan);">[ TRAZABILIDAD Y MÉTRICAS DE MARCA ]</span>
@@ -577,65 +281,95 @@
             </div>
         </section>
 
-        <!-- 6. Índice de Publicaciones Activas -->
-        <section class="editorial-list" style="margin-bottom: 8rem;">
-            <div class="editorial-header">
-                <span class="mono-tag" style="color: var(--color-gris-medio);">[ REGISTRO ACADÉMICO V.1 ]</span>
-                <h2 style="margin-top: 0.5rem;">Publicaciones Destacadas</h2>
-            </div>
-            
-            <div class="editorial-items">
-                <div class="editorial-item">
-                    <div class="item-number">01.</div>
-                    <div class="item-content">
-                        <span class="toc-section">DOC-PENAL-6923</span>
-                        <a href="notas.html#doc1" style="text-decoration: none;"><h3 class="toc-title">Economía del delito y prevención espacial urbana</h3></a>
-                    </div>
-                    <div class="item-action"><a href="notas.html#doc1">Leer Documento &nearr;</a></div>
+        <!-- 7. Sobre Nosotros (Misión & Equipo) -->
+        <section id="sobre-nosotros" style="max-width: 1000px; margin: 0 auto 8rem; padding: 0 2rem; scroll-margin-top: 100px;">
+            <span class="mono-tag" style="color: var(--color-rojo-ladrillo); font-weight: 800; display: block; margin-bottom: 1rem;">Misión Institucional</span>
+            <h2 style="font-family: var(--font-academica); font-size: clamp(2rem, 5vw, 2.5rem); color: var(--color-gris-oscuro); margin-bottom: 2rem; font-weight: 700;">Política Criminal Basada en Datos</h2>
+            <p style="font-size: 1.1rem; line-height: 1.85; margin-bottom: 1.5rem; color: var(--color-gris-oscuro);">
+                <strong>Evidencia Penal</strong> es la publicación oficial de la Subsecretaría de Política Criminal y Asuntos Penitenciarios del Ministerio de Seguridad de la Ciudad Autónoma de Buenos Aires. Nuestro objetivo es establecer un puente riguroso entre el conocimiento científico-académico y la gestión pública operativa.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.85; margin-bottom: 3.5rem; color: var(--color-gris-oscuro);">
+                En el marco de la reciente creación del Servicio Penitenciario de CABA, resulta imperativo contar con un espacio de reflexión, análisis normativo y divulgación de resultados empíricos que guíen el diseño de infraestructuras de alojamiento, programas de tratamiento y estrategias de reducción de la reincidencia.
+            </p>
+
+            <h3 style="font-family: var(--font-institucional); font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem; color: var(--color-negro);">Comité Editorial</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+                <div style="background-color: var(--color-blanco); padding: 2rem; border-radius: var(--radius-container); border: 1px solid var(--color-arena);">
+                    <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-gris-oscuro); font-weight: 700;">Dirección General</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gris-medio); margin-bottom: 0;">Subsecretaría de Política Criminal y Asuntos Penitenciarios</p>
                 </div>
+                <div style="background-color: var(--color-blanco); padding: 2rem; border-radius: var(--radius-container); border: 1px solid var(--color-arena);">
+                    <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-gris-oscuro); font-weight: 700;">Coordinación</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gris-medio); margin-bottom: 0;">Gerencia de Investigación y Datos Penitenciarios</p>
+                </div>
+                <div style="background-color: var(--color-blanco); padding: 2rem; border-radius: var(--radius-container); border: 1px solid var(--color-arena);">
+                    <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-gris-oscuro); font-weight: 700;">Asesoría Legal</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gris-medio); margin-bottom: 0;">Dirección General de Asuntos Jurídicos y Normativa</p>
+                </div>
+                <div style="background-color: var(--color-blanco); padding: 2rem; border-radius: var(--radius-container); border: 1px solid var(--color-arena);">
+                    <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-gris-oscuro); font-weight: 700;">Innovación</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gris-medio); margin-bottom: 0;">Área de Sistemas Biométricos y Seguridad Integral</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Convocatoria (Call for Papers) -->
+        <section id="convocatorias" style="max-width: 1000px; margin: 0 auto 6rem; padding: 0 2rem; scroll-margin-top: 100px;">
+            <div style="background-color: var(--color-blanco); border: 1px solid var(--color-arena); box-shadow: var(--shadow-md); border-radius: var(--radius-container); padding: 4rem 3rem;">
+                <span class="mono-tag" style="color: var(--color-rojo-ladrillo); font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">Convocatoria Permanente</span>
+                <h2 style="font-family: var(--font-academica); font-size: 2.2rem; color: var(--color-gris-oscuro); margin: 1.5rem 0 3rem; font-weight: 700; text-align: center;">Call for Papers - Requisitos Volumen 2</h2>
                 
-                <div class="editorial-item">
-                    <div class="item-number">02.</div>
-                    <div class="item-content">
-                        <span class="toc-section">ALGO-ETICA-DATA</span>
-                        <a href="notas.html#doc2" style="text-decoration: none;"><h3 class="toc-title">Algoritmos predictivos y sesgos penitenciarios</h3></a>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+                    <!-- Item 1 -->
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-family: var(--font-academica); font-size: 2.2rem; color: var(--color-rojo-ladrillo); font-weight: 800; line-height: 1;">01</div>
+                        <div>
+                            <h3 style="font-family: var(--font-institucional); font-size: 1.25rem; color: var(--color-gris-oscuro); margin-bottom: 0.5rem; font-weight: 800; text-transform: uppercase;">Enfoque Temático</h3>
+                            <p style="color: var(--color-gris-medio); font-size: 1.05rem; line-height: 1.7; margin: 0;">
+                                Los artículos deben ser inéditos y centrarse exclusivamente en la política criminal, el análisis criminológico, la ejecución penal, la reintegración social o la innovación en gestión penitenciaria, privilegiando enfoques empíricos aplicables a la CABA.
+                            </p>
+                        </div>
                     </div>
-                    <div class="item-action"><a href="notas.html#doc2">Acceso Full &nearr;</a></div>
+
+                    <hr style="border: 0; border-top: 1px solid var(--color-arena);">
+
+                    <!-- Item 2 -->
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-family: var(--font-academica); font-size: 2.2rem; color: var(--color-rojo-ladrillo); font-weight: 800; line-height: 1;">02</div>
+                        <div>
+                            <h3 style="font-family: var(--font-institucional); font-size: 1.25rem; color: var(--color-gris-oscuro); margin-bottom: 0.5rem; font-weight: 800; text-transform: uppercase;">Formato y APA 7</h3>
+                            <p style="color: var(--color-gris-medio); font-size: 1.05rem; line-height: 1.7; margin: 0;">
+                                Extensión de 15 a 20 páginas (.docx). Las citas y referencias bibliográficas deben estructurarse estrictamente bajo las Normas APA (7ma edición), garantizando trazabilidad académica.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr style="border: 0; border-top: 1px solid var(--color-arena);">
+
+                    <!-- Item 3 -->
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-family: var(--font-academica); font-size: 2.2rem; color: var(--color-rojo-ladrillo); font-weight: 800; line-height: 1;">03</div>
+                        <div>
+                            <h3 style="font-family: var(--font-institucional); font-size: 1.25rem; color: var(--color-gris-oscuro); margin-bottom: 0.5rem; font-weight: 800; text-transform: uppercase;">Revisión por Pares</h3>
+                            <p style="color: var(--color-gris-medio); font-size: 1.05rem; line-height: 1.7; margin: 0;">
+                                Todos los manuscritos recibidos serán evaluados mediante el sistema de revisión doble ciego, resguardando el anonimato total para asegurar imparcialidad y rigor científico.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="editorial-item">
-                    <div class="item-number">03.</div>
-                    <div class="item-content">
-                        <span class="toc-section">TECH-REINSERCION</span>
-                        <a href="notas.html#doc3" style="text-decoration: none;"><h3 class="toc-title">Arquitectura penitenciaria y reinserción digital</h3></a>
-                    </div>
-                    <div class="item-action"><a href="notas.html#doc3">PDF Interactivo &nearr;</a></div>
+                <!-- Envío -->
+                <div style="margin-top: 5rem; text-align: center; border-top: 1px solid var(--color-arena); padding-top: 3rem;">
+                    <p style="font-size: 1.1rem; color: var(--color-gris-oscuro); margin-bottom: 2rem; font-weight: 600;">
+                        La recepción para el Volumen 2 se encuentra abierta hasta el 30 de Agosto de 2026.
+                    </p>
+                    <a href="mailto:convocatorias@evidenciapenal.gob.ar?subject=Envio de Articulo - Evidencia Penal" class="btn-primary" style="padding: 1.2rem 3.5rem;">
+                        Enviar Manuscrito &rarr;
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 7. Convocatorias y Contacto -->
-        <section style="max-width: 1200px; margin: 0 auto 6rem; padding: 0 2rem; border-top: 1px solid var(--color-arena); padding-top: 6rem;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem;">
-                <div>
-                    <span class="mono-tag">[ CONVOCATORIA EN CURSO ]</span>
-                    <h3 style="font-family: var(--font-academica); font-size: 2rem; color: var(--color-gris-oscuro); margin: 1.5rem 0 1rem;">Call for Papers: Vol. 2</h3>
-                    <p style="color: var(--color-gris-medio); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
-                        Invitamos a investigadores y especialistas a enviar sus manuscritos académicos. El próximo volumen se centrará en la arquitectura de la reinserción y el uso de IA en la gestión penal. Recepción de manuscritos hasta Agosto 2026.
-                    </p>
-                    <a href="convocatoria.html" class="btn-primary">Ver Bases y Requisitos</a>
-                </div>
-
-                <div>
-                    <span class="mono-tag">[ NODO DE COMUNICACIÓN ]</span>
-                    <h3 style="font-family: var(--font-academica); font-size: 2rem; color: var(--color-gris-oscuro); margin: 1.5rem 0 1rem;">Comunícate con Nosotros</h3>
-                    <p style="color: var(--color-gris-medio); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
-                        ¿Tienes consultas sobre el proceso editorial, deseas suscribirte a las alertas de nuevas publicaciones o buscas proponer una colaboración técnica con el Observatorio? Escríbenos directamente.
-                    </p>
-                    <a href="mailto:contacto@evidenciapenal.gob.ar" class="btn-outline">Enviar Correo</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="gcba-footer">
@@ -645,6 +379,8 @@
         </div>
     </footer>
 
+    <!-- SDK de MongoDB Realm (Stitch) -->
+    <script src="https://unpkg.com/realm-web@1.7.0/dist/bundle.iife.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -43,6 +43,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; /* Desplazamiento vertical fluido */
+}
+
 body {
     font-family: var(--font-institucional);
     background-color: var(--color-arena-claro);
@@ -119,7 +123,7 @@ p {
     top: 0;
     z-index: 200;
     box-shadow: var(--shadow-sm);
-    max-height: 80px; /* NAV HEIGHT CAP */
+    max-height: 80px;
 }
 
 .nav-container {
@@ -167,7 +171,7 @@ p {
     box-shadow: var(--shadow-md);
     position: relative;
     animation: abyssPulse 18s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
-    min-height: 85dvh; /* VIEWPORT STABILITY */
+    min-height: 85dvh;
 }
 
 .fluid-engine {
@@ -276,8 +280,86 @@ p {
     height: 40px;
 }
 
+/* ==========================================================================
+   FARO CINEMÁTICO INTERACTIVO (NANO BANANA 2)
+   ========================================================================== */
+
+.faro-cinema-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    border-radius: var(--radius-container);
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(141, 226, 214, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: var(--color-negro);
+    cursor: pointer;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.faro-cinema-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faro-cinema-wrapper:hover .faro-cinema-image {
+    transform: scale(1.06);
+}
+
+.faro-cinema-wrapper:hover {
+    border-color: rgba(141, 226, 214, 0.6);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(141, 226, 214, 0.25);
+}
+
+/* Haz de luz giratorio interactivo */
+.faro-cinema-beam {
+    position: absolute;
+    top: 55px; /* Altura de la lámpara en el arte */
+    left: 50%;
+    width: 900px;
+    height: 300px;
+    background: radial-gradient(circle at 0% 50%, rgba(141, 226, 214, 0.6) 0%, rgba(141, 226, 214, 0.04) 55%, transparent 75%);
+    clip-path: polygon(0 45%, 100% 10%, 100% 90%, 0 55%);
+    transform-origin: 0% 50%;
+    transform: rotate(5deg);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    opacity: 0.75;
+    z-index: 15;
+    animation: cinemaBeamSweep 9s ease-in-out infinite alternate;
+    will-change: transform, opacity;
+}
+
+@keyframes cinemaBeamSweep {
+    0% { transform: rotate(-10deg) scaleY(0.85); opacity: 0.55; }
+    100% { transform: rotate(18deg) scaleY(1.15); opacity: 0.9; }
+}
+
+.faro-cinema-flash {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-blanco);
+    border-radius: 50%;
+    box-shadow: 0 0 25px 8px var(--color-ba-cyan);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 16;
+    animation: cinemaFlashPulse 3s infinite alternate;
+}
+
+@keyframes cinemaFlashPulse {
+    0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.6; }
+    100% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+}
+
 /* =========================================
-   BENTO GRIDS & CARDS (DESIGN_VARIANCE: 6)
+   BENTO GRIDS & CARDS (DESIGN_VARIANCE: 7)
    ========================================= */
 
 .hero-feature-cards {
@@ -422,6 +504,11 @@ p {
     font-weight: 700;
 }
 
+.editorial-items {
+    display: flex;
+    flex-direction: column;
+}
+
 .editorial-item {
     display: grid;
     grid-template-columns: 80px 1fr 180px;
@@ -487,7 +574,7 @@ p {
     text-align: right;
 }
 
-.item-action a {
+.item-action button, .item-action a {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: transparent;
@@ -499,10 +586,11 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: var(--radius-interactive);
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.item-action a:hover {
+.item-action button:hover, .item-action a:hover {
     background-color: var(--color-gris-oscuro);
     color: var(--color-blanco);
     border-color: var(--color-gris-oscuro);
@@ -527,6 +615,7 @@ p {
     box-shadow: 0 4px 12px rgba(139, 46, 46, 0.2);
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -550,6 +639,7 @@ p {
     font-size: 0.85rem;
     transition: all 0.3s ease;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn-outline:hover {
@@ -559,14 +649,26 @@ p {
     box-shadow: 0 6px 15px rgba(21, 50, 68, 0.15);
 }
 
-/* =========================================
-   MAQUETACIÓN DE ARTÍCULOS (LECTURA EN GRID)
-   ========================================= */
+/* ==========================================================================
+   VISOR DE ARTÍCULOS INTEGRADO (SPA IN-PLACE)
+   ========================================================================== */
 
-.article-layout {
+.visor-seccion {
     max-width: 1400px;
     margin: 4rem auto 6rem;
-    padding: 0 2rem;
+    padding: 6rem 2rem;
+    border-top: 1px solid var(--color-arena);
+    border-bottom: 1px solid var(--color-arena);
+}
+
+.article-layout {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    will-change: transform, opacity;
+}
+
+.article-layout.loading-fade {
+    opacity: 0;
+    transform: translateY(10px);
 }
 
 .article-grid {
@@ -823,5 +925,10 @@ p {
     
     .bento-card.destacada {
         grid-column: span 1;
+    }
+
+    .faro-cinema-wrapper {
+        margin: 0 auto;
+        height: 350px;
     }
 }
