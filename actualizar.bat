@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo   ACTUALIZANDO REVISTA EVIDENCIA PENAL
+echo   ACTUALIZANDO CAMPAÑA FERRARO
 echo ========================================
 echo.
 
