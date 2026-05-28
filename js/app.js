@@ -746,3 +746,225 @@ function initScrollReveals() {
     window.addEventListener('hashchange', handleAnchorScrolling);
     window.addEventListener('load', handleAnchorScrolling);
 })();
+
+// =============================================================================
+// CONSTELLACIÓN NEURONAL INTERACTIVA & EFECTO DE ESCAPE DE PARTICULAS (MODULE 4)
+// =============================================================================
+(function initFaroConstellationAndParticles() {
+    const constellationCanvas = document.getElementById('faro-constellation-canvas');
+    const bgParticlesCanvas = document.getElementById('hero-bg-particles-canvas');
+    const lighthouseWrapper = document.querySelector('.lighthouse-widget-wrapper');
+    const faroContenedor = document.getElementById('faro-animado');
+    const heroSection = document.querySelector('.hero-monolith');
+
+    if (!constellationCanvas || !bgParticlesCanvas || !lighthouseWrapper || !heroSection) return;
+
+    const ctxConst = constellationCanvas.getContext('2d');
+    const ctxBg = bgParticlesCanvas.getContext('2d');
+
+    let constWidth, constHeight;
+    let bgWidth, bgHeight;
+
+    let constParticles = [];
+    let bgParticles = [];
+
+    const CONST_PARTICLE_COUNT = 40;
+    const CONST_CONNECTION_DIST = 90;
+    const BG_MAX_PARTICLES = 80;
+
+    let mouse = { x: null, y: null, active: false };
+
+    // Resize handlers
+    function resizeConstellation() {
+        constWidth = constellationCanvas.width = faroContenedor.clientWidth;
+        constHeight = constellationCanvas.height = faroContenedor.clientHeight;
+    }
+
+    function resizeBgParticles() {
+        bgWidth = bgParticlesCanvas.width = heroSection.clientWidth;
+        bgHeight = bgParticlesCanvas.height = heroSection.clientHeight;
+    }
+
+    function handleResize() {
+        resizeConstellation();
+        resizeBgParticles();
+    }
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Particle Classes
+    class ConstellationParticle {
+        constructor() {
+            this.reset(true);
+        }
+
+        reset(init = false) {
+            this.x = init ? Math.random() * constWidth : (Math.random() * 0.2 + 0.4) * constWidth;
+            this.y = init ? Math.random() * constHeight : (Math.random() * 0.2 + 0.4) * constHeight;
+            this.vx = (Math.random() - 0.5) * 0.35;
+            this.vy = (Math.random() - 0.5) * 0.35;
+            this.radius = Math.random() * 2 + 1.5;
+            this.baseAlpha = Math.random() * 0.4 + 0.2;
+            this.alpha = this.baseAlpha;
+            this.color = Math.random() > 0.4 ? 'var(--color-verde)' : 'var(--color-fucsia)';
+        }
+
+        update() {
+            this.x += this.vx;
+            this.y += this.vy;
+
+            // Bounce on boundaries
+            if (this.x < 15 || this.x > constWidth - 15) this.vx *= -1;
+            if (this.y < 15 || this.y > constHeight - 15) this.vy *= -1;
+
+            // Cursor attraction physics
+            if (mouse.active && mouse.x !== null) {
+                const dx = mouse.x - this.x;
+                const dy = mouse.y - this.y;
+                const dist = Math.hypot(dx, dy);
+                if (dist < 110) {
+                    const force = (110 - dist) / 110;
+                    this.x += (dx / dist) * force * 1.6;
+                    this.y += (dy / dist) * force * 1.6;
+                    this.alpha = Math.min(1.0, this.baseAlpha + force * 0.6);
+                } else {
+                    this.alpha += (this.baseAlpha - this.alpha) * 0.1;
+                }
+            } else {
+                this.alpha += (this.baseAlpha - this.alpha) * 0.1;
+            }
+        }
+
+        draw() {
+            ctxConst.beginPath();
+            ctxConst.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctxConst.fillStyle = this.color.includes('verde') ? '#00e5a3' : '#e6007a';
+            ctxConst.globalAlpha = this.alpha;
+            if (mouse.active) {
+                ctxConst.shadowBlur = 8;
+                ctxConst.shadowColor = ctxConst.fillStyle;
+            }
+            ctxConst.fill();
+            ctxConst.shadowBlur = 0;
+        }
+    }
+
+    class EscapedBgParticle {
+        constructor(startX, startY) {
+            this.x = startX;
+            this.y = startY;
+            const angle = Math.random() * Math.PI * 2;
+            const speed = Math.random() * 0.8 + 0.3;
+            this.vx = Math.cos(angle) * speed;
+            this.vy = Math.sin(angle) * speed;
+            this.radius = Math.random() * 1.5 + 0.8;
+            this.alpha = 1.0;
+            this.decay = Math.random() * 0.005 + 0.002;
+            this.color = Math.random() > 0.4 ? '#00e5a3' : '#e6007a';
+        }
+
+        update() {
+            this.x += this.vx;
+            this.y += this.vy;
+            this.vx += Math.sin(this.y * 0.01) * 0.02;
+            this.vy += Math.cos(this.x * 0.01) * 0.02;
+            this.alpha -= this.decay;
+        }
+
+        draw() {
+            ctxBg.beginPath();
+            ctxBg.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctxBg.fillStyle = this.color;
+            ctxBg.globalAlpha = Math.max(0, this.alpha * 0.45);
+            ctxBg.fill();
+        }
+    }
+
+    // Initialize constellation
+    for (let i = 0; i < CONST_PARTICLE_COUNT; i++) {
+        constParticles.push(new ConstellationParticle());
+    }
+
+    // Event listeners
+    lighthouseWrapper.addEventListener('mousemove', (e) => {
+        const rect = faroContenedor.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        mouse.active = true;
+    });
+
+    lighthouseWrapper.addEventListener('mouseleave', () => {
+        mouse.active = false;
+        mouse.x = null;
+        mouse.y = null;
+    });
+
+    function getFaroHeroOrigin() {
+        const wrapperRect = lighthouseWrapper.getBoundingClientRect();
+        const heroRect = heroSection.getBoundingClientRect();
+        return {
+            x: (wrapperRect.left + wrapperRect.width / 2) - heroRect.left,
+            y: (wrapperRect.top + wrapperRect.height / 2) - heroRect.top
+        };
+    }
+
+    // Animation Loop
+    function loop() {
+        ctxConst.clearRect(0, 0, constWidth, constHeight);
+        ctxBg.clearRect(0, 0, bgWidth, bgHeight);
+
+        constParticles.forEach(p => {
+            p.update();
+            p.draw();
+        });
+
+        for (let i = 0; i < constParticles.length; i++) {
+            for (let j = i + 1; j < constParticles.length; j++) {
+                const p1 = constParticles[i];
+                const p2 = constParticles[j];
+                const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+
+                if (dist < CONST_CONNECTION_DIST) {
+                    const alpha = (1 - dist / CONST_CONNECTION_DIST) * 0.22 * (p1.alpha + p2.alpha) / 2;
+                    ctxConst.beginPath();
+                    ctxConst.moveTo(p1.x, p1.y);
+                    ctxConst.lineTo(p2.x, p2.y);
+
+                    const color1 = p1.color.includes('verde') ? '#00e5a3' : '#e6007a';
+                    const color2 = p2.color.includes('verde') ? '#00e5a3' : '#e6007a';
+                    const grad = ctxConst.createLinearGradient(p1.x, p1.y, p2.x, p2.y);
+                    grad.addColorStop(0, color1);
+                    grad.addColorStop(1, color2);
+
+                    ctxConst.strokeStyle = grad;
+                    ctxConst.globalAlpha = alpha;
+                    ctxConst.lineWidth = (1 - dist / CONST_CONNECTION_DIST) * 1.2;
+                    ctxConst.stroke();
+                }
+            }
+        }
+
+        const origin = getFaroHeroOrigin();
+        const puerta = document.getElementById('puerta-faro');
+        const isDoorOpen = puerta && puerta.classList.contains('door-open');
+
+        if (isDoorOpen && Math.random() < 0.2 && bgParticles.length < BG_MAX_PARTICLES) {
+            bgParticles.push(new EscapedBgParticle(origin.x, origin.y));
+        }
+
+        for (let i = bgParticles.length - 1; i >= 0; i--) {
+            const p = bgParticles[i];
+            p.update();
+            if (p.alpha <= 0 || p.x < 0 || p.x > bgWidth || p.y < 0 || p.y > bgHeight) {
+                bgParticles.splice(i, 1);
+            } else {
+                p.draw();
+            }
+        }
+
+        requestAnimationFrame(loop);
+    }
+
+    loop();
+})();
