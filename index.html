@@ -3,347 +3,772 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Evidencia Penal - Revista Digital de Política Criminal y Asuntos Penitenciarios del Gobierno de la Ciudad Autónoma de Buenos Aires.">
-    <title>Evidencia Penal | CABA</title>
+    <meta name="description" content="Campaña Ferraro - Plataforma electoral de Maxi Ferraro, Diputado Nacional. Propuestas legislativas y plan de acción para construir un futuro sustentable, transparente y con educación de calidad.">
+    <title>Campaña Ferraro | Maxi Ferraro</title>
     <link rel="icon" type="image/svg+xml" href="img/logo-ba.svg">
-    <!-- Tipografías Unificadas: Inter (institucional), Playfair Display (académica), Share Tech Mono (materia prima/datos) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Cabecera Institucional -->
-    <header class="gcba-header">
-        <div class="header-container">
-            <div class="logos">
-                <img src="img/logo-ba.svg" alt="Gobierno de la Ciudad de Buenos Aires" class="logo-ba">
-                <div class="separator"></div>
-                <div class="agency-title">
-                    <span class="direccion">Subsecretaría de Política Criminal y Asuntos Penitenciarios</span>
+
+    <!-- Rayo de faro: ilumina toda la publicación — símbolo de claridad sobre la oscuridad -->
+    <div class="page-beam-overlay" id="page-beam" aria-hidden="true"></div>
+
+    <!-- Orbes de luz de fondo flotantes (Efecto Colorista) -->
+    <div class="bg-glow-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-glow-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-glow-orb orb-3" aria-hidden="true"></div>
+
+    <!-- Menú Superior Anclado estilo Apple (Sticky Top Navbar) -->
+    <header class="apple-navbar" id="apple-nav">
+        <div class="navbar-container">
+            <a href="#inicio" class="navbar-brand" id="navbar-brand">
+                <span class="brand-logo">MF</span>
+                <span class="brand-text">MAXI FERRARO</span>
+            </a>
+            
+            <!-- Links de Navegación (Desktop) -->
+            <nav class="navbar-links" id="navbar-links-desktop">
+                <div class="nav-item-dropdown">
+                    <a href="#inicio" class="nav-link active" data-page="page-inicio">Inicio</a>
                 </div>
+                <div class="nav-item-dropdown">
+                    <a href="#publicaciones" class="nav-link" data-page="page-publicaciones">Propuestas <span class="chevron-down">▾</span></a>
+                    <div class="navbar-dropdown">
+                        <a href="#doc1" class="dropdown-item">📚 Educación y Futuro</a>
+                        <a href="#doc2" class="dropdown-item">⚖️ Transparencia y Ética</a>
+                        <a href="#doc3" class="dropdown-item">🌱 Economía Verde</a>
+                        <a href="#doc-seguridad" class="dropdown-item">🛡️ Seguridad Ciudadana</a>
+                        <a href="#doc-impuestos" class="dropdown-item">💸 Reforma Impositiva</a>
+                    </div>
+                </div>
+                <div class="nav-item-dropdown">
+                    <a href="#nosotros" class="nav-link" data-page="page-nosotros">Trayectoria <span class="chevron-down">▾</span></a>
+                    <div class="navbar-dropdown">
+                        <a href="#biografia-seccion" class="dropdown-item">📖 Biografía</a>
+                        <a href="#ejes-partidarios" class="dropdown-item">🏛️ Ejes Parlamentarios</a>
+                        <a href="#iniciativas-legislativas" class="dropdown-item">📝 Iniciativas Legislativas</a>
+                    </div>
+                </div>
+                <div class="nav-item-dropdown">
+                    <a href="#nosotros" class="nav-link" data-page="page-nosotros">Participación <span class="chevron-down">▾</span></a>
+                    <div class="navbar-dropdown">
+                        <a href="#voluntariado" class="dropdown-item">🤝 Sumate al Equipo</a>
+                        <a href="#agenda-charlas" class="dropdown-item">📅 Agenda y Charlas</a>
+                        <a href="#contacto-seccion" class="dropdown-item">📧 Contacto</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="navbar-actions">
+                <a href="#voluntariado" class="btn-navbar-join">Sumate 🤝</a>
+                <!-- Botón hamburguesa para móvil -->
+                <button class="navbar-mobile-toggle" id="navbar-mobile-toggle" aria-label="Menú de navegación" aria-expanded="false">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                </button>
             </div>
-            <div class="magazine-meta">
-                <span style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 2px; color: var(--color-rojo-ladrillo);">REG.LEY-6923.6924</span>
-                <span style="display:block; font-size:0.75rem;">Vol. 1, No. 1 • 2026</span>
-            </div>
+        </div>
+        
+        <!-- Menú Móvil Desplegable -->
+        <div class="navbar-mobile-drawer" id="navbar-mobile-drawer">
+            <nav class="mobile-drawer-links">
+                <a href="#inicio" class="mobile-drawer-link" data-page="page-inicio">Inicio</a>
+                
+                <span class="mobile-drawer-section-title">Propuestas</span>
+                <a href="#doc1" class="mobile-drawer-sub-link">📚 Educación y Futuro</a>
+                <a href="#doc2" class="mobile-drawer-sub-link">⚖️ Transparencia y Ética</a>
+                <a href="#doc3" class="mobile-drawer-sub-link">🌱 Economía Verde</a>
+                <a href="#doc-seguridad" class="mobile-drawer-sub-link">🛡️ Seguridad Ciudadana</a>
+                <a href="#doc-impuestos" class="mobile-drawer-sub-link">💸 Reforma Impositiva</a>
+                
+                <span class="mobile-drawer-section-title">Trayectoria</span>
+                <a href="#biografia-seccion" class="mobile-drawer-sub-link">📖 Biografía</a>
+                <a href="#ejes-partidarios" class="mobile-drawer-sub-link">🏛️ Ejes Parlamentarios</a>
+                <a href="#iniciativas-legislativas" class="mobile-drawer-sub-link">📝 Iniciativas Legislativas</a>
+                
+                <span class="mobile-drawer-section-title">Participación</span>
+                <a href="#voluntariado" class="mobile-drawer-sub-link">🤝 Sumate al Equipo</a>
+                <a href="#agenda-charlas" class="mobile-drawer-sub-link">📅 Agenda y Charlas</a>
+                <a href="#contacto-seccion" class="mobile-drawer-sub-link">📧 Contacto</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Navegación Global (SPA Smooth Scroll Simplificada a 4 Secciones) -->
-    <nav class="global-navbar">
-        <div class="nav-container">
-            <a href="#inicio" class="nav-link active" id="link-inicio">Inicio</a>
-            <a href="#secciones" class="nav-link" id="link-secciones">Secciones</a>
-            <a href="#visor-seccion" class="nav-link" id="link-articulos">Publicaciones</a>
-            <a href="#sobre-nosotros" class="nav-link" id="link-nosotros">Sobre Nosotros</a>
-        </div>
-    </nav>
+    <!-- Contenedor general del contenido (para el desplazamiento) -->
+    <div class="app-content-wrapper">
+        <!-- Cabecera Institucional (reubicada dentro del contenedor) -->
+        <header class="gcba-header">
+            <div class="header-container">
+                <div class="logos">
+                    <div class="agency-title">
+                        <span class="direccion" style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; letter-spacing: 0.5px; color: var(--color-texto);">MAXI FERRARO</span>
+                        <span style="display: block; font-size: 0.72rem; color: var(--color-texto-dm); font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.1rem;">Diputado Nacional | CABA</span>
+                    </div>
+                </div>
+                <div class="magazine-meta">
+                    <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 2px; color: var(--color-naranja);">CAMPAÑA 2026</span>
+                    <span style="display:block; font-size:0.72rem; margin-top:0.2rem; color: var(--color-texto-dm);">PROPUESTAS Y FUTURO</span>
+                </div>
+            </div>
+        </header>
 
-    <!-- Contenido Unificado (SPA de 4 Secciones) -->
     <main class="magazine-container">
 
-        <!-- 1. Hero Monolith (El Faro Iconográfico Lineal y Efecto Ilumina Todo) -->
-        <section class="hero-section hero-monolith" id="inicio">
-            <!-- Capa de iluminación de portada interactiva -->
-            <div class="hero-glowing-overlay"></div>
-            
-            <div class="hero-grid-container">
-                <div class="hero-left-column">
-                    <div class="lighthouse-widget-wrapper">
-                        <!-- Puerta y Faro SVG Lineal Depurado -->
-                        <div class="door-faro-container" onclick="document.getElementById('link-articulos').click();" aria-label="Explorar publicaciones">
-                            <div class="lighthouse-scene">
-                                <svg class="svg-lighthouse" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Luz de fondo sutil -->
-                                    <circle cx="110" cy="68" r="28" fill="var(--color-ba-cyan)" opacity="0.15" style="filter: blur(8px);" />
-                                    <circle cx="110" cy="68" r="10" fill="var(--color-ba-cyan)" opacity="0.3" style="filter: blur(2px);" />
-                                    
-                                    <!-- Línea de tierra/base minimalista -->
-                                    <line x1="55" y1="185" x2="165" y2="185" stroke="var(--color-azul-noche)" stroke-width="1.5" stroke-linecap="round" />
-                                    
-                                    <!-- Torre cónica estilizada lineal -->
-                                    <path d="M 82 185 L 98 80 L 122 80 L 138 185 Z" fill="none" stroke="var(--color-azul-noche)" stroke-width="1.5" stroke-linejoin="round" />
-                                    
-                                    <!-- Franja central de acento (Rojo Ladrillo) -->
-                                    <path d="M 90.5 130 L 129.5 130 L 126 95 L 94 95 Z" fill="var(--color-rojo-ladrillo)" />
-                                    
-                                    <!-- Líneas horizontales de acento -->
-                                    <line x1="89" y1="130" x2="131" y2="130" stroke="var(--color-azul-noche)" stroke-width="1.5" />
-                                    <line x1="94" y1="95" x2="126" y2="95" stroke="var(--color-azul-noche)" stroke-width="1.5" />
-                                    
-                                    <!-- Balcón del faro -->
-                                    <line x1="92" y1="80" x2="128" y2="80" stroke="var(--color-azul-noche)" stroke-width="3" stroke-linecap="round" />
-                                    
-                                    <!-- Estructura de la linterna de trazo puro -->
-                                    <line x1="101" y1="80" x2="101" y2="60" stroke="var(--color-azul-noche)" stroke-width="1.5" />
-                                    <line x1="110" y1="80" x2="110" y2="60" stroke="var(--color-azul-noche)" stroke-width="1" />
-                                    <line x1="119" y1="80" x2="119" y2="60" stroke="var(--color-azul-noche)" stroke-width="1.5" />
-                                    
-                                    <!-- Cúpula superior arqueada -->
-                                    <path d="M 97 60 Q 110 44 123 60 Z" fill="var(--color-azul-noche)" />
-                                    <line x1="110" y1="44" x2="110" y2="35" stroke="var(--color-azul-noche)" stroke-width="1.5" stroke-linecap="round" />
-                                    <circle cx="110" cy="35" r="1.5" fill="var(--color-rojo-ladrillo)" />
-                                    
-                                    <!-- Foco emisor de luz central -->
-                                    <circle cx="110" cy="68" r="3.5" fill="var(--color-rojo-ladrillo)" />
-                                </svg>
+        <!-- ============================================================
+             PÁGINA 1: INICIO (HERO + EDITORIAL + DESTACADOS)
+             ============================================================ -->
+        <div id="page-inicio" class="page-view active" role="tabpanel" aria-labelledby="link-inicio">
+
+            <!-- Hero / Portada Rediseñada -->
+            <section class="hero-section hero-monolith">
+                <div class="hero-glowing-overlay"></div>
+                <!-- Haz de faro: ilumina directamente el título -->
+                <div class="hero-beam-cone" aria-hidden="true"></div>
+                <div class="hero-beam-cone hero-beam-cone--inner" aria-hidden="true"></div>
+                <div class="hero-grid-container">
+                    
+                    <!-- Columna Izquierda: Título y Contenidos Editoriales -->
+                    <div class="hero-text-side">
+                        <p class="magazine-kicker">Diputado Nacional | Propuestas de Campaña</p>
+                        <h1 class="magazine-title massive-title">
+                            Maxi
+                            <span class="highlight">Ferraro</span>
+                        </h1>
+                        <p class="magazine-subtitle abstract-subtitle">
+                            Una plataforma digital interactiva que presenta las ideas, la trayectoria y el plan legislativo de Maxi Ferraro para construir un futuro sustentable, transparente y con educación pública de calidad.
+                        </p>
+                        
+                        <!-- CTA Principal -->
+                        <div class="hero-actions">
+                            <a href="#publicaciones" class="btn-hero btn-premium btn-grad-naranja" id="btn-explorar-edicion">
+                                <span>Explorar Propuestas</span>
+                                <span class="btn-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        
+                        <!-- Metadata institucional -->
+                        <div class="hero-meta-lock">
+                            <span class="mono-meta">Campaña 2026</span>
+                            <span class="meta-separator"></span>
+                            <span class="mono-meta">Coalición Cívica ARI</span>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Faro Interactivo —— El faro ilumina las propuestas -->
+                    <div class="hero-widget-side">
+                        <div class="lighthouse-widget-wrapper">
+                            <a href="#publicaciones" class="lighthouse-link" id="lighthouse-center" aria-label="Explorar propuestas y ejes">
+                                <div class="door-faro-container" id="faro-animado">
+                                    <div class="abstract-faro-scene">
+                                        <img src="img/abstract_neural_lighthouse.png" alt="Faro de Red Neuronal Abstracta" class="neural-lighthouse-img">
+                                    </div>
+
+                                    <!-- Obturadores de la compuerta futurista -->
+                                    <div class="puerta-unica" id="puerta-faro">
+                                        <div class="shutter shutter-left"></div>
+                                        <div class="shutter shutter-right"></div>
+                                        <div class="puerta-linea"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Haz de luz externo del faro -->
+                            <div class="external-light-beam" aria-hidden="true"></div>
+                            <!-- Leyenda del faro -->
+                            <p class="lighthouse-caption">Ideas en movimiento</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Sección 1: Editorial Letter (Carta de Bienvenida) layout -->
+            <section class="resumen-editorial reveal-on-scroll">
+                <div class="resumen-inner double-bezel-outer">
+                    <div class="resumen-inner-core double-bezel-inner">
+                        <div class="resumen-label">
+                            <span class="mono-tag">[ COMPROMISO 2026 ]</span>
+                            <h3 class="editorial-sign-title">Ideas<br>de Futuro</h3>
+                            <span class="editorial-date">Mayo 2026</span>
+                        </div>
+                        <div class="resumen-body">
+                            <h2 class="editorial-heading">Propuestas de acción para transformar el futuro</h2>
+                            <div class="editorial-divider"></div>
+                            <p class="editorial-paragraph">
+                                Construir una alternativa política sólida para nuestra Ciudad y el país requiere ideas firmes, compromiso y participación ciudadana. En esta plataforma digital, ponemos a disposición nuestros ejes prioritarios de campaña, diseñados para responder a los desafíos de la educación pública, la transparencia democrática y el desarrollo sustentable.
+                            </p>
+                            <p class="editorial-paragraph">
+                                Creemos en una política transparente, basada en principios de honestidad y ficha limpia. Te invitamos a explorar nuestras propuestas de leyes y debates legislativos activos, y a sumarte como voluntario para multiplicar esta voz y debatir las ideas de cara a la ciudadanía.
+                            </p>
+                            
+                            <div class="editorial-signature">
+                                <p class="signature-name">Maxi Ferraro</p>
+                                <p class="signature-title">Diputado Nacional</p>
+                                <p class="signature-org">Coalición Cívica ARI</p>
                             </div>
-                            <!-- Paneles de la puerta de marfil interactiva -->
-                            <div class="door-panel left-door">
-                                <div class="door-handle"></div>
-                            </div>
-                            <div class="door-panel right-door">
-                                <div class="door-handle"></div>
+                            
+                            <div class="resumen-acciones">
+                                <a class="btn-resumen btn-premium group btn-grad-naranja" href="#publicaciones">
+                                    <span>Ver propuestas</span>
+                                    <span class="btn-icon-circle">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                        </svg>
+                                    </span>
+                                </a>
                             </div>
                         </div>
-                        <!-- Haz de luz externo barrido interactivo -->
-                        <div class="external-light-beam"></div>
                     </div>
                 </div>
+            </section>
 
-                <div class="hero-right-column">
-                    <p class="magazine-kicker">PUBLICACIÓN INSTITUCIONAL DIGITAL</p>
-                    <h1 class="magazine-title massive-title">
-                        Evidencia <span class="highlight">Penal</span>
-                    </h1>
-                    <p class="magazine-subtitle abstract-subtitle">
-                        Investigación aplicada y datos empíricos para el nuevo Servicio Penitenciario y de Reintegración Social de la Ciudad Autónoma de Buenos Aires.
-                    </p>
+            <!-- Nueva Sección: Radiografía Política -->
+            <section class="radiografia-seccion reveal-on-scroll" id="radiografia-politica" style="max-width: 1400px; margin: 4rem auto; padding: 0 2rem;">
+                <div class="radiografia-header" style="text-align: center; margin-bottom: 3rem;">
+                    <span class="mono-tag" style="display: inline-block; margin-bottom: 0.8rem;">[ ANÁLISIS DE ESTRATEGIA ]</span>
+                    <h2 class="section-title" style="font-family: var(--font-serif); font-size: 2.6rem; font-weight: 400; color: var(--color-texto); margin-bottom: 0.8rem;">Radiografía Política</h2>
+                    <p class="section-subtitle" style="color: var(--color-texto-dm); font-size: 1.05rem; max-width: 600px; margin: 0 auto;">Un mapeo interactivo de las fortalezas legislativas y los desafíos estratégicos de la campaña de Maxi Ferraro.</p>
                 </div>
-            </div>
-
-            <div class="hero-logos-wrapper">
-                <img src="img/logo-ba.svg" alt="Gobierno de la Ciudad Autónoma de Buenos Aires" class="hero-logo-ba">
-            </div>
-        </section>
-
-        <!-- 2. Ejes Temáticos (Bento Grid Asimétrico - Sección 2) -->
-        <!-- 2. Ejes Temáticos (Diseño Editorial Columnar - Sección 2) -->
-        <section id="secciones" class="ejes-seccion">
-            <div class="ejes-header">
-                <span class="mono-tag">[ EJES DOCUMENTALES ]</span>
-                <h2>Estructura del Saber Penitenciario</h2>
-                <p>Estratificación del análisis empírico y metodologías aplicadas a la gestión pública.</p>
-            </div>
-            
-            <div class="ejes-grid">
-                <!-- Eje 1 -->
-                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc1')" class="eje-columna">
-                    <div class="eje-meta">
-                        <span class="eje-numero">01</span>
-                        <span class="eje-id">[EXP-GESTION-6923]</span>
-                    </div>
-                    <h3>Doctrina y Gestión</h3>
-                    <p>Modelos organizativos, infraestructura y prevención situacional en el Servicio Penitenciario de la Ciudad.</p>
-                    <span class="eje-enlace">Explorar Publicación &rarr;</span>
-                </a>
-
-                <!-- Eje 2 -->
-                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc2')" class="eje-columna">
-                    <div class="eje-meta">
-                        <span class="eje-numero">02</span>
-                        <span class="eje-id">[EXP-CRIM-APLICADA]</span>
-                    </div>
-                    <h3>Investigación Aplicada</h3>
-                    <p>Estudios empíricos y auditoría de sesgos en algoritmos analíticos para la toma de decisiones judiciales.</p>
-                    <span class="eje-enlace">Explorar Publicación &rarr;</span>
-                </a>
-
-                <!-- Eje 3 -->
-                <a href="#visor-seccion" onclick="cargarArticuloDesdeEnlace('doc3')" class="eje-columna">
-                    <div class="eje-meta">
-                        <span class="eje-numero">03</span>
-                        <span class="eje-id">[EXP-INTEGRACION-RS]</span>
-                    </div>
-                    <h3>Reintegración Social</h3>
-                    <p>Arquitectura pedagógica y programas de reinserción tecnológica activa aplicados al egreso penal.</p>
-                    <span class="eje-enlace">Explorar Publicación &rarr;</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- 3. Tablero de Lectura (Índice Lineal + Visor Editorial - Sección 3) -->
-        <section class="tablero-seccion" id="visor-seccion">
-            <div class="tablero-grid">
-                <!-- Columna Izquierda: Índice Tipográfico Limpio (TOC) -->
-                <aside class="tablero-sidebar">
-                    <span class="mono-tag">[ EDICIÓN ACTIVA ]</span>
-                    <h2>Publicaciones</h2>
-                    
-                    <div class="toc-interactive-list">
-                        <div class="toc-item active" id="toc-doc1" onclick="cargarArticuloDesdeEnlace('doc1')">
-                            <span class="toc-number">01</span>
-                            <div class="toc-meta">
-                                <span class="toc-eje">Doctrina y Gestión</span>
-                                <h4 class="toc-title">Prevención Espacial Urbana</h4>
+                
+                <div class="radiografia-container double-bezel-outer" style="background: var(--bg-surface); border: 1px solid var(--color-linea); border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
+                    <div class="radiografia-inner double-bezel-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; min-height: 480px;">
+                        
+                        <!-- Panel Izquierdo: Red Interactiva -->
+                        <div class="radiografia-network-side" style="position: relative; height: 100%; min-height: 400px; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle at center, rgba(26,98,255,0.04) 0%, transparent 70%); border-right: 1px solid var(--color-linea);">
+                            <div class="network-canvas" id="network-canvas" style="position: relative; width: 400px; height: 400px;">
+                                <!-- Hub Central -->
+                                <div class="network-hub" style="position: absolute; top: 200px; left: 200px; transform: translate(-50%, -50%); width: 88px; height: 88px; background: radial-gradient(circle, var(--bg-raised) 0%, var(--bg-base) 100%); border: 2px solid var(--color-azul-anchor); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--color-texto); font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; z-index: 10; box-shadow: 0 0 30px rgba(26,98,255,0.4);">
+                                    <span class="hub-label">FERRARO</span>
+                                </div>
+                                
+                                <!-- Líneas Conectoras en SVG -->
+                                <svg class="network-links" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5;">
+                                    <line id="line-edu" x1="200" y1="200" x2="200" y2="80" stroke="var(--color-naranja)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+                                    <line id="line-transp" x1="200" y1="200" x2="310" y2="150" stroke="var(--color-verde)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+                                    <line id="line-amb" x1="200" y1="200" x2="270" y2="290" stroke="var(--color-fucsia)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+                                    <line id="line-estruc" x1="200" y1="200" x2="130" y2="290" stroke="var(--color-azul-anchor)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+                                    <line id="line-electoral" x1="200" y1="200" x2="90" y2="150" stroke="var(--color-fucsia)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+                                </svg>
+                                
+                                <!-- Nodos -->
+                                <!-- Fortaleza 1: Educación (Naranja) -->
+                                <div class="network-node node-edu active" data-target="info-edu" style="position: absolute; top: 80px; left: 200px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-naranja); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+                                    <div class="node-pulse pulse-naranja" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-naranja); opacity: 0.8;"></div>
+                                    <span class="node-icon" style="font-size: 1.2rem;">📚</span>
+                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Educación</span>
+                                </div>
+                                <!-- Fortaleza 2: Transparencia (Verde) -->
+                                <div class="network-node node-transp" data-target="info-transp" style="position: absolute; top: 150px; left: 310px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-verde); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+                                    <div class="node-pulse pulse-verde" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-verde); opacity: 0.8;"></div>
+                                    <span class="node-icon" style="font-size: 1.2rem;">⚖️</span>
+                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Transparencia</span>
+                                </div>
+                                <!-- Fortaleza 3: Ambiente (Fucsia) -->
+                                <div class="network-node node-amb" data-target="info-amb" style="position: absolute; top: 290px; left: 270px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-fucsia); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+                                    <div class="node-pulse pulse-fucsia" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-fucsia); opacity: 0.8;"></div>
+                                    <span class="node-icon" style="font-size: 1.2rem;">🌱</span>
+                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Ambiente</span>
+                                </div>
+                                <!-- Desafío 1: Estructura (Azul) -->
+                                <div class="network-node node-estruc" data-target="info-estruc" style="position: absolute; top: 290px; left: 130px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-azul-anchor); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+                                    <div class="node-pulse pulse-azul" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-azul-anchor); opacity: 0.8;"></div>
+                                    <span class="node-icon" style="font-size: 1.2rem;">🛡️</span>
+                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Estructura</span>
+                                </div>
+                                <!-- Desafío 2: Penetración Electoral (Fucsia/Azul) -->
+                                <div class="network-node node-electoral" data-target="info-electoral" style="position: absolute; top: 150px; left: 90px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-fucsia); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+                                    <div class="node-pulse pulse-fucsia-azul" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-fucsia); opacity: 0.8;"></div>
+                                    <span class="node-icon" style="font-size: 1.2rem;">⚡</span>
+                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Electoral</span>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="toc-item" id="toc-doc2" onclick="cargarArticuloDesdeEnlace('doc2')">
-                            <span class="toc-number">02</span>
-                            <div class="toc-meta">
-                                <span class="toc-eje">Investigación Aplicada</span>
-                                <h4 class="toc-title">Algoritmos y Sesgos</h4>
-                            </div>
-                        </div>
-
-                        <div class="toc-item" id="toc-doc3" onclick="cargarArticuloDesdeEnlace('doc3')">
-                            <span class="toc-number">03</span>
-                            <div class="toc-meta">
-                                <span class="toc-eje">Reintegración Social</span>
-                                <h4 class="toc-title">Reinserción Digital</h4>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- Columna Derecha: Visor de Artículos -->
-                <div class="tablero-content">
-                    <article class="article-layout" id="articulo-visor">
-                        <header class="articulo-header">
-                            <span class="articulo-badge" id="dyn-category-badge">Doctrina y Gestión</span>
-                            <h2 class="articulo-title" id="dyn-title">Cargando publicación...</h2>
-                            <div class="articulo-divider"></div>
-                            <div class="articulo-meta" id="dyn-author">Subsecretaría de Política Criminal</div>
-                        </header>
-
-                        <div class="article-grid">
-                            <div class="article-content">
-                                <div class="abstract-box">
-                                    <h3 class="abstract-title">Resumen</h3>
-                                    <p id="dyn-abstract">Obteniendo datos de la publicación...</p>
-                                    <div class="keywords" id="dyn-keywords"></div>
+                        <!-- Panel Derecho: Información del Análisis Dinámico -->
+                        <div class="radiografia-info-side" style="padding: 3rem; background: rgba(20, 24, 42, 0.2); display: flex; align-items: center;">
+                            <div class="info-content-wrapper" style="width: 100%;">
+                                <!-- Info 1: Educación -->
+                                <div class="info-card active" id="info-edu">
+                                    <span class="info-type badge-fortaleza" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-naranja); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-naranja); letter-spacing: 1.5px; margin-bottom: 1.5rem;">FORTALEZA</span>
+                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Trayectoria y Liderazgo Educativo</h3>
+                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-naranja); margin-bottom: 1.5rem;"></div>
+                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">Maxi Ferraro ha liderado la agenda educativa y cuenta con un gran reconocimiento en los sectores docentes y universitarios. Su capacidad de articular propuestas técnicas sólidas lo posiciona como el referente principal en la reforma escolar digital.</p>
+                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-naranja);">100%</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Presencia en debates</span>
+                                        </div>
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-naranja);">#1</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Prioridad en Agenda</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 
-                                <div class="body-text" id="dyn-body">
-                                    <!-- Inyectado dinámicamente -->
+                                <!-- Info 2: Transparencia -->
+                                <div class="info-card" id="info-transp" style="display: none;">
+                                    <span class="info-type badge-fortaleza" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-verde); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-verde); letter-spacing: 1.5px; margin-bottom: 1.5rem;">FORTALEZA</span>
+                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Integridad Ética y Ficha Limpia</h3>
+                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-verde); margin-bottom: 1.5rem;"></div>
+                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">Identificado históricamente con la transparencia institucional. La propuesta de Ficha Limpia goza de un amplio consenso social y sirve como elemento diferenciador absoluto ante otras fuerzas políticas de la Ciudad.</p>
+                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-verde);">CC-ARI</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Reputación histórica</span>
+                                        </div>
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-verde);">10/10</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Calificación ética</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Info 3: Ambiente -->
+                                <div class="info-card" id="info-amb" style="display: none;">
+                                    <span class="info-type badge-fortaleza" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-fucsia); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-fucsia); letter-spacing: 1.5px; margin-bottom: 1.5rem;">FORTALEZA</span>
+                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Agenda Verde y Sostenibilidad</h3>
+                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-fucsia); margin-bottom: 1.5rem;"></div>
+                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">Su vinculación con políticas medioambientales atrae al electorado joven e independiente. La transición energética urbana y el reciclaje circular son propuestas modernas que generan impacto en las clases medias urbanas.</p>
+                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">NET-0</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Meta de Emisiones CABA</span>
+                                        </div>
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">+25%</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Atracción voto joven</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Info 4: Estructura (Desafío) -->
+                                <div class="info-card" id="info-estruc" style="display: none;">
+                                    <span class="info-type badge-desafio" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-azul-anchor); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-azul-anchor); letter-spacing: 1.5px; margin-bottom: 1.5rem;">DESAFÍO</span>
+                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Estructura Partidaria Compacta</h3>
+                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-azul-anchor); margin-bottom: 1.5rem;"></div>
+                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">La Coalición Cívica es una fuerza nacional compacta en comparación con estructuras tradicionales. Esto exige focalizar los esfuerzos en la campaña digital de alto impacto y en la creación de coaliciones para la fiscalización.</p>
+                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-azul-anchor);">100%</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Enfoque orgánico digital</span>
+                                        </div>
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-azul-anchor);">Alianzas</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Acuerdos de fiscalización</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Info 5: Electoral (Desafío) -->
+                                <div class="info-card" id="info-electoral" style="display: none;">
+                                    <span class="info-type badge-desafio" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-fucsia); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-fucsia); letter-spacing: 1.5px; margin-bottom: 1.5rem;">DESAFÍO</span>
+                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Polarización y Sectores Tradicionales</h3>
+                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-fucsia); margin-bottom: 1.5rem;"></div>
+                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">La polarización extrema dificulta que los discursos moderados y basados en datos penetren en sectores tradicionales no urbanos. El desafío es simplificar la narrativa y enfocar el mensaje territorial.</p>
+                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">Territorio</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Foco en barrios lejanos</span>
+                                        </div>
+                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">Simplificar</span>
+                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Mensaje directo sin tecnicismos</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <aside class="article-marginalia">
-                                <div class="marginalia-block">
-                                    <span class="marginalia-number">NOTA 01</span>
-                                    <p>Toda la evidencia y datos metodológicos presentados cuentan con la trazabilidad del Observatorio de Política Criminal.</p>
-                                </div>
-                                <div class="marginalia-block highlight-quote">
-                                    <p>El dato empírico estructurado desplaza las conjeturas en el diseño de las políticas públicas.</p>
-                                </div>
-                            </aside>
                         </div>
-                    </article>
+                        
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Tablero de Métricas (Fila Tipográfica Unificada) -->
-        <section class="metricas-seccion">
-            <div class="metricas-container">
-                <div class="metricas-header">
-                    <span class="mono-tag">[ IMPACTO CIENTÍFICO ]</span>
-                    <h2>Trazabilidad de la Información</h2>
-                    <p>Circulación e impacto del conocimiento empírico en la política criminal local.</p>
+            <!-- Sección 2: Ejes de Propuesta (Showcase Grid) -->
+            <section class="teasers-seccion">
+                <div class="teasers-header reveal-on-scroll">
+                    <span class="mono-tag">[ EJES DE CAMPAÑA ]</span>
+                    <h2 class="section-title">Ejes de la Propuesta</h2>
+                    <p class="section-subtitle">Ideas claras y viables para legislar y construir un futuro mejor.</p>
                 </div>
-                
-                <div class="metricas-grid">
-                    <div class="metric-columna">
-                        <div class="metric-value">1.240+</div>
-                        <div class="metric-label">Descargas de Documentos</div>
+                <div class="teasers-grid">
+
+                    <!-- Art 1: Educación y Futuro (Naranja/Fucsia Bezel) -->
+                    <div class="teaser-card card-gold double-bezel-outer reveal-on-scroll">
+                        <div class="teaser-card-inner double-bezel-inner">
+                            <div class="teaser-number">01</div>
+                            <div class="teaser-body">
+                                <span class="teaser-cat" style="color: var(--color-naranja);">Educación y Futuro</span>
+                                <h3 class="teaser-title">Revolución Educativa Digital y financiamiento educativo</h3>
+                                <p class="teaser-author">Maxi Ferraro | Eje Educación</p>
+                                <p class="teaser-desc">Propuesta legislativa para garantizar conectividad simétrica en escuelas, reformas de planes de estudio y capacitación en habilidades y tecnologías del conocimiento.</p>
+                                <div class="teaser-keywords">
+                                    <span class="teaser-kw-gold" style="border-color: var(--color-naranja); color: var(--color-naranja);">Educación Pública</span>
+                                    <span class="teaser-kw-gold" style="border-color: var(--color-naranja); color: var(--color-naranja);">Alfabetización Digital</span>
+                                    <span class="teaser-kw-gold" style="border-color: var(--color-naranja); color: var(--color-naranja);">Futuro</span>
+                                </div>
+                            </div>
+                            <a class="teaser-cta btn-gold-cta group btn-grad-naranja" href="#doc1" style="border: none; padding: 0.8rem 1.4rem; border-radius: 99px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span>Explorar Eje</span>
+                                <span class="btn-icon-circle-sm" style="background: rgba(255,255,255,0.2);">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 12px; height: 12px; color: #fff;">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="metric-columna">
-                        <div class="metric-value">4.850+</div>
-                        <div class="metric-label">Lectores Calificados</div>
+
+                    <!-- Art 2: Transparencia (Verde Bezel) -->
+                    <div class="teaser-card card-cyan double-bezel-outer reveal-on-scroll">
+                        <div class="teaser-card-inner double-bezel-inner">
+                            <div class="teaser-number">02</div>
+                            <div class="teaser-body">
+                                <span class="teaser-cat" style="color: var(--color-verde);">Transparencia y Ética</span>
+                                <h3 class="teaser-title">Ficha Limpia y auditoría de compras públicas abiertas</h3>
+                                <p class="teaser-author">Maxi Ferraro | Eje Democracia</p>
+                                <p class="teaser-desc">Implementación de Ficha Limpia obligatoria para todos los funcionarios y portales abiertos respaldados por tecnología blockchain para evitar desvíos y sobreprecios.</p>
+                                <div class="teaser-keywords">
+                                    <span class="teaser-kw-cyan" style="border-color: var(--color-verde); color: var(--color-verde);">Ficha Limpia</span>
+                                    <span class="teaser-kw-cyan" style="border-color: var(--color-verde); color: var(--color-verde);">Transparencia Activa</span>
+                                    <span class="teaser-kw-cyan" style="border-color: var(--color-verde); color: var(--color-verde);">Control</span>
+                                </div>
+                            </div>
+                            <a class="teaser-cta btn-cyan-cta group btn-grad-verde" href="#doc2" style="border: none; padding: 0.8rem 1.4rem; border-radius: 99px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span>Explorar Eje</span>
+                                <span class="btn-icon-circle-sm" style="background: rgba(255,255,255,0.2);">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 12px; height: 12px; color: #fff;">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="metric-columna">
-                        <div class="metric-value">32</div>
-                        <div class="metric-label">Artículos Recibidos</div>
+
+                    <!-- Art 3: Economía Verde (Fucsia Bezel) -->
+                    <div class="teaser-card card-gold double-bezel-outer reveal-on-scroll">
+                        <div class="teaser-card-inner double-bezel-inner" style="border-color: var(--color-fucsia);">
+                            <div class="teaser-number" style="color: var(--color-fucsia);">03</div>
+                            <div class="teaser-body">
+                                <span class="teaser-cat" style="color: var(--color-fucsia);">Economía Verde e Integración</span>
+                                <h3 class="teaser-title">Plan de Transición Energética y Economía Circular Urbana</h3>
+                                <p class="teaser-author">Maxi Ferraro | Eje Ambiente</p>
+                                <p class="teaser-desc">Desarrollo sustentable urbano a través de incentivos tributarios para empresas limpias, microrredes solares y tecnificación de recicladores urbanos.</p>
+                                <div class="teaser-keywords">
+                                    <span class="teaser-kw-gold" style="border-color: var(--color-fucsia); color: var(--color-fucsia);">Transición Verde</span>
+                                    <span class="teaser-kw-gold" style="border-color: var(--color-fucsia); color: var(--color-fucsia);">Economía Circular</span>
+                                    <span class="teaser-kw-gold" style="border-color: var(--color-fucsia); color: var(--color-fucsia);">Pulmones</span>
+                                </div>
+                            </div>
+                            <a class="teaser-cta btn-gold-cta group btn-grad-fucsia" href="#doc3" style="border: none; padding: 0.8rem 1.4rem; border-radius: 99px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <span>Explorar Eje</span>
+                                <span class="btn-icon-circle-sm" style="background: rgba(255,255,255,0.2);">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 12px; height: 12px; color: #fff;">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="metric-columna">
-                        <div class="metric-value">100%</div>
-                        <div class="metric-label">Acceso Abierto (CC BY)</div>
-                   <!-- 4. Institución y Convocatoria Unificadas (Sección 4) -->
-        <section id="sobre-nosotros" class="institucion-seccion">
-            <div class="institucion-grid">
-                <!-- Columna Izquierda: Institucional -->
-                <div class="institucion-col">
-                    <span class="mono-tag">[ MISIÓN INSTITUCIONAL ]</span>
-                    <h2>Política Criminal Basada en Datos</h2>
-                    <p class="institucion-text">
-                        <strong>Evidencia Penal</strong> es la publicación oficial de la Subsecretaría de Política Criminal y Asuntos Penitenciarios del Ministerio de Seguridad de la Ciudad Autónoma de Buenos Aires. Establecemos un puente riguroso entre el conocimiento científico-académico y la gestión pública operativa.
+
+                </div>
+            </section>
+
+
+
+            <!-- Sección 3: Pilares de campaña -->
+            <section class="metricas-seccion reveal-on-scroll">
+                <div class="metricas-container double-bezel-outer">
+                    <div class="metricas-inner-core double-bezel-inner">
+                        <div class="metricas-header">
+                            <span class="mono-tag">[ PILARES DE LA CAMPAÑA ]</span>
+                            <h2>Una política basada en principios</h2>
+                            <p>Cuatro compromisos irrenunciables que guían cada propuesta, cada debate y cada decisión legislativa.</p>
+                        </div>
+                        <div class="metricas-grid">
+                            <div class="metric-columna">
+                                <div class="metric-value" style="font-size: 2rem; letter-spacing: -1px;">Educación</div>
+                                <div class="metric-label">Pública y de Calidad</div>
+                            </div>
+                            <div class="metric-columna">
+                                <div class="metric-value" style="font-size: 2rem; letter-spacing: -1px;">Ética</div>
+                                <div class="metric-label">Ficha Limpia y Control</div>
+                            </div>
+                            <div class="metric-columna">
+                                <div class="metric-value" style="font-size: 2rem; letter-spacing: -1px;">Futuro</div>
+                                <div class="metric-label">Economía Verde</div>
+                            </div>
+                            <div class="metric-columna">
+                                <div class="metric-value" style="font-size: 2rem; letter-spacing: -1px;">Ciudad</div>
+                                <div class="metric-label">Para todos los barrios</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- /page-inicio -->
+
+
+        <!-- ============================================================
+             PÁGINA 2: PROPUESTAS (TABLERO DE ACCIÓN)
+             ============================================================ -->
+        <div id="page-publicaciones" class="page-view" role="tabpanel" aria-labelledby="link-publicaciones">
+
+            <!-- Ejes Temáticos -->
+            <section class="ejes-seccion">
+                <div class="ejes-header">
+                    <span class="mono-tag">[ EJES LEGISLATIVOS ]</span>
+                    <h2>Estructura de las Propuestas</h2>
+                    <p>Iniciativas y proyectos de ley diseñados para modernizar la gestión pública y mejorar el día a día de los ciudadanos.</p>
+                </div>
+                <div class="ejes-grid">
+                    <a href="#doc1" class="eje-columna">
+                        <div class="eje-meta">
+                            <span class="eje-numero">01</span>
+                            <span class="eje-id">[EJE-EDU-2026]</span>
+                        </div>
+                        <h3>Educación y Futuro</h3>
+                        <p>Reformas para garantizar conectividad escolar, actualizar planes de estudio y capacitar en habilidades tecnológicas.</p>
+                        <span class="eje-enlace">Explorar Propuesta &rarr;</span>
+                    </a>
+                    <a href="#doc2" class="eje-columna">
+                        <div class="eje-meta">
+                            <span class="eje-numero">02</span>
+                            <span class="eje-id">[EJE-TRANSP-2026]</span>
+                        </div>
+                        <h3>Transparencia y Ética</h3>
+                        <p>Ficha Limpia obligatoria para erradicar la corrupción y portales con blockchain para auditar licitaciones públicas.</p>
+                        <span class="eje-enlace">Explorar Propuesta &rarr;</span>
+                    </a>
+                    <a href="#doc3" class="eje-columna">
+                        <div class="eje-meta">
+                            <span class="eje-numero">03</span>
+                            <span class="eje-id">[EJE-AMB-2026]</span>
+                        </div>
+                        <h3>Economía Verde</h3>
+                        <p>Planes de transición energética, microrredes solares urbanas y formalización de recicladores metropolitanos.</p>
+                        <span class="eje-enlace">Explorar Propuesta &rarr;</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tablero de Lectura -->
+            <section class="tablero-seccion" id="visor-seccion">
+                <div class="tablero-grid">
+                    <aside class="tablero-sidebar">
+                        <span class="mono-tag">[ PROPUESTAS DETALLADAS ]</span>
+                        <h2>Ejes de Acción</h2>
+                        <nav class="toc-interactive-list" aria-label="Tabla de Contenidos">
+                            <a href="#doc1" class="toc-item active" id="toc-doc1">
+                                <span class="toc-number">01</span>
+                                <div class="toc-meta">
+                                    <span class="toc-eje" style="color: var(--color-naranja);">Educación</span>
+                                    <h4 class="toc-title">Revolución Educativa</h4>
+                                </div>
+                            </a>
+                            <a href="#doc2" class="toc-item" id="toc-doc2">
+                                <span class="toc-number">02</span>
+                                <div class="toc-meta">
+                                    <span class="toc-eje" style="color: var(--color-verde);">Democracia</span>
+                                    <h4 class="toc-title">Ficha Limpia</h4>
+                                </div>
+                            </a>
+                            <a href="#doc3" class="toc-item" id="toc-doc3">
+                                <span class="toc-number">03</span>
+                                <div class="toc-meta">
+                                    <span class="toc-eje" style="color: var(--color-fucsia);">Ambiente</span>
+                                    <h4 class="toc-title">Economía Verde</h4>
+                                </div>
+                            </a>
+                        </nav>
+                    </aside>
+
+                    <div class="tablero-content">
+                        <article class="article-layout double-bezel-outer" id="articulo-visor">
+                            <div class="article-layout-inner double-bezel-inner">
+                                <header class="articulo-header">
+                                    <span class="articulo-badge" id="dyn-category-badge">Educación y Futuro</span>
+                                    <h2 class="articulo-title" id="dyn-title">Cargando propuesta...</h2>
+                                    <div class="articulo-divider"></div>
+                                    <div class="articulo-meta" id="dyn-author">Maxi Ferraro | Eje Educación</div>
+                                </header>
+                                <div class="article-grid">
+                                    <div class="article-content">
+                                        <div class="abstract-box">
+                                            <h3 class="abstract-title">Resumen del Eje</h3>
+                                            <p id="dyn-abstract">Obteniendo datos del plan...</p>
+                                            <div class="keywords" id="dyn-keywords"></div>
+                                        </div>
+                                        <div class="body-text" id="dyn-body"></div>
+                                    </div>
+                                    <aside class="article-marginalia" id="dyn-marginalia">
+                                        <div class="marginalia-block">
+                                            <span class="marginalia-number">PROPUESTA 01</span>
+                                            <p>El presupuesto escolar estará blindado para garantizar conectividad en el 100% de los establecimientos.</p>
+                                        </div>
+                                        <div class="marginalia-block highlight-quote">
+                                            <p>El dato y la honestidad desplazan el oportunismo en el diseño de las políticas públicas.</p>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- /page-publicaciones -->
+
+        <!-- ============================================================
+             PÁGINA 3: TRAYECTORIA Y SUMATE
+             ============================================================ -->
+        <div id="page-nosotros" class="page-view" role="tabpanel" aria-labelledby="link-nosotros">
+
+            <section id="sobre-nosotros" class="institucion-seccion">
+                <div class="institucion-grid">
+                    <!-- Columna Izquierda: Biografía -->
+                    <div class="institucion-col" id="biografia-seccion">
+                        <span class="mono-tag">[ TRAYECTORIA Y COMPROMISO ]</span>
+                        <h2>Maxi Ferraro</h2>
+                        <p class="institucion-text">
+                            <strong>Maxi Ferraro</strong> es Diputado Nacional por la Ciudad Autónoma de Buenos Aires y presidente de la Coalición Cívica ARI. Con una destacada carrera legislativa en la Legislatura Porteña y en el Congreso de la Nación, su labor se centra en la defensa de la educación pública, los derechos humanos, la diversidad y la transparencia en la gestión pública.
+                        </p>
+                        <p class="institucion-text">
+                            Cree en una política participativa, transparente y basada en principios éticos, donde la rendición de cuentas y la honestidad son las bases para recuperar la confianza de la sociedad en sus instituciones.
+                        </p>
+
+                        <h3 class="comite-title" id="ejes-partidarios">Ejes Parlamentarios</h3>
+                        <div class="comite-grid">
+                            <div class="comite-info">
+                                <h4>Educación Pública</h4>
+                                <p>Políticas de financiamiento sostenido y acceso tecnológico.</p>
+                            </div>
+                            <div class="comite-info">
+                                <h4>Transparencia</h4>
+                                <p>Impulso de Ficha Limpia y portales de control de cuentas públicas.</p>
+                            </div>
+                            <div class="comite-info">
+                                <h4>Economía Verde</h4>
+                                <p>Transición ecológica, energías limpias y reciclado urbano.</p>
+                            </div>
+                            <div class="comite-info">
+                                <h4>Derechos y Diversidad</h4>
+                                <p>Defensa activa de la inclusión social y los derechos humanos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Sumate Form -->
+                    <div class="convocatoria-col" id="voluntariado">
+                        <span class="mono-tag">[ COMPROMISO CIUDADANO ]</span>
+                        <h2>Sumate al equipo</h2>
+                        <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-texto-dm);">
+                            Queremos escucharte y construir juntos esta alternativa de futuro. Completá tus datos para sumarte como voluntario o recibir novedades.
+                        </p>
+                        
+                        <form id="volunteer-form" class="campania-form">
+                            <div class="form-group">
+                                <label for="form-name">Nombre completo</label>
+                                <input type="text" id="form-name" class="form-control" placeholder="Ingresá tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Correo electrónico</label>
+                                <input type="email" id="form-email" class="form-control" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-neighborhood">Barrio (CABA)</label>
+                                <input type="text" id="form-neighborhood" class="form-control" placeholder="Ej. Palermo, Flores..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-interest">Eje de mayor interés</label>
+                                <select id="form-interest" class="form-control" style="background-color: var(--bg-surface); color: var(--color-texto);" required>
+                                    <option value="" disabled selected>Seleccioná una opción</option>
+                                    <option value="Educacion">Educación y Futuro</option>
+                                    <option value="Transparencia">Transparencia y Democracia</option>
+                                    <option value="Ambiente">Economía Verde y Sustentabilidad</option>
+                                    <option value="Militancia">Acción y Comunicación</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn-premium btn-grad-naranja" style="border: none; padding: 0.9rem 1.8rem; width: 100%; border-radius: 99px; cursor: pointer; color: #fff;">
+                                <span>Enviar Registro</span>
+                                <span class="btn-icon-circle" style="background: rgba(255,255,255,0.25);">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px; color: #fff;">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secciones adicionales requeridas por el router y el navbar -->
+            <section id="iniciativas-legislativas" class="institucion-seccion" style="padding-top: 2rem;">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 4rem 2rem;">
+                    <span class="mono-tag">[ INICIATIVAS LEGISLATIVAS ]</span>
+                    <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 400; margin: 1rem 0;">Proyectos de Ley Activos</h2>
+                    <p style="color: var(--color-texto-dm); font-size: 1rem; line-height: 1.9; max-width: 60ch; margin: 0 auto 2rem;">
+                        Maxi Ferraro ha presentado más de 150 proyectos de ley en el Congreso. Conocé los ejes legislativos más importantes de la campaña 2026 en la sección de Propuestas.
                     </p>
-                    <p class="institucion-text">
-                        En el marco del nuevo Servicio Penitenciario de la Ciudad, es imperativo contar con un espacio de reflexión, análisis normativo y divulgación de resultados empíricos que guíen los programas de tratamiento y estrategias de reinserción.
+                    <a href="#publicaciones" class="btn-premium btn-grad-naranja" style="display: inline-flex;">
+                        <span>Ver Propuestas</span>
+                        <span class="btn-icon-circle" style="background: rgba(255,255,255,0.2);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="agenda-charlas" class="institucion-seccion" style="padding-top: 0;">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 4rem 2rem; border-top: 1px solid var(--color-linea);">
+                    <span class="mono-tag">[ AGENDA Y CHARLAS ]</span>
+                    <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 400; margin: 1rem 0;">Próximos eventos</h2>
+                    <p style="color: var(--color-texto-dm); font-size: 1rem; line-height: 1.9; max-width: 60ch; margin: 0 auto 2rem;">
+                        Seguí la agenda de Maxi Ferraro en redes sociales para enterarte de los próximos debates, charlas públicas y eventos de campaña en la Ciudad.
                     </p>
-
-                    <h3 class="comite-title">Comité Editorial</h3>
-                    <div class="comite-grid">
-                        <div class="comite-info">
-                            <h4>Dirección General</h4>
-                            <p>Subsecretaría de Política Criminal y Asuntos Penitenciarios</p>
-                        </div>
-                        <div class="comite-info">
-                            <h4>Coordinación</h4>
-                            <p>Gerencia de Investigación y Datos Penitenciarios</p>
-                        </div>
-                        <div class="comite-info">
-                            <h4>Asesoría Legal</h4>
-                            <p>Dirección General de Asuntos Jurídicos y Normativa</p>
-                        </div>
-                        <div class="comite-info">
-                            <h4>Innovación</h4>
-                            <p>Área de Sistemas Biométricos y Seguridad Integral</p>
-                        </div>
-                    </div>
+                    <a href="https://www.instagram.com/maxiferraro/" target="_blank" rel="noopener" class="btn-premium btn-grad-verde" style="display: inline-flex;">
+                        <span>Seguir en Instagram</span>
+                        <span class="btn-icon-circle" style="background: rgba(255,255,255,0.2);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                        </span>
+                    </a>
                 </div>
+            </section>
 
-                <!-- Columna Derecha: Convocatoria (Call for Papers sin caja oscura) -->
-                <div class="convocatoria-col">
-                    <span class="mono-tag">[ CONVOCATORIA ABIERTA ]</span>
-                    <h2>Recepción de Artículos - Vol. 2</h2>
-                    
-                    <div class="convocatoria-requisitos">
-                        <div class="requisito-item">
-                            <div class="requisito-numero">01</div>
-                            <div class="requisito-texto">
-                                <h4>Ejes Temáticos</h4>
-                                <p>Artículos inéditos de política criminal, criminología empírica o gestión penitenciaria orientados a datos locales.</p>
-                            </div>
-                        </div>
-
-                        <div class="requisito-item">
-                            <div class="requisito-numero">02</div>
-                            <div class="requisito-texto">
-                                <h4>Normas APA 7</h4>
-                                <p>Extensión de 15 a 20 páginas (.docx), con referencias y citas estructuradas en estricto formato APA 7ma edición.</p>
-                            </div>
-                        </div>
-
-                        <div class="requisito-item">
-                            <div class="requisito-numero">03</div>
-                            <div class="requisito-texto">
-                                <h4>Pares Ciegos</h4>
-                                <p>Evaluación mediante sistema de revisión por pares doble ciego para garantizar el rigor y el anonimato académico.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="convocatoria-cta">
-                        <p>Recepción del Volumen 2 abierta hasta el 30 de Agosto de 2026.</p>
-                        <a href="mailto:convocatorias@evidenciapenal.gob.ar?subject=Envio de Articulo - Evidencia Penal" class="btn-primary">Enviar Manuscrito &rarr;</a>
-                    </div>
+            <section id="contacto-seccion" class="institucion-seccion" style="padding-top: 0; padding-bottom: 4rem;">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 4rem 2rem; border-top: 1px solid var(--color-linea);">
+                    <span class="mono-tag">[ CONTACTO ]</span>
+                    <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 400; margin: 1rem 0;">Escribinos</h2>
+                    <p style="color: var(--color-texto-dm); font-size: 1rem; line-height: 1.9; max-width: 60ch; margin: 0 auto 2rem;">
+                        Para consultas de prensa, participación o colaboración, completá el formulario de voluntariado o escribinos a través de las redes oficiales.
+                    </p>
+                    <a href="#voluntariado" class="btn-premium btn-grad-naranja" style="display: inline-flex;">
+                        <span>Sumate al equipo</span>
+                        <span class="btn-icon-circle" style="background: rgba(255,255,255,0.2);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                        </span>
+                    </a>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div><!-- /page-nosotros -->
 
     </main>
 
-    <footer class="gcba-footer">
+    <footer class="gcba-footer" style="background: linear-gradient(180deg, rgba(12,14,20,0.95) 0%, rgba(8,10,16,0.98) 100%);">
         <div class="footer-container">
-            <p><strong>Evidencia Penal</strong> - Revista de Política Criminal</p>
-            <p>&copy; 2026 Gobierno de la Ciudad Autónoma de Buenos Aires. Todos los derechos reservados.</p>
+            <p><strong>Campaña Ferraro</strong> - Propuestas y Acción Legislativa</p>
+            <p>&copy; 2026 Coalición Cívica ARI. Todos los derechos reservados.</p>
         </div>
     </footer>
+    </div> <!-- /app-content-wrapper -->
 
-    <!-- SDK de MongoDB Realm (Stitch) -->
-    <script src="https://unpkg.com/realm-web@1.7.0/dist/bundle.iife.js"></script>
     <script src="js/app.js"></script>
 </body>
-</html>
+</html>

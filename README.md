@@ -1,12 +1,12 @@
-# Revista Digital: Evidencia Penal
+# Plataforma Maxi Ferraro
 
-Proyecto de vanguardia para la Dirección de Política Criminal. Una revista digital disruptiva que comunica el nacimiento del nuevo Servicio Penitenciario de la Ciudad (SPCABA) a través de un diseño de alta tecnología y fluidos dinámicos.
+Proyecto para la plataforma de campaña de Maxi Ferraro. Aprovechando el diseño dinámico, moderno y fluidos dinámicos para potenciar sus propuestas de campaña y enfoques políticos.
 
 ## Tecnologías
 - HTML5 / CSS3 (Vanilla)
-- Diseño Suizo-Digital
-- Fluid Dynamics (CSS Animations)
-- Glassmorphism
+- Animaciones fluidas y dinámicas
+- Glassmorphism / Interfaz Premium
 
 ## Autor
-Dirección de Política Criminal - CABA
+Campaña Maxi Ferraro
+

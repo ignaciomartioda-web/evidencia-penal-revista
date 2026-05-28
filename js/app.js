@@ -1,145 +1,240 @@
 /**
  * app.js - Motor de Navegación SPA y Gestión de Datos
- * Revista Evidencia Penal - GCBA
+ * Plataforma Maxi Ferraro - Campaña 2026
  */
 
-const STITCH_APP_ID = '<TU_APP_ID>'; 
-
-// Ejes de Criminología Empírica y Política Criminal (Contenido Unificado)
-const ARTICULOS_REVISTA = {
+// Propuestas de Campaña de Maxi Ferraro (Contenido Unificado)
+const PROPUESTAS_FERRARO = {
     "doc1": {
-        title: "Economía del delito y prevención espacial en grandes centros urbanos",
-        author: "Subsecretaría de Política Criminal",
-        category: "Doctrina y Gestión",
+        title: "Revolución Educativa Digital: Financiamiento y conectividad para las aulas del futuro",
+        author: "Maxi Ferraro | Eje Educación",
+        category: "Educación y Futuro",
         date: "Mayo 2026",
-        abstract: "Este estudio analiza la correlación entre el diseño del espacio urbano de alta densidad en CABA y los focos de delincuencia organizada, proponiendo un modelo de prevención basado en la teoría de actividades rutinarias y análisis georreferenciado.",
-        keywords: ["Prevención Espacial", "Economía del Delito", "CABA", "Georreferenciación"],
+        abstract: "Propuesta legislativa integral para actualizar el sistema educativo público. Se enfoca en garantizar financiamiento sostenido, conectividad de alta velocidad en todos los establecimientos, reformas curriculares con foco en habilidades digitales y la formación continua docente para preparar a los estudiantes ante la economía del conocimiento.",
+        keywords: ["Educación Pública", "Alfabetización Digital", "Formación Docente"],
+        marginalia: [
+            {
+                type: "note",
+                label: "PROPUESTA 01",
+                text: "El presupuesto de conectividad escolar estará blindado por ley, garantizando fibra óptica simétrica en el 100% de las escuelas públicas."
+            },
+            {
+                type: "quote",
+                text: "La educación pública de calidad es el único puente real hacia la igualdad de oportunidades en el siglo XXI."
+            }
+        ],
         body: `
-            <h3>1. El Espacio Urbano como Facilitador Situacional</h3>
-            <p>La prevención del delito en grandes urbes exige superar los esquemas reactivos tradicionales. El análisis espacial demuestra que el delito no se distribuye de manera aleatoria, sino que se concentra en puntos calientes ("hotspots") definidos por la confluencia de flujos de transporte y bajos niveles de control social informal.</p>
-            <p>La teoría de las actividades rutinarias aplicada al ámbito local de CABA permite modelar estas dinámicas para optimizar el patrullaje preventivo y la iluminación de corredores seguros.</p>
-            <h3>2. Datos Empíricos Aplicados a la Infraestructura</h3>
-            <p>El cruce de datos del Observatorio Penitenciario y el mapa del delito de la Ciudad arroja que el 64% de los delitos contra la propiedad ocurren en un radio de 200 metros de terminales de transbordo de pasajeros. La intervención situacional de estos nudos de transporte reduce la oportunidad delictiva en un 32% según las primeras evaluaciones de campo.</p>
+            <h3>1. El desafío del financiamiento educativo y la infraestructura</h3>
+            <p>La escuela no puede seguir enseñando en el siglo XX a estudiantes que vivirán en el siglo XXII. Proponemos una reforma legislativa de financiamiento educativo que blinde los recursos para tecnología escolar y asigne una partida específica a la modernización de los entornos de aprendizaje.</p>
+            <p>Garantizar conectividad simétrica a internet en todas las aulas no es un lujo técnico, sino un piso de ciudadanía básico para combatir la brecha digital.</p>
+            <h3>2. Reforma curricular y formación continua docente</h3>
+            <p>La conectividad sin contenido carece de impacto pedagógico. Proponemos actualizar los planes de estudio integrando programación, inteligencia artificial aplicada y habilidades de pensamiento crítico desde el nivel primario. Paralelamente, impulsamos el Programa Nacional de Formación Docente Continua en Tecnologías de la Información, asegurando incentivos profesionales para los educadores que lideren este proceso en las aulas.</p>
         `
     },
     "doc2": {
-        title: "Algoritmos predictivos de reincidencia: Evaluación ética y sesgos en el régimen penitenciario",
-        author: "Gerencia de Investigación y Datos Penitenciarios",
-        category: "Investigación Aplicada",
+        title: "Ficha Limpia y Transparencia Activa: Fortalecimiento del control ciudadano sobre el poder político",
+        author: "Maxi Ferraro | Eje Democracia",
+        category: "Transparencia",
         date: "Junio 2026",
-        abstract: "Evaluación técnica de la implementación de herramientas analíticas predictivas para el otorgamiento de salidas transitorias en el Servicio Penitenciario de CABA, analizando los sesgos demográficos de los modelos tradicionales.",
-        keywords: ["Algoritmos Predictivos", "Reincidencia", "Sesgos de Género", "Ética de Datos"],
+        abstract: "Proyecto de ley nacional y local para instituir la Ficha Limpia de forma obligatoria en cargos electivos y ministeriales. Plantea la automatización del control de declaraciones juradas, la digitalización total de las compras del Estado y la creación de un portal interactivo de auditoría ciudadana para eliminar los focos de opacidad estatal.",
+        keywords: ["Ficha Limpia", "Transparencia Activa", "Control Ciudadano"],
+        marginalia: [
+            {
+                type: "note",
+                label: "PROPUESTA 02",
+                text: "Inhabilitación automática para presentarse a cargos públicos para aquellas personas con condenas confirmadas en segunda instancia por delitos de corrupción."
+            },
+            {
+                type: "quote",
+                text: "La transparencia no es una concesión del gobernante, es un derecho del ciudadano que fortalece la democracia."
+            }
+        ],
         body: `
-            <h3>1. La Introducción del Análisis Predictivo</h3>
-            <p>La toma de decisiones sobre la soltura o el tránsito de internos en el régimen de progresividad penal se ha apoyado históricamente en informes psicológicos tradicionales. La incorporación de sistemas de soporte basados en árboles de decisión analíticos busca dar mayor transparencia y objetividad al proceso.</p>
-            <p>Sin embargo, la aplicación de algoritmos importados sin calibrar con datos locales de la Ciudad puede reproducir sesgos estructurales de criminalización sobre determinados barrios vulnerables.</p>
-            <h3>2. Auditoría del Modelo de Datos Local</h3>
-            <p>El estudio retrospectivo de 1.200 legajos penitenciarios locales demuestra que los factores predictivos más estables en CABA para evaluar la reinserción positiva son el nivel de escolarización formal alcanzado intramuros y el sostenimiento de redes afectivas externas, desplazando el peso de variables estáticas del historial delictivo temprano.</p>
+            <h3>1. Ficha Limpia como estándar ético ineludible</h3>
+            <p>Es momento de elevar la vara ética de la representación política. La iniciativa de Ficha Limpia busca asegurar que nadie que tenga una condena firme en segunda instancia por delitos de malversación de fondos públicos, cohecho o enriquecimiento ilícito pueda postularse a cargos públicos ni ser designado en la función ejecutiva.</p>
+            <p>Esta medida restaura la confianza social en las instituciones y garantiza que el Estado sea gestionado por personas idóneas éticamente.</p>
+            <h3>2. Portal digital de auditoría y compras abiertas</h3>
+            <p>La mejor vacuna contra la corrupción es la luz pública. Proponemos digitalizar el 100% de las contrataciones y licitaciones del Estado a través de blockchain y formatos abiertos. Cualquier ciudadano podrá auditar en tiempo real qué se compra, a quién y a qué precio, comparando los valores automáticamente con el mercado para evitar sobreprecios.</p>
         `
     },
     "doc3": {
-        title: "Arquitectura penitenciaria modular y reinserción sociolaboral en la era digital",
-        author: "Área de Innovación Tecnológica",
-        category: "Tecnología y Reinserción",
+        title: "Plan de Transición Energética y Economía Verde para las Áreas Urbanas",
+        author: "Maxi Ferraro | Eje Ambiente",
+        category: "Economía y Ambiente",
         date: "Julio 2026",
-        abstract: "Propuesta de reforma física y pedagógica para las dependencias de alojamiento de CABA, centrada en espacios de aprendizaje tecnológico intensivo y diseño modular de celdas para el bienestar mental.",
-        keywords: ["Arquitectura Penitenciaria", "Reinserción Digital", "Diseño Modular", "Salud Mental"],
+        abstract: "Propuesta de reconversión metropolitana sustentable. Incluye la creación de incentivos impositivos para industrias limpias, el fomento de la economía circular con recicladores urbanos tecnificados, el desarrollo de microrredes solares comunitarias y la expansión obligatoria de los pulmones verdes en áreas de alta densidad urbana.",
+        keywords: ["Transición Energética", "Economía Circular", "Espacios Verdes"],
+        marginalia: [
+            {
+                type: "note",
+                label: "PROPUESTA 03",
+                text: "Exenciones de Ingresos Brutos a pymes locales que certifiquen procesos de huella de carbono cero y reciclado total de sus insumos."
+            },
+            {
+                type: "quote",
+                text: "No hay desarrollo económico sustentable si seguimos consumiendo los recursos del mañana a expensas de la habitabilidad del hoy."
+            }
+        ],
         body: `
-            <h3>1. El Impacto del Entorno Físico en la Conducta</h3>
-            <p>El diseño tradicional de las cárceles tipo pabellón masivo atenta directamente contra los objetivos de resocialización y genera altos índices de violencia interna. La arquitectura penitenciaria moderna exige módulos habitacionales reducidos con espacios comunes de trabajo y estudio que simulen la vida en comunidad.</p>
-            <p>La incorporación de módulos de capacitación en programación y soporte digital remoto permite a los internos desarrollar habilidades de alta demanda en el mercado laboral contemporáneo.</p>
-            <h3>2. Reinserción a través de la Alfabetización Tecnológica</h3>
-            <p>La experiencia piloto implementada en la Ciudad indica que los egresados de talleres de desarrollo web dentro de las unidades de detención registran una inserción laboral formal del 78% dentro del primer año de libertad, reduciendo la tasa de reincidencia a un dígito (8.2%), convirtiéndose en el programa de mayor impacto medido hasta la fecha.</p>
+            <h3>1. Descarbonización y microrredes urbanas</h3>
+            <p>Las ciudades son responsables del 70% de las emisiones de carbono a nivel global. Proponemos un marco regulatorio que incentive la instalación de paneles solares residenciales y comerciales en terrazas metropolitanas, inyectando excedentes a la red pública. El objetivo es que la Ciudad produzca el 30% de su energía eléctrica de fuentes renovables para el año 2030.</p>
+            <p>Este cambio estructural generará miles de empleos verdes dedicados a la instalación, mantenimiento y desarrollo de tecnologías limpias.</p>
+            <h3>2. Economía circular y valorización de residuos</h3>
+            <p>Los residuos deben dejar de ser considerados basura para convertirse en recursos productivos. Impulsamos un plan de tecnificación y formalización de las cooperativas de recicladores urbanos, creando plantas de clasificación inteligente y centros de economía circular. El Estado priorizará la compra de materiales reciclados en su obra pública, cerrando el ciclo sustentable.</p>
         `
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Inicializando motor de 4 secciones SPA...");
-    
-    // Control de enlaces activos en Navbar
+// Alias por retrocompatibilidad interna
+const ARTICULOS_REVISTA = PROPUESTAS_FERRARO;
+
+let activePageId = '';
+let currentActiveDoc = 'doc1';
+
+// Variables de control de navbar (Auto-hide)
+let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+let navbarTicking = false;
+
+// Enrutador basado en Hash (Historia y Deep-linking)
+function router() {
+    const hash = window.location.hash || '#inicio';
+    console.log("SPA Router - Hash activo:", hash);
+
+    if (hash === '#inicio' || hash === '#radiografia-politica') {
+        showPage('page-inicio');
+    } else if (hash === '#publicaciones' || hash === '#secciones' || hash === '#visor-seccion') {
+        const wasOtherPage = (activePageId !== 'page-publicaciones');
+        showPage('page-publicaciones', wasOtherPage);
+        cargarArticuloLocal(currentActiveDoc).then(() => {
+            if (hash === '#visor-seccion') {
+                const target = document.getElementById('visor-seccion');
+                if (target) {
+                    if (wasOtherPage) {
+                        target.scrollIntoView({ behavior: 'instant', block: 'start' });
+                    } else {
+                        const rect = target.getBoundingClientRect();
+                        if (Math.abs(rect.top) > 50) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                }
+            }
+        });
+    } else if (hash === '#nosotros' || hash === '#sobre-nosotros' || hash === '#biografia-seccion' || hash === '#ejes-partidarios' || hash === '#voluntariado') {
+        showPage('page-nosotros');
+    } else if (hash.startsWith('#doc')) {
+        const docId = hash.substring(1);
+        if (ARTICULOS_REVISTA[docId]) {
+            const wasOtherPage = (activePageId !== 'page-publicaciones');
+            showPage('page-publicaciones', wasOtherPage);
+            currentActiveDoc = docId;
+            
+            // Esperar que finalice el renderizado antes de calcular posiciones
+            cargarArticuloLocal(docId).then(() => {
+                const target = document.getElementById('visor-seccion');
+                if (target) {
+                    if (wasOtherPage) {
+                        target.scrollIntoView({ behavior: 'instant', block: 'start' });
+                    } else {
+                        const rect = target.getBoundingClientRect();
+                        if (Math.abs(rect.top) > 50) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                }
+            });
+        } else {
+            showPage('page-inicio');
+        }
+    } else {
+        showPage('page-inicio');
+    }
+}
+
+// Intercambio limpio de vistas de página
+function showPage(pageId, preventScrollReset = false) {
+    if (activePageId === pageId) return;
+    activePageId = pageId;
+
+    console.log("SPA Router - Transición a página:", pageId);
+
+    // Ocultar vistas no activas
+    const pages = document.querySelectorAll('.page-view');
+    pages.forEach(page => page.classList.remove('active'));
+
+    // Activar vista objetivo
+    const targetPage = document.getElementById(pageId);
+    if (targetPage) {
+        targetPage.classList.add('active');
+    }
+
+    // Actualizar estados del Navbar
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.remove('active');
+        if (link.getAttribute('data-page') === pageId) {
             link.classList.add('active');
-        });
+        }
     });
 
-    // Detectar artículo inicial en la carga
-    let currentDoc = "doc1";
-    if (window.location.hash) {
-        const hashVal = window.location.hash.substring(1);
-        if (ARTICULOS_REVISTA[hashVal]) {
-            currentDoc = hashVal;
-            setTimeout(() => {
-                const target = document.getElementById('visor-seccion');
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-        }
+    // Reset de scroll al cambiar de página
+    if (!preventScrollReset) {
+        window.scrollTo({ top: 0, behavior: 'instant' });
     }
 
-    // Inicializamos con MongoDB Realm si está configurado, de lo contrario usamos el fallback
-    if (STITCH_APP_ID !== '<TU_APP_ID>') {
-        conectarBaseDatos(currentDoc);
-    } else {
-        cargarArticuloLocal(currentDoc);
+    // Restablecer el navbar visible en transiciones
+    const navbar = document.querySelector('.global-navbar');
+    if (navbar) {
+        navbar.classList.remove('navbar-hidden');
     }
+    lastScrollY = 0;
 
-    // Scroll Spy básico para resaltar el menú activo
-    window.addEventListener('scroll', scrollSpy);
-});
-
-// Función global para cambiar de artículo de forma interactiva e instantánea
-function cargarArticuloDesdeEnlace(docId) {
-    if (!ARTICULOS_REVISTA[docId]) return;
-    
-    const visor = document.getElementById('articulo-visor');
-    if (!visor) return;
-
-    // Transición de salida (Fade Out)
-    visor.classList.add('loading-fade');
-
-    setTimeout(() => {
-        // Carga de datos
-        cargarArticuloLocal(docId);
-        window.history.pushState(null, null, `#${docId}`);
-
-        // Actualizar items del índice (TOC)
-        document.querySelectorAll('.toc-item').forEach(item => {
-            item.classList.remove('active');
-        });
-        
-        const activeItem = document.getElementById(`toc-${docId}`);
-        if (activeItem) {
-            activeItem.classList.add('active');
+    // Calibrar y mostrar/ocultar el faro
+    const beam = document.getElementById('page-beam');
+    if (beam) {
+        if (pageId === 'page-inicio') {
+            beam.classList.add('active');
+            calibrateBeam();
+            setTimeout(calibrateBeam, 50);
+            setTimeout(calibrateBeam, 300);
+        } else {
+            beam.classList.remove('active');
         }
-
-        // Transición de entrada (Fade In)
-        visor.classList.remove('loading-fade');
-
-        // Desplazamiento suave al visor
-        const target = document.getElementById('visor-seccion');
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-        
-        // Actualizar navbar activa
-        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-        document.getElementById('link-articulos').classList.add('active');
-    }, 400);
+    }
 }
 
 function cargarArticuloLocal(docId) {
     const articulo = ARTICULOS_REVISTA[docId];
-    if (articulo) {
-        renderArticle(articulo);
-        
-        // Sincronizar también la clase activa en el TOC
-        document.querySelectorAll('.toc-item').forEach(item => item.classList.remove('active'));
+    if (!articulo) return Promise.resolve();
+
+    const visor = document.getElementById('articulo-visor');
+    return new Promise((resolve) => {
+        if (visor) {
+            if (visor.dataset.currentDoc !== docId) {
+                visor.classList.add('loading-fade');
+                setTimeout(() => {
+                    renderArticle(articulo);
+                    visor.dataset.currentDoc = docId;
+                    visor.classList.remove('loading-fade');
+                    resolve();
+                }, 200); // Transición suave
+            } else {
+                renderArticle(articulo);
+                resolve();
+            }
+        } else {
+            resolve();
+        }
+    }).then(() => {
+        // Sincronizar TOC
+        document.querySelectorAll('.toc-item').forEach(item => {
+            item.classList.remove('active');
+        });
         const activeItem = document.getElementById(`toc-${docId}`);
-        if (activeItem) activeItem.classList.add('active');
-    }
+        if (activeItem) {
+            activeItem.classList.add('active');
+        }
+    });
 }
 
 function renderArticle(data) {
@@ -149,9 +244,10 @@ function renderArticle(data) {
     const bodyEl = document.getElementById('dyn-body');
     const badgeEl = document.getElementById('dyn-category-badge');
     const keywordsContainer = document.getElementById('dyn-keywords');
+    const marginaliaContainer = document.getElementById('dyn-marginalia');
 
     if (titleEl) titleEl.innerText = data.title;
-    if (authorEl) authorEl.innerText = `${data.author} • ${data.date}`;
+    if (authorEl) authorEl.innerText = `${data.author} | ${data.date}`;
     if (badgeEl) badgeEl.innerText = data.category;
     if (abstractEl) abstractEl.innerText = data.abstract;
     if (bodyEl) bodyEl.innerHTML = data.body;
@@ -165,41 +261,488 @@ function renderArticle(data) {
             keywordsContainer.appendChild(span);
         });
     }
-}
 
-async function conectarBaseDatos(docId) {
-    try {
-        const app = new Realm.App({ id: STITCH_APP_ID });
-        console.log("Conectado a MongoDB Realm. Obteniendo datos para:", docId);
-        cargarArticuloLocal(docId);
-    } catch (e) {
-        console.error("Fallo de conexión a Realm. Utilizando fallback local.", e);
-        cargarArticuloLocal(docId);
+    if (marginaliaContainer && data.marginalia) {
+        marginaliaContainer.innerHTML = '';
+        data.marginalia.forEach((item, index) => {
+            const block = document.createElement('div');
+            if (item.type === 'note') {
+                block.className = 'marginalia-block';
+                block.innerHTML = `
+                    <span class="marginalia-number">${item.label || `NOTA 0${index + 1}`}</span>
+                    <p>${item.text}</p>
+                `;
+            } else if (item.type === 'quote') {
+                block.className = 'marginalia-block highlight-quote';
+                block.innerHTML = `
+                    <p>${item.text}</p>
+                `;
+            }
+            marginaliaContainer.appendChild(block);
+        });
     }
 }
 
-// Resalta la barra de navegación basada en el scroll actual (Simplificado a 4 secciones)
-function scrollSpy() {
-    const sections = ['inicio', 'secciones', 'visor-seccion', 'sobre-nosotros'];
-    const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-    
-    sections.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) {
-            const top = el.offsetTop - 150;
-            const bottom = top + el.offsetHeight;
-            
-            if (scrollPos >= top && scrollPos < bottom) {
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                
-                let targetId = 'link-inicio';
-                if (id === 'secciones') targetId = 'link-secciones';
-                if (id === 'visor-seccion') targetId = 'link-articulos';
-                if (id === 'sobre-nosotros') targetId = 'link-nosotros';
-                
-                const activeLink = document.getElementById(targetId);
-                if (activeLink) activeLink.classList.add('active');
-            }
+// Retrocompatibilidad con enlaces antiguos de navegación directa
+window.navigateTo = function(pageId) {
+    if (pageId === 'page-inicio') window.location.hash = '#inicio';
+    else if (pageId === 'page-publicaciones') window.location.hash = '#publicaciones';
+    else if (pageId === 'page-nosotros') window.location.hash = '#nosotros';
+    else window.location.hash = '#inicio';
+};
+
+// El haz del faro ahora es posicionado por CSS (fixed)
+// calibrateBeam se mantiene por retrocompatibilidad pero ya no modifica coordenadas
+function calibrateBeam() {
+    // El overlay es fixed en CSS, no requiere calibración dinámica
+    // Se deja el método para no romper la cadena de llamadas
+}
+
+// Inicialización de la aplicación
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("SPA Router - Inicializando enrutamiento por hash...");
+
+    // Enlazar botones de navegación principal
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        const pageId = link.getAttribute('data-page');
+        if (pageId) {
+            if (pageId === 'page-inicio') link.setAttribute('href', '#inicio');
+            else if (pageId === 'page-publicaciones') link.setAttribute('href', '#publicaciones');
+            else if (pageId === 'page-nosotros') link.setAttribute('href', '#nosotros');
         }
     });
+
+    // Formulario de voluntariado de Campaña
+    const volunteerForm = document.getElementById('volunteer-form');
+    const formFeedback = document.getElementById('form-feedback');
+    if (volunteerForm && formFeedback) {
+        volunteerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formFeedback.style.display = 'block';
+            const name = document.getElementById('form-name')?.value || 'voluntario';
+            formFeedback.innerText = `¡Gracias por sumarte, ${name}! Nos pondremos en contacto con vos a la brevedad.`;
+            volunteerForm.reset();
+            setTimeout(() => {
+                formFeedback.style.display = 'none';
+            }, 6000);
+        });
+    }
+
+    // Inicializar animaciones de entrada en scroll (Intersection Observer)
+    initScrollReveals();
+
+    // Escuchar historial de navegación (Back/Forward)
+    window.addEventListener('hashchange', router);
+
+    // Arrancar primer ciclo del router
+    router();
+});
+
+// Calibración del faro con throttle/debounce al redimensionar
+if (document.readyState === 'complete') {
+    calibrateBeam();
+} else {
+    window.addEventListener('load', calibrateBeam);
 }
+
+let resizeDebounce;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeDebounce);
+    resizeDebounce = setTimeout(calibrateBeam, 100);
+});
+
+// =============================================================================
+// NAVBAR AUTO-HIDE — Sensible al scroll
+// =============================================================================
+window.addEventListener('scroll', () => {
+    if (!navbarTicking) {
+        window.requestAnimationFrame(() => {
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+            const navbar = document.querySelector('.global-navbar');
+            
+            if (navbar) {
+                // Umbral más generoso: solo ocultar cuando el usuario baje más de 80px
+                // y la diferencia de desplazamiento sea significativa
+                const scrollDelta = currentScrollY - lastScrollY;
+                if (scrollDelta > 5 && currentScrollY > 80) {
+                    navbar.classList.add('navbar-hidden');
+                } else if (scrollDelta < -3 || currentScrollY < 80) {
+                    navbar.classList.remove('navbar-hidden');
+                }
+            }
+            
+            lastScrollY = currentScrollY;
+            navbarTicking = false;
+        });
+        navbarTicking = true;
+    }
+}, { passive: true });
+
+// =============================================================================
+// REGISTRO DE ELEMENTOS CON REVELACIÓN EN SCROLL (ENTRY ANIMATIONS)
+// =============================================================================
+function initScrollReveals() {
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '-5% 0px -5% 0px', // Prevenir disparos falsos en los bordes
+        threshold: 0.05
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target); // Revelación permanente para rendimiento
+            }
+        });
+    }, observerOptions);
+    
+    revealElements.forEach(el => observer.observe(el));
+}
+
+// =============================================================================
+// PUERTA ÚNICA DEL FARO: APERTURA ORGÁNICA + MICRO-PARALLAX
+// =============================================================================
+(function initNanaBananaFaro() {
+    const puerta = document.getElementById('puerta-faro');
+    const faroContenedor = document.getElementById('faro-animado');
+    const lighthouseWrapper = document.querySelector('.lighthouse-widget-wrapper');
+
+    if (!faroContenedor) return;
+
+    // Animación de respiración orgánica del faro
+    faroContenedor.classList.add('faro-respirando');
+
+    function abrirPuerta() {
+        if (puerta) {
+            puerta.classList.remove('door-open');
+            // Forzar reflow para que la animación se reinicie limpiamente
+            void puerta.offsetWidth;
+            puerta.classList.add('door-open');
+        }
+    }
+
+    // Activar al entrar en pantalla
+    if (puerta) {
+        const faroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Breve pausa para que el usuario vea la puerta cerrada
+                    setTimeout(abrirPuerta, 900);
+                    faroObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        faroObserver.observe(faroContenedor);
+
+        // Click: re-abre la puerta
+        faroContenedor.addEventListener('click', (e) => {
+            e.preventDefault();
+            puerta.classList.remove('door-open');
+            void puerta.offsetWidth;
+            setTimeout(abrirPuerta, 400);
+        });
+    }
+
+    // Micro-Parallax del faro al mover el cursor
+    if (lighthouseWrapper) {
+        lighthouseWrapper.addEventListener('mousemove', (e) => {
+            const rect = lighthouseWrapper.getBoundingClientRect();
+            const xPos = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+            const yPos = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+            faroContenedor.style.transform = `rotateX(${-yPos * 5}deg) rotateY(${xPos * 5}deg) translateZ(5px)`;
+            faroContenedor.style.transition = 'transform 0.12s ease-out';
+        });
+
+        lighthouseWrapper.addEventListener('mouseleave', () => {
+            faroContenedor.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0)';
+            faroContenedor.style.transition = 'transform 0.9s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        });
+    }
+})();
+
+// =============================================================================
+// HAZ DE LUZ DEL FARO QUE SIGUE EL CURSOR DENTRO DEL HERO
+// Spring Physics: stiffness + damping para movimiento con inercia real
+// =============================================================================
+(function initHeroCursorBeam() {
+    const heroSection = document.querySelector('.hero-monolith');
+    const beamCones = document.querySelectorAll('.hero-beam-cone');
+    const externalBeam = document.querySelector('.external-light-beam');
+
+    if (!heroSection || beamCones.length === 0) return;
+
+    let faroOriginX = 0;
+    let faroOriginY = 0;
+    let rafId = null;
+
+    // === SPRING PHYSICS STATE ===
+    // El haz tiene masa, resorte y amortiguación — como un péndulo con fluido
+    const spring = {
+        current: 0,      // Ángulo actual (°)
+        target: 0,       // Ángulo objetivo (°)
+        velocity: 0,     // Velocidad angular (°/frame)
+        stiffness: 0.045, // Qué tan fuerte tira el resorte hacia el target
+        damping: 0.82,   // Cuánto se frena la velocidad (1 = sin rozamiento, 0 = frenado total)
+    };
+
+    function updateFaroOrigin() {
+        const wrapper = document.querySelector('.lighthouse-widget-wrapper');
+        if (!wrapper) return;
+        const rect = wrapper.getBoundingClientRect();
+        faroOriginX = rect.left + rect.width * 0.5;
+        faroOriginY = rect.top + rect.height * 0.28;
+    }
+
+    // Normaliza el ángulo para evitar saltos de -180° a +180°
+    function shortestAngle(current, target) {
+        let delta = target - current;
+        while (delta > 180)  delta -= 360;
+        while (delta < -180) delta += 360;
+        return current + delta;
+    }
+
+    function stepSpring() {
+        // Fuerza del resorte: proporcional a la distancia al objetivo
+        const normalizedTarget = shortestAngle(spring.current, spring.target);
+        const force = (normalizedTarget - spring.current) * spring.stiffness;
+
+        // Actualizar velocidad con la fuerza y aplicar amortiguación
+        spring.velocity = (spring.velocity + force) * spring.damping;
+        spring.current += spring.velocity;
+    }
+
+    function animateBeam() {
+        stepSpring();
+
+        beamCones.forEach((cone) => {
+            cone.style.transform = `translateY(-50%) rotate(${spring.current}deg)`;
+        });
+
+        if (externalBeam) {
+            externalBeam.style.transform =
+                `translate(-15px, -60px) rotate(${spring.current * 0.75}deg) scaleY(1)`;
+        }
+
+        // Continúa el loop solo si hay movimiento perceptible
+        const isMoving = Math.abs(spring.velocity) > 0.005 ||
+                         Math.abs(spring.target - spring.current) > 0.01;
+        if (isMoving) {
+            rafId = requestAnimationFrame(animateBeam);
+        } else {
+            rafId = null;
+        }
+    }
+
+    function startLoop() {
+        if (!rafId) {
+            rafId = requestAnimationFrame(animateBeam);
+        }
+    }
+
+    heroSection.addEventListener('mousemove', (e) => {
+        updateFaroOrigin();
+        const dx = e.clientX - faroOriginX;
+        const dy = e.clientY - faroOriginY;
+        spring.target = Math.atan2(dy, dx) * (180 / Math.PI);
+        startLoop();
+    });
+
+    heroSection.addEventListener('mouseleave', () => {
+        // El resorte vuelve suavemente a 0° con la misma física
+        spring.target = 0;
+        startLoop();
+    });
+
+    window.addEventListener('resize', updateFaroOrigin);
+    updateFaroOrigin();
+})();
+
+// =============================================================================
+// INTERACTIVIDAD DE RADIOGRAFÍA POLÍTICA
+// =============================================================================
+(function initRadiografiaInteractiva() {
+    const nodes = document.querySelectorAll('.network-node');
+    const cards = document.querySelectorAll('.info-card');
+    const lines = {
+        'info-edu': document.getElementById('line-edu'),
+        'info-transp': document.getElementById('line-transp'),
+        'info-amb': document.getElementById('line-amb'),
+        'info-estruc': document.getElementById('line-estruc'),
+        'info-electoral': document.getElementById('line-electoral')
+    };
+    const hub = document.querySelector('.network-hub');
+    
+    if (nodes.length === 0) return;
+
+    const colors = {
+        'info-edu': 'rgba(255, 107, 0, 0.4)',
+        'info-transp': 'rgba(0, 229, 163, 0.4)',
+        'info-amb': 'rgba(230, 0, 122, 0.4)',
+        'info-estruc': 'rgba(26, 98, 255, 0.4)',
+        'info-electoral': 'rgba(230, 0, 122, 0.4)'
+    };
+    
+    const borders = {
+        'info-edu': 'var(--color-naranja)',
+        'info-transp': 'var(--color-verde)',
+        'info-amb': 'var(--color-fucsia)',
+        'info-estruc': 'var(--color-azul-anchor)',
+        'info-electoral': 'var(--color-fucsia)'
+    };
+
+    nodes.forEach(node => {
+        node.addEventListener('click', () => {
+            const targetId = node.getAttribute('data-target');
+            
+            // 1. Activar el nodo seleccionado
+            nodes.forEach(n => n.classList.remove('active'));
+            node.classList.add('active');
+            
+            // 2. Activar la línea correspondiente
+            Object.values(lines).forEach(line => {
+                if (line) {
+                    line.classList.remove('active');
+                    line.setAttribute('stroke-width', '1.5');
+                    line.setAttribute('opacity', '0.5');
+                }
+            });
+            const activeLine = lines[targetId];
+            if (activeLine) {
+                activeLine.classList.add('active');
+                activeLine.setAttribute('stroke', borders[targetId]);
+                activeLine.setAttribute('stroke-width', '2.5');
+                activeLine.setAttribute('opacity', '0.95');
+            }
+            
+            // 3. Reactividad de color del Hub Central
+            if (hub) {
+                hub.style.borderColor = borders[targetId];
+                hub.style.boxShadow = `0 0 30px ${colors[targetId]}`;
+                hub.style.transition = 'all 0.5s ease';
+            }
+            
+            // 4. Intercambiar tarjetas de información con transición suave
+            cards.forEach(card => {
+                if (card.id === targetId) {
+                    card.style.display = 'block';
+                    // Forzar reflow para reiniciar la animación CSS
+                    void card.offsetWidth;
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Inicializar el primer nodo activo (Educación)
+    const initialActiveNode = document.querySelector('.network-node.active');
+    if (initialActiveNode) {
+        initialActiveNode.click();
+    }
+})();
+
+// =============================================================================
+// SISTEMA DE NAVEGACIÓN Y MENÚ SUPERIOR ANCLADO (STICKY APPLE NAVBAR)
+// =============================================================================
+(function initCampaniaNavbar() {
+    const mobileToggle = document.getElementById('navbar-mobile-toggle');
+    // Nota: mobileDrawer se controla vía body.navbar-mobile-open en CSS
+    
+    // Seleccionar todos los posibles enlaces de navegación
+    const allLinks = document.querySelectorAll(
+        '.navbar-links .nav-link, .navbar-dropdown .dropdown-item, .mobile-drawer-links .mobile-drawer-link, .mobile-drawer-links .mobile-drawer-sub-link'
+    );
+    
+    // Toggle para menú móvil
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            const isOpen = document.body.classList.toggle('navbar-mobile-open');
+            mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    }
+
+    // Scroll suave y navegación
+    function smoothScrollTo(elementId) {
+        const target = document.getElementById(elementId);
+        if (target) {
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300); // Pequeño margen para la transición SPA
+        }
+    }
+
+    allLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetHash = link.getAttribute('href');
+            if (!targetHash) return;
+            
+            // Cerrar menú móvil al hacer clic
+            document.body.classList.remove('navbar-mobile-open');
+            if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+
+            // Si es un enlace de ancla interno (mismo hash, scroll local)
+            if (targetHash.startsWith('#') && targetHash !== '#inicio' && targetHash !== '#publicaciones' && targetHash !== '#nosotros') {
+                const elementId = targetHash.substring(1);
+                smoothScrollTo(elementId);
+            }
+        });
+    });
+
+    // Sincronización de links activos con enrutamiento
+    function syncNavbarWithRoute() {
+        const currentHash = window.location.hash || '#inicio';
+        
+        // Determinar qué página principal está activa
+        let activePage = 'page-inicio';
+        if (currentHash === '#inicio' || currentHash === '#radiografia-politica') {
+            activePage = 'page-inicio';
+        } else if (currentHash === '#publicaciones' || currentHash.startsWith('#doc') || currentHash === '#visor-seccion') {
+            activePage = 'page-publicaciones';
+        } else if (currentHash === '#nosotros' || currentHash === '#sobre-nosotros' || currentHash === '#biografia-seccion' || currentHash === '#ejes-partidarios' || currentHash === '#voluntariado' || currentHash === '#iniciativas-legislativas' || currentHash === '#agenda-charlas' || currentHash === '#contacto-seccion') {
+            activePage = 'page-nosotros';
+        }
+
+        allLinks.forEach(link => {
+            const linkPage = link.getAttribute('data-page');
+            link.classList.remove('active');
+            
+            // Si el link coincide con la página activa, se marca como activo
+            if (linkPage && linkPage === activePage) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', syncNavbarWithRoute);
+    syncNavbarWithRoute();
+
+    // Interceptar navegación para scroll suave en subsecciones locales al cargar
+    function handleAnchorScrolling() {
+        const hash = window.location.hash;
+        if (!hash) return;
+        
+        const anchors = [
+            '#radiografia-politica', 
+            '#biografia-seccion', 
+            '#ejes-partidarios', 
+            '#voluntariado', 
+            '#iniciativas-legislativas', 
+            '#agenda-charlas', 
+            '#contacto-seccion'
+        ];
+        if (anchors.includes(hash)) {
+            const elementId = hash.substring(1);
+            smoothScrollTo(elementId);
+        }
+    }
+
+    window.addEventListener('hashchange', handleAnchorScrolling);
+    window.addEventListener('load', handleAnchorScrolling);
+})();
