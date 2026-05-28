@@ -94,7 +94,7 @@ def audit_html(file_path, valid_spa_hashes=None):
     return errors == 0
 
 if __name__ == "__main__":
-    dir_path = r"c:\Users\23353247239\Desktop\antigravity\Campaña maxi ferraro"
+    dir_path = os.path.dirname(os.path.abspath(__file__))
     app_js_path = os.path.join(dir_path, "js", "app.js")
     
     valid_spa_hashes = extract_spa_valid_hashes(app_js_path)
