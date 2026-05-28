@@ -82,6 +82,58 @@ const PROPUESTAS_FERRARO = {
             <h3>2. Economía circular y valorización de residuos</h3>
             <p>Los residuos deben dejar de ser considerados basura para convertirse en recursos productivos. Impulsamos un plan de tecnificación y formalización de las cooperativas de recicladores urbanos, creando plantas de clasificación inteligente y centros de economía circular. El Estado priorizará la compra de materiales reciclados en su obra pública, cerrando el ciclo sustentable.</p>
         `
+    },
+    "doc-seguridad": {
+        title: "Seguridad de Proximidad: Control de Trazabilidad y Asfixia al Mercado de Objetos Robados",
+        author: "Maxi Ferraro | Eje Seguridad",
+        category: "Seguridad",
+        date: "Agosto 2026",
+        abstract: "Propuesta legislativa para descentralizar la prevención del delito en CABA, enfocando la fiscalización y clausura de locales clandestinos de reventa de celulares y tecnología en las Comunas 7, 10 y 11, y promoviendo operativos conjuntos transparentes.",
+        keywords: ["Seguridad Ciudadana", "Comercio Local", "Trazabilidad"],
+        marginalia: [
+            {
+                type: "note",
+                label: "PROPUESTA 04",
+                text: "Operativos conjuntos inmediatos entre la AGC y Seguridad para inspeccionar la trazabilidad de origen de la tecnología revendida."
+            },
+            {
+                type: "quote",
+                text: "La seguridad ciudadana no se resuelve con marketing; empieza asfixiando económicamente a las mafias que reducen lo robado en tu barrio."
+            }
+        ],
+        body: `
+            <h3>1. Desmantelamiento del mercado negro tecnológico</h3>
+            <p>La proliferación del robo de dispositivos móviles se sustenta en un circuito de comercialización informal y cuevas de reducción. Proponemos un sistema estricto de control de stock y procedencia para locales de venta de celulares usados, estableciendo la clausura definitiva y la denuncia penal inmediata para los infractores.</p>
+            <p>El objetivo es romper el incentivo económico del arrebato en el espacio público asfixiando su cadena de reventa.</p>
+            <h3>2. Proximidad y Escudo de Defensa al Comercio Local</h3>
+            <p>Paralelamente al endurecimiento de controles contra actividades clandestinas, proponemos una auditoría del accionar de la Agencia Gubernamental de Control (AGC) para erradicar las clausuras arbitrarias y la extorsión burocrática a los pequeños comerciantes honestos. La seguridad comercial debe ser un habilitador de la actividad PyME, no una traba.</p>
+        `
+    },
+    "doc-impuestos": {
+        title: "Alivio Tributario PyME: Incentivos a la Sostenibilidad y Transparencia del Gasto Comunal",
+        author: "Maxi Ferraro | Eje Economía",
+        category: "Impuestos",
+        date: "Septiembre 2026",
+        abstract: "Propuesta de exenciones tributarias transitorias en Ingresos Brutos y Tasas de Habilitación para pequeños comerciantes y PyMEs sustentables, junto con un portal interactivo para transparentar en qué vereda se utiliza el dinero de las comunas.",
+        keywords: ["Alivio Fiscal", "Sostenibilidad", "Gasto Abierto"],
+        marginalia: [
+            {
+                type: "note",
+                label: "PROPUESTA 05",
+                text: "Exención del pago de Ingresos Brutos por un año a nuevos emprendimientos locales y PyMEs con procesos de huella de carbono cero."
+            },
+            {
+                type: "quote",
+                text: "No prometo leyes de campaña; te garantizo la rendición de cuentas e inversión real de tus impuestos en tu propia vereda."
+            }
+        ],
+        body: `
+            <h3>1. Incentivos fiscales para PyMEs verdes y comercios de barrio</h3>
+            <p>El desarrollo comercial de las comunas requiere desarmar la asfixia fiscal. Proponemos un régimen simplificado con exenciones fiscales del 100% en tasas de habilitación municipal para nuevos locales, y rebajas sustanciales en Ingresos Brutos para comercios de proximidad y PyMEs comprometidas con la economía circular.</p>
+            <p>Esta medida protege al comerciante minorista y dinamiza el empleo barrial frente a la gentrificación urbana.</p>
+            <h3>2. Transparencia del gasto y rendición de cuentas comunal</h3>
+            <p>Queremos que cada vecino sepa exactamente adónde va el dinero de sus tasas de alumbrado, barrido y limpieza. Proponemos la obligatoriedad de publicar los pliegos de contratación de servicios públicos de forma georreferenciada. El ciudadano podrá auditar desde su celular cuánto se gastó en el bache de su esquina y qué empresa es responsable de su mantenimiento.</p>
+        `
     }
 };
 
