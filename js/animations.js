@@ -321,7 +321,7 @@ function initCampaniaNavbar() {
             document.body.classList.remove('navbar-mobile-open');
             if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
 
-            if (targetHash.startsWith('#') && targetHash !== '#inicio' && targetHash !== '#publicaciones' && targetHash !== '#nosotros' && targetHash !== '#participacion' && targetHash !== '#dashboard') {
+            if (targetHash.startsWith('#') && targetHash !== '#inicio' && targetHash !== '#publicaciones' && targetHash !== '#nosotros' && targetHash !== '#radiografia' && targetHash !== '#dashboard') {
                 const elementId = targetHash.substring(1);
                 smoothScrollTo(elementId);
             }
@@ -338,8 +338,8 @@ function initCampaniaNavbar() {
             activePage = 'page-publicaciones';
         } else if (currentHash === '#nosotros' || currentHash === '#sobre-nosotros' || currentHash === '#biografia-seccion' || currentHash === '#ejes-partidarios' || currentHash === '#iniciativas-legislativas') {
             activePage = 'page-nosotros';
-        } else if (currentHash === '#participacion' || currentHash === '#voluntariado' || currentHash === '#agenda-charlas' || currentHash === '#contacto-seccion') {
-            activePage = 'page-participacion';
+        } else if (currentHash === '#radiografia' || currentHash === '#radiografia-red' || currentHash === '#radiografia-analisis' || currentHash === '#radiografia-territorio') {
+            activePage = 'page-radiografia';
         } else if (currentHash === '#dashboard') {
             activePage = 'page-dashboard';
         }

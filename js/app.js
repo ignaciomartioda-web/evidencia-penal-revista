@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pageId === 'page-inicio') link.setAttribute('href', '#inicio');
             else if (pageId === 'page-publicaciones') link.setAttribute('href', '#publicaciones');
             else if (pageId === 'page-nosotros') link.setAttribute('href', '#nosotros');
-            else if (pageId === 'page-participacion') link.setAttribute('href', '#participacion');
+            else if (pageId === 'page-radiografia') link.setAttribute('href', '#radiografia');
             else if (pageId === 'page-dashboard') link.setAttribute('href', '#dashboard');
         }
     });

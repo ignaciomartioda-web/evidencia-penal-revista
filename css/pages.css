@@ -2050,3 +2050,77 @@
     }
 }
 
+/* ==========================================================================
+   PREMIUM COLLAPSIBLE DETAILS & SUMMARY STYLES (ACORDIONES)
+   ========================================================================== */
+details.premium-details {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+    padding: 0;
+    overflow: hidden;
+    transition: all var(--transition-premium);
+}
+
+details.premium-details:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+details.premium-details[open] {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+details.premium-details summary {
+    padding: 1.2rem 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    list-style: none; /* Hide default arrow */
+    position: relative;
+    user-select: none;
+    transition: color var(--transition-fast);
+}
+
+details.premium-details summary::-webkit-details-marker {
+    display: none; /* Hide Safari arrow */
+}
+
+details.premium-details summary::after {
+    content: "＋";
+    position: absolute;
+    right: 1.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: var(--color-texto-muted);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+details.premium-details[open] summary::after {
+    content: "－";
+    color: #fff;
+}
+
+details.premium-details summary:hover {
+    color: var(--color-naranja);
+}
+
+details.premium-details .details-content {
+    padding: 1.5rem 1.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    line-height: 1.7;
+    color: var(--color-texto-dm);
+}
+
+details.premium-details .details-content p {
+    margin-bottom: 1rem;
+}
+
+details.premium-details .details-content p:last-child {
+    margin-bottom: 0;
+}
