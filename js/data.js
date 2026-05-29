@@ -721,20 +721,20 @@ const PROPUESTAS_FERRARO = {
 <h3>15 Perfiles Políticos de Campaña Analítica y Bajo Costo</h3>
 <p>Presentación y desglose táctico de 15 dirigentes y activistas a nivel internacional análogos a la trayectoria e identidad de Maximiliano Ferraro:</p>
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">01</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">01</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Naheed Nenshi</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Calgary, Canadá</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Naheed Nenshi, académico de la Universidad de Mount</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Naheed Nenshi, académico de la Universidad de Mount</p>
@@ -745,20 +745,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">02</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">02</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pete Buttigieg</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Como alcalde de la pequeña ciudad de South Bend,</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Como alcalde de la pequeña ciudad de South Bend,</p>
@@ -769,20 +769,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-fucsia">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">03</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">03</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Jake Auchincloss</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Representante en el Congreso de Estados Unidos por</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Representante en el Congreso de Estados Unidos por</p>
@@ -793,20 +793,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-azul">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">04</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">04</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Robert Garcia</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Long Beach, Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Siendo el primer alcalde abiertamente gay e</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Siendo el primer alcalde abiertamente gay e</p>
@@ -818,20 +818,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">05</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">05</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Malcolm Kenyatta</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Representante estatal por Pensilvania y figura en</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Representante estatal por Pensilvania y figura en</p>
@@ -843,20 +843,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">06</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">06</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Jane Kleeb</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Presidenta del Partido Demócrata de Nebraska y activista</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Presidenta del Partido Demócrata de Nebraska y activista</p>
@@ -869,20 +869,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-fucsia">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">07</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">07</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Shasti Conrad</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Primera mujer de color y mujer más joven en presidir el</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Primera mujer de color y mujer más joven en presidir el</p>
@@ -894,20 +894,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-azul">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">08</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">08</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Valérie Plante</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Montreal, Canadá</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Primera mujer alcaldesa de Montreal, perteneciente al partido progresista Projet Montréal.</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Primera mujer alcaldesa de Montreal, perteneciente al partido progresista Projet Montréal.</p>
@@ -920,20 +920,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">09</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">09</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Claudia López</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Claudia López, primera mujer y política abiertamente</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Claudia López, primera mujer y política abiertamente</p>
@@ -944,20 +944,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">10</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">10</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Vlado Mirosevic</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Arica, Chile</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Diputado por el Partido Liberal chileno, representante del</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Diputado por el Partido Liberal chileno, representante del</p>
@@ -969,20 +969,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-fucsia">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">11</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">11</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pedro Kumamoto</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Jalisco, México</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Primer candidato independiente en ganar un escaño en el Congreso de Jalisco. El modelo de</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Primer candidato independiente en ganar un escaño en el Congreso de Jalisco. El modelo de</p>
@@ -997,20 +997,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-azul">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">12</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">12</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Begoña Villacís</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Madrid, España</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Exvicealcaldesa de Madrid por Ciudadanos, Villacís</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Exvicealcaldesa de Madrid por Ciudadanos, Villacís</p>
@@ -1021,20 +1021,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">13</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">13</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Layla Moran</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Oxford, Reino Unido</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Miembro del Parlamento británico por los Liberal</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Miembro del Parlamento británico por los Liberal</p>
@@ -1046,20 +1046,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">14</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">14</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Elly Schlein</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Italia</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Actual Secretaria del Partido Democrático italiano. Schlein, abiertamente bisexual, feminista y</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Actual Secretaria del Partido Democrático italiano. Schlein, abiertamente bisexual, feminista y</p>
@@ -1071,20 +1071,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-fucsia">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">15</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">15</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Giuseppe Sala</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Milán, Italia</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Alcalde de Milán, exponente de un progresismo de gestión profundamente gerencial y</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Alcalde de Milán, exponente de un progresismo de gestión profundamente gerencial y</p>
@@ -1205,20 +1205,20 @@ const PROPUESTAS_FERRARO = {
 <h3>10 Casos Globales de Posicionamiento y Tácticas Electorales</h3>
 <p>Análisis en profundidad de la oratoria, metodologías y campañas digitales de 10 líderes del progresismo y liberalismo institucional:</p>
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">01</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">01</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pete Buttigieg</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>La Táctica "Go Everywhere" y la</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>La Táctica "Go Everywhere" y la</p>
@@ -1251,20 +1251,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">02</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">02</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Claudia López</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>"Hecha a Pulso" y Búsqueda</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>"Hecha a Pulso" y Búsqueda</p>
@@ -1296,20 +1296,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-fucsia">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">03</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">03</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Raphaël Glucksmann</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Francia</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>El "Influencer Intelectual"</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>El "Influencer Intelectual"</p>
@@ -1334,20 +1334,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-azul">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">04</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">04</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Manuela Carmena</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Madrid, España</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>El Modelo "Artivismo plus</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>El Modelo "Artivismo plus</p>
@@ -1373,20 +1373,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">05</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">05</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Antanas Mockus</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>"Cultura Ciudadana" y</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>"Cultura Ciudadana" y</p>
@@ -1414,20 +1414,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">06</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">06</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Andrew Yang</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>"The Math Candidate" y Datos</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>"The Math Candidate" y Datos</p>
@@ -1451,20 +1451,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-fucsia">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">07</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">07</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Elizabeth Warren</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>"I Have a Plan for That" y</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>"I Have a Plan for That" y</p>
@@ -1490,20 +1490,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-azul">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">08</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">08</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Alexandria Ocasio-Cortez</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Desempaque</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Desempaque</p>
@@ -1527,20 +1527,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-naranja">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">09</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">09</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Bernie Sanders</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Distribución Directa</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Distribución Directa</p>
@@ -1563,20 +1563,20 @@ const PROPUESTAS_FERRARO = {
         </div>
         
 
-        <div class="politician-card double-bezel-outer" style="margin-bottom: 2rem; background: var(--bg-card); border: 1px solid var(--color-linea); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+        <div class="politician-card double-bezel-outer theme-verde">
             <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--color-naranja); font-weight: 700;">10</span>
+                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">10</span>
                     <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Mariano Rajoy</h4>
                 </div>
                 <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">España</span>
             </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; border-left: 3px solid var(--color-naranja); padding-left: 1rem;">
+            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
                 <p>Humanización por Micro-Conexiones</p>
             </div>
             <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--color-naranja); text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> Ver Análisis de Estrategia Completo
+                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
                 </summary>
                 <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
                     <p>Humanización por Micro-Conexiones</p>

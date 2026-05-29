@@ -383,16 +383,15 @@
     height: 100%;
 }
 
-/* ── INTERIOR DORADO ── */
-.teaser-card.card-gold .teaser-card-inner {
+/* ── INTERIOR NARANJA (Análisis Político) ── */
+.teaser-card.card-naranja .teaser-card-inner {
     background: linear-gradient(
         160deg,
-        #1E1A0A 0%,
-        #1A1810 30%,
-        #141628 65%,
-        #111428 100%
+        rgba(245, 175, 25, 0.04) 0%,
+        rgba(10, 12, 20, 0.96) 50%,
+        #050609 100%
     );
-    border: 1px solid rgba(212, 168, 75, 0.14);
+    border: 1px solid rgba(245, 175, 25, 0.14);
     border-radius: 22px;
     padding: 3.5rem 2.5rem;
     flex-grow: 1;
@@ -401,24 +400,27 @@
     justify-content: space-between;
     position: relative;
     height: 100%;
-    box-shadow: inset 0 1px 0 rgba(212, 168, 75, 0.1);
+    box-shadow: inset 0 1px 0 rgba(245, 175, 25, 0.1);
 }
 
-.teaser-card.card-gold:hover .teaser-card-inner {
-    border-color: rgba(212, 168, 75, 0.28);
-    box-shadow: inset 0 1px 0 rgba(212, 168, 75, 0.18);
+.teaser-card.card-naranja:hover .teaser-card-inner {
+    border-color: var(--color-naranja);
+    box-shadow: 0 12px 40px rgba(245, 175, 25, 0.12), inset 0 1px 0 rgba(245, 175, 25, 0.25);
 }
 
-/* ── INTERIOR CIAN ── */
-.teaser-card.card-cyan .teaser-card-inner {
+.teaser-card.card-naranja .teaser-number {
+    color: rgba(245, 175, 25, 0.1) !important;
+}
+
+/* ── INTERIOR VERDE (Automatización) ── */
+.teaser-card.card-verde .teaser-card-inner {
     background: linear-gradient(
         160deg,
-        #081A1E 0%,
-        #0B1C22 30%,
-        #111826 65%,
-        #111428 100%
+        rgba(0, 255, 210, 0.04) 0%,
+        rgba(10, 12, 20, 0.96) 50%,
+        #050609 100%
     );
-    border: 1px solid rgba(0, 229, 163, 0.12);
+    border: 1px solid rgba(0, 255, 210, 0.12);
     border-radius: 22px;
     padding: 3.5rem 2.5rem;
     flex-grow: 1;
@@ -427,12 +429,74 @@
     justify-content: space-between;
     position: relative;
     height: 100%;
-    box-shadow: inset 0 1px 0 rgba(0, 229, 163, 0.08);
+    box-shadow: inset 0 1px 0 rgba(0, 255, 210, 0.08);
 }
 
-.teaser-card.card-cyan:hover .teaser-card-inner {
-    border-color: rgba(0, 229, 163, 0.26);
-    box-shadow: inset 0 1px 0 rgba(0, 229, 163, 0.15);
+.teaser-card.card-verde:hover .teaser-card-inner {
+    border-color: var(--color-verde);
+    box-shadow: 0 12px 40px rgba(0, 255, 210, 0.12), inset 0 1px 0 rgba(0, 255, 210, 0.25);
+}
+
+.teaser-card.card-verde .teaser-number {
+    color: rgba(0, 255, 210, 0.1) !important;
+}
+
+/* ── INTERIOR FUCSIA (Campaña Austera) ── */
+.teaser-card.card-fucsia .teaser-card-inner {
+    background: linear-gradient(
+        160deg,
+        rgba(255, 8, 68, 0.04) 0%,
+        rgba(10, 12, 20, 0.96) 50%,
+        #050609 100%
+    );
+    border: 1px solid rgba(255, 8, 68, 0.12);
+    border-radius: 22px;
+    padding: 3.5rem 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    box-shadow: inset 0 1px 0 rgba(255, 8, 68, 0.08);
+}
+
+.teaser-card.card-fucsia:hover .teaser-card-inner {
+    border-color: var(--color-fucsia);
+    box-shadow: 0 12px 40px rgba(255, 8, 68, 0.12), inset 0 1px 0 rgba(255, 8, 68, 0.25);
+}
+
+.teaser-card.card-fucsia .teaser-number {
+    color: rgba(255, 8, 68, 0.1) !important;
+}
+
+/* ── INTERIOR AZUL (Estrategia CABA) ── */
+.teaser-card.card-azul .teaser-card-inner {
+    background: linear-gradient(
+        160deg,
+        rgba(79, 172, 254, 0.04) 0%,
+        rgba(10, 12, 20, 0.96) 50%,
+        #050609 100%
+    );
+    border: 1px solid rgba(79, 172, 254, 0.12);
+    border-radius: 22px;
+    padding: 3.5rem 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    box-shadow: inset 0 1px 0 rgba(79, 172, 254, 0.08);
+}
+
+.teaser-card.card-azul:hover .teaser-card-inner {
+    border-color: var(--color-azul-anchor);
+    box-shadow: 0 12px 40px rgba(79, 172, 254, 0.12), inset 0 1px 0 rgba(79, 172, 254, 0.25);
+}
+
+.teaser-card.card-azul .teaser-number {
+    color: rgba(79, 172, 254, 0.1) !important;
 }
 
 /* Número de fondo: ahora más visible */
@@ -1794,13 +1858,81 @@
    ESTILADO PREMIUM PARA LAS TARJETAS DE POLÍTICOS Y ACORDEONES
    ========================================================================== */
 .politician-card {
+    margin-bottom: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--color-linea);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     transition: transform var(--transition-premium), border-color var(--transition-premium), box-shadow var(--transition-premium) !important;
 }
 
-.politician-card:hover {
+/* Tema Naranja */
+.politician-card.theme-naranja {
+    border-color: rgba(245, 175, 25, 0.12);
+}
+.politician-card.theme-naranja:hover {
     transform: translateY(-4px);
-    border-color: rgba(245, 175, 25, 0.25) !important;
-    box-shadow: 0 12px 40px rgba(245, 175, 25, 0.08) !important;
+    border-color: rgba(245, 175, 25, 0.35) !important;
+    box-shadow: 0 12px 40px rgba(245, 175, 25, 0.12) !important;
+}
+.politician-card.theme-naranja .politician-number,
+.politician-card.theme-naranja .details-summary-title {
+    color: var(--color-naranja) !important;
+}
+.politician-card.theme-naranja .politician-summary {
+    border-left: 3px solid var(--color-naranja);
+}
+
+/* Tema Verde */
+.politician-card.theme-verde {
+    border-color: rgba(0, 255, 210, 0.12);
+}
+.politician-card.theme-verde:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 255, 210, 0.35) !important;
+    box-shadow: 0 12px 40px rgba(0, 255, 210, 0.12) !important;
+}
+.politician-card.theme-verde .politician-number,
+.politician-card.theme-verde .details-summary-title {
+    color: var(--color-verde) !important;
+}
+.politician-card.theme-verde .politician-summary {
+    border-left: 3px solid var(--color-verde);
+}
+
+/* Tema Fucsia */
+.politician-card.theme-fucsia {
+    border-color: rgba(255, 8, 68, 0.12);
+}
+.politician-card.theme-fucsia:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 8, 68, 0.35) !important;
+    box-shadow: 0 12px 40px rgba(255, 8, 68, 0.12) !important;
+}
+.politician-card.theme-fucsia .politician-number,
+.politician-card.theme-fucsia .details-summary-title {
+    color: var(--color-fucsia) !important;
+}
+.politician-card.theme-fucsia .politician-summary {
+    border-left: 3px solid var(--color-fucsia);
+}
+
+/* Tema Azul */
+.politician-card.theme-azul {
+    border-color: rgba(79, 172, 254, 0.12);
+}
+.politician-card.theme-azul:hover {
+    transform: translateY(-4px);
+    border-color: rgba(79, 172, 254, 0.35) !important;
+    box-shadow: 0 12px 40px rgba(79, 172, 254, 0.12) !important;
+}
+.politician-card.theme-azul .politician-number,
+.politician-card.theme-azul .details-summary-title {
+    color: var(--color-azul-anchor) !important;
+}
+.politician-card.theme-azul .politician-summary {
+    border-left: 3px solid var(--color-azul-anchor);
 }
 
 .politician-details summary {
@@ -1825,4 +1957,40 @@
     from { opacity: 0; transform: translateY(-8px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* ==========================================================================
+   CABECERAS Y TÍTULOS CON GRADIENTES ELEGANTES (MÁS COLORIDOS)
+   ========================================================================== */
+.section-title, 
+.teaser-title, 
+.articulo-title, 
+.comite-title,
+.convocatoria-col h2, 
+.institucion-col h2, 
+.institucion-seccion h2 {
+    background: linear-gradient(135deg, #ffffff 30%, var(--color-cian) 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    display: inline-block;
+}
+
+.eje-columna h3 {
+    display: inline-block;
+}
+.eje-columna:nth-child(1) h3 { background: var(--grad-naranja-fucsia); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; }
+.eje-columna:nth-child(2) h3 { background: var(--grad-verde-azul); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; }
+.eje-columna:nth-child(3) h3 { background: var(--grad-fucsia-azul); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; }
+.eje-columna:nth-child(4) h3 { background: var(--grad-azul-naranja); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; }
+
+/* Colorificar los números y etiquetas de columnas de publicaciones */
+.eje-columna:nth-child(1) .eje-numero, .eje-columna:nth-child(1) .eje-enlace { color: var(--color-fucsia) !important; }
+.eje-columna:nth-child(2) .eje-numero, .eje-columna:nth-child(2) .eje-enlace { color: var(--color-verde) !important; }
+.eje-columna:nth-child(3) .eje-numero, .eje-columna:nth-child(3) .eje-enlace { color: var(--color-naranja) !important; }
+.eje-columna:nth-child(4) .eje-numero, .eje-columna:nth-child(4) .eje-enlace { color: var(--color-azul-anchor) !important; }
+
+/* Cambiar bordes hover de las columnas con degradados */
+.eje-columna:nth-child(1):hover { border-color: rgba(255, 8, 68, 0.4) !important; box-shadow: 0 10px 30px rgba(255, 8, 68, 0.1) !important; }
+.eje-columna:nth-child(2):hover { border-color: rgba(0, 255, 210, 0.4) !important; box-shadow: 0 10px 30px rgba(0, 255, 210, 0.1) !important; }
+.eje-columna:nth-child(3):hover { border-color: rgba(245, 175, 25, 0.4) !important; box-shadow: 0 10px 30px rgba(245, 175, 25, 0.1) !important; }
+.eje-columna:nth-child(4):hover { border-color: rgba(79, 172, 254, 0.4) !important; box-shadow: 0 10px 30px rgba(79, 172, 254, 0.1) !important; }
 
