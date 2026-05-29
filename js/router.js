@@ -32,10 +32,25 @@ function router() {
                 }
             }
         });
-    } else if (hash === '#nosotros' || hash === '#sobre-nosotros' || hash === '#biografia-seccion' || hash === '#ejes-partidarios' || hash === '#voluntariado' || hash === '#iniciativas-legislativas' || hash === '#agenda-charlas' || hash === '#contacto-seccion') {
+    } else if (hash === '#nosotros' || hash === '#sobre-nosotros' || hash === '#biografia-seccion' || hash === '#ejes-partidarios' || hash === '#iniciativas-legislativas') {
         const wasOtherPage = (activePageId !== 'page-nosotros');
         const isSubAnchor = hash !== '#nosotros' && hash !== '#sobre-nosotros';
         showPage('page-nosotros', isSubAnchor);
+        if (isSubAnchor) {
+            const targetId = hash.substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                if (wasOtherPage) {
+                    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+                } else {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
+    } else if (hash === '#participacion' || hash === '#voluntariado' || hash === '#agenda-charlas' || hash === '#contacto-seccion') {
+        const wasOtherPage = (activePageId !== 'page-participacion');
+        const isSubAnchor = hash !== '#participacion';
+        showPage('page-participacion', isSubAnchor);
         if (isSubAnchor) {
             const targetId = hash.substring(1);
             const target = document.getElementById(targetId);
@@ -217,6 +232,7 @@ function navigateTo(pageId) {
     if (pageId === 'page-inicio') window.location.hash = '#inicio';
     else if (pageId === 'page-publicaciones') window.location.hash = '#publicaciones';
     else if (pageId === 'page-nosotros') window.location.hash = '#nosotros';
+    else if (pageId === 'page-participacion') window.location.hash = '#participacion';
     else if (pageId === 'page-dashboard') window.location.hash = '#dashboard';
     else window.location.hash = '#inicio';
 }

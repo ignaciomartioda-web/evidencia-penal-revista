@@ -321,7 +321,7 @@ function initCampaniaNavbar() {
             document.body.classList.remove('navbar-mobile-open');
             if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
 
-            if (targetHash.startsWith('#') && targetHash !== '#inicio' && targetHash !== '#publicaciones' && targetHash !== '#nosotros' && targetHash !== '#dashboard') {
+            if (targetHash.startsWith('#') && targetHash !== '#inicio' && targetHash !== '#publicaciones' && targetHash !== '#nosotros' && targetHash !== '#participacion' && targetHash !== '#dashboard') {
                 const elementId = targetHash.substring(1);
                 smoothScrollTo(elementId);
             }
@@ -336,8 +336,10 @@ function initCampaniaNavbar() {
             activePage = 'page-inicio';
         } else if (currentHash === '#publicaciones' || currentHash.startsWith('#doc') || currentHash === '#visor-seccion') {
             activePage = 'page-publicaciones';
-        } else if (currentHash === '#nosotros' || currentHash === '#sobre-nosotros' || currentHash === '#biografia-seccion' || currentHash === '#ejes-partidarios' || currentHash === '#voluntariado' || currentHash === '#iniciativas-legislativas' || currentHash === '#agenda-charlas' || currentHash === '#contacto-seccion') {
+        } else if (currentHash === '#nosotros' || currentHash === '#sobre-nosotros' || currentHash === '#biografia-seccion' || currentHash === '#ejes-partidarios' || currentHash === '#iniciativas-legislativas') {
             activePage = 'page-nosotros';
+        } else if (currentHash === '#participacion' || currentHash === '#voluntariado' || currentHash === '#agenda-charlas' || currentHash === '#contacto-seccion') {
+            activePage = 'page-participacion';
         } else if (currentHash === '#dashboard') {
             activePage = 'page-dashboard';
         }

@@ -387,10 +387,16 @@ function renderDbCharts() {
 window.setDbChartModel = setDbChartModel;
 window.renderDbCharts = renderDbCharts;
 
-// Auto-inicialización del tablero si se detecta su contenedor
-document.addEventListener('DOMContentLoaded', () => {
+// Auto-inicialización del tablero si se detecta su contenedor (robusta a la fase de carga del DOM)
+function autoInitDashboard() {
     if (document.querySelector('.db-wrapper') && !window.dashboardInitialized) {
         window.dashboardInitialized = true;
         initDashboard();
     }
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', autoInitDashboard);
+} else {
+    autoInitDashboard();
+}

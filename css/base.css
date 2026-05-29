@@ -60,67 +60,7 @@
     --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ── Sobrescritura de Estilos Planos y Limpieza de Brillos (Manual de Marca) ── */
-.page-beam-overlay,
-.hero-glowing-overlay,
-.hero-beam-cone,
-.hero-beam-cone--inner,
-.bg-glow-orb,
-.faro-core-glow,
-.node-pulse,
-.constellation-canvas,
-.hero-bg-particles-canvas {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
-.magazine-title.massive-title,
-.magazine-title .highlight {
-    text-shadow: none !important;
-}
-
-/* Deshabilitar animaciones y sombras neón */
-.magazine-title.massive-title,
-.magazine-title .highlight,
-.btn-premium:hover,
-.btn-hero.btn-premium,
-.btn-hero.btn-premium:hover,
-p a:hover,
-.body-text a:hover,
-.article-body a:hover,
-.resumen-body a:hover,
-.network-hub,
-.network-node,
-.eje-columna,
-.teaser-card,
-.faro-card {
-    text-shadow: none !important;
-    box-shadow: none !important;
-}
-
-@keyframes titleGlowPulse {
-    0%, 100% { text-shadow: none !important; }
-}
-@keyframes highlightGlowPulse {
-    0%, 100% { text-shadow: none !important; }
-}
-@keyframes lighthouseGlowPulse {
-    0%, 100% { filter: none !important; box-shadow: none !important; }
-}
-@keyframes corePulse {
-    0%, 100% { transform: none !important; box-shadow: none !important; }
-}
-@keyframes hubPulse {
-    0%, 100% { transform: none !important; box-shadow: none !important; }
-}
-@keyframes nodePulseAnim {
-    0%, 100% { transform: none !important; box-shadow: none !important; }
-}
-@keyframes coneBeamPulse {
-    0%, 100% { opacity: 0 !important; filter: none !important; }
-}
+/* ── Animaciones y Efectos Premium Habilitados (Ecosistema Liquid Glass) ── */
 
 /* ==========================================================================
 

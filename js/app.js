@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pageId === 'page-inicio') link.setAttribute('href', '#inicio');
             else if (pageId === 'page-publicaciones') link.setAttribute('href', '#publicaciones');
             else if (pageId === 'page-nosotros') link.setAttribute('href', '#nosotros');
+            else if (pageId === 'page-participacion') link.setAttribute('href', '#participacion');
             else if (pageId === 'page-dashboard') link.setAttribute('href', '#dashboard');
         }
     });
@@ -42,4 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
         initRouter();
         router();
     }
+
+    // 4. Interceptar clicks en links de hash para forzar la navegación si el hash no cambia
+    const allHashLinks = document.querySelectorAll('a[href^="#"]');
+    allHashLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetHash = link.getAttribute('href');
+            if (targetHash && window.location.hash === targetHash) {
+                e.preventDefault();
+                if (typeof router === 'function') {
+                    router();
+                }
+            }
+        });
+    });
 });

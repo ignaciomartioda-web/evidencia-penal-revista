@@ -3,7 +3,7 @@ import re
 import sys
 
 def extract_spa_valid_hashes(app_js_path):
-    valid_hashes = {"inicio", "publicaciones", "nosotros", "secciones", "visor-seccion", "sobre-nosotros", "biografia-seccion", "ejes-partidarios", "voluntariado", "dashboard"}
+    valid_hashes = {"inicio", "publicaciones", "nosotros", "participacion", "secciones", "visor-seccion", "sobre-nosotros", "biografia-seccion", "ejes-partidarios", "voluntariado", "dashboard"}
     
     data_js_path = os.path.join(os.path.dirname(app_js_path), "data.js")
     for path in [app_js_path, data_js_path]:

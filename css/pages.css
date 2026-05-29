@@ -1,4 +1,4 @@
-/* pages.css - Vistas de Página (Inicio, Propuestas, Trayectoria) */
+/* pages.css - Vistas de Página (Inicio, Propuestas, Trayectoria)
    PÁGINA VIEWS (SPA)
    ========================================================================== */
 
@@ -1993,4 +1993,60 @@
 .eje-columna:nth-child(2):hover { border-color: rgba(0, 255, 210, 0.4) !important; box-shadow: 0 10px 30px rgba(0, 255, 210, 0.1) !important; }
 .eje-columna:nth-child(3):hover { border-color: rgba(245, 175, 25, 0.4) !important; box-shadow: 0 10px 30px rgba(245, 175, 25, 0.1) !important; }
 .eje-columna:nth-child(4):hover { border-color: rgba(79, 172, 254, 0.4) !important; box-shadow: 0 10px 30px rgba(79, 172, 254, 0.1) !important; }
+
+/* ==========================================================================
+   PAGE DIRECTORY & GATEWAY GRID STYLES
+   ========================================================================== */
+.page-directory {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.2rem 1.8rem;
+    background: rgba(20, 20, 22, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    margin: 2rem auto 3rem;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.directory-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-premium);
+    border: 1px solid transparent;
+    max-width: 280px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.directory-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gateway-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .gateway-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .gateway-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
