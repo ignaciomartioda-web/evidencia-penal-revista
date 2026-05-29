@@ -1,0 +1,282 @@
+/* base.css - Variables de Marca, Reset y Base */
+/* ==========================================================================
+   CAMPAÑA FERRARO — SISTEMA EDITORIAL DIGITAL
+   Ideas. Transparencia. El futuro que viene.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap');
+
+:root {
+    /* ── Paleta Principal: Campaña Ferraro (Premium Dark Mode) ── */
+    --bg-base:        #08090d;   /* Deep Slate Space Background */
+    --bg-surface:     rgba(18, 20, 29, 0.65); /* Glassmorphic Surface */
+    --bg-raised:      rgba(28, 31, 44, 0.5);  /* Glassmorphic Raised */
+    --bg-card:        rgba(22, 24, 34, 0.55);  /* Glassmorphic Card */
+    --bg-light-zone:  rgba(32, 36, 52, 0.4);
+
+    /* ── Colores Oficiales Premium (Apple Developer Style) ── */
+    --color-azul-anchor:#2997ff; /* Neon Blue Accent */
+    --color-naranja:    #ff9f0a; /* Vibrant Gold/Amber */
+    --color-fucsia:     #ff375f; /* Vibrant Rose/Red */
+    --color-verde:      #30d158; /* Vibrant Emerald Green */
+    
+    /* ── Mapeos de Compatibilidad y Limpieza de Brillos ── */
+    --color-oro:      var(--color-naranja);
+    --color-oro-dim:  rgba(255, 159, 10, 0.15);
+    --color-oro-glow: rgba(255, 159, 10, 0.05);
+    
+    --color-cian:     #54c5f8; /* Celeste Neon */
+    --color-cian-dim: rgba(84, 197, 248, 0.15);
+    --color-cian-glow:rgba(84, 197, 248, 0.05);
+    
+    --color-rojo:     var(--color-fucsia);
+    --color-blanco:   #FFFFFF;
+
+    /* ── Gradientes Temáticos Premium ── */
+    --grad-naranja-fucsia: linear-gradient(135deg, var(--color-naranja) 0%, var(--color-fucsia) 100%);
+    --grad-fucsia-azul:    linear-gradient(135deg, var(--color-fucsia) 0%, var(--color-azul-anchor) 100%);
+    --grad-verde-azul:     linear-gradient(135deg, var(--color-verde) 0%, var(--color-azul-anchor) 100%);
+    --grad-azul-naranja:   linear-gradient(135deg, var(--color-azul-anchor) 0%, var(--color-naranja) 100%);
+
+    /* ── Texto ── */
+    --color-texto:    #FFFFFF;   /* Blanco Puro */
+    --color-texto-dm: #F5F5F7;   /* Apple Text Light */
+    --color-texto-muted: #86868B; /* Apple Text Muted */
+    --color-linea:    rgba(255, 255, 255, 0.06);
+    --color-linea-fuerte: rgba(255, 255, 255, 0.12);
+
+    /* ── Tipografías Brand Premium ── */
+    --font-sans:  'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-mono:  'Share Tech Mono', monospace;
+
+    /* ── Forma ── */
+    --radius: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+
+    /* ── Movimiento ── */
+    --transition-premium: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Sobrescritura de Estilos Planos y Limpieza de Brillos (Manual de Marca) ── */
+.page-beam-overlay,
+.hero-glowing-overlay,
+.hero-beam-cone,
+.hero-beam-cone--inner,
+.bg-glow-orb,
+.faro-core-glow,
+.node-pulse,
+.constellation-canvas,
+.hero-bg-particles-canvas {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+.magazine-title.massive-title,
+.magazine-title .highlight {
+    text-shadow: none !important;
+}
+
+/* Deshabilitar animaciones y sombras neón */
+.magazine-title.massive-title,
+.magazine-title .highlight,
+.btn-premium:hover,
+.btn-hero.btn-premium,
+.btn-hero.btn-premium:hover,
+p a:hover,
+.body-text a:hover,
+.article-body a:hover,
+.resumen-body a:hover,
+.network-hub,
+.network-node,
+.eje-columna,
+.teaser-card,
+.faro-card {
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+@keyframes titleGlowPulse {
+    0%, 100% { text-shadow: none !important; }
+}
+@keyframes highlightGlowPulse {
+    0%, 100% { text-shadow: none !important; }
+}
+@keyframes lighthouseGlowPulse {
+    0%, 100% { filter: none !important; box-shadow: none !important; }
+}
+@keyframes corePulse {
+    0%, 100% { transform: none !important; box-shadow: none !important; }
+}
+@keyframes hubPulse {
+    0%, 100% { transform: none !important; box-shadow: none !important; }
+}
+@keyframes nodePulseAnim {
+    0%, 100% { transform: none !important; box-shadow: none !important; }
+}
+@keyframes coneBeamPulse {
+    0%, 100% { opacity: 0 !important; filter: none !important; }
+}
+
+/* ==========================================================================
+
+   CLASES UTILITARIAS ADICIONALES
+   ========================================================================== */
+
+/* Contenedor principal de la revista */
+.magazine-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* btn-resumen extiende btn-premium con las mismas propiedades */
+.btn-resumen {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0.55rem 0.55rem 0.55rem 2rem;
+    background: transparent;
+    font-family: var(--font-sans);
+    font-size: 0.73rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid var(--color-oro);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all var(--transition-premium);
+    text-decoration: none;
+}
+
+/* Nosotros: h2 de las secciones de institución */
+.institucion-seccion .mono-tag {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+/* Sección de publicaciones page header */
+.ejes-seccion .ejes-header .mono-tag {
+    margin-bottom: 1rem;
+}
+
+/* Tablero sidebar: etiqueta de edición activa */
+.tablero-sidebar .mono-tag {
+    margin-bottom: 0.5rem;
+}
+
+/* Convocatoria: etiqueta */
+.convocatoria-col .mono-tag {
+    margin-bottom: 0.5rem;
+}
+
+/* h2 contexto de convocatoria */
+.convocatoria-col h2 {
+    font-family: var(--font-serif);
+    font-size: 1.9rem;
+    color: var(--color-texto);
+    margin-top: 0.5rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.convocatoria-col h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-oro) 28px, var(--color-linea-fuerte) 28px);
+}
+
+/* Misión institucional h2 */
+.institucion-col h2 {
+    font-family: var(--font-serif);
+    font-size: 1.9rem;
+    color: var(--color-texto);
+    margin-top: 0.5rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.institucion-col h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-cian) 28px, var(--color-linea-fuerte) 28px);
+}
+
+/* ==========================================================================
+
+   ALTÍSIMO CONTRASTE & GLASSMORPHISM PREMIUM
+   ========================================================================== */
+
+.resumen-inner,
+.radiografia-container,
+.tablero-seccion,
+.tablero-sidebar,
+.articulo-cuerpo-contenedor,
+.convocatoria-col,
+.institucion-col,
+.teaser-card-inner,
+.eje-columna,
+.info-card {
+    background: rgba(11, 15, 26, 0.94) !important;
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.85) !important;
+}
+
+.resumen-inner-core,
+.radiografia-inner,
+.article-layout-inner {
+    border: none !important;
+}
+
+/* Bordes neón para las tarjetas principales de contenidos */
+.resumen-inner { border-left: 3px solid var(--color-naranja) !important; }
+.radiografia-container { border-left: 3px solid var(--color-verde) !important; }
+.convocatoria-col { border-top: 3px solid var(--color-naranja) !important; border-radius: 12px; padding: 2.5rem !important; }
+.institucion-col { border-top: 3px solid var(--color-azul-anchor) !important; border-radius: 12px; padding: 2.5rem !important; }
+.tablero-seccion { border-radius: 16px; overflow: hidden; border-top: 3px solid var(--color-fucsia) !important; }
+
+/* Tipografía de formularios y controles — no sobreescribe el sistema tipográfico del diseño */
+input, select, textarea {
+    font-family: var(--font-sans);
+}
+
+/* Mejorar legibilidad general del texto */
+.editorial-paragraph,
+.section-subtitle,
+.institucion-text,
+.toc-meta p,
+.abstract-subtitle,
+p {
+    color: #E2E8F0 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    font-weight: 400;
+}
+
+.editorial-heading,
+.section-title,
+h1, h2, h3, h4 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    font-weight: 700;
+}
+
+
+
+/* ==========================================================================
+

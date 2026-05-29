@@ -3,7 +3,7 @@
  * Plataforma Maxi Ferraro - Campaña 2026
  */
 
-export function initAnimations() {
+function initAnimations() {
     console.log("Animations - Inicializando fluidos dinámicos y partículas...");
 
     // 1. Animación de revelación en scroll (Intersection Observer)

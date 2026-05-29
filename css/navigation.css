@@ -1,0 +1,395 @@
+/* navigation.css - Cabecera GCBA, Navbar Apple y Menú Móvil */
+   CABECERA INSTITUCIONAL
+   ========================================================================== */
+
+.gcba-header {
+    background: linear-gradient(180deg, rgba(12,14,20,0.98) 0%, rgba(12,14,20,0.92) 100%);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--color-linea);
+    position: relative;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-ba {
+    height: 44px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.separator {
+    width: 1px;
+    height: 36px;
+    background: var(--color-linea-fuerte);
+}
+
+.agency-title .direccion {
+    font-size: 0.88rem;
+    color: var(--color-texto-dm);
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 360px;
+    letter-spacing: 0.1px;
+}
+
+.magazine-meta {
+    text-align: right;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-texto-dm);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* NAVEGACIÓN GLOBAL - Removido por desuso (ver .apple-navbar para barra activa) */
+
+/* ==========================================================================
+
+   MENÚ SUPERIOR ANCLADO ESTILO APPLE (STICKY TOP NAVBAR)
+   ========================================================================== */
+
+.apple-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: rgba(8, 10, 18, 0.72);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-container {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.brand-logo {
+    background: linear-gradient(135deg, #00E5A3 0%, #FF6B00 100%) !important;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 3px 6px;
+    border-radius: 4px;
+    border: none !important;
+}
+
+.brand-text {
+    opacity: 0.8;
+    transition: opacity 0.2s, background 0.2s;
+}
+
+.navbar-brand:hover .brand-text {
+    background: linear-gradient(135deg, #00E5A3 0%, #FF6B00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-links .nav-link {
+    color: #f5f5f7;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    opacity: 0.65;
+    transition: opacity 0.2s ease, background 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-links .nav-link:hover,
+.navbar-links .nav-link.active {
+    background: linear-gradient(135deg, #00E5A3 0%, #FF6B00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1 !important;
+    font-weight: 600;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-navbar-join {
+    background: rgba(0, 229, 163, 0.1);
+    border: 1px solid rgba(0, 229, 163, 0.35);
+    color: var(--color-verde);
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all var(--transition-premium);
+}
+
+.btn-navbar-join:hover {
+    background: var(--color-verde);
+    color: var(--bg-base) !important;
+    box-shadow: 0 4px 15px rgba(0, 229, 163, 0.3);
+}
+
+/* Hamburguesa Móvil */
+.navbar-mobile-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    z-index: 1010;
+}
+
+.navbar-mobile-toggle .bar {
+    width: 16px;
+    height: 1px;
+    background-color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+/* Estilos de Dropdowns del Menú Superior (Desktop) */
+.nav-item-dropdown {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-dropdown {
+    position: absolute;
+    top: 48px; /* Altura de la apple-navbar */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(11, 15, 26, 0.96);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 8px 0;
+    width: 220px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    z-index: 1100;
+}
+
+.nav-item-dropdown:hover .navbar-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 16px;
+    color: #e2e8f0;
+    font-size: 0.72rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 229, 163, 0.08);
+    color: var(--color-verde);
+    padding-left: 20px;
+}
+
+.chevron-down {
+    font-size: 0.55rem;
+    margin-left: 3px;
+    opacity: 0.6;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.nav-item-dropdown:hover .chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Drawer Móvil */
+.navbar-mobile-drawer {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(8, 10, 18, 0.95);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    overflow-y: auto;
+    z-index: 999;
+    transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mobile-drawer-links {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 22px;
+    gap: 16px;
+}
+
+.mobile-drawer-link {
+    color: #f5f5f7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.mobile-drawer-section-title {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #64748b;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.mobile-drawer-sub-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding-left: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.btn-drawer-join {
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: var(--grad-naranja-fucsia);
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* Estado activo menú móvil */
+body.navbar-mobile-open .navbar-mobile-drawer {
+    height: calc(100vh - 48px);
+}
+
+body.navbar-mobile-open .mobile-drawer-links > * {
+    opacity: 0.85;
+    transform: translateY(0);
+}
+
+body.navbar-mobile-open .mobile-drawer-link.active,
+body.navbar-mobile-open .mobile-drawer-link:hover,
+body.navbar-mobile-open .mobile-drawer-sub-link.active,
+body.navbar-mobile-open .mobile-drawer-sub-link:hover {
+    opacity: 1;
+    color: var(--color-verde);
+}
+
+/* Animación secuencial en cascada para todos los hijos del drawer móvil */
+.mobile-drawer-links > *:nth-child(1) { transition-delay: 0.04s; }
+.mobile-drawer-links > *:nth-child(2) { transition-delay: 0.07s; }
+.mobile-drawer-links > *:nth-child(3) { transition-delay: 0.10s; }
+.mobile-drawer-links > *:nth-child(4) { transition-delay: 0.13s; }
+.mobile-drawer-links > *:nth-child(5) { transition-delay: 0.16s; }
+.mobile-drawer-links > *:nth-child(6) { transition-delay: 0.19s; }
+.mobile-drawer-links > *:nth-child(7) { transition-delay: 0.22s; }
+.mobile-drawer-links > *:nth-child(8) { transition-delay: 0.25s; }
+.mobile-drawer-links > *:nth-child(9) { transition-delay: 0.28s; }
+.mobile-drawer-links > *:nth-child(10) { transition-delay: 0.31s; }
+.mobile-drawer-links > *:nth-child(11) { transition-delay: 0.34s; }
+.mobile-drawer-links > *:nth-child(12) { transition-delay: 0.37s; }
+.mobile-drawer-links > *:nth-child(13) { transition-delay: 0.40s; }
+.mobile-drawer-links > *:nth-child(14) { transition-delay: 0.43s; }
+.mobile-drawer-links > *:nth-child(15) { transition-delay: 0.46s; }
+.mobile-drawer-links > *:nth-child(16) { transition-delay: 0.49s; }
+
+body.navbar-mobile-open .navbar-mobile-toggle .bar-1 {
+    transform: translateY(2.5px) rotate(45deg);
+}
+body.navbar-mobile-open .navbar-mobile-toggle .bar-2 {
+    transform: translateY(-2.5px) rotate(-45deg);
+}
+
+@media (max-width: 1023px) {
+    .navbar-links {
+        display: none;
+    }
+    .navbar-mobile-toggle {
+        display: flex;
+    }
+    .btn-navbar-join {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+
+   APP CONTENT WRAPPER — OFFSET REMOVED FOR APPLE NAVBAR
+   ========================================================================== */
+
+.app-content-wrapper {
+    width: 100%;
+    padding-top: 48px; /* Espacio para el navbar fijo de Apple */
+    transition: padding-top 0.4s ease;
+}
+
+/* ==========================================================================
+

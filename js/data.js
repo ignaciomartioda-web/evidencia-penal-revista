@@ -3,7 +3,7 @@
  * Plataforma Maxi Ferraro - Campaña 2026
  */
 
-export const PROPUESTAS_FERRARO = {
+const PROPUESTAS_FERRARO = {
     "doc1": {
         title: "Revolución Educativa Digital: Conectividad y Habilidades para la Economía del Conocimiento",
         author: "Maxi Ferraro | Eje Educación",
@@ -132,4 +132,4 @@ export const PROPUESTAS_FERRARO = {
     }
 };
 
-export const ARTICULOS_REVISTA = PROPUESTAS_FERRARO;
+const ARTICULOS_REVISTA = PROPUESTAS_FERRARO;

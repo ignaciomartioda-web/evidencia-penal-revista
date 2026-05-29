@@ -3,14 +3,12 @@
  * Plataforma Maxi Ferraro - Campaña 2026
  */
 
-import { ARTICULOS_REVISTA } from './data.js';
-import { renderDbCharts } from './dashboard.js';
 
-export let activePageId = '';
-export let currentActiveDoc = 'doc1';
+let activePageId = '';
+let currentActiveDoc = 'doc1';
 
 // Enrutador basado en Hash (Historia y Deep-linking)
-export function router() {
+function router() {
     const hash = window.location.hash || '#inicio';
     console.log("SPA Router - Hash activo:", hash);
 
@@ -84,7 +82,7 @@ export function router() {
 }
 
 // Intercambio limpio de vistas de página
-export function showPage(pageId, preventScrollReset = false) {
+function showPage(pageId, preventScrollReset = false) {
     if (activePageId === pageId) return;
     activePageId = pageId;
 
@@ -134,7 +132,7 @@ export function showPage(pageId, preventScrollReset = false) {
     }
 }
 
-export function cargarArticuloLocal(docId) {
+function cargarArticuloLocal(docId) {
     const articulo = ARTICULOS_REVISTA[docId];
     if (!articulo) return Promise.resolve();
 
@@ -215,7 +213,7 @@ function renderArticle(data) {
 }
 
 // Retrocompatibilidad con enlaces antiguos de navegación directa
-export function navigateTo(pageId) {
+function navigateTo(pageId) {
     if (pageId === 'page-inicio') window.location.hash = '#inicio';
     else if (pageId === 'page-publicaciones') window.location.hash = '#publicaciones';
     else if (pageId === 'page-nosotros') window.location.hash = '#nosotros';
@@ -226,11 +224,11 @@ export function navigateTo(pageId) {
 // Exponer navigateTo de forma global para compatibilidad con código HTML inline anterior
 window.navigateTo = navigateTo;
 
-export function calibrateBeam() {
+function calibrateBeam() {
     // El overlay es fixed en CSS, no requiere calibración dinámica
 }
 
-export function initRouter() {
+function initRouter() {
     // Escuchar historial de navegación (Back/Forward)
     window.addEventListener('hashchange', router);
 }

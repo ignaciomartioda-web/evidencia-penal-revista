@@ -9,7 +9,7 @@ const dbChartModels = {
     bench: 'bar'
 };
 
-export function initDashboard() {
+function initDashboard() {
     console.log("Dashboard - Inicializando listeners y controles...");
 
     // Tab switching del tablero
@@ -47,7 +47,7 @@ export function initDashboard() {
     renderDbCharts();
 }
 
-export function setDbChartModel(chartId, model) {
+function setDbChartModel(chartId, model) {
     dbChartModels[chartId] = model;
     
     // Actualizar botones activos en el DOM del panel visible
@@ -73,7 +73,7 @@ export function setDbChartModel(chartId, model) {
 }
 
 // Motores de dibujo custom HTML5 Canvas
-export function drawDbRadarChart(ctx, width, height, labels, values, maxVal, color) {
+function drawDbRadarChart(ctx, width, height, labels, values, maxVal, color) {
     const centerX = width / 2;
     const centerY = height / 2;
     const radius = Math.min(width, height) * 0.38;
@@ -150,7 +150,7 @@ export function drawDbRadarChart(ctx, width, height, labels, values, maxVal, col
     }
 }
 
-export function drawDbBarChart(ctx, width, height, labels, values, maxVal, color) {
+function drawDbBarChart(ctx, width, height, labels, values, maxVal, color) {
     ctx.clearRect(0, 0, width, height);
     const paddingLeft = 50;
     const paddingBottom = 40;
@@ -206,7 +206,7 @@ export function drawDbBarChart(ctx, width, height, labels, values, maxVal, color
     }
 }
 
-export function drawDbLineChart(ctx, width, height, labels, dataset, maxVal, color) {
+function drawDbLineChart(ctx, width, height, labels, dataset, maxVal, color) {
     ctx.clearRect(0, 0, width, height);
     const paddingLeft = 50;
     const paddingBottom = 40;
@@ -280,7 +280,7 @@ export function drawDbLineChart(ctx, width, height, labels, dataset, maxVal, col
     }
 }
 
-export function renderDbCharts() {
+function renderDbCharts() {
     // 1. Gráfico SWOT
     const swotCanvas = document.getElementById('db-swot-chart');
     if (swotCanvas && swotCanvas.offsetParent !== null) {
@@ -330,3 +330,11 @@ export function renderDbCharts() {
 // Exponer en window para retrocompatibilidad con controladores inline 'onclick' en HTML
 window.setDbChartModel = setDbChartModel;
 window.renderDbCharts = renderDbCharts;
+
+// Auto-inicialización del tablero si se detecta su contenedor
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.querySelector('.db-wrapper') && !window.dashboardInitialized) {
+        window.dashboardInitialized = true;
+        initDashboard();
+    }
+});

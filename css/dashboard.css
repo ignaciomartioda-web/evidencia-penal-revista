@@ -1,0 +1,412 @@
+/* dashboard.css - Tablero de Campaña e Integración de Datos */
+   DASHBOARD INTEGRADO SPA (CLASES AISLADAS CON PREFIJO .db-)
+   ========================================================================== */
+
+.db-wrapper {
+    display: flex;
+    min-height: 75vh;
+    background: rgba(11, 15, 26, 0.94);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    margin: 1.5rem 0;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.85);
+}
+
+.db-sidebar {
+    width: 250px;
+    background: rgba(15, 18, 30, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    flex-shrink: 0;
+}
+
+.db-sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 1rem;
+}
+
+.db-sidebar-brand .db-logo {
+    background: var(--color-azul-anchor);
+    color: #fff;
+    font-weight: 800;
+    font-family: var(--font-mono);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.db-sidebar-brand .db-title {
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-family: var(--font-serif);
+}
+
+.db-nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.db-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 0.9rem;
+    color: var(--color-texto-muted);
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all var(--transition-fast) ease;
+}
+
+.db-nav-item:hover, .db-nav-item.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.db-nav-item.active {
+    border-left: 3px solid var(--color-verde);
+    background: rgba(50, 205, 50, 0.06);
+    color: var(--color-verde);
+}
+
+.db-main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    background: rgba(20, 24, 42, 0.15);
+}
+
+.db-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 1rem;
+}
+
+.db-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #fff !important;
+}
+
+.db-badge-internal {
+    background: rgba(230, 57, 70, 0.15);
+    border: 1px solid var(--color-fucsia);
+    color: var(--color-fucsia);
+    font-family: var(--font-mono);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.db-panel {
+    display: none;
+    animation: dbFadeIn 0.4s ease forwards;
+}
+
+.db-panel.active {
+    display: block;
+}
+
+@keyframes dbFadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.db-grid-2 {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.db-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.db-card {
+    background: rgba(17, 21, 34, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.db-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.db-card p {
+    font-size: 0.82rem;
+    color: #E2E8F0 !important;
+    line-height: 1.5;
+}
+
+.db-chart-controls {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.db-btn-toggle {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--color-texto-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.db-btn-toggle:hover, .db-btn-toggle.active {
+    background: var(--color-verde);
+    color: var(--bg-base);
+    border-color: var(--color-verde);
+}
+
+.db-canvas-container {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.db-canvas-chart {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.db-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+}
+
+table.db-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+    text-align: left;
+}
+
+table.db-table th, table.db-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #E2E8F0 !important;
+}
+
+table.db-table th {
+    color: var(--color-texto-muted) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+}
+
+table.db-table tr:hover {
+    background: rgba(255,255,255,0.02);
+}
+
+.db-checklist-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.db-checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.82rem;
+    color: #cbd5e1 !important;
+}
+
+.db-checklist-item input[type="checkbox"] {
+    margin-top: 3px;
+    accent-color: var(--color-verde);
+}
+
+.db-checklist-item strong {
+    color: #fff !important;
+}
+
+.db-mono-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--color-verde) !important;
+    background: rgba(50, 205, 50, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.db-warning-box {
+    background: rgba(255, 215, 0, 0.06);
+    border: 1px solid var(--color-naranja);
+    color: #ffd700 !important;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.db-warning-box strong {
+    color: var(--color-naranja) !important;
+}
+
+.db-workflow-container {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.db-workflow-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+}
+
+.db-workflow-node-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.db-workflow-node-card:hover {
+    border-color: var(--color-verde);
+    background: rgba(50, 205, 50, 0.03);
+    transform: translateY(-2px);
+}
+
+.db-workflow-node-card h4 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #fff !important;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.db-workflow-node-card p {
+    font-size: 0.62rem;
+    color: var(--color-texto-muted) !important;
+    line-height: 1.2;
+}
+
+.db-workflow-arrow {
+    color: var(--color-texto-muted) !important;
+    font-size: 1rem;
+    font-weight: bold;
+    user-select: none;
+}
+
+.db-btn-popout {
+    background: var(--color-azul-anchor);
+    color: #fff !important;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all var(--transition-fast) ease;
+}
+
+.db-btn-popout:hover {
+    background: #004488;
+    color: #fff !important;
+}
+
+@media (max-width: 900px) {
+    .db-wrapper {
+        flex-direction: column;
+    }
+    .db-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .db-nav-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .db-nav-item {
+        flex: 1 1 auto;
+        justify-content: center;
+        font-size: 0.72rem;
+        padding: 0.5rem 0.7rem;
+    }
+    .db-grid-2, .db-grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .db-workflow-flow {
+        flex-direction: column;
+    }
+    .db-workflow-arrow {
+        transform: rotate(90deg);
+        margin: 0.2rem 0;
+    }
+}
+
+/* Override para headings del Dashboard (neutralizar text-shadow) */
+.db-wrapper h1,
+.db-wrapper h2,
+.db-wrapper h3,
+.db-wrapper h4 {
+    text-shadow: none !important;
+}
+

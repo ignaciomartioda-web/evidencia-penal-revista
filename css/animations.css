@@ -1,0 +1,984 @@
+/* animations.css - Conos de luz, Rayos, Partículas y Keyframes */
+/* ==========================================================================
+   RAYO DE FARO GLOBAL — El faro ilumina toda la publicación
+   ========================================================================== */
+
+.page-beam-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity;
+}
+
+.page-beam-overlay.active {
+    opacity: 1;
+}
+
+/* Haz principal: cónico desde la zona del faro */
+.page-beam-overlay::before {
+    content: '';
+    position: absolute;
+    top: 28vh;
+    right: 22vw;
+    width: 800px;
+    height: 500px;
+    border: none;
+    background: radial-gradient(
+        ellipse 70% 35% at 85% 50%,
+        rgba(230, 0, 122, 0.09) 0%,    /* Fucsia */
+        rgba(255, 107, 0, 0.05) 45%,   /* Naranja */
+        transparent 75%
+    );
+    transform-origin: 85% 50%;
+    animation: beamSweep 12s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+/* Haz secundario verde esmeralda */
+.page-beam-overlay::after {
+    content: '';
+    position: absolute;
+    top: 20vh;
+    right: 18vw;
+    width: 700px;
+    height: 400px;
+    background: radial-gradient(
+        ellipse 60% 30% at 80% 50%,
+        rgba(0, 229, 163, 0.08) 0%,    /* Verde Esmeralda */
+        rgba(26, 98, 255, 0.03) 50%,   /* Azul de fondo */
+        transparent 75%
+    );
+    transform-origin: 80% 50%;
+    animation: beamSweep 12s ease-in-out infinite alternate;
+    animation-delay: 0.4s;
+    will-change: transform;
+}
+
+@keyframes beamSweep {
+    0%   { transform: rotate(-8deg) scaleX(0.9); opacity: 0.7; }
+    100% { transform: rotate(10deg) scaleX(1.1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-beam-overlay::before,
+    .page-beam-overlay::after {
+        animation: none;
+    }
+}
+
+/* ==========================================================================
+
+   HAZ DE FARO — Cono de luz directo del faro al título
+   La iluminación más importante de toda la página.
+   Apunta desde el faro (col derecha ~72%) hacia el texto (col izquierda).
+   ========================================================================== */
+
+/* Cono exterior: volumen amplio que baña toda la portada */
+.hero-beam-cone {
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    width: 0;
+    height: 0;
+    border-top: 55vh solid transparent;
+    border-bottom: 55vh solid transparent;
+    border-right: 90vw solid rgba(230, 0, 122, 0.06);
+    /* Pivote anclado al vértice izquierdo del triángulo (origen del haz) */
+    transform-origin: 0% 50%;
+    transform: translateY(-50%);
+    filter: blur(50px);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    z-index: 3;
+    /* La animación automática solo aplica cuando el cursor NO está en el hero */
+    animation: coneBeamPulse 7s ease-in-out infinite alternate;
+    will-change: transform, opacity, filter;
+}
+
+/* Cono medio: núcleo del haz más definido */
+.hero-beam-cone--inner {
+    border-top: 28vh solid transparent;
+    border-bottom: 28vh solid transparent;
+    border-right: 78vw solid rgba(255, 107, 0, 0.09);
+    filter: blur(30px);
+    mix-blend-mode: color-dodge;
+    z-index: 4;
+    /* Mismo pivote que el cono exterior */
+    transform-origin: 0% 50%;
+    animation: coneBeamPulse 7s ease-in-out infinite alternate;
+    animation-delay: 0.3s;
+}
+
+@keyframes coneBeamPulse {
+    0%   { opacity: 0.65; filter: blur(50px) brightness(0.9); }
+    40%  { opacity: 1.00; filter: blur(40px) brightness(1.15); }
+    70%  { opacity: 0.80; filter: blur(52px) brightness(0.95); }
+    100% { opacity: 1.00; filter: blur(35px) brightness(1.2); }
+}
+
+/* En mobile el cono no aplica (columna única) */
+@media (max-width: 992px) {
+    .hero-beam-cone { display: none; }
+}
+
+.hero-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1340px;
+    width: 100%;
+    padding: 6rem 3rem;
+    align-items: center;
+    z-index: 10;  /* Por encima de los conos de luz (z-index 3/4) */
+    position: relative;
+}
+
+.hero-text-side {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Padding extra izquierdo para empujar el texto hacia el centro del viewport */
+    padding-left: 2rem;
+}
+
+.hero-widget-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ── Kicker ── */
+.magazine-kicker {
+    font-size: 0.66rem;
+    font-weight: 700;
+    color: var(--color-oro);
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.magazine-kicker::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--color-oro);
+    opacity: 0.6;
+}
+
+/* ── Título principal ── */
+.magazine-title.massive-title {
+    font-family: var(--font-serif);
+    font-size: clamp(3.8rem, 10vw, 8.5rem); /* Más grande y protagonista */
+    line-height: 0.95;
+    font-weight: 700;
+    color: var(--color-texto);
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+    /* Iluminado por el faro: glow blanco-cian más definido */
+    text-shadow:
+        0 0 60px rgba(230, 0, 122, 0.55),
+        0 0 30px rgba(255, 107, 0, 0.4),
+        0 0 10px rgba(0, 229, 163, 0.25),
+        0 2px 4px rgba(0, 0, 0, 0.6);
+    animation: titleGlowPulse 5s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlowPulse {
+    0% {
+        text-shadow:
+            0 0 45px rgba(230, 0, 122, 0.45),
+            0 0 20px rgba(255, 107, 0, 0.3),
+            0 0 8px rgba(0, 229, 163, 0.15),
+            0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        text-shadow:
+            0 0 80px rgba(230, 0, 122, 0.65),
+            0 0 40px rgba(255, 107, 0, 0.45),
+            0 0 15px rgba(0, 229, 163, 0.3),
+            0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+}
+
+.magazine-title .highlight {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 300;
+    /* "Penal" iluminado con el cian del faro: más intenso */
+    color: #9EEEE7;
+    display: block;
+    text-shadow:
+        0 0 60px rgba(0, 229, 163, 0.7),
+        0 0 30px rgba(255, 107, 0, 0.5),
+        0 0 12px rgba(230, 0, 122, 0.35);
+    animation: highlightGlowPulse 5s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+}
+
+@keyframes highlightGlowPulse {
+    0% {
+        text-shadow:
+            0 0 45px rgba(0, 229, 163, 0.55),
+            0 0 22px rgba(255, 107, 0, 0.4),
+            0 0 10px rgba(230, 0, 122, 0.28);
+        color: #8EEBE3;
+    }
+    100% {
+        text-shadow:
+            0 0 80px rgba(0, 229, 163, 0.85),
+            0 0 45px rgba(255, 107, 0, 0.65),
+            0 0 20px rgba(230, 0, 122, 0.45);
+        color: #B8F5EF;
+    }
+}
+
+/* ── Subtítulo ── */
+.abstract-subtitle {
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    color: #A3B5D1; /* Ajuste Gráfico: Azul grisáceo frío para mejor contraste */
+    font-weight: 300;
+    max-width: 520px;
+    margin: 2rem 0 0;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.5s forwards;
+    line-height: 1.9;
+}
+
+/* ── CTA Hero ── */
+.hero-actions {
+    margin-top: 3rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.7s forwards;
+}
+
+/* ── Meta info ── */
+.hero-meta-lock {
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.9s forwards;
+}
+
+.hero-meta-lock .mono-meta {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--color-texto-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-meta-lock .meta-separator {
+    display: block;
+    width: 36px;
+    height: 1px;
+    background: var(--color-linea-fuerte);
+}
+
+/* ── Logo watermark ── */
+.hero-logos-wrapper {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--color-linea);
+    padding-top: 1.5rem;
+    z-index: 10;
+}
+
+.hero-logo-ba {
+    height: 34px;
+    filter: brightness(0) invert(1);
+    opacity: 0.18;
+}
+
+/* ==========================================================================
+
+   BOTONES PREMIUM
+   ========================================================================== */
+
+.btn-premium {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0.55rem 0.55rem 0.55rem 2rem;
+    background: transparent;
+    color: var(--color-oro) !important;
+    font-family: var(--font-sans);
+    font-size: 0.73rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid var(--color-oro);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all var(--transition-premium);
+    text-decoration: none;
+}
+
+.btn-premium .btn-icon-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--color-oro-dim);
+    color: var(--color-oro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-premium);
+}
+
+.btn-premium .btn-icon-circle svg {
+    width: 13px;
+    height: 13px;
+    transition: transform var(--transition-fast);
+}
+
+.btn-premium:hover {
+    background: var(--color-oro);
+    color: var(--bg-base) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--color-oro-glow);
+}
+
+.btn-premium:hover .btn-icon-circle {
+    background: rgba(12, 14, 20, 0.3);
+    color: var(--bg-base);
+}
+
+.btn-premium:hover .btn-icon-circle svg {
+    transform: translate(2px, -2px);
+}
+
+/* Hero button variant */
+.btn-hero.btn-premium {
+    background: var(--color-oro);
+    color: var(--bg-base) !important;
+    border-color: var(--color-oro);
+    box-shadow: 0 8px 28px var(--color-oro-glow);
+    padding: 0.7rem 0.7rem 0.7rem 2rem;
+}
+
+.btn-hero.btn-premium .btn-icon-circle {
+    background: rgba(12, 14, 20, 0.25);
+    color: var(--bg-base);
+    width: 38px;
+    height: 38px;
+}
+
+.btn-hero.btn-premium:hover {
+    background: transparent;
+    color: var(--color-oro) !important;
+    box-shadow: 0 12px 32px var(--color-oro-glow);
+}
+
+.btn-hero.btn-premium:hover .btn-icon-circle {
+    background: var(--color-oro-dim);
+    color: var(--color-oro);
+}
+
+/* ── Active states ── */
+.btn-premium:active,
+.btn-hero:active,
+.nav-link:active,
+.toc-item:active,
+.eje-columna:active,
+.lighthouse-link:active {
+    transform: scale(0.976) !important;
+    transition: transform 0.08s ease !important;
+}
+
+/* ── Focus ── */
+.btn-premium:focus-visible,
+.btn-hero:focus-visible,
+.nav-link:focus-visible,
+.toc-item:focus-visible,
+.eje-columna:focus-visible,
+.lighthouse-link:focus-visible {
+    outline: 2px solid var(--color-cian);
+    outline-offset: 4px;
+}
+
+/* ==========================================================================
+
+   FARO — Widget Interactivo
+   El faro ilumina las propuestas. Símbolo de claridad sobre la oscuridad.
+   ========================================================================== */
+
+.lighthouse-widget-wrapper {
+    width: 360px;
+    height: 360px;
+    position: relative;
+    /* Integración: margen negativo izquierdo para acercar el faro al texto */
+    margin-left: -2rem;
+}
+
+/* Resplandor de fondo detrás del faro: Aura multicolor expandida */
+.lighthouse-widget-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -120px;
+    background: radial-gradient(
+        circle at center,
+        rgba(230, 0, 122, 0.30) 0%,
+        rgba(255, 107, 0, 0.14) 40%,
+        rgba(0, 229, 163, 0.07) 60%,
+        transparent 75%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: lighthouseGlowPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes lighthouseGlowPulse {
+    0%   { opacity: 0.7; transform: scale(0.95); }
+    100% { opacity: 1.0; transform: scale(1.08); }
+}
+
+.lighthouse-link {
+    display: block;
+    width: 360px;
+    height: 360px;
+    border-radius: var(--radius-xl);
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+/* Escalado para pantallas grandes (Desktop Integration - 480px) */
+@media (min-width: 993px) {
+    .lighthouse-widget-wrapper {
+        width: 480px;
+        height: 480px;
+    }
+    .lighthouse-link {
+        width: 480px;
+        height: 480px;
+    }
+}
+
+.door-faro-container {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-xl);
+    /* Removidos fondos, bordes y sombras para integración 100% imperceptible */
+    background: transparent;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    perspective: 800px;
+    box-shadow: none;
+    transition: transform var(--transition-premium);
+    /* Máscara radial ultra-suave: difumina gradualmente todo el widget hacia el vacío, eliminando bordes rectos */
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 88%);
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 88%);
+}
+
+.door-faro-container:hover {
+    transform: scale(1.01);
+}
+
+.lighthouse-scene {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+
+.svg-lighthouse {
+    width: 80%;
+    height: 80%;
+}
+
+/* ── Elementos animados del SVG ── */
+.svg-lighthouse .glow-core,
+.svg-lighthouse .glow-strong,
+.svg-lighthouse .lamp-core {
+    transition: opacity var(--transition-premium), transform var(--transition-premium), filter var(--transition-premium);
+    transform-origin: 110px 68px;
+}
+
+.door-faro-container:hover .glow-core {
+    opacity: 0.55;
+    transform: scale(1.2);
+}
+
+.door-faro-container:hover .glow-strong {
+    opacity: 0.3;
+    transform: scale(1.35);
+}
+
+.door-faro-container:hover .lamp-core {
+    transform: scale(1.2);
+    filter: brightness(1.5) drop-shadow(0 0 6px rgba(230, 0, 122, 0.9));
+}
+
+/* ── Haz externo del faro ── */
+.external-light-beam {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 520px;
+    height: 120px;
+    background: radial-gradient(
+        ellipse at left,
+        rgba(230, 0, 122, 0.28) 0%,
+        rgba(255, 107, 0, 0.12) 20%,
+        rgba(212, 168, 75, 0.04) 55%,
+        transparent 75%
+    );
+    transform-origin: left center;
+    pointer-events: none;
+    z-index: 15;
+    mix-blend-mode: screen;
+    opacity: 0.9;
+    animation: externalBeamSweep 10s ease-in-out infinite alternate;
+    transition: opacity var(--transition-premium), filter var(--transition-premium);
+}
+
+.lighthouse-widget-wrapper:hover .external-light-beam {
+    opacity: 1;
+    filter: brightness(1.4) saturate(1.2);
+}
+
+@keyframes externalBeamSweep {
+    0%   { transform: translate(-15px, -60px) rotate(-12deg) scaleY(0.9); }
+    100% { transform: translate(-15px, -60px) rotate(28deg) scaleY(1.1); }
+}
+
+/* ── Puerta minimalista \u2014 bisagra a la derecha, abre hacia la derecha ── */
+.door-faro-container {
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+
+.puerta-unica {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    /* Bisagra a la DERECHA: la puerta barre hacia la derecha */
+    transform-origin: right center;
+    background: linear-gradient(
+        170deg,
+        #181D38 0%,
+        #10142A 60%,
+        #0C1020 100%
+    );
+    z-index: 10;
+    overflow: hidden;
+    transform: rotateY(0deg);
+    opacity: 1;
+    /* Sombra lateral izquierda: canto visible de la puerta */
+    box-shadow: inset 6px 0 18px rgba(0, 0, 0, 0.55);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+
+/* Línea de unión — eliminada para una transición fluida y sin líneas divisorias */
+.puerta-linea {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    opacity: 0.35;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(255, 107, 0, 0.3) 30%,
+        rgba(230, 0, 122, 0.3) 70%,
+        transparent 100%
+    );
+    transform: translateX(-50%);
+}
+
+/* Apertura: rota positivo porque bisagra est\u00e1 a la derecha */
+.puerta-unica.door-open {
+    animation: swingDoorOpen 2.6s ease-out forwards;
+}
+
+@keyframes swingDoorOpen {
+    0%   { transform: rotateY(0deg);    opacity: 1; }
+    /* La puerta arranca despacio (inercia del material) */
+    20%  { transform: rotateY(22deg);   opacity: 1; }
+    /* Zona media: fluidez continua */
+    60%  { transform: rotateY(78deg);   opacity: 0.7; }
+    /* Frena con suavidad, sin rebote brusco */
+    85%  { transform: rotateY(100deg);  opacity: 0.2; }
+    100% { transform: rotateY(105deg);  opacity: 0; }
+}
+
+.faro-respirando {
+    animation: respiracionNano 4s infinite alternate cubic-bezier(0.45, 0, 0.15, 1);
+}
+
+@keyframes respiracionNano {
+    0% { transform: scale(1) translateY(0); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6); }
+    100% { transform: scale(1.02) translateY(-5px); box-shadow: 0 24px 60px rgba(255, 235, 120, 0.15); }
+}
+
+/* ── Texto bajo el faro ── */
+.lighthouse-caption {
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--color-cian);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+@keyframes captionFadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+    to   { opacity: 0.6; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+
+   SCROLL REVEAL ANIMATIONS
+   ========================================================================== */
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px) scale(0.99);
+    filter: blur(3px);
+    transition:
+        opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity, filter;
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+/* ==========================================================================
+
+   ANIMACIONES GENERALES
+   (fadeInUp definida una sola vez arriba, cerca de línea 1000)
+   ========================================================================== */
+
+/* Utilitario para textos monotipo */
+.mono-meta {
+    font-family: var(--font-mono);
+    letter-spacing: 1.5px;
+}
+
+/* Loading fade para SPA */
+.article-layout.loading-fade {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+/* ==========================================================================
+
+   ABSTRACT FARO — REDISEÑO VANGUARDISTA
+   ========================================================================== */
+.abstract-faro-scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.neural-lighthouse-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    opacity: 0.95;
+    transition: opacity 0.4s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: var(--radius-xl);
+    /* Máscara elíptica amplia para que al abrirse se vea toda la red con bordes muy suaves */
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 95%);
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 95%);
+}
+
+#faro-animado:hover .neural-lighthouse-img {
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+/* Pulsación y resplandor del núcleo central */
+.faro-core-glow {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(26, 98, 255, 0.4) 0%, rgba(230, 0, 122, 0.2) 40%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(8px);
+    animation: corePulse 3s ease-in-out infinite alternate;
+}
+
+.faro-core-nucleus {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle, #ffffff 0%, var(--color-verde) 50%, var(--color-azul-anchor) 100%);
+    border-radius: 50%;
+    box-shadow: 
+        0 0 20px #ffffff,
+        0 0 40px var(--color-verde),
+        0 0 60px var(--color-azul-anchor);
+    z-index: 5;
+    animation: nucleusBreathe 4s ease-in-out infinite alternate;
+}
+
+/* Anillos Orbitales Geométricos */
+.faro-orbit {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(238, 240, 245, 0.15);
+    transform-style: preserve-3d;
+}
+
+.orbit-1 {
+    width: 120px;
+    height: 120px;
+    border-top: 2px solid var(--color-naranja);
+    border-bottom: 2px solid transparent;
+    animation: spinOrbit1 8s linear infinite;
+}
+
+.orbit-2 {
+    width: 150px;
+    height: 150px;
+    border-left: 2px solid var(--color-fucsia);
+    border-right: 2px solid transparent;
+    transform: rotateX(45deg);
+    animation: spinOrbit2 12s linear infinite reverse;
+}
+
+.orbit-3 {
+    width: 180px;
+    height: 180px;
+    border-top: 1.5px solid var(--color-verde);
+    border-bottom: 1.5px solid var(--color-azul-anchor);
+    transform: rotateY(60deg);
+    animation: spinOrbit3 16s linear infinite;
+}
+
+/* Partículas */
+.faro-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 4px var(--color-azul-anchor));
+}
+
+.p1 { width: 4px; height: 4px; top: 30%; left: 40%; animation: floatParticle 6s ease-in-out infinite; --dx: 15px; --dy: -30px; }
+.p2 { width: 6px; height: 6px; top: 60%; left: 70%; animation: floatParticle 8s ease-in-out infinite 1s; --dx: -25px; --dy: -20px; background: var(--color-naranja); }
+.p3 { width: 3px; height: 3px; top: 25%; left: 65%; animation: floatParticle 7s ease-in-out infinite 2s; --dx: -20px; --dy: 30px; background: var(--color-verde); }
+.p4 { width: 5px; height: 5px; top: 70%; left: 35%; animation: floatParticle 9s ease-in-out infinite 0.5s; --dx: 30px; --dy: -25px; background: var(--color-fucsia); }
+.p5 { width: 4px; height: 4px; top: 45%; left: 25%; animation: floatParticle 10s ease-in-out infinite 3s; --dx: 20px; --dy: 20px; }
+.p6 { width: 5px; height: 5px; top: 50%; left: 80%; animation: floatParticle 5s ease-in-out infinite 1.5s; --dx: -15px; --dy: -15px; background: var(--color-verde); }
+
+/* Obturador / Shutter System (Reemplaza la puerta giratoria literal) */
+/* Obturador / Shutter System: Puertas de Cristal Esmerilado (Glassmorphism) */
+.shutter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    /* Cristal ultra-esmerilado integrado como bruma suave */
+    background: rgba(10, 13, 24, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* Transición premium ultra-suave y amortiguada */
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.2s ease-out;
+    z-index: 10;
+}
+
+.shutter-left {
+    left: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.shutter-right {
+    right: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* Clases activadas por JS al abrir: Desplazamiento y desvanecimiento total del cristal */
+.puerta-unica.door-open .shutter-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.puerta-unica.door-open .shutter-right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.puerta-unica.door-open .puerta-linea {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Animaciones */
+@keyframes corePulse {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    100% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes nucleusBreathe {
+    0% { transform: scale(0.8); box-shadow: 0 0 15px var(--color-verde), 0 0 30px var(--color-azul-anchor); }
+    100% { transform: scale(1.15); box-shadow: 0 0 35px var(--color-verde), 0 0 70px var(--color-fucsia); }
+}
+
+@keyframes spinOrbit1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spinOrbit2 {
+    0% { transform: rotateX(45deg) rotate(0deg); }
+    100% { transform: rotateX(45deg) rotate(360deg); }
+}
+
+@keyframes spinOrbit3 {
+    0% { transform: rotateY(60deg) rotate(0deg); }
+    100% { transform: rotateY(60deg) rotate(360deg); }
+}
+
+@keyframes floatParticle {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(var(--dx), var(--dy)); }
+}
+
+.door-faro-container:hover .orbit-1 { animation-duration: 3s; }
+.door-faro-container:hover .orbit-2 { animation-duration: 5s; }
+.door-faro-container:hover .orbit-3 { animation-duration: 6s; }
+
+.door-faro-container:hover .faro-core-nucleus {
+    transform: scale(1.3);
+    background: radial-gradient(circle, #ffffff 0%, var(--color-fucsia) 50%, var(--color-naranja) 100%);
+}
+
+/* ==========================================================================
+
+   ORBES DE LUZ DE FONDO (EFECTO COLORISTA)
+   ========================================================================== */
+
+.bg-glow-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.22;
+    z-index: -10;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    animation: orbFloat 25s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+    top: -10%;
+    left: -10%;
+    width: 50vw;
+    height: 50vh;
+    background: radial-gradient(circle, var(--color-naranja) 0%, transparent 80%);
+}
+
+.orb-2 {
+    bottom: -15%;
+    right: -10%;
+    width: 60vw;
+    height: 60vh;
+    background: radial-gradient(circle, var(--color-fucsia) 0%, transparent 80%);
+    animation-duration: 35s;
+    animation-delay: -5s;
+}
+
+.orb-3 {
+    top: 40%;
+    left: 50%;
+    width: 45vw;
+    height: 45vh;
+    background: radial-gradient(circle, var(--color-verde) 0%, transparent 80%);
+    animation-duration: 30s;
+    animation-delay: -10s;
+}
+
+@keyframes orbFloat {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(8%, 10%) scale(1.15);
+    }
+    100% {
+        transform: translate(-5%, -5%) scale(0.9);
+    }
+}
+
+/* ==========================================================================
+
+   TRANSICIONES DE SCROLL REVEAL — definición única (ver también línea ~2257)
+   Esta sección es el override final con parámetros optimizados.
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+    .gcba-header {
+        position: sticky;
+        top: 48px; /* Ajuste para que se apoye debajo de la apple-navbar */
+        z-index: 900;
+        background: rgba(8, 10, 18, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* ==========================================================================
+
