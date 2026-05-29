@@ -34,8 +34,21 @@ export function router() {
                 }
             }
         });
-    } else if (hash === '#nosotros' || hash === '#sobre-nosotros' || hash === '#biografia-seccion' || hash === '#ejes-partidarios' || hash === '#voluntariado') {
-        showPage('page-nosotros');
+    } else if (hash === '#nosotros' || hash === '#sobre-nosotros' || hash === '#biografia-seccion' || hash === '#ejes-partidarios' || hash === '#voluntariado' || hash === '#iniciativas-legislativas' || hash === '#agenda-charlas' || hash === '#contacto-seccion') {
+        const wasOtherPage = (activePageId !== 'page-nosotros');
+        const isSubAnchor = hash !== '#nosotros' && hash !== '#sobre-nosotros';
+        showPage('page-nosotros', isSubAnchor);
+        if (isSubAnchor) {
+            const targetId = hash.substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                if (wasOtherPage) {
+                    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+                } else {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
     } else if (hash === '#dashboard') {
         showPage('page-dashboard');
         setTimeout(() => {

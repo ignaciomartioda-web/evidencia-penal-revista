@@ -6,48 +6,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap');
 
 :root {
-    /* ── Paleta Principal: Campaña Ferraro (Brand Manual) ── */
-    --bg-base:        #1A1A1A;   /* Dark Charcoal */
-    --bg-surface:     #242424;   /* Surface Charcoal */
-    --bg-raised:      #2E2E2E;   /* Lighter Charcoal */
-    --bg-card:        #202020;   /* Card Background */
-    --bg-light-zone:  #282828;
+    /* ── Paleta Principal: Campaña Ferraro (Premium Dark Mode) ── */
+    --bg-base:        #08090d;   /* Deep Slate Space Background */
+    --bg-surface:     rgba(18, 20, 29, 0.65); /* Glassmorphic Surface */
+    --bg-raised:      rgba(28, 31, 44, 0.5);  /* Glassmorphic Raised */
+    --bg-card:        rgba(22, 24, 34, 0.55);  /* Glassmorphic Card */
+    --bg-light-zone:  rgba(32, 36, 52, 0.4);
 
-    /* ── Colores Oficiales Manual de Marca ── */
-    --color-azul-anchor:#0055A4; /* Azul Institucional (Primary) */
-    --color-naranja:    #FFD700; /* Oro/Gold */
-    --color-fucsia:     #E63946; /* Rojo Activista */
-    --color-verde:      #32CD32; /* Verde Lima Activista */
+    /* ── Colores Oficiales Premium (Apple Developer Style) ── */
+    --color-azul-anchor:#2997ff; /* Neon Blue Accent */
+    --color-naranja:    #ff9f0a; /* Vibrant Gold/Amber */
+    --color-fucsia:     #ff375f; /* Vibrant Rose/Red */
+    --color-verde:      #30d158; /* Vibrant Emerald Green */
     
     /* ── Mapeos de Compatibilidad y Limpieza de Brillos ── */
-    --color-oro:      var(--color-naranja); /* Gold */
-    --color-oro-dim:  rgba(255, 215, 0, 0.1);
-    --color-oro-glow: rgba(0, 0, 0, 0); /* No glow */
+    --color-oro:      var(--color-naranja);
+    --color-oro-dim:  rgba(255, 159, 10, 0.15);
+    --color-oro-glow: rgba(255, 159, 10, 0.05);
     
-    --color-cian:     #87CEEB; /* Celeste/Sky Blue */
-    --color-cian-dim: rgba(135, 206, 235, 0.1);
-    --color-cian-glow:rgba(0, 0, 0, 0); /* No glow */
+    --color-cian:     #54c5f8; /* Celeste Neon */
+    --color-cian-dim: rgba(84, 197, 248, 0.15);
+    --color-cian-glow:rgba(84, 197, 248, 0.05);
     
-    --color-rojo:     var(--color-fucsia); /* Red */
+    --color-rojo:     var(--color-fucsia);
     --color-blanco:   #FFFFFF;
 
-    /* ── Gradientes Temáticos Limpios ── */
+    /* ── Gradientes Temáticos Premium ── */
     --grad-naranja-fucsia: linear-gradient(135deg, var(--color-naranja) 0%, var(--color-fucsia) 100%);
     --grad-fucsia-azul:    linear-gradient(135deg, var(--color-fucsia) 0%, var(--color-azul-anchor) 100%);
     --grad-verde-azul:     linear-gradient(135deg, var(--color-verde) 0%, var(--color-azul-anchor) 100%);
     --grad-azul-naranja:   linear-gradient(135deg, var(--color-azul-anchor) 0%, var(--color-naranja) 100%);
 
-    /* ── Texto ──
-       Contraste premium. */
-    --color-texto:    #FFFFFF;   /* Blanco puro */
-    --color-texto-dm: #E0E0E0;   /* Gris claro */
-    --color-texto-muted: #A0A0A0; /* Gris medio */
-    --color-linea:    rgba(255, 255, 255, 0.08); /* Líneas sutiles */
-    --color-linea-fuerte: rgba(255, 255, 255, 0.15);
+    /* ── Texto ── */
+    --color-texto:    #FFFFFF;   /* Blanco Puro */
+    --color-texto-dm: #F5F5F7;   /* Apple Text Light */
+    --color-texto-muted: #86868B; /* Apple Text Muted */
+    --color-linea:    rgba(255, 255, 255, 0.06);
+    --color-linea-fuerte: rgba(255, 255, 255, 0.12);
 
-    /* ── Tipografías Brand Manual ── */
-    --font-sans:  'Inter', sans-serif;
-    --font-serif: 'Montserrat', sans-serif;
+    /* ── Tipografías Brand Premium ── */
+    --font-sans:  'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
     --font-mono:  'Share Tech Mono', monospace;
 
     /* ── Forma ── */
