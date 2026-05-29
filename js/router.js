@@ -5,7 +5,7 @@
 
 
 let activePageId = '';
-let currentActiveDoc = 'doc1';
+let currentActiveDoc = 'doc-analisis-politico';
 
 // Enrutador basado en Hash (Historia y Deep-linking)
 function router() {

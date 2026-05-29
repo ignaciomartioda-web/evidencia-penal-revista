@@ -1632,6 +1632,18 @@
     box-shadow: 0 8px 25px rgba(230, 0, 122, 0.5) !important;
 }
 
+.btn-grad-azul {
+    background: linear-gradient(135deg, var(--color-cian) 0%, var(--color-azul-anchor) 100%) !important;
+    border: none !important;
+    color: var(--color-blanco) !important;
+    box-shadow: 0 4px 15px rgba(41, 151, 255, 0.3);
+}
+
+.btn-grad-azul:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(41, 151, 255, 0.5) !important;
+}
+
 /* Form confirmation message */
 .form-feedback {
     display: none;
