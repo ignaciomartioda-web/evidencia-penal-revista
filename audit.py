@@ -3,20 +3,16 @@ import re
 import sys
 
 def extract_spa_valid_hashes(app_js_path):
-    valid_hashes = {"inicio", "publicaciones", "nosotros", "secciones", "visor-seccion", "sobre-nosotros", "biografia-seccion", "ejes-partidarios", "voluntariado"}
+    valid_hashes = {"inicio", "publicaciones", "nosotros", "secciones", "visor-seccion", "sobre-nosotros", "biografia-seccion", "ejes-partidarios", "voluntariado", "dashboard"}
     
-    if not os.path.exists(app_js_path):
-        print(f"Warning: {app_js_path} not found. Using static list.")
-        return valid_hashes
-
-    with open(app_js_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    # Find keys in PROPUESTAS_FERRARO (e.g. "doc1", "doc-seguridad")
-    # Matching keys like "doc1": { or 'doc-seguridad': {
-    doc_keys = re.findall(r'["\'](doc[a-zA-Z0-9_-]*)["\']\s*:', content)
-    for key in doc_keys:
-        valid_hashes.add(key)
+    data_js_path = os.path.join(os.path.dirname(app_js_path), "data.js")
+    for path in [app_js_path, data_js_path]:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                content = f.read()
+            doc_keys = re.findall(r'["\'](doc[a-zA-Z0-9_-]*)["\']\s*:', content)
+            for key in doc_keys:
+                valid_hashes.add(key)
         
     return valid_hashes
 
@@ -95,7 +91,7 @@ def audit_html(file_path, valid_spa_hashes=None):
 
 if __name__ == "__main__":
     dir_path = os.path.dirname(os.path.abspath(__file__))
-    app_js_path = os.path.join(dir_path, "js", "app.js")
+    app_js_path = os.path.join(dir_path, "js", "data.js")
     
     valid_spa_hashes = extract_spa_valid_hashes(app_js_path)
     print(f"SPA Router Valid Hashes: {sorted(list(valid_spa_hashes))}\n")

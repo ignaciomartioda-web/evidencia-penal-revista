@@ -58,6 +58,9 @@
                         <a href="#contacto-seccion" class="dropdown-item">📧 Contacto</a>
                     </div>
                 </div>
+                <div class="nav-item-dropdown">
+                    <a href="#dashboard" class="nav-link" data-page="page-dashboard">Tablero</a>
+                </div>
             </nav>
             
             <div class="navbar-actions">
@@ -91,6 +94,9 @@
                 <a href="#voluntariado" class="mobile-drawer-sub-link">🤝 Sumate al Equipo</a>
                 <a href="#agenda-charlas" class="mobile-drawer-sub-link">📅 Agenda y Charlas</a>
                 <a href="#contacto-seccion" class="mobile-drawer-sub-link">📧 Contacto</a>
+
+                <span class="mobile-drawer-section-title">Análisis</span>
+                <a href="#dashboard" class="mobile-drawer-link" data-page="page-dashboard">📊 Tablero de Campaña</a>
             </nav>
         </div>
     </header>
@@ -406,7 +412,7 @@
                                 <span class="teaser-cat" style="color: var(--color-naranja);">Educación y Futuro</span>
                                 <h3 class="teaser-title">Revolución Educativa Digital y financiamiento educativo</h3>
                                 <p class="teaser-author">Maxi Ferraro | Eje Educación</p>
-                                <p class="teaser-desc">Propuesta legislativa para garantizar conectividad simétrica en escuelas, reformas de planes de estudio y capacitación en habilidades y tecnologías del conocimiento.</p>
+                                <p class="teaser-desc">Propuesta legislativa para garantizar conectividad simétrica en escuelas, reformar planes de estudio e implementar un pipeline CRM digital automatizado para recolección de voluntariados y feedback.</p>
                                 <div class="teaser-keywords">
                                     <span class="teaser-kw-gold" style="border-color: var(--color-naranja); color: var(--color-naranja);">Educación Pública</span>
                                     <span class="teaser-kw-gold" style="border-color: var(--color-naranja); color: var(--color-naranja);">Alfabetización Digital</span>
@@ -432,7 +438,7 @@
                                 <span class="teaser-cat" style="color: var(--color-verde);">Transparencia y Ética</span>
                                 <h3 class="teaser-title">Ficha Limpia y auditoría de compras públicas abiertas</h3>
                                 <p class="teaser-author">Maxi Ferraro | Eje Democracia</p>
-                                <p class="teaser-desc">Implementación de Ficha Limpia obligatoria para todos los funcionarios y portales abiertos respaldados por tecnología blockchain para evitar desvíos y sobreprecios.</p>
+                                <p class="teaser-desc">Implementación de Ficha Limpia obligatoria y el portal 'Auditor Ciudadano' con blockchain y modelos de IA para clasificar y mapear reclamos vecinales en tiempo real.</p>
                                 <div class="teaser-keywords">
                                     <span class="teaser-kw-cyan" style="border-color: var(--color-verde); color: var(--color-verde);">Ficha Limpia</span>
                                     <span class="teaser-kw-cyan" style="border-color: var(--color-verde); color: var(--color-verde);">Transparencia Activa</span>
@@ -458,7 +464,7 @@
                                 <span class="teaser-cat" style="color: var(--color-fucsia);">Economía Verde e Integración</span>
                                 <h3 class="teaser-title">Plan de Transición Energética y Economía Circular Urbana</h3>
                                 <p class="teaser-author">Maxi Ferraro | Eje Ambiente</p>
-                                <p class="teaser-desc">Desarrollo sustentable urbano a través de incentivos tributarios para empresas limpias, microrredes solares y tecnificación de recicladores urbanos.</p>
+                                <p class="teaser-desc">Desarrollo sustentable urbano mediante incentivos a la economía circular, microrredes solares comunitarias en terrazas residenciales y la tecnificación de cooperativas de recicladores.</p>
                                 <div class="teaser-keywords">
                                     <span class="teaser-kw-gold" style="border-color: var(--color-fucsia); color: var(--color-fucsia);">Transición Verde</span>
                                     <span class="teaser-kw-gold" style="border-color: var(--color-fucsia); color: var(--color-fucsia);">Economía Circular</span>
@@ -651,10 +657,10 @@
                         <span class="mono-tag">[ TRAYECTORIA Y COMPROMISO ]</span>
                         <h2>Maxi Ferraro</h2>
                         <p class="institucion-text">
-                            <strong>Maxi Ferraro</strong> es Diputado Nacional por la Ciudad Autónoma de Buenos Aires y presidente de la Coalición Cívica ARI. Con una destacada carrera legislativa en la Legislatura Porteña y en el Congreso de la Nación, su labor se centra en la defensa de la educación pública, los derechos humanos, la diversidad y la transparencia en la gestión pública.
+                            <strong>Maxi Ferraro</strong> (50 años) es Diputado Nacional por la Ciudad Autónoma de Buenos Aires y presidente de la Coalición Cívica ARI. Vecino de Barracas, inquilino y usuario habitual del transporte público, su labor parlamentaria se destaca por la coherencia y la transparencia activa.
                         </p>
                         <p class="institucion-text">
-                            Cree en una política participativa, transparente y basada en principios éticos, donde la rendición de cuentas y la honestidad son las bases para recuperar la confianza de la sociedad en sus instituciones.
+                            En el Congreso, impulsó la comisión investigadora de la estafa con la criptomoneda $LIBRA y fue clave para el rechazo legislativo al DNU 656/2024 que pretendía asignar fondos reservados millonarios de manera opaca a la SIDE. Cree en la transparencia ética y el control ciudadano.
                         </p>
 
                         <h3 class="comite-title" id="ejes-partidarios">Ejes Parlamentarios</h3>
@@ -775,6 +781,472 @@
 
         </div><!-- /page-nosotros -->
 
+        <!-- ============================================================
+             PÁGINA 4: TABLERO DE CAMPAÑA (DASHBOARD INTEGRADO SPA)
+             ============================================================ -->
+        <div id="page-dashboard" class="page-view" role="tabpanel" aria-labelledby="link-dashboard">
+            <div class="db-wrapper">
+                <!-- Sidebar Dashboard -->
+                <aside class="db-sidebar">
+                    <div class="db-sidebar-brand">
+                        <span class="db-logo">MF</span>
+                        <span class="db-title">AUDITORÍA INTERNA</span>
+                    </div>
+                    <ul class="db-nav-menu">
+                        <li class="db-nav-item active" data-db-tab="db-tab-resumen">📊 Resumen Ejecutivo</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-educacion">📚 Educación y Futuro</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-transparencia">⚖️ Transparencia y Democracia</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-ambiente">🌱 Economía Verde</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-seguridad">🛡️ Seguridad y PyMEs</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-benchmarking">🌎 Benchmarking Global</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-ingesta">📋 Ingesta Documental</li>
+                    </ul>
+                </aside>
+
+                <!-- Content Dashboard -->
+                <main class="db-main-content">
+                    <header class="db-header">
+                        <h2 id="db-header-title">Resumen Ejecutivo</h2>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <a href="dashboard.html" target="_blank" class="db-btn-popout" id="db-popout-btn">Desprender Tablero ↗</a>
+                            <span class="db-badge-internal">USO INTERNO EXCLUSIVO</span>
+                        </div>
+                    </header>
+
+                    <!-- Panel 1: Resumen Ejecutivo -->
+                    <section class="db-panel active" id="db-tab-resumen">
+                        <div class="db-grid-3">
+                            <div class="db-card" style="border-top: 3px solid var(--color-verde);">
+                                <h3>Perfil Clave</h3>
+                                <p style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">50 Años</p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted);">Diputado Nacional CABA hasta dic 2027. Presidente de la CC-ARI nacional. Vecino de Barracas, inquilino, sin auto, usuario de transporte público.</p>
+                            </div>
+                            <div class="db-card" style="border-top: 3px solid var(--color-fucsia);">
+                                <h3>Pivot Estratégico</h3>
+                                <p style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">Auditor Ciudadano</p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted);">Transición desde el "Legislador Abstracto" hacia fiscalización de asfalto, contratos y obras públicas en territorio.</p>
+                            </div>
+                            <div class="db-card" style="border-top: 3px solid var(--color-azul-anchor);">
+                                <h3>Campaña Activa</h3>
+                                <p style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">4 Ejes</p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted);">Town Halls, Apostar No Es Un Juego, CC-ARI en Bici, y Auditoría en Pizarra.</p>
+                            </div>
+                        </div>
+
+                                                <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>
+                                    Radar de Posicionamiento
+                                    <div class="db-chart-controls">
+                                        <button class="db-btn-toggle active" id="db-btn-swot-radar" onclick="setDbChartModel('swot', 'radar')">Radar</button>
+                                        <button class="db-btn-toggle" id="db-btn-swot-bar" onclick="setDbChartModel('swot', 'bar')">Barras</button>
+                                    </div>
+                                </h3>
+                                <div class="db-canvas-container">
+                                    <canvas class="db-canvas-chart" id="db-swot-chart"></canvas>
+                                </div>
+                            </div>
+                            <div class="db-card">
+                                <h3>📊 Diagnóstico e Inserción Territorial</h3>
+                                <p style="font-size: 0.88rem; margin-bottom: 0.8rem; color: var(--color-texto-muted); line-height: 1.5;">Análisis táctico para la perforación y capilaridad territorial en las Comunas de la Ciudad de Buenos Aires.</p>
+                                <p style="font-size: 0.82rem; line-height: 1.5; margin-bottom: 0.6rem;"><strong>Diferenciador Digital:</strong> El uso de webhooks a medida y bots programados en Google Antigravity permite una captación conversacional directa sin límites. Esto supera el cuello de botella de 1,000 contactos impuesto por la versión gratuita de Manychat.</p>
+                                <p style="font-size: 0.82rem; line-height: 1.5;"><strong>Consistencia de Mensaje:</strong> Conectar la honestidad validada en la investigación del Caso $LIBRA y la Ley de Ludopatía con fiscalización in situ del Código Urbanístico y clausuras de inspectores de la AGC en Pymes.</p>
+                            </div>
+                        </div>
+
+                        <div class="db-card" style="margin-top: 1.5rem;">
+                            <h3>🔍 Análisis FODA Detallado (10 Fortalezas y 10 Debilidades)</h3>
+                            <div class="db-table-container">
+                                <table class="db-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%; text-align: left;">Dimensión</th>
+                                            <th style="width: 40%; text-align: left;">Fortalezas (Capital Político y Operativo)</th>
+                                            <th style="width: 40%; text-align: left;">Debidades (Vulnerabilidades y Riesgos)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Trayectoria y Liderazgo</strong></td>
+                                            <td>
+                                                • Liderazgo nacional consolidado (Presidente CC-ARI y referente en la mesa de "Unidos").<br>
+                                                • Estabilidad temporal garantizada por mandato legislativo estable hasta diciembre de 2027.
+                                            </td>
+                                            <td>
+                                                • Exposición a estigmatización de "casta" tradicional por su prolongada carrera parlamentaria.<br>
+                                                • Percepción histórica de dependencia o subordinación al liderazgo directo de Elisa Carrió.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Perfil Ético e Institucional</strong></td>
+                                            <td>
+                                                • Imagen intachable de fiscal incorruptible, consolidada por presidir el hito del Caso $LIBRA.<br>
+                                                • Lucha activa y transversal de prevención frente a la ludopatía adolescente y apuestas online.
+                                            </td>
+                                            <td>
+                                                • Rigidez moral y purismo ético que suelen obstaculizar acuerdos y consensos tácticos locales.<br>
+                                                • Dificultad para conectar de forma empática con audiencias despolitizadas o apáticas.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Gestión y Consensos</strong></td>
+                                            <td>
+                                                • Probada destreza parlamentaria para tejer acuerdos y resolver crisis de alta fricción (ej. UniCABA).<br>
+                                                • Co-impulsor del blindaje educativo declarando la educación como "Servicio Estratégico Esencial".
+                                            </td>
+                                            <td>
+                                                • "Síndrome Institucionalista": percepción pública de legislador de escritorio alejado de la vereda.<br>
+                                                • Tendencia a usar lenguaje procedimental, citas complejas de expedientes y tecnicismos formales.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Anclaje Biográfico</strong></td>
+                                            <td>
+                                                • Perfil biográfico común genuino: es inquilino en Barracas y viaja en subte/transporte público.<br>
+                                                • Legitimidad territorial en comunas del sur (Comunas 4, 8, 9) para contrastar con las élites tradicionales.
+                                            </td>
+                                            <td>
+                                                • Fuerte sub-comunicación de su realidad biográfica: su vida humilde y real está casi invisibilizada.<br>
+                                                • Escasa llegada discursiva en electorados jóvenes atraídos por las narrativas libertarias de mercado.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Ecosistema Digital</strong></td>
+                                            <td>
+                                                • Gran capacidad para viralizar evidencias, denuncias con datos duros e infografías estructuradas.<br>
+                                                • Digitalización técnica de campañas a costo cero con flujos de datos en Google Sheets e IA.
+                                            </td>
+                                            <td>
+                                                • Desconexión con códigos humorísticos y narrativas digitales orgánicas (ej. video Pink Floyd).<br>
+                                                • Alta vulnerabilidad frente a ataques organizados de troll centers oficialistas e infoguerras.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="db-grid-2" style="margin-top: 1.5rem; gap: 1.5rem;">
+                                <div class="db-sub-card" style="background: rgba(46, 204, 113, 0.05); padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--color-verde);">
+                                    <h4 style="color: var(--color-verde); margin-top: 0; margin-bottom: 0.8rem;">💡 Oportunidades Estratégicas</h4>
+                                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.5; list-style-type: disc;">
+                                        <li style="margin-bottom: 0.4rem;"><strong>Pivot al Vecino-Auditor:</strong> Traducir la reputación de transparencia a fiscalización en la vereda de contratos públicos.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Protector Pyme y Comercio:</strong> Auditar las actas de clausuras arbitrarias de la AGC y defender a comerciantes.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Monopolizar Oposición de Centro:</strong> Capturar el voto moderado descontento con la desregulación o el populismo.</li>
+                                        <li><strong>Town Halls in Situ:</strong> Distribuir el informe impreso de $LIBRA y Ley de Ludopatía en charlas barriales.</li>
+                                    </ul>
+                                </div>
+                                <div class="db-sub-card" style="background: rgba(231, 76, 60, 0.05); padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--color-fucsia);">
+                                    <h4 style="color: var(--color-fucsia); margin-top: 0; margin-bottom: 0.8rem;">⚠️ Amenazas Identificadas</h4>
+                                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.5; list-style-type: disc;">
+                                        <li style="margin-bottom: 0.4rem;"><strong>Polarización Mediática Extrema:</strong> Pérdida de relevancia en el choque entre oficialismo y oposición dura.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Desinformación Coordinada:</strong> Campañas masivas destinadas a deslegitimar la denuncia federal de $LIBRA.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Gentrificación y Éxodo Electoral:</strong> Desplazamiento habitacional de clase media de su bastión demográfico.</li>
+                                        <li><strong>Parálisis legislativa intencional:</strong> Trabas en pedidos de informes (ej. Consejo de Paz) para diluir su efectividad.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Panel 2: Educación y Futuro -->
+                    <section class="db-panel" id="db-tab-educacion">
+                        <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>📚 Proyecto Conectividad Escolar</h3>
+                                <p style="margin-bottom: 1rem;">Propuesta legislativa de financiamiento educativo blindado para asegurar internet por fibra óptica simétrica en todas las escuelas de CABA.</p>
+                                <p><strong>Habilidades digitales:</strong> Integración obligatoria de programación, pensamiento computacional y uso ético de IA en los planes de estudios primarios y secundarios.</p>
+                            </div>
+                            <div class="db-card">
+                                <h3>🏛️ Defensa Terciaria (UniCABA)</h3>
+                                <p style="margin-bottom: 1rem;">Liderazgo en la resistencia y negociación legislativa para evitar el cierre de los 29 institutos históricos de formación docente de la Ciudad.</p>
+                                <p>Coexistencia y jerarquización de los profesorados frente al modelo centralizado del ejecutivo de CABA.</p>
+                            </div>
+                        </div>
+                        <div class="db-card" style="margin-top: 1.5rem;">
+                            <h3>⚡ CRM Político: Automatización Manychat / Sheets</h3>
+                            <p style="margin-bottom: 1rem;">Flujo de conversión digital a costo cero implementado para canalizar voluntariados:</p>
+                            <div class="db-checklist-group">
+                                <div class="db-checklist-item">
+                                    <span class="db-mono-tag">CAPTURA</span>
+                                    <div>Disparador de palabra clave <strong>"GUÍA"</strong> en comentarios de publicaciones de Instagram (Manychat).</div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <span class="db-mono-tag">RESPUESTA</span>
+                                    <div>Envío de mensaje directo (DM) automatizado solicitando correo electrónico y barrio.</div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <span class="db-mono-tag">INTEGRACIÓN</span>
+                                    <div>Webhook Node.js auto-hospedado y Google Workspace MCP sincronizan el contacto con Google Sheets y People API.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Panel 3: Transparencia y Democracia -->
+                    <section class="db-panel" id="db-tab-transparencia">
+                        <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>⚖️ Caso $LIBRA</h3>
+                                <p style="margin-bottom: 1rem;">Investigación de 200 páginas sobre desvíos y sobornos de <strong>$5.000.000</strong> pagados al ex-funcionario Novelli en la Casa Rosada por firmas de criptomonedas.</p>
+                                <p><strong>Denuncia de Obstrucción:</strong> Presentación formal contra el fiscal federal Eduardo Taiano por inacción y encubrimiento.</p>
+                            </div>
+                            <div class="db-card">
+                                <h3>🛡️ Veto al Presupuesto SIDE (DNU 656/2024)</h3>
+                                <p style="margin-bottom: 1rem;">Liderazgo parlamentario para el rechazo histórico del DNU presidencial que asignaba <strong>$100.000 millones</strong> en fondos reservados sin control fiscal a la secretaría de inteligencia.</p>
+                                <p>Primer rechazo de un presupuesto de inteligencia desde el retorno de la democracia.</p>
+                            </div>
+                        </div>
+                        <div class="db-card" style="margin-top: 1.5rem;">
+                            <h3>🔍 Triage de Denuncias por IA (Gmail Workspace OCR)</h3>
+                            <p style="margin-bottom: 1rem;">Procesamiento automático de demandas vecinales sin licencias pagas:</p>
+                            <div class="db-checklist-group">
+                                <div class="db-checklist-item">
+                                    <span class="db-mono-tag">EXTRACCIÓN</span>
+                                    <div>El servidor MCP de Google Workspace lee correos entrantes de vecinos en tiempo real.</div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <span class="db-mono-tag">OCR / NLP</span>
+                                    <div>Modelos de lenguaje procesan los textos e imágenes libres, extrayendo Nombre, Celular, Barrio y reclamo.</div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <span class="db-mono-tag">REGISTRO</span>
+                                    <div>Carga normalizada del ticket a la base central de datos de campaña para seguimiento local.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Panel 4: Economía Verde -->
+                    <section class="db-panel" id="db-tab-ambiente">
+                        <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>🌱 Microrredes Solares en Consorcios</h3>
+                                <p style="margin-bottom: 1rem;">Propuesta regulatoria para la instalación de paneles fotovoltaicos comunitarios en terrazas residenciales de CABA.</p>
+                                <p><strong>Inyección a Red:</strong> Los consorcios obtienen créditos impositivos directos por inyectar excedentes de energía, reduciendo el costo de expensas.</p>
+                            </div>
+                            <div class="db-card">
+                                <h3>♻️ Cooperativas de Recicladores</h3>
+                                <p style="margin-bottom: 1rem;">Formalización y tecnificación del sistema de reciclado urbano con incentivos para industrias locales que consuman insumos reciclados certificados.</p>
+                                <p>Digitalización integral de centros verdes para asegurar trazabilidad ambiental completa de los residuos.</p>
+                            </div>
+                        </div>
+                        <div class="db-card" style="margin-top: 1.5rem;">
+                            <h3>🌎 Acuerdo de Escazú</h3>
+                            <p>Defensa activa y promoción parlamentaria de la ratificación del tratado regional ambiental de Escazú, garantizando el acceso a la información pública, la participación ciudadana y la justicia ambiental en la Ciudad.</p>
+                        </div>
+                    </section>
+
+                    <!-- Panel 5: Seguridad y PyMEs -->
+                    <section class="db-panel" id="db-tab-seguridad">
+                        <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>🛡️ Seguridad de Proximidad (Bloqueo IMEI)</h3>
+                                <p style="margin-bottom: 1rem;">Propuesta para asfixiar el mercado negro de celulares robados mediante operativos coordinados en las Comunas 7, 10 y 11.</p>
+                                <p><strong>Auditoría AGC:</strong> Control público sobre el cuerpo de inspectores de la Agencia Gubernamental de Control para evitar discrecionalidad y coimas.</p>
+                            </div>
+                            <div class="db-card">
+                                <h3>💸 Alivio Tributario PyME Sostenible</h3>
+                                <p style="margin-bottom: 1rem;">Exención impositiva de hasta el 100% de Ingresos Brutos el primer año para PyMEs locales que certifiquen huella de carbono neutra o procesos de economía circular.</p>
+                                <p><strong>PWA Supabase:</strong> Aplicación móvil offline-first para militantes en territorio que permite registrar obras y dolores vecinales sin internet, sincronizando con Supabase.</p>
+                            </div>
+                        </div>
+                        <div class="db-grid-2" style="margin-top: 1.5rem;">
+                            <div class="db-card">
+                                <h3>
+                                    Mapeo de Hotspots y Dolores en Comunas
+                                    <div class="db-chart-controls">
+                                        <button class="db-btn-toggle active" id="db-btn-barrios-trend" onclick="setDbChartModel('barrios', 'trend')">Línea</button>
+                                        <button class="db-btn-toggle" id="db-btn-barrios-bar" onclick="setDbChartModel('barrios', 'bar')">Barras</button>
+                                    </div>
+                                </h3>
+                                <div class="db-canvas-container">
+                                    <canvas class="db-canvas-chart" id="db-barrios-chart"></canvas>
+                                </div>
+                            </div>
+                            <div class="db-card">
+                                <h3>Foco de Infiltración Territorial</h3>
+                                <div class="db-table-container">
+                                    <table class="db-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Corredor</th>
+                                                <th>Dolor Principal (Open Data)</th>
+                                                <th>Pivot Narrativo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Centro</strong> (C. 1, 3)</td>
+                                                <td>Gente en calle, recolección deficiente</td>
+                                                <td>Fiscalizar empresas de limpieza urbana.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Norte</strong> (C. 2, 13, 14)</td>
+                                                <td>Saturación cloacal, ruidos, microdeptos</td>
+                                                <td>Frenar excepciones inmobiliarias ilegales.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Sur</strong> (C. 4, 8, 9)</td>
+                                                <td>Obras paralizadas, roedores escuelas</td>
+                                                <td>Legitimidad: vivir en Barracas y auditar obras.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Oeste</strong> (C. 7, 10, 11)</td>
+                                                <td>Mercado de celulares robados, hurtos</td>
+                                                <td>Auditar operativos y inspectores de AGC.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Centro-Oeste</strong> (C. 5, 6, 12, 15)</td>
+                                                <td>Gentrificación y pérdida de identidad</td>
+                                                <td>Defensa de bares notables, subte y cultura.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Panel 6: Benchmarking Global -->
+                    <section class="db-panel" id="db-tab-benchmarking">
+                        <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>
+                                    Matriz Costo vs. Impacto de Campaña
+                                    <div class="db-chart-controls">
+                                        <button class="db-btn-toggle active" id="db-btn-bench-bar" onclick="setDbChartModel('bench', 'bar')">Barras</button>
+                                        <button class="db-btn-toggle" id="db-btn-bench-radar" onclick="setDbChartModel('bench', 'radar')">Radar</button>
+                                    </div>
+                                </h3>
+                                <div class="db-canvas-container">
+                                    <canvas class="db-canvas-chart" id="db-bench-chart"></canvas>
+                                </div>
+                            </div>
+                            <div class="db-card">
+                                <h3>Modelos Internacionales Transpuestos</h3>
+                                <div class="db-table-container">
+                                    <table class="db-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Líder</th>
+                                                <th>Campaña Clave</th>
+                                                <th>Transposición CABA</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Pete Buttigieg</strong></td>
+                                                <td>"Go Everywhere" / Podcasts</td>
+                                                <td><strong>Podcast Blitz:</strong> Streaming en Olga, Blender, Gelatina, Neura.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Claudia López</strong></td>
+                                                <td>"Hecha a Pulso" / Bici</td>
+                                                <td><strong>Campaña en Bici:</strong> Recorrido repartiendo informe $LIBRA.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Mónica García</strong></td>
+                                                <td>Salud Mental y Ciberapuestas</td>
+                                                <td><strong>Apostar No Es Un Juego:</strong> Talleres de prevención locales.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Raphaël Glucksmann</strong></td>
+                                                <td>Pedagogía en video vertical</td>
+                                                <td><strong>Auditoría en Pizarra:</strong> Explicaciones rápidas en la vereda.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Manuela Carmena</strong></td>
+                                                <td>Artivismo y balcones</td>
+                                                <td><strong>Banners de Consorcios:</strong> Defensa de asoleamiento y servicios.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Antanas Mockus</strong></td>
+                                                <td>Tarjetas de Convivencia</td>
+                                                <td><strong>Tarjetas Ciudadanas:</strong> Cultura vial y urbana en comunas.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Panel 7: Ingesta Documental -->
+                    <section class="db-panel" id="db-tab-ingesta">
+                        <div class="db-warning-box">
+                            <strong>[ALERTA DE AUDITORÍA DE EDAD] CONTRADICCIÓN RESUELTA</strong><br>
+                            En el <i>Resumen Contextual</i> y actas se confirma que Maximiliano Ferraro nació el <b>4 de noviembre de 1975</b> (50 años de edad en 2026). Se corrigió la inconsistencia conceptual de "42 años" presente en el documento de <i>Estrategia Territorial</i>.
+                        </div>
+                        <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>📋 Checklist de Ingesta (100% Procesado)</h3>
+                                <div class="db-checklist-group">
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Análisis Político de Maximiliano Ferraro.pdf:</strong>
+                                            Biografía, cargos legislativos (CABA 2011-19, Nacional 2019-27), rechazo DNU SIDE, caso $LIBRA y Ley de Sangre.
+                                        </div>
+                                    </div>
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Estrategia Política Ferraro CABA.pdf:</strong>
+                                            Dolores por corredor, SUACI, plan operativo de 6 semanas y mitigación de chicanas de fatiga.
+                                        </div>
+                                    </div>
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Automatización de Base de Datos Política.pdf:</strong>
+                                            Arquitectura CRM sin costo, webhooks en Instagram, OCR en correos y base Supabase/Workspace.
+                                        </div>
+                                    </div>
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Campaña Austera_ Políticos y Estrategias.pdf:</strong>
+                                            Benchmarking global de 10 líderes (Buttigieg, López, García, Carmena, Mockus, Glucksmann, etc.).
+                                        </div>
+                                    </div>
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Analisis politico parte 2.pdf & ejemplos...:</strong>
+                                            Modelado y validación de duplicados.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="db-card">
+                                <h3>Integridad de Ingesta 1:1</h3>
+                                <div class="db-checklist-group">
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Validación Caso $LIBRA:</strong> Confirmado soborno de $5M a Novelli y denuncia al fiscal Taiano.
+                                        </div>
+                                    </div>
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Validación Ley de Sangre:</strong> Confirmada referencia a la derogación de restricciones discriminatorias LGTBIQ+.
+                                        </div>
+                                    </div>
+                                    <div class="db-checklist-item">
+                                        <input type="checkbox" checked disabled>
+                                        <div>
+                                            <strong>Validación Código Urbanístico:</strong> Confirmadas quejas de asoleamiento y saturación en Recoleta/Colegiales.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div><!-- /page-dashboard -->
+
     </main>
 
     <footer class="gcba-footer" style="background: linear-gradient(180deg, rgba(12,14,20,0.95) 0%, rgba(8,10,16,0.98) 100%);">
@@ -788,4 +1260,4 @@
 
     <script src="js/app.js"></script>
 </body>
-</html>
+</html>

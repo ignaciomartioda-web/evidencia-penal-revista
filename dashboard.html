@@ -4,1261 +4,497 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablero de Campaña - Auditoría Interna | CC-ARI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="img/logo-ba.svg">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-        :root {
-            --bg-base: #06080e;
-            --bg-surface: #0a0d18;
-            --bg-card: #0f1324;
-            --color-verde: #00e5a3;
-            --color-fucsia: #e6007a;
-            --color-naranja: #ff6b00;
-            --color-azul: #1a62ff;
-            --color-texto: #e2e8f0;
-            --color-texto-muted: #64748b;
-            --border-color: rgba(255, 255, 255, 0.08);
-            --transition-speed: 0.3s;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Standalone body overrides to match the dark base without wrapping in app-content-wrapper */
         body {
             background-color: var(--bg-base);
             color: var(--color-texto);
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: var(--font-sans);
+            margin: 0;
+            padding: 0;
             min-height: 100vh;
             display: flex;
-            overflow: hidden;
-        }
-
-        /* Sidebar Navigation */
-        .sidebar {
-            width: 280px;
-            background: var(--bg-surface);
-            border-right: 1px solid var(--border-color);
-            display: flex;
             flex-direction: column;
-            flex-shrink: 0;
-            padding: 2rem 1.5rem;
-            z-index: 100;
         }
-
-        .sidebar-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-        }
-
-        .sidebar-brand .logo {
-            background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-fucsia) 100%);
-            color: #fff;
-            font-weight: 800;
-            font-family: 'Share Tech Mono', monospace;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 1.1rem;
-        }
-
-        .sidebar-brand .title {
-            font-weight: 700;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            color: #fff;
-        }
-
-        .nav-menu {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .nav-item {
-            display: flex;
-            align-items: center;
-            padding: 0.75rem 1rem;
-            color: var(--color-texto-muted);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all var(--transition-speed) ease;
-        }
-
-        .nav-item:hover, .nav-item.active {
-            color: #fff;
-            background: rgba(255, 255, 255, 0.04);
-        }
-
-        .nav-item.active {
-            border-left: 3px solid var(--color-verde);
-            background: rgba(0, 229, 163, 0.05);
-            color: var(--color-verde);
-        }
-
-        /* Main Content Panel */
-        .main-content {
+        .standalone-container {
+            padding: 2rem;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
             flex-grow: 1;
-            padding: 2rem 3rem;
-            overflow-y: auto;
-            position: relative;
-            z-index: 10;
-        }
-
-        header.dashboard-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-        }
-
-        header.dashboard-header h1 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .badge-internal {
-            background: rgba(230, 0, 122, 0.15);
-            border: 1px solid var(--color-fucsia);
-            color: var(--color-fucsia);
-            font-family: 'Share Tech Mono', monospace;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-        }
-
-        /* Layout Grid and Panels */
-        .panel {
-            display: none;
-            animation: fadeIn 0.4s ease forwards;
-        }
-
-        .panel.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Card elements */
-        .card {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.8rem;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-            position: relative;
-        }
-
-        .card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Selectors */
-        .chart-controls {
-            display: flex;
-            gap: 0.4rem;
-        }
-
-        .btn-toggle {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid var(--border-color);
-            color: var(--color-texto-muted);
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .btn-toggle:hover, .btn-toggle.active {
-            background: var(--color-verde);
-            color: var(--bg-base);
-            border-color: var(--color-verde);
-        }
-
-        /* Interactive Canvas */
-        .canvas-container {
-            width: 100%;
-            height: 320px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0,0,0,0.15);
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .canvas-chart {
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Data Tables */
-        .data-table-container {
-            width: 100%;
-            overflow-x: auto;
-            margin-top: 1rem;
-        }
-
-        table.dashboard-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.8rem;
-            text-align: left;
-        }
-
-        table.dashboard-table th, table.dashboard-table td {
-            padding: 10px 12px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        table.dashboard-table th {
-            color: var(--color-texto-muted);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.7rem;
-            letter-spacing: 0.5px;
-        }
-
-        table.dashboard-table tr:hover {
-            background: rgba(255,255,255,0.02);
-        }
-
-        /* Checklists */
-        .checklist-group {
             display: flex;
             flex-direction: column;
-            gap: 0.8rem;
-        }
-
-        .checklist-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.8rem;
-            font-size: 0.88rem;
-            color: #b3c5ef;
-        }
-
-        .checklist-item input[type="checkbox"] {
-            margin-top: 3px;
-            accent-color: var(--color-verde);
-        }
-
-        .mono-tag {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--color-verde);
-            background: rgba(0,229,163,0.1);
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-
-        .warning-box {
-            background: rgba(255, 107, 0, 0.08);
-            border: 1px solid var(--color-naranja);
-            color: #ffd8bd;
-            padding: 1.2rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-            font-size: 0.88rem;
-            line-height: 1.6;
-        }
-
-        /* Scrollbar styles */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--bg-base);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--border-color);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(255,255,255,0.15);
-        }
-
-        /* Workflow Diagram */
-        .workflow-container {
-            margin-top: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .workflow-flow {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-
-        .workflow-node-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            text-align: center;
-            flex: 1;
-            min-width: 120px;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .workflow-node-card:hover {
-            border-color: var(--color-verde);
-            background: rgba(0, 229, 163, 0.03);
-            transform: translateY(-2px);
-        }
-
-        .workflow-node-card h4 {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 0.25rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .workflow-node-card p {
-            font-size: 0.68rem;
-            color: var(--color-texto-muted);
-            line-height: 1.3;
-        }
-
-        .workflow-arrow {
-            color: var(--color-texto-muted);
-            font-size: 1.2rem;
-            font-weight: bold;
-            user-select: none;
-        }
-
-        @media (max-width: 768px) {
-            .workflow-flow {
-                flex-direction: column;
-            }
-            .workflow-arrow {
-                transform: rotate(90deg);
-                margin: 0.25rem 0;
-            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <div class="sidebar-brand">
-            <span class="logo">MF</span>
-            <span class="title">AUDITORÍA INTERNA</span>
+    <div class="standalone-container">
+        <div class="db-wrapper" style="margin: 0; flex-grow: 1;">
+            <!-- Sidebar Dashboard -->
+            <aside class="db-sidebar">
+                <div class="db-sidebar-brand">
+                    <span class="db-logo">MF</span>
+                    <span class="db-title">AUDITORÍA INTERNA</span>
+                </div>
+                <ul class="db-nav-menu">
+                    <li class="db-nav-item active" data-db-tab="db-tab-resumen">📊 Resumen Ejecutivo</li>
+                    <li class="db-nav-item" data-db-tab="db-tab-educacion">📚 Educación y Futuro</li>
+                    <li class="db-nav-item" data-db-tab="db-tab-transparencia">⚖️ Transparencia y Democracia</li>
+                    <li class="db-nav-item" data-db-tab="db-tab-ambiente">🌱 Economía Verde</li>
+                    <li class="db-nav-item" data-db-tab="db-tab-seguridad">🛡️ Seguridad y PyMEs</li>
+                    <li class="db-nav-item" data-db-tab="db-tab-benchmarking">🌎 Benchmarking Global</li>
+                    <li class="db-nav-item" data-db-tab="db-tab-ingesta">📋 Ingesta Documental</li>
+                </ul>
+            </aside>
+
+            <!-- Content Dashboard -->
+            <main class="db-main-content">
+                <header class="db-header">
+                    <h2 id="db-header-title">Resumen Ejecutivo</h2>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <a href="index.html#dashboard" class="db-btn-popout">Volver al Sitio ↩</a>
+                        <span class="db-badge-internal">USO INTERNO EXCLUSIVO</span>
+                    </div>
+                </header>
+
+                <!-- Panel 1: Resumen Ejecutivo -->
+                <section class="db-panel active" id="db-tab-resumen">
+                    <div class="db-grid-3">
+                        <div class="db-card" style="border-top: 3px solid var(--color-verde);">
+                            <h3>Perfil Clave</h3>
+                            <p style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">50 Años</p>
+                            <p style="font-size: 0.82rem; color: var(--color-texto-muted);">Diputado Nacional CABA hasta dic 2027. Presidente de la CC-ARI nacional. Vecino de Barracas, inquilino, sin auto, usuario de transporte público.</p>
+                        </div>
+                        <div class="db-card" style="border-top: 3px solid var(--color-fucsia);">
+                            <h3>Pivot Estratégico</h3>
+                            <p style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">Auditor Ciudadano</p>
+                            <p style="font-size: 0.82rem; color: var(--color-texto-muted);">Transición desde el "Legislador Abstracto" hacia fiscalización de asfalto, contratos y obras públicas en territorio.</p>
+                        </div>
+                        <div class="db-card" style="border-top: 3px solid var(--color-azul-anchor);">
+                            <h3>Campaña Activa</h3>
+                            <p style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">4 Ejes</p>
+                            <p style="font-size: 0.82rem; color: var(--color-texto-muted);">Town Halls, Apostar No Es Un Juego, CC-ARI en Bici, y Auditoría en Pizarra.</p>
+                        </div>
+                    </div>
+
+                                            <div class="db-grid-2">
+                            <div class="db-card">
+                                <h3>
+                                    Radar de Posicionamiento
+                                    <div class="db-chart-controls">
+                                        <button class="db-btn-toggle active" id="db-btn-swot-radar" onclick="setDbChartModel('swot', 'radar')">Radar</button>
+                                        <button class="db-btn-toggle" id="db-btn-swot-bar" onclick="setDbChartModel('swot', 'bar')">Barras</button>
+                                    </div>
+                                </h3>
+                                <div class="db-canvas-container">
+                                    <canvas class="db-canvas-chart" id="db-swot-chart"></canvas>
+                                </div>
+                            </div>
+                            <div class="db-card">
+                                <h3>📊 Diagnóstico e Inserción Territorial</h3>
+                                <p style="font-size: 0.88rem; margin-bottom: 0.8rem; color: var(--color-texto-muted); line-height: 1.5;">Análisis táctico para la perforación y capilaridad territorial en las Comunas de la Ciudad de Buenos Aires.</p>
+                                <p style="font-size: 0.82rem; line-height: 1.5; margin-bottom: 0.6rem;"><strong>Diferenciador Digital:</strong> El uso de webhooks a medida y bots programados en Google Antigravity permite una captación conversacional directa sin límites. Esto supera el cuello de botella de 1,000 contactos impuesto por la versión gratuita de Manychat.</p>
+                                <p style="font-size: 0.82rem; line-height: 1.5;"><strong>Consistencia de Mensaje:</strong> Conectar la honestidad validada en la investigación del Caso $LIBRA y la Ley de Ludopatía con fiscalización in situ del Código Urbanístico y clausuras de inspectores de la AGC en Pymes.</p>
+                            </div>
+                        </div>
+
+                        <div class="db-card" style="margin-top: 1.5rem;">
+                            <h3>🔍 Análisis FODA Detallado (10 Fortalezas y 10 Debilidades)</h3>
+                            <div class="db-table-container">
+                                <table class="db-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%; text-align: left;">Dimensión</th>
+                                            <th style="width: 40%; text-align: left;">Fortalezas (Capital Político y Operativo)</th>
+                                            <th style="width: 40%; text-align: left;">Debidades (Vulnerabilidades y Riesgos)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Trayectoria y Liderazgo</strong></td>
+                                            <td>
+                                                • Liderazgo nacional consolidado (Presidente CC-ARI y referente en la mesa de "Unidos").<br>
+                                                • Estabilidad temporal garantizada por mandato legislativo estable hasta diciembre de 2027.
+                                            </td>
+                                            <td>
+                                                • Exposición a estigmatización de "casta" tradicional por su prolongada carrera parlamentaria.<br>
+                                                • Percepción histórica de dependencia o subordinación al liderazgo directo de Elisa Carrió.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Perfil Ético e Institucional</strong></td>
+                                            <td>
+                                                • Imagen intachable de fiscal incorruptible, consolidada por presidir el hito del Caso $LIBRA.<br>
+                                                • Lucha activa y transversal de prevención frente a la ludopatía adolescente y apuestas online.
+                                            </td>
+                                            <td>
+                                                • Rigidez moral y purismo ético que suelen obstaculizar acuerdos y consensos tácticos locales.<br>
+                                                • Dificultad para conectar de forma empática con audiencias despolitizadas o apáticas.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Gestión y Consensos</strong></td>
+                                            <td>
+                                                • Probada destreza parlamentaria para tejer acuerdos y resolver crisis de alta fricción (ej. UniCABA).<br>
+                                                • Co-impulsor del blindaje educativo declarando la educación como "Servicio Estratégico Esencial".
+                                            </td>
+                                            <td>
+                                                • "Síndrome Institucionalista": percepción pública de legislador de escritorio alejado de la vereda.<br>
+                                                • Tendencia a usar lenguaje procedimental, citas complejas de expedientes y tecnicismos formales.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Anclaje Biográfico</strong></td>
+                                            <td>
+                                                • Perfil biográfico común genuino: es inquilino en Barracas y viaja en subte/transporte público.<br>
+                                                • Legitimidad territorial en comunas del sur (Comunas 4, 8, 9) para contrastar con las élites tradicionales.
+                                            </td>
+                                            <td>
+                                                • Fuerte sub-comunicación de su realidad biográfica: su vida humilde y real está casi invisibilizada.<br>
+                                                • Escasa llegada discursiva en electorados jóvenes atraídos por las narrativas libertarias de mercado.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Ecosistema Digital</strong></td>
+                                            <td>
+                                                • Gran capacidad para viralizar evidencias, denuncias con datos duros e infografías estructuradas.<br>
+                                                • Digitalización técnica de campañas a costo cero con flujos de datos en Google Sheets e IA.
+                                            </td>
+                                            <td>
+                                                • Desconexión con códigos humorísticos y narrativas digitales orgánicas (ej. video Pink Floyd).<br>
+                                                • Alta vulnerabilidad frente a ataques organizados de troll centers oficialistas e infoguerras.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="db-grid-2" style="margin-top: 1.5rem; gap: 1.5rem;">
+                                <div class="db-sub-card" style="background: rgba(46, 204, 113, 0.05); padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--color-verde);">
+                                    <h4 style="color: var(--color-verde); margin-top: 0; margin-bottom: 0.8rem;">💡 Oportunidades Estratégicas</h4>
+                                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.5; list-style-type: disc;">
+                                        <li style="margin-bottom: 0.4rem;"><strong>Pivot al Vecino-Auditor:</strong> Traducir la reputación de transparencia a fiscalización en la vereda de contratos públicos.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Protector Pyme y Comercio:</strong> Auditar las actas de clausuras arbitrarias de la AGC y defender a comerciantes.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Monopolizar Oposición de Centro:</strong> Capturar el voto moderado descontento con la desregulación o el populismo.</li>
+                                        <li><strong>Town Halls in Situ:</strong> Distribuir el informe impreso de $LIBRA y Ley de Ludopatía en charlas barriales.</li>
+                                    </ul>
+                                </div>
+                                <div class="db-sub-card" style="background: rgba(231, 76, 60, 0.05); padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--color-fucsia);">
+                                    <h4 style="color: var(--color-fucsia); margin-top: 0; margin-bottom: 0.8rem;">⚠️ Amenazas Identificadas</h4>
+                                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.5; list-style-type: disc;">
+                                        <li style="margin-bottom: 0.4rem;"><strong>Polarización Mediática Extrema:</strong> Pérdida de relevancia en el choque entre oficialismo y oposición dura.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Desinformación Coordinada:</strong> Campañas masivas destinadas a deslegitimar la denuncia federal de $LIBRA.</li>
+                                        <li style="margin-bottom: 0.4rem;"><strong>Gentrificación y Éxodo Electoral:</strong> Desplazamiento habitacional de clase media de su bastión demográfico.</li>
+                                        <li><strong>Parálisis legislativa intencional:</strong> Trabas en pedidos de informes (ej. Consejo de Paz) para diluir su efectividad.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+                <!-- Panel 2: Educación y Futuro -->
+                <section class="db-panel" id="db-tab-educacion">
+                    <div class="db-grid-2">
+                        <div class="db-card">
+                            <h3>📚 Proyecto Conectividad Escolar</h3>
+                            <p style="margin-bottom: 1rem;">Propuesta legislativa de financiamiento educativo blindado para asegurar internet por fibra óptica simétrica en todas las escuelas de CABA.</p>
+                            <p><strong>Habilidades digitales:</strong> Integración obligatoria de programación, pensamiento computacional y uso ético de IA en los planes de estudios primarios y secundarios.</p>
+                        </div>
+                        <div class="db-card">
+                            <h3>🏛️ Defensa Terciaria (UniCABA)</h3>
+                            <p style="margin-bottom: 1rem;">Liderazgo en la resistencia y negociación legislativa para evitar el cierre de los 29 institutos históricos de formación docente de la Ciudad.</p>
+                            <p>Coexistencia y jerarquización de los profesorados frente al modelo centralizado del ejecutivo de CABA.</p>
+                        </div>
+                    </div>
+                    <div class="db-card" style="margin-top: 1.5rem;">
+                        <h3>⚡ CRM Político: Automatización Manychat / Sheets</h3>
+                        <p style="margin-bottom: 1rem;">Flujo de conversión digital a costo cero implementado para canalizar voluntariados:</p>
+                        <div class="db-checklist-group">
+                            <div class="db-checklist-item">
+                                <span class="db-mono-tag">CAPTURA</span>
+                                <div>Disparador de palabra clave <strong>"GUÍA"</strong> en comentarios de publicaciones de Instagram (Manychat).</div>
+                            </div>
+                            <div class="db-checklist-item">
+                                <span class="db-mono-tag">RESPUESTA</span>
+                                <div>Envío de mensaje directo (DM) automatizado solicitando correo electrónico y barrio.</div>
+                            </div>
+                            <div class="db-checklist-item">
+                                <span class="db-mono-tag">INTEGRACIÓN</span>
+                                <div>Webhook Node.js auto-hospedado y Google Workspace MCP sincronizan el contacto con Google Sheets y People API.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Panel 3: Transparencia y Democracia -->
+                <section class="db-panel" id="db-tab-transparencia">
+                    <div class="db-grid-2">
+                        <div class="db-card">
+                            <h3>⚖️ Caso $LIBRA</h3>
+                            <p style="margin-bottom: 1rem;">Investigación de 200 páginas sobre desvíos y sobornos de <strong>$5.000.000</strong> pagados al ex-funcionario Novelli en la Casa Rosada por firmas de criptomonedas.</p>
+                            <p><strong>Denuncia de Obstrucción:</strong> Presentación formal contra el fiscal federal Eduardo Taiano por inacción y encubrimiento.</p>
+                        </div>
+                        <div class="db-card">
+                            <h3>🛡️ Veto al Presupuesto SIDE (DNU 656/2024)</h3>
+                            <p style="margin-bottom: 1rem;">Liderazgo parlamentario para el rechazo histórico del DNU presidencial que asignaba <strong>$100.000 millones</strong> en fondos reservados sin control fiscal a la secretaría de inteligencia.</p>
+                            <p>Primer rechazo de un presupuesto de inteligencia desde el retorno de la democracia.</p>
+                        </div>
+                    </div>
+                    <div class="db-card" style="margin-top: 1.5rem;">
+                        <h3>🔍 Triage de Denuncias por IA (Gmail Workspace OCR)</h3>
+                        <p style="margin-bottom: 1rem;">Procesamiento automático de demandas vecinales sin licencias pagas:</p>
+                        <div class="db-checklist-group">
+                            <div class="db-checklist-item">
+                                <span class="db-mono-tag">EXTRACCIÓN</span>
+                                <div>El servidor MCP de Google Workspace lee correos entrantes de vecinos en tiempo real.</div>
+                            </div>
+                            <div class="db-checklist-item">
+                                <span class="db-mono-tag">OCR / NLP</span>
+                                <div>Modelos de lenguaje procesan los textos e imágenes libres, extrayendo Nombre, Celular, Barrio y reclamo.</div>
+                            </div>
+                            <div class="db-checklist-item">
+                                <span class="db-mono-tag">REGISTRO</span>
+                                <div>Carga normalizada del ticket a la base central de datos de campaña para seguimiento local.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Panel 4: Economía Verde -->
+                <section class="db-panel" id="db-tab-ambiente">
+                    <div class="db-grid-2">
+                        <div class="db-card">
+                            <h3>🌱 Microrredes Solares en Consorcios</h3>
+                            <p style="margin-bottom: 1rem;">Propuesta regulatoria para la instalación de paneles fotovoltaicos comunitarios en terrazas residenciales de CABA.</p>
+                            <p><strong>Inyección a Red:</strong> Los consorcios obtienen créditos impositivos directos por inyectar excedentes de energía, reduciendo el costo de expensas.</p>
+                        </div>
+                        <div class="db-card">
+                            <h3>♻️ Cooperativas de Recicladores</h3>
+                            <p style="margin-bottom: 1rem;">Formalización y tecnificación del sistema de reciclado urbano con incentivos para industrias locales que consuman insumos reciclados certificados.</p>
+                            <p>Digitalización integral de centros verdes para asegurar trazabilidad ambiental completa de los residuos.</p>
+                        </div>
+                    </div>
+                    <div class="db-card" style="margin-top: 1.5rem;">
+                        <h3>🌎 Acuerdo de Escazú</h3>
+                        <p>Defensa activa y promoción parlamentaria de la ratificación del tratado regional ambiental de Escazú, garantizando el acceso a la información pública, la participación ciudadana y la justicia ambiental en la Ciudad.</p>
+                    </div>
+                </section>
+
+                <!-- Panel 5: Seguridad y PyMEs -->
+                <section class="db-panel" id="db-tab-seguridad">
+                    <div class="db-grid-2">
+                        <div class="db-card">
+                            <h3>🛡️ Seguridad de Proximidad (Bloqueo IMEI)</h3>
+                            <p style="margin-bottom: 1rem;">Propuesta para asfixiar el mercado negro de celulares robados mediante operativos coordinados en las Comunas 7, 10 y 11.</p>
+                            <p><strong>Auditoría AGC:</strong> Control público sobre el cuerpo de inspectores de la Agencia Gubernamental de Control para evitar discrecionalidad y coimas.</p>
+                        </div>
+                        <div class="db-card">
+                            <h3>💸 Alivio Tributario PyME Sostenible</h3>
+                            <p style="margin-bottom: 1rem;">Exención impositiva de hasta el 100% de Ingresos Brutos el primer año para PyMEs locales que certifiquen huella de carbono neutra o procesos de economía circular.</p>
+                            <p><strong>PWA Supabase:</strong> Aplicación móvil offline-first para militantes en territorio que permite registrar obras y dolores vecinales sin internet, sincronizando con Supabase.</p>
+                        </div>
+                    </div>
+                    <div class="db-grid-2" style="margin-top: 1.5rem;">
+                        <div class="db-card">
+                            <h3>
+                                Mapeo de Hotspots y Dolores en Comunas
+                                <div class="db-chart-controls">
+                                    <button class="db-btn-toggle active" id="db-btn-barrios-trend" onclick="setDbChartModel('barrios', 'trend')">Línea</button>
+                                    <button class="db-btn-toggle" id="db-btn-barrios-bar" onclick="setDbChartModel('barrios', 'bar')">Barras</button>
+                                </div>
+                            </h3>
+                            <div class="db-canvas-container">
+                                <canvas class="db-canvas-chart" id="db-barrios-chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="db-card">
+                            <h3>Foco de Infiltración Territorial</h3>
+                            <div class="db-table-container">
+                                <table class="db-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Corredor</th>
+                                            <th>Dolor Principal (Open Data)</th>
+                                            <th>Pivot Narrativo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Centro</strong> (C. 1, 3)</td>
+                                            <td>Gente en calle, recolección deficiente</td>
+                                            <td>Fiscalizar empresas de limpieza urbana.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Norte</strong> (C. 2, 13, 14)</td>
+                                            <td>Saturación cloacal, ruidos, microdeptos</td>
+                                            <td>Frenar excepciones inmobiliarias ilegales.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Sur</strong> (C. 4, 8, 9)</td>
+                                            <td>Obras paralizadas, roedores escuelas</td>
+                                            <td>Legitimidad: vivir en Barracas y auditar obras.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Oeste</strong> (C. 7, 10, 11)</td>
+                                            <td>Mercado de celulares robados, hurtos</td>
+                                            <td>Auditar operativos y inspectores de AGC.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Centro-Oeste</strong> (C. 5, 6, 12, 15)</td>
+                                            <td>Gentrificación y pérdida de identidad</td>
+                                            <td>Defensa de bares notables, subte y cultura.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Panel 6: Benchmarking Global -->
+                <section class="db-panel" id="db-tab-benchmarking">
+                    <div class="db-grid-2">
+                        <div class="db-card">
+                            <h3>
+                                Matriz Costo vs. Impacto de Campaña
+                                <div class="db-chart-controls">
+                                    <button class="db-btn-toggle active" id="db-btn-bench-bar" onclick="setDbChartModel('bench', 'bar')">Barras</button>
+                                    <button class="db-btn-toggle" id="db-btn-bench-radar" onclick="setDbChartModel('bench', 'radar')">Radar</button>
+                                </div>
+                            </h3>
+                            <div class="db-canvas-container">
+                                <canvas class="db-canvas-chart" id="db-bench-chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="db-card">
+                            <h3>Modelos Internacionales Transpuestos</h3>
+                            <div class="db-table-container">
+                                <table class="db-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Líder</th>
+                                            <th>Campaña Clave</th>
+                                            <th>Transposición CABA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Pete Buttigieg</strong></td>
+                                            <td>"Go Everywhere" / Podcasts</td>
+                                            <td><strong>Podcast Blitz:</strong> Streaming en Olga, Blender, Gelatina, Neura.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Claudia López</strong></td>
+                                            <td>"Hecha a Pulso" / Bici</td>
+                                            <td><strong>Campaña en Bici:</strong> Recorrido repartiendo informe $LIBRA.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mónica García</strong></td>
+                                            <td>Salud Mental y Ciberapuestas</td>
+                                            <td><strong>Apostar No Es Un Juego:</strong> Talleres de prevención locales.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Raphaël Glucksmann</strong></td>
+                                            <td>Pedagogía en video vertical</td>
+                                            <td><strong>Auditoría en Pizarra:</strong> Explicaciones rápidas en la vereda.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Manuela Carmena</strong></td>
+                                            <td>Artivismo y balcones</td>
+                                            <td><strong>Banners de Consorcios:</strong> Defensa de asoleamiento y servicios.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Antanas Mockus</strong></td>
+                                            <td>Tarjetas de Convivencia</td>
+                                            <td><strong>Tarjetas Ciudadanas:</strong> Cultura vial y urbana en comunas.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Panel 7: Ingesta Documental -->
+                <section class="db-panel" id="db-tab-ingesta">
+                    <div class="db-warning-box">
+                        <strong>[ALERTA DE AUDITORÍA DE EDAD] CONTRADICCIÓN RESUELTA</strong><br>
+                        En el <i>Resumen Contextual</i> y actas se confirma que Maximiliano Ferraro nació el <b>4 de noviembre de 1975</b> (50 años de edad en 2026). Se corrigió la inconsistencia conceptual de "42 años" presente en el documento de <i>Estrategia Territorial</i>.
+                    </div>
+                    <div class="db-grid-2">
+                        <div class="db-card">
+                            <h3>📋 Checklist de Ingesta (100% Procesado)</h3>
+                            <div class="db-checklist-group">
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Análisis Político de Maximiliano Ferraro.pdf:</strong>
+                                        Biografía, cargos legislativos (CABA 2011-19, Nacional 2019-27), rechazo DNU SIDE, caso $LIBRA y Ley de Sangre.
+                                    </div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Estrategia Política Ferraro CABA.pdf:</strong>
+                                        Dolores por corredor, SUACI, plan operativo de 6 semanas y mitigación de chicanas de fatiga.
+                                    </div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Automatización de Base de Datos Política.pdf:</strong>
+                                        Arquitectura CRM sin costo, webhooks en Instagram, OCR en correos y base Supabase/Workspace.
+                                    </div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Campaña Austera_ Políticos y Estrategias.pdf:</strong>
+                                        Benchmarking global de 10 líderes (Buttigieg, López, García, Carmena, Mockus, Glucksmann, etc.).
+                                    </div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Analisis politico parte 2.pdf & ejemplos...:</strong>
+                                        Modelado y validación de duplicados.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="db-card">
+                            <h3>Integridad de Ingesta 1:1</h3>
+                            <div class="db-checklist-group">
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Validación Caso $LIBRA:</strong> Confirmado soborno de $5M a Novelli y denuncia al fiscal Taiano.
+                                    </div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Validación Ley de Sangre:</strong> Confirmada referencia a la derogación de restricciones discriminatorias LGTBIQ+.
+                                    </div>
+                                </div>
+                                <div class="db-checklist-item">
+                                    <input type="checkbox" checked disabled>
+                                    <div>
+                                        <strong>Validación Código Urbanístico:</strong> Confirmadas quejas de asoleamiento y saturación en Recoleta/Colegiales.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item active" data-tab="tab-resumen">📊 Resumen Ejecutivo</li>
-            <li class="nav-item" data-tab="tab-ingesta">📋 Ingesta & Checklist</li>
-            <li class="nav-item" data-tab="tab-trayectoria">⚖️ Trayectoria & Leyes</li>
-            <li class="nav-item" data-tab="tab-corredores">🗺️ Corredores CABA</li>
-            <li class="nav-item" data-tab="tab-crm">⚡ Innovación & CRM</li>
-            <li class="nav-item" data-tab="tab-benchmarking">🌎 Benchmarking Global</li>
-            <li class="nav-item" data-tab="tab-auditoria">🔍 Auditoría de Verdad</li>
-        </ul>
-    </aside>
+    </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <header class="dashboard-header">
-            <h1 id="header-title">Resumen Ejecutivo</h1>
-            <span class="badge-internal">USO INTERNO EXCLUSIVO</span>
-        </header>
-
-        <!-- Panel 1: Resumen Ejecutivo -->
-        <section class="panel active" id="tab-resumen">
-            <div class="grid-3">
-                <div class="card" style="border-top: 3px solid var(--color-verde);">
-                    <h3>Perfil Clave</h3>
-                    <p style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">50 Años</p>
-                    <p style="font-size: 0.85rem; color: var(--color-texto-muted);">Diputado Nacional CABA hasta dic 2027. Presidente de la CC-ARI nacional.</p>
-                </div>
-                <div class="card" style="border-top: 3px solid var(--color-fucsia);">
-                    <h3>Pivot Estratégico</h3>
-                    <p style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">Auditor Ciudadano</p>
-                    <p style="font-size: 0.85rem; color: var(--color-texto-muted);">Transición desde el "Legislador Abstracto" hacia fiscalización de asfalto y contratos.</p>
-                </div>
-                <div class="card" style="border-top: 3px solid var(--color-azul);">
-                    <h3>Campaña Activa</h3>
-                    <p style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">4 Ejes</p>
-                    <p style="font-size: 0.85rem; color: var(--color-texto-muted);">Town Halls, Apostar No Es Un Juego, CC-ARI en Bici, Plaza de las Ideas.</p>
-                </div>
-            </div>
-
-            <div class="grid-2">
-                <div class="card">
-                    <h3>
-                        Radar de Posicionamiento
-                        <div class="chart-controls">
-                            <button class="btn-toggle active" onclick="setChartModel('swot', 'radar')">Radar</button>
-                            <button class="btn-toggle" onclick="setChartModel('swot', 'bar')">Barras</button>
-                        </div>
-                    </h3>
-                    <div class="canvas-container">
-                        <canvas class="canvas-chart" id="swot-chart"></canvas>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Análisis de Matriz FDOA</h3>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Dimensión</th>
-                                    <th>Fortaleza (Auditor)</th>
-                                    <th>Debilidad / Riesgo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Liderazgo</strong></td>
-                                    <td>Consolidado en interbloque "Unidos" y CC-ARI</td>
-                                    <td>Estigma de "Casta" por su larga permanencia</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Ética</strong></td>
-                                    <td>Fiscal moral, investigación caso $LIBRA</td>
-                                    <td>Intransigencia moral / purismo político</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Gestión</strong></td>
-                                    <td>Articulación de consensos (Ley Ludopatía)</td>
-                                    <td>Dificultad de llegada a públicos no politizados</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Ecosistema</strong></td>
-                                    <td>Viralización de evidencias documentales</td>
-                                    <td>Blanco constante de trolls e infoguerras LLA</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel 2: Ingesta & Checklist -->
-        <section class="panel" id="tab-ingesta">
-            <div class="card" style="margin-bottom: 2rem;">
-                <h3>Checklist de Ingesta de Documentos (100% Capturado)</h3>
-                <p style="font-size: 0.88rem; color: var(--color-texto-muted); margin-bottom: 1.5rem;">
-                    Confirmación de lectura y extracción completa de los documentos provistos en la carpeta de inteligencia de campaña.
-                </p>
-                <div class="checklist-group">
-                    <div class="checklist-item">
-                        <input type="checkbox" checked disabled>
-                        <div>
-                            <strong>Análisis Político de Maximiliano Ferraro.pdf:</strong>
-                            Extracto biográfico (50 años, Barracas, sin auto), cargos legislativos (CABA 2011-2019, Nacional 2019-2027), y auditoría mediática (casos $LIBRA, Ludopatía infantil, y cruces con Cúneo Libarona y Giudici).
-                        </div>
-                    </div>
-                    <div class="checklist-item">
-                        <input type="checkbox" checked disabled>
-                        <div>
-                            <strong>Estrategia Política Ferraro CABA.pdf:</strong>
-                            Modelado de los 5 Corredores de CABA, cruce de datos públicos de SUACI, BA Obras, y Mapa del Delito, mitigación de riesgos de chicanas y fatiga de quejas, y hoja de ruta de 6 semanas.
-                        </div>
-                    </div>
-                    <div class="checklist-item">
-                        <input type="checkbox" checked disabled>
-                        <div>
-                            <strong>Automatización de Base de Datos Política.pdf:</strong>
-                            Planos técnicos para centralización de CRM mediante Google Workspace, Netlify/Firebase, bots conversacionales, webhooks en Instagram y uso de Obsidian como segundo cerebro.
-                        </div>
-                    </div>
-                    <div class="checklist-item">
-                        <input type="checkbox" checked disabled>
-                        <div>
-                            <strong>Campaña Austera_ Políticos y Estrategias.pdf:</strong>
-                            Benchmarking global de 10/15 perfiles (Rivera, López, García, Nenshi, Carmena, Mockus, Yang, Warren, Rajoy, Glucksmann) y adaptabilidad de sus metodologías a CABA.
-                        </div>
-                    </div>
-                    <div class="checklist-item">
-                        <input type="checkbox" checked disabled>
-                        <div>
-                            <strong>Analisis politico parte 2.pdf & ejemplos de políticos y estrategias.pdf:</strong>
-                            Validación de redundancia de bases y modelos de extrapolación táctica.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel 3: Trayectoria & Leyes -->
-        <section class="panel" id="tab-trayectoria">
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Hitos Porteños (Legislatura CABA 2011-2019)</h3>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Hito / Proyecto</th>
-                                    <th>Acción Legislativa</th>
-                                    <th>Impacto de Trinchera</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Ley de Sangre (Ley 4628)</strong></td>
-                                    <td>Modificación para adhesión a Ley Nacional 22.990</td>
-                                    <td>Eliminó preguntas discriminatorias sobre orientación sexual en donantes.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Centros Culturales (CCI)</strong></td>
-                                    <td>Subsidios y marco regulatorio protector</td>
-                                    <td>Evitó clausuras masivas de teatros y espacios independientes (como "Jungla").</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Ley de Bares Notables</strong></td>
-                                    <td>Sustento económico directo</td>
-                                    <td>Protegió cafés históricos frente a la gentrificación corporativa.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Extensión horaria Subte</strong></td>
-                                    <td>Modificación a Ley Nº 317</td>
-                                    <td>Democratizó el acceso de trabajadores nocturnos y estudiantes.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Conflicto UniCABA</strong></td>
-                                    <td>Gestión de coexistencia (2017-2018)</td>
-                                    <td>Impidió el cierre de los 29 institutos terciarios docentes porteños.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Acción Federal (Cámara de Diputados 2019-2027)</h3>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Eje / Proyecto</th>
-                                    <th>Rol</th>
-                                    <th>Estado / Impacto</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Rechazo DNU 656/2024</strong></td>
-                                    <td>Impulsor principal</td>
-                                    <td>Rechazado. Primer veto de presupuesto SIDE ($100k M en fondos reservados).</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Prevención de Ludopatía</strong></td>
-                                    <td>Autor principal</td>
-                                    <td>Media Sanción (Nov 2024). Prohíbe tarjetas de crédito e influencers.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Caso $LIBRA</strong></td>
-                                    <td>Presidente de Comisión</td>
-                                    <td>Informe final (200 págs). Expuso sobornos de $5M y denunció a fiscal Taiano.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Acuerdo de Escazú</strong></td>
-                                    <td>Promotor activo</td>
-                                    <td>Ratificado. Garantiza acceso a información y justicia ambiental.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Financiamiento Universitario</strong></td>
-                                    <td>Defensor discursivo</td>
-                                    <td>Voto férreo contra el desfinanciamiento a la ciencia y UBA.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel 4: Corredores CABA -->
-        <section class="panel" id="tab-corredores">
-            <div class="grid-2">
-                <div class="card">
-                    <h3>
-                        Mapeo de Hotspots y Dolores
-                        <div class="chart-controls">
-                            <button class="btn-toggle active" onclick="setChartModel('barrios', 'trend')">Línea</button>
-                            <button class="btn-toggle" onclick="setChartModel('barrios', 'bar')">Barras</button>
-                        </div>
-                    </h3>
-                    <div class="canvas-container">
-                        <canvas class="canvas-chart" id="barrios-chart"></canvas>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Foco de Infiltración Territorial</h3>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Corredor</th>
-                                    <th>Dolor (Open Data)</th>
-                                    <th>Pivot Narrativo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Centro</strong> (C. 1, 3)</td>
-                                    <td>50% sin techo de CABA, basura crítica, 108 colapsado</td>
-                                    <td><strong>Auditor de la Eficiencia Social:</strong> Fiscalizar contratistas de limpieza y planes.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Norte</strong> (C. 2, 13, 14)</td>
-                                    <td>Saturación cloacal, ruidos, microapartamentos de 18m²</td>
-                                    <td><strong>Garante del Hogar:</strong> Frenar excepciones inmobiliarias ilegales del CUR.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Sur</strong> (C. 4, 8, 9)</td>
-                                    <td>Obras paralizadas IVC, roedores en Polo Walsh</td>
-                                    <td><strong>Vecino del Sur que Fiscaliza:</strong> Vivir en Barracas como legitimidad y auditoría.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Oeste</strong> (C. 7, 10, 11)</td>
-                                    <td>Arrebatos, celulares robados en locales no habilitados</td>
-                                    <td><strong>Fiscal del Espacio Público:</strong> Auditar operativos conjuntos, amparar PyMEs.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Centro-Oeste</strong> (C. 5, 6, 12, 15)</td>
-                                    <td>Gentrificación, pérdida de pulmones de manzana y cultura</td>
-                                    <td><strong>Defensor de Identidad Barrial:</strong> Bares notables, subte y espacios verdes.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel 5: Innovación & CRM -->
-        <section class="panel" id="tab-crm">
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Arquitectura CRM Político Abierto (Net-Zero Cost)</h3>
-                    <p style="font-size: 0.85rem; color: var(--color-texto-muted); margin-bottom: 1rem;">Mapeo de integraciones basadas en Model Context Protocol (MCP) and Google Workspace.</p>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Componente</th>
-                                    <th>Estrategia Tradicional</th>
-                                    <th>Solución Antigravity (Gratuita)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Captura Meta</strong></td>
-                                    <td>Manychat (Límite 1000 contactos)</td>
-                                    <td>Webhook Node.js auto-hospedado conectado a Google Sheets</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Captura X</strong></td>
-                                    <td>Botize / Buffer (Costos mensuales)</td>
-                                    <td>Python Script en Tareas Programadas para DMs automáticos</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Captura Mail</strong></td>
-                                    <td>Google Form estático</td>
-                                    <td>Google Workspace MCP leyendo reclamos y extrayendo a Sheets</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Normalización</strong></td>
-                                    <td>Regex complejas en Sheets</td>
-                                    <td>Workspace MCP formateando teléfonos a E.164 y pintando verde</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Enrutamiento</strong></td>
-                                    <td>Google Apps Script manual</td>
-                                    <td>Gemini Vision clasificando fotos de baches y abriendo tickets</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Flujo de Trabajo Operativo</h3>
-                    <div class="checklist-group" style="margin-top: 1rem;">
-                        <div class="checklist-item">
-                            <span class="mono-tag">DIARIO</span>
-                            <div>
-                                <strong>Supervisión de Handoff:</strong> Inspección de bandejas de entrada para pasar a soporte humano cuando la IA no entienda.
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="mono-tag">DIARIO</span>
-                            <div>
-                                <strong>Triage de Reclamos:</strong> Conversión de e-mails y reportes a tickets de Linear mediante Linear MCP.
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="mono-tag">SEMANAL</span>
-                            <div>
-                                <strong>Higiene y Deduplicación:</strong> Consolidación de contactos y envío de notas de voz personalizadas por WhatsApp.
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="mono-tag">MENSUAL</span>
-                            <div>
-                                <strong>Obsidian Sync:</strong> Consolidación del segundo cerebro del equipo con minutas de asambleas y proyectos de ley.
-                            </div>
-                        </div>
-                </div>
-            </div>
-            
-            <div class="card" style="margin-top: 2rem; border-top: 3px solid var(--color-verde);">
-                <h3>Pipeline de Trabajo Digital Automatizado</h3>
-                <p style="font-size: 0.85rem; color: var(--color-texto-muted); margin-bottom: 1.5rem;">
-                    Representación del flujo automático que transforma una demanda vecinal en una acción de auditoría territorial, sin costo de licencias externas.
-                </p>
-                <div class="workflow-flow">
-                    <div class="workflow-node-card">
-                        <h4>1. Entrada</h4>
-                        <p>Instagram DM / WhatsApp / Formulario Web</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-node-card">
-                        <h4>2. Triage IA</h4>
-                        <p>Gemini Vision procesa imágenes de baches/basura</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-node-card">
-                        <h4>3. Centralización</h4>
-                        <p>Google Workspace MCP normaliza y vuelca a Sheets</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-node-card">
-                        <h4>4. Gestión</h4>
-                        <p>Linear MCP crea ticket georreferenciado</p>
-                    </div>
-                    <div class="workflow-arrow">→</div>
-                    <div class="workflow-node-card">
-                        <h4>5. Resolución</h4>
-                        <p>Obsidian sync y mensaje de voz al vecino</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel 6: Benchmarking Global -->
-        <section class="panel" id="tab-benchmarking">
-            <div class="grid-2">
-                <div class="card">
-                    <h3>
-                        Costo vs. Impacto Específico (CABA)
-                        <div class="chart-controls">
-                            <button class="btn-toggle active" onclick="setChartModel('bench', 'bar')">Barras</button>
-                            <button class="btn-toggle" onclick="setChartModel('bench', 'radar')">Radar</button>
-                        </div>
-                    </h3>
-                    <div class="canvas-container">
-                        <canvas class="canvas-chart" id="bench-chart"></canvas>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Modelos Internacionales Transpuestos</h3>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Líder</th>
-                                    <th>Campaña Clave</th>
-                                    <th>Transposición CABA</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Pete Buttigieg</strong></td>
-                                    <td>Go Everywhere / Podcasts</td>
-                                    <td><strong>Podcast Blitz:</strong> Entrevistas long-form en Olga, Blender, Gelatina, Neura.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Claudia López</strong></td>
-                                    <td>Hecha a Pulso / Bicicleta</td>
-                                    <td><strong>Campaña en Bici:</strong> Recorrido por comunas del sur repartiendo informe $LIBRA.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Mónica García</strong></td>
-                                    <td>¿Qué nos pasa? / Ludopatía</td>
-                                    <td><strong>Apostar No Es Un Juego:</strong> Talleres de salud mental por ciberapuestas.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Raphaël Glucksmann</strong></td>
-                                    <td>Pedagogía en video vertical</td>
-                                    <td><strong>Auditoría en Pizarra:</strong> Explicación cruda con marcador en veredas de CABA.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Manuela Carmena</strong></td>
-                                    <td>Artivismo / Balcones</td>
-                                    <td><strong>Red de Consorcios:</strong> Banners impresos "Este consorcio defiende su luz".</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Antanas Mockus</strong></td>
-                                    <td>Tarjetas de Convivencia</td>
-                                    <td><strong>Tarjetas Ciudadanas:</strong> Descargables móviles de convivencia vial/urbana.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel 7: Auditoría de Verdad -->
-        <section class="panel" id="tab-auditoria">
-            <div class="warning-box">
-                <strong>[ALERTA DE AUDITORÍA DE VERDAD] CONTRADICCIÓN DE EDAD DETECTADA Y RESUELTA</strong><br>
-                En el <i>Resumen Contextual</i> y actas de nacimiento oficiales se documenta que Maximiliano Ferraro nació el <b>4 de noviembre de 1975</b> (50 años de edad en mayo de 2026). Sin embargo, en el documento de <i>Estrategia Territorial</i> de CABA, página 11, se cita: "ciudadano de 42 años".<br>
-                <strong>Resolución Oficial de Campaña:</strong> El dato de "42 años" es una inconsistencia conceptual proveniente de plantillas de redacción antiguas. Se establece la edad oficial de 50 años como valor único en todo el ecosistema digital para evitar chicanas de inconsistencia.
-            </div>
-
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Auditoría de Enlaces e Integridad Funcional</h3>
-                    <div class="data-table-container">
-                        <table class="dashboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Enlace / Botón / Ancla</th>
-                                    <th>Destino</th>
-                                    <th>Estado de Enlace</th>
-                                    <th>Acción Correctora</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><code>#inicio</code></td>
-                                    <td>Sección de Inicio (Hero)</td>
-                                    <td style="color: var(--color-verde);">FUNCIONANDO</td>
-                                    <td>Ninguna</td>
-                                </tr>
-                                <tr>
-                                    <td><code>#publicaciones</code></td>
-                                    <td>Sección de Propuestas</td>
-                                    <td style="color: var(--color-verde);">FUNCIONANDO</td>
-                                    <td>Ninguna</td>
-                                </tr>
-                                <tr>
-                                    <td><code>#nosotros</code></td>
-                                    <td>Sección de Trayectoria</td>
-                                    <td style="color: var(--color-verde);">FUNCIONANDO</td>
-                                    <td>Ninguna</td>
-                                </tr>
-                                <tr>
-                                    <td><code>#radiografia-politica</code></td>
-                                    <td>Sección de Mapeo Interactivo</td>
-                                    <td style="color: var(--color-verde);">FUNCIONANDO</td>
-                                    <td>Ninguna</td>
-                                </tr>
-                                <tr>
-                                    <td><code>#voluntariado</code></td>
-                                    <td>Formulario "Sumate al Equipo"</td>
-                                    <td style="color: var(--color-verde);">FUNCIONANDO</td>
-                                    <td>Ninguna</td>
-                                </tr>
-                                <tr>
-                                    <td><code>#contacto-seccion</code></td>
-                                    <td>Acceso de Contacto en Footer</td>
-                                    <td style="color: var(--color-verde);">FUNCIONANDO</td>
-                                    <td>Ninguna</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Integridad de Ingesta 1:1</h3>
-                    <div class="checklist-group" style="margin-top: 1rem;">
-                        <div class="checklist-item">
-                            <input type="checkbox" checked disabled>
-                            <div>
-                                <strong>Validación Caso $LIBRA:</strong> Confirmado registro de reuniones en Casa Rosada, soborno de $5M a Novelli y denuncia al fiscal Taiano.
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" checked disabled>
-                            <div>
-                                <strong>Validación Ley de Sangre:</strong> Confirmada referencia a derogación del protocolo de "grupos de riesgo" biológicos LGTBIQ+.
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" checked disabled>
-                            <div>
-                                <strong>Validación Código Urbanístico:</strong> Confirmadas quejas de asoleamiento y saturación cloacal en Recoleta/Colegiales.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Canvas Chart Logic (Vanilla JS, self-contained) -->
-    <script>
-        // Tab switching
-        const navItems = document.querySelectorAll('.nav-item');
-        const panels = document.querySelectorAll('.panel');
-        const headerTitle = document.getElementById('header-title');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', () => {
-                navItems.forEach(i => i.classList.remove('active'));
-                panels.forEach(p => p.classList.remove('active'));
-
-                item.classList.add('active');
-                const targetPanel = document.getElementById(item.getAttribute('data-tab'));
-                if (targetPanel) {
-                    targetPanel.classList.add('active');
-                }
-                headerTitle.textContent = item.textContent.substring(3);
-                
-                // Redraw charts if relevant tab opened
-                setTimeout(() => {
-                    renderCharts();
-                }, 50);
-            });
-        });
-
-        // Interactive Chart States
-        const chartModels = {
-            swot: 'radar',
-            barrios: 'trend',
-            bench: 'bar'
-        };
-
-        function setChartModel(chartId, model) {
-            chartModels[chartId] = model;
-            // Update button states
-            const cardHeader = document.querySelector(`#tab-${chartId === 'swot' ? 'resumen' : chartId === 'barrios' ? 'corredores' : 'benchmarking'} h3`);
-            if (cardHeader) {
-                const buttons = cardHeader.querySelectorAll('.btn-toggle');
-                buttons.forEach(btn => {
-                    if (btn.textContent.toLowerCase() === (model === 'trend' ? 'línea' : model === 'radar' ? 'radar' : 'barras')) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-            }
-            renderCharts();
-        }
-
-        // Custom Canvas Chart Engine
-        function drawRadarChart(ctx, width, height, labels, values, maxVal, color) {
-            const centerX = width / 2;
-            const centerY = height / 2;
-            const radius = Math.min(width, height) * 0.38;
-
-            ctx.clearRect(0,0,width,height);
-
-            // Draw grid polygons
-            const levels = 4;
-            ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-            ctx.lineWidth = 1;
-            for(let l = 1; l <= levels; l++) {
-                ctx.beginPath();
-                const currentRadius = radius * (l / levels);
-                for(let i = 0; i < labels.length; i++) {
-                    const angle = (i * Math.PI * 2) / labels.length - Math.PI / 2;
-                    const x = centerX + Math.cos(angle) * currentRadius;
-                    const y = centerY + Math.sin(angle) * currentRadius;
-                    if (i === 0) ctx.moveTo(x, y);
-                    else ctx.lineTo(x, y);
-                }
-                ctx.closePath();
-                ctx.stroke();
-            }
-
-            // Draw axis lines and labels
-            ctx.fillStyle = '#64748b';
-            ctx.font = '9px "Share Tech Mono", monospace';
-            ctx.textAlign = 'center';
-            for(let i = 0; i < labels.length; i++) {
-                const angle = (i * Math.PI * 2) / labels.length - Math.PI / 2;
-                const axisX = centerX + Math.cos(angle) * radius;
-                const axisY = centerY + Math.sin(angle) * radius;
-                
-                ctx.beginPath();
-                ctx.moveTo(centerX, centerY);
-                ctx.lineTo(axisX, axisY);
-                ctx.stroke();
-
-                const labelX = centerX + Math.cos(angle) * (radius + 20);
-                const labelY = centerY + Math.sin(angle) * (radius + 15);
-                ctx.fillText(labels[i], labelX, labelY);
-            }
-
-            // Draw value polygon
-            ctx.beginPath();
-            for(let i = 0; i < values.length; i++) {
-                const valRatio = values[i] / maxVal;
-                const angle = (i * Math.PI * 2) / labels.length - Math.PI / 2;
-                const x = centerX + Math.cos(angle) * radius * valRatio;
-                const y = centerY + Math.sin(angle) * radius * valRatio;
-                if (i === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-            }
-            ctx.closePath();
-            ctx.fillStyle = color.replace('1)', '0.15)');
-            ctx.fill();
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 2.5;
-            ctx.stroke();
-
-            // Draw data points
-            for(let i = 0; i < values.length; i++) {
-                const valRatio = values[i] / maxVal;
-                const angle = (i * Math.PI * 2) / labels.length - Math.PI / 2;
-                const x = centerX + Math.cos(angle) * radius * valRatio;
-                const y = centerY + Math.sin(angle) * radius * valRatio;
-                ctx.beginPath();
-                ctx.arc(x, y, 4, 0, Math.PI*2);
-                ctx.fillStyle = '#fff';
-                ctx.fill();
-                ctx.strokeStyle = color;
-                ctx.lineWidth = 1.5;
-                ctx.stroke();
-            }
-        }
-
-        function drawBarChart(ctx, width, height, labels, values, maxVal, color) {
-            ctx.clearRect(0,0,width,height);
-            const paddingLeft = 60;
-            const paddingBottom = 40;
-            const paddingTop = 30;
-            const paddingRight = 30;
-
-            const chartWidth = width - paddingLeft - paddingRight;
-            const chartHeight = height - paddingTop - paddingBottom;
-
-            // Draw grid lines
-            ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-            ctx.lineWidth = 1;
-            const gridLines = 4;
-            for(let i = 0; i <= gridLines; i++) {
-                const y = paddingTop + (chartHeight * (i / gridLines));
-                ctx.beginPath();
-                ctx.moveTo(paddingLeft, y);
-                ctx.lineTo(width - paddingRight, y);
-                ctx.stroke();
-
-                // Draw Y axis labels
-                ctx.fillStyle = '#64748b';
-                ctx.font = '9px "Share Tech Mono", monospace';
-                ctx.textAlign = 'right';
-                ctx.textBaseline = 'middle';
-                const labelVal = Math.round(maxVal * (1 - (i / gridLines)));
-                ctx.fillText(labelVal, paddingLeft - 8, y);
-            }
-
-            // Draw Bars
-            const barSpacing = chartWidth / labels.length;
-            const barWidth = barSpacing * 0.5;
-
-            for(let i = 0; i < labels.length; i++) {
-                const barHeight = chartHeight * (values[i] / maxVal);
-                const x = paddingLeft + (barSpacing * i) + (barSpacing - barWidth) / 2;
-                const y = paddingTop + chartHeight - barHeight;
-
-                // Gradient
-                const grad = ctx.createLinearGradient(x, y, x, y + barHeight);
-                grad.addColorStop(0, color);
-                grad.addColorStop(1, 'rgba(0,0,0,0.1)');
-
-                ctx.fillStyle = grad;
-                ctx.fillRect(x, y, barWidth, barHeight);
-                ctx.strokeStyle = color;
-                ctx.strokeRect(x, y, barWidth, barHeight);
-
-                // Draw X labels
-                ctx.fillStyle = '#64748b';
-                ctx.font = '9px "Share Tech Mono", monospace';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'top';
-                ctx.fillText(labels[i], x + barWidth/2, paddingTop + chartHeight + 8);
-            }
-        }
-
-        function drawLineChart(ctx, width, height, labels, dataset, maxVal, color) {
-            ctx.clearRect(0,0,width,height);
-            const paddingLeft = 50;
-            const paddingBottom = 40;
-            const paddingTop = 30;
-            const paddingRight = 30;
-
-            const chartWidth = width - paddingLeft - paddingRight;
-            const chartHeight = height - paddingTop - paddingBottom;
-
-            // Draw grid lines
-            ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-            ctx.lineWidth = 1;
-            const gridLines = 4;
-            for(let i = 0; i <= gridLines; i++) {
-                const y = paddingTop + (chartHeight * (i / gridLines));
-                ctx.beginPath();
-                ctx.moveTo(paddingLeft, y);
-                ctx.lineTo(width - paddingRight, y);
-                ctx.stroke();
-
-                ctx.fillStyle = '#64748b';
-                ctx.font = '9px "Share Tech Mono", monospace';
-                ctx.textAlign = 'right';
-                ctx.textBaseline = 'middle';
-                const labelVal = Math.round(maxVal * (1 - (i / gridLines)));
-                ctx.fillText(labelVal, paddingLeft - 8, y);
-            }
-
-            const stepX = chartWidth / (labels.length - 1);
-            
-            // Draw Line
-            ctx.beginPath();
-            for(let i = 0; i < dataset.length; i++) {
-                const x = paddingLeft + (stepX * i);
-                const y = paddingTop + chartHeight - (chartHeight * (dataset[i] / maxVal));
-                if (i === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-            }
-            ctx.strokeStyle = color;
-            ctx.lineWidth = 3;
-            ctx.stroke();
-
-            // Draw Area Gradient
-            ctx.lineTo(paddingLeft + (stepX * (dataset.length - 1)), paddingTop + chartHeight);
-            ctx.lineTo(paddingLeft, paddingTop + chartHeight);
-            ctx.closePath();
-            const grad = ctx.createLinearGradient(0, paddingTop, 0, paddingTop + chartHeight);
-            grad.addColorStop(0, color.replace('1)', '0.2)'));
-            grad.addColorStop(1, 'rgba(0,0,0,0)');
-            ctx.fillStyle = grad;
-            ctx.fill();
-
-            // Draw Nodes and Labels
-            for(let i = 0; i < dataset.length; i++) {
-                const x = paddingLeft + (stepX * i);
-                const y = paddingTop + chartHeight - (chartHeight * (dataset[i] / maxVal));
-                
-                ctx.beginPath();
-                ctx.arc(x, y, 4, 0, Math.PI*2);
-                ctx.fillStyle = '#fff';
-                ctx.fill();
-                ctx.strokeStyle = color;
-                ctx.lineWidth = 1.5;
-                ctx.stroke();
-
-                ctx.fillStyle = '#64748b';
-                ctx.font = '9px "Share Tech Mono", monospace';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'top';
-                ctx.fillText(labels[i], x, paddingTop + chartHeight + 8);
-            }
-        }
-
-        // Render controller
-        function renderCharts() {
-            // SWOT Chart
-            const swotCanvas = document.getElementById('swot-chart');
-            if (swotCanvas && swotCanvas.offsetParent !== null) {
-                const ctx = swotCanvas.getContext('2d');
-                swotCanvas.width = swotCanvas.clientWidth;
-                swotCanvas.height = swotCanvas.clientHeight;
-                const labels = ['Trayectoria', 'Perfil Ético', 'Consensos', 'Redes', 'Populismo'];
-                const values = [8.5, 9.5, 8.0, 7.5, 4.0];
-                if (chartModels.swot === 'radar') {
-                    drawRadarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, 'rgba(0, 229, 163, 1)');
-                } else {
-                    drawBarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, '#00e5a3');
-                }
-            }
-
-            // Barrios/Corredores Chart
-            const barriosCanvas = document.getElementById('barrios-chart');
-            if (barriosCanvas && barriosCanvas.offsetParent !== null) {
-                const ctx = barriosCanvas.getContext('2d');
-                barriosCanvas.width = barriosCanvas.clientWidth;
-                barriosCanvas.height = barriosCanvas.clientHeight;
-                const labels = ['Centro', 'Norte', 'Sur', 'Oeste', 'C. Oeste'];
-                const values = [90, 85, 78, 65, 72]; // Nivel de dolor registrado
-                if (chartModels.barrios === 'trend') {
-                    drawLineChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, 'rgba(230, 0, 122, 1)');
-                } else {
-                    drawBarChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, '#e6007a');
-                }
-            }
-
-            // Benchmarking Chart
-            const benchCanvas = document.getElementById('bench-chart');
-            if (benchCanvas && benchCanvas.offsetParent !== null) {
-                const ctx = benchCanvas.getContext('2d');
-                benchCanvas.width = benchCanvas.clientWidth;
-                benchCanvas.height = benchCanvas.clientHeight;
-                const labels = ['Town Halls', 'Ludopatía', 'En Bici', 'Plaza Ideas'];
-                const values = [80, 95, 70, 75]; // Nivel de impacto esperado
-                if (chartModels.bench === 'bar') {
-                    drawBarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, '#ff6b00');
-                } else {
-                    drawRadarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, 'rgba(255, 107, 0, 1)');
-                }
-            }
-        }
-
-        // Init
-        window.addEventListener('load', renderCharts);
-        window.addEventListener('resize', renderCharts);
-    </script>
+    <!-- Standalone Canvas Chart Logic -->
+    <script src="js/app.js"></script>
 </body>
 </html>
