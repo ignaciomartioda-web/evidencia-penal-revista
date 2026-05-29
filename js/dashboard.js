@@ -290,9 +290,9 @@ function renderDbCharts() {
         const labels = ['Trayectoria', 'Perfil Ético', 'Consensos', 'Redes', 'Populismo'];
         const values = [8.5, 9.5, 8.0, 7.5, 4.0];
         if (dbChartModels.swot === 'radar') {
-            drawDbRadarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, 'rgba(50, 205, 50, 1)');
+            drawDbRadarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, 'rgba(0, 255, 210, 1)');
         } else {
-            drawDbBarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, '#32CD32');
+            drawDbBarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, '#00ffd2');
         }
     }
 
@@ -305,9 +305,9 @@ function renderDbCharts() {
         const labels = ['Centro', 'Norte', 'Sur', 'Oeste', 'C. Oeste'];
         const values = [90, 85, 78, 65, 72];
         if (dbChartModels.barrios === 'trend') {
-            drawDbLineChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, 'rgba(230, 57, 70, 1)');
+            drawDbLineChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, 'rgba(255, 8, 68, 1)');
         } else {
-            drawDbBarChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, '#E63946');
+            drawDbBarChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, '#ff0844');
         }
     }
 
@@ -320,9 +320,9 @@ function renderDbCharts() {
         const labels = ['Town Halls', 'Ludopatía', 'En Bici', 'Plaza Ideas'];
         const values = [80, 95, 70, 75];
         if (dbChartModels.bench === 'bar') {
-            drawDbBarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, '#FFD700');
+            drawDbBarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, '#f5af19');
         } else {
-            drawDbRadarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, 'rgba(255, 215, 0, 1)');
+            drawDbRadarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, 'rgba(245, 175, 25, 1)');
         }
     }
 }

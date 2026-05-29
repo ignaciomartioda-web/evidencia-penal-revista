@@ -8,35 +8,35 @@
 
 :root {
     /* ── Paleta Principal: Campaña Ferraro (Premium Dark Mode) ── */
-    --bg-base:        #08090d;   /* Deep Slate Space Background */
-    --bg-surface:     rgba(18, 20, 29, 0.65); /* Glassmorphic Surface */
-    --bg-raised:      rgba(28, 31, 44, 0.5);  /* Glassmorphic Raised */
-    --bg-card:        rgba(22, 24, 34, 0.55);  /* Glassmorphic Card */
-    --bg-light-zone:  rgba(32, 36, 52, 0.4);
+    --bg-base:        #050609;   /* Deep Slate Space Background (Velvety Obsidian) */
+    --bg-surface:     rgba(10, 12, 20, 0.72); /* Glassmorphic Surface */
+    --bg-raised:      rgba(16, 20, 32, 0.45);  /* Glassmorphic Raised */
+    --bg-card:        rgba(12, 14, 24, 0.65);  /* Glassmorphic Card */
+    --bg-light-zone:  rgba(20, 24, 38, 0.35);
 
-    /* ── Colores Oficiales Premium (Apple Developer Style) ── */
-    --color-azul-anchor:#2997ff; /* Neon Blue Accent */
-    --color-naranja:    #ff9f0a; /* Vibrant Gold/Amber */
-    --color-fucsia:     #ff375f; /* Vibrant Rose/Red */
-    --color-verde:      #30d158; /* Vibrant Emerald Green */
+    /* ── Colores Oficiales Premium (Apple Developer Style - Redesigned) ── */
+    --color-azul-anchor:#4facfe; /* Neon Royal Blue Accent */
+    --color-naranja:    #f5af19; /* Curated Elegant Gold */
+    --color-fucsia:     #ff0844; /* Curated Crimson Rose */
+    --color-verde:      #00ffd2; /* Vibrant Mint/Emerald */
     
     /* ── Mapeos de Compatibilidad y Limpieza de Brillos ── */
     --color-oro:      var(--color-naranja);
-    --color-oro-dim:  rgba(255, 159, 10, 0.15);
-    --color-oro-glow: rgba(255, 159, 10, 0.05);
+    --color-oro-dim:  rgba(245, 175, 25, 0.15);
+    --color-oro-glow: rgba(245, 175, 25, 0.05);
     
-    --color-cian:     #54c5f8; /* Celeste Neon */
-    --color-cian-dim: rgba(84, 197, 248, 0.15);
-    --color-cian-glow:rgba(84, 197, 248, 0.05);
+    --color-cian:     #00f2fe; /* Celestial Electric Cyan */
+    --color-cian-dim: rgba(0, 242, 254, 0.15);
+    --color-cian-glow:rgba(0, 242, 254, 0.05);
     
     --color-rojo:     var(--color-fucsia);
     --color-blanco:   #FFFFFF;
 
     /* ── Gradientes Temáticos Premium ── */
-    --grad-naranja-fucsia: linear-gradient(135deg, var(--color-naranja) 0%, var(--color-fucsia) 100%);
-    --grad-fucsia-azul:    linear-gradient(135deg, var(--color-fucsia) 0%, var(--color-azul-anchor) 100%);
-    --grad-verde-azul:     linear-gradient(135deg, var(--color-verde) 0%, var(--color-azul-anchor) 100%);
-    --grad-azul-naranja:   linear-gradient(135deg, var(--color-azul-anchor) 0%, var(--color-naranja) 100%);
+    --grad-naranja-fucsia: linear-gradient(135deg, var(--color-fucsia) 0%, var(--color-naranja) 100%); /* Coral to Gold (Análisis Político) */
+    --grad-fucsia-azul:    linear-gradient(135deg, var(--color-naranja) 0%, var(--color-rojo) 100%);    /* Gold to Crimson (Campaña Austera) */
+    --grad-verde-azul:     linear-gradient(135deg, var(--color-verde) 0%, #0072ff 100%);               /* Mint to Blue (Automatización) */
+    --grad-azul-naranja:   linear-gradient(135deg, var(--color-cian) 0%, var(--color-azul-anchor) 100%); /* Cyan to Royal Blue (Estrategia CABA) */
 
     /* ── Texto ── */
     --color-texto:    #FFFFFF;   /* Blanco Puro */

@@ -1791,4 +1791,38 @@
 }
 
 /* ==========================================================================
+   ESTILADO PREMIUM PARA LAS TARJETAS DE POLÍTICOS Y ACORDEONES
+   ========================================================================== */
+.politician-card {
+    transition: transform var(--transition-premium), border-color var(--transition-premium), box-shadow var(--transition-premium) !important;
+}
+
+.politician-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(245, 175, 25, 0.25) !important;
+    box-shadow: 0 12px 40px rgba(245, 175, 25, 0.08) !important;
+}
+
+.politician-details summary {
+    list-style: none;
+    outline: none;
+}
+
+.politician-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.politician-details[open] .details-icon {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.politician-details .details-content {
+    animation: detailsReveal 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes detailsReveal {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 

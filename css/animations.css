@@ -31,8 +31,8 @@
     border: none;
     background: radial-gradient(
         ellipse 70% 35% at 85% 50%,
-        rgba(230, 0, 122, 0.09) 0%,    /* Fucsia */
-        rgba(255, 107, 0, 0.05) 45%,   /* Naranja */
+        rgba(255, 8, 68, 0.09) 0%,    /* Fucsia */
+        rgba(245, 175, 25, 0.05) 45%,   /* Naranja */
         transparent 75%
     );
     transform-origin: 85% 50%;
@@ -50,8 +50,8 @@
     height: 400px;
     background: radial-gradient(
         ellipse 60% 30% at 80% 50%,
-        rgba(0, 229, 163, 0.08) 0%,    /* Verde Esmeralda */
-        rgba(26, 98, 255, 0.03) 50%,   /* Azul de fondo */
+        rgba(0, 255, 210, 0.08) 0%,    /* Verde Esmeralda */
+        rgba(79, 172, 254, 0.03) 50%,   /* Azul de fondo */
         transparent 75%
     );
     transform-origin: 80% 50%;
@@ -88,7 +88,7 @@
     height: 0;
     border-top: 55vh solid transparent;
     border-bottom: 55vh solid transparent;
-    border-right: 90vw solid rgba(230, 0, 122, 0.06);
+    border-right: 90vw solid rgba(255, 8, 68, 0.06);
     /* Pivote anclado al vértice izquierdo del triángulo (origen del haz) */
     transform-origin: 0% 50%;
     transform: translateY(-50%);
@@ -105,7 +105,7 @@
 .hero-beam-cone--inner {
     border-top: 28vh solid transparent;
     border-bottom: 28vh solid transparent;
-    border-right: 78vw solid rgba(255, 107, 0, 0.09);
+    border-right: 78vw solid rgba(245, 175, 25, 0.09);
     filter: blur(30px);
     mix-blend-mode: color-dodge;
     z-index: 4;
@@ -190,9 +190,9 @@
     text-wrap: balance;
     /* Iluminado por el faro: glow blanco-cian más definido */
     text-shadow:
-        0 0 60px rgba(230, 0, 122, 0.55),
-        0 0 30px rgba(255, 107, 0, 0.4),
-        0 0 10px rgba(0, 229, 163, 0.25),
+        0 0 60px rgba(255, 8, 68, 0.55),
+        0 0 30px rgba(245, 175, 25, 0.4),
+        0 0 10px rgba(0, 255, 210, 0.25),
         0 2px 4px rgba(0, 0, 0, 0.6);
     animation: titleGlowPulse 5s ease-in-out infinite alternate;
 }
@@ -200,16 +200,16 @@
 @keyframes titleGlowPulse {
     0% {
         text-shadow:
-            0 0 45px rgba(230, 0, 122, 0.45),
-            0 0 20px rgba(255, 107, 0, 0.3),
-            0 0 8px rgba(0, 229, 163, 0.15),
+            0 0 45px rgba(255, 8, 68, 0.45),
+            0 0 20px rgba(245, 175, 25, 0.3),
+            0 0 8px rgba(0, 255, 210, 0.15),
             0 2px 4px rgba(0, 0, 0, 0.6);
     }
     100% {
         text-shadow:
-            0 0 80px rgba(230, 0, 122, 0.65),
-            0 0 40px rgba(255, 107, 0, 0.45),
-            0 0 15px rgba(0, 229, 163, 0.3),
+            0 0 80px rgba(255, 8, 68, 0.65),
+            0 0 40px rgba(245, 175, 25, 0.45),
+            0 0 15px rgba(0, 255, 210, 0.3),
             0 2px 4px rgba(0, 0, 0, 0.6);
     }
 }
@@ -222,9 +222,9 @@
     color: #9EEEE7;
     display: block;
     text-shadow:
-        0 0 60px rgba(0, 229, 163, 0.7),
-        0 0 30px rgba(255, 107, 0, 0.5),
-        0 0 12px rgba(230, 0, 122, 0.35);
+        0 0 60px rgba(0, 255, 210, 0.7),
+        0 0 30px rgba(245, 175, 25, 0.5),
+        0 0 12px rgba(255, 8, 68, 0.35);
     animation: highlightGlowPulse 5s ease-in-out infinite alternate;
     animation-delay: 0.5s;
 }
@@ -232,16 +232,16 @@
 @keyframes highlightGlowPulse {
     0% {
         text-shadow:
-            0 0 45px rgba(0, 229, 163, 0.55),
-            0 0 22px rgba(255, 107, 0, 0.4),
-            0 0 10px rgba(230, 0, 122, 0.28);
+            0 0 45px rgba(0, 255, 210, 0.55),
+            0 0 22px rgba(245, 175, 25, 0.4),
+            0 0 10px rgba(255, 8, 68, 0.28);
         color: #8EEBE3;
     }
     100% {
         text-shadow:
-            0 0 80px rgba(0, 229, 163, 0.85),
-            0 0 45px rgba(255, 107, 0, 0.65),
-            0 0 20px rgba(230, 0, 122, 0.45);
+            0 0 80px rgba(0, 255, 210, 0.85),
+            0 0 45px rgba(245, 175, 25, 0.65),
+            0 0 20px rgba(255, 8, 68, 0.45);
         color: #B8F5EF;
     }
 }
@@ -438,9 +438,9 @@
     inset: -120px;
     background: radial-gradient(
         circle at center,
-        rgba(230, 0, 122, 0.30) 0%,
-        rgba(255, 107, 0, 0.14) 40%,
-        rgba(0, 229, 163, 0.07) 60%,
+        rgba(255, 8, 68, 0.30) 0%,
+        rgba(245, 175, 25, 0.14) 40%,
+        rgba(0, 255, 210, 0.07) 60%,
         transparent 75%
     );
     border-radius: 50%;
@@ -534,7 +534,7 @@
 
 .door-faro-container:hover .lamp-core {
     transform: scale(1.2);
-    filter: brightness(1.5) drop-shadow(0 0 6px rgba(230, 0, 122, 0.9));
+    filter: brightness(1.5) drop-shadow(0 0 6px rgba(255, 8, 68, 0.9));
 }
 
 /* ── Haz externo del faro ── */
@@ -546,9 +546,9 @@
     height: 120px;
     background: radial-gradient(
         ellipse at left,
-        rgba(230, 0, 122, 0.28) 0%,
-        rgba(255, 107, 0, 0.12) 20%,
-        rgba(212, 168, 75, 0.04) 55%,
+        rgba(255, 8, 68, 0.28) 0%,
+        rgba(245, 175, 25, 0.12) 20%,
+        rgba(245, 175, 25, 0.04) 55%,
         transparent 75%
     );
     transform-origin: left center;

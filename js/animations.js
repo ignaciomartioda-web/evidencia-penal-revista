@@ -463,7 +463,7 @@ function initFaroConstellationAndParticles() {
         draw() {
             ctxConst.beginPath();
             ctxConst.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-            ctxConst.fillStyle = this.color.includes('verde') ? '#00e5a3' : '#e6007a';
+            ctxConst.fillStyle = this.color.includes('verde') ? '#00ffd2' : '#ff0844';
             ctxConst.globalAlpha = this.alpha;
             if (mouse.active) {
                 ctxConst.shadowBlur = 8;
@@ -485,7 +485,7 @@ function initFaroConstellationAndParticles() {
             this.radius = Math.random() * 1.5 + 0.8;
             this.alpha = 1.0;
             this.decay = Math.random() * 0.005 + 0.002;
-            this.color = Math.random() > 0.4 ? '#00e5a3' : '#e6007a';
+            this.color = Math.random() > 0.4 ? '#00ffd2' : '#ff0844';
         }
 
         update() {
@@ -552,8 +552,8 @@ function initFaroConstellationAndParticles() {
                     ctxConst.moveTo(p1.x, p1.y);
                     ctxConst.lineTo(p2.x, p2.y);
 
-                    const color1 = p1.color.includes('verde') ? '#00e5a3' : '#e6007a';
-                    const color2 = p2.color.includes('verde') ? '#00e5a3' : '#e6007a';
+                    const color1 = p1.color.includes('verde') ? '#00ffd2' : '#ff0844';
+                    const color2 = p2.color.includes('verde') ? '#00ffd2' : '#ff0844';
                     const grad = ctxConst.createLinearGradient(p1.x, p1.y, p2.x, p2.y);
                     grad.addColorStop(0, color1);
                     grad.addColorStop(1, color2);

@@ -98,7 +98,7 @@
 }
 
 .brand-logo {
-    background: linear-gradient(135deg, #00E5A3 0%, #FF6B00 100%) !important;
+    background: var(--grad-azul-naranja) !important;
     color: #ffffff;
     font-weight: 800;
     font-size: 0.75rem;
@@ -113,7 +113,7 @@
 }
 
 .navbar-brand:hover .brand-text {
-    background: linear-gradient(135deg, #00E5A3 0%, #FF6B00 100%);
+    background: var(--grad-azul-naranja);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
@@ -140,7 +140,7 @@
 
 .navbar-links .nav-link:hover,
 .navbar-links .nav-link.active {
-    background: linear-gradient(135deg, #00E5A3 0%, #FF6B00 100%);
+    background: var(--grad-azul-naranja);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1 !important;
