@@ -10,6 +10,11 @@ const dbChartModels = {
 };
 
 function initDashboard() {
+    if (window.dashboardInitializedOnce) {
+        console.log("Dashboard - Ya inicializado.");
+        return;
+    }
+    window.dashboardInitializedOnce = true;
     console.log("Dashboard - Inicializando listeners y controles...");
 
     // Tab switching del tablero
@@ -39,7 +44,25 @@ function initDashboard() {
         });
     });
 
-    // Listeners globales para redibujar en cambio de tamaño de ventana
+    // Configurar ResizeObserver para detectar visibilidad y tamaño real de los gráficos
+    if (typeof ResizeObserver !== 'undefined') {
+        const resizeObserver = new ResizeObserver((entries) => {
+            let shouldRender = false;
+            for (let entry of entries) {
+                if (entry.contentRect.width > 0 && entry.contentRect.height > 0) {
+                    shouldRender = true;
+                }
+            }
+            if (shouldRender) {
+                renderDbCharts();
+            }
+        });
+        document.querySelectorAll('.db-canvas-container').forEach(container => {
+            resizeObserver.observe(container);
+        });
+    }
+
+    // Listeners globales para redibujar en cambio de tamaño de ventana o carga
     window.addEventListener('resize', renderDbCharts);
     window.addEventListener('load', renderDbCharts);
 
@@ -280,49 +303,82 @@ function drawDbLineChart(ctx, width, height, labels, dataset, maxVal, color) {
     }
 }
 
+function isDashboardVisible() {
+    const pageDashboard = document.getElementById('page-dashboard');
+    if (!pageDashboard) {
+        // En dashboard.html (donde no existe page-dashboard), siempre es visible
+        return true;
+    }
+    // En index.html, es visible si el div de la página tiene la clase 'active'
+    return pageDashboard.classList.contains('active');
+}
+
 function renderDbCharts() {
+    if (!isDashboardVisible()) {
+        console.log("Dashboard - No visible en el SPA, omitiendo renderizado de gráficos.");
+        return;
+    }
+
     // 1. Gráfico SWOT
     const swotCanvas = document.getElementById('db-swot-chart');
-    if (swotCanvas && swotCanvas.offsetParent !== null) {
+    const swotPanel = document.getElementById('db-tab-resumen');
+    if (swotCanvas && swotPanel && swotPanel.classList.contains('active')) {
         const ctx = swotCanvas.getContext('2d');
-        swotCanvas.width = swotCanvas.clientWidth;
-        swotCanvas.height = swotCanvas.clientHeight;
-        const labels = ['Trayectoria', 'Perfil Ético', 'Consensos', 'Redes', 'Populismo'];
-        const values = [8.5, 9.5, 8.0, 7.5, 4.0];
-        if (dbChartModels.swot === 'radar') {
-            drawDbRadarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, 'rgba(0, 255, 210, 1)');
-        } else {
-            drawDbBarChart(ctx, swotCanvas.width, swotCanvas.height, labels, values, 10, '#00ffd2');
+        const width = swotCanvas.clientWidth || swotCanvas.parentElement.clientWidth || 300;
+        const height = swotCanvas.clientHeight || swotCanvas.parentElement.clientHeight || 280;
+        
+        if (width > 0 && height > 0) {
+            swotCanvas.width = width;
+            swotCanvas.height = height;
+            const labels = ['Trayectoria', 'Perfil Ético', 'Consensos', 'Redes', 'Populismo'];
+            const values = [8.5, 9.5, 8.0, 7.5, 4.0];
+            if (dbChartModels.swot === 'radar') {
+                drawDbRadarChart(ctx, width, height, labels, values, 10, 'rgba(0, 255, 210, 1)');
+            } else {
+                drawDbBarChart(ctx, width, height, labels, values, 10, '#00ffd2');
+            }
         }
     }
 
     // 2. Gráfico Barrios / Corredores (Seguridad)
     const barriosCanvas = document.getElementById('db-barrios-chart');
-    if (barriosCanvas && barriosCanvas.offsetParent !== null) {
+    const barriosPanel = document.getElementById('db-tab-seguridad');
+    if (barriosCanvas && barriosPanel && barriosPanel.classList.contains('active')) {
         const ctx = barriosCanvas.getContext('2d');
-        barriosCanvas.width = barriosCanvas.clientWidth;
-        barriosCanvas.height = barriosCanvas.clientHeight;
-        const labels = ['Centro', 'Norte', 'Sur', 'Oeste', 'C. Oeste'];
-        const values = [90, 85, 78, 65, 72];
-        if (dbChartModels.barrios === 'trend') {
-            drawDbLineChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, 'rgba(255, 8, 68, 1)');
-        } else {
-            drawDbBarChart(ctx, barriosCanvas.width, barriosCanvas.height, labels, values, 100, '#ff0844');
+        const width = barriosCanvas.clientWidth || barriosCanvas.parentElement.clientWidth || 300;
+        const height = barriosCanvas.clientHeight || barriosCanvas.parentElement.clientHeight || 280;
+        
+        if (width > 0 && height > 0) {
+            barriosCanvas.width = width;
+            barriosCanvas.height = height;
+            const labels = ['Centro', 'Norte', 'Sur', 'Oeste', 'C. Oeste'];
+            const values = [90, 85, 78, 65, 72];
+            if (dbChartModels.barrios === 'trend') {
+                drawDbLineChart(ctx, width, height, labels, values, 100, 'rgba(255, 8, 68, 1)');
+            } else {
+                drawDbBarChart(ctx, width, height, labels, values, 100, '#ff0844');
+            }
         }
     }
 
     // 3. Gráfico Benchmarking Costo-Impacto
     const benchCanvas = document.getElementById('db-bench-chart');
-    if (benchCanvas && benchCanvas.offsetParent !== null) {
+    const benchPanel = document.getElementById('db-tab-benchmarking');
+    if (benchCanvas && benchPanel && benchPanel.classList.contains('active')) {
         const ctx = benchCanvas.getContext('2d');
-        benchCanvas.width = benchCanvas.clientWidth;
-        benchCanvas.height = benchCanvas.clientHeight;
-        const labels = ['Town Halls', 'Ludopatía', 'En Bici', 'Plaza Ideas'];
-        const values = [80, 95, 70, 75];
-        if (dbChartModels.bench === 'bar') {
-            drawDbBarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, '#f5af19');
-        } else {
-            drawDbRadarChart(ctx, benchCanvas.width, benchCanvas.height, labels, values, 100, 'rgba(245, 175, 25, 1)');
+        const width = benchCanvas.clientWidth || benchCanvas.parentElement.clientWidth || 300;
+        const height = benchCanvas.clientHeight || benchCanvas.parentElement.clientHeight || 280;
+        
+        if (width > 0 && height > 0) {
+            benchCanvas.width = width;
+            benchCanvas.height = height;
+            const labels = ['Town Halls', 'Ludopatía', 'En Bici', 'Plaza Ideas'];
+            const values = [80, 95, 70, 75];
+            if (dbChartModels.bench === 'bar') {
+                drawDbBarChart(ctx, width, height, labels, values, 100, '#f5af19');
+            } else {
+                drawDbRadarChart(ctx, width, height, labels, values, 100, 'rgba(245, 175, 25, 1)');
+            }
         }
     }
 }

@@ -385,7 +385,7 @@ function initFaroConstellationAndParticles() {
     const faroContenedor = document.getElementById('faro-animado');
     const heroSection = document.querySelector('.hero-monolith');
 
-    if (!constellationCanvas || !bgParticlesCanvas || !lighthouseWrapper || !heroSection) return;
+    if (!constellationCanvas || !bgParticlesCanvas || !lighthouseWrapper || !heroSection || !faroContenedor) return;
 
     const ctxConst = constellationCanvas.getContext('2d');
     const ctxBg = bgParticlesCanvas.getContext('2d');
