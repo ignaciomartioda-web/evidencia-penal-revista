@@ -60,6 +60,15 @@
     --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+html, body {
+    background-color: var(--bg-base);
+    color: var(--color-texto);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /* ── Animaciones y Efectos Premium Habilitados (Ecosistema Liquid Glass) ── */
 
 /* ==========================================================================
