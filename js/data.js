@@ -820,7 +820,7 @@ const PROPUESTAS_FERRARO = {
  <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
  <p>Diputado por el Partido Liberal chileno, representante del</p>
 <p>extremo norte del país.</p>
-<p>Mirosevic articuló sus victorias electorales a través de metodologías puras de "puerta a puerta", alejándose decididamente de las estructuras corporativas de financiamiento que históricamente dominaban la política chilena. 41 Se apoyó fuertemente en el electorado joven, promoviendo una agenda liberal-progresista y asumiendo causas ambientales locales de extrema urgencia. Un eje central de su construcción política, que garantizó una fidelidad inquebrantable de sus votantes a un costo monetario nulo, fue asumir la defensa legal y legislativa integral de las víctimas de contaminación por metales pesados (polimetales) en Arica, un problema generado por empresas extranjeras y abandonado por el Estado durante décadas. 43 Focalizar una campaña en una herida abierta y dolorosa de una comunidad, aportando soluciones legislativas comprobables mediante oficios y proyectos de resolución, es una táctica de altísimo compromiso de base.</p>
+<p>Mirosevic articuló sus victorias electorales a través de metodologías puras de "puerta a puerta", alejándose decididamente de las estructuras corporativas de financiamiento que históricamente dominaban la política chilena. 41 Se apoyó fuertemente en el electorado joven, promoviendo una agenda liberal-progresista y asumiendo causas ambientales locales de extrema urgencia. Un eje central de su construcción política, que garantizó una fidelidad inquebrantable de sus votantes a un costo monetario nulo, fue asumir la defensa legal y legislativa integral de las víctimas de contaminación por metales pesados (polimetales) en Arica, un problema generado por empresas extranjeras y abandonado por el Estado durante décadas. 43 Focalizar una campaña en una herida abierta y problemaosa de una comunidad, aportando soluciones legislativas comprobables mediante oficios y proyectos de resolución, es una táctica de altísimo compromiso de base.</p>
 <p>Además, su postura firme contra el conservadurismo de extrema derecha y las teorías de conspiración (como el rechazo al pacto migratorio de la ONU) lo posicionó a nivel nacional como un referente ineludible del liberalismo moderno e institucional en Chile. 44</p>
  </div>
  </details>
@@ -1241,7 +1241,7 @@ const PROPUESTAS_FERRARO = {
 <li>La Carpeta de Soluciones Barriales : En lugar de proponer "mejorar la seguridad" de</li>
 </ul>
 <p>manera abstracta, Ferraro debe presentarse en cada Comuna con "La Carpeta del Plan de la Comuna X".</p>
-<p>Esta carpeta debe contener el desglose legislativo e ingenieril exacto para solucionar el punto de dolor barrial (por ejemplo, el diseño técnico de rezonificación para evitar el colapso cloacal en Belgrano o el plan de transporte específico para integrar socio-urbanamente la Comuna 8 ).</p>
+<p>Esta carpeta debe contener el desglose legislativo e ingenieril exacto para solucionar el problema barrial (por ejemplo, el diseño técnico de rezonificación para evitar el colapso cloacal en Belgrano o el plan de transporte específico para integrar socio-urbanamente la Comuna 8 ).</p>
 <p>El mensaje es claro: "Mientras los otros gritan slogans de campaña, yo ya tengo la ley redactada y costeada para tu manzana" .</p>
  </div>
  </details>
@@ -1572,15 +1572,15 @@ const PROPUESTAS_FERRARO = {
 <p><strong>2. El "Kit del Inquilino" :</strong> Ferraro debe erigirse en el defensor de los millones de inquilinos de</p>
 <p>CABA.</p>
 <p>Diseñar contenidos de "Auditoría de Alquileres" basados en los marcos del Código Civil que él mismo conoce legislativamente, explicando cómo el vecino puede protegerse de cláusulas de indexación abusivas.</p>
-<h3>2. ARQUITECTURA DE INFILTRACIÓN TERRITORIAL: Mapeo de Puntos de Dolor por Corredores</h3>
+<h3>2. ARQUITECTURA DE INFILTRACIÓN TERRITORIAL: Mapeo de Problemas por Corredores</h3>
 <p>La Ciudad Autónoma de Buenos Aires está dividida en 15 comunas con perfiles socioeconómicos radicalmente disímiles. 20 Para perforar el territorio con efectividad, se prohíbe el uso de discursos generales.</p>
-<p>Hemos diseñado una segmentación operativa dividiendo el territorio en 5 corredores estratégicos basados en los "puntos de dolor" exactos que los vecinos registran en los sistemas públicos de la Ciudad . ▼ ▼ ▼ [ Corredor Centro ] [ Corredor Norte ] Comunas 1 y 3 Comunas 2, 13, 14 Comunas 4, 8, 9 • Emergencia Social • Colapso por CUR • Deuda estructural • Higiene Urbana • Ruido Gastronómico • Escuelas dañadas ▲ ▲ ▼ [ Corredor Oeste y Oeste-Centro ] Comunas 5, 6, 7, 10, 11, 12, 15 • Inseguridad Capilar / Pymes • Espacios Verdes / Cultura CORREDOR CENTRO: Comunas 1 y 3 (Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat, Constitución, Balvanera, San Cristóbal)</p>
+<p>Hemos diseñado una segmentación operativa dividiendo el territorio en 5 corredores estratégicos basados en los "problemas" exactos que los vecinos registran en los sistemas públicos de la Ciudad . ▼ ▼ ▼ [ Corredor Centro ] [ Corredor Norte ] Comunas 1 y 3 Comunas 2, 13, 14 Comunas 4, 8, 9 • Emergencia Social • Colapso por CUR • Deuda estructural • Higiene Urbana • Ruido Gastronómico • Escuelas dañadas ▲ ▲ ▼ [ Corredor Oeste y Oeste-Centro ] Comunas 5, 6, 7, 10, 11, 12, 15 • Inseguridad Capilar / Pymes • Espacios Verdes / Cultura CORREDOR CENTRO: Comunas 1 y 3 (Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat, Constitución, Balvanera, San Cristóbal)</p>
 <ul class="db-list">
 <li>Perfil Socioeconómico : Alta densidad comercial, nodos críticos de transbordo de</li>
 </ul>
 <p>transporte, y la mayor aglomeración de personas en situación de calle de la Ciudad .</p>
 <ul class="db-list">
-<li>Punto de Dolor Ciudadano (Basado en Evidencia) : Según relevamientos oficiales de los</li>
+<li>Problema Ciudadano (Basado en Evidencia) : Según relevamientos oficiales de los</li>
 </ul>
 <p>censos de vulnerabilidad de CABA, la Comuna 1 concentra el 34% de la población total en extrema situación de calle de la ciudad; si se adiciona la Comuna 3, se alcanza casi el 50% de la población sin techo registrada .</p>
 <p>El perfil demográfico es en un 83% masculino, con casi un 70% de migrantes de origen interno (principalmente de la Provincia de Buenos Aires), y donde los disparadores directos de su situación corresponden a problemas económicos o laborales en un 42% y a conflictos familiares en un 33,9% .</p>
@@ -1596,7 +1596,7 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>consorcios de propiedad horizontal y concentración de grandes polos gastronómicos y nocturnos .</p>
 <ul class="db-list">
-<li>Punto de Dolor Ciudadano (Basado en Evidencia) : La crisis de habitabilidad generada</li>
+<li>Problema Ciudadano (Basado en Evidencia) : La crisis de habitabilidad generada</li>
 </ul>
 <p>por el impacto constructivo de las modificaciones del Código Urbanístico (CUR). 8 Las quejas de los consorcios apuntan a la pérdida de asoleamiento y pulmones de manzana debido al incremento de alturas constructivas residenciales y la proliferación de micro-apartamentos de hasta 18 metros cuadrados de superficie mínima habitable. 22 Paralelamente, los vecinos registran sistemáticamente en la línea 147 y la Defensoría del Pueblo quejas críticas por ruidos molestos provenientes de boliches, bares y polos gastronómicos autorizados en zonas residenciales sin aislamiento acústico adecuado, pidiendo la intervención de la Agencia Gubernamental de Control (AGC) y recurriendo a mediaciones comunitarias complejas .</p>
 <ul class="db-list">
@@ -1608,7 +1608,7 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>asentamientos informales y complejos de vivienda pública en situación deficiente. 8</p>
 <ul class="db-list">
-<li>Punto de Dolor Ciudadano (Basado en Evidencia) : La paralización de obras esenciales</li>
+<li>Problema Ciudadano (Basado en Evidencia) : La paralización de obras esenciales</li>
 </ul>
 <p>de integración socio-urbana en barrios como Ramón Carrillo y Lacarra a cargo del Instituto de Vivienda de la Ciudad (IVC) y la Corporación Buenos Aires Sur .</p>
 <p>Asimismo, el estado crítico de la infraestructura escolar pública de la zona; casos recientes denuncian invasiones severas de ratas y caca de roedores en los lactarios y cunas del Polo Educativo Walsh, afectando directamente la salud de alumnos y docentes sin que el Ministerio de Educación brinde respuestas materiales rápidas .</p>
@@ -1622,7 +1622,7 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>fuerte tejido comercial PyME y centros de compra a cielo abierto .</p>
 <ul class="db-list">
-<li>Punto de Dolor Ciudadano (Basado en Evidencia) : La inseguridad en entornos</li>
+<li>Problema Ciudadano (Basado en Evidencia) : La inseguridad en entornos</li>
 </ul>
 <p>comerciales e industriales, y la proliferación de mercados informales donde se revenden artículos secuestrados provenientes de arrebatos y robos .</p>
 <p>Los comerciantes legales denuncian asfixia por controles e inspecciones impositivas y de habilitación rigurosas de la AGC, mientras locales clandestinos operan con impunidad en zonas grises de la regulación de actividades .</p>
@@ -1636,7 +1636,7 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>independiente, densidad de clubes de barrio y activa defensa del arbolado público y los espacios verdes. 6</p>
 <ul class="db-list">
-<li>Punto de Dolor Ciudadano (Basado en Evidencia) : La gentrificación y el avance del</li>
+<li>Problema Ciudadano (Basado en Evidencia) : La gentrificación y el avance del</li>
 </ul>
 <p>desarrollo inmobiliario invasivo que destruye el carácter verde e identitario del barrio residencial tradicional. 8 La falta de control de las obras y la lentitud o inacción en los servicios de arbolado lineal y mantenimiento ambiental registrados en el SUACI. 6</p>
 <ul class="db-list">
@@ -1893,7 +1893,7 @@ const PROPUESTAS_FERRARO = {
  author: "Maxi Ferraro",
  category: "Estrategia CABA",
  date: "Agosto 2026",
- abstract: "Documento de estrategia política para posicionar a Maxi Ferraro como el 'Auditor Ciudadano' de la Ciudad. Establece el mapeo de puntos de dolor por Comunas (AGC, IVC), cronogramas de intervención y protocolos de terreno para la escucha activa.",
+ abstract: "Documento de estrategia política para posicionar a Maxi Ferraro como el 'Auditor Ciudadano' de la Ciudad. Establece el mapeo de problemas por Comunas (AGC, IVC), cronogramas de intervención y protocolos de terreno para la escucha activa.",
  keywords: ["Comunas CABA", "Auditor Ciudadano", "Hotspots de Quejas", "Cronograma Semanal"],
  marginalia: [
  {
@@ -1909,7 +1909,7 @@ const PROPUESTAS_FERRARO = {
 <p>No obstante, esta oportunidad se encuentra latente y requiere de una reingeniería profunda y pragmática.</p>
 <p>Su extensa trayectoria como legislador, presidente de la Comisión de Educación, Ciencia y Tecnología, y máximo referente nacional de la Coalición Cívica ARI, le ha otorgado un volumen institucional y una respetabilidad técnica innegables. 3 Sin embargo, la efectividad electoral contemporánea ya no se mide de manera lineal por la cantidad de leyes sancionadas, los expedientes ingresados por mesa de entradas o la presidencia de comisiones parlamentarias; se rige, inexorablemente, por la percepción de utilidad directa y palpable en el metro cuadrado de la cotidianidad del votante. El presente documento despliega una arquitectura estratégica exhaustiva, diseñada de manera exclusiva para potenciar la inserción territorial de Maximiliano Ferraro en las quince comunas de la Ciudad de Buenos Aires.</p>
 <p>El objetivo central y pragmático es ejecutar una transición controlada, científicamente medida, desde un perfil eminentemente legislativo —el cual es percibido en reiteradas ocasiones por el electorado no politizado como distante, elitista o anclado en la macro-política nacional— hacia la construcción de una marca de "Auditor Ciudadano".</p>
-<p>Este giro táctico busca capitalizar sus indudables fortalezas éticas y su capacidad técnica de análisis, anclándolas directamente en los puntos de dolor barriales para maximizar su competitividad y relevancia de cara a los inminentes ciclos electorales.</p>
+<p>Este giro táctico busca capitalizar sus indudables fortalezas éticas y su capacidad técnica de análisis, anclándolas directamente en los problemas barriales para maximizar su competitividad y relevancia de cara a los inminentes ciclos electorales.</p>
 <p>No se trata de abandonar su identidad de origen, sino de traducir su capital simbólico a un lenguaje de trinchera que resuelva problemas tangibles.</p>
 <p>Para establecer una estrategia de perforación territorial verdaderamente efectiva, resulta imperativo diagnosticar con precisión analítica el punto de partida estructural del candidato.</p>
 <p>El "techo" político de Maximiliano Ferraro se encuentra actualmente condicionado por la segmentación histórica de su electorado base: un votante de clase media, predominantemente urbano, fuertemente institucionalista, preocupado por la transparencia republicana, la división de poderes y el rechazo a los populismos.</p>
@@ -1971,10 +1971,10 @@ const PROPUESTAS_FERRARO = {
 <p>Comunas) La Ciudad Autónoma de Buenos Aires no es, bajo ningún punto de vista, un territorio homogéneo; es un complejo mosaico de demandas asimétricas y conflictividades superpuestas.</p>
 <p>Para que Maximiliano Ferraro logre una capilaridad política real y duradera, debe abandonar de inmediato el discurso universalizado y adoptar una estrategia de extrema micro-segmentación.</p>
 <p>Hemos diseñado una arquitectura de inserción dividiendo las 15 comunas de la ciudad en cinco corredores estratégicos.</p>
-<p>A cada uno de estos corredores se le ha asignado un "punto de dolor" fundamentado en datos censales, registros de reclamos vecinales y conflictividad estructural, junto con un "pivot narrativo" específico diseñado a medida para que Ferraro conecte su perfil técnico con la angustia barrial.</p>
+<p>A cada uno de estos corredores se le ha asignado un "problema" fundamentado en datos censales, registros de reclamos vecinales y conflictividad estructural, junto con un "pivot narrativo" específico diseñado a medida para que Ferraro conecte su perfil técnico con la angustia barrial.</p>
 <p>Corredor Centro: El Colapso del Espacio Público y la Fractura Social (Comunas 1 y 3)</p>
 <p>Contexto y Datos Duros: Este corredor geográfico, que abarca el microcentro, Retiro, San Telmo, Balvanera y San Cristóbal, concentra la manifestación más descarnada de la crisis social visible de la ciudad y el país.</p>
-<p>Según datos de relevamientos oficiales, el 34% de las personas en extrema situación de calle de toda CABA se encuentran aglomeradas en la Comuna 1, y si se adiciona la Comuna 3, se alcanza casi el 50% del total de la población sin techo censada. 14 El perfil de esta población es abrumadoramente masculino (83%), con una altísima incidencia de migrantes internos provenientes de la Provincia de Buenos Aires (casi el 70%), y cuyas causas declaradas orbitan en torno a problemas laborales (42%) y conflictos familiares (33,9%). 14 Las llamadas vecinales de alerta al número 108 han experimentado un aumento interanual del 40%, registrando un promedio de 800 avisos diarios. 14 A este drama humano se suman los conflictos permanentes de convivencia, la proliferación de ruidos molestos, la ocupación del espacio público por el comercio informal y la acumulación de residuos. 9 Punto de Dolor: La desesperante sensación ciudadana de abandono total del espacio público, la degradación acelerada del entorno urbano y la constante tensión moral entre la empatía social hacia el marginado y el justo reclamo vecinal por el orden, el libre tránsito y la higiene.</p>
+<p>Según datos de relevamientos oficiales, el 34% de las personas en extrema situación de calle de toda CABA se encuentran aglomeradas en la Comuna 1, y si se adiciona la Comuna 3, se alcanza casi el 50% del total de la población sin techo censada. 14 El perfil de esta población es abrumadoramente masculino (83%), con una altísima incidencia de migrantes internos provenientes de la Provincia de Buenos Aires (casi el 70%), y cuyas causas declaradas orbitan en torno a problemas laborales (42%) y conflictos familiares (33,9%). 14 Las llamadas vecinales de alerta al número 108 han experimentado un aumento interanual del 40%, registrando un promedio de 800 avisos diarios. 14 A este drama humano se suman los conflictos permanentes de convivencia, la proliferación de ruidos molestos, la ocupación del espacio público por el comercio informal y la acumulación de residuos. 9 Problema: La desesperante sensación ciudadana de abandono total del espacio público, la degradación acelerada del entorno urbano y la constante tensión moral entre la empatía social hacia el marginado y el justo reclamo vecinal por el orden, el libre tránsito y la higiene.</p>
 <p>Pivot Narrativo (Ferraro):</p>
 <p>El Auditor de la Asistencia y el Orden .</p>
 <p>Ferraro se encuentra ante el desafío de no caer en el punitivismo insensible de la extrema derecha, ni en la romantización de la pobreza de cierta izquierda.</p>
@@ -1983,7 +1983,7 @@ const PROPUESTAS_FERRARO = {
 <p>Exijo que ese dinero llegue al asfalto y se traduzca de forma inmediata en orden real para el vecino que paga sus impuestos y en una puerta de salida digna para el ciudadano vulnerable."</p>
 <p>Corredor Norte: La Tensión del Crecimiento Urbano Especulativo (Comunas 2, 13 y 14)</p>
 <p>Contexto y Datos Duros: Comprendiendo zonas de altísimo poder adquisitivo como Recoleta, Belgrano, Núñez y Palermo, el reclamo estructural en este corredor orbita en torno a los nefastos efectos secundarios de la planificación urbana reciente.</p>
-<p>Las principales quejas ciudadanas apuntan al nuevo Código Urbanístico, las leyes de plusvalía inmobiliaria y la densificación no planificada que altera el perfil histórico de los barrios. Las normativas que han permitido modificaciones en las alturas (planos límites de doce metros, reducción de superficies mínimas habitables a 18 metros cuadrados) y el cobro de la plusvalía por derechos de desarrollo 17 han saturado los servicios cloacales y eléctricos. Adicionalmente, los vecinos denuncian incesantes ruidos molestos provenientes de grandes polos gastronómicos, bares nocturnos, boliches y obras en construcción, utilizando intensiva pero infructuosamente canales oficiales como la línea 147, los sistemas de mediación comunitaria de la Defensoría del Pueblo y exigiendo la intervención de la Agencia Gubernamental de Control (AGC). 10 Punto de Dolor:</p>
+<p>Las principales quejas ciudadanas apuntan al nuevo Código Urbanístico, las leyes de plusvalía inmobiliaria y la densificación no planificada que altera el perfil histórico de los barrios. Las normativas que han permitido modificaciones en las alturas (planos límites de doce metros, reducción de superficies mínimas habitables a 18 metros cuadrados) y el cobro de la plusvalía por derechos de desarrollo 17 han saturado los servicios cloacales y eléctricos. Adicionalmente, los vecinos denuncian incesantes ruidos molestos provenientes de grandes polos gastronómicos, bares nocturnos, boliches y obras en construcción, utilizando intensiva pero infructuosamente canales oficiales como la línea 147, los sistemas de mediación comunitaria de la Defensoría del Pueblo y exigiendo la intervención de la Agencia Gubernamental de Control (AGC). 10 Problema:</p>
 <p>La invasión de la privacidad hogareña, el colapso absoluto de los servicios básicos por sobreconstrucción irracional, y la contaminación acústica que deteriora la salud mental del habitante.</p>
 <p>Pivot Narrativo (Ferraro):</p>
 <p>El Garante del Patrimonio y Defensor del Consorcio .</p>
@@ -1996,7 +1996,7 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li></li>
 </ul>
-<p>IVC). 23 Asimismo, la crisis en materia de vacantes escolares y el avanzado deterioro de la infraestructura educativa es alarmante; casos emblemáticos recientes han denunciado invasiones de roedores en el Polo Educativo Walsh, afectando directamente la salubridad de los lactarios, frente a una cúpula ministerial que prioriza la espectacularización en conferencias de prensa. 24 Ferraro cuenta aquí con un activo central: él es un residente genuino de la Comuna 4 (Barracas). 3 Punto de Dolor: La consolidada percepción de ser tratados como "ciudadanos de segunda clase", condenados a servicios públicos paupérrimos, la postergación de la urbanización prometida y el envío de sus hijos a escuelas con fallas estructurales y riesgos sanitarios.</p>
+<p>IVC). 23 Asimismo, la crisis en materia de vacantes escolares y el avanzado deterioro de la infraestructura educativa es alarmante; casos emblemáticos recientes han denunciado invasiones de roedores en el Polo Educativo Walsh, afectando directamente la salubridad de los lactarios, frente a una cúpula ministerial que prioriza la espectacularización en conferencias de prensa. 24 Ferraro cuenta aquí con un activo central: él es un residente genuino de la Comuna 4 (Barracas). 3 Problema: La consolidada percepción de ser tratados como "ciudadanos de segunda clase", condenados a servicios públicos paupérrimos, la postergación de la urbanización prometida y el envío de sus hijos a escuelas con fallas estructurales y riesgos sanitarios.</p>
 <p>Pivot Narrativo (Ferraro):</p>
 <p>Vecino en Acción / Auditor de la Equidad Sur .</p>
 <p>Aquí es donde la biografía personal de Ferraro debe constituir el núcleo duro e indivisible de la estrategia persuasiva.</p>
@@ -2004,7 +2004,7 @@ const PROPUESTAS_FERRARO = {
 <p>Corredor Oeste: Seguridad de Proximidad y Tejido Comercial (Comunas 7, 10 y 11)</p>
 <p>Contexto y Datos Duros: Comprendiendo Flores, Parque Chacabuco, Floresta, Monte Castro y Villa del Parque, estos son barrios residenciales tradicionales que sostienen un robusto pero golpeado tejido de pequeñas y medianas empresas (PyMEs), comercios a la calle y centros comerciales a cielo abierto.</p>
 <p>El terror estructural y reclamo principal de este corredor es la inseguridad capilar: arrebatos violentos en la vía pública, entraderas y robos de dispositivos móviles que alimentan un mercado negro enquistado en locales comerciales no habilitados.</p>
-<p>Se requiere una auditoría exhaustiva de los operativos conjuntos liderados por la AGC, la Agencia de Protección Ambiental (APRA) y el Ministerio de Justicia y Seguridad, encargados de secuestrar mercadería proveniente de ilícitos. 10 Punto de Dolor: La inseguridad física cotidiana, el miedo en las calles y la asfixiante presión impositiva y regulatoria que padece el pequeño comerciante honesto frente a la impunidad del circuito ilegal.</p>
+<p>Se requiere una auditoría exhaustiva de los operativos conjuntos liderados por la AGC, la Agencia de Protección Ambiental (APRA) y el Ministerio de Justicia y Seguridad, encargados de secuestrar mercadería proveniente de ilícitos. 10 Problema: La inseguridad física cotidiana, el miedo en las calles y la asfixiante presión impositiva y regulatoria que padece el pequeño comerciante honesto frente a la impunidad del circuito ilegal.</p>
 <p>Pivot Narrativo (Ferraro):</p>
 <p>El Fiscal del Espacio Público y Aliado Pyme .</p>
 <p>Ferraro debe liderar discursivamente una cruzada quirúrgica contra el mercado negro que fomenta el delito barrial.</p>
@@ -2013,7 +2013,7 @@ const PROPUESTAS_FERRARO = {
 <p>Corredor Centro-Oeste: Cultura, Movilidad e Identidad Barrial (Comunas 5, 6, 12 y 15)</p>
 <p>Contexto y Datos Duros: Abarcando Almagro, Boedo, Caballito, Villa Urquiza y Chacarita, este es el bastión demográfico de las clases medias profesionales, caracterizado por una altísima vitalidad cultural, intelectual y social.</p>
 <p>Las demandas orbitan alrededor de la preservación imperativa de espacios verdes frente al avance del cemento, la defensa de circuitos culturales independientes y la necesidad de un esquema de movilidad y transporte sustentable eficiente.</p>
-<p>Ferraro posee un contundente acervo legislativo previo en esta zona geográfica: impulsó la revitalizadora ley de bares notables, la ley de extensión horaria de la red de subtes y la emblemática fundación del espacio cultural Jungla en Almagro, diseñado para el debate y la capacitación. 3 Punto de Dolor: La gentrificación descontrolada, la inminente pérdida de la riqueza cultural independiente originaria del barrio y la exasperación ante un sistema de movilidad fragmentado.</p>
+<p>Ferraro posee un contundente acervo legislativo previo en esta zona geográfica: impulsó la revitalizadora ley de bares notables, la ley de extensión horaria de la red de subtes y la emblemática fundación del espacio cultural Jungla en Almagro, diseñado para el debate y la capacitación. 3 Problema: La gentrificación descontrolada, la inminente pérdida de la riqueza cultural independiente originaria del barrio y la exasperación ante un sistema de movilidad fragmentado.</p>
 <p>Pivot Narrativo (Ferraro):</p>
 <p>Promotor de la Identidad y la Movilidad .</p>
 <p>La táctica exige recuperar su prolífico legado parlamentario ("Hicimos leyes para ponerle fichas a los centros culturales independientes y blindar el ecosistema de la ciudad" 3 ) y actualizarlo frente a nuevas amenazas.</p>
@@ -2029,7 +2029,7 @@ const PROPUESTAS_FERRARO = {
  <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 15%;">Corredor</th>
  <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 12%;">Comunas</th>
  <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Perfil Socio-Urbano</th>
- <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 24%;">Dolores (Conflicto)</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 24%;">Problemas (Conflicto)</th>
  <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 24%;">Rol del Auditor (Ferraro)</th>
  </tr>
  </thead>
@@ -2170,7 +2170,7 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>cruzará sistemáticamente múltiples bases de datos públicas y semipúblicas.</p>
 <p>El foco estará puesto en las resoluciones oficiales de la Agencia Gubernamental de Control (identificando habilitaciones presuntamente irregulares, falta de clausuras a locales infractores reiterativos) 10 , la lectura analítica del Boletín Oficial de CABA, el consolidado de denuncias y mediaciones vecinales presentadas ante la Defensoría del Pueblo referidas a ruidos, emisiones de gases tóxicos y conflictos de medianería 15 , y un seguimiento estricto a las estadísticas y mapas de calor de personas en situación de calle extrema (con atención crítica sobre las Comunas 1 y 3). 14</p>
-<p><strong>2. Selección Rigurosa de 15 Casos Testigo :</strong> Se seleccionará un (1) "Punto de Dolor"</p>
+<p><strong>2. Selección Rigurosa de 15 Casos Testigo :</strong> Se seleccionará un (1) "Problema"</p>
 <p>hiperespecífico, material, innegable y plenamente verificable por cada una de las 15 comunas de la Ciudad.</p>
 <p>Ejemplos rectores:</p>
 <p>Comuna 14:</p>
