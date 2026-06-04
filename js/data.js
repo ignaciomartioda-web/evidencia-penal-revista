@@ -24,16 +24,17 @@ const PROPUESTAS_FERRARO = {
         ],
         body: `<p>Informe de Inteligencia Política y Auditoría Digital:</p>
 <p>Análisis Integral de Maximiliano Ferraro</p>
-<h3>Resumen Ejecutivo y Marco Contextual</h3>
+<h3>1. Resumen Ejecutivo y Marco Contextual</h3>
 <p>Institucional El presente informe de inteligencia de fuentes abiertas (OSINT) y análisis político estratégico detalla de manera exhaustiva la trayectoria, el posicionamiento legislativo, la huella mediática y la estrategia de comunicación digital de Maximiliano Carlos Francisco Ferraro.</p>
 <p>Nacido en la Ciudad Autónoma de Buenos Aires el 4 de noviembre de 1975, Ferraro, de 50 años de edad, se erige en la actualidad (mayo de 2026) como una de las figuras institucionales más gravitantes de la República Argentina. 1 Se desempeña en su segundo mandato consecutivo como Diputado de la Nación por el distrito de la Ciudad de Buenos Aires, con vigencia legal hasta el 10 de diciembre de 2027. 1 De manera concurrente y revistiendo una importancia capital para el ecosistema político nacional, ejerce la presidencia a nivel nacional del partido Coalición Cívica ARI (CC-ARI) desde el 15 de diciembre de 2018, consolidándose como el principal articulador, heredero político y guardián doctrinario de la estructura partidaria fundada históricamente por Elisa Carrió. 1 Para comprender la magnitud de su peso político actual, es imperativo no asumir conocimientos previos sobre la compleja arquitectura institucional argentina y desglosar su evolución.</p>
 <p>Ferraro no es un emergente fortuito de la coyuntura mediática, sino un cuadro político forjado en la militancia de base, cuya trayectoria comenzó a los 14 años en el movimiento estudiantil secundario y en la Juventud Radical. 3 Su incorporación en el año 2001 al partido Alternativa por una República de Iguales (ARI, actual CC-ARI) marcó el inicio de una carrera caracterizada por la ocupación progresiva de roles de alta responsabilidad, desde la coordinación de campañas porteñas y nacionales, hasta desempeñarse como jefe de asesores de la entonces diputada nacional Elisa Carrió entre los años 2005 y 2007. 2 Su consolidación como figura pública de gestión se materializó durante sus dos mandatos como Legislador de la Ciudad Autónoma de Buenos Aires (2011-2019), donde su liderazgo al frente de la Comisión de Educación, Ciencia y Tecnología lo forzó a administrar crisis políticas de extrema volatilidad frente a gremios y movimientos sociales. 2 Posteriormente, su salto al Congreso Nacional en 2019 lo posicionó en el centro del debate federal, donde su rol ha ido mutando.</p>
 <p>En el actual escenario político de 2026, dominado por la presidencia de Javier Milei y el partido La Libertad Avanza (LLA), Ferraro ha adoptado una postura de "oposición institucionalista y fiscalizadora".</p>
 <p>Habiendo abandonado la coalición Juntos por el Cambio para preservar la autonomía moral de su partido, Ferraro integra hoy el estratégico interbloque legislativo "Unidos". 5 La investigación determina que su capital político se cimienta sobre la defensa irrestricta de la transparencia gubernamental, la educación pública como motor de movilidad social, la ampliación de los derechos de las minorías (particularmente el colectivo LGTBIQ+), y la lucha contra la ludopatía y la opacidad financiera.</p>
 <p>Estos ejes no son meros enunciados retóricos, sino que se traducen en acciones legislativas de altísimo impacto, como su reciente rol como presidente de la Comisión Investigadora del escándalo de corrupción conocido como el "Caso \$LIBRA", donde enfrentó directamente al Poder Ejecutivo Nacional. 3 El desarrollo de este informe desagrega, clasifica y audita cada una de estas dimensiones operativas, proveyendo un mapeo hiper-detallado estructurado en el análisis de su labor parlamentaria, su presencia mediática, y su desenvolvimiento en las redes sociales, con el fin de entregar un perfil analítico completo, objetivo y autosuficiente.</p>
-<h3>Trayectoria y Labor Parlamentaria</h3>
-<p>El accionar legislativo de Maximiliano Ferraro requiere ser abordado a través de una periodización estricta que diferencie su etapa de conformación de consensos a nivel local en la Ciudad Autónoma de Buenos Aires, de su actual rol como fiscalizador y articulador de mayorías en el Congreso de la Nación Argentina.</p>
-<h3>2.1. Gestión en la Legislatura de la Ciudad Autónoma de Buenos Aires (2011-2019)</h3>
+<h3>2. Módulo 1: Análisis Exhaustivo de la Trayectoria y</h3>
+<p>Labor Parlamentaria El accionar legislativo de Maximiliano Ferraro requiere ser abordado a través de una periodización estricta que diferencie su etapa de conformación de consensos a nivel local en la Ciudad Autónoma de Buenos Aires, de su actual rol como fiscalizador y articulador de mayorías en el Congreso de la Nación Argentina.</p>
+<h3>2.1. Gestión en la Legislatura de la Ciudad Autónoma de Buenos</h3>
+<p>Aires (2011-2019)</p>
 <p>El ingreso de Ferraro a la Legislatura porteña se produjo en los comicios de 2011, logrando posteriormente su reelección en 2015 a través de la alianza ECO (Energía Ciudadana Organizada), un conglomerado que luego mutaría hacia la marca Cambiemos en el distrito. 1 Durante este período de ocho años, ejerció la vicepresidencia del bloque oficialista Vamos Juntos y presidió durante cuatro años ininterrumpidos la estratégica Comisión de Educación, Ciencia y Tecnología. 3 Además, integró activamente las comisiones de Planeamiento Urbano, Cultura, Tránsito y Transporte, Derechos Humanos, Desarrollo Económico y Asuntos Constitucionales. 3 La labor legislativa porteña de Ferraro revela un perfil profundamente anclado en la gestión urbana, la protección del patrimonio cultural y la eliminación de barreras discriminatorias.</p>
 <p>Los proyectos de ley más impactantes de esta etapa, sancionados e impulsados bajo su autoría o coautoría, se detallan a continuación: Ampliación de Derechos Civiles: La Reforma de la Ley de Sangre Históricamente, el sistema de salud en la Argentina mantenía protocolos de donación de sangre que institucionalizaban la discriminación hacia la comunidad homosexual.</p>
 <p>Los formularios interrogaban a los hombres sobre si habían mantenido relaciones sexuales con otros hombres (o a mujeres si sus parejas masculinas lo habían hecho) en los últimos doce meses, excluyéndolos automáticamente bajo la concepción obsoleta de "grupos de riesgo".</p>
@@ -51,44 +52,44 @@ const PROPUESTAS_FERRARO = {
 <p>Ferraro fue designado Presidente de la Comisión Investigadora de la Criptomoneda \$LIBRA. 3 Este caso configuró una crisis de proporciones inéditas: el Presidente de la Nación, Javier Milei, promocionó públicamente a través de sus canales oficiales un token digital que, escasos minutos después, experimentó un colapso total de su valor, dejando a miles de ciudadanos en la bancarrota bajo el clásico esquema fraudulento conocido como Pump and Dump . 10 La conformación de la comisión fue obstaculizada durante cuatro meses. Al lograr constituirse, 13 de los 14 diputados pertenecientes al oficialismo (La Libertad Avanza y el PRO) abandonaron el recinto en un intento de vaciarla de legitimidad, negándose a designar vicepresidente.</p>
 <p>Ante este vacío, Ferraro fue elegido presidente con el apoyo transversal de Unión por la Patria, Encuentro Federal, el radicalismo y la izquierda, asumiendo la conducción de la pesquisa. 27 Bajo la estricta dirección de Ferraro, la comisión elaboró y presentó el 18 de noviembre de 2025 un Informe Final de más de 200 páginas. 3 El trabajo investigativo destapó una red de tráfico de influencias, reconstruyendo reuniones en la Casa Rosada y movimientos financieros.</p>
 <p>Los hallazgos, expuestos por Ferraro, fueron concluyentes:</p>
-<p>Tráfico de Información y Sobornos: Se verificó la existencia de un contrato de 5</p>
+<h3>1. Tráfico de Información y Sobornos: Se verificó la existencia de un contrato de 5</h3>
 <p>millones de dólares (pagadero en tres cuotas) entre el creador del proyecto, Hayden Davis, y el lobbista Mauricio Novelli.</p>
 <p>Ferraro denunció públicamente que esto evidenció el uso de "información privilegiada" mediante la cual "36 vivos se alzaron con un millón de dólares cada uno" aprovechándose de la confianza pública en el Jefe de Estado. 10 Asimismo, expuso declaraciones de los involucrados apuntando a supuestos sobornos dirigidos a la Secretaria General de la Presidencia, Karina Milei. 29</p>
-<p>Responsabilidad Inherente a la Magistratura: Ferraro rechazó el argumento oficialista</p>
+<h3>2. Responsabilidad Inherente a la Magistratura: Ferraro rechazó el argumento oficialista</h3>
 <p>de que el apoyo presidencial fue a título personal, dictaminando que la investidura presidencial se ejerce las 24 horas y que "mediante la promoción de \$LIBRA el Presidente comprometió la oficina" gubernamental.</p>
 <p>Afirmó tajantemente en los medios que "Milei y su círculo íntimo están hasta las bolas". 3 Consecuentemente, exigió la interpelación del jefe de gabinete y las explicaciones formales de figuras como Santiago Caputo y Luis Caputo. 8</p>
-<p>Auditoría Judicial y Acusación por Encubrimiento: En una medida de extrema dureza</p>
+<h3>3. Auditoría Judicial y Acusación por Encubrimiento: En una medida de extrema dureza</h3>
 <p>institucional, Ferraro denunció ante el Tribunal de Disciplina al Fiscal Federal Eduardo Taiano, encargado de la causa penal, acusándolo de haber "obstaculizado el desarrollo de la investigación", de haber "pisado la prueba durante cuatro meses" y de encontrarse "al borde del encubrimiento" por negarse a citar a declarar a los funcionarios implicados. 8 La Cruzada contra la Ludopatía Digital Infantil Paralelamente, Ferraro lideró la articulación legislativa para enfrentar la epidemia de apuestas online en la juventud argentina.</p>
 <p>Como impulsor principal, logró unificar más de 15 proyectos en un dictamen de mayoría para la "Ley de prevención de la ludopatía y regulación de juegos de azar y apuestas en línea". 3 Este proyecto obtuvo media sanción en Diputados en noviembre de 2024 con un amplio consenso (139 votos a favor). 31 La arquitectura legal redactada por Ferraro es punitiva contra el modelo de negocios de los casinos virtuales: prohíbe el uso de tarjetas de crédito y sistemas de prestaciones de ayuda social, limitando los depósitos al monto equivalente permitido en cajeros para tarjetas de débito.</p>
 <p>A su vez, prohíbe taxativamente la publicidad y auspicio de casas de apuestas en instituciones deportivas y, de manera crucial, veda la promoción por parte de influencers en redes sociales. 31 Durante este debate, Ferraro denunció un severo lobby corporativo tendiente a frenar la ley en el Senado y acusó a la administración de Javier Milei de actuar como un "gobierno que apuesta por la ludopatía" al intentar introducir un proyecto paralelo, mucho más laxo, diseñado para encubrir "los negocios del juego online". 25 Defensa del Presupuesto Universitario y Comportamiento en las "Súper Leyes" El posicionamiento de Ferraro frente al gobierno de La Libertad Avanza se calibra cuidadosamente para no caer en el obstruccionismo ciego, pero manteniendo líneas rojas innegociables.</p>
 <p>Durante la votación de la Ley de Bases y Puntos de Partida para la Libertad de los Argentinos , Ferraro votó favorablemente la sanción en general, asegurando la gobernabilidad solicitada por el Ejecutivo. 33 No obstante, durante el debate en el recinto y la votación en particular, se opuso fervientemente al cierre de organismos como el INTA, el INTI, el CONICET, así como a las facultades delegadas extraordinarias y a la privatización del Banco Nación, argumentando que no toleraría convertir al país en una "factoría". 34 En contraste, en mayo de 2026, ante la "Ley Hojarasca" promovida por Federico Sturzenegger (que derogaba 60 normativas antiguas), Ferraro optó por la abstención, evidenciando cautela ante desregulaciones masivas que pudieran contener flexibilizaciones ocultas. 36 Sin embargo, el punto de máxima fricción ideológica con el gobierno se produjo en torno a la Ley de Financiamiento Universitario .</p>
 <p>Ferraro asumió un liderazgo discursivo en defensa del sistema público, denunciando que la asfixia presupuestaria a las universidades nacionales y a la ciencia no respondía a imperativos de déficit fiscal, sino a un "ajuste fabricado y deliberado".</p>
 <p>En una alocución de profunda raíz republicana, acusó al Ejecutivo de poseer una política educativa basada en el "desprecio a la universidad pública", orientada a socavar la credibilidad institucional para que la sociedad deje de creer en la educación laica y el pensamiento crítico, sometiendo a la juventud al dogma de "las fuerzas del cielo" en lugar de empoderarla con "las fuerzas de la ciencia". 38 En esta misma línea, fustigó duramente a sus pares de la oposición dialoguista, como el radical Rodrigo De Loredo, acusándolos de incurrir en el "transfuguismo", la farsa y de comportarse como "republicanos intermitentes" al negociar fondos educativos en las sombras con la Casa Rosada. 39</p>
-<h3>Auditoría Mediática y Posicionamiento Discursivo</h3>
-<p>La inteligencia de fuentes abiertas aplicada a las apariciones en prensa y medios de radiodifusión de Maximiliano Ferraro (abarcando intervenciones en Radio Rivadavia, Aconcagua Radio, Infobae, TN, Página/12, entre otros) devela una planificación estratégica de su exposición. 8 Ferraro elude el histrionismo característico de los panelistas de la "antipolítica". Su posicionamiento mediático lo proyecta como un analista institucional, un fiscalizador moral del Estado y un férreo defensor del estado de derecho.</p>
+<h3>3. Módulo 2: Auditoría Mediática y Posicionamiento</h3>
+<p>Discursivo La inteligencia de fuentes abiertas aplicada a las apariciones en prensa y medios de radiodifusión de Maximiliano Ferraro (abarcando intervenciones en Radio Rivadavia, Aconcagua Radio, Infobae, TN, Página/12, entre otros) devela una planificación estratégica de su exposición. 8 Ferraro elude el histrionismo característico de los panelistas de la "antipolítica". Su posicionamiento mediático lo proyecta como un analista institucional, un fiscalizador moral del Estado y un férreo defensor del estado de derecho.</p>
 <h3>3.1. "Temas Bandera" y Posturas Públicas</h3>
 <p>Del barrido de sus entrevistas destacan cuatro ejes narrativos ineludibles que configuran sus "temas bandera":</p>
-<p>La Lucha contra la Corrupción y la Opacidad: Recogiendo el testigo histórico de la</p>
+<h3>1. La Lucha contra la Corrupción y la Opacidad: Recogiendo el testigo histórico de la</h3>
 <p>Coalición Cívica, Ferraro utiliza los medios masivos para decodificar tramas complejas de corrupción gubernamental y traducirlas a un lenguaje de impacto masivo.</p>
 <p>En el marco del Caso \$LIBRA, su narrativa en radios de alcance nacional no se limitó a recitar incisos legales.</p>
 <p>Empleó fórmulas de alto contraste al señalar: "Queda en evidencia [...] el manejo de información privilegiada donde muchas personas confiaron en el Presidente y 36 vivos se alzaron con un millón de dólares cada uno" . 10 Esta fusión de precisión técnica y jerga popular ("están hasta las bolas", "36 vivos") persigue el objetivo de indignar y mobilizar la opinión pública, exponiendo la vulnerabilidad moral de un gobierno que basó su campaña en la incorruptibilidad. 3</p>
-<p>Protección de la Juventud frente al Capitalismo Desregulado: Respecto al avance de</p>
+<h3>2. Protección de la Juventud frente al Capitalismo Desregulado: Respecto al avance de</h3>
 <p>la ludopatía, Ferraro instrumenta una estrategia de Name and Shame (nombrar y avergonzar).</p>
 <p>En lugar de criticar abstractamente el fenómeno, en sus notas (como en Aconcagua Radio ) apunta directamente contra figuras intocables del star system argentino, afirmando: "No aprendieron nada.</p>
 <p>Vemos otra vez a famosos prometiendo dinero fácil [...] En el caso de Wanda (Nara), ya había sido imputada [...] Pero volvieron a publicitar sorteos engañosos" . 25 Al exponer a Marcelo Tinelli y Wanda Nara, Ferraro logra penetrar la agenda de los medios de espectáculos, forzando el debate de su ley de ludopatía hacia audiencias no politizadas.</p>
-<p>Defensa de las Libertades Civiles y Colectivos Minoritarios: En un ecosistema</p>
+<h3>3. Defensa de las Libertades Civiles y Colectivos Minoritarios: En un ecosistema</h3>
 <p>político contemporáneo donde el oficialismo promueve un discurso fuertemente conservador, Ferraro actúa como un escudo reactivo frente a las agresiones institucionales al colectivo LGTBIQ+.</p>
 <p>Ante las polémicas declaraciones del Ministro de Justicia Mariano Cúneo Libarona (quien sugirió rechazar identidades sexuales diversas), Ferraro intervino mediáticamente de forma letal: "Al ministro nadie le cambió los papeles y tuvo un discurso brutal y de mucha crueldad.</p>
 <p>Sólo le faltó decir que muchos de nosotros éramos unos enfermos o volver a patologizarnos" . 42 Ferraro introdujo la teoría del "efecto cascada", advirtiendo a los medios que si desde la cúspide del poder se avala la discriminación, se habilita tácitamente a cualquier ciudadano a vulnerar a las minorías en la calle.</p>
-<p>Exposición de la Hipocresía Gubernamental: Al defender el financiamiento</p>
+<h3>4. Exposición de la Hipocresía Gubernamental: Al defender el financiamiento</h3>
 <p>universitario, su narrativa mediática se basa en desarmar los argumentos oficiales mediante la exposición de sus propias contradicciones.</p>
 <p>En una entrevista con el portal Infobae , ante el argumento del Ejecutivo de que las universidades se negaban a ser auditadas, Ferraro disparó: "El Ejecutivo busca extorsionar a las universidades... ¿Quiénes votaron en contra del artículo de auditorías cuando discutimos la Ley de Financiamiento Universitario?</p>
 <p>El Gobierno" . 41 Esta táctica de confrontar la narrativa presidencial con los registros de votación legislativa es su herramienta dialéctica más contundente.</p>
 <h3>3.2. Narrativa y Tono frente a los Medios</h3>
 <p>El tono de Ferraro se puede definir como documentado, severo y republicano . A diferencia del populismo lingüístico, sus intervenciones siempre apelan a un orden institucional superior (la Constitución Nacional, la división de poderes, el resguardo de la magistratura).</p>
 <p>Incluso cuando interpela directamente al Presidente de la Nación, lo hace exigiendo que comprenda la gravedad de su cargo: "Debe entender que ejerce la primera magistratura las 24 horas" . 29 Esta pauta discursiva busca transmitir una imagen de adultez política frente a lo que él proyecta como improvisación o inmadurez administrativa por parte del oficialismo.</p>
-<h3>Análisis de Redes Sociales (Social Listening) y Consonancia Distrital</h3>
-<p>El ecosistema digital de Maximiliano Ferraro (que comprende X/Twitter, Instagram y Facebook) no se utiliza con fines recreativos, de divulgación de "lifestyle", ni persigue las métricas superficiales del entretenimiento político.</p>
+<h3>4. Módulo 3: Análisis de Redes Sociales (Social</h3>
+<p>Listening) y Consonancia Distrital El ecosistema digital de Maximiliano Ferraro (que comprende X/Twitter, Instagram y Facebook) no se utiliza con fines recreativos, de divulgación de "lifestyle", ni persigue las métricas superficiales del entretenimiento político.</p>
 <p>Su huella digital es administrada con extrema rigurosidad profesional, funcionando como un anexo directo de su labor parlamentaria y un canal de confrontación institucional asincrónica.</p>
 <h3>4.1. Tono, Voz y Estrategia de Comunicación Digital</h3>
 <p>La estrategia de Ferraro presenta una segmentación clara según la red social: ● En la red X (anteriormente Twitter): Ferraro emplea esta plataforma como su principal ring de combate y canal de denuncias de urgencia.</p>
@@ -102,17 +103,17 @@ const PROPUESTAS_FERRARO = {
 <h3>4.2. Contenidos de Mayor Tracción y Éxito Digital</h3>
 <p>De acuerdo con el registro cualitativo de su actividad, el éxito de Ferraro en el ecosistema digital obedece a la provisión de evidencias empíricas.</p>
 <p>Los posteos que logran perforar sus círculos de pertenencia y alcanzar resonancia nacional responden a:</p>
-<p>La Fiscalización del Poder (El caso \$LIBRA): Su estrategia alcanza picos máximos de</p>
+<h3>1. La Fiscalización del Poder (El caso \$LIBRA): Su estrategia alcanza picos máximos de</h3>
 <p>interacción cuando publica evidencia documental.</p>
 <p>Por ejemplo, la filtración sobre el accionar del fiscal Taiano generó gran tracción opositora: "YA HAY PRUEBAS SUFICIENTES.</p>
 <p>TAIANO TIENE QUE DEJAR DE DAR VUELTAS...</p>
 <p>La DATIP del Ministerio Público confirmó que Mauricio Novelli tuvo, editó y eliminó de su celular el borrador del acuerdo por 5 millones de dólares" .</p>
 <p>Asimismo, generó un fuerte impacto y amplificación al cruzar en la red X a la Ministra de Capital Humano, Sandra Pettovello, publicando capturas de pantalla de presuntos chats para exigirle explicaciones sobre reuniones con el lobbista Novelli.</p>
-<p>Batallas de Sentido Común (Ludopatía y Farándula): Sus publicaciones alertando que</p>
+<h3>2. Batallas de Sentido Común (Ludopatía y Farándula): Sus publicaciones alertando que</h3>
 <p>"SE ESTÁN TIMBEANDO LA SALUD Y LA VIDA DE MILES DE CHICOS" funcionan como un catalizador de la frustración ciudadana.</p>
 <p>En estos posteos ataca tanto a influencers como al gobierno por impulsar proyectos paralelos que, según Ferraro, no buscan la salud mental sino "proteger el negocio del juego en línea" .</p>
 <p>Estos tuits trascienden la grieta y son compartidos transversalmente por padres y docentes. 44</p>
-<p>Defensa Identitaria y de las Libertades (Prensa y Colectivo LGTBIQ+): Es</p>
+<h3>3. Defensa Identitaria y de las Libertades (Prensa y Colectivo LGTBIQ+): Es</h3>
 <p>sumamente valorado por su rápida reacción ante discursos de odio.</p>
 <p>Cuando el canal de streaming oficialista "Carajo" emitió comentarios homofóbicos vinculando la homosexualidad con la pedofilia para atacar al diputado Esteban Paulón, Ferraro viralizó su repudio: "NO ES GRACIOSO.</p>
 <p>ES PELIGROSO.</p>
@@ -149,23 +150,23 @@ const PROPUESTAS_FERRARO = {
 <li>Lo que la audiencia valora y elogia: 1. Coraje Institucional y Transparencia: Su imagen de "fiscal de la república" se</li>
 </ul>
 <p>consolida al exponer documentos probatorios, como el contrato de 5 millones de dólares de \$LIBRA, y al no temblarle el pulso para exigir la indagatoria del propio presidente o denunciar encubrimientos judiciales.</p>
-<p>Defensa Intransigente de las Libertades: Los usuarios republicanos y de</p>
+<h3>2. Defensa Intransigente de las Libertades: Los usuarios republicanos y de</h3>
 <p>centro-izquierda elogian su rol como escudo protector frente a los ataques de odio promovidos desde usinas gubernamentales o la censura a la prensa acreditada.</p>
-<p>Liderazgo Cívico Transversal: Familias y educadores le reconocen genuinamente su</p>
+<h3>3. Liderazgo Cívico Transversal: Familias y educadores le reconocen genuinamente su</h3>
 <p>cruzada apartidaria contra el flagelo de la ludopatía y la exposición de las corporaciones del juego.</p>
 <ul class="db-list">
 <li>Lo que la audiencia detesta o critica: 1. Asociación con la "Casta": El ecosistema libertario comenta masivamente sus posteos</li>
 </ul>
 <p>acusándolo de entorpecer los cambios económicos y le niega autoridad moral, apelando a sus años ininterrumpidos ocupando bancas legislativas.</p>
-<p>Blanco de Difamaciones Sistemáticas: Su alto perfil opositor lo expone a incesantes</p>
+<h3>2. Blanco de Difamaciones Sistemáticas: Su alto perfil opositor lo expone a incesantes</h3>
 <p>campañas de flaming y daño reputacional.</p>
 <p>Las milicias digitales intentan constantemente instalar tópicos falsos (como las fake news sobre pedofilia) para anular su credibilidad investigativa.</p>
-<p>Intransigencia en Alianzas (Crítica "Amiga"): Sectores de la coalición Juntos por el</p>
+<h3>3. Intransigencia en Alianzas (Crítica "Amiga"): Sectores de la coalición Juntos por el</h3>
 <p>Cambio a veces le reclaman en comentarios su falta de pragmatismo coyuntural, acusándolo de extremar posturas morales que terminan dinamitando puentes útiles con el PRO o el radicalismo, como quedó cristalizado en su pelea pública con Giudici.</p>
-<h3>Análisis Comparado Internacional de Perfiles Políticos Similares</h3>
-<p>Para enriquecer la proyección de Maximiliano Ferraro en el mercado político metropolitano de la CABA, es imprescindible examinar cómo perfiles con su misma matriz axiológica —institucionalismo de centro o centroizquierda, laicismo, progresismo en derechos civiles y cruzadas ético-sociales— han estructurado campaigns de alta penetración urbana en otros lugares del mundo.</p>
-<h3>5.1. Claudia López (Bogotá, Colombia): El Modelo de Movilización de Base y Anti-corrupción</h3>
-<p>Claudia López representa un caso paradigmático de transición desde la investigación académica de estructuras corruptas (la "parapolítica") hasta el máximo cargo de gestión ejecutiva de Bogotá.</p>
+<h3>5. Módulo 4: Análisis Comparado Internacional de</h3>
+<p>Perfiles Políticos Similares Para enriquecer la proyección de Maximiliano Ferraro en el mercado político metropolitano de la CABA, es imprescindible examinar cómo perfiles con su misma matriz axiológica —institucionalismo de centro o centroizquierda, laicismo, progresismo en derechos civiles y cruzadas ético-sociales— han estructurado campañas de alta penetración urbana en otros lugares del mundo.</p>
+<h3>5.1. Claudia López (Bogotá, Colombia): El Modelo de Movilización de</h3>
+<p>Base y Anti-corrupción Claudia López representa un caso paradigmático de transición desde la investigación académica de estructuras corruptas (la "parapolítica") hasta el máximo cargo de gestión ejecutiva de Bogotá.</p>
 <p>Enfrentándose a estructuras de partidos tradicionales y operando desde un sello verde independiente, López basó su estrategia en conectar la indignación ciudadana con propuestas de reformas éticas concretas.</p>
 <ul class="db-list">
 <li>La Estrategia Clave: Su catapulta nacional fue el liderazgo de la "Consulta Popular</li>
@@ -179,8 +180,8 @@ const PROPUESTAS_FERRARO = {
 <p>material.</p>
 <p>Recorría Bogotá en bicicleta con su publicidad al hombro, usaba megáfonos en el transporte público y distribuía el periódico de campaña "Claudia, alcaldesa incorruptible" .</p>
 <p>Rompió la hostilidad de los medios tradicionales basando su comunicación en la verdad pedagógica y su historia de vida hecha a pulso.</p>
-<h3>5.2. Mónica García (Madrid, España): La Reconceptualización de la Salud y los Determinantes Sociales</h3>
-<p>Mónica García, anestesióloga de profesión e integrante de "Más Madrid", se posicionó como la principal alternativa de centroizquierda en la Comunidad de Madrid enfrentando a la centroderecha de Isabel Díaz Ayuso.</p>
+<h3>5.2. Mónica García (Madrid, España): La Reconceptualización de la</h3>
+<p>Salud y los Determinantes Sociales Mónica García, anestesióloga de profesión e integrante de "Más Madrid", se posicionó como la principal alternativa de centroizquierda en la Comunidad de Madrid enfrentando a la centroderecha de Isabel Díaz Ayuso.</p>
 <p>García construyó su perfil desde el "sentido común cotidiano" de los servicios públicos, alejándose de abstracciones teóricas.</p>
 <ul class="db-list">
 <li>La Estrategia Clave: En su campaña, García redefinió el concepto de bienestar</li>
@@ -193,8 +194,8 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>en Madrid la ofensiva contra la proliferación descontrolada de las casas de apuestas.</p>
 <p>Propuso la prohibición absoluta de su publicidad y el incremento de la asistencia psicológica contra la ludopatía digital, convirtiendo la salud de los adolescentes en una bandera innegociable de su espacio político.</p>
-<h3>5.3. Raphaël Glucksmann (Francia): El Izquierdismo Posibilista, Adulto y Federalista</h3>
-<p>Raphaël Glucksmann, ensayista y eurodiputado, revivió electoralmente al moribundo Partido Socialista francés de cara a las elecciones europeas de 2024, alcanzando casi el 14% de los sufragios desde una plataforma de centroizquierda moderada ("Place Publique").</p>
+<h3>5.3. Raphaël Glucksmann (Francia): El Izquierdismo Posibilista,</h3>
+<p>Adulto y Federalista Raphaël Glucksmann, ensayista y eurodiputado, revivió electoralmente al moribundo Partido Socialista francés de cara a las elecciones europeas de 2024, alcanzando casi el 14% de los sufragios desde una plataforma de centroizquierda moderada ("Place Publique").</p>
 <ul class="db-list">
 <li>La Estrategia Clave: Glucksmann diseñó un discurso de "izquierda posibilista y</li>
 </ul>
@@ -205,16 +206,16 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>de ser un "idealista sin experiencia de gestión", su campaña instaló la consigna de que, frente a las crisis de seguridad y desinformación, la centroizquierda debía "comportarse como adultos" .</p>
 <p>Glucksmann canalizó el voto del electorado urbano, con alto nivel educativo y preocupado por la degradación institucional, rompiendo la parálisis de la centroizquierda convencional.</p>
-<h3>5.4. Pete Buttigieg (EE. UU.): Renovación Generacional y Gestión de la Curiosidad</h3>
-<p>"Mayor Pete" pasó de ser un alcalde desconocido en un pequeño municipio conservador de Indiana (South Bend) a convertirse en una estrella nacional del Partido Demócrata durante las primarias de 2020.</p>
+<h3>5.4. Pete Buttigieg (EE. UU.): Renovación Generacional y Gestión de</h3>
+<p>la Curiosidad "Mayor Pete" pasó de ser un alcalde desconocido en un pequeño municipio conservador de Indiana (South Bend) a convertirse en una estrella nacional del Partido Demócrata durante las primarias de 2020.</p>
 <ul class="db-list">
 <li>La Estrategia Clave: Buttigieg estructuró su campaña bajo la consigna "Win the Era"</li>
 </ul>
 <p>(Ganar la Era), apelando a la necesidad de nuevos liderazgos de cara al futuro frente a las viejas castas.</p>
 <p>Su jefa de comunicación, Lis Smith, implementó una estrategia agresiva de exposición masiva e interactiva .</p>
 <p>En lugar de costosas publicidades tradicionales, la campaña se basó en la realización de Town Halls (asambleas ciudadanas) televisados y abiertos donde Buttigieg respondía de manera brillante, elocuente y empática cualquier pregunta del público, convirtiendo la curiosidad inicial en un fuerte compromiso militante.</p>
-<h3>Propuestas de Campñas de Guerrilla Comunicacional y Fidelización en la CABA</h3>
-<p>Inspirándose en estos exitosos modelos internacionales, y adaptándolos a la fisionomía del electorado porteño, se plantean cuatro campañas estratégicas para potenciar el conocimiento público de Maximiliano Ferraro y fidelizar al electorado que ya siente curiosidad por su trabajo en la CABA.</p>
+<h3>6. Módulo 5: Propuestas de Campañas de</h3>
+<p>Posicionamiento y Fidelización en la CABA Inspirándose en estos exitosos modelos internacionales, y adaptándolos a la fisionomía del electorado porteño, se plantean cuatro campañas estratégicas para potenciar el conocimiento público de Maximiliano Ferraro y fidelizar al electorado que ya siente curiosidad por su trabajo en la CABA.</p>
 <p>MODELOS INTERNACIONALES DE CAMPAÑA PARA CABA ┌──────────────────────────────────────────────────────── ────────────────┐ │ 1.</p>
 <p>Claudia López (Bici y Calle) ➜ Campaña "CC-ARI en Bici / La Verdad"│ │ 2.</p>
 <p>Mónica García (Salud Social) ➜ Campaña "Apostar No Es Un Juego" │ │ 3.</p>
@@ -234,7 +235,7 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>quincenales, sin discursos tradicionales de tarima ni vallas de separación, en salas alternativas y plazas.</p>
 <p>Maxi asume el centro del espacio con micrófono en mano y responde de manera directa, sin filtros de asesores, las preguntas de los vecinos sobre el Caso \$LIBRA 3 , la educación pública 38 o el control presupuestario. 3</p>
-<p>Transmisiones de "Curaduría Institucional": Digitalizar estos encuentros a través de</p>
+<h3>2. Transmisiones de "Curaduría Institucional": Digitalizar estos encuentros a través de</h3>
 <p>transmisiones en vivo (YouTube/Twitch) tituladas "Maxi Responde" , editando los mejores fragmentos (clips de alto impacto de 60 segundos) enfocados en deconstruir datos duros de la corrupción gubernamental.</p>
 <p>Esto capitaliza la curiosidad del votante digital y la canaliza hacia compromisos presenciales.</p>
 <p>Campaña 2: "Apostar No Es Un Juego: Salud Mental y Espacio Público" (Inspirado en Mónica García)</p>
@@ -250,7 +251,7 @@ const PROPUESTAS_FERRARO = {
 <li>Acciones de Campaña: 1. Foros de "Salud y Cuidado": Maxi lidera talleres barriales titulados "¿Qué nos pasa</li>
 </ul>
 <p>con las pantallas?" , donde junto a psicólogos especialistas analiza los determinantes de la ludopatía (ansiedad adolescente, falta de socialización, la falsa promesa del dinero fácil de famosos e influencers).</p>
-<p>La Receta Cultural de CABA: En contraposición al lobby del juego</p>
+<h3>2. La Receta Cultural de CABA: En contraposición al lobby del juego</h3>
 <p>25 , proponer la creación de un programa municipal de "Recetas Culturales". 4 La iniciativa consistiría en otorgar pases libres y descuentos para actividades de ocio saludable, deporte y cultura alternativa para jóvenes en barrios críticos, financiados mediante tributos a las plataformas de juego online registradas, contraponiendo la "timba" con el fomento del tejido social S_S13, S_S38.</p>
 <p>Campaña 3: "La CC-ARI en Bici: En la Calle con la Verdad" (Inspirado en Claudia López)</p>
 <ul class="db-list">
@@ -269,7 +270,7 @@ const PROPUESTAS_FERRARO = {
 <p>Maxi dialoga con vecinos mientras distribuye una publicación física de bolsillo titulada "La verdad:</p>
 <p>Informe \$LIBRA"</p>
 <p>S_S52.</p>
-<p>Desmantelamiento de Fake News Face-to-Face: Al entregar material impreso de alta</p>
+<h3>2. Desmantelamiento de Fake News Face-to-Face: Al entregar material impreso de alta</h3>
 <p>calidad (infografías explicativas del Caso \$LIBRA S_R22, S_S52, el desvío de 5 millones de dólares 10 y la inacción del fiscal Taiano 10 ), Maxi neutraliza las difamaciones del ecosistema digital, instalando un contacto cara a cara con el ciudadano común que genera respeto instantáneo.</p>
 <p>Campaña 4: "La Plaza de las Ideas" (Inspirado en Raphaël Glucksmann)</p>
 <ul class="db-list">
@@ -285,10 +286,10 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>Almagro 4 y anfiteatros de plazas (como Parque Rivadavia o Parque Centenario) para realizar asambleas abiertas de debate tituladas "Comportarse como adultos" .</p>
 <p>En estos debates se convoca a intelectuales, decanos de la UBA 41 y científicos a discutir políticas de estado: el Acuerdo de Escazú 3 , la ciencia soberana y el rol igualador de la universidad pública. 38</p>
-<p>Manifiesto del Progresismo Posibilista: Publicar un manifiesto digital y físico que fije</p>
+<h3>2. Manifiesto del Progresismo Posibilista: Publicar un manifiesto digital y físico que fije</h3>
 <p>posición conceptual en la que se defienda que un Estado eficiente 45 , un sistema de salud laico y universidades de calidad 38 , son los verdaderos garantes de una sociedad empoderada frente al desierto ético del anarcocapitalismo S_R32, S_S8.</p>
-<h3>Conclusiones y Perfil Político Estratégico</h3>
-<p>El escaneo de inteligencia integral sobre Maximiliano Ferraro arroja el perfil de un dirigente de extrema solidez técnica, elevada resiliencia institucional y aguda visión sistémica.</p>
+<h3>7. Módulo 6: Conclusiones y Perfil Político Estratégico El escaneo de inteligencia integral sobre Maximiliano Ferraro arroja el perfil de un dirigente de</h3>
+<p>extrema solidez técnica, elevada resiliencia institucional y aguda visión sistémica.</p>
 <p>Su capacidad para transitar de manera exitosa desde la política territorial de base (fundando un espacio cultural en su juventud) hasta ocupar la presidencia nacional de un partido vertebrado por dogmas morales severos como la Coalición Cívica ARI, demuestra un nivel de pericia organizativa y lealtad ideológica que excede holgadamente su nivel de exposición mediática pura. 2 En el plano legislativo y de gestión de crisis , Ferraro ha demostrado ser un operador imprescindible para las coaliciones centristas.</p>
 <p>La administración de la severa crisis de la UniCABA en la Ciudad de Buenos Aires, y su reciente desempeño presidiendo la Comisión Investigadora del escándalo de corrupción por la criptomoneda \$LIBRA en el ámbito federal, testifican que, ante la hostilidad de oficialismos beligerantes, los sectores republicanos y dialoguistas recurren a él para instrumentar investigaciones que requieren rigor probatorio, conocimiento reglamentario profundo y una integridad inexpugnable. 20 El hecho de que su mandato se extienda hasta finales de 2027 le provee un horizonte de independencia estratégica vital; Ferraro no actúa bajo la presión extorsiva del cortoplacismo electoral inmediato. A nivel ideológico y filosófico , Maximiliano Ferraro encarna el arquetipo del "centro republicano y progresista".</p>
 <p>En el volátil contexto de la Argentina contemporánea de 2026, su figura actúa como un dique de contención frente a las derivas extremas.</p>
@@ -296,7 +297,7 @@ const PROPUESTAS_FERRARO = {
 <p>Por el otro, confronta de manera inclaudicable con el modelo anarcocapitalista y autocrático de La Libertad Avanza.</p>
 <p>Su trayectoria promoviendo modificaciones a la Ley de Sangre para erradicar la discriminación de base biológica hacia el colectivo LGTBIQ+, y su enfática defensa presupuestaria en favor de las universidades públicas y el CONICET, lo ubican inequívocamente en un plano que reivindica el rol de un Estado moderno, garantista de libertades individuales, laico y promotor de la movilidad social ascendente. 4 En retrospectiva, su incorporación como pieza clave dentro del naciente interbloque "Unidos" ratifica su comprensión de la aritmética del poder legislativo. 5 Maximiliano Ferraro ha trascendido su histórico rol de "escudero" de las directivas de Elisa Carrió, para posicionarse por derecho propio como uno de los arquitectos neurálgicos de una potencial coalición de centro.</p>
 <p>De cara a la próxima configuración del mapa político nacional, su perfil sugiere la aspiración de consolidar una mayoría moderada capaz de ofrecer alternancia republicana, sostenida en la transparencia administrativa, la inviolabilidad de las instituciones de la ciencia y el resguardo del tejido social frente a los excesos de la desregulación irrestricta.</p>
-<p>Cuadro Analítico: Fortalezas y</p>
+<h3>8. Módulo 7: Cuadro Analítico: Fortalezas y</h3>
 <p>Debilidades Dimensión Fortalezas (Capital Político y Estratégico) Debilidades (Vulnerabilidades y Riesgos) Trayectoria y Liderazgo Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal. Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario. Perfil Institucional y Ético Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente. Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con diputados del PRO). Gestión, Formulación y Consensos Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el Prevención de Ludopatía). histrionismo. Ecosistema y Despliegue Digital Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas. Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</p>
 
 
@@ -534,16 +535,16 @@ const PROPUESTAS_FERRARO = {
 <p>Su posición como un político abiertamente gay que defiende fervientemente los derechos de la comunidad LGBTQ+, al mismo tiempo que sostiene una postura institucionalista dentro de la alianza Juntos por el Cambio, lo ubica en un cuadrante político particular. 4 Su rechazo explícito a la demagogia populista 5 y su firme condena a discursos estigmatizantes provenientes de la extrema derecha demuestran una vocación de centro reformista que busca el equilibrio entre la libertad individual, la economía de mercado y la cohesión social. 4 Para diseñar una campaña electoral austera, creativa y de alto impacto para un perfil de estas características en una jurisdicción como la Ciudad de Buenos Aires, resulta imperativo analizar de manera exhaustiva los casos de éxito a nivel global.</p>
 <p>El estudio detallado de políticos análogos y plataformas ciudadanas que lograron romper el cerco mediático tradicional con recursos financieros sumamente limitados proporciona un mapa de ruta táctico invaluable.</p>
 <p>La atención de este informe se centra no solo en las victorias electorales, sino en la arquitectura subyacente de sus campañas, la gestión de la comunicación de crisis, la innovación en el contacto directo con el ciudadano y la capacidad de transformar debilidades logísticas en fortalezas narrativas.</p>
-<h3>2. El Fenómeno de Ciudadanos y la Revolución del Marketing Político en España</h3>
-<p>El surgimiento y consolidación inicial del partido español Ciudadanos (Cs) bajo el liderazgo de Albert Rivera constituye uno de los casos de estudio más rigurosos y fascinantes de la política europea moderna en términos de campañas disruptivas, de bajo costo y alto retorno de inversión mediática.</p>
+<h3>2. El Fenómeno de Ciudadanos y la Revolución del</h3>
+<p>Marketing Político en España El surgimiento y consolidación inicial del partido español Ciudadanos (Cs) bajo el liderazgo de Albert Rivera constituye uno de los casos de estudio más rigurosos y fascinantes de la política europea moderna en términos de campañas disruptivas, de bajo costo y alto retorno de inversión mediática.</p>
 <p>La trayectoria de esta formación política ofrece lecciones directas sobre cómo construir una plataforma de centro-liberalismo capaz de disputar la hegemonía a los partidos tradicionales.</p>
 <h3>2.1. Orígenes Orgánicos y la Plataforma Cívica</h3>
 <p>A diferencia de las maquinarias partidarias tradicionales, Ciudadanos no nació en los despachos de consultores políticos, sino como una respuesta orgánica gestada desde la sociedad civil.</p>
 <p>Su génesis formal se encuentra en la "Associació Ciutadans de Catalunya", una plataforma cívica impulsada el 7 de junio de 2005 por un grupo interdisciplinario de reconocidos intelectuales, profesores universitarios y profesionales, tales como Francesc de Carreras, Albert Boadella, Arcadi Espada, Félix de Azúa y Teresa Giménez Barbat. 6 El objetivo fundacional de esta agrupación no era inicialmente electoral, sino que buscaba articular un rechazo transversal al nacionalismo imperante en Cataluña y a la pasividad cómplice de los partidos tradicionales (fundamentalmente el PSC y el PP), los cuales, a juicio de los fundadores, no representaban a una vasta porción de ciudadanos constitucionalistas que se sentían asfixiados por la imposición identitaria en todas las esferas de la sociedad. 6 Este origen intelectual, cívico y apartidista dotó al movimiento de una pátina de legitimidad, rigor académico y frescura inigualable.</p>
 <p>La transición de plataforma discursiva a partido político oficial culminó en el año 2006.</p>
 <p>La elección de Albert Rivera como presidente fue, en apariencia, producto del azar organizativo, ya que formaba parte de listas internas ordenadas alfabéticamente. 7 Sin embargo, rápidamente se demostró que Rivera, un joven abogado de 27 años con formación internacional en Finlandia y Estados Unidos, campeón de natación y brillante orador, poseía los atributos comunicacionales exactos que el momento histórico demandaba. 7</p>
-<h3>2.2. El Cartel Desnudo: La Estrategia del "Shock" Semántico a Costo Cero</h3>
-<p>El hito fundamental de la primera campaña de Ciudadanos en las elecciones autonómicas catalanas de noviembre de 2006 fue su aproximación a la cartelería publicitaria.</p>
+<h3>2.2. El Cartel Desnudo: La Estrategia del "Shock" Semántico a Costo</h3>
+<p>Cero El hito fundamental de la primera campaña de Ciudadanos en las elecciones autonómicas catalanas de noviembre de 2006 fue su aproximación a la cartelería publicitaria.</p>
 <p>Rivera apareció completamente desnudo bajo el lema: "Ha nacido tu partido.</p>
 <p>Sólo nos importan las personas.</p>
 <p>No nos importa dónde naciste.</p>
@@ -563,8 +564,8 @@ const PROPUESTAS_FERRARO = {
 <h3>2.5. Apropiación Cultural y Gamificación: El Simbolismo de Naranjito</h3>
 <p>Para contrarrestar la rigidez institucional característica de las formaciones políticas de centro, Ciudadanos apeló al humor y a la nostalgia pop a través de la adopción de su color corporativo (el naranja) y la subsecuente asociación cultural con "Naranjito", la icónica y entrañable mascota de la Copa Mundial de Fútbol de España 1982. 18 Este tipo de apropiación cultural genera una comunicación simpática, descontracturada y de alta viralidad orgánica.</p>
 <p>Permite a los seguidores del partido generar sus propios memes y contenidos en redes sociales sin depender de la usina de diseño del partido, reduciendo significativamente la fricción tradicional entre el votante joven y el discurso político árido.</p>
-<h3>3. Análisis Comparado: 15 Perfiles Políticos Análogos a Nivel Global</h3>
-<p>Para expandir la base de investigación y extraer tácticas específicas adaptables a la realidad de la Ciudad de Buenos Aires y a la figura de Maximiliano Ferraro, se analiza a continuación una selección curada de 15 figuras políticas internacionales de América del Norte, América Latina y Europa.</p>
+<h3>3. Análisis Comparado: 15 Perfiles Políticos Análogos</h3>
+<p>a Nivel Global Para expandir la base de investigación y extraer tácticas específicas adaptables a la realidad de la Ciudad de Buenos Aires y a la figura de Maximiliano Ferraro, se analiza a continuación una selección curada de 15 figuras políticas internacionales de América del Norte, América Latina y Europa.</p>
 <p>Todos estos perfiles comparten rasgos fundamentales con Ferraro: un enfoque urbano, un fuerte componente de defensa de los derechos civiles o representación de minorías, agendas progresistas en lo social, rigor institucional y estrategias de campaña profundamente innovadoras, austeras y orientadas a la fiscalización del Estado.</p>
 <h3>3.1. Norteamérica: Canadá y Estados Unidos</h3>
 
@@ -943,114 +944,14 @@ const PROPUESTAS_FERRARO = {
 <p>Sala transformó a Milán en la vanguardia de la recuperación del espacio público europeo, fomentando agresivamente las ciclovías y la plantación masiva de árboles.</p>
 <p>Su táctica electoral de bajo costo ha consistido en las "intervenciones urbanas tácticas": pintar calles, ensanchar aceras con maceteros baratos y ganar espacio peatonal a expensas de los automóviles.</p>
 <p>Estas obras, de costo insignificante para un presupuesto municipal, generan debates acalorados pero producen resultados visuales y mejoras de calidad de vida tangibles en cuestión de días, convirtiéndose en publicidad en sí mismas y demostrando capacidad ejecutiva inmediata.</p>
-<h3>4. Matriz Táctica Transnacional de Campañas de Bajo</h3>
-<p>Costo La exhaustiva recopilación y análisis de estas 15 trayectorias dispares revela, sin embargo, patrones operativos y estratégicos consistentes.</p>
-<p>Las tácticas empleadas pueden abstraerse y estructurarse en una matriz metodológica para el diseño de campañas modernas y austeras, independientemente de la latitud.</p>
-<p>El uso de esta matriz permite sistematizar la creatividad, transformando acciones aparentemente aleatorias en un manual de operaciones de bajo costo financiero pero altísimo costo intelectual y emocional para los oponentes.</p>
-<p>Táctica Estratégica Referentes Globales Nivel de Inversión Financiera Impacto Cualitativo Descripción Conceptual y Mecanismo de Acción Shock Visual Minimalista y Ruptura de Expectativas Albert Rivera (España) Cercano a Cero Atención Mediática Masiva Utilización de imágenes y mensajes extremadamente disruptivos (el desnudo, la ausencia de logos) que subvierten drásticamente las reglas del marketing tradicional. Obliga a los medios de comunicación hegemónicos a otorgar cobertura orgánica (ganada) debido a la controversia, ahorrando millones en pauta publicitaria. 8 Despliegue Asimétrico "Go Everywhere" Pete Buttigieg (EE.UU.), Jake Auchincloss (EE.UU.) Bajo Omnipresencia y Control Narrativo Renunciar a la protección de los "medios amigos". Otorgar entrevistas a todos los medios posibles, incluyendo foros antagónicos y nichos digitales poco explorados. Genera omnipresencia territorial basándose en el capital de tiempo del candidato y su destreza retórica para desactivar narrativas hostiles. 27 Gamificación Digital y Robert Garcia (EE.UU.) Medio-Bajo (Desarrollo Alta Interacción y Desarrollo e implementació Pedagogía de la Gestión Digital Básico) Participación Joven n de herramientas digitales simples (apps de código abierto, videojuegos retro de 8-bits, transmisiones en vivo interactivas) para explicar políticas públicas complejas, fiscalizar servicios o transparentar la gestión, atrayendo ineludiblemente al votante joven y tecnológico. 31 La Política del Respeto Intelectual (Oraciones Completas) Naheed Nenshi (Canadá) Cero Alta Credibilidad y Retención de Base Descarte absoluto de los eslóganes vacíos y las frases cortas pre-diseñadas por consultores. Publicación constante de ensayos detallados y planes de política pública técnicos. Atrae a los votantes urbanos educados y cínicos, elevando el nivel del debate público y obligando a los rivales a cometer errores técnicos si intentan refutar sin preparación. 22 Micro-Localismo Basado en la Evidencia y la Urgencia Layla Moran (R.U.), Vlado Mirosevic (Chile) Bajo (Costos de Investigación y Litigio) Lealtad Territorial Férrea Identificación, adopción clínica y defensa agresiva de causas vecinales muy específicas y postergadas (como metales pesados en Arica o contaminación de ríos en Oxford). El candidato se transforma en el gestor y abogado del barrio ante la negligencia macro-estatal. 43 Presencia Cívica Descentralizada y Begoña Villacís (España), Albert Rivera (España) Bajo (Mobiliario Itinerante) Extrema Proximidad y Percepción de Laboriosidad Eliminación de los costosos comités partidarios.</p>
-<p>Desburocratización Instalación metódica de pequeñas oficinas móviles temporales (carpas, sillas, stands) en plazas de alto tránsito peatonal para escuchar reclamos directamente, sin la barrera burocrática del edificio gubernamental. 15 Fiscalización Transparente como Motor Electoral Claudia López (Colombia), Naheed Nenshi (Canadá) Medio (Logística de Recolección de Firmas/Datos) Movilización Masiva y Posicionamiento Moral Impulso de consultas populares, auditorías públicas o investigaciones anticorrupción (Ej. Caso Enmax en Calgary, Consulta Anticorrupción en Colombia). Permite apropiarse de la agenda de integridad moral del Estado, desplazando a oponentes asociados a prácticas oscuras. 23</p>
-<h3>5. Transposición Estratégica: Ideas Creativas y Austeras para Maximiliano Ferraro en la Ciudad de Buenos Aires</h3>
-<p>El electorado de la Ciudad de Buenos Aires se caracteriza por variables demográficas excepcionales en el contexto sudamericano: posee un altísimo nivel educativo promedio, una penetración total de las comunicaciones y medios digitales, un histórico y apasionado interés por la cultura cívica y los debates institucionales, y una tendencia estructural a premiar la capacidad de gestión pragmática combinada con la férrea defensa de los marcos republicanos. Maximiliano Ferraro, respaldado por su historial legislativo impecable, su liderazgo en la Coalición Cívica ARI, su valiente perfil de protección de los derechos de la diversidad (LGBTQ+) en la era del resurgimiento de la derecha reaccionaria, y su innegable matriz anticorrupción 4 , posee los fundamentos doctrinarios y logísticos necesarios para capitalizar las estrategias internacionales previamente descritas. Para ejecutar una campaña electoral austera, profundamente original, creativa y de alto impacto en los 48 barrios de CABA, se desarrollan a continuación las siguientes iniciativas estratégicas, directamente transpoladas de los casos de éxito global pero adaptadas a la idiosincrasia porteña y al perfil de Ferraro:</p>
-<h3>5.1. "La Transparencia Radical": Una Campaña a Corazón Abierto</h3>
-<p>Inspirado conceptualmente en el espíritu disruptivo del "cartel desnudo" de Albert Rivera 7 , pero readaptado a un enfoque institucional y republicano acorde a la identidad de Ferraro, la campaña porteña no necesita exhibir el cuerpo físico del candidato, sino desnudar las vísceras mismas de la política y el financiamiento.</p>
-<p>Se propone la implementación de una táctica de Transparencia Radical .</p>
-<ul class="db-list">
-<li>Mecanismo de Acción: Ferraro, mediante una plataforma web de código abierto y</li>
-</ul>
-<p>diseño ultra-minimalista, publicaría en tiempo real y diariamente absolutamente todos los gastos de su campaña.</p>
-<p>Desde el café consumido en reuniones hasta la factura de la impresión de volantes, detallando con quién se reúne cada día, la agenda tratada y qué intereses sectoriales se debatieron.</p>
-<p>En la vía pública, la campaña no utilizaría costosos rostros editados con Photoshop.</p>
-<p>En su lugar, el único elemento gráfico sería un cartel con fondo blanco y tipografía negra que muestre un Código QR gigantesco con el lema: "No tenemos fondos millonarios para tapar esta ciudad de carteles, pero no tenemos absolutamente nada que esconder de vos" .</p>
-<p>Al escanear el QR, el ciudadano ingresa directamente a un panel interactivo de datos abiertos financieros y, ocasionalmente, a transmisiones en vivo (Twitch/YouTube) de las reuniones cerradas del equipo de estrategia de Ferraro.</p>
-<p>Esta acción, de costo operativo irrisorio, generaría un shock sistémico, atrayendo la cobertura orgánica de todos los canales de noticias porteños y polarizando moralmente contra los candidatos de grandes aparatos, cuya financiación es invariablemente opaca.</p>
-<h3>5.2. El Modelo "Go Everywhere" en el Ecosistema del Streaming</h3>
-<p>Porteño Adoptando con rigor la audaz táctica diseñada por Lis Smith para Pete Buttigieg y replicada por Jake Auchincloss 27 , Ferraro debe ejecutar una estrategia mediática profundamente asimétrica. La Ciudad de Buenos Aires se ha convertido en el epicentro indiscutido de un masivo y floreciente ecosistema de canales de streaming en vivo (tales como Olga, Luzu TV, Blender, Neura Media, Gelatina, entre otros), los cuales han desplazado a la televisión tradicional en el consumo informativo de las franjas demográficas sub-35.</p>
-<ul class="db-list">
-<li>Mecanismo de Acción: En lugar de buscar primariamente los minutos tarifados o los</li>
-</ul>
-<p>paneles viciados de la televisión por cable, Ferraro debería someterse a entrevistas de formato largo (long-form, de dos o tres horas) en estos canales de streaming y en la inmensa galaxia de podcasts locales.</p>
-<p>Su demostrada capacidad de debatir "en oraciones completas" (tomando la filosofía de Naheed Nenshi) 22 sobre temas técnicos de la ciudad (urbanismo, presupuesto, educación), sin evadir preguntas incómodas, le permitirá brillar.</p>
-<p>El imperativo estratégico es asistir a programas que ostentan líneas editoriales o conductores adversos a su espacio político.</p>
-<p>Su perfil altamente estructurado, sumado a su profunda apertura y vivencia en la agenda de derechos civiles y diversidad LGBTQ+ 4 , generará una disonancia cognitiva magnética para audiencias jóvenes que habitualmente repudian a los políticos tradicionales por considerarlos dogmáticos o guionados.</p>
-<h3>5.3. El Ágora Desplegable: "La Silla Cívica" en los 48 Barrios</h3>
-<p>Porteños Recogiendo la exitosa y económica experiencia territorial de las "carpas" de atención social implementadas por Begoña Villacís en Madrid y Albert Rivera en Cataluña 15 , sumada a la obsesión por el micro-localismo presencial de la británica Layla Moran 49 , se debe repensar la presencia física en CABA.</p>
-<ul class="db-list">
-<li>Mecanismo de Acción: La campaña de Ferraro debe prohibir expresamente el alquiler</li>
-</ul>
-<p>de costosos locales partidarios en grandes avenidas.</p>
-<p>En su reemplazo, el equipo operativo adquiere únicamente dos sillas plegables de lona (color distintivo) y una pequeña mesa de camping.</p>
-<p>Bajo el concepto operativo de "El diputado que te rinde cuentas en tu vereda", Ferraro se instalaría de manera itinerante y no anunciada masivamente (solo avisando con treinta minutos de antelación en la red social X e Instagram) en esquinas problemáticas de los 48 barrios porteños.</p>
-<p>Se invita a los transeúntes a sentarse un máximo de tres a cinco minutos frente a él para plantear una queja o discutir una propuesta de política pública.</p>
-<p>La totalidad de esta interacción se documenta con un teléfono celular para generar piezas de micro-contenido orgánico (Reels y TikToks).</p>
-<p>La austeridad visual extrema de la escena (una simple silla en una vereda de Constitución, Belgrano o Soldati) contrasta violentamente con las monstruosas caravanas del aparato político tradicional, proyectando una inmensa cercanía humana y desmitificando por completo la investidura intocable del cargo público, acercando el modelo de Villacís a la idiosincrasia de Buenos Aires. 45</p>
-<h3>5.4. Gamificación Urbana: "El Mapa de Fiscalización Abierta"</h3>
-<p>Adaptando las brillantes ideas tecnológicas del alcalde Robert Garcia en Long Beach (apps de fiscalización ciudadana, juegos interactivos de 8-bits para concientizar) 31 y combinándolas con la poderosa agenda anticorrupción y del "Sistema de Cuidado" de Claudia López en Bogotá. 37</p>
-<ul class="db-list">
-<li>Mecanismo de Acción: El equipo de Ferraro desarrollaría, con desarrolladores locales</li>
-</ul>
-<p>voluntarios, una herramienta digital web hiper-ligera (o, para abaratar costos, un simple bot conversacional interactivo en WhatsApp y Telegram).</p>
-<p>En este sistema, los vecinos de CABA pueden geolocalizar y mapear en tiempo real problemas endémicos de ejecución del presupuesto porteño: rampas para discapacidad rotas, fallas en la iluminación que generan inseguridad, demoras en hospitales públicos o deficiencias en los centros de jubilados.</p>
-<p>Esta herramienta no sería presentada como un "producto de campaña", sino como un proyecto cívico permanente de fiscalización comunitaria de la Coalición Cívica.</p>
-<p>Ferraro se posiciona de facto como el "Auditor General en las Sombras" de la ciudad.</p>
-<p>El candidato utilizaría transmisiones en vivo desde su propio teléfono para recorrer los puntos críticos reportados por los vecinos en la app, exigiendo al gobierno de turno la reparación inmediata y demostrando que su campaña no promete gestionar en el futuro, sino que ya está gestionando la ciudad desde el llano en el presente.</p>
-<h3>5.5. "El Ejército de Datos": Una Marcha Diagnóstica de Base</h3>
-<p>Universitaria Tomando el modelo de reclutamiento orgánico de la "Purple Army" de Naheed Nenshi en Canadá 24 , y metodologías similares europeas, Ferraro debe suplir la carencia de encuestadoras de alto presupuesto con el músculo intelectual de sus simpatizantes.</p>
-<ul class="db-list">
-<li>Mecanismo de Acción: Antes de realizar grandes actos o lanzar plataformas acabadas,</li>
-</ul>
-<p>la campaña convocaría a un reclutamiento masivo de voluntarios digitales, profesionales y estudiantes universitarios (la base sociológica histórica del espacio institucionalista y reformista que lidera Ferraro en CABA).</p>
-<p>Utilizando plataformas de código abierto, estos voluntarios serían divididos en células por comunas para realizar un censo meticuloso de preocupaciones hiper-locales.</p>
-<p>No tocan timbres para entregar un folleto con el rostro de Ferraro; tocan timbres para realizar una encuesta de diagnóstico barrial (por ejemplo, relevando de primera mano la frecuencia real de la línea de subte correspondiente a la zona, o los problemas específicos con Edesur/Edenor en la época de calor).</p>
-<p>Cuando Ferraro se presente en debates televisivos o en el Congreso, sus propuestas estarán amparadas y blindadas en la narrativa de "tener 15.000 conversaciones documentadas" en lugar de basarse en "la intuición política de los consultores".</p>
-<p>Esta acción fundamenta una rigurosidad técnica implacable, aporta método científico a la política y garantiza la movilización masiva del electorado joven sin requerir pagos de logística salarial.</p>
-<h3>5.6. Estética Lúdica y la Apropiación Conceptual</h3>
-<p>Para relajar el perfil que, desde el exterior, podría percibirse como excesivamente técnico e institucionalizado de la Coalición Cívica, y emular el fulgurante éxito de la apropiación pop y nostálgica del "Naranjito" por parte de Ciudadanos en España 18 , la campaña debe construir un puente estético ineludible con la modernidad y el arte urbano porteño.</p>
-<ul class="db-list">
-<li>Mecanismo de Acción: La cartelería digital, los banners y las piezas de redes sociales</li>
-</ul>
-<p>no deben llevar, bajo ningún concepto, las típicas fotografías sobreiluminadas y excesivamente retocadas del candidato sonriendo con los brazos cruzados.</p>
-<p>El diseño gráfico integral debe recostarse sobre el arte urbano local, ilustraciones digitales o vectores creados por talento joven de universidades como la FADU (UBA), quienes podrían participar de una convocatoria abierta y no remunerada de "Ideación Ciudadana".</p>
-<p>La adopción de un color disruptivo que rompa el monopolio cromático del PRO (amarillo) y el peronismo (celeste), sumado al uso de memes auto-referenciales y un sentido del humor afilado en la interacción en redes (siguiendo el ejemplo de cómo Robert Garcia contestaba en Twitter o cómo Nenshi se comunicaba fluidamente con los vecinos) 23 , demostrará que la austeridad financiera no es equivalente a la mediocridad estética, sino que representa la vanguardia del diseño eficiente.</p>
-<h3>6. Conclusiones y Proyecciones Estratégicas La profunda transformación de las metodologías y estrategias electorales a nivel internacional</h3>
-<p>provee lecciones políticas y sociológicas irrefutables: el dinero estatal, las pautas corporativas y la superestructura de los partidos hegemónicos pueden ser completamente neutralizados por una dosis calculada de autenticidad radical, hiper-segmentación digital inteligente y una audacia táctica sin concesiones. El análisis comparado demuestra que desde el exhibicionismo conceptual y dialéctico de Albert Rivera en las calles de Cataluña 7 , pasando por el aluvión mediático descentralizado impulsado por Pete Buttigieg en el agreste panorama político de Norteamérica 27 , hasta llegar al micro-localismo compasivo, basado en la evidencia barrial de Layla Moran en el Reino Unido 48 , y la incorruptibilidad republicana rigurosamente estructurada de Claudia López en las complejas dinámicas de Bogotá 35 , el factor común del éxito radica en la disrupción. Los liderazgos contemporáneos que logran empatizar y traccionar voluntades en tiempos de apatía y desafección cívica masiva son precisamente aquellos que abrazan su propia vulnerabilidad sistémica y se exponen, sin los filtros de los consultores de relaciones públicas, ante el escrutinio del electorado. Maximiliano Ferraro, respaldado por un historial legislativo intachable y coherente 4 , posee en su haber la arquitectura ideológica precisa e innegociable para encarnar este nuevo perfil en la Ciudad Autónoma de Buenos Aires.</p>
-<p>Para triunfar y consolidar su liderazgo mediante una campaña estrictamente austera, debe declinar activamente el uso de las fórmulas convencionales y vetustas del marketing político, las cuales intentan torpemente imitar a las grandes maquinarias del Estado. Su propuesta de valor final frente al electorado porteño debe basarse en el principio irrenunciable de la asimetría táctica: allí donde el aparato político tradicional impone dinero, hermetismo y silencio, Ferraro debe imponer presencia física indomable en las veredas ("La silla cívica" en lugar de los grandes actos), hiper-transparencia radical ("código QR de gastos" frente a la opacidad de los fondos reservados), omnipresencia mediática digital (dominio absoluto del ecosistema del streaming mediante el "Go Everywhere") y la redacción incesante de políticas públicas "en oraciones completas" que respeten el intelecto de los votantes.</p>
-<p>Al entrelazar quirúrgicamente todas estas dimensiones operativas, el perfil urbano, progresista, defensor de derechos y republicano logra transformarse de un actor institucional en una fuerza política ágil, moderna, magnética y, fundamentalmente, ineludible para moldear el futuro del debate público.</p>
-<p>Obras citadas</p>
-<h3>1. Izquierda política - Wikipedia, la enciclopedia libre, fecha de acceso: mayo 28, 2026, https://es.wikipedia.org/wiki/Izquierda_pol%C3%ADtica 2. Tema 1 Nacimiento, desarrollo y consolidación del Estado liberal: principales hitos</h3>
-<p>históricos y contribuciones teóricas.</p>
-<p>El</p>
-<ul class="db-list">
-<li></li>
-</ul>
-<p>Ministerio de Asuntos Exteriores, Unión Europea y Cooperación, fecha de acceso: mayo 28, 2026, https://www.exteriores.gob.es/es/Ministerio/EscuelaDiplomatica/Documents/TemarioOposicion/GRUPO%20II.pdf 3. Partido Demócrata (Estados Unidos) - Wikipedia, la enciclopedia libre, fecha de acceso: mayo 28, 2026, https://es.wikipedia.org/wiki/Partido_Dem%C3%B3crata_(Estados_Unidos) 4. Maximiliano Ferraro - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Maximiliano_Ferraro 5. Maximiliano Ferraro, Diputado Nacional por la Coalición Cívica ARI, en 'TMAP' - YouTube, fecha de acceso: mayo 28, 2026, https://www.youtube.com/watch?v=k-3i7gjVap4 6. El perfil del votante de Ciudadanos (Cs) en las elecciones generales de abril y noviembre de 2019</p>
-<ul class="db-list">
-<li></li>
-</ul>
-<p>ID Digital School, fecha de acceso: mayo 28, 2026, https://iddigitalschool.com/wp-content/uploads/2021/01/MEM_EXT_21256-SERGIO_RODRIGUEZ_CASTA%C3%91O.pdf 7. Perfil de Albert Rivera: 13 años en política y de su desnudo a la debacle de Ciudadanos, fecha de acceso: mayo 28, 2026, https://www.canalsur.es/noticias/de-su-desnudo-a-la-debacle-de-ciudadanos/1502472.html 8. La carrera política de Albert Rivera, en imágenes | Fotos - EL PAÍS, fecha de acceso: mayo 28, 2026, https://elpais.com/elpais/2019/11/11/album/1573467958_261889.html 9. El desnudo | PPTX - Slideshare, fecha de acceso: mayo 28, 2026, https://es.slideshare.net/slideshow/el-desnudo-4423669/4423669 10. Poster para las elecciones catalanas de 2006. - ResearchGate, fecha de acceso: mayo 28, 2026, https://www.researchgate.net/figure/Poster-para-las-elecciones-catalanas-de-2006_fig1_360709146</p>
-<h3>11. Entrevista a Alberto García Chaparro como campeón mundial de oratoria en</h3>
-<p>Buenos Aires, fecha de acceso: mayo 28, 2026, https://ledu.es/garcia-chaparro-espana-tiene-el-mayor-talento-en-oratoria-y-debate/ 12. La UEMC participa en la octava edición de la Liga Española de Debate Universitario, fecha de acceso: mayo 28, 2026, https://www.uemc.es/noticias/la-uemc-participa-en-la-octava-edicion-de-la-liga-espanola-de-debate-universitario 13. La UAH participa en la gran final de la Liga de Debate Universitario, fecha de acceso: mayo 28, 2026, https://portalcomunicacion.uah.es/diario-digital/actualidad/la-uah-participa-en-la-gran-final-de-la-liga-de-debate-universitario/ 14. Dossier de Prensa Zaragoza, fecha de acceso: mayo 28, 2026, https://auditoriozaragoza.com/wp-content/uploads/2022/09/dossier_de_prensa_ledu_zaragoza.pdf 15. ¿De quién son las calles en Cataluña? - Impulso Ciudadano, fecha de acceso: mayo 28, 2026, https://impulsociudadano.org/quien-las-calles-cataluna/ 16. Minuto a minuto: Los acampados debaten hoy el futuro del movimiento 15M tras las elecciones</p>
-<ul class="db-list">
-<li></li>
-</ul>
-<p>RTVE.es, fecha de acceso: mayo 28, 2026, https://www.rtve.es/noticias/20110518/minuto-a-minuto-manifestacion-acampada-movimiento-15-m/433335.shtml 17. LUIS TIRADO - PSC Ripollet, fecha de acceso: mayo 28, 2026, https://pscripollet.cat/PROGRAMA_PSCRIPOLLET_FINAL.pdf 18. Política de Cookies - PALACIO DE CONGRESOS DE GRANADA, fecha de acceso: mayo 28, 2026, https://www.pcgr.org/?seccion=politicaCookies 19. las industrias CULTURALES y CREATIVAS en iberoamérica - FIBICC, fecha de acceso: mayo 28, 2026, https://fibicc.org/wp-content/uploads/2021/04/Las-Industrias-culturales-y-creativas-en-Iberoamerica.pdf 20. Índice MENSAJE DEL RECTOR - Inter Arecibo, fecha de acceso: mayo 28, 2026, http://www.arecibo.inter.edu/wp-content/uploads/portal/pdf/kronicas20.pdf 21. Repositorio UNINI: Consultar por División, fecha de acceso: mayo 28, 2026, https://repositorio.unini.edu.mx/view/divisions/uninimx=5Ftrabajos=5Ffinales=5Fmaster.default.html 22. Naheed Nenshi - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Naheed_Nenshi 23. Mayoralty of Naheed Nenshi - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Mayoralty_of_Naheed_Nenshi 24. Ismaili Muslim elected mayor of the third-largest city in Canada, fecha de acceso: mayo 28, 2026, https://the.ismaili/news/muslim-elected-mayor-third-largest-city-canada 25. The new politics: How the internet changed everything - iPolitics, fecha de acceso: mayo 28, 2026, https://www.ipolitics.ca/2016/09/15/the-new-politics-how-the-internet-changed-everything/</p>
-<h3>26. Naheed Nenshi falls back to earth - Macleans.ca, fecha de acceso: mayo 28, 2026, https://macleans.ca/politics/naheed-nenshi-falls-back-to-earth/ 27. Campaign Communications with Lis Smith - Georgetown Public Policy Review,</h3>
-<p>fecha de acceso: mayo 28, 2026, https://gppreview.com/2021/01/28/campaign-communications-lis-smith/ 28. Lis Smith - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Lis_Smith 29. 'A Battle for the Soul of the Internet.' Joe Biden Tries to Adapt to a Digital Campaign</p>
-<ul class="db-list">
-<li></li>
-</ul>
-<p>TIME, fecha de acceso: mayo 28, 2026, https://time.com/5822220/joe-biden-digital-campaign-coronavirus/ 30. Memorandum RE: Jake Auchincloss' Investment in 2022 Candidates - Punchbowl News, fecha de acceso: mayo 28, 2026, https://punchbowl.news/wp-content/uploads/Jake-Auchincloss.pdf 31. City of Long Beach Takes Home Five Communications Awards, fecha de acceso: mayo 28, 2026, https://www.longbeach.gov/edo/press-releases/city-of-long-beach-takes-home-five-communications-awards/ 32. City of Long Beach Takes Home Five CAPIO Awards for Cutting-Edge Communications, fecha de acceso: mayo 28, 2026, https://lbpost.com/news/city/city-of-long-beach-takes-home-five-capio-awards-for-cutting-edge-communications/ 33. Long Beach Airport Advertising Campaign Wins Excellence Award from Airports Council International, fecha de acceso: mayo 28, 2026, https://www.longbeach.gov/press-releases/long-beach-airport-advertising-campaign-wins-excellence-award-from-airports-council-international/ 34. City of Long Beach Takes Home Five Communications Awards, fecha de acceso: mayo 28, 2026, https://www.longbeach.gov/press-releases/City-of-Long-Beach-Takes-Home-Five-Communications-Awards/ 35. Claudia López | Vota Claudia Presidenta, fecha de acceso: mayo 28, 2026, https://claudia-lopez.com/ 36. Plan de Gobierno Claudia Lopez, fecha de acceso: mayo 28, 2026, https://plandegobiernoclaudialopez.com/ 37. Untitled - DITA, fecha de acceso: mayo 28, 2026, https://investigacion.teinco.edu.co/wp-content/uploads/2025/06/La-Administracion-La-Geografia-Humana-Ciencia-Tecnologia-e-Industria-TOMO-I.pdf 38. Elecciones 2026 - Funcicar, fecha de acceso: mayo 28, 2026, https://funcicar.org/elecciones2026/ 39. Trayectorias Humanas Trascontinentales, fecha de acceso: mayo 28, 2026, https://www.unilim.fr/trahs/2488&file=1/ 40. Propuestas | Claudia López, fecha de acceso: mayo 28, 2026, https://claudia-lopez.com/campana/ 41. Labor Parlamentaria Vlado Mirosevic Verdugo - BCN, fecha de acceso: mayo 28, 2026, https://www.bcn.cl/obtienearchivo?id=recursoslegales/10221.3/53111/1/4531_364. pdf 42. Labor Parlamentaria Vlado Mirosevic Verdugo - BCN, fecha de acceso: mayo 28, 2026, https://www.bcn.cl/obtienearchivo?id=recursoslegales/10221.3/53108/1/4531_363.pdf 43. Labor Parlamentaria Vlado Mirosevic Verdugo - BCN, fecha de acceso: mayo 28, 2026, https://www.bcn.cl/obtienearchivo?id=recursoslegales/10221.3/64492/1/4531_369.pdf 44. www.ssoar.info El Zeitgeist de la movilidad humana en tiempos de pandemia: Trayectorias en directa y en reversa, fecha de acceso: mayo 28, 2026, https://www.ssoar.info/ssoar/bitstream/document/90917/1/ssoar-2023-loyola_et_al-El_Zeitgeist_de_la_movilidad.pdf 45. Villacís anuncia un programa de refuerzo de la atención social en los distritos afectados por las restricciones de movilidad</p>
-<ul class="db-list">
-<li></li>
-</ul>
-<p>Diario del Ayuntamiento de Madrid, fecha de acceso: mayo 28, 2026, https://diario.madrid.es/blog/notas-de-prensa/villacis-anuncia-un-programa-de-refuerzo-de-la-atencion-social-en-los-distritos-afectados-por-las-restricciones-de-movilidad/ 46. TDS_Activistas en Cibeles - Traficantes de Sueños, fecha de acceso: mayo 28, 2026, https://traficantes.net/sites/default/files/pdfs/UTIL_Activistas_en%20cibeles.pdf 47. Últimas noticias, en directo: elecciones en Madrid y situación de la covid en España y el mundo</p>
-<ul class="db-list">
-<li></li>
-</ul>
-<p>Vozpopuli, fecha de acceso: mayo 28, 2026, https://www.vozpopuli.com/espana/ultimas-noticias-directo-madrid-covid.html 48. Layla's campaigns - Oxfordshire Liberal Democrats, fecha de acceso: mayo 28, 2026, https://www.oxonld.uk/layla-moran/campaigns 49. Layla Moran - Oxford West and Abingdon - Liberal Democrats, fecha de acceso: mayo 28, 2026, https://www.libdems.org.uk/candidates/oxford-west-and-abingdon 50. Social Inequality (Children's Centres) - Hansard, fecha de acceso: mayo 28, 2026, https://hansard.parliament.uk/commons/2017-07-11/debates/8B1F9F50-B6AA-4F40-9437-950AAC34C4C3/SocialInequality(Children%E2%80%99SCentres) 51. Homelessness - Hansard - UK Parliament, fecha de acceso: mayo 28, 2026, https://hansard.parliament.uk/Commons/2018-02-27/debates/6EA57CB0-8336-4421-91E4-2C61F80CA7D4/Homelessness?highlight=surrender 52. Speeches and Questions - Layla Moran MP, Oxford West and Abingdon - TheyWorkForYou, fecha de acceso: mayo 28, 2026, https://www.theyworkforyou.com/mp/25689/layla_moran/oxford_west_and_abingdon/speeches</p>
                 </div>
             </details>
         </div>
         
+
+<p>INFORME 1: BENCHMARKING DE PERFILES POLÍTICOS GLOBALES Y EXTRAPOLACIÓN AL ECOSYSTEM DE LA CIUDAD DE BUENOS AIRES INTRODUCCIÓN METODOLÓGICA: El Dilema del Candidato "Institucional-Intelectual" En las democracias urbanas contemporáneas, los candidatos con perfiles intelectuales, altamente técnicos, legislativos o de corte ético-legalista se enfrentan a una barrera de percepción recurrente.</p>
+<p>Este fenómeno, denominado en la literatura de consultoría política como el "Síndrome de la Torre de Marfil", encapsula la distancia cognitiva entre un político preocupado por la integridad del sistema (leyes, transparencia, reformas estructurales, división de poderes) y un electorado inmerso en la urgencia cotidiana del "metro cuadrado" (baches, basura, seguridad vecinal, ruidos molestos, economía local). El objetivo de este informe de benchmarking es analizar científicamente cómo 10 dirigentes políticos globales con características análogas al perfil de Maximiliano Ferraro lograron romper esta barrera de percepción en ciudades caracterizadas por su alta complejidad urbana, densidad habitacional e intensos procesos de debate civil, y cómo extrapolar de forma quirúrgica sus casos de éxito a la Ciudad Autónoma de Buenos Aires (CABA).</p>
+<p>ANÁLISIS DETALLADO DE 10 CASOS GLOBALES Y EXTRAPOLACIÓN AL ECOSYSTEM DE CABA</p>
 
 
 <h3>10 Casos Globales de Posicionamiento y Tácticas Electorales</h3>
@@ -1442,14 +1343,207 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>costosas pautas que lo hagan ver como parte del despilfarro político tradicional, Ferraro puede armar un sistema de distribución de notas de voz de WhatsApp segmentadas geográficamente por barrio. 7 A través de las redes de consorcios u organizaciones vecinales, puede hacer circular audios de 30 segundos donde dice de forma llana: "Hola, soy Maxi Ferraro.</p>
 <p>Soy vecino tuyo en Barracas. 6 Te mando este audio para contarte que acabo de auditar la obra paralizada en nuestra comuna...". 15 Este mecanismo humaniza su figura técnica, rompe la frialdad corporativa e ingresa directo al núcleo familiar de los porteños de manera masiva.</p>
-<p>MATRIZ COMPARATIVA DE EXTRAPOLACIÓN OPERATIVA PARA CABA Político Internacional Activo Estratégico Clave Riesgo a Mitigar en CABA Extrapolación Táctica Directa Pete Buttigieg "Go Everywhere" en Podcasts. 16 Caer en la sobreexposición en espacios banales. Podcast blitz en streaming independiente analítico . Claudia López Narrativa biográfica "Hecha a pulso" . Ser percibida como demagógica o artificial. Explotar su vida como inquilino de Barracas que viaja en subte. 6 Raphaël Glucksmann Explicación didáctica y moral en redes. 5 Imitar modas juveniles de forma forzada. 17 Videos verticales de formato "Pizarra y Datos" sobre corrupción. 1 Manuela Carmena Descentralización mediante balcones vecinales. 7 Desgaste o apatía por parte de los vecinos. Artivismo en balcones de consorcios afectados por el CUR. 8 Antanas Mockus Modificación lúdica de conductas ciudadanas. 10 Ser considerado infantil en entornos violentos. Campaña descargable de "Tarjetas Cívicas de Convivencia". 1 Andrew Yang Foco absoluto en la solvencia del dato duro. Parecer aburrido o excesivamente tecnócrata. Presentar tablets con visualizaciones del malgasto presupuestario en TV. Elizabeth Warren "Tengo un plan para eso" (Planes de nicho). Prometer soluciones demasiado complejas de leer. Presentar "La Carpeta del Plan" específico para la cuadra visitada. A. Ocasio-Cortez Desempaque pedagógico del proceso de poder. 7 Pérdida del decoro y la respetabilidad institucional. Transmisiones en vivo desglosando quién vota qué en la Legislatura. 12 Bernie Sanders Construcción de canales de distribución propios. 14 Aislamiento informativo en burbujas ideológicas. Lanzar "El Canal del Auditor" en plataformas digitales independientes. Mariano Rajoy Llamadas pregrabadas y directas de voz. 7 Rechazo o molestia ("spam") por saturación telefónica. Distribución de audios cortos de WhatsApp segmentados por cuadra y problema. INFORME 2: PLAN ESTRUCTURAL OPERATIVO DATA-DRIVEN Y ACCIÓN TERRITORIAL PARA MAXIMILIANO FERRARO EN CABA INTRODUCCIÓN GENERAL: El Posicionamiento de "Auditor Ciudadano" El actual ecosistema político de la Ciudad Autónoma de Buenos Aires transita por un proceso de profunda fragmentación tras la disolución de las identidades tradicionales de coalición .</p>
-<p>Frente al oficialismo que intenta integrar sectores del PRO y de La Libertad Avanza , y la consiguiente fatiga del votante porteño con los discursos abstractos de la clase política tradicional, la figura de Maximiliano Ferraro posee un valor diferencial latente.</p>
-<p>Su respetabilidad técnica como expresidente de comisiones legislativas y dirigente con trayectoria limpia debe reconvertirse. La efectividad electoral ya no radica en presentar gacetillas con proyectos de ley abstractos. 18 Debe fundarse en la utilidad directa en la cuadra del vecino.</p>
-<p>Este plan estratégico diseña de manera minuciosa la transición de Ferraro hacia el rol operativo de "Auditor Ciudadano" , sustentando cada acción territorial en el procesamiento científico de bases de datos públicas y de libre acceso (Open Data) de la propia gestión de la Ciudad de Buenos Aires. 11 [ Perfil Legislativo Clásico ] ──► [ El "Auditor Ciudadano" ] │ │ • Papel de ley abstracto • Soluciones materiales in situ • Gacetillas en despachos • Visualización de datos de gestión • Discursos institucionales • Herramienta de reclamo barrial</p>
                 </div>
             </details>
         </div>
         
+
+<h3>4. Matriz Táctica Transnacional de Campañas de Bajo Costo</h3>
+<h3>4. Matriz Táctica Transnacional de Campañas de Bajo</h3>
+<p>Costo La exhaustiva recopilación y análisis de estas 15 trayectorias dispares revela, sin embargo, patrones operativos y estratégicos consistentes.</p>
+<p>Las tácticas empleadas pueden abstraerse y estructurarse en una matriz metodológica para el diseño de campañas modernas y austeras, independientemente de la latitud.</p>
+<p>El uso de esta matriz permite sistematizar la creatividad, transformando acciones aparentemente aleatorias en un manual de operaciones de bajo costo financiero pero altísimo costo intelectual y emocional para los oponentes.</p>
+<p>Táctica Estratégica Referentes Globales Nivel de Inversión Financiera Impacto Cualitativo Descripción Conceptual y Mecanismo de Acción Shock Visual Minimalista y Ruptura de Expectativas Albert Rivera (España) Cercano a Cero Atención Mediática Masiva Utilización de imágenes y mensajes extremadamente disruptivos (el desnudo, la ausencia de logos) que subvierten drásticamente las reglas del marketing tradicional. Obliga a los medios de comunicación hegemónicos a otorgar cobertura orgánica (ganada) debido a la controversia, ahorrando millones en pauta publicitaria. 8 Despliegue Asimétrico "Go Everywhere" Pete Buttigieg (EE.UU.), Jake Auchincloss (EE.UU.) Bajo Omnipresencia y Control Narrativo Renunciar a la protección de los "medios amigos". Otorgar entrevistas a todos los medios posibles, incluyendo foros antagónicos y nichos digitales poco explorados. Genera omnipresencia territorial basándose en el capital de tiempo del candidato y su destreza retórica para desactivar narrativas hostiles. 27 Gamificación Digital y Robert Garcia (EE.UU.) Medio-Bajo (Desarrollo Alta Interacción y Desarrollo e implementació Pedagogía de la Gestión Digital Básico) Participación Joven n de herramientas digitales simples (apps de código abierto, videojuegos retro de 8-bits, transmisiones en vivo interactivas) para explicar políticas públicas complejas, fiscalizar servicios o transparentar la gestión, atrayendo ineludiblemente al votante joven y tecnológico. 31 La Política del Respeto Intelectual (Oraciones Completas) Naheed Nenshi (Canadá) Cero Alta Credibilidad y Retención de Base Descarte absoluto de los eslóganes vacíos y las frases cortas pre-diseñadas por consultores. Publicación constante de ensayos detallados y planes de política pública técnicos. Atrae a los votantes urbanos educados y cínicos, elevando el nivel del debate público y obligando a los rivales a cometer errores técnicos si intentan refutar sin preparación. 22 Micro-Localismo Basado en la Evidencia y la Urgencia Layla Moran (R.U.), Vlado Mirosevic (Chile) Bajo (Costos de Investigación y Litigio) Lealtad Territorial Férrea Identificación, adopción clínica y defensa agresiva de causas vecinales muy específicas y postergadas (como metales pesados en Arica o contaminación de ríos en Oxford). El candidato se transforma en el gestor y abogado del barrio ante la negligencia macro-estatal. 43 Presencia Cívica Descentralizada y Begoña Villacís (España), Albert Rivera (España) Bajo (Mobiliario Itinerante) Extrema Proximidad y Percepción de Laboriosidad Eliminación de los costosos comités partidarios.</p>
+<p>Desburocratización Instalación metódica de pequeñas oficinas móviles temporales (carpas, sillas, stands) en plazas de alto tránsito peatonal para escuchar reclamos directamente, sin la barrera burocrática del edificio gubernamental. 15 Fiscalización Transparente como Motor Electoral Claudia López (Colombia), Naheed Nenshi (Canadá) Medio (Logística de Recolección de Firmas/Datos) Movilización Masiva y Posicionamiento Moral Impulso de consultas populares, auditorías públicas o investigaciones anticorrupción (Ej. Caso Enmax en Calgary, Consulta Anticorrupción en Colombia). Permite apropiarse de la agenda de integridad moral del Estado, desplazando a oponentes asociados a prácticas oscuras. 23</p>
+
+
+<h3>Matriz Táctica Transnacional de Campañas de Bajo Costo</h3>
+<p>Sistematización metodológica de las acciones electorales analizadas en los perfiles globales:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
+    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+        <thead>
+            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Táctica Estratégica</th>
+                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 18%;">Referentes Globales</th>
+                <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 18%;">Inversión</th>
+                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 18%;">Impacto</th>
+                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 24%;">Descripción y Mecanismo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Shock Visual Minimalista</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Albert Rivera (España)</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Cercano a Cero</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Atención Mediática Masiva</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Utilización de imágenes y mensajes extremadamente disruptivos (el desnudo, la ausencia de logos) que subvierten las reglas de marketing. Fuerza la cobertura de medios sin pauta.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Despliegue Asimétrico &quot;Go Everywhere&quot;</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Pete Buttigieg (EE.UU.), Jake Auchincloss (EE.UU.)</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Bajo</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Omnipresencia y Control</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Otorgar entrevistas en foros antagónicos y nichos digitales poco tradicionales. Genera visibilidad basándose en la oratoria y el tiempo del candidato.</td>
+            </tr>
+            <tr style="border-bottom: 0px;">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gamificación Digital y Pedagogía</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Robert Garcia (EE.UU.)</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Medio-Bajo</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Alta Interacción Joven</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Herramientas digitales simples (apps de código abierto, transmisiones interactivas) para explicar políticas públicas, atrayendo al votante joven y tecnológico.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<h3>5. Transposición Estratégica: Ideas y Extrapolación en CABA</h3>
+<h3>5. Transposición Estratégica: Ideas Creativas y</h3>
+<p>Austeras para Maximiliano Ferraro en la Ciudad de Buenos Aires El electorado de la Ciudad de Buenos Aires se caracteriza por variables demográficas excepcionales en el contexto sudamericano: posee un altísimo nivel educativo promedio, una penetración total de las comunicaciones y medios digitales, un histórico y apasionado interés por la cultura cívica y los debates institucionales, y una tendencia estructural a premiar la capacidad de gestión pragmática combinada con la férrea defensa de los marcos republicanos. Maximiliano Ferraro, respaldado por su historial legislativo impecable, su liderazgo en la Coalición Cívica ARI, su valiente perfil de protección de los derechos de la diversidad (LGBTQ+) en la era del resurgimiento de la derecha reaccionaria, y su innegable matriz anticorrupción 4 , posee los fundamentos doctrinarios y logísticos necesarios para capitalizar las estrategias internacionales previamente descritas. Para ejecutar una campaña electoral austera, profundamente original, creativa y de alto impacto en los 48 barrios de CABA, se desarrollan a continuación las siguientes iniciativas estratégicas, directamente transpoladas de los casos de éxito global pero adaptadas a la idiosincrasia porteña y al perfil de Ferraro:</p>
+<h3>5.1. "La Transparencia Radical": Una Campaña a Corazón Abierto</h3>
+<p>Inspirado conceptualmente en el espíritu disruptivo del "cartel desnudo" de Albert Rivera 7 , pero readaptado a un enfoque institucional y republicano acorde a la identidad de Ferraro, la campaña porteña no necesita exhibir el cuerpo físico del candidato, sino desnudar las vísceras mismas de la política y el financiamiento.</p>
+<p>Se propone la implementación de una táctica de Transparencia Radical .</p>
+<ul class="db-list">
+<li>Mecanismo de Acción: Ferraro, mediante una plataforma web de código abierto y</li>
+</ul>
+<p>diseño ultra-minimalista, publicaría en tiempo real y diariamente absolutamente todos los gastos de su campaña.</p>
+<p>Desde el café consumido en reuniones hasta la factura de la impresión de volantes, detallando con quién se reúne cada día, la agenda tratada y qué intereses sectoriales se debatieron.</p>
+<p>En la vía pública, la campaña no utilizaría costosos rostros editados con Photoshop.</p>
+<p>En su lugar, el único elemento gráfico sería un cartel con fondo blanco y tipografía negra que muestre un Código QR gigantesco con el lema: "No tenemos fondos millonarios para tapar esta ciudad de carteles, pero no tenemos absolutamente nada que esconder de vos" .</p>
+<p>Al escanear el QR, el ciudadano ingresa directamente a un panel interactivo de datos abiertos financieros y, ocasionalmente, a transmisiones en vivo (Twitch/YouTube) de las reuniones cerradas del equipo de estrategia de Ferraro.</p>
+<p>Esta acción, de costo operativo irrisorio, generaría un shock sistémico, atrayendo la cobertura orgánica de todos los canales de noticias porteños y polarizando moralmente contra los candidatos de grandes aparatos, cuya financiación es invariablemente opaca.</p>
+<h3>5.2. El Modelo "Go Everywhere" en el Ecosistema del Streaming</h3>
+<p>Porteño Adoptando con rigor la audaz táctica diseñada por Lis Smith para Pete Buttigieg y replicada por Jake Auchincloss 27 , Ferraro debe ejecutar una estrategia mediática profundamente asimétrica. La Ciudad de Buenos Aires se ha convertido en el epicentro indiscutido de un masivo y floreciente ecosistema de canales de streaming en vivo (tales como Olga, Luzu TV, Blender, Neura Media, Gelatina, entre otros), los cuales han desplazado a la televisión tradicional en el consumo informativo de las franjas demográficas sub-35.</p>
+<ul class="db-list">
+<li>Mecanismo de Acción: En lugar de buscar primariamente los minutos tarifados o los</li>
+</ul>
+<p>paneles viciados de la televisión por cable, Ferraro debería someterse a entrevistas de formato largo (long-form, de dos o tres horas) en estos canales de streaming y en la inmensa galaxia de podcasts locales.</p>
+<p>Su demostrada capacidad de debatir "en oraciones completas" (tomando la filosofía de Naheed Nenshi) 22 sobre temas técnicos de la ciudad (urbanismo, presupuesto, educación), sin evadir preguntas incómodas, le permitirá brillar.</p>
+<p>El imperativo estratégico es asistir a programas que ostentan líneas editoriales o conductores adversos a su espacio político.</p>
+<p>Su perfil altamente estructurado, sumado a su profunda apertura y vivencia en la agenda de derechos civiles y diversidad LGBTQ+ 4 , generará una disonancia cognitiva magnética para audiencias jóvenes que habitualmente repudian a los políticos tradicionales por considerarlos dogmáticos o guionados.</p>
+<h3>5.3. El Ágora Desplegable: "La Silla Cívica" en los 48 Barrios</h3>
+<p>Porteños Recogiendo la exitosa y económica experiencia territorial de las "carpas" de atención social implementadas por Begoña Villacís en Madrid y Albert Rivera en Cataluña 15 , sumada a la obsesión por el micro-localismo presencial de la británica Layla Moran 49 , se debe repensar la presencia física en CABA.</p>
+<ul class="db-list">
+<li>Mecanismo de Acción: La campaña de Ferraro debe prohibir expresamente el alquiler</li>
+</ul>
+<p>de costosos locales partidarios en grandes avenidas.</p>
+<p>En su reemplazo, el equipo operativo adquiere únicamente dos sillas plegables de lona (color distintivo) y una pequeña mesa de camping.</p>
+<p>Bajo el concepto operativo de "El diputado que te rinde cuentas en tu vereda", Ferraro se instalaría de manera itinerante y no anunciada masivamente (solo avisando con treinta minutos de antelación en la red social X e Instagram) en esquinas problemáticas de los 48 barrios porteños.</p>
+<p>Se invita a los transeúntes a sentarse un máximo de tres a cinco minutos frente a él para plantear una queja o discutir una propuesta de política pública.</p>
+<p>La totalidad de esta interacción se documenta con un teléfono celular para generar piezas de micro-contenido orgánico (Reels y TikToks).</p>
+<p>La austeridad visual extrema de la escena (una simple silla en una vereda de Constitución, Belgrano o Soldati) contrasta violentamente con las monstruosas caravanas del aparato político tradicional, proyectando una inmensa cercanía humana y desmitificando por completo la investidura intocable del cargo público, acercando el modelo de Villacís a la idiosincrasia de Buenos Aires. 45</p>
+<h3>5.4. Gamificación Urbana: "El Mapa de Fiscalización Abierta"</h3>
+<p>Adaptando las brillantes ideas tecnológicas del alcalde Robert Garcia en Long Beach (apps de fiscalización ciudadana, juegos interactivos de 8-bits para concientizar) 31 y combinándolas con la poderosa agenda anticorrupción y del "Sistema de Cuidado" de Claudia López en Bogotá. 37</p>
+<ul class="db-list">
+<li>Mecanismo de Acción: El equipo de Ferraro desarrollaría, con desarrolladores locales</li>
+</ul>
+<p>voluntarios, una herramienta digital web hiper-ligera (o, para abaratar costos, un simple bot conversacional interactivo en WhatsApp y Telegram).</p>
+<p>En este sistema, los vecinos de CABA pueden geolocalizar y mapear en tiempo real problemas endémicos de ejecución del presupuesto porteño: rampas para discapacidad rotas, fallas en la iluminación que generan inseguridad, demoras en hospitales públicos o deficiencias en los centros de jubilados.</p>
+<p>Esta herramienta no sería presentada como un "producto de campaña", sino como un proyecto cívico permanente de fiscalización comunitaria de la Coalición Cívica.</p>
+<p>Ferraro se posiciona de facto como el "Auditor General en las Sombras" de la ciudad.</p>
+<p>El candidato utilizaría transmisiones en vivo desde su propio teléfono para recorrer los puntos críticos reportados por los vecinos en la app, exigiendo al gobierno de turno la reparación inmediata y demostrando que su campaña no promete gestionar en el futuro, sino que ya está gestionando la ciudad desde el llano en el presente.</p>
+<h3>5.5. "El Ejército de Datos": Una Marcha Diagnóstica de Base</h3>
+<p>Universitaria Tomando el modelo de reclutamiento orgánico de la "Purple Army" de Naheed Nenshi en Canadá 24 , y metodologías similares europeas, Ferraro debe suplir la carencia de encuestadoras de alto presupuesto con el músculo intelectual de sus simpatizantes.</p>
+<ul class="db-list">
+<li>Mecanismo de Acción: Antes de realizar grandes actos o lanzar plataformas acabadas,</li>
+</ul>
+<p>la campaña convocaría a un reclutamiento masivo de voluntarios digitales, profesionales y estudiantes universitarios (la base sociológica histórica del espacio institucionalista y reformista que lidera Ferraro en CABA).</p>
+<p>Utilizando plataformas de código abierto, estos voluntarios serían divididos en células por comunas para realizar un censo meticuloso de preocupaciones hiper-locales.</p>
+<p>No tocan timbres para entregar un folleto con el rostro de Ferraro; tocan timbres para realizar una encuesta de diagnóstico barrial (por ejemplo, relevando de primera mano la frecuencia real de la línea de subte correspondiente a la zona, o los problemas específicos con Edesur/Edenor en la época de calor).</p>
+<p>Cuando Ferraro se presente en debates televisivos o en el Congreso, sus propuestas estarán amparadas y blindadas en la narrativa de "tener 15.000 conversaciones documentadas" en lugar de basarse en "la intuición política de los consultores".</p>
+<p>Esta acción fundamenta una rigurosidad técnica implacable, aporta método científico a la política y garantiza la movilización masiva del electorado joven sin requerir pagos de logística salarial.</p>
+<h3>5.6. Estética Lúdica y la Apropiación Conceptual</h3>
+<p>Para relajar el perfil que, desde el exterior, podría percibirse como excesivamente técnico e institucionalizado de la Coalición Cívica, y emular el fulgurante éxito de la apropiación pop y nostálgica del "Naranjito" por parte de Ciudadanos en España 18 , la campaña debe construir un puente estético ineludible con la modernidad y el arte urbano porteño.</p>
+<ul class="db-list">
+<li>Mecanismo de Acción: La cartelería digital, los banners y las piezas de redes sociales</li>
+</ul>
+<p>no deben llevar, bajo ningún concepto, las típicas fotografías sobreiluminadas y excesivamente retocadas del candidato sonriendo con los brazos cruzados.</p>
+<p>El diseño gráfico integral debe recostarse sobre el arte urbano local, ilustraciones digitales o vectores creados por talento joven de universidades como la FADU (UBA), quienes podrían participar de una convocatoria abierta y no remunerada de "Ideación Ciudadana".</p>
+<p>La adopción de un color disruptivo que rompa el monopolio cromático del PRO (amarillo) y el peronismo (celeste), sumado al uso de memes auto-referenciales y un sentido del humor afilado en la interacción en redes (siguiendo el ejemplo de cómo Robert Garcia contestaba en Twitter o cómo Nenshi se comunicaba fluidamente con los vecinos) 23 , demostrará que la austeridad financiera no es equivalente a la mediocridad estética, sino que representa la vanguardia del diseño eficiente.</p>
+
+<p>MATRIZ COMPARATIVA DE EXTRAPOLACIÓN OPERATIVA PARA CABA Político Internacional Activo Estratégico Clave Riesgo a Mitigar en CABA Extrapolación Táctica Directa Pete Buttigieg "Go Everywhere" en Podcasts. 16 Caer en la sobreexposición en espacios banales. Podcast blitz en streaming independiente analítico . Claudia López Narrativa biográfica "Hecha a pulso" . Ser percibida como demagógica o artificial. Explotar su vida como inquilino de Barracas que viaja en subte. 6 Raphaël Glucksmann Explicación didáctica y moral en redes. 5 Imitar modas juveniles de forma forzada. 17 Videos verticales de formato "Pizarra y Datos" sobre corrupción. 1 Manuela Carmena Descentralización mediante balcones vecinales. 7 Desgaste o apatía por parte de los vecinos. Artivismo en balcones de consorcios afectados por el CUR. 8 Antanas Mockus Modificación lúdica de conductas ciudadanas. 10 Ser considerado infantil en entornos violentos. Campaña descargable de "Tarjetas Cívicas de Convivencia". 1 Andrew Yang Foco absoluto en la solvencia del dato duro. Parecer aburrido o excesivamente tecnócrata. Presentar tablets con visualizaciones del malgasto presupuestario en TV. Elizabeth Warren "Tengo un plan para eso" (Planes de nicho). Prometer soluciones demasiado complejas de leer. Presentar "La Carpeta del Plan" específico para la cuadra visitada. A. Ocasio-Cortez Desempaque pedagógico del proceso de poder. 7 Pérdida del decoro y la respetabilidad institucional. Transmisiones en vivo desglosando quién vota qué en la Legislatura. 12 Bernie Sanders Construcción de canales de distribución propios. 14 Aislamiento informativo en burbujas ideológicas. Lanzar "El Canal del Auditor" en plataformas digitales independientes. Mariano Rajoy Llamadas pregrabadas y directas de voz. 7 Rechazo o molestia ("spam") por saturación telefónica. Distribución de audios cortos de WhatsApp segmentados por cuadra y problema. INFORME 2: PLAN ESTRUCTURAL OPERATIVO DATA-DRIVEN Y ACCIÓN TERRITORIAL PARA MAXIMILIANO FERRARO EN CABA INTRODUCCIÓN GENERAL: El Posicionamiento de "Auditor Ciudadano" El actual ecosistema político de la Ciudad Autónoma de Buenos Aires transita por un proceso de profunda fragmentación tras la disolución de las identidades tradicionales de coalición .</p>
+<p>Frente al oficialismo que intenta integrar sectores del PRO y de La Libertad Avanza , y la consiguiente fatiga del votante porteño con los discursos abstractos de la clase política tradicional, la figura de Maximiliano Ferraro posee un valor diferencial latente.</p>
+<p>Su respetabilidad técnica como expresidente de comisiones legislativas y dirigente con trayectoria limpia debe reconvertirse. La efectividad electoral ya no radica en presentar gacetillas con proyectos de ley abstractos. 18 Debe fundarse en la utilidad directa en la cuadra del vecino.</p>
+<p>Este plan estratégico diseña de manera minuciosa la transición de Ferraro hacia el rol operativo de "Auditor Ciudadano" , sustentando cada acción territorial en el procesamiento científico de bases de datos públicas y de libre acceso (Open Data) de la propia gestión de la Ciudad de Buenos Aires. 11 [ Perfil Legislativo Clásico ] ──► [ El "Auditor Ciudadano" ] │ │ • Papel de ley abstracto • Soluciones materiales in situ • Gacetillas en despachos • Visualización de datos de gestión • Discursos institucionales • Herramienta de reclamo barrial</p>
+
+
+<h3>Matriz Comparativa de Extrapolación Operativa para CABA</h3>
+<p>Mapeo directo de los activos clave e inyecciones tácticas extrapoladas al perfil de Maxi Ferraro en la Ciudad de Buenos Aires:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
+    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+        <thead>
+            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 20%;">Político</th>
+                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Activo Estratégico Clave</th>
+                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 25%;">Riesgo a Mitigar en CABA</th>
+                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 30%;">Extrapolación Táctica Directa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Pete Buttigieg</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">&quot;Go Everywhere&quot; en Podcasts.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Caer en sobreexposición banal.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Podcast blitz en streaming independiente y analítico.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Claudia López</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Narrativa biográfica &quot;Hecha a pulso&quot;.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser percibida como demagógica.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Explotar su vida como inquilino de Barracas que viaja en subte.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Raphaël Glucksmann</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Explicación didáctica y moral en redes.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Imitar modas juveniles de forma forzada.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Videos verticales de formato &quot;Pizarra y Datos&quot; sobre presupuesto.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Manuela Carmena</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Descentralización por balcones vecinales.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Apatía o cansancio de los vecinos.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Artivismo en balcones de consorcios afectados por el Código Urbanístico.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Antanas Mockus</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Modificación lúdica de conductas.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser considerado infantil ante la inseguridad.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Campaña descargable de &quot;Tarjetas Cívicas de Convivencia&quot; y respeto.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Andrew Yang</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Solvencia del dato duro y estadísticas.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Parecer excesivamente tecnócrata o aburrido.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar tablets con visualizaciones del malgasto en TV y redes.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Elizabeth Warren</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">&quot;Tengo un plan para eso&quot; (Planes de nicho).</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Prometer soluciones muy complejas.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar &quot;La Carpeta del Plan&quot; específico para el barrio visitado.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">A. Ocasio-Cortez</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Desempaque pedagógico del proceso de poder.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Pérdida de la respetabilidad parlamentaria.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Transmisiones en vivo detallando votaciones de la Legislatura.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-linea);">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Bernie Sanders</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Canales de distribución propios de contenido.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Aislamiento en burbujas ideológicas.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Lanzar &quot;El Canal del Auditor&quot; en streaming y redes para fiscalizaciones.</td>
+            </tr>
+            <tr style="border-bottom: 0px;">
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Mariano Rajoy</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Llamadas pregrabadas y directas de voz.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Molestia vecinal (spam) por llamadas directas.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Audios cortos de WhatsApp segmentados por comuna y obras demoradas.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
 <h3>1. MATRIZ DE REENCUADRE BIOGRÁFICO Y</h3>
 <p>"NORMALIDAD" La mayor debilidad de Maximiliano Ferraro en la percepción pública no es de carácter ético ni técnico; es el "síndrome institucionalista" que lo asocia a los pasillos burocráticos del Congreso o la Legislatura .</p>
@@ -1597,8 +1691,9 @@ const PROPUESTAS_FERRARO = {
 <p>comparativo_delito = pd.merge(conteo_oficial, conteo_colaborativo, on='manzana_id', how='outer').fillna(0)</p>
 <h2>Calcular desajuste (cifra negra del delito) donde hay alta denuncia ciudadana pero nula presencia</h2>
 <p>estatal comparativo_delito['brecha_prevencion'] = comparativo_delito['robos_colaborativos'] - comparativo_delito['robos_oficiales'] zonas_liberadas = comparativo_delito[comparativo_delito['brecha_prevencion'] > 5].sort_values(by='brecha_prevencion', ascending=False) zonas_liberadas.to_csv("zonas_liberadas_caba_auditoria.csv", index=False) print("Matriz de desajuste criminal georreferenciada generada para el equipo de seguridad de Ferraro.")</p>
-<h3>4. PROTOCOLO DE TERRENO DE LA "ESCUCHA ACTIVA" Y CAPTACIÓN DE REFERENTES INVISIBLES</h3>
-<p>La bajada de Maximiliano Ferraro a los barrios de la ciudad no debe replicar bajo ninguna circunstancia el formato tradicional de campaña.</p>
+<h3>4. PROTOCOLO DE TERRENO DE LA "ESCUCHA</h3>
+<p>ACTIVA"</p>
+<p>Y CAPTACIÓN DE REFERENTES INVISIBLES La bajada de Maximiliano Ferraro a los barrios de la ciudad no debe replicar bajo ninguna circunstancia el formato tradicional de campaña.</p>
 <p>Los desembarcos masivos, caracterizados por el uso de comitivas de asesores, reparto de panfletos impresos y cánticos partidarios, generan una barrera de rechazo instintiva en un electorado agotado.</p>
 <p>El "Protocolo de Terreno" de Ferraro debe ser quirúrgico, silencioso e impulsado por el sentido de utilidad inmediata. ──► │ ┌─────────────────────────────────────────┘ ▼ ──► │ ┌─────────────────────────────────────────┘ ▼ [ Intimación Legislativa / Exposición ] ──► Directrices Físicas y Gestuales del Candidato en el Territorio</p>
 <ul class="db-list">
@@ -1716,157 +1811,80 @@ const PROPUESTAS_FERRARO = {
 <p>No te prometo leyes de campaña; te garantizo la utilidad de tus impuestos en tu vereda" . 23 CRONOGRAMA OPERATIVO INTEGRAL SINTETIZADO Período Temporal Denominación de Fase Meta Operativa Cuantificable Acciones Físicas en Territorio Acciones Comunicacionales y Ecosistema Digital Semanas 1 - 2 Inteligencia y Data Mining Identificación y mapeo de 15 Hotspots (1 por Comuna) basados en datos del Ninguna. Trabajo técnico de gabinete, análisis estadístico y cruce de datos Reset estético de redes sociales de Ferraro. Eliminación de lenguaje SUACI, BA Obras y AGC. 23 mediante Python. procedimental burocrático. 18 Preparación de visualizaciones. Semanas 3 - 4 Auditoría y Recorridas Físicas Inspección in situ de los 15 hotspots seleccionados y captación de referentes invisibles del barrio. 6 Caminatas silenciosas de inspección portando tablet con la información del SUACI. Reuniones directas con consorcios y comerciantes. 2 5 Grabación orgánica, cruda, "cámara al hombro" de las auditorías en terreno. Cero edición publicitaria formal de campaña. Semanas 5 - 6 Amplificación Blitz y Validación Penetración masiva en canales de streaming y resolución material de quejas vecinales. Retorno físico a las esquinas auditadas para certificar de forma presencial la reactivación de obras u operativos de control. Lanzamiento de la serie digital "Tutoriales de Auditoría". Gira mediática asimétrica mostrando datos de gestión en vivo .</p>
 
 
-<h3>Matriz Táctica Transnacional de Campañas de Bajo Costo</h3>
-<p>Sistematización metodológica de las acciones electorales analizadas en los perfiles globales:</p>
-<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Táctica Estratégica</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 18%;">Referentes Globales</th>
-                <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 18%;">Inversión</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 18%;">Impacto</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 24%;">Descripción y Mecanismo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Shock Visual Minimalista</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Albert Rivera (España)</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Cercano a Cero</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Atención Mediática Masiva</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Utilización de imágenes y mensajes extremadamente disruptivos (el desnudo, la ausencia de logos) que subvierten las reglas de marketing. Fuerza la cobertura de medios sin pauta.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Despliegue Asimétrico "Go Everywhere"</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Pete Buttigieg (EE.UU.), Jake Auchincloss (EE.UU.)</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Bajo</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Omnipresencia y Control</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Otorgar entrevistas en foros antagónicos y nichos digitales poco tradicionales. Genera visibilidad basándose en la oratoria y el tiempo del candidato.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gamificación Digital y Pedagogía</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Robert Garcia (EE.UU.)</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Medio-Bajo</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Alta Interacción Joven</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Herramientas digitales simples (apps de código abierto, transmisiones interactivas) para explicar políticas públicas, atrayendo al votante joven y tecnológico.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-
-
-<h3>Matriz Comparativa de Extrapolación Operativa para CABA</h3>
-<p>Mapeo directo de los activos clave e inyecciones tácticas extrapoladas al perfil de Maxi Ferraro en la Ciudad de Buenos Aires:</p>
-<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 20%;">Político</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Activo Estratégico Clave</th>
-                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 25%;">Riesgo a Mitigar en CABA</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 30%;">Extrapolación Táctica Directa</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Pete Buttigieg</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">"Go Everywhere" en Podcasts.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Caer en sobreexposición banal.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Podcast blitz en streaming independiente y analítico.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Claudia López</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Narrativa biográfica "Hecha a pulso".</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser percibida como demagógica.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Explotar su vida como inquilino de Barracas que viaja en subte.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Raphaël Glucksmann</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Explicación didáctica y moral en redes.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Imitar modas juveniles de forma forzada.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Videos verticales de formato "Pizarra y Datos" sobre presupuesto.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Manuela Carmena</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Descentralización por balcones vecinales.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Apatía o cansancio de los vecinos.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Artivismo en balcones de consorcios afectados por el Código Urbanístico.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Antanas Mockus</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Modificación lúdica de conductas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser considerado infantil ante la inseguridad.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Campaña descargable de "Tarjetas Cívicas de Convivencia" y respeto.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Andrew Yang</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Solvencia del dato duro y estadísticas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Parecer excesivamente tecnócrata o aburrido.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar tablets con visualizaciones del malgasto en TV y redes.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Elizabeth Warren</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">"Tengo un plan para eso" (Planes de nicho).</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Prometer soluciones muy complejas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar "La Carpeta del Plan" específico para el barrio visitado.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">A. Ocasio-Cortez</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Desempaque pedagógico del proceso de poder.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Pérdida de la respetabilidad parlamentaria.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Transmisiones en vivo detallando votaciones de la Legislatura.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Bernie Sanders</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Canales de distribución propios de contenido.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Aislamiento en burbujas ideológicas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Lanzar "El Canal del Auditor" en streaming y redes para fiscalizaciones.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Mariano Rajoy</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Llamadas pregrabadas y directas de voz.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Molestia vecinal (spam) por llamadas directas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Audios cortos de WhatsApp segmentados por comuna y obras demoradas.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-
-
 <h3>Matriz de Mitigación de Riesgos Estratégicos</h3>
-<p>Protocolos de respuesta frente a las vulnerabilidades de la campaña de fiscalización territorial:</p>
+<p>La transición de Maximiliano Ferraro de un perfil institucional clásico a uno de "Auditor Ciudadano" no está exenta de vulnerabilidades políticas y de comunicación. A continuación, se detallan los riesgos identificados en el ecosistema porteño y los protocolos de mitigación correspondientes.</p>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
     <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
         <thead>
             <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Dimensión de Riesgo</th>
+                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Riesgo Identificado</th>
                 <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 38%;">Descripción del Riesgo</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 37%;">Protocolo de Mitigación Propuesto</th>
+                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 40%;">Protocolo de Mitigación Directa</th>
             </tr>
         </thead>
         <tbody>
             <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Acusación de Demagogia</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Riesgo de que la narrativa biográfica de "inquilino y usuario de subte" sea vista como una impostura electoralista o manipulación mediática.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Sostener la conducta en el tiempo. Evitar spots publicitarios de alto costo y priorizar transmisiones orgánicas y cotidianas en crudo, sin edición profesional.</td>
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 1: Acusación de &quot;Chicana Política u Oposicionismo Barato&quot;</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">El oficialismo porteño (PRO/LLA) o los medios tradicionales afines intentarán descalificar las recorridas y denuncias de Ferraro tildándolas de oportunismo electoral propio de un año de campaña, minimizando el impacto de los baches, el CUR o las quejas por basura.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Ferraro jamás debe realizar una denuncia basada únicamente en opiniones subjetivas u apreciaciones políticas partidarias. Cada visita y video de auditoría debe comenzar mostrando a la pantalla de la cámara la foja del documento público, el dataset unificado de BA Obras o el portal de transparencia activa de la propia gestión del Gobierno porteño. La respuesta es quirúrgica: &quot;No vengo a hacer campaña ni a criticar desde la ideología. Vengo hoy con las estadísticas y los números oficiales que el propio Ejecutivo publica en su portal de Open Data, y que demuestran que le están mintiendo al vecino en su cara&quot;.</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Fatiga Vecinal</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">La saturación de reclamos sin respuesta efectiva puede generar apatía y desmovilización en los consorcios y centros vecinales visitados.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Establecer el "Mecanismo de Retorno". Regresar a las esquinas auditadas en un plazo máximo de 15 días para reportar el estado del trámite y la respuesta oficial.</td>
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 2: El &quot;Contra-Archivo&quot; de su Votación Legislativa Histórica</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">La oposición de izquierda u otros sectores pueden recordar que Ferraro fue vicepresidente del bloque Vamos Juntos y acompañó debates clave de densificación urbana de la ciudad en el pasado, intentando invalidar su coherencia frente a los reclamos del nuevo Código Urbanístico.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Ferraro debe asumir con madurez institucional su historial legislativo pero marcando de forma tajante el punto de quiebre operativo: &quot;Acompañamos debates para jerarquizar y equilibrar el desarrollo de la ciudad, pero el Ejecutivo desvirtuó la aplicación del Código Urbanístico para favorecer excepciones inmobiliarias irregulares y amnistías constructivas de obras clandestinas de hasta 5.000 metros cuadrados que nosotros jamás convalidamos ni convalidaremos. Una buena ley aplicada con opacidad y sin control se transforma en una estafa al vecino, y mi trabajo actual como Auditor es, justamente, frenar esos abusos&quot;.</td>
             </tr>
             <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Aislamiento Político</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">La intransigencia en la auditoría de contratos públicos puede cerrarle canales de diálogo institucional en la Legislatura y el Congreso.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Apelar directamente a la ciudadanía como reaseguro de legitimidad. Socializar las pruebas en formatos abiertos (datos estructurados descargables) para que el reclamo sea de la comunidad.</td>
+                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 3: La &quot;Fatiga de la Queja&quot; y Bloqueo de Audiencia por Aburrimiento</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Que la audiencia digital asocie los videos verticales de Ferraro a un canal crónico de quejas aburridas que no generan interacción ni tracción de voto joven en TikTok o Instagram.</td>
+                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Aplicar el modelo de pedagogía didáctica de Raphaël Glucksmann y Antanas Mockus. No limitarse a la denuncia de la vereda rota; explicar detalladamente el mecanismo de por qué el bache no se repara, adónde se desvía el presupuesto, cómo funciona la triangulación de contratos de consultoría o el lobby corporativo.</td>
             </tr>
         </tbody>
     </table>
 </div>
-`
+
+
+<h3>6. Conclusiones y Proyecciones Estratégicas</h3>
+<h3>6. Conclusiones y Proyecciones Estratégicas La profunda transformación de las metodologías y estrategias electorales a nivel internacional</h3>
+<p>provee lecciones políticas y sociológicas irrefutables: el dinero estatal, las pautas corporativas y la superestructura de los partidos hegemónicos pueden ser completamente neutralizados por una dosis calculada de autenticidad radical, hiper-segmentación digital inteligente y una audacia táctica sin concesiones. El análisis comparado demuestra que desde el exhibicionismo conceptual y dialéctico de Albert Rivera en las calles de Cataluña 7 , pasando por el aluvión mediático descentralizado impulsado por Pete Buttigieg en el agreste panorama político de Norteamérica 27 , hasta llegar al micro-localismo compasivo, basado en la evidencia barrial de Layla Moran en el Reino Unido 48 , y la incorruptibilidad republicana rigurosamente estructurada de Claudia López en las complejas dinámicas de Bogotá 35 , el factor común del éxito radica en la disrupción. Los liderazgos contemporáneos que logran empatizar y traccionar voluntades en tiempos de apatía y desafección cívica masiva son precisamente aquellos que abrazan su propia vulnerabilidad sistémica y se exponen, sin los filtros de los consultores de relaciones públicas, ante el escrutinio del electorado. Maximiliano Ferraro, respaldado por un historial legislativo intachable y coherente 4 , posee en su haber la arquitectura ideológica precisa e innegociable para encarnar este nuevo perfil en la Ciudad Autónoma de Buenos Aires.</p>
+<p>Para triunfar y consolidar su liderazgo mediante una campaña estrictamente austera, debe declinar activamente el uso de las fórmulas convencionales y vetustas del marketing político, las cuales intentan torpemente imitar a las grandes maquinarias del Estado. Su propuesta de valor final frente al electorado porteño debe basarse en el principio irrenunciable de la asimetría táctica: allí donde el aparato político tradicional impone dinero, hermetismo y silencio, Ferraro debe imponer presencia física indomable en las veredas ("La silla cívica" en lugar de los grandes actos), hiper-transparencia radical ("código QR de gastos" frente a la opacidad de los fondos reservados), omnipresencia mediática digital (dominio absoluto del ecosistema del streaming mediante el "Go Everywhere") y la redacción incesante de políticas públicas "en oraciones completas" que respeten el intelecto de los votantes.</p>
+<p>Al entrelazar quirúrgicamente todas estas dimensiones operativas, el perfil urbano, progresista, defensor de derechos y republicano logra transformarse de un actor institucional en una fuerza política ágil, moderna, magnética y, fundamentalmente, ineludible para moldear el futuro del debate público.</p>
+
+<p>Glucksmann y Antanas Mockus. 1 No limitarse a la denuncia de la vereda rota; explicar detalladamente el mecanismo de por qué el bache no se repara, adónde se desvía el presupuesto, cómo funciona la triangulación de contratos de consultoría o el lobby corporativo de las empresas prestadoras. 2 Transformar el video en una lección interactiva de "Cultura e Inteligencia Cívica" para que el propio porteño aprenda a auditar su edificio y su manzana utilizando las herramientas digitales de acceso público de la Ciudad. 1 Conclusión General del Plan de Acción Al desprenderse de las ataduras de la burocracia discursiva parlamentaria y dotar a su incuestionable base ética de un método científico sustentado en la minería de datos abiertos de la propia administración (BA Obras, SUACI y portales de transparencia urbana) 11 , Maximiliano Ferraro logrará transformar su capital técnico en un servicio público de impacto y utilidad de trinchera inmediata para los vecinos.</p>
+<p>El "Auditor Ciudadano" no promete leyes abstractas a largo plazo; desciende al asfalto de Buenos Aires armado con la propia información oficial del Estado para resolver las angustias materiales del metro cuadrado del habitante, perforando la capilaridad de las 15 comunas y consolidando una lealtad electoral transversal e insoslayable de cara al inminente rediseño del poder político de la Ciudad Autónoma de Buenos Aires.</p>
+
+<h3>Obras Citadas y Referencias</h3>
+<p>Obras citadas</p>
+<h3>1. Izquierda política - Wikipedia, la enciclopedia libre, fecha de acceso: mayo 28, 2026, https://es.wikipedia.org/wiki/Izquierda_pol%C3%ADtica 2. Tema 1 Nacimiento, desarrollo y consolidación del Estado liberal: principales hitos</h3>
+<p>históricos y contribuciones teóricas.</p>
+<p>El</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>Ministerio de Asuntos Exteriores, Unión Europea y Cooperación, fecha de acceso: mayo 28, 2026, https://www.exteriores.gob.es/es/Ministerio/EscuelaDiplomatica/Documents/TemarioOposicion/GRUPO%20II.pdf 3. Partido Demócrata (Estados Unidos) - Wikipedia, la enciclopedia libre, fecha de acceso: mayo 28, 2026, https://es.wikipedia.org/wiki/Partido_Dem%C3%B3crata_(Estados_Unidos) 4. Maximiliano Ferraro - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Maximiliano_Ferraro 5. Maximiliano Ferraro, Diputado Nacional por la Coalición Cívica ARI, en 'TMAP' - YouTube, fecha de acceso: mayo 28, 2026, https://www.youtube.com/watch?v=k-3i7gjVap4 6. El perfil del votante de Ciudadanos (Cs) en las elecciones generales de abril y noviembre de 2019</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>ID Digital School, fecha de acceso: mayo 28, 2026, https://iddigitalschool.com/wp-content/uploads/2021/01/MEM_EXT_21256-SERGIO_RODRIGUEZ_CASTA%C3%91O.pdf 7. Perfil de Albert Rivera: 13 años en política y de su desnudo a la debacle de Ciudadanos, fecha de acceso: mayo 28, 2026, https://www.canalsur.es/noticias/de-su-desnudo-a-la-debacle-de-ciudadanos/1502472.html 8. La carrera política de Albert Rivera, en imágenes | Fotos - EL PAÍS, fecha de acceso: mayo 28, 2026, https://elpais.com/elpais/2019/11/11/album/1573467958_261889.html 9. El desnudo | PPTX - Slideshare, fecha de acceso: mayo 28, 2026, https://es.slideshare.net/slideshow/el-desnudo-4423669/4423669 10. Poster para las elecciones catalanas de 2006. - ResearchGate, fecha de acceso: mayo 28, 2026, https://www.researchgate.net/figure/Poster-para-las-elecciones-catalanas-de-2006_fig1_360709146</p>
+<h3>11. Entrevista a Alberto García Chaparro como campeón mundial de oratoria en</h3>
+<p>Buenos Aires, fecha de acceso: mayo 28, 2026, https://ledu.es/garcia-chaparro-espana-tiene-el-mayor-talento-en-oratoria-y-debate/ 12. La UEMC participa en la octava edición de la Liga Española de Debate Universitario, fecha de acceso: mayo 28, 2026, https://www.uemc.es/noticias/la-uemc-participa-en-la-octava-edicion-de-la-liga-espanola-de-debate-universitario 13. La UAH participa en la gran final de la Liga de Debate Universitario, fecha de acceso: mayo 28, 2026, https://portalcomunicacion.uah.es/diario-digital/actualidad/la-uah-participa-en-la-gran-final-de-la-liga-de-debate-universitario/ 14. Dossier de Prensa Zaragoza, fecha de acceso: mayo 28, 2026, https://auditoriozaragoza.com/wp-content/uploads/2022/09/dossier_de_prensa_ledu_zaragoza.pdf 15. ¿De quién son las calles en Cataluña? - Impulso Ciudadano, fecha de acceso: mayo 28, 2026, https://impulsociudadano.org/quien-las-calles-cataluna/ 16. Minuto a minuto: Los acampados debaten hoy el futuro del movimiento 15M tras las elecciones</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>RTVE.es, fecha de acceso: mayo 28, 2026, https://www.rtve.es/noticias/20110518/minuto-a-minuto-manifestacion-acampada-movimiento-15-m/433335.shtml 17. LUIS TIRADO - PSC Ripollet, fecha de acceso: mayo 28, 2026, https://pscripollet.cat/PROGRAMA_PSCRIPOLLET_FINAL.pdf 18. Política de Cookies - PALACIO DE CONGRESOS DE GRANADA, fecha de acceso: mayo 28, 2026, https://www.pcgr.org/?seccion=politicaCookies 19. las industrias CULTURALES y CREATIVAS en iberoamérica - FIBICC, fecha de acceso: mayo 28, 2026, https://fibicc.org/wp-content/uploads/2021/04/Las-Industrias-culturales-y-creativas-en-Iberoamerica.pdf 20. Índice MENSAJE DEL RECTOR - Inter Arecibo, fecha de acceso: mayo 28, 2026, http://www.arecibo.inter.edu/wp-content/uploads/portal/pdf/kronicas20.pdf 21. Repositorio UNINI: Consultar por División, fecha de acceso: mayo 28, 2026, https://repositorio.unini.edu.mx/view/divisions/uninimx=5Ftrabajos=5Ffinales=5Fmaster.default.html 22. Naheed Nenshi - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Naheed_Nenshi 23. Mayoralty of Naheed Nenshi - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Mayoralty_of_Naheed_Nenshi 24. Ismaili Muslim elected mayor of the third-largest city in Canada, fecha de acceso: mayo 28, 2026, https://the.ismaili/news/muslim-elected-mayor-third-largest-city-canada 25. The new politics: How the internet changed everything - iPolitics, fecha de acceso: mayo 28, 2026, https://www.ipolitics.ca/2016/09/15/the-new-politics-how-the-internet-changed-everything/</p>
+<h3>26. Naheed Nenshi falls back to earth - Macleans.ca, fecha de acceso: mayo 28, 2026, https://macleans.ca/politics/naheed-nenshi-falls-back-to-earth/ 27. Campaign Communications with Lis Smith - Georgetown Public Policy Review,</h3>
+<p>fecha de acceso: mayo 28, 2026, https://gppreview.com/2021/01/28/campaign-communications-lis-smith/ 28. Lis Smith - Wikipedia, fecha de acceso: mayo 28, 2026, https://en.wikipedia.org/wiki/Lis_Smith 29. 'A Battle for the Soul of the Internet.' Joe Biden Tries to Adapt to a Digital Campaign</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>TIME, fecha de acceso: mayo 28, 2026, https://time.com/5822220/joe-biden-digital-campaign-coronavirus/ 30. Memorandum RE: Jake Auchincloss' Investment in 2022 Candidates - Punchbowl News, fecha de acceso: mayo 28, 2026, https://punchbowl.news/wp-content/uploads/Jake-Auchincloss.pdf 31. City of Long Beach Takes Home Five Communications Awards, fecha de acceso: mayo 28, 2026, https://www.longbeach.gov/edo/press-releases/city-of-long-beach-takes-home-five-communications-awards/ 32. City of Long Beach Takes Home Five CAPIO Awards for Cutting-Edge Communications, fecha de acceso: mayo 28, 2026, https://lbpost.com/news/city/city-of-long-beach-takes-home-five-capio-awards-for-cutting-edge-communications/ 33. Long Beach Airport Advertising Campaign Wins Excellence Award from Airports Council International, fecha de acceso: mayo 28, 2026, https://www.longbeach.gov/press-releases/long-beach-airport-advertising-campaign-wins-excellence-award-from-airports-council-international/ 34. City of Long Beach Takes Home Five Communications Awards, fecha de acceso: mayo 28, 2026, https://www.longbeach.gov/press-releases/City-of-Long-Beach-Takes-Home-Five-Communications-Awards/ 35. Claudia López | Vota Claudia Presidenta, fecha de acceso: mayo 28, 2026, https://claudia-lopez.com/ 36. Plan de Gobierno Claudia Lopez, fecha de acceso: mayo 28, 2026, https://plandegobiernoclaudialopez.com/ 37. Untitled - DITA, fecha de acceso: mayo 28, 2026, https://investigacion.teinco.edu.co/wp-content/uploads/2025/06/La-Administracion-La-Geografia-Humana-Ciencia-Tecnologia-e-Industria-TOMO-I.pdf 38. Elecciones 2026 - Funcicar, fecha de acceso: mayo 28, 2026, https://funcicar.org/elecciones2026/ 39. Trayectorias Humanas Trascontinentales, fecha de acceso: mayo 28, 2026, https://www.unilim.fr/trahs/2488&file=1/ 40. Propuestas | Claudia López, fecha de acceso: mayo 28, 2026, https://claudia-lopez.com/campana/ 41. Labor Parlamentaria Vlado Mirosevic Verdugo - BCN, fecha de acceso: mayo 28, 2026, https://www.bcn.cl/obtienearchivo?id=recursoslegales/10221.3/53111/1/4531_364. pdf 42. Labor Parlamentaria Vlado Mirosevic Verdugo - BCN, fecha de acceso: mayo 28, 2026, https://www.bcn.cl/obtienearchivo?id=recursoslegales/10221.3/53108/1/4531_363.pdf 43. Labor Parlamentaria Vlado Mirosevic Verdugo - BCN, fecha de acceso: mayo 28, 2026, https://www.bcn.cl/obtienearchivo?id=recursoslegales/10221.3/64492/1/4531_369.pdf 44. www.ssoar.info El Zeitgeist de la movilidad humana en tiempos de pandemia: Trayectorias en directa y en reversa, fecha de acceso: mayo 28, 2026, https://www.ssoar.info/ssoar/bitstream/document/90917/1/ssoar-2023-loyola_et_al-El_Zeitgeist_de_la_movilidad.pdf 45. Villacís anuncia un programa de refuerzo de la atención social en los distritos afectados por las restricciones de movilidad</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>Diario del Ayuntamiento de Madrid, fecha de acceso: mayo 28, 2026, https://diario.madrid.es/blog/notas-de-prensa/villacis-anuncia-un-programa-de-refuerzo-de-la-atencion-social-en-los-distritos-afectados-por-las-restricciones-de-movilidad/ 46. TDS_Activistas en Cibeles - Traficantes de Sueños, fecha de acceso: mayo 28, 2026, https://traficantes.net/sites/default/files/pdfs/UTIL_Activistas_en%20cibeles.pdf 47. Últimas noticias, en directo: elecciones en Madrid y situación de la covid en España y el mundo</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>Vozpopuli, fecha de acceso: mayo 28, 2026, https://www.vozpopuli.com/espana/ultimas-noticias-directo-madrid-covid.html 48. Layla's campaigns - Oxfordshire Liberal Democrats, fecha de acceso: mayo 28, 2026, https://www.oxonld.uk/layla-moran/campaigns 49. Layla Moran - Oxford West and Abingdon - Liberal Democrats, fecha de acceso: mayo 28, 2026, https://www.libdems.org.uk/candidates/oxford-west-and-abingdon 50. Social Inequality (Children's Centres) - Hansard, fecha de acceso: mayo 28, 2026, https://hansard.parliament.uk/commons/2017-07-11/debates/8B1F9F50-B6AA-4F40-9437-950AAC34C4C3/SocialInequality(Children%E2%80%99SCentres) 51. Homelessness - Hansard - UK Parliament, fecha de acceso: mayo 28, 2026, https://hansard.parliament.uk/Commons/2018-02-27/debates/6EA57CB0-8336-4421-91E4-2C61F80CA7D4/Homelessness?highlight=surrender 52. Speeches and Questions - Layla Moran MP, Oxford West and Abingdon - TheyWorkForYou, fecha de acceso: mayo 28, 2026, https://www.theyworkforyou.com/mp/25689/layla_moran/oxford_west_and_abingdon/speeches</p>`
     },
     "doc-estrategia-caba": {
         title: "Estrategia Política Ferraro CABA y Plan de Acción del Auditor",
@@ -1902,6 +1920,7 @@ const PROPUESTAS_FERRARO = {
 <p>En su rol como defensor de reformas estructurales complejas del oficialismo porteño (en su momento como vicepresidente del Bloque Vamos Juntos), como el debate por la universidad docente Unicaba o la densificación impulsada por el Código Urbanístico, ha enfrentado el choque directo y hostil con bases organizadas.</p>
 <p>Durante el tratamiento de la Unicaba en la Legislatura, mientras Ferraro exponía argumentos técnicos sobre la jerarquización educativa, docentes y estudiantes le gritaban desde las gradas "Miranos a la cara", ilustrando gráficamente la ruptura del puente empático entre el legislador que diseña la norma y el trabajador que la padece. 12 Su comunicación tiende a recaer en tecnicismos de comisión ("Expediente 0006-PE-2025", "modificación sobre distribución automática" 6 ), lo cual genera una infranqueable barrera cognitiva con un electorado despolitizado que demanda simplificación y contención. Finalmente, se detecta un grave desajuste en la decodificación de los códigos digitales populares.</p>
 <p>Los intentos pasados de su equipo por conectar con demandas masivas mediante formatos presuntamente disruptivos han evidenciado desconexiones profundas con el pulso digital orgánico.</p>
+<p>El caso más paradigmático y perjudicial para su marca personal ocurrió durante el debate por la presencialidad escolar en la pandemia, cuando Ferraro publicó en Twitter un video que utilizaba una versión alterada de la canción "Another Brick in the Wall" de Pink Floyd. 13 Lejos de generar adhesión, el intento fue percibido como artificial, descontextualizado y cínico, desatando una oleada de críticas tanto de usuarios comunes como de docentes que cuestionaron la superficialidad del reclamo. 13 Esto subraya una lección ineludible: la empatía digital no se puede forzar mediante apropiaciones culturales mal calibradas, sino que debe construirse de manera orgánica, documentando la realidad sin filtros de diseño gráfico.</p>
 
 
 <h3>Análisis de Fortalezas y Debilidades (Matriz de Perfil)</h3>
@@ -1944,6 +1963,60 @@ const PROPUESTAS_FERRARO = {
     </table>
 </div>
 
+
+<h3>2. Arquitectura de Inserción Territorial (Mapeo por Comunas)</h3>
+<h3>2. Arquitectura de Inserción Territorial (Mapeo por</h3>
+<p>Comunas) La Ciudad Autónoma de Buenos Aires no es, bajo ningún punto de vista, un territorio homogéneo; es un complejo mosaico de demandas asimétricas y conflictividades superpuestas.</p>
+<p>Para que Maximiliano Ferraro logre una capilaridad política real y duradera, debe abandonar de inmediato el discurso universalizado y adoptar una estrategia de extrema micro-segmentación.</p>
+<p>Hemos diseñado una arquitectura de inserción dividiendo las 15 comunas de la ciudad en cinco corredores estratégicos.</p>
+<p>A cada uno de estos corredores se le ha asignado un "punto de dolor" fundamentado en datos censales, registros de reclamos vecinales y conflictividad estructural, junto con un "pivot narrativo" específico diseñado a medida para que Ferraro conecte su perfil técnico con la angustia barrial.</p>
+<p>Corredor Centro: El Colapso del Espacio Público y la Fractura Social (Comunas 1 y 3)</p>
+<p>Contexto y Datos Duros: Este corredor geográfico, que abarca el microcentro, Retiro, San Telmo, Balvanera y San Cristóbal, concentra la manifestación más descarnada de la crisis social visible de la ciudad y el país.</p>
+<p>Según datos de relevamientos oficiales, el 34% de las personas en extrema situación de calle de toda CABA se encuentran aglomeradas en la Comuna 1, y si se adiciona la Comuna 3, se alcanza casi el 50% del total de la población sin techo censada. 14 El perfil de esta población es abrumadoramente masculino (83%), con una altísima incidencia de migrantes internos provenientes de la Provincia de Buenos Aires (casi el 70%), y cuyas causas declaradas orbitan en torno a problemas laborales (42%) y conflictos familiares (33,9%). 14 Las llamadas vecinales de alerta al número 108 han experimentado un aumento interanual del 40%, registrando un promedio de 800 avisos diarios. 14 A este drama humano se suman los conflictos permanentes de convivencia, la proliferación de ruidos molestos, la ocupación del espacio público por el comercio informal y la acumulación de residuos. 9 Punto de Dolor: La desesperante sensación ciudadana de abandono total del espacio público, la degradación acelerada del entorno urbano y la constante tensión moral entre la empatía social hacia el marginado y el justo reclamo vecinal por el orden, el libre tránsito y la higiene.</p>
+<p>Pivot Narrativo (Ferraro):</p>
+<p>El Auditor de la Asistencia y el Orden .</p>
+<p>Ferraro se encuentra ante el desafío de no caer en el punitivismo insensible de la extrema derecha, ni en la romantización de la pobreza de cierta izquierda.</p>
+<p>Su mensaje debe ser estrictamente técnico y de gestión: auditar a las millonarias empresas concesionarias de recolección de residuos y fiscalizar la efectividad material de los programas del Ministerio de Desarrollo Humano.</p>
+<p>Mensaje rector: "El gobierno de la Ciudad gasta miles de millones en contención social y contratos de limpieza que se pierden en burocracia; como Auditor, vengo a exigir la trazabilidad de esos fondos.</p>
+<p>Exijo que ese dinero llegue al asfalto y se traduzca de forma inmediata en orden real para el vecino que paga sus impuestos y en una puerta de salida digna para el ciudadano vulnerable."</p>
+<p>Corredor Norte: La Tensión del Crecimiento Urbano Especulativo (Comunas 2, 13 y 14)</p>
+<p>Contexto y Datos Duros: Comprendiendo zonas de altísimo poder adquisitivo como Recoleta, Belgrano, Núñez y Palermo, el reclamo estructural en este corredor orbita en torno a los nefastos efectos secundarios de la planificación urbana reciente.</p>
+<p>Las principales quejas ciudadanas apuntan al nuevo Código Urbanístico, las leyes de plusvalía inmobiliaria y la densificación no planificada que altera el perfil histórico de los barrios. Las normativas que han permitido modificaciones en las alturas (planos límites de doce metros, reducción de superficies mínimas habitables a 18 metros cuadrados) y el cobro de la plusvalía por derechos de desarrollo 17 han saturado los servicios cloacales y eléctricos. Adicionalmente, los vecinos denuncian incesantes ruidos molestos provenientes de grandes polos gastronómicos, bares nocturnos, boliches y obras en construcción, utilizando intensiva pero infructuosamente canales oficiales como la línea 147, los sistemas de mediación comunitaria de la Defensoría del Pueblo y exigiendo la intervención de la Agencia Gubernamental de Control (AGC). 10 Punto de Dolor:</p>
+<p>La invasión de la privacidad hogareña, el colapso absoluto de los servicios básicos por sobreconstrucción irracional, y la contaminación acústica que deteriora la salud mental del habitante.</p>
+<p>Pivot Narrativo (Ferraro):</p>
+<p>El Garante del Patrimonio y Defensor del Consorcio .</p>
+<p>Aprovechando de manera inteligente su profundo conocimiento técnico del Código Urbanístico y de Planeamiento de su etapa legislativa 18 , Ferraro debe ejecutar un giro y presentarse como el garante técnico e incuestionable de los vecinos frente a la desidia estatal y los desarrolladores especulativos.</p>
+<p>Mensaje rector: "El progreso urbano no puede significar la privatización del cielo y la destrucción de la paz de tu manzana.</p>
+<p>Voy a auditar y fiscalizar cada excepción irregular al código, cada habilitación comercial otorgada de manera dudosa por la AGC y voy a estar del lado del consorcio para asegurar que tu calidad de vida no sea la variable de ajuste de un negocio inmobiliario."</p>
+<p>Corredor Sur: La Deuda Histórica de Infraestructura e Igualdad (Comunas 4, 8 y 9)</p>
+<p>Contexto y Datos Duros: Integrado por barrios como La Boca, Barracas, Villa Lugano, Villa Soldati y Mataderos, este sector se caracteriza por desigualdades estructurales históricas.</p>
+<p>Persisten graves problemáticas como la urbanización incompleta de barriadas vulnerables (como el empantanado proyecto de integración socio-urbana en los barrios Ramón Carrillo y Lacarra a cargo de la Corporación Buenos Aires Sur S.E. y el Instituto de Vivienda de la Ciudad</p>
+<ul class="db-list">
+<li></li>
+</ul>
+<p>IVC). 23 Asimismo, la crisis en materia de vacantes escolares y el avanzado deterioro de la infraestructura educativa es alarmante; casos emblemáticos recientes han denunciado invasiones de roedores en el Polo Educativo Walsh, afectando directamente la salubridad de los lactarios, frente a una cúpula ministerial que prioriza la espectacularización en conferencias de prensa. 24 Ferraro cuenta aquí con un activo central: él es un residente genuino de la Comuna 4 (Barracas). 3 Punto de Dolor: La consolidada percepción de ser tratados como "ciudadanos de segunda clase", condenados a servicios públicos paupérrimos, la postergación de la urbanización prometida y el envío de sus hijos a escuelas con fallas estructurales y riesgos sanitarios.</p>
+<p>Pivot Narrativo (Ferraro):</p>
+<p>Vecino en Acción / Auditor de la Equidad Sur .</p>
+<p>Aquí es donde la biografía personal de Ferraro debe constituir el núcleo duro e indivisible de la estrategia persuasiva.</p>
+<p>Mensaje rector: "Yo soy vecino del sur, alquilo mi departamento en Barracas y sufro la misma discriminación en el transporte que vos". 3 El despliegue de su accionar debe focalizarse en la inspección y auditoría física, in situ, de las obras paralizadas de urbanización del IVC 23 y en evidenciar el calamitoso estado de las escuelas públicas de la zona.</p>
+<p>Corredor Oeste: Seguridad de Proximidad y Tejido Comercial (Comunas 7, 10 y 11)</p>
+<p>Contexto y Datos Duros: Comprendiendo Flores, Parque Chacabuco, Floresta, Monte Castro y Villa del Parque, estos son barrios residenciales tradicionales que sostienen un robusto pero golpeado tejido de pequeñas y medianas empresas (PyMEs), comercios a la calle y centros comerciales a cielo abierto.</p>
+<p>El terror estructural y reclamo principal de este corredor es la inseguridad capilar: arrebatos violentos en la vía pública, entraderas y robos de dispositivos móviles que alimentan un mercado negro enquistado en locales comerciales no habilitados.</p>
+<p>Se requiere una auditoría exhaustiva de los operativos conjuntos liderados por la AGC, la Agencia de Protección Ambiental (APRA) y el Ministerio de Justicia y Seguridad, encargados de secuestrar mercadería proveniente de ilícitos. 10 Punto de Dolor: La inseguridad física cotidiana, el miedo en las calles y la asfixiante presión impositiva y regulatoria que padece el pequeño comerciante honesto frente a la impunidad del circuito ilegal.</p>
+<p>Pivot Narrativo (Ferraro):</p>
+<p>El Fiscal del Espacio Público y Aliado Pyme .</p>
+<p>Ferraro debe liderar discursivamente una cruzada quirúrgica contra el mercado negro que fomenta el delito barrial.</p>
+<p>Mensaje rector: "La seguridad ciudadana no se resuelve con marketing; empieza asfixiando económicamente a las mafias que reducen lo robado en tu barrio.</p>
+<p>Vengo a exigir y auditar operativos conjuntos reales entre la AGC y Seguridad para cerrar el ciclo del delito". 10 Simultáneamente, debe erigirse como un escudo burocrático que proteja al comerciante legal de clausuras arbitrarias.</p>
+<p>Corredor Centro-Oeste: Cultura, Movilidad e Identidad Barrial (Comunas 5, 6, 12 y 15)</p>
+<p>Contexto y Datos Duros: Abarcando Almagro, Boedo, Caballito, Villa Urquiza y Chacarita, este es el bastión demográfico de las clases medias profesionales, caracterizado por una altísima vitalidad cultural, intelectual y social.</p>
+<p>Las demandas orbitan alrededor de la preservación imperativa de espacios verdes frente al avance del cemento, la defensa de circuitos culturales independientes y la necesidad de un esquema de movilidad y transporte sustentable eficiente.</p>
+<p>Ferraro posee un contundente acervo legislativo previo en esta zona geográfica: impulsó la revitalizadora ley de bares notables, la ley de extensión horaria de la red de subtes y la emblemática fundación del espacio cultural Jungla en Almagro, diseñado para el debate y la capacitación. 3 Punto de Dolor: La gentrificación descontrolada, la inminente pérdida de la riqueza cultural independiente originaria del barrio y la exasperación ante un sistema de movilidad fragmentado.</p>
+<p>Pivot Narrativo (Ferraro):</p>
+<p>Promotor de la Identidad y la Movilidad .</p>
+<p>La táctica exige recuperar su prolífico legado parlamentario ("Hicimos leyes para ponerle fichas a los centros culturales independientes y blindar el ecosistema de la ciudad" 3 ) y actualizarlo frente a nuevas amenazas.</p>
+<p>Mensaje rector: "No vamos a permitir bajo ningún concepto que la historia y la cultura de nuestros barrios sean desplazadas por la frialdad de la especulación.</p>
+<p>Vengo a auditar para que el espacio público, la bicicleta y el subterráneo estén subordinados a la comunidad vecinal, no a las agencias de marketing urbano."</p>
 
 
 <h3>Arquitectura de Inserción Territorial (Mapeo por Comunas)</h3>
@@ -2043,8 +2116,8 @@ const PROPUESTAS_FERRARO = {
 <p>Yo me lo llevo y lo voy a auditar hasta que se dignen a contestar".</p>
 <p>Esta propuesta transaccional rompe inmediatamente las férreas barreras de defensa natural del ciudadano porteño, profundamente hastiado de las promesas abstractas.</p>
 
-<h3>4. Benchmarking Internacional (Lecciones Comparadas)</h3>
-<p>El análisis comparado en campañas modernas demuestra fehacientemente que los perfiles políticos altamente técnicos, con anclaje intelectual o que son percibidos inicialmente como candidaturas "de nicho republicano", pueden lograr un arrastre popular masivo si tienen la audacia de aplicar metodologías heterodoxas de comunicación territorial.</p>
+<h3>4. Benchmarking Internacional (Lecciones</h3>
+<p>Comparadas) El análisis comparado en campañas modernas demuestra fehacientemente que los perfiles políticos altamente técnicos, con anclaje intelectual o que son percibidos inicialmente como candidaturas "de nicho republicano", pueden lograr un arrastre popular masivo si tienen la audacia de aplicar metodologías heterodoxas de comunicación territorial.</p>
 <p>Tres casos paradigmáticos a nivel internacional resultan fundamentales para proveer el marco teórico y operativo en la construcción de Maximiliano Ferraro como el "Auditor Ciudadano" de Buenos Aires.</p>
 <p>Pete Buttigieg: La Estrategia de la Ubicuidad Mediática y la Empatía Radical Durante las primarias de la campaña presidencial estadounidense del año 2020, Pete Buttigieg, por entonces el ignoto exalcalde de la pequeña ciudad de South Bend en Indiana, enfrentaba un colosal desafío estructural: posicionarse como un candidato intelectualmente superior, con formación técnica, joven, abiertamente gay y carente de reconocimiento nacional.</p>
 <p>Su jefa de asesores de comunicación, Lis Smith, implementó una táctica implacable conocida como la estrategia del "Go Everywhere" (Ir a todas partes). 26</p>
@@ -2189,8 +2262,13 @@ const PROPUESTAS_FERRARO = {
         </tbody>
     </table>
 </div>
-`
+
+
+<p>En este teatro de operaciones, Maximiliano Ferraro ostenta una base ética, un volumen institucional y una formación técnica que resultan incuestionables frente a gran parte del actual arco dirigente.</p>
+<p>Sin embargo, su viabilidad competitiva futura, así como la posibilidad matemática y sociológica de escalar hacia posiciones ejecutivas en próximos armados electorales, dependen estricta y perentoriamente de su capacidad de flexibilidad táctica para "bajar" esa imponente arquitectura intelectual al nivel rasante del asfalto porteño. Al asumir y perfeccionar el perfil pragmático y expeditivo del "Auditor Ciudadano", y al ejecutar de forma metodológica, fría y disciplinada las estrategias de micro-segmentación territorial combinadas con una ubicuidad mediática de nueva generación, Ferraro logrará inexorablemente romper su techo institucional histórico de cristal.</p>
+<p>De esta forma, abandonará la cómoda pero aislante posición de ser evaluado por sus pares políticos y analistas sobre la fineza de los proyectos que redacta en el silencio de su despacho, para pasar a ser escrutado, necesitado y finalmente valorado por los propios vecinos a causa de los problemas reales, angustiantes y cotidianos que es capaz de resolver en sus veredas y medianeras.</p>
+<p>El éxito milimétrico de esta compleja transición identitaria y operativa es lo que, en definitiva, consolidará su relevancia insoslayable e indispensable en el siempre turbulento rediseño del poder político de la Ciudad Autónoma de Buenos Aires.</p>`
     }
 };
 
-const DOCUMENTOS_CAMPANA = PROPUESTAS_FERRARO;
+const ARTICULOS_REVISTA = PROPUESTAS_FERRARO;
