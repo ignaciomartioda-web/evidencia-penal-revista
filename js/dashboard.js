@@ -76,7 +76,7 @@ function setDbChartModel(chartId, model) {
     // Actualizar botones activos en el DOM del panel visible
     let tabId = '';
     if (chartId === 'swot') tabId = 'db-tab-resumen';
-    else if (chartId === 'barrios') tabId = 'db-tab-seguridad';
+    else if (chartId === 'barrios') tabId = 'db-tab-conflictividad';
     else if (chartId === 'bench') tabId = 'db-tab-benchmarking';
     
     const panel = document.getElementById(tabId);
@@ -340,9 +340,9 @@ function renderDbCharts() {
         }
     }
 
-    // 2. Gráfico Barrios / Corredores (Seguridad)
+    // 2. Gráfico Barrios / Corredores (Conflictividad)
     const barriosCanvas = document.getElementById('db-barrios-chart');
-    const barriosPanel = document.getElementById('db-tab-seguridad');
+    const barriosPanel = document.getElementById('db-tab-conflictividad');
     if (barriosCanvas && barriosPanel && barriosPanel.classList.contains('active')) {
         const ctx = barriosCanvas.getContext('2d');
         const width = barriosCanvas.clientWidth || barriosCanvas.parentElement.clientWidth || 300;

@@ -1392,11 +1392,16 @@
                 </a>
                 <a href="#dashboard" class="directory-item" onclick="const tab = document.querySelector('.db-nav-item[data-db-tab=\'db-tab-seguridad\']'); if(tab) tab.click(); return false;">
                     <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-naranja); letter-spacing: 1.5px; text-transform: uppercase;">[ PANEL 02 ]</span>
-                    <span style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: bold; margin: 0.2rem 0; color: #fff;">Comunas y Problemas</span>
-                    <span style="font-size: 0.72rem; color: var(--color-texto-muted);">Mapeo georreferenciado de vulnerabilidades y AGC.</span>
+                    <span style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: bold; margin: 0.2rem 0; color: #fff;">Seguridad y PyMEs</span>
+                    <span style="font-size: 0.72rem; color: var(--color-texto-muted);">Seguridad de proximidad y alivio tributario PyME.</span>
+                </a>
+                <a href="#dashboard" class="directory-item" onclick="const tab = document.querySelector('.db-nav-item[data-db-tab=\'db-tab-conflictividad\']'); if(tab) tab.click(); return false;">
+                    <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-cian); letter-spacing: 1.5px; text-transform: uppercase;">[ PANEL 03 ]</span>
+                    <span style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: bold; margin: 0.2rem 0; color: #fff;">Conflictividad Comunal</span>
+                    <span style="font-size: 0.72rem; color: var(--color-texto-muted);">Mapeo georreferenciado de vulnerabilidades y corredores.</span>
                 </a>
                 <a href="#dashboard" class="directory-item" onclick="const tab = document.querySelector('.db-nav-item[data-db-tab=\'db-tab-benchmarking\']'); if(tab) tab.click(); return false;">
-                    <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-azul-anchor); letter-spacing: 1.5px; text-transform: uppercase;">[ PANEL 03 ]</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-azul-anchor); letter-spacing: 1.5px; text-transform: uppercase;">[ PANEL 04 ]</span>
                     <span style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: bold; margin: 0.2rem 0; color: #fff;">Benchmarking Global</span>
                     <span style="font-size: 0.72rem; color: var(--color-texto-muted);">Modelos internacionales de líderes y mitigación de chicanas.</span>
                 </a>
@@ -1415,6 +1420,7 @@
                         <li class="db-nav-item" data-db-tab="db-tab-transparencia">⚖️ Transparencia y Democracia</li>
                         <li class="db-nav-item" data-db-tab="db-tab-ambiente">🌱 Economía Verde</li>
                         <li class="db-nav-item" data-db-tab="db-tab-seguridad">🛡️ Seguridad y PyMEs</li>
+                        <li class="db-nav-item" data-db-tab="db-tab-conflictividad">🗺️ Conflictividad Comunal</li>
                         <li class="db-nav-item" data-db-tab="db-tab-benchmarking">🌎 Benchmarking Global</li>
                         <li class="db-nav-item" data-db-tab="db-tab-ingesta">📋 Ingesta Documental</li>
                     </ul>
@@ -1734,19 +1740,89 @@
 
                     <!-- Panel 5: Seguridad y PyMEs -->
                     <section class="db-panel" id="db-tab-seguridad">
+                        <div class="db-card" style="border-top: 3px solid var(--color-naranja); margin-bottom: 1.5rem;">
+                            <h3 style="color: var(--color-naranja); display: flex; align-items: center; gap: 0.5rem; margin-top: 0;">🛡️ Plan Integral: "El Fiscal del Espacio Público y Aliado PyME"</h3>
+                            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--color-texto-dm);">
+                                Propuesta legislativa y operativa para enfrentar la inseguridad capilar que asfixia a los barrios residenciales y comerciales de Buenos Aires, asfixiando económicamente a las economías delictivas mientras se protege y desburocratiza al comercio legal y las PyMEs de cercanía.
+                            </p>
+                        </div>
+
                         <div class="db-grid-2">
-                            <div class="db-card">
-                                <h3>🛡️ Seguridad de Proximidad (Bloqueo IMEI)</h3>
-                                <p style="margin-bottom: 1rem;">Propuesta para asfixiar el mercado negro de celulares robados mediante operativos coordinados en las Comunas 7, 10 y 11.</p>
-                                <p><strong>Auditoría AGC:</strong> Control público sobre el cuerpo de inspectores de la Agencia Gubernamental de Control para evitar discrecionalidad y coimas.</p>
+                            <!-- Bloqueo IMEI -->
+                            <div class="db-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <h3 style="color: var(--color-cian); border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.6rem; margin-top: 0;">📱 Seguridad de Proximidad (Bloqueo IMEI)</h3>
+                                    
+                                    <div class="db-sub-card" style="background: rgba(0, 242, 254, 0.03); border-left: 3px solid var(--color-cian); padding: 0.9rem; margin-bottom: 1rem; border-radius: 4px;">
+                                        <h4 style="margin: 0 0 0.4rem 0; color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px;">🚨 Diagnóstico Basado en Evidencia</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--color-texto-muted);">
+                                            El robo de teléfonos móviles es el motor de la inseguridad capilar. El 85% de las víctimas no denuncian debido a la ineficacia de la burocracia judicial, haciendo que los dispositivos reingresen rápidamente al mercado negro en locales clandestinos.
+                                        </p>
+                                    </div>
+
+                                    <div class="db-sub-card" style="background: rgba(255, 255, 255, 0.02); border-left: 3px solid var(--color-azul-anchor); padding: 0.9rem; margin-bottom: 1rem; border-radius: 4px;">
+                                        <h4 style="margin: 0 0 0.4rem 0; color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px;">📡 Cruzamiento Inteligente & Seifer.app</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--color-texto-muted);">
+                                            Cruce automatizado en tiempo real entre los reportes de comisarías del <strong>Mapa del Delito CABA</strong> y denuncias colaborativas ciudadanas anónimas en <strong>Seifer.app</strong> para geolocalizar manzanas calientes de venta de teléfonos robados.
+                                        </p>
+                                    </div>
+
+                                    <div class="db-sub-card" style="background: rgba(255, 255, 255, 0.02); border-left: 3px solid var(--color-verde); padding: 0.9rem; border-radius: 4px;">
+                                        <h4 style="margin: 0 0 0.4rem 0; color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px;">🔒 Bloqueo de Hardware en 15 Minutos</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--color-texto-muted);">
+                                            Implementación de un protocolo unificado simplificado desde la app vecinal que permite notificar el robo y dar de baja definitiva el código IMEI (número de serie de hardware) en menos de 15 minutos, inhabilitando el hardware del dispositivo e impidiendo su reutilización o reventa técnica.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 1.2rem; padding-top: 0.8rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.82rem; line-height: 1.5;">
+                                    <strong>🛡️ Rol de Auditor de Ferraro:</strong> Inspección y auditoría directa "in situ" en las veredas comerciales críticas de las Comunas 7, 10 y 11, fiscalizando que la AGC y las agencias de seguridad clausuren efectivamente las cuevas y depósitos de celulares robados sin recibir coimas ni desviar controles.
+                                </div>
                             </div>
-                            <div class="db-card">
-                                <h3>💸 Alivio Tributario PyME Sostenible</h3>
-                                <p style="margin-bottom: 1rem;">Exención impositiva de hasta el 100% de Ingresos Brutos el primer año para PyMEs locales que certifiquen huella de carbono neutra o procesos de economía circular.</p>
-                                <p><strong>PWA Supabase:</strong> Aplicación móvil offline-first para militantes en territorio que permite registrar obras y problemas vecinales sin internet, sincronizando con Supabase.</p>
+
+                            <!-- Alivio Tributario PyME -->
+                            <div class="db-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <h3 style="color: var(--color-verde); border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.6rem; margin-top: 0;">💸 Alivio Tributario PyME Sostenible</h3>
+                                    
+                                    <div class="db-sub-card" style="background: rgba(0, 255, 210, 0.03); border-left: 3px solid var(--color-verde); padding: 0.9rem; margin-bottom: 1rem; border-radius: 4px;">
+                                        <h4 style="margin: 0 0 0.4rem 0; color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px;">📉 Exención Progresiva de Ingresos Brutos</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--color-texto-muted);">
+                                            Exención de hasta el 100% en el impuesto a los Ingresos Brutos durante el primer año de operaciones para nuevos comercios de cercanía y PyMEs que acrediten de forma certificada huella de carbono neutra o procesos de economía circular.
+                                        </p>
+                                    </div>
+
+                                    <div class="db-sub-card" style="background: rgba(255, 255, 255, 0.02); border-left: 3px solid var(--color-naranja); padding: 0.9rem; margin-bottom: 1rem; border-radius: 4px;">
+                                        <h4 style="margin: 0 0 0.4rem 0; color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px;">⚡ Compensación Fiscal por Energía Circular</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--color-texto-muted);">
+                                            Reducción adicional en las tasas de ABL y patentes para PyMEs que inviertan en microrredes solares comunitarias en consorcios o que integren activamente insumos reciclados certificados de cooperativas de recicladores urbanos.
+                                        </p>
+                                    </div>
+
+                                    <div class="db-sub-card" style="background: rgba(255, 255, 255, 0.02); border-left: 3px solid var(--color-cian); padding: 0.9rem; border-radius: 4px;">
+                                        <h4 style="margin: 0 0 0.4rem 0; color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px;">📱 Habilitación Express y PWA Supabase</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--color-texto-muted);">
+                                            Trámite digital unificado para habilitación en 24 horas y uso de una PWA offline-first (basada en Supabase) para que los militantes y auditores releven in situ trabas burocráticas comerciales y reclamos vecinales directamente sin conexión a internet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 1.2rem; padding-top: 0.8rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.82rem; line-height: 1.5;">
+                                    <strong>🏢 Protección ante el Acoso Estatal:</strong> La propuesta incluye un "escudo de defensa técnica" legal y contable para los comercios honestos adheridos al programa de sostenibilidad, protegiéndolos de clausuras discrecionales de inspectores municipales.
+                                </div>
                             </div>
                         </div>
-                        <div class="db-grid-2" style="margin-top: 1.5rem;">
+                    </section>
+
+                    <!-- Panel 6: Conflictividad Comunal -->
+                    <section class="db-panel" id="db-tab-conflictividad">
+                        <div class="db-card" style="border-top: 3px solid var(--color-cian); margin-bottom: 1.5rem;">
+                            <h3 style="color: var(--color-cian); display: flex; align-items: center; gap: 0.5rem; margin-top: 0;">🗺️ Mapeo de Conflictividad Territorial y Focos de Gestión</h3>
+                            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--color-texto-dm);">
+                                Segmentación territorial quirúrgica de la Ciudad de Buenos Aires dividida en 5 corredores estratégicos. Cada corredor agrupa comunas con problemáticas urbanas y sociales homogéneas extraídas de datos duros de portales públicos (BA Obras, BA Data, SUACI) y cruzamiento geográfico para direccionar el accionar del "Auditor Ciudadano".
+                            </p>
+                        </div>
+
+                        <div class="db-grid-2">
+                            <!-- Gráfico de Hotspots -->
                             <div class="db-card">
                                 <h3>
                                     Mapeo de Hotspots y Problemas en Comunas
@@ -1759,57 +1835,143 @@
                                     <canvas class="db-canvas-chart" id="db-barrios-chart"></canvas>
                                 </div>
                             </div>
+
+                            <!-- Tabla de Corredores -->
                             <div class="db-card">
                                 <h3>🗺️ Mapeo por Corredores y Problemas de Comunas (Tabla 3)</h3>
                                 <div class="db-table-container">
                                     <table class="db-table">
                                         <thead>
                                             <tr>
-                                                <th style="width: 12%; text-align: left;">Corredor Estratégico</th>
-                                                <th style="width: 10%; text-align: left;">Comunas Incluidas</th>
-                                                <th style="width: 26%; text-align: left;">Perfil Socio-Urbano y Demográfico</th>
-                                                <th style="width: 26%; text-align: left;">Foco de Conflicto (Problema)</th>
-                                                <th style="width: 26%; text-align: left;">Rol Operativo del "Auditor Ciudadano" (Ferraro)</th>
+                                                <th style="width: 15%; text-align: left;">Corredor Estratégico</th>
+                                                <th style="width: 12%; text-align: left;">Comunas Incluidas</th>
+                                                <th style="width: 25%; text-align: left;">Perfil Socio-Urbano y Demográfico</th>
+                                                <th style="width: 24%; text-align: left;">Foco de Conflicto (Problema)</th>
+                                                <th style="width: 24%; text-align: left;">Rol Operativo del "Auditor Ciudadano" (Ferraro)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td><strong>Centro</strong></td>
                                                 <td>1, 3</td>
-                                                <td>Alta densidad poblacional, extrema vulnerabilidad social, tránsito comercial masivo.</td>
-                                                <td>Situación de calle desbordada (concentra el 50% de todo CABA), higiene urbana crítica.</td>
+                                                <td>Alta densidad comercial, nodos críticos de transbordo de transporte, y la mayor aglomeración de personas en situación de calle.</td>
+                                                <td>Emergencia social extrema (concentra el 50% de todo CABA), higiene urbana crítica.</td>
                                                 <td>Fiscalización territorial de pliegos de recolección de basura y auditoría de la red de asistencia del Ministerio de Desarrollo.</td>
                                             </tr>
                                             <tr>
                                                 <td><strong>Norte</strong></td>
                                                 <td>2, 13, 14</td>
-                                                <td>Alto poder adquisitivo, fuerte presencia de polos gastronómicos y turismo.</td>
-                                                <td>Contaminación acústica, saturación cloacal por nuevo Código Urbanístico, megaobras.</td>
+                                                <td>Alto poder adquisitivo, fuerte presencia de consorcios y grandes polos gastronómicos y nocturnos.</td>
+                                                <td>Colapso y crisis de habitabilidad por CUR (código urbanístico), ruidos gastronómicos molestos.</td>
                                                 <td>Defensa irrestricta del consorcio frenando habilitaciones fraudulentas de la AGC e impidiendo nuevas excepciones al código.</td>
                                             </tr>
                                             <tr>
                                                 <td><strong>Sur</strong></td>
                                                 <td>4, 8, 9</td>
-                                                <td>Crónico subdesarrollo de infraestructura, alarmante déficit habitacional, abandono estatal.</td>
-                                                <td>Deterioro estructural de escuelas públicas, urbanizaciones inconclusas del IVC, transporte.</td>
+                                                <td>Crónico subdesarrollo de infraestructura, asentamientos informales y complejos de vivienda pública deficientes.</td>
+                                                <td>Paralización de obras esenciales del IVC (ej. Ramón Carrillo) e infraestructura escolar dañada (roedores).</td>
                                                 <td>Explotar su arraigo geográfico residencial. Auditar in situ paralización de obras del IVC y condiciones sanitarias en colegios.</td>
                                             </tr>
                                             <tr>
                                                 <td><strong>Oeste</strong></td>
                                                 <td>7, 10, 11</td>
-                                                <td>Entramado residencial de media densidad, fuerte tracción del comercio local y PyMEs.</td>
-                                                <td>Inseguridad barrial (arrebatos), proliferación del mercado de objetos robados.</td>
+                                                <td>Entramado residencial tradicional de media densidad, fuerte comercio local PyME y centros de compra a cielo abierto.</td>
+                                                <td>Inseguridad barrial (arrebatos de celulares) y mercados clandestinos de reventa de objetos robados.</td>
                                                 <td>Exigir trazabilidad y contundencia en los operativos de seguridad inter-agencias, protegiendo paralelamente al comercio legal de la burocracia.</td>
                                             </tr>
                                             <tr>
                                                 <td><strong>Centro-Oeste</strong></td>
                                                 <td>5, 6, 12, 15</td>
-                                                <td>Corazón cultural de CABA, clases medias progresistas, nodos de transbordo multimodal.</td>
-                                                <td>Lucha contra la gentrificación, preservación de espacios verdes y centros culturales.</td>
+                                                <td>Clases medias profesionales, corazón cultural de CABA, nodos de transbordo multimodal.</td>
+                                                <td>Lucha contra la gentrificación y obras invasivas, mantenimiento de espacios verdes y arbolado público.</td>
                                                 <td>Proteger el acervo cultural barrial (Bares Notables, teatros independientes) y presionar por la expansión operativa de la red de subtes.</td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detalle Profundo de Corredores -->
+                        <h3 style="margin-top: 2rem; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.6rem;">🔍 Análisis Detallado y Evidencia por Corredor</h3>
+                        
+                        <div class="db-grid-2" style="margin-top: 1rem; gap: 1.5rem;">
+                            <!-- Corredor Centro -->
+                            <div class="db-card" style="border-left: 4px solid var(--color-cian);">
+                                <h4 style="color: var(--color-cian); margin-top: 0; margin-bottom: 0.6rem;">📍 Corredor Centro (Comunas 1 y 3)</h4>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Perfil & Contexto:</strong> Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat, Constitución, Balvanera y San Cristóbal. Nodos masivos de transbordo.
+                                </p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Evidencia del Conflicto:</strong> Concentra casi el 50% de la población total sin techo de CABA (Comuna 1 registra el 34% por sí sola). El perfil demográfico es 83% masculino, con 70% de migrantes internos atraídos por la densidad comercial. Esto genera reclamos crónicos por higiene y saturación de la línea 108 (crecimiento de 40% interanual en llamadas).
+                                </p>
+                                <div style="font-size: 0.82rem; line-height: 1.5;">
+                                    <strong>Pivot para Ferraro:</strong> <em>"El Auditor de la Eficiencia Social"</em>. Fiscalizar los contratos millonarios de higiene urbana (ABL) y auditar in situ la asignación de recursos del Ministerio de Desarrollo Humano.
+                                </div>
+                            </div>
+
+                            <!-- Corredor Norte -->
+                            <div class="db-card" style="border-left: 4px solid var(--color-naranja);">
+                                <h4 style="color: var(--color-naranja); margin-top: 0; margin-bottom: 0.6rem;">📍 Corredor Norte (Comunas 2, 13 y 14)</h4>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Perfil & Contexto:</strong> Recoleta, Palermo, Belgrano, Núñez y Colegiales. Alto poder adquisitivo, densidad de consorcios y gran polo gastronómico/nocturno.
+                                </p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Evidencia del Conflicto:</strong> Crisis de habitabilidad por cambios en el Código Urbanístico (CUR): pérdida de asoleamiento y pulmones de manzana debido a sobrealturas y micro-apartamentos de 18m². Se registran cientos de denuncias mensuales en el 147 por ruidos molestos de boliches sin aislamiento acústico.
+                                </p>
+                                <div style="font-size: 0.82rem; line-height: 1.5;">
+                                    <strong>Pivot para Ferraro:</strong> <em>"El Garante de tu Hogar"</em>. Oponerse firmemente en la Legislatura a las "amnistías constructivas ilegales" de obras en contravención (de hasta 5,000m²) impulsadas por desarrolladores inmobiliarios.
+                                </div>
+                            </div>
+
+                            <!-- Corredor Sur -->
+                            <div class="db-card" style="border-left: 4px solid var(--color-fucsia);">
+                                <h4 style="color: var(--color-fucsia); margin-top: 0; margin-bottom: 0.6rem;">📍 Corredor Sur (Comunas 4, 8 y 9)</h4>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Perfil & Contexto:</strong> La Boca, Barracas, Parque Patricios, Nueva Pompeya, Villa Soldati, Villa Lugano y Mataderos. Cordón postergado de la Ciudad.
+                                </p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Evidencia del Conflicto:</strong> Desigualdades estructurales con obras de integración socio-urbana paralizadas (barrios Ramón Carrillo y Lacarra a cargo del IVC). Estado crítico de infraestructura escolar con invasiones de roedores en aulas y lactarios (Polo Educativo Walsh) sin respuesta ministerial.
+                                </p>
+                                <div style="font-size: 0.82rem; line-height: 1.5;">
+                                    <strong>Pivot para Ferraro:</strong> <em>"El Vecino del Sur que Fiscaliza"</em>. Ferraro vive alquilando en Barracas y no tiene vehículo propio. Su legitimidad residencial le permite auditar físicamente las promesas incumplidas del portal de datos BA Obras.
+                                </div>
+                            </div>
+
+                            <!-- Corredor Oeste -->
+                            <div class="db-card" style="border-left: 4px solid var(--color-verde);">
+                                <h4 style="color: var(--color-verde); margin-top: 0; margin-bottom: 0.6rem;">📍 Corredor Oeste (Comunas 7, 10 y 11)</h4>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Perfil & Contexto:</strong> Flores, Parque Chacabuco, Floresta, Monte Castro, Villa Luro, Villa Devoto y Villa del Parque. Barrios de densidad media y comercialización activa.
+                                </p>
+                                <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin-bottom: 0.8rem;">
+                                    <strong>Evidencia del Conflicto:</strong> Inseguridad comercial debido a arrebatos y robo de celulares en vía pública que alimentan un mercado negro de cuevas y locales no habilitados. Asfixia burocrática e inspecciones impositivas excesivas de la AGC sobre comercios legales que sí pagan tasas.
+                                </p>
+                                <div style="font-size: 0.82rem; line-height: 1.5;">
+                                    <strong>Pivot para Ferraro:</strong> <em>"El Fiscal del Espacio Público y Aliado PyME"</em>. Exigir auditorías y presentarse físicamente en los operativos de la AGC contra la receptación de teléfonos sustraídos en áreas grises.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Corredor Centro-Oeste Full Width -->
+                        <div class="db-card" style="border-left: 4px solid var(--color-azul-anchor); margin-top: 1.5rem;">
+                            <h4 style="color: var(--color-azul-anchor); margin-top: 0; margin-bottom: 0.6rem;">📍 Corredor Centro-Oeste (Comunas 5, 6, 12 y 15)</h4>
+                            <div class="db-grid-2" style="gap: 1.5rem; margin-top: 0.5rem;">
+                                <div>
+                                    <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin: 0 0 0.8rem 0;">
+                                        <strong>Perfil & Contexto:</strong> Caballito, Almagro, Boedo, Saavedra, Villa Urquiza, Chacarita, Villa Crespo y La Paternal. Bastión de clases medias profesionales.
+                                    </p>
+                                    <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin: 0;">
+                                        <strong>Evidencia del Conflicto:</strong> Gentrificación y avance del desarrollo inmobiliario invasivo que destruye el arbolado público y los espacios verdes tradicionales. Lentitud y abandono de solicitudes ambientales en el sistema único SUACI.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p style="font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.6; margin: 0 0 0.8rem 0;">
+                                        <strong>Capital del Candidato:</strong> Ferraro fundó el centro cultural independiente Jungla en Almagro, impulsó las Leyes de Centros Culturales Independientes, fomento a Bares Notables, y la extensión horaria del Subte.
+                                    </p>
+                                    <div style="font-size: 0.82rem; line-height: 1.5;">
+                                        <strong>Pivot para Ferraro:</strong> <em>"El Defensor de la Identidad Barrial y la Cultura"</em>. Utilizar su legado normativo para presionar in situ al gobierno comunal por la conservación ecológica y de patrimonio cultural.
+                                    </div>
                                 </div>
                             </div>
                         </div>
