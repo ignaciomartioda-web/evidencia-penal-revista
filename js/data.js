@@ -1390,12 +1390,40 @@ const PROPUESTAS_FERRARO = {
  <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Omnipresencia y Control</td>
  <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Otorgar entrevistas en foros antagónicos y nichos digitales poco tradicionales. Genera visibilidad basándose en la oratoria y el tiempo del candidato.</td>
  </tr>
- <tr style="border-bottom: 0px;">
+ <tr style="border-bottom: 1px solid var(--color-linea);">
  <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gamificación Digital y Pedagogía</td>
  <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Robert Garcia (EE.UU.)</td>
  <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Medio-Bajo</td>
  <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Alta Interacción Joven</td>
  <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Herramientas digitales simples (apps de código abierto, transmisiones interactivas) para explicar políticas públicas, atrayendo al votante joven y tecnológico.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">La Política del Respeto Intelectual</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Naheed Nenshi (Canadá)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Cero</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Alta Credibilidad y Retención</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Descarte absoluto de eslóganes vacíos. Publicación constante de ensayos detallados y planes técnicos de política pública que atraen al electorado urbano y cínico.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Micro-Localismo Basado en la Evidencia</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Layla Moran (R.U.), Vlado Mirosevic (Chile)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Bajo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Lealtad Territorial Férrea</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Identificación y defensa agresiva de causas vecinales muy específicas y postergadas. El candidato se transforma en el gestor y abogado del barrio ante la inacción estatal.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Presencia Cívica Descentralizada</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Begoña Villacís (España), Albert Rivera (España)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Bajo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Proximidad y Laboriosidad</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Eliminación de los costosos comités tradicionales. Instalación itinerante de pequeñas oficinas móviles en plazas para escuchar reclamos directamente del vecino.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Fiscalización Transparente como Motor</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Claudia López (Colombia), Naheed Nenshi (Canadá)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Medio</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Movilización y Moralidad</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Impulso de consultas populares, auditorías públicas o investigaciones de anticorrupción. Permite apropiarse del posicionamiento de integridad del Estado.</td>
  </tr>
  </tbody>
  </table>
