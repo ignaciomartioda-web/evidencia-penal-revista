@@ -183,7 +183,10 @@ function cargarArticuloLocal(docId) {
         if (activeItem) {
             activeItem.classList.add('active');
         }
-    });function getHeaderMetadata(docId, rawHtml) {
+    });
+}
+
+function getHeaderMetadata(docId, rawHtml) {
     const cleanText = rawHtml.replace(/<[^>]*>/g, '').trim(); // strip HTML tags
     const text = cleanText.toLowerCase();
     
