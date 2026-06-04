@@ -12,7 +12,7 @@ function router() {
     const hash = window.location.hash || '#inicio';
     console.log("SPA Router - Hash activo:", hash);
 
-    if (hash === '#inicio' || hash === '#radiografia-politica') {
+    if (hash === '#inicio') {
         showPage('page-inicio');
     } else if (hash === '#publicaciones' || hash === '#secciones' || hash === '#visor-seccion') {
         const wasOtherPage = (activePageId !== 'page-publicaciones');
@@ -47,12 +47,15 @@ function router() {
                 }
             }
         }
-    } else if (hash === '#radiografia' || hash === '#radiografia-red' || hash === '#radiografia-analisis' || hash === '#radiografia-territorio') {
+    } else if (hash === '#radiografia' || hash === '#radiografia-politica' || hash === '#radiografia-red' || hash === '#radiografia-analisis' || hash === '#radiografia-territorio') {
         const wasOtherPage = (activePageId !== 'page-radiografia');
         const isSubAnchor = hash !== '#radiografia';
         showPage('page-radiografia', isSubAnchor);
         if (isSubAnchor) {
-            const targetId = hash.substring(1);
+            let targetId = hash.substring(1);
+            if (targetId === 'radiografia-politica') {
+                targetId = 'radiografia-red';
+            }
             const target = document.getElementById(targetId);
             if (target) {
                 if (wasOtherPage) {
@@ -71,7 +74,7 @@ function router() {
         }, 50);
     } else if (hash.startsWith('#doc')) {
         const docId = hash.substring(1);
-        if (ARTICULOS_REVISTA[docId]) {
+        if (DOCUMENTOS_CAMPANA[docId]) {
             const wasOtherPage = (activePageId !== 'page-publicaciones');
             showPage('page-publicaciones', wasOtherPage);
             currentActiveDoc = docId;
@@ -150,7 +153,7 @@ function showPage(pageId, preventScrollReset = false) {
 }
 
 function cargarArticuloLocal(docId) {
-    const articulo = ARTICULOS_REVISTA[docId];
+    const articulo = DOCUMENTOS_CAMPANA[docId];
     if (!articulo) return Promise.resolve();
 
     const visor = document.getElementById('articulo-visor');
@@ -180,7 +183,161 @@ function cargarArticuloLocal(docId) {
         if (activeItem) {
             activeItem.classList.add('active');
         }
-    });
+    });function getHeaderMetadata(docId, rawHtml) {
+    const cleanText = rawHtml.replace(/<[^>]*>/g, '').trim(); // strip HTML tags
+    const text = cleanText.toLowerCase();
+    
+    if (docId === 'doc-analisis-politico') {
+        if (text.includes('resumen ejecutivo')) {
+            return {
+                title: 'Resumen Ejecutivo y Marco Contextual',
+                summary: 'Síntesis estratégica de la trayectoria, posicionamiento legislativo, interbloque Unidos y huella institucional de Maximiliano Ferraro en el panorama político de 2026.'
+            };
+        }
+        if (text.includes('módulo 1') || text.includes('labor parlamentaria') || text.includes('trayectoria y')) {
+            return {
+                title: 'Trayectoria y Labor Parlamentaria',
+                summary: 'Detalle de su gestión en la Legislatura CABA (2011-2019), Ley de Sangre, UniCABA, y su labor en el Congreso de la Nación (Caso $LIBRA, DNU SIDE, ludopatía).'
+            };
+        }
+        if (text.includes('módulo 2') || text.includes('auditoría mediática') || text.includes('posicionamiento')) {
+            return {
+                title: 'Auditoría Mediática y Posicionamiento',
+                summary: 'Análisis de sus temas bandera (corrupción, ludopatía adolescente, derechos LGTBIQ+), presencia en prensa y tono discursivo en debates clave.'
+            };
+        }
+        if (text.includes('módulo 3') || text.includes('redes sociales') || text.includes('social media')) {
+            return {
+                title: 'Auditoría y Estrategia de Redes Sociales',
+                summary: 'Métricas, alcance orgánico, gestión de crisis digitales y trolls en Meta (Instagram, Facebook), Twitter/X y YouTube.'
+            };
+        }
+        if (text.includes('módulo 4') || text.includes('comparado internacional') || text.includes('perfiles políticos')) {
+            return {
+                title: 'Análisis Comparado Internacional de Perfiles Políticos',
+                summary: 'Análisis comparado detallado de líderes internacionales (Pete Buttigieg, Claudia López, Raphaël Glucksmann, etc.) y su extrapolación a CABA.'
+            };
+        }
+        if (text.includes('módulo 5') || text.includes('propuestas de campaña') || text.includes('guerrilla')) {
+            return {
+                title: 'Propuestas de Campañas de Guerrilla Comunicacional',
+                summary: 'Lineamientos tácticos para la guerrilla comunicacional en CABA basada en shock semántico y rigor técnico.'
+            };
+        }
+        if (text.includes('conclusiones') || text.includes('perfil político estratégico') || text.includes('módulo 6')) {
+            return {
+                title: 'Conclusiones y Perfil Político Estratégico',
+                summary: 'Evaluación táctica final del posicionamiento de Ferraro frente al oficialismo de LLA y la reorganización de la oposición moderada.'
+            };
+        }
+        if (text.includes('cuadro analítico') || text.includes('fortalezas y debilidades') || text.includes('módulo 7')) {
+            return {
+                title: 'Cuadro Analítico: Fortalezas y Debilidades',
+                summary: 'FODA interactivo detallando su capital político ético, capacidad de consensos y vulnerabilidades frente a campañas de desprestigio.'
+            };
+        }
+    }
+    
+    if (docId === 'doc-automatizacion') {
+        if (text.includes('módulo 1')) {
+            return {
+                title: 'Módulo 1: Captura Digital (Redes y Canales)',
+                summary: 'Captura automática de interacciones en Meta y X/Twitter mediante webhooks gratuitos y Scheduled Tasks programadas con Google Antigravity.'
+            };
+        }
+        if (text.includes('módulo 2')) {
+            return {
+                title: 'Módulo 2: Captura en Territorio (O2O)',
+                summary: 'Digitalización de contactos y reclamos vecinales mediante formularios web móviles y códigos QR para eliminar el papel en caminatas.'
+            };
+        }
+        if (text.includes('módulo 3')) {
+            return {
+                title: 'Módulo 3: Sincronización Automática de Contactos (Sheets)',
+                summary: 'Normalización y limpieza automática de datos de contactos unificados en Google Sheets mediante integraciones de API.'
+            };
+        }
+        if (text.includes('módulo 4')) {
+            return {
+                title: 'Módulo 4: Segmentación Dinámica y Nutrición de Contenidos',
+                summary: 'Envíos segmentados por Comuna, barrio y temas de interés mediante integraciones directas a bajo costo.'
+            };
+        }
+        if (text.includes('módulo 5')) {
+            return {
+                title: 'Módulo 5: Enrutamiento y Seguimiento de Reclamos Vecinales',
+                summary: 'Gestión y visualización de denuncias en tableros Kanban y almacenamiento de fotos de baches u obras en Drive.'
+            };
+        }
+        if (text.includes('módulo 6')) {
+            return {
+                title: 'Módulo 6: Infraestructura de Datos a Costo Cero (Firebase/Supabase)',
+                summary: 'Diseño y despliegue de base de datos relacional Postgres gratuita en Supabase y hosting en Firebase.'
+            };
+        }
+        if (text.includes('módulo 7')) {
+            return {
+                title: 'Módulo 7: Base de Conocimiento Local-First (Obsidian Integration)',
+                summary: 'Integración del Vault de Obsidian del Auditor con expedientes legislativos y mapeo de relaciones locales.'
+            };
+        }
+        if (text.includes('módulo 8')) {
+            return {
+                title: 'Módulo 8: Manual de Operaciones y Mantenimiento Técnico',
+                summary: 'Protocolo semanal de limpieza de la base, backups automáticos de Supabase y rutinas técnicas sin costo de personal.'
+            };
+        }
+    }
+    
+    if (docId === 'doc-campana-austera') {
+        if (text.includes('evolución del paradigma')) {
+            return {
+                title: 'Evolución del Paradigma Electoral y el Arquetipo Urbano-Progresista',
+                summary: 'Encuadre del perfil urbano-progresista y la adaptabilidad de campañas no tradicionales en el distrito electoral de CABA.'
+            };
+        }
+        if (text.includes('fenómeno de ciudadanos') || text.includes('el fenómeno de ciudadanos')) {
+            return {
+                title: 'El Fenómeno de Ciudadanos y la Revolución del Marketing Político en España',
+                summary: 'Lecciones del cartel desnudo de Albert Rivera, oratoria competitiva y carpas ciudadanas como modelo disruptivo de bajo presupuesto.'
+            };
+        }
+        if (text.includes('benchmarking global') || text.includes('políticos comparados') || text.includes('casos globales')) {
+            return {
+                title: 'Políticos Comparados y Benchmarking Global',
+                summary: 'Análisis comparado detallado de 10 líderes internacionales (Pete Buttigieg, Claudia López, Raphaël Glucksmann, etc.) y su extrapolación a CABA.'
+            };
+        }
+        if (text.includes('conclusión: hacia') || text.includes('modelo de guerrilla') || text.includes('conclusión')) {
+            return {
+                title: 'Conclusión: Hacia la Guerrilla Comunicacional en CABA',
+                summary: 'Lineamientos para la adaptabilidad del esquema de bajo presupuesto combinando shock semántico y rigor técnico.'
+            };
+        }
+    }
+    
+    if (docId === 'doc-estrategia-caba') {
+        if (text.includes('fortalezas y debilidades') || text.includes('matriz de perfil') || text.includes('1. análisis de')) {
+            return {
+                title: 'Análisis de Fortalezas y Debilidades (Matriz de Perfil)',
+                summary: 'Diagnóstico del perfil del candidato, capitalización de su narrativa de alquiler/transporte y mitigación del síndrome de tecnócrata.'
+            };
+        }
+        if (text.includes('mapeo de reclamos') || text.includes('hotspots') || text.includes('2. mapeo de')) {
+            return {
+                title: 'Mapeo de Reclamos y Hotspots por Comunas',
+                summary: 'Identificación georreferenciada de las problemáticas críticas de las 15 comunas de CABA (CUR, higiene urbana, arbolado y SUACI).'
+            };
+        }
+        if (text.includes('plan operativo semanal') || text.includes('protocolo del auditor') || text.includes('3. plan operativo')) {
+            return {
+                title: 'Plan Operativo Semanal y Protocolo del Auditor',
+                summary: 'Rutinas semanales de recorridas de auditoría, guiones de interacción cívica y protocolo del Auditor Ciudadano.'
+            };
+        }
+    }
+    
+    return null;
 }
 
 function transformBodyIntoCollapsibles(docId, bodyHtml) {
@@ -198,24 +355,40 @@ function transformBodyIntoCollapsibles(docId, bodyHtml) {
         const node = children[i];
 
         if (node.nodeType === Node.ELEMENT_NODE && node.tagName.toLowerCase() === 'h3') {
-            foundFirstHeading = true;
+            const metadata = getHeaderMetadata(docId, node.innerHTML);
+            if (metadata) {
+                foundFirstHeading = true;
 
-            if (currentSection) {
-                resultFragment.appendChild(currentSection.details);
+                if (currentSection) {
+                    resultFragment.appendChild(currentSection.details);
+                }
+
+                const details = document.createElement('details');
+                details.className = 'premium-details';
+                
+                const summary = document.createElement('summary');
+                summary.innerHTML = `
+                    <div class="summary-header">
+                        <span class="summary-title">${metadata.title}</span>
+                        <span class="summary-desc">${metadata.summary}</span>
+                    </div>
+                `;
+                details.appendChild(summary);
+
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'details-content';
+                details.appendChild(contentDiv);
+
+                currentSection = { details, contentDiv };
+            } else {
+                if (!foundFirstHeading) {
+                    introNodes.push(node);
+                } else {
+                    if (currentSection) {
+                        currentSection.contentDiv.appendChild(node.cloneNode(true));
+                    }
+                }
             }
-
-            const details = document.createElement('details');
-            details.className = 'premium-details';
-            
-            const summary = document.createElement('summary');
-            summary.innerHTML = node.innerHTML;
-            details.appendChild(summary);
-
-            const contentDiv = document.createElement('div');
-            contentDiv.className = 'details-content';
-            details.appendChild(contentDiv);
-
-            currentSection = { details, contentDiv };
         } else {
             if (!foundFirstHeading) {
                 introNodes.push(node);
@@ -250,59 +423,39 @@ function transformBodyIntoCollapsibles(docId, bodyHtml) {
 }
 
 function getSummaryCardHtml(docId) {
+    if (docId === 'doc-analisis-politico') {
+        return `
+     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 3px solid var(--color-naranja);">
+          <p style="font-size: 0.92rem; line-height: 1.6; color: var(--color-texto-dm); margin: 0;">
+              <strong>🔍 Índice Interactivo:</strong> A continuación se presenta el estudio de inteligencia política de Maximiliano Ferraro. Despliegue cada sección para acceder al informe completo.
+          </p>
+     </div>
+        `;
+    }
     if (docId === 'doc-automatizacion') {
         return `
-     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2rem;">
-         <h4 style="margin-top: 0; color: var(--color-naranja); display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
-             <span>📊</span> Resumen Ejecutivo de Módulos (CRM y Automatización)
-         </h4>
-         <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-texto-dm); margin-bottom: 1.2rem;">
-             Esta sección describe la arquitectura técnica de automatización y centralización de la información para optimizar el contacto con los ciudadanos. A continuación se detallan los módulos clave:
-         </p>
-         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; font-size: 0.95rem; color: var(--color-texto-muted);">
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 1:</strong> Captura Digital en redes sociales (Meta, X) optimizada mediante Google Antigravity y webhooks gratuitos.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 2:</strong> Captura Física (O2O) y digitalización de planillas en territorio sin uso de papel.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 3:</strong> Centralización y normalización de contactos en Google Sheets y People API.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 4:</strong> Segmentación y nutrición de mensajes adaptados a barrios e intereses.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 5:</strong> Gestión y enrutamiento inteligente de reclamos de vecinos (Kanban y Drive).</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 6:</strong> Motor tecnológico (Workspace, Firebase, Supabase y APIs vía MCP).</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 7:</strong> Base de conocimiento legislativo local-first utilizando Obsidian.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Módulo 8:</strong> Manual operativo, rutinas de control y protocolos semanales de mantenimiento.</li>
-         </ul>
+     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 3px solid var(--color-verde);">
+          <p style="font-size: 0.92rem; line-height: 1.6; color: var(--color-texto-dm); margin: 0;">
+              <strong>📊 Índice Interactivo:</strong> Plan técnico de automatización y CRM territorial de bajo costo. Despliegue cada módulo para explorar la documentación.
+          </p>
      </div>
         `;
     }
     if (docId === 'doc-campana-austera') {
         return `
-     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2rem;">
-         <h4 style="margin-top: 0; color: var(--color-naranja); display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
-             <span>🌱</span> Resumen Ejecutivo: Campaña Austera y Modelos de Impacto
-         </h4>
-         <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-texto-dm); margin-bottom: 1.2rem;">
-             Análisis estratégico de campañas electorales de bajo costo y alto retorno, centrado en la viabilidad de replicar modelos exitosos de guerrilla comunicacional y debate de ideas en la Ciudad Autónoma de Buenos Aires. Puntos principales:
-         </p>
-         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; font-size: 0.95rem; color: var(--color-texto-muted);">
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Sección 1:</strong> Evolución de los paradigmas electorales y encuadre del perfil urbano-progresista en CABA.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Sección 2:</strong> El fenómeno del partido español Ciudadanos y la disrupción del cartel desnudo de Albert Rivera.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Sección 3:</strong> Análisis comparado y benchmarking de 15 perfiles políticos análogos internacionales.</li>
-         </ul>
+     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 3px solid var(--color-fucsia);">
+          <p style="font-size: 0.92rem; line-height: 1.6; color: var(--color-texto-dm); margin: 0;">
+              <strong>🌱 Índice Interactivo:</strong> Análisis comparado de campañas de guerrilla electoral y benchmarking global. Despliegue cada sección para ver los detalles.
+          </p>
      </div>
         `;
     }
     if (docId === 'doc-estrategia-caba') {
         return `
-     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2rem;">
-         <h4 style="margin-top: 0; color: var(--color-naranja); display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
-             <span>📍</span> Resumen Ejecutivo: Estrategia CABA y Plan de Acción
-         </h4>
-         <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-texto-dm); margin-bottom: 1.2rem;">
-             Propuesta táctica y metodológica para reposicionar a Maximiliano Ferraro como un "Auditor Ciudadano" activo en el territorio de CABA. Los ejes principales a desplegar en formato de títulos interactivos son:
-         </p>
-         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; font-size: 0.95rem; color: var(--color-texto-muted);">
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Sección 1:</strong> Matriz de perfil, diagnóstico exhaustivo de fortalezas y debilidades de comunicación.</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Sección 2:</strong> Mapeo de reclamos y hotspots en las 15 comunas de la Ciudad (Código Urbanístico, Higiene, Obras).</li>
-             <li style="display: flex; gap: 0.8rem; margin-bottom: 0.5rem;"><strong style="color: #fff; min-width: 90px; display: inline-block;">Sección 3:</strong> Plan operativo semanal detallado para el despliegue del Auditor en territorio.</li>
-         </ul>
+     <div class="summary-card premium-card" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 3px solid var(--color-azul-anchor);">
+          <p style="font-size: 0.92rem; line-height: 1.6; color: var(--color-texto-dm); margin: 0;">
+              <strong>📍 Índice Interactivo:</strong> Mapeo territorial y plan operativo del Auditor en CABA. Despliegue las secciones para ver el despliegue detallado.
+          </p>
      </div>
         `;
     }
@@ -325,7 +478,7 @@ function renderArticle(data, docId) {
 
     if (bodyEl) {
         const id = docId || currentActiveDoc;
-        if (id === 'doc-automatizacion' || id === 'doc-campana-austera' || id === 'doc-estrategia-caba') {
+        if (id === 'doc-analisis-politico' || id === 'doc-automatizacion' || id === 'doc-campana-austera' || id === 'doc-estrategia-caba') {
             bodyEl.innerHTML = transformBodyIntoCollapsibles(id, data.body);
         } else {
             bodyEl.innerHTML = data.body;

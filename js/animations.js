@@ -217,13 +217,43 @@ function initHeroCursorBeam() {
 function initRadiografiaInteractiva() {
     const nodes = document.querySelectorAll('.network-node');
     const cards = document.querySelectorAll('.info-card');
-    const lines = {
-        'info-edu': document.getElementById('line-edu'),
-        'info-transp': document.getElementById('line-transp'),
-        'info-amb': document.getElementById('line-amb'),
-        'info-estruc': document.getElementById('line-estruc'),
-        'info-electoral': document.getElementById('line-electoral')
+    const canvas = document.getElementById('network-canvas');
+    const tabTitle = document.getElementById('obsidian-tab-title');
+    
+    // SVG lines list
+    const allSvgLines = document.querySelectorAll('.network-links line');
+    
+    // Store original stroke colors on initialization
+    allSvgLines.forEach(line => {
+        if (!line.getAttribute('data-original-stroke')) {
+            line.setAttribute('data-original-stroke', line.getAttribute('stroke') || 'rgba(255,255,255,0.3)');
+        }
+    });
+    
+    // Graph topology definition (neighbor nodes and linking SVG lines)
+    const graphConnections = {
+        'info-edu': {
+            neighbors: ['info-transp', 'info-amb', 'info-electoral'],
+            lines: ['line-edu', 'line-edu-transp', 'line-edu-amb', 'line-electoral-edu']
+        },
+        'info-transp': {
+            neighbors: ['info-edu', 'info-estruc'],
+            lines: ['line-transp', 'line-edu-transp', 'line-transp-estruc']
+        },
+        'info-amb': {
+            neighbors: ['info-edu', 'info-electoral', 'info-estruc'],
+            lines: ['line-amb', 'line-edu-amb', 'line-amb-electoral', 'line-amb-estruc']
+        },
+        'info-estruc': {
+            neighbors: ['info-transp', 'info-electoral', 'info-amb'],
+            lines: ['line-estruc', 'line-transp-estruc', 'line-estruc-electoral', 'line-amb-estruc']
+        },
+        'info-electoral': {
+            neighbors: ['info-edu', 'info-amb', 'info-estruc'],
+            lines: ['line-electoral', 'line-electoral-edu', 'line-amb-electoral', 'line-estruc-electoral']
+        }
     };
+
     const hub = document.querySelector('.network-hub');
     
     if (nodes.length === 0) return;
@@ -247,36 +277,73 @@ function initRadiografiaInteractiva() {
     nodes.forEach(node => {
         node.addEventListener('click', () => {
             const targetId = node.getAttribute('data-target');
+            if (!targetId) return;
             
-            nodes.forEach(n => n.classList.remove('active'));
+            // Set canvas focus mode
+            if (canvas) {
+                canvas.classList.add('has-focus');
+            }
+
+            // Update active node status
+            nodes.forEach(n => {
+                n.classList.remove('active');
+                n.classList.remove('highlighted');
+            });
             node.classList.add('active');
             
-            Object.values(lines).forEach(line => {
-                if (line) {
-                    line.classList.remove('active');
-                    line.setAttribute('stroke-width', '1.5');
-                    line.setAttribute('opacity', '0.5');
+            // Highlight neighbors in local graph
+            const connections = graphConnections[targetId];
+            if (connections) {
+                connections.neighbors.forEach(neighborId => {
+                    const neighborNode = document.querySelector(`.network-node[data-target="${neighborId}"]`);
+                    if (neighborNode) {
+                        neighborNode.classList.add('highlighted');
+                    }
+                });
+            }
+
+            // Manage SVG lines opacity and stroke-width
+            allSvgLines.forEach(line => {
+                const lineId = line.getAttribute('id');
+                const originalStroke = line.getAttribute('data-original-stroke');
+                if (connections && connections.lines.includes(lineId)) {
+                    line.classList.add('highlighted');
+                    // Give active line or its neighbor lines high visibility
+                    if (lineId === `line-${targetId.replace('info-', '')}`) {
+                        // Direct connection to core hub
+                        line.setAttribute('stroke', borders[targetId] || originalStroke);
+                        line.setAttribute('stroke-width', '2.5');
+                    } else {
+                        // Inter-node connection
+                        line.setAttribute('stroke', originalStroke);
+                        line.setAttribute('stroke-width', '1.8');
+                    }
+                } else {
+                    line.classList.remove('highlighted');
+                    line.setAttribute('stroke', originalStroke);
+                    line.setAttribute('stroke-width', '1');
                 }
             });
-            const activeLine = lines[targetId];
-            if (activeLine) {
-                activeLine.classList.add('active');
-                activeLine.setAttribute('stroke', borders[targetId]);
-                activeLine.setAttribute('stroke-width', '2.5');
-                activeLine.setAttribute('opacity', '0.95');
-            }
             
+            // Update central hub styling based on active node color
             if (hub) {
-                hub.style.borderColor = borders[targetId];
-                hub.style.boxShadow = `0 0 30px ${colors[targetId]}`;
+                hub.style.borderColor = borders[targetId] || '';
+                hub.style.boxShadow = colors[targetId] ? `0 0 30px ${colors[targetId]}` : '';
                 hub.style.transition = 'all 0.5s ease';
             }
             
+            // Update the sidebar information cards
             cards.forEach(card => {
                 if (card.id === targetId) {
                     card.style.display = 'block';
                     void card.offsetWidth;
                     card.classList.add('active');
+                    
+                    // Update Obsidian editor tab title
+                    if (tabTitle) {
+                        const tabName = card.getAttribute('data-tab-name') || 'vault://notes/untitled.md';
+                        tabTitle.textContent = tabName;
+                    }
                 } else {
                     card.classList.remove('active');
                     card.style.display = 'none';
@@ -285,10 +352,112 @@ function initRadiografiaInteractiva() {
         });
     });
 
+    // Make Double-bracket Wiki-links interactive
+    document.addEventListener('click', (e) => {
+        const wikiLink = e.target.closest('.obsidian-wiki-link');
+        if (wikiLink) {
+            const targetWiki = wikiLink.getAttribute('data-wiki');
+            if (targetWiki) {
+                const targetNode = document.querySelector(`.network-node[data-target="${targetWiki}"]`);
+                if (targetNode) {
+                    targetNode.click();
+                    
+                    // Smooth scroll to the network canvas if on mobile / small screen
+                    if (window.innerWidth < 992) {
+                        const graphSection = document.getElementById('radiografia-red');
+                        if (graphSection) {
+                            window.scrollTo({
+                                top: graphSection.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                }
+            }
+        }
+    });
+
     const initialActiveNode = document.querySelector('.network-node.active');
     if (initialActiveNode) {
         initialActiveNode.click();
     }
+
+    // Base positions of nodes
+    const nodeBases = {
+        'node-edu': { x: 200, y: 80, speedX: 0.0012, speedY: 0.0010, ampX: 7, ampY: 7, phase: 0 },
+        'node-transp': { x: 310, y: 150, speedX: 0.0009, speedY: 0.0014, ampX: 6, ampY: 8, phase: 1.5 },
+        'node-amb': { x: 270, y: 290, speedX: 0.0011, speedY: 0.0008, ampX: 8, ampY: 6, phase: 3.1 },
+        'node-estruc': { x: 130, y: 290, speedX: 0.0013, speedY: 0.0011, ampX: 7, ampY: 7, phase: 4.8 },
+        'node-electoral': { x: 90, y: 150, speedX: 0.0010, speedY: 0.0012, ampX: 8, ampY: 8, phase: 0.8 },
+        'network-hub': { x: 200, y: 200, speedX: 0.0006, speedY: 0.0007, ampX: 3, ampY: 3, phase: 2.1 }
+    };
+
+    function updateGraphPhysics() {
+        const time = Date.now();
+        const currentPositions = {};
+
+        // Calculate new positions with floating effect
+        for (const [key, base] of Object.entries(nodeBases)) {
+            const dx = Math.sin(time * base.speedX + base.phase) * base.ampX;
+            const dy = Math.cos(time * base.speedY + base.phase) * base.ampY;
+            currentPositions[key] = {
+                x: base.x + dx,
+                y: base.y + dy
+            };
+
+            // Update DOM element position
+            let el;
+            if (key === 'network-hub') {
+                el = hub;
+            } else {
+                el = canvas ? canvas.querySelector(`.${key}`) : null;
+            }
+            
+            if (el) {
+                el.style.left = `${base.x + dx}px`;
+                el.style.top = `${base.y + dy}px`;
+            }
+        }
+
+        // Update SVG line coordinates
+        const hubPos = currentPositions['network-hub'];
+        const eduPos = currentPositions['node-edu'];
+        const transpPos = currentPositions['node-transp'];
+        const ambPos = currentPositions['node-amb'];
+        const estrucPos = currentPositions['node-estruc'];
+        const electoralPos = currentPositions['node-electoral'];
+
+        const setLineCoords = (id, x1, y1, x2, y2) => {
+            const line = document.getElementById(id);
+            if (line) {
+                line.setAttribute('x1', x1);
+                line.setAttribute('y1', y1);
+                line.setAttribute('x2', x2);
+                line.setAttribute('y2', y2);
+            }
+        };
+
+        if (hubPos) {
+            if (eduPos) setLineCoords('line-edu', hubPos.x, hubPos.y, eduPos.x, eduPos.y);
+            if (transpPos) setLineCoords('line-transp', hubPos.x, hubPos.y, transpPos.x, transpPos.y);
+            if (ambPos) setLineCoords('line-amb', hubPos.x, hubPos.y, ambPos.x, ambPos.y);
+            if (estrucPos) setLineCoords('line-estruc', hubPos.x, hubPos.y, estrucPos.x, estrucPos.y);
+            if (electoralPos) setLineCoords('line-electoral', hubPos.x, hubPos.y, electoralPos.x, electoralPos.y);
+        }
+
+        if (eduPos && transpPos) setLineCoords('line-edu-transp', eduPos.x, eduPos.y, transpPos.x, transpPos.y);
+        if (eduPos && ambPos) setLineCoords('line-edu-amb', eduPos.x, eduPos.y, ambPos.x, ambPos.y);
+        if (transpPos && estrucPos) setLineCoords('line-transp-estruc', transpPos.x, transpPos.y, estrucPos.x, estrucPos.y);
+        if (ambPos && electoralPos) setLineCoords('line-amb-electoral', ambPos.x, ambPos.y, electoralPos.x, electoralPos.y);
+        if (electoralPos && eduPos) setLineCoords('line-electoral-edu', electoralPos.x, electoralPos.y, eduPos.x, eduPos.y);
+        if (estrucPos && electoralPos) setLineCoords('line-estruc-electoral', estrucPos.x, estrucPos.y, electoralPos.x, electoralPos.y);
+        if (ambPos && estrucPos) setLineCoords('line-amb-estruc', ambPos.x, ambPos.y, estrucPos.x, estrucPos.y);
+
+        requestAnimationFrame(updateGraphPhysics);
+    }
+
+    // Start loop
+    requestAnimationFrame(updateGraphPhysics);
 }
 
 function initCampaniaNavbar() {
@@ -304,27 +473,10 @@ function initCampaniaNavbar() {
         });
     }
 
-    function smoothScrollTo(elementId) {
-        const target = document.getElementById(elementId);
-        if (target) {
-            setTimeout(() => {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 300);
-        }
-    }
-
     allLinks.forEach(link => {
         link.addEventListener('click', () => {
-            const targetHash = link.getAttribute('href');
-            if (!targetHash) return;
-            
             document.body.classList.remove('navbar-mobile-open');
             if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
-
-            if (targetHash.startsWith('#') && targetHash !== '#inicio' && targetHash !== '#publicaciones' && targetHash !== '#nosotros' && targetHash !== '#radiografia' && targetHash !== '#dashboard') {
-                const elementId = targetHash.substring(1);
-                smoothScrollTo(elementId);
-            }
         });
     });
 
@@ -332,13 +484,13 @@ function initCampaniaNavbar() {
         const currentHash = window.location.hash || '#inicio';
         
         let activePage = 'page-inicio';
-        if (currentHash === '#inicio' || currentHash === '#radiografia-politica') {
+        if (currentHash === '#inicio') {
             activePage = 'page-inicio';
         } else if (currentHash === '#publicaciones' || currentHash.startsWith('#doc') || currentHash === '#visor-seccion') {
             activePage = 'page-publicaciones';
         } else if (currentHash === '#nosotros' || currentHash === '#sobre-nosotros' || currentHash === '#biografia-seccion' || currentHash === '#ejes-partidarios' || currentHash === '#iniciativas-legislativas') {
             activePage = 'page-nosotros';
-        } else if (currentHash === '#radiografia' || currentHash === '#radiografia-red' || currentHash === '#radiografia-analisis' || currentHash === '#radiografia-territorio') {
+        } else if (currentHash === '#radiografia' || currentHash === '#radiografia-politica' || currentHash === '#radiografia-red' || currentHash === '#radiografia-analisis' || currentHash === '#radiografia-territorio') {
             activePage = 'page-radiografia';
         } else if (currentHash === '#dashboard') {
             activePage = 'page-dashboard';
@@ -356,28 +508,6 @@ function initCampaniaNavbar() {
 
     window.addEventListener('hashchange', syncNavbarWithRoute);
     syncNavbarWithRoute();
-
-    function handleAnchorScrolling() {
-        const hash = window.location.hash;
-        if (!hash) return;
-        
-        const anchors = [
-            '#radiografia-politica', 
-            '#biografia-seccion', 
-            '#ejes-partidarios', 
-            '#voluntariado', 
-            '#iniciativas-legislativas', 
-            '#agenda-charlas', 
-            '#contacto-seccion'
-        ];
-        if (anchors.includes(hash)) {
-            const elementId = hash.substring(1);
-            smoothScrollTo(elementId);
-        }
-    }
-
-    window.addEventListener('hashchange', handleAnchorScrolling);
-    window.addEventListener('load', handleAnchorScrolling);
 }
 
 function initFaroConstellationAndParticles() {

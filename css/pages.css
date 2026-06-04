@@ -1033,7 +1033,7 @@
 .toc-item.active .toc-meta   { transform: translateX(5px); }
 
 /* ── Visor de artículo ── */
-.tablero-content { }
+
 
 .article-layout {
     background: rgba(98, 130, 220, 0.04);
@@ -1735,12 +1735,14 @@
     width: 52px;
     height: 52px;
     background: var(--bg-card) !important;
+    border: 2px solid currentColor !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 20 !important;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
                 border-color 0.4s ease, 
                 box-shadow 0.4s ease !important;
@@ -1749,20 +1751,27 @@
 .network-node:hover {
     transform: translate(-50%, -50%) scale(1.15) !important;
     box-shadow: 0 0 20px currentColor;
+    z-index: 25 !important;
 }
 
 .network-node.active {
     transform: translate(-50%, -50%) scale(1.25) !important;
     box-shadow: 0 0 25px currentColor;
     background: var(--bg-raised) !important;
-    z-index: 15 !important;
+    z-index: 30 !important;
 }
 
-.node-edu { color: var(--color-naranja); }
-.node-transp { color: var(--color-verde); }
-.node-amb { color: var(--color-fucsia); }
-.node-estruc { color: var(--color-azul-anchor); }
-.node-electoral { color: var(--color-fucsia); }
+.node-edu { color: var(--color-naranja); background: rgba(245, 175, 25, 0.12) !important; }
+.node-transp { color: var(--color-verde); background: rgba(0, 255, 210, 0.12) !important; }
+.node-amb { color: var(--color-fucsia); background: rgba(255, 8, 68, 0.12) !important; }
+.node-estruc { color: var(--color-azul-anchor); background: rgba(79, 172, 254, 0.15) !important; box-shadow: 0 0 15px rgba(79, 172, 254, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important; }
+.node-electoral { color: var(--color-fucsia); background: rgba(255, 8, 68, 0.12) !important; }
+
+.node-edu.active { background: rgba(245, 175, 25, 0.25) !important; }
+.node-transp.active { background: rgba(0, 255, 210, 0.25) !important; }
+.node-amb.active { background: rgba(255, 8, 68, 0.25) !important; }
+.node-estruc.active { background: rgba(79, 172, 254, 0.3) !important; box-shadow: 0 0 25px var(--color-azul-anchor) !important; }
+.node-electoral.active { background: rgba(255, 8, 68, 0.25) !important; }
 
 .node-pulse {
     position: absolute;
@@ -1791,6 +1800,8 @@
 
 .hub-label {
     animation: hubPulse 2s ease-in-out infinite alternate;
+    color: #ffffff !important;
+    font-weight: 800 !important;
 }
 
 @keyframes hubPulse {
@@ -2118,6 +2129,33 @@ details.premium-details summary:hover {
     color: var(--color-naranja);
 }
 
+details.premium-details summary .summary-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-right: 2.5rem;
+}
+
+details.premium-details summary .summary-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    transition: color var(--transition-fast);
+}
+
+details.premium-details summary:hover .summary-title {
+    color: var(--color-naranja);
+}
+
+details.premium-details summary .summary-desc {
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    color: var(--color-texto-muted);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
 details.premium-details .details-content {
     padding: 1.5rem 1.8rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -2131,6 +2169,26 @@ details.premium-details .details-content p {
 
 details.premium-details .details-content p:last-child {
     margin-bottom: 0;
+}
+
+details.premium-details .details-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--color-naranja) !important;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.4rem;
+}
+
+details.premium-details .details-content h4 {
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    color: #fff !important;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
 }
 
 /* ==========================================================================
@@ -2170,3 +2228,329 @@ details.premium-details .details-content p:last-child {
     border-color: rgba(255, 8, 68, 0.35) !important;
     box-shadow: 0 12px 40px rgba(255, 8, 68, 0.12) !important;
 }
+
+/* ==========================================================================
+   OBSIDIAN VAULT GRAPH VIEW & NOTE READER SIDEBAR
+   ========================================================================== */
+
+/* Dot-Matrix Canvas Grid Background */
+.radiografia-network-side {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
+    background-size: 24px 24px !important;
+    background-color: #050609 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Circular Glassmorphic Central Hub */
+.network-hub {
+    border-radius: 50% !important;
+    background: rgba(10, 15, 30, 0.75) !important;
+    border: 2px solid rgba(0, 242, 254, 0.25) !important; /* Cyan translúcido premium */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                0 0 20px rgba(0, 242, 254, 0.15) !important; /* Brillo suave */
+    color: #ffffff !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    clip-path: none !important;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease !important;
+}
+.network-hub:hover {
+    border-color: var(--color-cian) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                0 0 30px rgba(0, 242, 254, 0.4) !important; /* Brillo hover */
+    background: rgba(10, 15, 30, 0.9) !important;
+}
+
+/* Active and Neighbor Highlight & Dim logic */
+.network-canvas.has-focus .network-node:not(.highlighted):not(.active) {
+    opacity: 0.35 !important;
+    filter: grayscale(40%) contrast(90%);
+}
+
+.network-canvas.has-focus .network-node.highlighted,
+.network-canvas.has-focus .network-node.active {
+    opacity: 1 !important;
+    filter: none;
+}
+
+.network-canvas.has-focus .network-node.highlighted {
+    transform: translate(-50%, -50%) scale(1.12) !important;
+    box-shadow: 0 0 15px currentColor !important;
+    z-index: 25 !important;
+}
+
+.network-canvas.has-focus .network-node.active {
+    transform: translate(-50%, -50%) scale(1.25) !important;
+    box-shadow: 0 0 25px currentColor !important;
+    z-index: 35 !important;
+}
+
+.network-canvas.has-focus .network-links line:not(.highlighted) {
+    opacity: 0.04 !important;
+}
+
+.network-canvas.has-focus .network-links line.highlighted {
+    opacity: 0.8 !important;
+    stroke-width: 2.2px !important;
+}
+
+/* Obsidian note editor container */
+.obsidian-note-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(10, 13, 23, 0.45) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: var(--radius-lg);
+    font-family: var(--font-sans);
+    color: var(--color-texto-dm);
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+}
+
+.obsidian-note-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    background: rgba(6, 8, 14, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--color-texto-muted);
+}
+
+.obsidian-note-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(16, 20, 36, 0.8);
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: none;
+    color: #fff;
+    margin-bottom: -0.65rem;
+}
+
+.obsidian-note-content {
+    padding: 2rem;
+    max-height: 480px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.obsidian-note-content::-webkit-scrollbar {
+    width: 6px;
+}
+.obsidian-note-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+/* YAML Block */
+.obsidian-yaml {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #8a99ad;
+    line-height: 1.6;
+}
+
+.obsidian-yaml-key {
+    color: var(--color-naranja);
+}
+
+.obsidian-yaml-val {
+    color: #00e5a3;
+}
+
+/* Glowing Wiki-links */
+.obsidian-wiki-link {
+    color: #00e5a3 !important;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(0, 229, 163, 0.06);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 229, 163, 0.18);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.obsidian-wiki-link:hover {
+    background: rgba(0, 229, 163, 0.16) !important;
+    box-shadow: 0 0 12px rgba(0, 229, 163, 0.35);
+    text-shadow: 0 0 6px rgba(0, 229, 163, 0.6);
+}
+
+/* Markdown Task Checklists */
+.obsidian-checklist {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 1.5rem 0 !important;
+}
+
+.obsidian-checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.65rem;
+    font-size: 0.88rem;
+    color: var(--color-texto-dm);
+}
+
+.obsidian-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 3.5px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+    font-family: var(--font-mono);
+    cursor: default;
+    transition: all 0.2s ease;
+}
+
+.obsidian-checkbox.checked {
+    background: #00e5a3;
+    border-color: #00e5a3;
+    color: #050609;
+    font-weight: 900;
+}
+
+.obsidian-checkbox.checked::after {
+    content: "✓";
+}
+
+.obsidian-checkbox.unchecked {
+    background: transparent;
+}
+
+.obsidian-section-title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    color: #fff;
+    margin-top: 1.8rem;
+    margin-bottom: 0.85rem;
+    font-weight: 400;
+    border-left: 2.5px solid var(--color-azul-anchor);
+    padding-left: 0.75rem;
+}
+
+/* ==========================================================================
+   OBSIDIAN VAULT GRAPH ENHANCEMENTS
+   ========================================================================== */
+
+/* Suavizado en la transición de líneas conectoras */
+.network-links line {
+    transition: stroke 0.4s ease, stroke-width 0.4s ease, opacity 0.4s ease !important;
+}
+
+/* Centrado perfecto y efectos interactivos para las etiquetas de los nodos */
+.node-tag-label {
+    position: absolute !important;
+    top: 115% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 0.58rem !important;
+    font-weight: 700 !important;
+    color: var(--color-texto-muted) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    white-space: nowrap !important;
+    font-family: var(--font-mono) !important;
+    pointer-events: none !important;
+    opacity: 0.8;
+    transition: color 0.3s ease, opacity 0.3s ease !important;
+}
+
+/* Resaltar la etiqueta al pasar el cursor o activar el nodo */
+.network-node:hover .node-tag-label,
+.network-node.active .node-tag-label,
+.network-node.highlighted .node-tag-label {
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+/* Animación de respiración lenta para el núcleo del Vault */
+.network-hub {
+    animation: hubBreathe 4s ease-in-out infinite alternate !important;
+}
+
+@keyframes hubBreathe {
+    0% {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                    0 0 15px rgba(0, 242, 254, 0.15) !important;
+    }
+    100% {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 
+                    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+                    0 0 35px rgba(0, 242, 254, 0.35) !important;
+    }
+}
+
+/* Etiquetas del frontmatter en formato píldora interactiva */
+.obsidian-tag-badge {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    font-size: 0.68rem;
+    font-family: var(--font-mono);
+    color: #00e5a3 !important;
+    background: rgba(0, 229, 163, 0.05);
+    border: 1px solid rgba(0, 229, 163, 0.15);
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 0 2px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.obsidian-tag-badge:hover {
+    background: rgba(0, 229, 163, 0.15);
+    border-color: rgba(0, 229, 163, 0.35);
+    box-shadow: 0 0 8px rgba(0, 229, 163, 0.2);
+}
+
+/* Iluminar las tarjetas al pasar el cursor (Hover Glow) */
+.teaser-card {
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease !important;
+}
+
+.teaser-card.card-naranja:hover {
+    border-color: rgba(245, 175, 25, 0.6) !important;
+    box-shadow: 0 0 30px rgba(245, 175, 25, 0.3), 0 12px 40px rgba(0, 0, 0, 0.65) !important;
+    transform: translateY(-5px);
+}
+.teaser-card.card-verde:hover {
+    border-color: rgba(0, 255, 210, 0.6) !important;
+    box-shadow: 0 0 30px rgba(0, 255, 210, 0.3), 0 12px 40px rgba(0, 0, 0, 0.65) !important;
+    transform: translateY(-5px);
+}
+.teaser-card.card-fucsia:hover {
+    border-color: rgba(255, 8, 68, 0.6) !important;
+    box-shadow: 0 0 30px rgba(255, 8, 68, 0.3), 0 12px 40px rgba(0, 0, 0, 0.65) !important;
+    transform: translateY(-5px);
+}
+.teaser-card.card-azul:hover {
+    border-color: rgba(79, 172, 254, 0.6) !important;
+    box-shadow: 0 0 30px rgba(79, 172, 254, 0.3), 0 12px 40px rgba(0, 0, 0, 0.65) !important;
+    transform: translateY(-5px);
+}
+

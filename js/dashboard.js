@@ -372,7 +372,7 @@ function renderDbCharts() {
         if (width > 0 && height > 0) {
             benchCanvas.width = width;
             benchCanvas.height = height;
-            const labels = ['Town Halls', 'Ludopatía', 'En Bici', 'Plaza Ideas'];
+            const labels = ['Town Halls', 'Ludopatía', 'Auditoría', 'Plaza Ideas'];
             const values = [80, 95, 70, 75];
             if (dbChartModels.bench === 'bar') {
                 drawDbBarChart(ctx, width, height, labels, values, 100, '#f5af19');

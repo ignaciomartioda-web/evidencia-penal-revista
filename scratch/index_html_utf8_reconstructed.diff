@@ -1,0 +1,232 @@
+﻿diff --git a/index.html b/index.html
+index b192f21..1c9584b 100644
+--- a/index.html
++++ b/index.html
+@@ -232,164 +232,76 @@
+                 </div>
+             </section>
+ 
+-            <!-- Nueva Secci├│n: Radiograf├¡a Pol├¡tica -->
+-            <section class="radiografia-seccion reveal-on-scroll" id="radiografia-politica" style="max-width: 1400px; margin: 4rem auto; padding: 0 2rem;">
+-                <div class="radiografia-header" style="text-align: center; margin-bottom: 3rem;">
+-                    <span class="mono-tag" style="display: inline-block; margin-bottom: 0.8rem;">[ AN├üLISIS DE ESTRATEGIA ]</span>
+-                    <h2 class="section-title" style="font-family: var(--font-serif); font-size: 2.6rem; font-weight: 400; color: var(--color-texto); margin-bottom: 0.8rem;">Radiograf├¡a Pol├¡tica</h2>
+-                    <p class="section-subtitle" style="color: var(--color-texto-dm); font-size: 1.05rem; max-width: 600px; margin: 0 auto;">Un mapeo interactivo de las fortalezas legislativas y los desaf├¡os estrat├®gicos de la campa├▒a de Maxi Ferraro.</p>
++            <!-- Secci├│n: Accesos R├ípidos (Navegaci├│n Premium) -->
++            <section class="gateway-seccion reveal-on-scroll" style="max-width: 1400px; margin: 4rem auto; padding: 0 2rem;">
++                <div class="gateway-header" style="text-align: center; margin-bottom: 3rem;">
++                    <span class="mono-tag" style="display: inline-block; margin-bottom: 0.8rem;">[ DIMENSIONES CLAVE ]</span>
++                    <h2 class="section-title">Ejes de Navegaci├│n</h2>
++                    <p class="section-subtitle" style="color: var(--color-texto-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto;">Explora las tres ├íreas fundamentales de nuestra plataforma interactiva de campa├▒a.</p>
+                 </div>
+                 
+-                <div class="radiografia-container double-bezel-outer" style="background: var(--bg-surface); border: 1px solid var(--color-linea); border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
+-                    <div class="radiografia-inner double-bezel-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; min-height: 480px;">
+-                        
+-                        <!-- Panel Izquierdo: Red Interactiva -->
+-                        <div class="radiografia-network-side" style="position: relative; height: 100%; min-height: 400px; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle at center, rgba(26,98,255,0.04) 0%, transparent 70%); border-right: 1px solid var(--color-linea);">
+-                            <div class="network-canvas" id="network-canvas" style="position: relative; width: 400px; height: 400px;">
+-                                <!-- Hub Central -->
+-                                <div class="network-hub" style="position: absolute; top: 200px; left: 200px; transform: translate(-50%, -50%); width: 88px; height: 88px; background: radial-gradient(circle, var(--bg-raised) 0%, var(--bg-base) 100%); border: 2px solid var(--color-azul-anchor); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--color-texto); font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; z-index: 10; box-shadow: 0 0 30px rgba(26,98,255,0.4);">
+-                                    <span class="hub-label">FERRARO</span>
+-                                </div>
+-                                
+-                                <!-- L├¡neas Conectoras en SVG -->
+-                                <svg class="network-links" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5;">
+-                                    <line id="line-edu" x1="200" y1="200" x2="200" y2="80" stroke="var(--color-naranja)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+-                                    <line id="line-transp" x1="200" y1="200" x2="310" y2="150" stroke="var(--color-verde)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+-                                    <line id="line-amb" x1="200" y1="200" x2="270" y2="290" stroke="var(--color-fucsia)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+-                                    <line id="line-estruc" x1="200" y1="200" x2="130" y2="290" stroke="var(--color-azul-anchor)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+-                                    <line id="line-electoral" x1="200" y1="200" x2="90" y2="150" stroke="var(--color-fucsia)" stroke-dasharray="4" opacity="0.5" stroke-width="1.5" />
+-                                </svg>
+-                                
+-                                <!-- Nodos -->
+-                                <!-- Fortaleza 1: Educaci├│n (Naranja) -->
+-                                <div class="network-node node-edu active" data-target="info-edu" style="position: absolute; top: 80px; left: 200px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-naranja); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+-                                    <div class="node-pulse pulse-naranja" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-naranja); opacity: 0.8;"></div>
+-                                    <span class="node-icon" style="font-size: 1.2rem;">­ƒôÜ</span>
+-                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Educaci├│n</span>
+-                                </div>
+-                                <!-- Fortaleza 2: Transparencia (Verde) -->
+-                                <div class="network-node node-transp" data-target="info-transp" style="position: absolute; top: 150px; left: 310px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-verde); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+-                                    <div class="node-pulse pulse-verde" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-verde); opacity: 0.8;"></div>
+-                                    <span class="node-icon" style="font-size: 1.2rem;">ÔÜû´©Å</span>
+-                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Transparencia</span>
+-                                </div>
+-                                <!-- Fortaleza 3: Ambiente (Fucsia) -->
+-                                <div class="network-node node-amb" data-target="info-amb" style="position: absolute; top: 290px; left: 270px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-fucsia); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+-                                    <div class="node-pulse pulse-fucsia" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-fucsia); opacity: 0.8;"></div>
+-                                    <span class="node-icon" style="font-size: 1.2rem;">­ƒî▒</span>
+-                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Ambiente</span>
+-                                </div>
+-                                <!-- Desaf├¡o 1: Estructura (Azul) -->
+-                                <div class="network-node node-estruc" data-target="info-estruc" style="position: absolute; top: 290px; left: 130px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-azul-anchor); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+-                                    <div class="node-pulse pulse-azul" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-azul-anchor); opacity: 0.8;"></div>
+-                                    <span class="node-icon" style="font-size: 1.2rem;">­ƒøí´©Å</span>
+-                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Estructura</span>
+-                                </div>
+-                                <!-- Desaf├¡o 2: Penetraci├│n Electoral (Fucsia/Azul) -->
+-                                <div class="network-node node-electoral" data-target="info-electoral" style="position: absolute; top: 150px; left: 90px; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--color-fucsia); display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 12; transition: all var(--transition-fast);">
+-                                    <div class="node-pulse pulse-fucsia-azul" style="position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--color-fucsia); opacity: 0.8;"></div>
+-                                    <span class="node-icon" style="font-size: 1.2rem;">ÔÜí</span>
+-                                    <span class="node-tag-label" style="position: absolute; top: 115%; font-size: 0.62rem; font-weight: 700; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap;">Electoral</span>
+-                                </div>
++                <div class="gateway-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
++                    
++                    <!-- Tarjeta 1: Propuestas -->
++                    <div class="teaser-card card-naranja double-bezel-outer">
++                        <div class="teaser-card-inner double-bezel-inner" style="min-height: 380px; justify-content: space-between; display: flex; flex-direction: column;">
++                            <div class="teaser-body">
++                                <span class="teaser-cat" style="color: var(--color-naranja);">Biblioteca Digital</span>
++                                <span class="teaser-number" style="top: 2rem; right: 2rem; font-size: 1.8rem; font-family: inherit; font-weight: normal; opacity: 0.9;">­ƒôÜ</span>
++                                <h3 class="teaser-title" style="margin-top: 1rem;">Propuestas y Estrategia</h3>
++                                <p class="teaser-desc" style="margin-top: 1rem; font-size: 0.88rem; line-height: 1.6;">Biblioteca completa con los 6 documentos de inteligencia pol├¡tica, campa├▒as austeras y perfiles anal├¡ticos detallados.</p>
+                             </div>
++                            <a href="#publicaciones" class="teaser-cta btn-gold-cta group btn-grad-naranja" style="border: none; padding: 0.8rem 1.4rem; border-radius: 99px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;">
++                                <span>Ver Propuestas</span>
++                                <span class="btn-icon-circle-sm" style="background: rgba(255,255,255,0.2);">
++                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 12px; height: 12px; color: #fff;">
++                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
++                                    </svg>
++                                </span>
++                            </a>
+                         </div>
+-                        
+-                        <!-- Panel Derecho: Informaci├│n del An├ílisis Din├ímico -->
+-                        <div class="radiografia-info-side" style="padding: 3rem; background: rgba(20, 24, 42, 0.2); display: flex; align-items: center;">
+-                            <div class="info-content-wrapper" style="width: 100%;">
+-                                <!-- Info 1: Educaci├│n -->
+-                                <div class="info-card active" id="info-edu">
+-                                    <span class="info-type badge-fortaleza" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-naranja); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-naranja); letter-spacing: 1.5px; margin-bottom: 1.5rem;">FORTALEZA</span>
+-                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Trayectoria y Liderazgo Educativo</h3>
+-                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-naranja); margin-bottom: 1.5rem;"></div>
+-                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">Maxi Ferraro ha liderado la agenda educativa y cuenta con un gran reconocimiento en los sectores docentes y universitarios. Su capacidad de articular propuestas t├®cnicas s├│lidas lo posiciona como el referente principal en la reforma escolar digital.</p>
+-                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-naranja);">100%</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Presencia en debates</span>
+-                                        </div>
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-naranja);">#1</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Prioridad en Agenda</span>
+-                                        </div>
+-                                    </div>
+-                                </div>
+-                                
+-                                <!-- Info 2: Transparencia -->
+-                                <div class="info-card" id="info-transp" style="display: none;">
+-                                    <span class="info-type badge-fortaleza" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-verde); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-verde); letter-spacing: 1.5px; margin-bottom: 1.5rem;">FORTALEZA</span>
+-                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Integridad ├ëtica y Ficha Limpia</h3>
+-                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-verde); margin-bottom: 1.5rem;"></div>
+-                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">Identificado hist├│ricamente con la transparencia institucional. La propuesta de Ficha Limpia goza de un amplio consenso social y sirve como elemento diferenciador absoluto ante otras fuerzas pol├¡ticas de la Ciudad.</p>
+-                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-verde);">CC-ARI</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Reputaci├│n hist├│rica</span>
+-                                        </div>
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-verde);">10/10</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Calificaci├│n ├®tica</span>
+-                                        </div>
+-                                    </div>
+-                                </div>
+-                                
+-                                <!-- Info 3: Ambiente -->
+-                                <div class="info-card" id="info-amb" style="display: none;">
+-                                    <span class="info-type badge-fortaleza" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-fucsia); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-fucsia); letter-spacing: 1.5px; margin-bottom: 1.5rem;">FORTALEZA</span>
+-                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Agenda Verde y Sostenibilidad</h3>
+-                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-fucsia); margin-bottom: 1.5rem;"></div>
+-                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">Su vinculaci├│n con pol├¡ticas medioambientales atrae al electorado joven e independiente. La transici├│n energ├®tica urbana y el reciclaje circular son propuestas modernas que generan impacto en las clases medias urbanas.</p>
+-                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">NET-0</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Meta de Emisiones CABA</span>
+-                                        </div>
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">+25%</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Atracci├│n voto joven</span>
+-                                        </div>
+-                                    </div>
+-                                </div>
+-                                
+-                                <!-- Info 4: Estructura (Desaf├¡o) -->
+-                                <div class="info-card" id="info-estruc" style="display: none;">
+-                                    <span class="info-type badge-desafio" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-azul-anchor); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-azul-anchor); letter-spacing: 1.5px; margin-bottom: 1.5rem;">DESAF├ìO</span>
+-                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Estructura Partidaria Compacta</h3>
+-                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-azul-anchor); margin-bottom: 1.5rem;"></div>
+-                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">La Coalici├│n C├¡vica es una fuerza nacional compacta en comparaci├│n con estructuras tradicionales. Esto exige focalizar los esfuerzos en la campa├▒a digital de alto impacto y en la creaci├│n de coaliciones para la fiscalizaci├│n.</p>
+-                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-azul-anchor);">100%</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Enfoque org├ínico digital</span>
+-                                        </div>
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-azul-anchor);">Alianzas</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Acuerdos de fiscalizaci├│n</span>
+-                                        </div>
+-                                    </div>
+-                                </div>
+-                                
+-                                <!-- Info 5: Electoral (Desaf├¡o) -->
+-                                <div class="info-card" id="info-electoral" style="display: none;">
+-                                    <span class="info-type badge-desafio" style="display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--color-fucsia); border-radius: 4px; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; color: var(--color-fucsia); letter-spacing: 1.5px; margin-bottom: 1.5rem;">DESAF├ìO</span>
+-                                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--color-texto); margin-bottom: 1rem;">Polarizaci├│n y Sectores Tradicionales</h3>
+-                                    <div class="info-divider" style="height: 1px; width: 60px; background: var(--color-fucsia); margin-bottom: 1.5rem;"></div>
+-                                    <p style="font-size: 0.92rem; color: var(--color-texto-dm); margin-bottom: 2rem; line-height: 1.7;">La polarizaci├│n extrema dificulta que los discursos moderados y basados en datos penetren en sectores tradicionales no urbanos. El desaf├¡o es simplificar la narrativa y enfocar el mensaje territorial.</p>
+-                                    <div class="info-metrics" style="display: flex; gap: 2rem;">
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">Territorio</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Foco en barrios lejanos</span>
+-                                        </div>
+-                                        <div class="info-metric-item" style="display: flex; flex-direction: column;">
+-                                            <span class="metric-num" style="font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-fucsia);">Simplificar</span>
+-                                            <span class="metric-txt" style="font-size: 0.72rem; color: var(--color-texto-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Mensaje directo sin tecnicismos</span>
+-                                        </div>
+-                                    </div>
+-                                </div>
++                    </div>
++                    
++                    <!-- Tarjeta 2: Trayectoria -->
++                    <div class="teaser-card card-verde double-bezel-outer">
++                        <div class="teaser-card-inner double-bezel-inner" style="min-height: 380px; justify-content: space-between; display: flex; flex-direction: column;">
++                            <div class="teaser-body">
++                                <span class="teaser-cat" style="color: var(--color-verde);">Acci├│n Legislativa</span>
++                                <span class="teaser-number" style="top: 2rem; right: 2rem; font-size: 1.8rem; font-family: inherit; font-weight: normal; opacity: 0.9;">­ƒÅø´©Å</span>
++                                <h3 class="teaser-title" style="margin-top: 1rem;">Trayectoria y Acci├│n</h3>
++                                <p class="teaser-desc" style="margin-top: 1rem; font-size: 0.88rem; line-height: 1.6;">Explora la biograf├¡a de Maxi Ferraro, su trabajo en la C├ímara de Diputados, iniciativas legislativas y la agenda de charlas.</p>
+                             </div>
++                            <a href="#nosotros" class="teaser-cta btn-cyan-cta group btn-grad-verde" style="border: none; padding: 0.8rem 1.4rem; border-radius: 99px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;">
++                                <span>Ver Trayectoria</span>
++                                <span class="btn-icon-circle-sm" style="background: rgba(255,255,255,0.2);">
++                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 12px; height: 12px; color: #fff;">
++                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
++                                    </svg>
++                                </span>
++                            </a>
++                        </div>
++                    </div>
++                    
++                    <!-- Tarjeta 3: Tablero de Campa├▒a -->
++                    <div class="teaser-card card-fucsia double-bezel-outer">
++                        <div class="teaser-card-inner double-bezel-inner" style="min-height: 380px; justify-content: space-between; display: flex; flex-direction: column;">
++                            <div class="teaser-body">
++                                <span class="teaser-cat" style="color: var(--color-fucsia);">Control Interno</span>
++                                <span class="teaser-number" style="top: 2rem; right: 2rem; font-size: 1.8rem; font-family: inherit; font-weight: normal; opacity: 0.9;">­ƒôè</span>
++                                <h3 class="teaser-title" style="margin-top: 1rem;">Tablero de Control</h3>
++                                <p class="teaser-desc" style="margin-top: 1rem; font-size: 0.88rem; line-height: 1.6;">Acceso al panel t├íctico interno: gr├íficos interactivos de FODA, mapeo de comunas y la nueva Radiograf├¡a Estrat├®gica.</p>
++                            </div>
++                            <a href="#dashboard" class="teaser-cta btn-fucsia-cta group btn-grad-fucsia" style="border: none; padding: 0.8rem 1.4rem; border-radius: 99px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;">
++                                <span>Acceder al Tablero</span>
++                                <span class="btn-icon-circle-sm" style="background: rgba(255,255,255,0.2);">
++                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 12px; height: 12px; color: #fff;">
++                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
++                                    </svg>
++                                </span>
++                            </a>
+                         </div>
+-                        
+                     </div>
++                    
+                 </div>
+             </section>
+ 
