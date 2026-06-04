@@ -68,13 +68,30 @@
     left: 0;
     right: 0;
     height: 48px;
-    background: rgba(15, 23, 42, 0.92);
+    background: linear-gradient(90deg, rgba(8, 10, 18, 0.96) 0%, rgba(15, 23, 42, 0.94) 50%, rgba(8, 10, 18, 0.96) 100%);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 2px solid var(--color-cian);
-    box-shadow: 0 4px 20px rgba(0, 242, 254, 0.12);
     z-index: 1000;
     transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Borde inferior con gradiente armónico continuo de la campaña */
+.apple-navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        var(--color-azul-anchor) 0%, 
+        var(--color-cian) 25%, 
+        var(--color-verde) 50%, 
+        var(--color-naranja) 75%, 
+        var(--color-fucsia) 100%
+    );
+    z-index: 1001;
 }
 
 .navbar-container {
@@ -99,30 +116,43 @@
 }
 
 .brand-logo {
-    background: var(--grad-azul-naranja) !important;
+    background: linear-gradient(135deg, var(--color-cian) 0%, var(--color-azul-anchor) 50%, var(--color-verde) 100%) !important;
     color: #ffffff;
     font-weight: 800;
-    font-size: 0.75rem;
-    padding: 3px 6px;
-    border-radius: 4px;
+    font-size: 0.72rem;
+    padding: 2px 7px;
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0, 242, 254, 0.35);
     border: none !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .brand-logo {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 255, 210, 0.5);
 }
 
 .brand-text {
-    opacity: 0.8;
-    transition: opacity 0.2s, background 0.2s;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+    transition: all 0.3s ease;
 }
 
 .navbar-brand:hover .brand-text {
-    background: var(--grad-azul-naranja);
+    background: linear-gradient(90deg, var(--color-cian) 0%, var(--color-azul-anchor) 50%, var(--color-verde) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.3));
 }
 
 .navbar-links {
     display: flex;
-    gap: 32px;
+    gap: 28px;
     align-items: center;
     height: 100%;
 }
@@ -130,22 +160,58 @@
 .navbar-links .nav-link {
     color: #e2e8f0; /* Off-white de alta visibilidad */
     text-decoration: none;
-    font-size: 0.95rem; /* Letras más grandes */
+    font-size: 0.9rem; /* Letras más refinadas */
     font-weight: 600; /* Bolder */
     letter-spacing: 0.3px;
     opacity: 0.85; /* Mayor contraste */
-    transition: opacity 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     display: inline-flex;
     align-items: center;
 }
 
+/* Píldora de cristal de fondo para ítems de navegación */
+.nav-item-dropdown {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-dropdown::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 30px;
+    transform: translateY(-50%) scale(0.9);
+    background: linear-gradient(135deg, rgba(0, 242, 254, 0.06) 0%, rgba(0, 229, 163, 0.02) 100%);
+    border: 1px solid rgba(0, 242, 254, 0.15);
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.nav-item-dropdown:hover::before,
+.nav-item-dropdown:has(.nav-link.active)::before {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    border-color: rgba(0, 242, 254, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 242, 254, 0.05);
+}
+
 .navbar-links .nav-link:hover,
 .navbar-links .nav-link.active {
-    color: var(--color-cian) !important; /* Celeste brillante/celestial */
-    text-shadow: 0 0 10px rgba(0, 242, 254, 0.45); /* Efecto glow premium */
+    background: linear-gradient(90deg, var(--color-cian) 0%, var(--color-verde) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: none !important;
+    filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.45));
     opacity: 1 !important;
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
 }
 
 .navbar-actions {
@@ -155,23 +221,29 @@
 }
 
 .btn-navbar-join {
-    background: rgba(0, 229, 163, 0.1);
-    border: 1px solid rgba(0, 229, 163, 0.35);
+    background: linear-gradient(135deg, rgba(0, 242, 254, 0.1) 0%, rgba(0, 229, 163, 0.1) 100%);
+    border: 1px solid rgba(0, 242, 254, 0.4);
     color: var(--color-verde);
-    padding: 4px 12px;
-    font-size: 0.7rem;
+    padding: 6px 14px;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 9999px;
     text-decoration: none;
     transition: all var(--transition-premium);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 0 10px rgba(0, 229, 163, 0.1);
 }
 
 .btn-navbar-join:hover {
-    background: var(--color-verde);
-    color: var(--bg-base) !important;
-    box-shadow: 0 4px 15px rgba(0, 229, 163, 0.3);
+    background: linear-gradient(135deg, var(--color-cian) 0%, var(--color-verde) 100%);
+    border-color: transparent;
+    color: #050609 !important;
+    box-shadow: 0 4px 20px rgba(0, 229, 163, 0.45);
+    transform: translateY(-1px);
 }
 
 /* Hamburguesa Móvil */
@@ -242,9 +314,10 @@
 }
 
 .dropdown-item:hover {
-    background: rgba(0, 229, 163, 0.08);
+    background: linear-gradient(90deg, rgba(0, 242, 254, 0.08) 0%, rgba(0, 229, 163, 0.02) 100%);
     color: var(--color-verde);
-    padding-left: 20px;
+    padding-left: 22px;
+    box-shadow: inset 2px 0 0 var(--color-verde);
 }
 
 .chevron-down {
@@ -341,7 +414,10 @@ body.navbar-mobile-open .mobile-drawer-link:hover,
 body.navbar-mobile-open .mobile-drawer-sub-link.active,
 body.navbar-mobile-open .mobile-drawer-sub-link:hover {
     opacity: 1;
-    color: var(--color-verde);
+    background: linear-gradient(90deg, var(--color-cian) 0%, var(--color-verde) 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    width: fit-content;
 }
 
 /* Animación secuencial en cascada para todos los hijos del drawer móvil */
