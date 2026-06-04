@@ -68,10 +68,11 @@
     left: 0;
     right: 0;
     height: 48px;
-    background: rgba(8, 10, 18, 0.72);
+    background: rgba(15, 23, 42, 0.92);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 2px solid var(--color-cian);
+    box-shadow: 0 4px 20px rgba(0, 242, 254, 0.12);
     z-index: 1000;
     transition: background 0.3s ease, transform 0.3s ease;
 }

@@ -821,7 +821,7 @@
 
 .ejes-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 0;
     border: 1px solid var(--color-linea-fuerte);
     background: var(--bg-card);
@@ -1202,7 +1202,31 @@
     text-indent: 1.5em;
 }
 
-/* Letra capital */
+/* Títulos de documento */
+.body-text .document-title {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-texto);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    letter-spacing: -0.01em;
+}
+
+.body-text .document-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--color-texto-dm);
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-linea);
+    padding-bottom: 1.5rem;
+}
+
+/* Letra capital — solo aplica al primer <p> que NO sea un título */
 .body-text > p:first-of-type::first-letter {
     font-family: var(--font-serif);
     color: var(--color-oro);
@@ -1210,6 +1234,17 @@
     /* Fallback */
     font-size: 4rem; float: left; line-height: 0.8; padding-right: 0.5rem;
     /* Soporte moderno */
+    -webkit-initial-letter: 3 3;
+    initial-letter: 3 3;
+}
+
+/* Cuando hay un h2/h3 título antes del texto, la capital aplica al primer <p> después del subtítulo */
+.body-text > .document-subtitle + p::first-letter,
+.body-text > .document-title + p::first-letter {
+    font-family: var(--font-serif);
+    color: var(--color-oro);
+    font-weight: 700;
+    font-size: 4rem; float: left; line-height: 0.8; padding-right: 0.5rem;
     -webkit-initial-letter: 3 3;
     initial-letter: 3 3;
 }

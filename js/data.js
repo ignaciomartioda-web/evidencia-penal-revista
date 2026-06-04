@@ -4,26 +4,26 @@
  */
 
 const PROPUESTAS_FERRARO = {
-    "doc-analisis-politico": {
-        title: "Análisis Político Completo e Inteligencia de Fuentes Abiertas",
-        author: "Maxi Ferraro",
-        category: "Análisis Político",
-        date: "Mayo 2026",
-        abstract: "Estudio exhaustivo de la trayectoria de Maximiliano Ferraro en la CABA y la Nación. Detalla su lucha contra el flagelo de la ludopatía y su labor fiscalizadora en investigaciones clave como el Caso $LIBRA, complementando con auditoría de redes sociales y su SWOT estratégico.",
-        keywords: ["Ludopatía", "$LIBRA", "Auditoría Judicial", "FODA Político"],
-        marginalia: [
-            {
-                type: "note",
-                label: "CASO $LIBRA",
-                text: "Auditoría judicial clave impulsada por Ferraro sobre los contratos y sobornos del software clandestino en la administración."
-            },
-            {
-                type: "quote",
-                text: "La transparencia no es una bandera discursiva, es una práctica metodológica innegociable en la función pública."
-            }
-        ],
-        body: `<p>Informe de Inteligencia Política y Auditoría Digital:</p>
-<p>Análisis Integral de Maximiliano Ferraro</p>
+ "doc-analisis-politico": {
+ title: "Análisis Político Completo e Inteligencia de Fuentes Abiertas",
+ author: "Maxi Ferraro",
+ category: "Análisis Político",
+ date: "Mayo 2026",
+ abstract: "Estudio exhaustivo de la trayectoria de Maximiliano Ferraro en la CABA y la Nación. Detalla su lucha contra el flagelo de la ludopatía y su labor fiscalizadora en investigaciones clave como el Caso $LIBRA, complementando con auditoría de redes sociales y su SWOT estratégico.",
+ keywords: ["Ludopatía", "$LIBRA", "Auditoría Judicial", "FODA Político"],
+ marginalia: [
+ {
+ type: "note",
+ label: "CASO $LIBRA",
+ text: "Auditoría judicial clave impulsada por Ferraro sobre los contratos y sobornos del software clandestino en la administración."
+ },
+ {
+ type: "quote",
+ text: "La transparencia no es una bandera discursiva, es una práctica metodológica innegociable en la función pública."
+ }
+ ],
+ body: `<h2 class="document-title">Informe de Inteligencia Política y Auditoría Digital</h2>
+<h3 class="document-subtitle">Análisis Integral de Maximiliano Ferraro</h3>
 <h3>1. Resumen Ejecutivo y Marco Contextual</h3>
 <p>Institucional El presente informe de inteligencia de fuentes abiertas (OSINT) y análisis político estratégico detalla de manera exhaustiva la trayectoria, el posicionamiento legislativo, la huella mediática y la estrategia de comunicación digital de Maximiliano Carlos Francisco Ferraro.</p>
 <p>Nacido en la Ciudad Autónoma de Buenos Aires el 4 de noviembre de 1975, Ferraro, de 50 años de edad, se erige en la actualidad (mayo de 2026) como una de las figuras institucionales más gravitantes de la República Argentina. 1 Se desempeña en su segundo mandato consecutivo como Diputado de la Nación por el distrito de la Ciudad de Buenos Aires, con vigencia legal hasta el 10 de diciembre de 2027. 1 De manera concurrente y revistiendo una importancia capital para el ecosistema político nacional, ejerce la presidencia a nivel nacional del partido Coalición Cívica ARI (CC-ARI) desde el 15 de diciembre de 2018, consolidándose como el principal articulador, heredero político y guardián doctrinario de la estructura partidaria fundada históricamente por Elisa Carrió. 1 Para comprender la magnitud de su peso político actual, es imperativo no asumir conocimientos previos sobre la compleja arquitectura institucional argentina y desglosar su evolución.</p>
@@ -31,6 +31,45 @@ const PROPUESTAS_FERRARO = {
 <p>En el actual escenario político de 2026, dominado por la presidencia de Javier Milei y el partido La Libertad Avanza (LLA), Ferraro ha adoptado una postura de "oposición institucionalista y fiscalizadora".</p>
 <p>Habiendo abandonado la coalición Juntos por el Cambio para preservar la autonomía moral de su partido, Ferraro integra hoy el estratégico interbloque legislativo "Unidos". 5 La investigación determina que su capital político se cimienta sobre la defensa irrestricta de la transparencia gubernamental, la educación pública como motor de movilidad social, la ampliación de los derechos de las minorías (particularmente el colectivo LGTBIQ+), y la lucha contra la ludopatía y la opacidad financiera.</p>
 <p>Estos ejes no son meros enunciados retóricos, sino que se traducen en acciones legislativas de altísimo impacto, como su reciente rol como presidente de la Comisión Investigadora del escándalo de corrupción conocido como el "Caso \$LIBRA", donde enfrentó directamente al Poder Ejecutivo Nacional. 3 El desarrollo de este informe desagrega, clasifica y audita cada una de estas dimensiones operativas, proveyendo un mapeo hiper-detallado estructurado en el análisis de su labor parlamentaria, su presencia mediática, y su desenvolvimiento en las redes sociales, con el fin de entregar un perfil analítico completo, objetivo y autosuficiente.</p>
+
+
+<h3>Cuadro Analítico: Fortalezas y Debilidades</h3>
+<p>A continuación se resume el análisis FODA de inteligencia política sobre Maximiliano Ferraro en el territorio de CABA:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Dimensión</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 38%;">Fortalezas (Capital Político y Estratégico)</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 37%;">Debilidades (Vulnerabilidades y Riesgos)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Trayectoria y Liderazgo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Perfil Institucional y Ético</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con de diputados del PRO).</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gestión, Consensos y Leyes</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Prevención de Ludopatía).</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el histrionismo.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Ecosistema Digital y Comunicación</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</td>
+ </tr>
+ </tbody>
+ </table>
+</div>
+
+
 <h3>2. Módulo 1: Análisis Exhaustivo de la Trayectoria y</h3>
 <p>Labor Parlamentaria El accionar legislativo de Maximiliano Ferraro requiere ser abordado a través de una periodización estricta que diferencie su etapa de conformación de consensos a nivel local en la Ciudad Autónoma de Buenos Aires, de su actual rol como fiscalizador y articulador de mayorías en el Congreso de la Nación Argentina.</p>
 <h3>2.1. Gestión en la Legislatura de la Ciudad Autónoma de Buenos Aires (2011-2019)</h3>
@@ -215,12 +254,12 @@ const PROPUESTAS_FERRARO = {
 <p>En lugar de costosas publicidades tradicionales, la campaña se basó en la realización de Town Halls (asambleas ciudadanas) televisados y abiertos donde Buttigieg respondía de manera brillante, elocuente y empática cualquier pregunta del público, convirtiendo la curiosidad inicial en un fuerte compromiso militante.</p>
 <h3>6. Módulo 5: Propuestas de Campañas de</h3>
 <p>Posicionamiento y Fidelización en la CABA Inspirándose en estos exitosos modelos internacionales, y adaptándolos a la fisionomía del electorado porteño, se plantean cuatro campañas estratégicas para potenciar el conocimiento público de Maximiliano Ferraro y fidelizar al electorado que ya siente curiosidad por su trabajo en la CABA.</p>
-<p>MODELOS INTERNACIONALES DE CAMPAÑA PARA CABA ┌──────────────────────────────────────────────────────── ────────────────┐ │ 1.</p>
-<p>Claudia López (Bici y Calle) ➜ Campaña "CC-ARI en Bici / La Verdad"│ │ 2.</p>
-<p>Mónica García (Salud Social) ➜ Campaña "Apostar No Es Un Juego" │ │ 3.</p>
+<p>MODELOS INTERNACIONALES DE CAMPAÑA PARA CABA 1.</p>
+<p>Claudia López (Bici y Calle) ➜ Campaña "CC-ARI en Bici / La Verdad" 2.</p>
+<p>Mónica García (Salud Social) ➜ Campaña "Apostar No Es Un Juego" 3.</p>
 <p>R.</p>
-<p>Glucksmann (Foro Adulto) ➜ Campaña "La Plaza de las Ideas" │ │ 4.</p>
-<p>Pete Buttigieg (Town Halls) ➜ Campaña "Elegir el Futuro / Town" │ └──────────────────────────────────────────────────────── ────────────────┘ Campaña 1: "Elegir el Futuro: Town Halls con Maxi" (Inspirado en Pete Buttigieg)</p>
+<p>Glucksmann (Foro Adulto) ➜ Campaña "La Plaza de las Ideas" 4.</p>
+<p>Pete Buttigieg (Town Halls) ➜ Campaña "Elegir el Futuro / Town" Campaña 1: "Elegir el Futuro: Town Halls con Maxi" (Inspirado en Pete Buttigieg)</p>
 <ul class="db-list">
 <li>Target Principal: Votantes jóvenes de clases medias, profesionales y estudiantes</li>
 </ul>
@@ -298,61 +337,23 @@ const PROPUESTAS_FERRARO = {
 <p>Su trayectoria promoviendo modificaciones a la Ley de Sangre para erradicar la discriminación de base biológica hacia el colectivo LGTBIQ+, y su enfática defensa presupuestaria en favor de las universidades públicas y el CONICET, lo ubican inequívocamente en un plano que reivindica el rol de un Estado moderno, garantista de libertades individuales, laico y promotor de la movilidad social ascendente. 4 En retrospectiva, su incorporación como pieza clave dentro del naciente interbloque "Unidos" ratifica su comprensión de la aritmética del poder legislativo. 5 Maximiliano Ferraro ha trascendido su histórico rol de "escudero" de las directivas de Elisa Carrió, para posicionarse por derecho propio como uno de los arquitectos neurálgicos de una potencial coalición de centro.</p>
 <p>De cara a la próxima configuración del mapa político nacional, su perfil sugiere la aspiración de consolidar una mayoría moderada capaz de ofrecer alternancia republicana, sostenida en la transparencia administrativa, la inviolabilidad de las instituciones de la ciencia y el resguardo del tejido social frente a los excesos de la desregulación irrestricta.</p>
 <h3>8. Módulo 7: Cuadro Analítico: Fortalezas y</h3>
-<p>Debilidades Dimensión Fortalezas (Capital Político y Estratégico) Debilidades (Vulnerabilidades y Riesgos) Trayectoria y Liderazgo Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal. Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario. Perfil Institucional y Ético Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente. Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con diputados del PRO). Gestión, Formulación y Consensos Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el Prevención de Ludopatía). histrionismo. Ecosistema y Despliegue Digital Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas. Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</p>
-
-
-<h3>Cuadro Analítico: Fortalezas y Debilidades</h3>
-<p>A continuación se resume el análisis FODA de inteligencia política sobre Maximiliano Ferraro en el territorio de CABA:</p>
-<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Dimensión</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 38%;">Fortalezas (Capital Político y Estratégico)</th>
-                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 37%;">Debilidades (Vulnerabilidades y Riesgos)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Trayectoria y Liderazgo</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Perfil Institucional y Ético</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con de diputados del PRO).</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gestión, Consensos y Leyes</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Prevención de Ludopatía).</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el histrionismo.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Ecosistema Digital y Comunicación</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-`
-    },
-    "doc-automatizacion": {
-        title: "Automatización de Base de Datos y CRM para Inteligencia Territorial",
-        author: "Maxi Ferraro",
-        category: "Tecnología de Campaña",
-        date: "Junio 2026",
-        abstract: "Plan técnico y arquitectura para digitalizar y automatizar el flujo de información de campaña. Cubre integraciones O2O con Google Forms, webhooks con Manychat/WhatsApp y almacenamiento con Firebase/Supabase para consolidar la inteligencia partidaria.",
-        keywords: ["CRM Campaña", "Manychat API", "Supabase Postgres", "Google Workspace MCP"],
-        marginalia: [
-            {
-                type: "note",
-                label: "INTEGRACIÓN O2O",
-                text: "Sincronización automática de contactos desde planillas analógicas a bases de datos relacionales en la nube mediante OCR."
-            }
-        ],
-        body: `<p>Informe Técnico y Estratégico: Arquitectura de Automatización y Centralización de CRM Político Resumen Ejecutivo El presente informe técnico desarrolla una arquitectura integral y un plan estratégico exhaustivo para el diseño, despliegue y mantenimiento de un sistema de Gestión de Relaciones con Ciudadanos (CRM) adaptado específicamente a las necesidades del entorno legislativo y político del Diputado Nacional Maximiliano Ferraro.</p>
+<p>Debilidades Dimensión Fortalezas (Capital Político y Estratégico) Debilidades (Vulnerabilidades y Riesgos) Trayectoria y Liderazgo Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal. Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario. Perfil Institucional y Ético Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente. Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con diputados del PRO). Gestión, Formulación y Consensos Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el Prevención de Ludopatía). histrionismo. Ecosistema y Despliegue Digital Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas. Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</p>`
+ },
+ "doc-automatizacion": {
+ title: "Automatización de Base de Datos y CRM para Inteligencia Territorial",
+ author: "Maxi Ferraro",
+ category: "Tecnología de Campaña",
+ date: "Junio 2026",
+ abstract: "Plan técnico y arquitectura para digitalizar y automatizar el flujo de información de campaña. Cubre integraciones O2O con Google Forms, webhooks con Manychat/WhatsApp y almacenamiento con Firebase/Supabase para consolidar la inteligencia partidaria.",
+ keywords: ["CRM Campaña", "Manychat API", "Supabase Postgres", "Google Workspace MCP"],
+ marginalia: [
+ {
+ type: "note",
+ label: "INTEGRACIÓN O2O",
+ text: "Sincronización automática de contactos desde planillas analógicas a bases de datos relacionales en la nube mediante OCR."
+ }
+ ],
+ body: `<p>Informe Técnico y Estratégico: Arquitectura de Automatización y Centralización de CRM Político Resumen Ejecutivo El presente informe técnico desarrolla una arquitectura integral y un plan estratégico exhaustivo para el diseño, despliegue y mantenimiento de un sistema de Gestión de Relaciones con Ciudadanos (CRM) adaptado específicamente a las necesidades del entorno legislativo y político del Diputado Nacional Maximiliano Ferraro.</p>
 <p>La propuesta se fundamenta en la resolución de un desafío endémico en las campañas y gestiones políticas contemporáneas: la fragmentación de la información ciudadana producto de la multiplicidad de canales de contacto. Para resolver esta problemática, el diseño aquí propuesto se rige bajo una premisa fundamental e innegociable: la máxima eficiencia a través de la simpleza operativa y la optimización absoluta de costos.</p>
 <p>Reconociendo que los equipos de gestión rara vez están integrados por ingenieros de software, la totalidad de la infraestructura planteada se apoya en tecnologías "No-Code" tradicionales y, fundamentalmente, en el nuevo paradigma de "Vibe Coding" (programación mediante lenguaje natural guiada por IA) , priorizando el uso de Google Antigravity y sus integraciones nativas mediante el Model Context Protocol (MCP) .</p>
 <p>Esto garantiza un entorno familiar, seguro, colaborativo y de nulo costo de licenciamiento, con una capacidad de escalabilidad ilimitada. A lo largo de este documento se desglosan múltiples alternativas viables para cada fase del embudo de conversión ciudadana, presentando tanto las soluciones estándar del mercado como las implementaciones personalizadas y gratuitas generadas vía Antigravity.</p>
@@ -516,23 +517,23 @@ const PROPUESTAS_FERRARO = {
 <p>empaquetar los archivos de evidencia (fotos, PDFs) de los reclamos "Resueltos" antiguos, migrándolos a almacenamiento histórico para no saturar los servicios gratuitos.</p>
 <p><strong>2. Análisis de Impacto y Recalibración Conversacional (con IA):</strong> Utilizar Antigravity para</p>
 <p>que ingiera las métricas y responda: ¿Qué canal traccionó más voluntarios? ¿Qué palabras clave perdieron vigencia? En base a esto, instruir al agente para que diseñe y despliegue nuevos flujos conversacionales (Vibe Coding) sintonizados con la coyuntura política imperante, manteniendo la frescura de la campaña sin costos de desarrollo.</p>`
-    },
-    "doc-campana-austera": {
-        title: "Campaña Austera, Casos Globales y Ejemplos de Políticos Análogos",
-        author: "Maxi Ferraro",
-        category: "Estrategia Electoral",
-        date: "Julio 2026",
-        abstract: "Análisis comparado internacional de campañas disruptivas de bajo presupuesto. Desglosa detalladamente el surgimiento del partido Ciudadanos de Albert Rivera y recopila el benchmarking y extrapolación de 25 políticos y líderes mundiales.",
-        keywords: ["Campaña Austera", "Ciudadanos Cs", "Go Everywhere", "Marketing Político"],
-        marginalia: [
-            {
-                type: "note",
-                label: "EFECTO CIUDADANOS",
-                text: "El caso del cartel desnudo de Albert Rivera y las carpas ciudadanas demuestra cómo vencer la asimetría financiera con ingenio y shock semántico."
-            }
-        ],
-        body: `<p>Estrategias Electorales de Bajo Costo y Alto Impacto:</p>
-<p>Análisis Global y Modelo de Adaptabilidad para la Ciudad de Buenos Aires</p>
+ },
+ "doc-campana-austera": {
+ title: "Campaña Austera, Casos Globales y Ejemplos de Políticos Análogos",
+ author: "Maxi Ferraro",
+ category: "Estrategia Electoral",
+ date: "Julio 2026",
+ abstract: "Análisis comparado internacional de campañas disruptivas de bajo presupuesto. Desglosa detalladamente el surgimiento del partido Ciudadanos de Albert Rivera y recopila el benchmarking y extrapolación de 25 políticos y líderes mundiales.",
+ keywords: ["Campaña Austera", "Ciudadanos Cs", "Go Everywhere", "Marketing Político"],
+ marginalia: [
+ {
+ type: "note",
+ label: "EFECTO CIUDADANOS",
+ text: "El caso del cartel desnudo de Albert Rivera y las carpas ciudadanas demuestra cómo vencer la asimetría financiera con ingenio y shock semántico."
+ }
+ ],
+ body: `<h2 class="document-title">Estrategias Electorales de Bajo Costo y Alto Impacto</h2>
+<h3 class="document-subtitle">Análisis Global y Modelo de Adaptabilidad para la Ciudad de Buenos Aires</h3>
 <h3>1. Evolución del Paradigma Electoral y el Arquetipo</h3>
 <p>Urbano-Progresista El ecosistema político contemporáneo ha experimentado una transformación estructural profunda, transitando de manera acelerada desde campañas analógicas, centralizadas y dependientes de pautas publicitarias de alto presupuesto, hacia estrategias de guerrilla digital, movilización descentralizada y metodologías de bajo costo.</p>
 <p>Este cambio de paradigma favorece estructuralmente a un arquetipo específico de líder político: urbano, pragmático, defensor acérrimo de los derechos civiles, orientado a la gestión basada en la evidencia y profundamente refractario a la demagogia y el populismo.</p>
@@ -578,381 +579,381 @@ const PROPUESTAS_FERRARO = {
 <h3>15 Perfiles Políticos de Campaña Analítica y Bajo Costo</h3>
 <p>Presentación y desglose táctico de 15 dirigentes y activistas a nivel internacional análogos a la trayectoria e identidad de Maximiliano Ferraro:</p>
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">01</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Naheed Nenshi</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Calgary, Canadá</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Naheed Nenshi, académico de la Universidad de Mount</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Naheed Nenshi, académico de la Universidad de Mount</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">01</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Naheed Nenshi</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Calgary, Canadá</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Naheed Nenshi, académico de la Universidad de Mount</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Naheed Nenshi, académico de la Universidad de Mount</p>
 <p>Royal y ex consultor de McKinsey, se convirtió en 2010 en el primer musulmán ismaelita en ser elegido alcalde de una gran ciudad norteamericana. 22 Su campaña a la alcaldía de Calgary es considerada de manera unánime como el paradigma pionero en el uso de redes sociales para la movilización política en la era digital. 25 Frente a dos oponentes de alto perfil (un veterano concejal y una presentadora de noticias) que contaban con una inmensa financiación, Nenshi partió con un apoyo en las encuestas cercano al ocho por ciento. 22 Ante la falta de recursos, Nenshi apostó por lo que conceptualizó como "la política en oraciones completas" (Politics in full sentences). 22 Se negó rotundamente a utilizar eslóganes vacíos o frases prefabricadas, publicando en su lugar propuestas de políticas públicas exhaustivamente detalladas.</p>
 <p>Su campaña no contaba con personal asalariado; dependía exclusivamente de voluntarios apasionados, bautizados rápidamente por los medios como la "Purple Army" (El Ejército Púrpura). 24 La elección del color púrpura fue una decisión estratégica magistral: al ser la mezcla del rojo (liberal) y el azul (conservador), transmitía un mensaje visual inmediato de transversalidad y superación de la grieta partidaria. 22 Nenshi utilizó las redes sociales para dialogar, no para emitir monólogos, logrando una participación electoral récord del 53 por ciento y obteniendo una victoria irreversible basada íntegramente en el activismo digital y el voluntariado de base. 22 Además, demostró su rigor institucional al ordenar investigaciones anticorrupción contra gastos suntuosos de directivos de empresas de servicios públicos (el caso Enmax), posicionándose como el máximo guardián de los fondos de los contribuyentes. 23</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">02</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pete Buttigieg</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Como alcalde de la pequeña ciudad de South Bend,</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Como alcalde de la pequeña ciudad de South Bend,</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">02</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pete Buttigieg</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Como alcalde de la pequeña ciudad de South Bend,</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Como alcalde de la pequeña ciudad de South Bend,</p>
 <p>Indiana, el perfil de Buttigieg guardaba enormes similitudes con el reformismo institucional y la identidad de Ferraro: un político joven, abiertamente gay, profundamente intelectual, moderado en las formas pero progresista en el fondo. 27 Para su campaña presidencial de 2020, su estratega de comunicaciones, Lis Smith, implementó la táctica bautizada como "Go Everywhere" (Ir a todas partes). 27 Conscientes de la extrema desventaja económica inicial frente a maquinarias políticas multimillonarias como las de Joe Biden o Bernie Sanders, Buttigieg concedió entrevistas a absolutamente cualquier medio que se lo solicitara: desde podcasts de nicho con baja audiencia hasta canales de televisión históricamente conservadores y hostiles al Partido Demócrata, como Fox News o programas de radio de derecha. 27 Esta ubicuidad mediática compensó con creces la falta de fondos para pauta publicitaria. Buttigieg proyectó un nivel inusual de empatía, inteligencia y una capacidad extraordinaria para mantener el control absoluto de la narrativa en ambientes adversos.</p>
 <p>Su estrategia comunicacional reforzó empíricamente su mensaje político fundamental: ser un candidato de una nueva generación capaz de dialogar, no esconderse en su silo partidario, y unir a personas de diferentes espectros ideológicos a través de la pedagogía cívica. 27</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-fucsia">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">03</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Jake Auchincloss</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Representante en el Congreso de Estados Unidos por</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Representante en el Congreso de Estados Unidos por</p>
+ <div class="politician-card double-bezel-outer theme-fucsia">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">03</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Jake Auchincloss</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Representante en el Congreso de Estados Unidos por</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Representante en el Congreso de Estados Unidos por</p>
 <p>el estado de Massachusetts, Auchincloss aplicó la misma estrategia metodológica del "Go Everywhere" popularizada por Buttigieg. 30 Su enfoque táctico se centró en la paradoja de avanzar políticas marcadamente progresistas (en materias ambientales y de comercio) a través de una retórica caracterizada por la moderación extrema, el pragmatismo y el tono conciliador. 30 Al aparecer proactivamente en plataformas muy diversas y no temer el debate técnico en foros que tradicionalmente rechazan a su partido, Auchincloss logró convencer a un porcentaje decisivo de votantes de centro e independientes.</p>
 <p>Demostró, con un presupuesto austero en sus inicios, que un perfil técnico e institucional no está reñido con la audacia mediática y la valentía intelectual. 30</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-azul">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">04</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Robert Garcia</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Long Beach, Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Siendo el primer alcalde abiertamente gay e</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Siendo el primer alcalde abiertamente gay e</p>
+ <div class="politician-card double-bezel-outer theme-azul">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">04</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Robert Garcia</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Long Beach, Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Siendo el primer alcalde abiertamente gay e</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Siendo el primer alcalde abiertamente gay e</p>
 <p>hispano de la ciudad de Long Beach, Robert Garcia demostró una maestría absoluta en la comunicación institucional y de campaña de bajo costo, obteniendo múltiples galardones (como los premios EPIC) por su innovación tecnológica en la función pública. 31 Garcia y su equipo implementaron lo que podría denominarse una burocracia digital altamente creativa.</p>
 <p>Destacan campañas de gamificación cívica como la creación de "EZ-P", un personaje animado en 3D utilizado para promover una aplicación de estacionamiento 32 , y "Conservin' Mervyn", un interactivo videojuego retro de 8 bits diseñado específicamente para educar a los ciudadanos más jóvenes sobre el ahorro crítico de agua durante periodos de sequía. 32 Asimismo, Garcia popularizó el uso de transmisiones en vivo (Live Streaming) informales en plataformas como Facebook para acercar la gestión al vecino.</p>
 <p>Acciones como el "Virtual Ride Along", donde los ciudadanos acompañaban de forma remota y en tiempo real a los bomberos, crearon una conexión humana directa con los servidores públicos, transparentando el uso de los fondos provenientes de los impuestos. 31 El uso de infografías económicas accesibles y un boletín digital constante (#GoLongBeach) mantuvieron al electorado informado y comprometido a un costo operativo cercano a cero. 31</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">05</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Malcolm Kenyatta</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Representante estatal por Pensilvania y figura en</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Representante estatal por Pensilvania y figura en</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">05</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Malcolm Kenyatta</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Representante estatal por Pensilvania y figura en</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Representante estatal por Pensilvania y figura en</p>
 <p>ascenso dentro del Partido Demócrata. 3 Kenyatta, siendo un hombre negro, abiertamente gay y proveniente de una comunidad trabajadora, ha construido campañas extremadamente austeras basadas en el relato de su historia de vida.</p>
 <p>Su estrategia se basa en el activismo barrial profundo, caminando cuadra por cuadra en distritos de bajos ingresos, demostrando que la representación LGBTQ+ no es una agenda exclusiva de las élites urbanas centrales, sino una intersección crítica con los derechos laborales y la equidad económica.</p>
 <p>Su capacidad oratoria, desprovista de teleprompters y discursos ensayados, genera recortes virales (clips) que son diseminados gratuitamente por sus seguidores en plataformas como TikTok, logrando alcance nacional con un presupuesto estrictamente local.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">06</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Jane Kleeb</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Presidenta del Partido Demócrata de Nebraska y activista</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Presidenta del Partido Demócrata de Nebraska y activista</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">06</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Jane Kleeb</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Presidenta del Partido Demócrata de Nebraska y activista</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Presidenta del Partido Demócrata de Nebraska y activista</p>
 <p>climática. 3 Kleeb es una maestra en la construcción de coaliciones improbables bajo presupuestos inexistentes.</p>
 <p>Para oponerse al oleoducto Keystone XL, logró unir a progresistas urbanos defensores del medio ambiente con ganaderos conservadores y tribus indígenas, creando la "Cowboy Indian Alliance".</p>
 <p>Esta campaña demostró que cuando el relato se centra en la protección de los recursos comunes frente al abuso corporativo, las etiquetas ideológicas desaparecen.</p>
 <p>Su enfoque táctico se basa en la organización rural y la generación de eventos simbólicos de alta potencia visual que obligan a los medios nacionales a cubrir realidades locales sin mediar un solo dólar en publicidad institucional.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-fucsia">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">07</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Shasti Conrad</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Primera mujer de color y mujer más joven en presidir el</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Primera mujer de color y mujer más joven en presidir el</p>
+ <div class="politician-card double-bezel-outer theme-fucsia">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">07</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Shasti Conrad</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Primera mujer de color y mujer más joven en presidir el</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Primera mujer de color y mujer más joven en presidir el</p>
 <p>Partido Demócrata del Estado de Washington. 3 Conrad representa el triunfo de la organización logística de base.</p>
 <p>Veterana de varias campañas progresistas, su especialidad radica en la optimización de los sistemas de datos electorales de bajo costo y el micro-targeting no intrusivo.</p>
 <p>Su estrategia para campañas austeras se fundamenta en capacitar masivamente a voluntarios para que se conviertan en "organizadores de organizadores" en sus propios vecindarios, creando células descentralizadas que operan de manera autónoma pero coordinada, replicando el modelo de los movimientos de derechos civiles de la década de 1960 potenciado por plataformas de mensajería cifrada.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-azul">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">08</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Valérie Plante</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Montreal, Canadá</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Primera mujer alcaldesa de Montreal, perteneciente al partido progresista Projet Montréal.</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Primera mujer alcaldesa de Montreal, perteneciente al partido progresista Projet Montréal.</p>
+ <div class="politician-card double-bezel-outer theme-azul">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">08</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Valérie Plante</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Montreal, Canadá</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Primera mujer alcaldesa de Montreal, perteneciente al partido progresista Projet Montréal.</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Primera mujer alcaldesa de Montreal, perteneciente al partido progresista Projet Montréal.</p>
 <p>Plante inició su carrera política con recursos marcadamente inferiores a los de sus rivales y con un nivel de conocimiento público inicial casi nulo.</p>
 <p>Su campaña de guerrilla urbana se caracterizó por una imagen visual inconfundible: pósteres donde aparecía siempre sonriendo y, el elemento disruptivo, el eslogan "El hombre para el trabajo" ("L'homme de la situation"), jugando irónicamente con los sesgos de género en la política.</p>
 <p>Utilizó intensamente el transporte público y la bicicleta para movilizarse durante toda su campaña, transformando su estilo de vida en su principal herramienta de marketing político para demostrar su compromiso inquebrantable con el urbanismo sostenible y la movilidad limpia, ejes de su propuesta.</p>
 <h3>3.2. América Latina</h3>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">09</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Claudia López</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Claudia López, primera mujer y política abiertamente</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Claudia López, primera mujer y política abiertamente</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">09</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Claudia López</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Claudia López, primera mujer y política abiertamente</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Claudia López, primera mujer y política abiertamente</p>
 <p>lesbiana en ganar la alcaldía de la compleja ciudad de Bogotá, ejecutó una campaña que es un verdadero tratado sobre cómo transformar el rigor investigativo y académico en un enorme capital político de base. 35 López cimentó su imagen pública inicial como investigadora independiente de la "parapolítica" (los nexos entre políticos y paramilitares) y lideró con éxito arrollador la monumental Consulta Anticorrupción de 2018, que obtuvo más de 11 millones de votos a nivel nacional. 37 Durante su campaña a la alcaldía, sus propuestas fueron precisas, austeras y directamente enfocadas en la vida diaria de los sectores más vulnerables y las clases medias trabajadoras, evitando promesas faraónicas imposibles de financiar.</p>
 <p>Su plataforma incluyó la creación del Sistema de Cuidado (para relevar a las mujeres de cargas no remuneradas proporcionando servicios públicos) 35 , políticas agresivas de protección animal con esterilización masiva de bajo costo o gratuita 38 , e inversiones en infraestructura regional sin clientelismo. 35 Su discurso integró una fuerte y muy efectiva narrativa de superioridad moral y honestidad republicana ("quienes nunca hemos matado ni robado a nadie") 35 , apelando a la integridad cívica del ciudadano promedio hastiado de la corrupción sistémica.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">10</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Vlado Mirosevic</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Arica, Chile</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Diputado por el Partido Liberal chileno, representante del</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Diputado por el Partido Liberal chileno, representante del</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">10</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Vlado Mirosevic</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Arica, Chile</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Diputado por el Partido Liberal chileno, representante del</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Diputado por el Partido Liberal chileno, representante del</p>
 <p>extremo norte del país.</p>
 <p>Mirosevic articuló sus victorias electorales a través de metodologías puras de "puerta a puerta", alejándose decididamente de las estructuras corporativas de financiamiento que históricamente dominaban la política chilena. 41 Se apoyó fuertemente en el electorado joven, promoviendo una agenda liberal-progresista y asumiendo causas ambientales locales de extrema urgencia. Un eje central de su construcción política, que garantizó una fidelidad inquebrantable de sus votantes a un costo monetario nulo, fue asumir la defensa legal y legislativa integral de las víctimas de contaminación por metales pesados (polimetales) en Arica, un problema generado por empresas extranjeras y abandonado por el Estado durante décadas. 43 Focalizar una campaña en una herida abierta y dolorosa de una comunidad, aportando soluciones legislativas comprobables mediante oficios y proyectos de resolución, es una táctica de altísimo compromiso de base.</p>
 <p>Además, su postura firme contra el conservadurismo de extrema derecha y las teorías de conspiración (como el rechazo al pacto migratorio de la ONU) lo posicionó a nivel nacional como un referente ineludible del liberalismo moderno e institucional en Chile. 44</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-fucsia">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">11</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pedro Kumamoto</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Jalisco, México</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Primer candidato independiente en ganar un escaño en el Congreso de Jalisco. El modelo de</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Primer candidato independiente en ganar un escaño en el Congreso de Jalisco. El modelo de</p>
+ <div class="politician-card double-bezel-outer theme-fucsia">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">11</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pedro Kumamoto</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Jalisco, México</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Primer candidato independiente en ganar un escaño en el Congreso de Jalisco. El modelo de</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Primer candidato independiente en ganar un escaño en el Congreso de Jalisco. El modelo de</p>
 <p>campaña de Kumamoto es un caso de estudio global en austeridad extrema y rechazo a las prebendas del poder.</p>
 <p>Operando bajo la plataforma "WikiPolítica", su equipo fijó un límite de donaciones minúsculo para evitar cualquier compromiso con intereses corporativos, basando su financiamiento estrictamente en micro-donaciones de ciudadanos comunes.</p>
 <p>Su campaña no tuvo vallas publicitarias monumentales ni anuncios en televisión.</p>
 <p>Se estructuró bajo el modelo de la "red de árboles", donde cada voluntario se comprometía a convencer a otras personas en su entorno cercano mediante charlas de café y asambleas barriales al aire libre.</p>
 <p>La renuncia voluntaria al 70% de su salario como diputado y la devolución de prerrogativas fueron sus mejores herramientas de comunicación permanente, demostrando empíricamente que se podía hacer política con un profundo sentido ético y sin dinero del Estado.</p>
 <h3>3.3. Europa</h3>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-azul">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">12</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Begoña Villacís</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Madrid, España</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Exvicealcaldesa de Madrid por Ciudadanos, Villacís</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Exvicealcaldesa de Madrid por Ciudadanos, Villacís</p>
+ <div class="politician-card double-bezel-outer theme-azul">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">12</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Begoña Villacís</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Madrid, España</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Exvicealcaldesa de Madrid por Ciudadanos, Villacís</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Exvicealcaldesa de Madrid por Ciudadanos, Villacís</p>
 <p>adaptó magistralmente la política de proximidad de su partido a un ecosistema metropolitano altamente denso y complejo.</p>
 <p>Hizo un uso intensivo y sofisticado de las "carpas" en la vía pública para la atención de necesidades sociales críticas, combinándolo con el programa "Voluntarios por Madrid". 45 Su estrategia diferenciadora durante crisis sociales (como la pandemia) consistió en desplegar dispositivos móviles de respuesta rápida en la vereda (como las carpas del SAMUR Social) para informar, escuchar y detectar vulnerabilidades in situ, evitando que las personas mayores debieran desplazarse. 45 Su gestión y campaña reforzaron consistentemente la idea del político no como un jerarca aislado en un despacho del ayuntamiento, sino como un vecino sumamente operativo y resolutivo, presente en la primera línea de la crisis barrial.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">13</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Layla Moran</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Oxford, Reino Unido</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Miembro del Parlamento británico por los Liberal</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Miembro del Parlamento británico por los Liberal</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">13</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Layla Moran</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Oxford, Reino Unido</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Miembro del Parlamento británico por los Liberal</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Miembro del Parlamento británico por los Liberal</p>
 <p>Demócratas en la circunscripción de Oxford West and Abingdon.</p>
 <p>Moran, profesora de física de profesión y de ascendencia palestina y británica, cimentó su éxito político íntegramente en el micro-localismo, la evidencia científica y el activismo comunitario. 48 Antes de ser diputada, inició su carrera liderando campañas vecinales para salvar centros comunitarios amenazados en su propio vecindario. 49 Moran utiliza de manera intensiva las encuestas de base digitales sobre temas cotidianos (como el costo de vida) para asegurar que los ciudadanos sientan que la agenda legislativa se dicta desde abajo hacia arriba, invirtiendo la pirámide de poder político. 48 Su enfoque es rigurosamente basado en la evidencia. 49 Moran enfoca gran parte de su capital político en causas de alto consenso comunitario, bajo costo de adopción pero un enorme impacto visual y emocional para el ciudadano.</p>
 <p>Ejemplos de esto son su constante campaña por la limpieza de la contaminación en los ríos locales de Oxfordshire, la lucha encarnizada contra el cierre progresivo de centros de atención infantil debido a los recortes de austeridad, y sus proyectos de ley para derogar la arcaica Ley de Vagancia y mejorar los sistemas de cuidados paliativos. 48 Este enfoque hiper-local y temáticamente enfocado genera una lealtad férrea en el votante, que la percibe como una gestora infatigable y directa de sus intereses cotidianos y no como una mera integrante del establishment londinense.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">14</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Elly Schlein</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Italia</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Actual Secretaria del Partido Democrático italiano. Schlein, abiertamente bisexual, feminista y</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Actual Secretaria del Partido Democrático italiano. Schlein, abiertamente bisexual, feminista y</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">14</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Elly Schlein</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Italia</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Actual Secretaria del Partido Democrático italiano. Schlein, abiertamente bisexual, feminista y</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Actual Secretaria del Partido Democrático italiano. Schlein, abiertamente bisexual, feminista y</p>
 <p>representante del ala progresista de su partido, logró su posición de liderazgo mediante una campaña interna asombrosa que desafió a todo el aparato tradicional de poder.</p>
 <p>Su estrategia se basó en el despliegue de una red expansiva de comités de apoyo en los barrios más periféricos de las grandes urbes y en pueblos olvidados, movilizando a un electorado joven, ecologista y desilusionado que no solía participar en las primarias del partido.</p>
 <p>Sin recursos institucionales a su favor, Schlein apoyó su narrativa en la confrontación directa, pero argumentada, contra las políticas conservadoras de la primera ministra, capitalizando la urgencia de los derechos civiles, la precariedad laboral y la transición climática justa como vectores de aglutinamiento cívico sin necesidad de grandes presupuestos publicitarios.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-fucsia">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">15</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Giuseppe Sala</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Milán, Italia</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Alcalde de Milán, exponente de un progresismo de gestión profundamente gerencial y</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Alcalde de Milán, exponente de un progresismo de gestión profundamente gerencial y</p>
+ <div class="politician-card double-bezel-outer theme-fucsia">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">15</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Giuseppe Sala</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Milán, Italia</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Alcalde de Milán, exponente de un progresismo de gestión profundamente gerencial y</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Alcalde de Milán, exponente de un progresismo de gestión profundamente gerencial y</p>
 <p>orientado al urbanismo táctico. Aunque Sala proviene de la alta gestión corporativa, sus campañas han dependido menos del financiamiento tradicional y más de la construcción de una identidad de ciudad.</p>
 <p>Sala transformó a Milán en la vanguardia de la recuperación del espacio público europeo, fomentando agresivamente las ciclovías y la plantación masiva de árboles.</p>
 <p>Su táctica electoral de bajo costo ha consistido en las "intervenciones urbanas tácticas": pintar calles, ensanchar aceras con maceteros baratos y ganar espacio peatonal a expensas de los automóviles.</p>
 <p>Estas obras, de costo insignificante para un presupuesto municipal, generan debates acalorados pero producen resultados visuales y mejoras de calidad de vida tangibles en cuestión de días, convirtiéndose en publicidad en sí mismas y demostrando capacidad ejecutiva inmediata.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
 <p>INFORME 1: BENCHMARKING DE PERFILES POLÍTICOS GLOBALES Y EXTRAPOLACIÓN AL ECOSYSTEM DE LA CIUDAD DE BUENOS AIRES INTRODUCCIÓN METODOLÓGICA: El Dilema del Candidato "Institucional-Intelectual" En las democracias urbanas contemporáneas, los candidatos con perfiles intelectuales, altamente técnicos, legislativos o de corte ético-legalista se enfrentan a una barrera de percepción recurrente.</p>
 <p>Este fenómeno, denominado en la literatura de consultoría política como el "Síndrome de la Torre de Marfil", encapsula la distancia cognitiva entre un político preocupado por la integridad del sistema (leyes, transparencia, reformas estructurales, división de poderes) y un electorado inmerso en la urgencia cotidiana del "metro cuadrado" (baches, basura, seguridad vecinal, ruidos molestos, economía local). El objetivo de este informe de benchmarking es analizar científicamente cómo 10 dirigentes políticos globales con características análogas al perfil de Maximiliano Ferraro lograron romper esta barrera de percepción en ciudades caracterizadas por su alta complejidad urbana, densidad habitacional e intensos procesos de debate civil, y cómo extrapolar de forma quirúrgica sus casos de éxito a la Ciudad Autónoma de Buenos Aires (CABA).</p>
@@ -962,23 +963,23 @@ const PROPUESTAS_FERRARO = {
 <h3>10 Casos Globales de Posicionamiento y Tácticas Electorales</h3>
 <p>Análisis en profundidad de la oratoria, metodologías y campañas digitales de 10 líderes del progresismo y liberalismo institucional:</p>
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">01</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pete Buttigieg</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>La Táctica "Go Everywhere" y la</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>La Táctica "Go Everywhere" y la</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">01</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Pete Buttigieg</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>La Táctica "Go Everywhere" y la</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>La Táctica "Go Everywhere" y la</p>
 <p>Red de Podcasts Antecedentes y Perfil Exalcalde de South Bend, Indiana, veterano de guerra, intelectual formado en Harvard y Oxford, con un estilo analítico, pausado y técnico.</p>
 <p>Al ingresar a las primarias presidenciales del Partido Demócrata de 2020, se enfrentaba a un nivel de conocimiento nacional inferior al 1% frente a figuras consolidadas. La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
@@ -993,7 +994,7 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>Calma contra la Furia Algorítmica : En lugar de sumarse al ruido e indignación extrema</li>
 </ul>
-<p>en redes, Buttigieg contrastó presentándose como una figura de calma racional y empatía . │ ┌────────────────┴────────────────┐ ▼ ▼ [ Canalización de Nicho ] [ Ubicuidad Hostil ] │ │ • Podcasts de larga duración • Aparición en Fox News • Formatos no políticos • Respuestas sin agresión │ │ └────────────────┬────────────────┘ ▼ [ Marca: "Calma Institucional" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA El escenario electoral de la Ciudad Autónoma de Buenos Aires, fuertemente polarizado entre el oficialismo del PRO integrado con sectores de La Libertad Avanza , demanda un polo de racionalidad.</p>
+<p>en redes, Buttigieg contrastó presentándose como una figura de calma racional y empatía . ▼ ▼ [ Canalización de Nicho ] [ Ubicuidad Hostil ] • Podcasts de larga duración • Aparición en Fox News • Formatos no políticos • Respuestas sin agresión ▼ [ Marca: "Calma Institucional" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA El escenario electoral de la Ciudad Autónoma de Buenos Aires, fuertemente polarizado entre el oficialismo del PRO integrado con sectores de La Libertad Avanza , demanda un polo de racionalidad.</p>
 <ul class="db-list">
 <li>El "Podcast Blitz" Porteño : Ferraro debe eludir los tradicionales paneles de televisión de</li>
 </ul>
@@ -1003,28 +1004,28 @@ const PROPUESTAS_FERRARO = {
 </ul>
 <p>liderado sobre sobresueldos, fondos reservados de la SIDE o irregularidades criptográficas en el Gobierno nacional 1 , pero no desde el grito de campaña, sino desglosando la información de manera pausada y didáctica.</p>
 <p>Esto atraerá al elector que rechaza la polarización y busca solvencia técnica en la toma de decisiones.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">02</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Claudia López</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>"Hecha a Pulso" y Búsqueda</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>"Hecha a Pulso" y Búsqueda</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">02</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Claudia López</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>"Hecha a Pulso" y Búsqueda</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>"Hecha a Pulso" y Búsqueda</p>
 <p>Activa Antecedentes y Perfil Académica, investigadora del fenómeno de la "Parapolítica", lesbiana, de clase media-baja de origen, con un perfil sumamente riguroso e incisivo.</p>
 <p>Primera mujer electa para la Alcaldía Mayor de Bogotá, superando las maquinarias políticas más rancias de su país . La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
@@ -1039,7 +1040,7 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>Estrategias Locales de Micro-Convivencia : En lugar de discursos sobre la</li>
 </ul>
-<p>"Macro-Movilidad", López se sentó en la calle con los operadores de bicitaxismo informal y demarcaron físicamente los entornos de 52 colegios para garantizar la seguridad escolar. 4 [ López: "Hecha a Pulso" ] │ ┌────────────────┴────────────────┐ ▼ ▼ [ Lenguaje Llano ] │ │ • Erradicación de jerga • Despliegue en territorio • Conexión por el mérito • Solución a micro-conflictos │ │ └────────────────┬────────────────┘ ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>"Macro-Movilidad", López se sentó en la calle con los operadores de bicitaxismo informal y demarcaron físicamente los entornos de 52 colegios para garantizar la seguridad escolar. 4 [ López: "Hecha a Pulso" ] ▼ ▼ [ Lenguaje Llano ] • Erradicación de jerga • Despliegue en territorio • Conexión por el mérito • Solución a micro-conflictos ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>Biografía como Escudo y Conexión : Ferraro reside en Barracas (zona sur</li>
 </ul>
@@ -1048,28 +1049,28 @@ const PROPUESTAS_FERRARO = {
 <li>Búsqueda Activa de Estudiantes : Utilizar su rol histórico de experto y legislador en</li>
 </ul>
 <p>educación 6 para realizar recorridas nocturnas o diurnas en los entornos de las escuelas del sur de CABA (Comunas 4, 8 y 9) identificando fallas en las condiciones del establecimiento e interviniendo de manera inmediata para fiscalizar las obras escolares.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-fucsia">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">03</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Raphaël Glucksmann</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Francia</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>El "Influencer Intelectual"</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>El "Influencer Intelectual"</p>
+ <div class="politician-card double-bezel-outer theme-fucsia">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">03</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Raphaël Glucksmann</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Francia</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>El "Influencer Intelectual"</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>El "Influencer Intelectual"</p>
 <p>Antecedentes y Perfil Ensayista, filósofo, hijo de un prominente intelectual francés. Lideró la lista del Partido Socialista-Place Publique en las elecciones europeas de 2024, revitalizando a la centroizquierda francesa y movilizando a un enorme segmento de votantes jóvenes que tradicionalmente votaban a la extrema izquierda o se abstenían . La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
 <li>Influencer de Causa Moral : Glucksmann no adaptó su perfil pretendiendo ser un</li>
@@ -1080,34 +1081,34 @@ const PROPUESTAS_FERRARO = {
 <li>Apropiación Estética Rigurosa : Utilizó paletas de colores sobrias, tipografía limpia,</li>
 </ul>
 <p>subtitulado veloz e inserción de datos en pantalla.</p>
-<p>Su equipo descartó la propaganda oficial de bloque y diseñó piezas visuales que parecían tutoriales educativos independientes sobre cómo la política impacta directamente en las libertades individuales. 5 [ Glucksmann: "Influencer" ] │ ┌────────────────┴────────────────┐ ▼ ▼ [ Estética No Convencional ] │ │ • Formato rústico y sobrio • Datos precisos en pantalla • Cero gestualidad corporativa • Foco en causas morales │ │ └────────────────┬────────────────┘ ▼ [ Marca: "Pedagogía de Estado" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA El intento pasado de Ferraro de usar la melodía de Pink Floyd para debatir sobre la presencialidad educativa generó comentarios de desconexión y cinismo en Twitter por parte de los docentes y usuarios de la red .</p>
+<p>Su equipo descartó la propaganda oficial de bloque y diseñó piezas visuales que parecían tutoriales educativos independientes sobre cómo la política impacta directamente en las libertades individuales. 5 [ Glucksmann: "Influencer" ] ▼ ▼ [ Estética No Convencional ] • Formato rústico y sobrio • Datos precisos en pantalla • Cero gestualidad corporativa • Foco en causas morales ▼ [ Marca: "Pedagogía de Estado" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA El intento pasado de Ferraro de usar la melodía de Pink Floyd para debatir sobre la presencialidad educativa generó comentarios de desconexión y cinismo en Twitter por parte de los docentes y usuarios de la red .</p>
 <ul class="db-list">
 <li>Formato "Auditoría en Pizarra" : Reemplazar la producción costosa por videos rústicos</li>
 </ul>
 <p>donde Ferraro, armado con un marcador y una pizarra, o de pie junto al portón de una escuela o el frente de un local clausurado, desglose los números de la corrupción o el lobby de las empresas de juego online que capturan a menores en CABA .</p>
 <p>El segmento joven y universitario de Buenos Aires valorará la pedagogía por encima de los memes vacíos.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-azul">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">04</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Manuela Carmena</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Madrid, España</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>El Modelo "Artivismo plus</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>El Modelo "Artivismo plus</p>
+ <div class="politician-card double-bezel-outer theme-azul">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">04</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Manuela Carmena</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Madrid, España</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>El Modelo "Artivismo plus</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>El Modelo "Artivismo plus</p>
 <p>Grassroots"</p>
 <p>Antecedentes y Perfil Jueza emérita de 71 años, cofundadora de un despacho laboralista histórico. Se postuló como independiente liderando la plataforma "Ahora Madrid" en 2015, ganando la alcaldía de la capital española frente a la maquinaria hegemónica del Partido Popular que llevaba 24 años gobernando la ciudad . La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
@@ -1119,34 +1120,34 @@ const PROPUESTAS_FERRARO = {
 <li>El "Efecto Carmena" del Sentido Común : Carmena se negó a usar el lenguaje de</li>
 </ul>
 <p>confrontación tradicional o a gritar en los mítines .</p>
-<p>Hablaba con tono abuelil, pausado y con sentido común, proyectando una imagen de asertividad civil y no de política en campaña corporativa . [ Carmena: "Artivismo" ] │ ┌────────────────┴────────────────┐ ▼ ▼ │ │ • Cartelería vecinal • Cero agresión • Horizontalidad comunitaria • Exposición racional │ │ └────────────────┬────────────────┘ ▼ [ Marca: "Garantía Civil" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA Buenos Aires es una ciudad de alta densidad habitacional, donde la inmensa mayoría de la población reside en departamentos de consorcio.</p>
+<p>Hablaba con tono abuelil, pausado y con sentido común, proyectando una imagen de asertividad civil y no de política en campaña corporativa . [ Carmena: "Artivismo" ] ▼ ▼ • Cartelería vecinal • Cero agresión • Horizontalidad comunitaria • Exposición racional ▼ [ Marca: "Garantía Civil" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA Buenos Aires es una ciudad de alta densidad habitacional, donde la inmensa mayoría de la población reside en departamentos de consorcio.</p>
 <ul class="db-list">
 <li>La Red de Consorcios y Balcones : Ferraro debe apelar a los consorcios e inquilinos que</li>
 </ul>
 <p>sufren los abusos inmobiliarios del nuevo Código Urbanístico (CUR). 8 Se puede diseñar una campaña digital donde se comparta cartelería imprimible con la frase "Este consorcio defiende su luz" o "Auditemos la torre vecina" , empoderando al vecino de CABA para que haga "activismo de balcón" en las comunas residenciales.</p>
 <p>Su imagen ética y de perfil bajo encaja perfectamente con el tono calmado y no conflictivo de Carmena.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">05</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Antanas Mockus</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>"Cultura Ciudadana" y</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>"Cultura Ciudadana" y</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">05</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Antanas Mockus</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Bogotá, Colombia</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>"Cultura Ciudadana" y</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>"Cultura Ciudadana" y</p>
 <p>Modificación de Hábitos Antecedentes y Perfil Filósofo, matemático, exrector de la Universidad Nacional de Colombia. Un académico puro, excéntrico y radicalmente honesto, que gobernó Bogotá en dos periodos (1995-1997 / 2001-2003) y transformó radicalmente la convivencia urbana de la ciudad. 10 La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
 <li>La Tríada Regulatoria: Ley, Moral y Cultura : Mockus teorizó que el gran problema de</li>
@@ -1159,35 +1160,35 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>Mimos de Tránsito : Desplegó mimos profesionales en los cruces peatonales viales más</li>
 </ul>
-<p>peligrosos de Bogotá, logrando que los conductores respetaran las sendas peatonales (cebras) a través de la burla lúdica y no de la represión policial. 1 [ Mockus: "Cultura Ciudadana" ] │ ┌───────────────────┴───────────────────┐ ▼ ▼ [ Pedagogía en Espacio ] │ │ • Tarjetas (Aprobación/Rechazo) • Mimos y juego lúdico • Reducción de violencia • Modificación de hábitos │ │ └───────────────────┬───────────────────┘ ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>peligrosos de Bogotá, logrando que los conductores respetaran las sendas peatonales (cebras) a través de la burla lúdica y no de la represión policial. 1 [ Mockus: "Cultura Ciudadana" ] ▼ ▼ [ Pedagogía en Espacio ] • Tarjetas (Aprobación/Rechazo) • Mimos y juego lúdico • Reducción de violencia • Modificación de hábitos ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>Campaña de Autogestión Ciudadana : CABA sufre una severa crisis de convivencia en</li>
 </ul>
 <p>sus comunas céntricas (basura tirada, ruidos molestos de boliches, colapso de espacio público) .</p>
 <p>Ferraro puede lanzar la campaña de las "Tarjetas de Convivencia Porteña" en formato descargable para dispositivos móviles, impulsando un proceso de control ciudadano horizontal que evite el conflicto violento.</p>
 <p>Esto conecta su base de legislador en educación con soluciones lúdicas reales sobre el asfalto de Buenos Aires. 6</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">06</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Andrew Yang</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>"The Math Candidate" y Datos</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>"The Math Candidate" y Datos</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">06</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Andrew Yang</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>"The Math Candidate" y Datos</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>"The Math Candidate" y Datos</p>
 <p>Crudos Antecedentes y Perfil Emprendedor del sector tecnológico, sin experiencia electoral previa. Su campaña para las primarias demócratas de 2020 se basó en el análisis matemático del desempleo tecnológico y la automatización. La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
 <li>Hacer de la "Nerdéz" una Ventaja Competitiva : Usó como marca el acrónimo MATH</li>
@@ -1196,35 +1197,35 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>Explicación Descomprimida de Soluciones : Yang acudió a canales no tradicionales</li>
 </ul>
-<p>(como The Joe Rogan Experience o foros de tecnología y finanzas) donde presentó complejas propuestas financieras desglosando pacientemente la matemática detrás de cada una de ellas, ganando adherencia en sectores tradicionalmente apolíticos . │ ┌────────────────┴────────────────┐ ▼ ▼ │ │ • Gorra "MATH" como marca • Explicación de variables • Estética de alta data • Foco en efectos de bolsillo │ │ └────────────────┬────────────────┘ ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>(como The Joe Rogan Experience o foros de tecnología y finanzas) donde presentó complejas propuestas financieras desglosando pacientemente la matemática detrás de cada una de ellas, ganando adherencia en sectores tradicionalmente apolíticos . ▼ ▼ • Gorra "MATH" como marca • Explicación de variables • Estética de alta data • Foco en efectos de bolsillo ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>El "Candidato de la Evidencia" : Ferraro debe eludir el sentimentalismo ideológico vacío</li>
 </ul>
 <p>de los partidos tradicionales.</p>
 <p>Su estrategia discursiva debe consistir en presentarse a las entrevistas de streaming y radio portando gráficos impresos o visualizaciones estadísticas interactivas en tablets, demostrando con números exactos —extraídos directamente de la plataforma de datos del propio Gobierno porteño 11 — el sobredimensionamiento de contratos, el costo de las veredas rotas o el malgasto presupuestario de la Ciudad.</p>
 <p>El votante joven porteño de clase media-alta, saturado de discursos abstractos, responde positivamente al rigor matemático.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-fucsia">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">07</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Elizabeth Warren</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>"I Have a Plan for That" y</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>"I Have a Plan for That" y</p>
+ <div class="politician-card double-bezel-outer theme-fucsia">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">07</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Elizabeth Warren</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>"I Have a Plan for That" y</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>"I Have a Plan for That" y</p>
 <p>Políticas Públicas Traducidas Antecedentes y Perfil Profesora de derecho de la Universidad de Harvard, experta en quiebras y economía de consumo.</p>
 <p>Senadora nacional por Massachusetts, caracterizada por su extrema minuciosidad técnica en la redacción de proyectos de ley. La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
@@ -1235,35 +1236,35 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>La "Asamblea de Explicación" : Sus actos de campaña no eran mítines de arenga, sino</li>
 </ul>
-<p>clases magistrales con pizarrones donde Warren "traducía" mecanismos complejos de estafa bancaria a un lenguaje accesible para cualquier ciudadano. │ ┌────────────────┴────────────────┐ ▼ ▼ [ Pedagogía Legislativa ] │ │ • Formato académico con fuentes • Explicación con pizarrones • Eslogan de solvencia técnica • Conexión con casos comunes │ │ └────────────────┬────────────────┘ ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>clases magistrales con pizarrones donde Warren "traducía" mecanismos complejos de estafa bancaria a un lenguaje accesible para cualquier ciudadano. ▼ ▼ [ Pedagogía Legislativa ] • Formato académico con fuentes • Explicación con pizarrones • Eslogan de solvencia técnica • Conexión con casos comunes ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>La Carpeta de Soluciones Barriales : En lugar de proponer "mejorar la seguridad" de</li>
 </ul>
 <p>manera abstracta, Ferraro debe presentarse en cada Comuna con "La Carpeta del Plan de la Comuna X".</p>
 <p>Esta carpeta debe contener el desglose legislativo e ingenieril exacto para solucionar el punto de dolor barrial (por ejemplo, el diseño técnico de rezonificación para evitar el colapso cloacal en Belgrano o el plan de transporte específico para integrar socio-urbanamente la Comuna 8 ).</p>
 <p>El mensaje es claro: "Mientras los otros gritan slogans de campaña, yo ya tengo la ley redactada y costeada para tu manzana" .</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-azul">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">08</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Alexandria Ocasio-Cortez</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Desempaque</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Desempaque</p>
+ <div class="politician-card double-bezel-outer theme-azul">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">08</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Alexandria Ocasio-Cortez</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Desempaque</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Desempaque</p>
 <p>Legislativo e Integración Radical Antecedentes y Perfil Activista barrial y mesera en el Bronx que derrotó al barón electoral del Partido Demócrata en las primarias de 2018 utilizando una estrategia intensiva de organización territorial ("grassroots") y redes sociales orgánicas. La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
 <li>"Desempacar" la Caja Negra del Poder : AOC transformó sus transmisiones en vivo de</li>
@@ -1273,34 +1274,34 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>Llegar Directo sin Filtros : Eliminó la intermediación de las agencias de prensa</li>
 </ul>
-<p>institucionales, generando un puente de confianza radical con las audiencias juveniles. │ ┌────────────────┴────────────────┐ ▼ ▼ [ Cero Intermediación ] │ │ • Detrás de escena del poder • Transmisiones sin editar • Explicación de comisiones • Lenguaje cotidiano │ │ └────────────────┬────────────────┘ ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>institucionales, generando un puente de confianza radical con las audiencias juveniles. ▼ ▼ [ Cero Intermediación ] • Detrás de escena del poder • Transmisiones sin editar • Explicación de comisiones • Lenguaje cotidiano ▼ Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>"Legislatura Porteña 101" : La Legislatura de CABA es percibida por los vecinos como</li>
 </ul>
 <p>una "caja negra" donde solo se discuten excepciones inmobiliarias o ampliaciones presupuestarias opacas .</p>
 <p>Ferraro debe utilizar transmisiones en vivo periódicas desde su despacho para explicar de forma coloquial, plano por plano, qué se está votando en las sesiones (por ejemplo, quiénes apoyan los pliegos de regularización de obras irregulares propuestos por el Ejecutivo 12 ). Esta fiscalización pedagógica digital posiciona a Ferraro como el "Auditor que te abre las puertas del recinto".</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-naranja">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">09</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Bernie Sanders</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Distribución Directa</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Distribución Directa</p>
+ <div class="politician-card double-bezel-outer theme-naranja">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">09</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Bernie Sanders</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">Estados Unidos</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Distribución Directa</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Distribución Directa</p>
 <p>Autogestionada Antecedentes y Perfil Senador nacional socialista democrático por Vermont, con una trayectoria legislativa de décadas, caracterizado por una coherencia ética inquebrantable y un tono sumamente serio. La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
 <li>Autogestión de Canales de Distribución : Al enfrentar el sesgo de cobertura de los</li>
@@ -1309,49 +1310,49 @@ const PROPUESTAS_FERRARO = {
 <ul class="db-list">
 <li>Foco en el Discurso Temático : Sanders jamás desvió su discurso hacia la farándula</li>
 </ul>
-<p>política; cada intervención se centraba obsesivamente en la salud pública, la desigualdad de ingresos y la educación universitaria gratuita. │ ┌────────────────┴────────────────┐ ▼ ▼ [ Medios Propios ] │ │ • Podcasts y canales propios • Monotema de derechos • Red de llamadas voluntarias • Resistencia a distracciones │ │ └────────────────┬────────────────┘ ▼ [ Marca: "Poder Ciudadano" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>política; cada intervención se centraba obsesivamente en la salud pública, la desigualdad de ingresos y la educación universitaria gratuita. ▼ ▼ [ Medios Propios ] • Podcasts y canales propios • Monotema de derechos • Red de llamadas voluntarias • Resistencia a distracciones ▼ [ Marca: "Poder Ciudadano" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>El Canal de la Coalición Cívica CABA : Ferraro no debe depender de la pauta publicitaria</li>
 </ul>
 <p>oficial ni de las invitaciones a canales de televisión tradicionales que a menudo condicionan la línea editorial.</p>
 <p>Debe estructurar y lanzar "El Canal del Auditor", un ecosistema de distribución digital autogestionado en YouTube y plataformas de audio, donde se expongan semanalmente informes de investigación detallados sobre el funcionamiento de las concesiones de servicios públicos de la Ciudad (grúas, parquímetros, basura, peajes) .</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
-        <div class="politician-card double-bezel-outer theme-verde">
-            <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <div class="politician-meta">
-                    <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">10</span>
-                    <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Mariano Rajoy</h4>
-                </div>
-                <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">España</span>
-            </div>
-            <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
-                <p>Humanización por Micro-Conexiones</p>
-            </div>
-            <details class="politician-details" style="cursor: pointer; width: 100%;">
-                <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
-                    <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
-                </summary>
-                <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
-                    <p>Humanización por Micro-Conexiones</p>
+ <div class="politician-card double-bezel-outer theme-verde">
+ <div class="politician-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+ <div class="politician-meta">
+ <span class="politician-number" style="font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;">10</span>
+ <h4 style="display: inline-block; margin-left: 0.8rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--color-texto);">Mariano Rajoy</h4>
+ </div>
+ <span class="politician-country" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 99px; font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-texto-dm); text-transform: uppercase; letter-spacing: 0.8px;">España</span>
+ </div>
+ <div class="politician-summary" style="font-size: 0.9rem; color: var(--color-texto-dm); line-height: 1.6; margin-bottom: 1rem; padding-left: 1rem;">
+ <p>Humanización por Micro-Conexiones</p>
+ </div>
+ <details class="politician-details" style="cursor: pointer; width: 100%;">
+ <summary style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; outline: none; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none;">
+ <span class="details-icon" style="transition: transform var(--transition-fast);">&nbsp;►&nbsp;</span> <span class="details-summary-title">Ver Análisis de Estrategia Completo</span>
+ </summary>
+ <div class="details-content" style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--color-texto-dm); line-height: 1.7; border-top: 1px solid var(--color-linea); padding-top: 1.5rem; cursor: default;">
+ <p>Humanización por Micro-Conexiones</p>
 <p>Pregrabadas Antecedentes y Perfil Expresidente del Gobierno de España, burócrata del partido tradicional, percibido históricamente como una figura rígida, institucionalista, formal y con dificultades de comunicación carismática en formatos modernos. La Estrategia y Mecanismos de Éxito</p>
 <ul class="db-list">
 <li>Micro-Conexiones de Voz Pregrabada : Durante las campañas, su equipo implementó el</li>
 </ul>
 <p>uso de llamadas telefónicas automatizadas con audios pregrabados personalizados que se disparaban de forma masiva a teléfonos fijos y móviles de los ciudadanos. 7 El audio comenzaba con: "Hola, soy Mariano Rajoy.</p>
-<p>Le llamo personalmente..." . 7 A pesar de ser una grabación, esta acción rompía drásticamente el hielo de la rigidez burocrática al ingresar la voz del candidato en el auricular familiar de millones de electores de manera directa. 7 │ ┌────────────────┴────────────────┐ ▼ ▼ [ Llamadas Automatizadas ] │ │ • Audios directos al móvil • Humanización del tecnócrata • Tono pausado y personal • Cercanía no presencial │ │ └────────────────┬────────────────┘ ▼ [ Marca: "Cercanía Práctica" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
+<p>Le llamo personalmente..." . 7 A pesar de ser una grabación, esta acción rompía drásticamente el hielo de la rigidez burocrática al ingresar la voz del candidato en el auricular familiar de millones de electores de manera directa. 7 ▼ ▼ [ Llamadas Automatizadas ] • Audios directos al móvil • Humanización del tecnócrata • Tono pausado y personal • Cercanía no presencial ▼ [ Marca: "Cercanía Práctica" ] Extrapolación Quirúrgica para Maximiliano Ferraro en CABA</p>
 <ul class="db-list">
 <li>La Red de Notas de Voz por WhatsApp : Para penetrar en las Comunas sin necesidad de</li>
 </ul>
 <p>costosas pautas que lo hagan ver como parte del despilfarro político tradicional, Ferraro puede armar un sistema de distribución de notas de voz de WhatsApp segmentadas geográficamente por barrio. 7 A través de las redes de consorcios u organizaciones vecinales, puede hacer circular audios de 30 segundos donde dice de forma llana: "Hola, soy Maxi Ferraro.</p>
 <p>Soy vecino tuyo en Barracas. 6 Te mando este audio para contarte que acabo de auditar la obra paralizada en nuestra comuna...". 15 Este mecanismo humaniza su figura técnica, rompe la frialdad corporativa e ingresa directo al núcleo familiar de los porteños de manera masiva.</p>
-                </div>
-            </details>
-        </div>
-        
+ </div>
+ </details>
+ </div>
+ 
 
 <h3>4. Matriz Táctica Transnacional de Campañas de Bajo Costo</h3>
 <p>La exhaustiva recopilación y análisis de estas 15 trayectorias dispares revela, sin embargo, patrones operativos y estratégicos consistentes.</p>
@@ -1364,40 +1365,40 @@ const PROPUESTAS_FERRARO = {
 <h3>Matriz Táctica Transnacional de Campañas de Bajo Costo</h3>
 <p>Sistematización metodológica de las acciones electorales analizadas en los perfiles globales:</p>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Táctica Estratégica</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 18%;">Referentes Globales</th>
-                <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 18%;">Inversión</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 18%;">Impacto</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 24%;">Descripción y Mecanismo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Shock Visual Minimalista</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Albert Rivera (España)</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Cercano a Cero</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Atención Mediática Masiva</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Utilización de imágenes y mensajes extremadamente disruptivos (el desnudo, la ausencia de logos) que subvierten las reglas de marketing. Fuerza la cobertura de medios sin pauta.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Despliegue Asimétrico &quot;Go Everywhere&quot;</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Pete Buttigieg (EE.UU.), Jake Auchincloss (EE.UU.)</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Bajo</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Omnipresencia y Control</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Otorgar entrevistas en foros antagónicos y nichos digitales poco tradicionales. Genera visibilidad basándose en la oratoria y el tiempo del candidato.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gamificación Digital y Pedagogía</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Robert Garcia (EE.UU.)</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Medio-Bajo</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Alta Interacción Joven</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Herramientas digitales simples (apps de código abierto, transmisiones interactivas) para explicar políticas públicas, atrayendo al votante joven y tecnológico.</td>
-            </tr>
-        </tbody>
-    </table>
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Táctica Estratégica</th>
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 18%;">Referentes Globales</th>
+ <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 18%;">Inversión</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 18%;">Impacto</th>
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 24%;">Descripción y Mecanismo</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Shock Visual Minimalista</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Albert Rivera (España)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Cercano a Cero</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Atención Mediática Masiva</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Utilización de imágenes y mensajes extremadamente disruptivos (el desnudo, la ausencia de logos) que subvierten las reglas de marketing. Fuerza la cobertura de medios sin pauta.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Despliegue Asimétrico &quot;Go Everywhere&quot;</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Pete Buttigieg (EE.UU.), Jake Auchincloss (EE.UU.)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Bajo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Omnipresencia y Control</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Otorgar entrevistas en foros antagónicos y nichos digitales poco tradicionales. Genera visibilidad basándose en la oratoria y el tiempo del candidato.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gamificación Digital y Pedagogía</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Robert Garcia (EE.UU.)</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Medio-Bajo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Alta Interacción Joven</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Herramientas digitales simples (apps de código abierto, transmisiones interactivas) para explicar políticas públicas, atrayendo al votante joven y tecnológico.</td>
+ </tr>
+ </tbody>
+ </table>
 </div>
 
 
@@ -1467,84 +1468,84 @@ const PROPUESTAS_FERRARO = {
 <p>MATRIZ COMPARATIVA DE EXTRAPOLACIÓN OPERATIVA PARA CABA Político Internacional Activo Estratégico Clave Riesgo a Mitigar en CABA Extrapolación Táctica Directa Pete Buttigieg "Go Everywhere" en Podcasts. 16 Caer en la sobreexposición en espacios banales. Podcast blitz en streaming independiente analítico . Claudia López Narrativa biográfica "Hecha a pulso" . Ser percibida como demagógica o artificial. Explotar su vida como inquilino de Barracas que viaja en subte. 6 Raphaël Glucksmann Explicación didáctica y moral en redes. 5 Imitar modas juveniles de forma forzada. 17 Videos verticales de formato "Pizarra y Datos" sobre corrupción. 1 Manuela Carmena Descentralización mediante balcones vecinales. 7 Desgaste o apatía por parte de los vecinos. Artivismo en balcones de consorcios afectados por el CUR. 8 Antanas Mockus Modificación lúdica de conductas ciudadanas. 10 Ser considerado infantil en entornos violentos. Campaña descargable de "Tarjetas Cívicas de Convivencia". 1 Andrew Yang Foco absoluto en la solvencia del dato duro. Parecer aburrido o excesivamente tecnócrata. Presentar tablets con visualizaciones del malgasto presupuestario en TV. Elizabeth Warren "Tengo un plan para eso" (Planes de nicho). Prometer soluciones demasiado complejas de leer. Presentar "La Carpeta del Plan" específico para la cuadra visitada. A. Ocasio-Cortez Desempaque pedagógico del proceso de poder. 7 Pérdida del decoro y la respetabilidad institucional. Transmisiones en vivo desglosando quién vota qué en la Legislatura. 12 Bernie Sanders Construcción de canales de distribución propios. 14 Aislamiento informativo en burbujas ideológicas. Lanzar "El Canal del Auditor" en plataformas digitales independientes. Mariano Rajoy Llamadas pregrabadas y directas de voz. 7 Rechazo o molestia ("spam") por saturación telefónica. Distribución de audios cortos de WhatsApp segmentados por cuadra y problema. INFORME 2: PLAN ESTRUCTURAL OPERATIVO DATA-DRIVEN Y ACCIÓN TERRITORIAL PARA MAXIMILIANO FERRARO EN CABA INTRODUCCIÓN GENERAL: El Posicionamiento de "Auditor Ciudadano" El actual ecosistema político de la Ciudad Autónoma de Buenos Aires transita por un proceso de profunda fragmentación tras la disolución de las identidades tradicionales de coalición .</p>
 <p>Frente al oficialismo que intenta integrar sectores del PRO y de La Libertad Avanza , y la consiguiente fatiga del votante porteño con los discursos abstractos de la clase política tradicional, la figura de Maximiliano Ferraro posee un valor diferencial latente.</p>
 <p>Su respetabilidad técnica como expresidente de comisiones legislativas y dirigente con trayectoria limpia debe reconvertirse. La efectividad electoral ya no radica en presentar gacetillas con proyectos de ley abstractos. 18 Debe fundarse en la utilidad directa en la cuadra del vecino.</p>
-<p>Este plan estratégico diseña de manera minuciosa la transición de Ferraro hacia el rol operativo de "Auditor Ciudadano" , sustentando cada acción territorial en el procesamiento científico de bases de datos públicas y de libre acceso (Open Data) de la propia gestión de la Ciudad de Buenos Aires. 11 [ Perfil Legislativo Clásico ] ──► [ El "Auditor Ciudadano" ] │ │ • Papel de ley abstracto • Soluciones materiales in situ • Gacetillas en despachos • Visualización de datos de gestión • Discursos institucionales • Herramienta de reclamo barrial</p>
+<p>Este plan estratégico diseña de manera minuciosa la transición de Ferraro hacia el rol operativo de "Auditor Ciudadano" , sustentando cada acción territorial en el procesamiento científico de bases de datos públicas y de libre acceso (Open Data) de la propia gestión de la Ciudad de Buenos Aires. 11 [ Perfil Legislativo Clásico ] ► [ El "Auditor Ciudadano" ] • Papel de ley abstracto • Soluciones materiales in situ • Gacetillas en despachos • Visualización de datos de gestión • Discursos institucionales • Herramienta de reclamo barrial</p>
 
 
 <h3>Matriz Comparativa de Extrapolación Operativa para CABA</h3>
 <p>Mapeo directo de los activos clave e inyecciones tácticas extrapoladas al perfil de Maxi Ferraro en la Ciudad de Buenos Aires:</p>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 20%;">Político</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Activo Estratégico Clave</th>
-                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 25%;">Riesgo a Mitigar en CABA</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 30%;">Extrapolación Táctica Directa</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Pete Buttigieg</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">&quot;Go Everywhere&quot; en Podcasts.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Caer en sobreexposición banal.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Podcast blitz en streaming independiente y analítico.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Claudia López</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Narrativa biográfica &quot;Hecha a pulso&quot;.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser percibida como demagógica.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Explotar su vida como inquilino de Barracas que viaja en subte.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Raphaël Glucksmann</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Explicación didáctica y moral en redes.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Imitar modas juveniles de forma forzada.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Videos verticales de formato &quot;Pizarra y Datos&quot; sobre presupuesto.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Manuela Carmena</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Descentralización por balcones vecinales.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Apatía o cansancio de los vecinos.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Artivismo en balcones de consorcios afectados por el Código Urbanístico.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Antanas Mockus</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Modificación lúdica de conductas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser considerado infantil ante la inseguridad.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Campaña descargable de &quot;Tarjetas Cívicas de Convivencia&quot; y respeto.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Andrew Yang</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Solvencia del dato duro y estadísticas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Parecer excesivamente tecnócrata o aburrido.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar tablets con visualizaciones del malgasto en TV y redes.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Elizabeth Warren</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">&quot;Tengo un plan para eso&quot; (Planes de nicho).</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Prometer soluciones muy complejas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar &quot;La Carpeta del Plan&quot; específico para el barrio visitado.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">A. Ocasio-Cortez</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Desempaque pedagógico del proceso de poder.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Pérdida de la respetabilidad parlamentaria.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Transmisiones en vivo detallando votaciones de la Legislatura.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Bernie Sanders</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Canales de distribución propios de contenido.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Aislamiento en burbujas ideológicas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Lanzar &quot;El Canal del Auditor&quot; en streaming y redes para fiscalizaciones.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Mariano Rajoy</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Llamadas pregrabadas y directas de voz.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Molestia vecinal (spam) por llamadas directas.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Audios cortos de WhatsApp segmentados por comuna y obras demoradas.</td>
-            </tr>
-        </tbody>
-    </table>
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 20%;">Político</th>
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Activo Estratégico Clave</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 25%;">Riesgo a Mitigar en CABA</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 30%;">Extrapolación Táctica Directa</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Pete Buttigieg</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">&quot;Go Everywhere&quot; en Podcasts.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Caer en sobreexposición banal.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Podcast blitz en streaming independiente y analítico.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Claudia López</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Narrativa biográfica &quot;Hecha a pulso&quot;.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser percibida como demagógica.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Explotar su vida como inquilino de Barracas que viaja en subte.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Raphaël Glucksmann</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Explicación didáctica y moral en redes.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Imitar modas juveniles de forma forzada.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Videos verticales de formato &quot;Pizarra y Datos&quot; sobre presupuesto.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Manuela Carmena</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Descentralización por balcones vecinales.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Apatía o cansancio de los vecinos.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Artivismo en balcones de consorcios afectados por el Código Urbanístico.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Antanas Mockus</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Modificación lúdica de conductas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Ser considerado infantil ante la inseguridad.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Campaña descargable de &quot;Tarjetas Cívicas de Convivencia&quot; y respeto.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Andrew Yang</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Solvencia del dato duro y estadísticas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Parecer excesivamente tecnócrata o aburrido.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar tablets con visualizaciones del malgasto en TV y redes.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Elizabeth Warren</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">&quot;Tengo un plan para eso&quot; (Planes de nicho).</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Prometer soluciones muy complejas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Presentar &quot;La Carpeta del Plan&quot; específico para el barrio visitado.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">A. Ocasio-Cortez</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Desempaque pedagógico del proceso de poder.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Pérdida de la respetabilidad parlamentaria.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Transmisiones en vivo detallando votaciones de la Legislatura.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Bernie Sanders</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Canales de distribución propios de contenido.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Aislamiento en burbujas ideológicas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Lanzar &quot;El Canal del Auditor&quot; en streaming y redes para fiscalizaciones.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Mariano Rajoy</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Llamadas pregrabadas y directas de voz.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Molestia vecinal (spam) por llamadas directas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Audios cortos de WhatsApp segmentados por comuna y obras demoradas.</td>
+ </tr>
+ </tbody>
+ </table>
 </div>
 
 
@@ -1573,7 +1574,7 @@ const PROPUESTAS_FERRARO = {
 <p>Diseñar contenidos de "Auditoría de Alquileres" basados en los marcos del Código Civil que él mismo conoce legislativamente, explicando cómo el vecino puede protegerse de cláusulas de indexación abusivas.</p>
 <h3>2. ARQUITECTURA DE INFILTRACIÓN TERRITORIAL: Mapeo de Puntos de Dolor por Corredores</h3>
 <p>La Ciudad Autónoma de Buenos Aires está dividida en 15 comunas con perfiles socioeconómicos radicalmente disímiles. 20 Para perforar el territorio con efectividad, se prohíbe el uso de discursos generales.</p>
-<p>Hemos diseñado una segmentación operativa dividiendo el territorio en 5 corredores estratégicos basados en los "puntos de dolor" exactos que los vecinos registran en los sistemas públicos de la Ciudad . ┌──────────────────────┼──────────────────────┐ ▼ ▼ ▼ [ Corredor Centro ] [ Corredor Norte ] Comunas 1 y 3 Comunas 2, 13, 14 Comunas 4, 8, 9 • Emergencia Social • Colapso por CUR • Deuda estructural • Higiene Urbana • Ruido Gastronómico • Escuelas dañadas ▲ ▲ └──────────────────────┬──────────────────────┘ ▼ [ Corredor Oeste y Oeste-Centro ] Comunas 5, 6, 7, 10, 11, 12, 15 • Inseguridad Capilar / Pymes • Espacios Verdes / Cultura CORREDOR CENTRO: Comunas 1 y 3 (Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat, Constitución, Balvanera, San Cristóbal)</p>
+<p>Hemos diseñado una segmentación operativa dividiendo el territorio en 5 corredores estratégicos basados en los "puntos de dolor" exactos que los vecinos registran en los sistemas públicos de la Ciudad . ▼ ▼ ▼ [ Corredor Centro ] [ Corredor Norte ] Comunas 1 y 3 Comunas 2, 13, 14 Comunas 4, 8, 9 • Emergencia Social • Colapso por CUR • Deuda estructural • Higiene Urbana • Ruido Gastronómico • Escuelas dañadas ▲ ▲ ▼ [ Corredor Oeste y Oeste-Centro ] Comunas 5, 6, 7, 10, 11, 12, 15 • Inseguridad Capilar / Pymes • Espacios Verdes / Cultura CORREDOR CENTRO: Comunas 1 y 3 (Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat, Constitución, Balvanera, San Cristóbal)</p>
 <ul class="db-list">
 <li>Perfil Socioeconómico : Alta densidad comercial, nodos críticos de transbordo de</li>
 </ul>
@@ -1644,7 +1645,7 @@ const PROPUESTAS_FERRARO = {
 <p>Cultura" .</p>
 <p>Ferraro cuenta con un capital legislativo e histórico indiscutible en la zona: fundó el centro cultural independiente Jungla en Almagro, impulsó la ley de fomento de centros culturales independientes, la ley de bares notables y la extensión horaria de la red de subterráneos. 6 Ferraro debe presentarse en el territorio para recordar este legado y transformarlo en una herramienta de protección de los espacios verdes y de la infraestructura cultural frente al avance especulativo .</p>
 <h3>3. METODOLOGÍA AVANZADA DE MINERÍA DE DATOS PÚBLICOS Y GEORREFERENCIACIÓN</h3>
-<p>La base operativa del nuevo rol de Maximiliano Ferraro radica en que cada una de sus denuncias, recorridas o declaraciones esté respaldada científicamente por información pública de libre acceso del Gobierno de la Ciudad de Buenos Aires. 11 A continuación, se detalla la metodología exacta de extracción, limpieza y procesamiento de datos para la campaña del candidato. ──► ──► │ ┌──────────────────────────────────────────────────────┘ ▼ [ Cruce de datasets ] ──► [ Mapa de Falla de Gestión ] ──► Fuentes de Datos Públicas Obligatorias</p>
+<p>La base operativa del nuevo rol de Maximiliano Ferraro radica en que cada una de sus denuncias, recorridas o declaraciones esté respaldada científicamente por información pública de libre acceso del Gobierno de la Ciudad de Buenos Aires. 11 A continuación, se detalla la metodología exacta de extracción, limpieza y procesamiento de datos para la campaña del candidato. ► ► ▼ [ Cruce de datasets ] ► [ Mapa de Falla de Gestión ] ► Fuentes de Datos Públicas Obligatorias</p>
 <ul class="db-list">
 <li>Portal BA Data (data.buenosaires.gob.ar) : Repositorio general donde se obtienen</li>
 </ul>
@@ -1697,7 +1698,7 @@ const PROPUESTAS_FERRARO = {
 <h3>4. PROTOCOLO DE TERRENO DE LA "ESCUCHA ACTIVA" Y CAPTACIÓN DE REFERENTES INVISIBLES</h3>
 <p>La bajada de Maximiliano Ferraro a los barrios de la ciudad no debe replicar bajo ninguna circunstancia el formato tradicional de campaña.</p>
 <p>Los desembarcos masivos, caracterizados por el uso de comitivas de asesores, reparto de panfletos impresos y cánticos partidarios, generan una barrera de rechazo instintiva en un electorado agotado.</p>
-<p>El "Protocolo de Terreno" de Ferraro debe ser quirúrgico, silencioso e impulsado por el sentido de utilidad inmediata. ──► │ ┌─────────────────────────────────────────┘ ▼ ──► │ ┌─────────────────────────────────────────┘ ▼ [ Intimación Legislativa / Exposición ] ──► Directrices Físicas y Gestuales del Candidato en el Territorio</p>
+<p>El "Protocolo de Terreno" de Ferraro debe ser quirúrgico, silencioso e impulsado por el sentido de utilidad inmediata. ► ▼ ► ▼ [ Intimación Legislativa / Exposición ] ► Directrices Físicas y Gestuales del Candidato en el Territorio</p>
 <ul class="db-list">
 <li>Austeridad de Transporte : Ferraro arribará al barrio seleccionado utilizando</li>
 </ul>
@@ -1745,7 +1746,7 @@ const PROPUESTAS_FERRARO = {
 <p>El discurso rector es: "La gestión oficial gasta fortunas en marketing sanitario pero los CESACs del sur sufren la falta de vacunas y protocolos deficientes de insumos básicos .</p>
 <p>Vengo a documentar las vacunas descartadas que se pierden por corte de cadena de frío para que el Ministerio de Salud rinda cuentas de inmediato" .</p>
 <h3>5. HOJA DE RUTA OPERATIVA: Plan de Acción Semanal</h3>
-<p>(6 Semanas) Para materializar con éxito el rol de "Auditor Ciudadano", se establece un cronograma de ejecución paramilitar estructurado en 3 fases secuenciales de 2 semanas de duración cada una. ──► • Extracción SUACI y BA Obras • Reset estético digital • Selección de 15 casos │ ──► • Recorridas de inspección • Reunión con referentes invisibles • Grabaciones crudas in situ │ ──► [ Amplificación y Cierre ] • "Go Everywhere" en streaming • Tutoriales digitales de datos • Retorno vecinal de validación FASE 1: Inteligencia de Datos y Setup Digital (Semanas 1 y 2) Cronograma de Actividades Semanal (Fase 1)</p>
+<p>(6 Semanas) Para materializar con éxito el rol de "Auditor Ciudadano", se establece un cronograma de ejecución paramilitar estructurado en 3 fases secuenciales de 2 semanas de duración cada una. ► • Extracción SUACI y BA Obras • Reset estético digital • Selección de 15 casos ► • Recorridas de inspección • Reunión con referentes invisibles • Grabaciones crudas in situ ► [ Amplificación y Cierre ] • "Go Everywhere" en streaming • Tutoriales digitales de datos • Retorno vecinal de validación FASE 1: Inteligencia de Datos y Setup Digital (Semanas 1 y 2) Cronograma de Actividades Semanal (Fase 1)</p>
 <ul class="db-list">
 <li>Semana 1 - Día 1 y 2 : Descarga sistemática de los datasets de SUACI, BA Obras y Mapa</li>
 </ul>
@@ -1816,32 +1817,32 @@ const PROPUESTAS_FERRARO = {
 <h3>Matriz de Mitigación de Riesgos Estratégicos</h3>
 <p>La transición de Maximiliano Ferraro de un perfil institucional clásico a uno de "Auditor Ciudadano" no está exenta de vulnerabilidades políticas y de comunicación. A continuación, se detallan los riesgos identificados en el ecosistema porteño y los protocolos de mitigación correspondientes.</p>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Riesgo Identificado</th>
-                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 38%;">Descripción del Riesgo</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 40%;">Protocolo de Mitigación Directa</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 1: Acusación de &quot;Chicana Política u Oposicionismo Barato&quot;</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">El oficialismo porteño (PRO/LLA) o los medios tradicionales afines intentarán descalificar las recorridas y denuncias de Ferraro tildándolas de oportunismo electoral propio de un año de campaña, minimizando el impacto de los baches, el CUR o las quejas por basura.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Ferraro jamás debe realizar una denuncia basada únicamente en opiniones subjetivas u apreciaciones políticas partidarias. Cada visita y video de auditoría debe comenzar mostrando a la pantalla de la cámara la foja del documento público, el dataset unificado de BA Obras o el portal de transparencia activa de la propia gestión del Gobierno porteño. La respuesta es quirúrgica: &quot;No vengo a hacer campaña ni a criticar desde la ideología. Vengo hoy con las estadísticas y los números oficiales que el propio Ejecutivo publica en su portal de Open Data, y que demuestran que le están mintiendo al vecino en su cara&quot;.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 2: El &quot;Contra-Archivo&quot; de su Votación Legislativa Histórica</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">La oposición de izquierda u otros sectores pueden recordar que Ferraro fue vicepresidente del bloque Vamos Juntos y acompañó debates clave de densificación urbana de la ciudad en el pasado, intentando invalidar su coherencia frente a los reclamos del nuevo Código Urbanístico.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Ferraro debe asumir con madurez institucional su historial legislativo pero marcando de forma tajante el punto de quiebre operativo: &quot;Acompañamos debates para jerarquizar y equilibrar el desarrollo de la ciudad, pero el Ejecutivo desvirtuó la aplicación del Código Urbanístico para favorecer excepciones inmobiliarias irregulares y amnistías constructivas de obras clandestinas de hasta 5.000 metros cuadrados que nosotros jamás convalidamos ni convalidaremos. Una buena ley aplicada con opacidad y sin control se transforma en una estafa al vecino, y mi trabajo actual como Auditor es, justamente, frenar esos abusos&quot;.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 3: La &quot;Fatiga de la Queja&quot; y Bloqueo de Audiencia por Aburrimiento</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Que la audiencia digital asocie los videos verticales de Ferraro a un canal crónico de quejas aburridas que no generan interacción ni tracción de voto joven en TikTok o Instagram.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Aplicar el modelo de pedagogía didáctica de Raphaël Glucksmann y Antanas Mockus. No limitarse a la denuncia de la vereda rota; explicar detalladamente el mecanismo de por qué el bache no se repara, adónde se desvía el presupuesto, cómo funciona la triangulación de contratos de consultoría o el lobby corporativo.</td>
-            </tr>
-        </tbody>
-    </table>
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Riesgo Identificado</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 38%;">Descripción del Riesgo</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 40%;">Protocolo de Mitigación Directa</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 1: Acusación de &quot;Chicana Política u Oposicionismo Barato&quot;</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">El oficialismo porteño (PRO/LLA) o los medios tradicionales afines intentarán descalificar las recorridas y denuncias de Ferraro tildándolas de oportunismo electoral propio de un año de campaña, minimizando el impacto de los baches, el CUR o las quejas por basura.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Ferraro jamás debe realizar una denuncia basada únicamente en opiniones subjetivas u apreciaciones políticas partidarias. Cada visita y video de auditoría debe comenzar mostrando a la pantalla de la cámara la foja del documento público, el dataset unificado de BA Obras o el portal de transparencia activa de la propia gestión del Gobierno porteño. La respuesta es quirúrgica: &quot;No vengo a hacer campaña ni a criticar desde la ideología. Vengo hoy con las estadísticas y los números oficiales que el propio Ejecutivo publica en su portal de Open Data, y que demuestran que le están mintiendo al vecino en su cara&quot;.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 2: El &quot;Contra-Archivo&quot; de su Votación Legislativa Histórica</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">La oposición de izquierda u otros sectores pueden recordar que Ferraro fue vicepresidente del bloque Vamos Juntos y acompañó debates clave de densificación urbana de la ciudad en el pasado, intentando invalidar su coherencia frente a los reclamos del nuevo Código Urbanístico.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Ferraro debe asumir con madurez institucional su historial legislativo pero marcando de forma tajante el punto de quiebre operativo: &quot;Acompañamos debates para jerarquizar y equilibrar el desarrollo de la ciudad, pero el Ejecutivo desvirtuó la aplicación del Código Urbanístico para favorecer excepciones inmobiliarias irregulares y amnistías constructivas de obras clandestinas de hasta 5.000 metros cuadrados que nosotros jamás convalidamos ni convalidaremos. Una buena ley aplicada con opacidad y sin control se transforma en una estafa al vecino, y mi trabajo actual como Auditor es, justamente, frenar esos abusos&quot;.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Riesgo 3: La &quot;Fatiga de la Queja&quot; y Bloqueo de Audiencia por Aburrimiento</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Que la audiencia digital asocie los videos verticales de Ferraro a un canal crónico de quejas aburridas que no generan interacción ni tracción de voto joven en TikTok o Instagram.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Aplicar el modelo de pedagogía didáctica de Raphaël Glucksmann y Antanas Mockus. No limitarse a la denuncia de la vereda rota; explicar detalladamente el mecanismo de por qué el bache no se repara, adónde se desvía el presupuesto, cómo funciona la triangulación de contratos de consultoría o el lobby corporativo.</td>
+ </tr>
+ </tbody>
+ </table>
 </div>
 
 
@@ -1886,23 +1887,24 @@ const PROPUESTAS_FERRARO = {
 <li></li>
 </ul>
 <p>Vozpopuli, fecha de acceso: mayo 28, 2026, https://www.vozpopuli.com/espana/ultimas-noticias-directo-madrid-covid.html 48. Layla's campaigns - Oxfordshire Liberal Democrats, fecha de acceso: mayo 28, 2026, https://www.oxonld.uk/layla-moran/campaigns 49. Layla Moran - Oxford West and Abingdon - Liberal Democrats, fecha de acceso: mayo 28, 2026, https://www.libdems.org.uk/candidates/oxford-west-and-abingdon 50. Social Inequality (Children's Centres) - Hansard, fecha de acceso: mayo 28, 2026, https://hansard.parliament.uk/commons/2017-07-11/debates/8B1F9F50-B6AA-4F40-9437-950AAC34C4C3/SocialInequality(Children%E2%80%99SCentres) 51. Homelessness - Hansard - UK Parliament, fecha de acceso: mayo 28, 2026, https://hansard.parliament.uk/Commons/2018-02-27/debates/6EA57CB0-8336-4421-91E4-2C61F80CA7D4/Homelessness?highlight=surrender 52. Speeches and Questions - Layla Moran MP, Oxford West and Abingdon - TheyWorkForYou, fecha de acceso: mayo 28, 2026, https://www.theyworkforyou.com/mp/25689/layla_moran/oxford_west_and_abingdon/speeches</p>`
-    },
-    "doc-estrategia-caba": {
-        title: "Estrategia Política Ferraro CABA y Plan de Acción del Auditor",
-        author: "Maxi Ferraro",
-        category: "Estrategia CABA",
-        date: "Agosto 2026",
-        abstract: "Documento de estrategia política para posicionar a Maxi Ferraro como el 'Auditor Ciudadano' de la Ciudad. Establece el mapeo de puntos de dolor por Comunas (AGC, IVC), cronogramas de intervención y protocolos de terreno para la escucha activa.",
-        keywords: ["Comunas CABA", "Auditor Ciudadano", "Hotspots de Quejas", "Cronograma Semanal"],
-        marginalia: [
-            {
-                type: "note",
-                label: "PUNTOS DE DOLOR",
-                text: "Mapeo georreferenciado de las principales falencias y reclamos de los consorcios e infraestructura escolar de las 15 comunas de la Ciudad."
-            }
-        ],
-        body: `<p>Informe Estratégico de Posicionamiento Político y Operatividad Territorial:</p>
-<p>Maximiliano Ferraro La actual coyuntura sociopolítica y electoral de la Ciudad Autónoma de Buenos Aires (CABA) demanda una reconversión urgente y quirúrgica de las narrativas tradicionales de representación.</p>
+ },
+ "doc-estrategia-caba": {
+ title: "Estrategia Política Ferraro CABA y Plan de Acción del Auditor",
+ author: "Maxi Ferraro",
+ category: "Estrategia CABA",
+ date: "Agosto 2026",
+ abstract: "Documento de estrategia política para posicionar a Maxi Ferraro como el 'Auditor Ciudadano' de la Ciudad. Establece el mapeo de puntos de dolor por Comunas (AGC, IVC), cronogramas de intervención y protocolos de terreno para la escucha activa.",
+ keywords: ["Comunas CABA", "Auditor Ciudadano", "Hotspots de Quejas", "Cronograma Semanal"],
+ marginalia: [
+ {
+ type: "note",
+ label: "PUNTOS DE DOLOR",
+ text: "Mapeo georreferenciado de las principales falencias y reclamos de los consorcios e infraestructura escolar de las 15 comunas de la Ciudad."
+ }
+ ],
+ body: `<h2 class="document-title">Informe Estratégico de Posicionamiento Político y Operatividad Territorial</h2>
+<h3 class="document-subtitle">Maximiliano Ferraro</h3>
+<p>La actual coyuntura sociopolítica y electoral de la Ciudad Autónoma de Buenos Aires (CABA) demanda una reconversión urgente y quirúrgica de las narrativas tradicionales de representación.</p>
 <p>En un ecosistema institucional marcado por la severa fatiga ciudadana hacia las estructuras partidarias clásicas, el colapso de las identidades aglutinantes tradicionales que supieron conformar alianzas como Juntos por el Cambio 1 , y el sostenido auge de discursos antipolíticos o disruptivos provenientes de sectores como La Libertad Avanza 2 , el perfil de Maximiliano Ferraro presenta una oportunidad táctica de incalculable valor.</p>
 <p>No obstante, esta oportunidad se encuentra latente y requiere de una reingeniería profunda y pragmática.</p>
 <p>Su extensa trayectoria como legislador, presidente de la Comisión de Educación, Ciencia y Tecnología, y máximo referente nacional de la Coalición Cívica ARI, le ha otorgado un volumen institucional y una respetabilidad técnica innegables. 3 Sin embargo, la efectividad electoral contemporánea ya no se mide de manera lineal por la cantidad de leyes sancionadas, los expedientes ingresados por mesa de entradas o la presidencia de comisiones parlamentarias; se rige, inexorablemente, por la percepción de utilidad directa y palpable en el metro cuadrado de la cotidianidad del votante. El presente documento despliega una arquitectura estratégica exhaustiva, diseñada de manera exclusiva para potenciar la inserción territorial de Maximiliano Ferraro en las quince comunas de la Ciudad de Buenos Aires.</p>
@@ -1925,42 +1927,42 @@ const PROPUESTAS_FERRARO = {
 
 <h3>Análisis de Fortalezas y Debilidades (Matriz de Perfil)</h3>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Dimensión Analizada</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 26%;">Atributo Actual del Candidato</th>
-                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 26%;">Riesgo de Percepción Ciudadana</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 26%;">Pivot Estratégico Propuesto (Oportunidad)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Identidad Biográfica</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Inquilino en Barracas (zona sur), usuario diario de transporte público y red de subterráneos.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Altamente sub-comunicado. Se percibe como un político de la élite tradicional que no padece la ciudad.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Posicionarlo proactivamente como el "Vecino Legislador", evidenciando que padece los mismos cortes de servicio y problemas de infraestructura.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Rol Político y Público</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Experto en educación, ética republicana, códigos civiles y transparencia nacional.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">"Institucionalista" de escritorio, preocupado por reglas abstractas, constituciones y no por soluciones materiales tangibles.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Traducir su capital de "ética" a "eficiencia operativa": exigir implacablemente que los servicios públicos concesionados funcionen sin sobreprecios ni corrupción territorial.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Agenda Legislativa</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Códigos urbanísticos, regulaciones nacionales de la SIDE, husos horarios, criptomonedas y Mercosur.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Completamente disociado de la coyuntura de supervivencia del metro cuadrado del votante.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Enfocar su probada capacidad técnica en auditar los pliegos de concesiones de basura, seguridad en los barrios y control de licitaciones de obras.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Ecosistema Digital</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Comunicación formal, comunicados de prensa estructurados, intentos de forzados de sumarse a tendencias.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Percibido como aburrido, acartonado o desconectado de la dinámica de indignación ciudadana contemporánea.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Adoptar un formato de "investigación in situ", estilo cámara al hombro, documentando fallas del gobierno porteño en tiempo real y sin intermediarios.</td>
-            </tr>
-        </tbody>
-    </table>
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Dimensión Analizada</th>
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 26%;">Atributo Actual del Candidato</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 26%;">Riesgo de Percepción Ciudadana</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 26%;">Pivot Estratégico Propuesto (Oportunidad)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Identidad Biográfica</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Inquilino en Barracas (zona sur), usuario diario de transporte público y red de subterráneos.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Altamente sub-comunicado. Se percibe como un político de la élite tradicional que no padece la ciudad.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Posicionarlo proactivamente como el "Vecino Legislador", evidenciando que padece los mismos cortes de servicio y problemas de infraestructura.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Rol Político y Público</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Experto en educación, ética republicana, códigos civiles y transparencia nacional.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">"Institucionalista" de escritorio, preocupado por reglas abstractas, constituciones y no por soluciones materiales tangibles.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Traducir su capital de "ética" a "eficiencia operativa": exigir implacablemente que los servicios públicos concesionados funcionen sin sobreprecios ni corrupción territorial.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Agenda Legislativa</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Códigos urbanísticos, regulaciones nacionales de la SIDE, husos horarios, criptomonedas y Mercosur.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Completamente disociado de la coyuntura de supervivencia del metro cuadrado del votante.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Enfocar su probada capacidad técnica en auditar los pliegos de concesiones de basura, seguridad en los barrios y control de licitaciones de obras.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Ecosistema Digital</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Comunicación formal, comunicados de prensa estructurados, intentos de forzados de sumarse a tendencias.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Percibido como aburrido, acartonado o desconectado de la dinámica de indignación ciudadana contemporánea.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Adoptar un formato de "investigación in situ", estilo cámara al hombro, documentando fallas del gobierno porteño en tiempo real y sin intermediarios.</td>
+ </tr>
+ </tbody>
+ </table>
 </div>
 
 
@@ -2021,54 +2023,54 @@ const PROPUESTAS_FERRARO = {
 
 <h3>Arquitectura de Inserción Territorial (Mapeo por Comunas)</h3>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 15%;">Corredor</th>
-                <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 12%;">Comunas</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Perfil Socio-Urbano</th>
-                <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 24%;">Dolores (Conflicto)</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 24%;">Rol del Auditor (Ferraro)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Centro</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">1, 3</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Alta densidad poblacional, vulnerabilidad social, tránsito comercial masivo.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Situación de calle desbordada (50% de CABA), higiene urbana crítica.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Fiscalización de pliegos de basura y auditoría de la red de asistencia de Desarrollo Social.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Norte</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">2, 13, 14</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Alto poder adquisitivo, fuerte presencia de polos gastronómicos y turismo.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Contaminación acústica, saturación cloacal por Código Urbanístico, megaobras.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Defensa de consorcios frenando habilitaciones de la AGC y excepciones del código.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Sur</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">4, 8, 9</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Subdesarrollo de infraestructura, déficit habitacional, abandono estatal.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Deterioro estructural de escuelas públicas, urbanizaciones inconclusas del IVC.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Explotar arraigo geográfico. Auditar in situ paralización de obras del IVC y colegios.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Oeste</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">7, 10, 11</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Entramado residencial de media densidad, fuerte comercio local y PyMEs.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Inseguridad barrial (arrebatos), proliferación del mercado de objetos robados.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Exigir trazabilidad y operativos de seguridad inter-agencias, protegiendo al comercio.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Centro-Oeste</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">5, 6, 12, 15</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Corazón cultural de CABA, clases medias progresistas, transbordo multimodal.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Gentrificación, preservación de espacios verdes y centros culturales.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Proteger el acervo cultural (Bares Notables, teatros) y presionar por la red de subtes.</td>
-            </tr>
-        </tbody>
-    </table>
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 15%;">Corredor</th>
+ <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 12%;">Comunas</th>
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Perfil Socio-Urbano</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 24%;">Dolores (Conflicto)</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 24%;">Rol del Auditor (Ferraro)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Centro</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">1, 3</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Alta densidad poblacional, vulnerabilidad social, tránsito comercial masivo.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Situación de calle desbordada (50% de CABA), higiene urbana crítica.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Fiscalización de pliegos de basura y auditoría de la red de asistencia de Desarrollo Social.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Norte</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">2, 13, 14</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Alto poder adquisitivo, fuerte presencia de polos gastronómicos y turismo.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Contaminación acústica, saturación cloacal por Código Urbanístico, megaobras.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Defensa de consorcios frenando habilitaciones de la AGC y excepciones del código.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Sur</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">4, 8, 9</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Subdesarrollo de infraestructura, déficit habitacional, abandono estatal.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Deterioro estructural de escuelas públicas, urbanizaciones inconclusas del IVC.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Explotar arraigo geográfico. Auditar in situ paralización de obras del IVC y colegios.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Oeste</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">7, 10, 11</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Entramado residencial de media densidad, fuerte comercio local y PyMEs.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Inseguridad barrial (arrebatos), proliferación del mercado de objetos robados.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Exigir trazabilidad y operativos de seguridad inter-agencias, protegiendo al comercio.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Centro-Oeste</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">5, 6, 12, 15</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Corazón cultural de CABA, clases medias progresistas, transbordo multimodal.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-azul-anchor);">Gentrificación, preservación de espacios verdes y centros culturales.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Proteger el acervo cultural (Bares Notables, teatros) y presionar por la red de subtes.</td>
+ </tr>
+ </tbody>
+ </table>
 </div>
 
 
@@ -2221,36 +2223,36 @@ const PROPUESTAS_FERRARO = {
 
 <h3>Cronograma Ejecutivo de Intervención Sintetizado</h3>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
-    <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
-        <thead>
-            <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 18%;">Período Temporal</th>
-                <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Foco Estratégico y Meta</th>
-                <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 30%;">Acciones Físicas (Territorio)</th>
-                <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 30%;">Acciones Digitales y Comunicación</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Semanas 1 - 2</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Inteligencia y Mapeo</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Trabajo técnico de escritorio. Mapeo y cruce de actas AGC, reclamos 147 y saturación del 108.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Setup intensivo de las narrativas en crudo. Ajuste de biografías centrado en su identidad de residente porteño.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-linea);">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Semanas 3 - 4</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Inserción Territorial Quirúrgica</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Visitas sorpresa de "Auditoría" in situ a los 15 puntos críticos. Reuniones "1 a 1" con referentes invisibles.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Grabación sistemática de todo el material en crudo con celular. Restricción absoluta de posteos de reuniones institucionales.</td>
-            </tr>
-            <tr style="border-bottom: 0px;">
-                <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Semanas 5 - 6</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Amplificación Mediática y Resolución</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Retorno de validación política a los puntos donde la presión forzó respuestas gubernamentales tangibles.</td>
-                <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Estrategia "Go Everywhere" en medios y nichos digitales. Lanzamiento de la serie digital exponiendo la ineficiencia de la Ciudad.</td>
-            </tr>
-        </tbody>
-    </table>
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 18%;">Período Temporal</th>
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 22%;">Foco Estratégico y Meta</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 30%;">Acciones Físicas (Territorio)</th>
+ <th style="padding: 1rem; color: var(--color-naranja); font-weight: 600; width: 30%;">Acciones Digitales y Comunicación</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Semanas 1 - 2</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Inteligencia y Mapeo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Trabajo técnico de escritorio. Mapeo y cruce de actas AGC, reclamos 147 y saturación del 108.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Setup intensivo de las narrativas en crudo. Ajuste de biografías centrado en su identidad de residente porteño.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Semanas 3 - 4</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Inserción Territorial Quirúrgica</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Visitas sorpresa de "Auditoría" in situ a los 15 puntos críticos. Reuniones "1 a 1" con referentes invisibles.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Grabación sistemática de todo el material en crudo con celular. Restricción absoluta de posteos de reuniones institucionales.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Semanas 5 - 6</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Amplificación Mediática y Resolución</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-verde);">Retorno de validación política a los puntos donde la presión forzó respuestas gubernamentales tangibles.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-naranja);">Estrategia "Go Everywhere" en medios y nichos digitales. Lanzamiento de la serie digital exponiendo la ineficiencia de la Ciudad.</td>
+ </tr>
+ </tbody>
+ </table>
 </div>
 
 
@@ -2258,7 +2260,7 @@ const PROPUESTAS_FERRARO = {
 <p>Sin embargo, su viabilidad competitiva futura, así como la posibilidad matemática y sociológica de escalar hacia posiciones ejecutivas en próximos armados electorales, dependen estricta y perentoriamente de su capacidad de flexibilidad táctica para "bajar" esa imponente arquitectura intelectual al nivel rasante del asfalto porteño. Al asumir y perfeccionar el perfil pragmático y expeditivo del "Auditor Ciudadano", y al ejecutar de forma metodológica, fría y disciplinada las estrategias de micro-segmentación territorial combinadas con una ubicuidad mediática de nueva generación, Ferraro logrará inexorablemente romper su techo institucional histórico de cristal.</p>
 <p>De esta forma, abandonará la cómoda pero aislante posición de ser evaluado por sus pares políticos y analistas sobre la fineza de los proyectos que redacta en el silencio de su despacho, para pasar a ser escrutado, necesitado y finalmente valorado por los propios vecinos a causa de los problemas reales, angustiantes y cotidianos que es capaz de resolver en sus veredas y medianeras.</p>
 <p>El éxito milimétrico de esta compleja transición identitaria y operativa es lo que, en definitiva, consolidará su relevancia insoslayable e indispensable en el siempre turbulento rediseño del poder político de la Ciudad Autónoma de Buenos Aires.</p>`
-    }
+ }
 };
 
 const DOCUMENTOS_CAMPANA = PROPUESTAS_FERRARO;
