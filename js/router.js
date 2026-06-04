@@ -305,16 +305,28 @@ function getHeaderMetadata(docId, rawHtml) {
                 summary: 'Lecciones del cartel desnudo de Albert Rivera, oratoria competitiva y carpas ciudadanas como modelo disruptivo de bajo presupuesto.'
             };
         }
-        if (text.includes('benchmarking global') || text.includes('políticos comparados') || text.includes('casos globales')) {
+        if (text.includes('análisis comparado')) {
             return {
-                title: 'Políticos Comparados y Benchmarking Global',
-                summary: 'Análisis comparado detallado de 10 líderes internacionales (Pete Buttigieg, Claudia López, Raphaël Glucksmann, etc.) y su extrapolación a CABA.'
+                title: 'Análisis Comparado: 15 Perfiles Políticos Análogos',
+                summary: 'Análisis comparado detallado de 15 líderes internacionales (Pete Buttigieg, Claudia López, Raphaël Glucksmann, etc.) y su similitud con Ferraro.'
             };
         }
-        if (text.includes('conclusión: hacia') || text.includes('modelo de guerrilla') || text.includes('conclusión')) {
+        if (text.includes('matriz táctica')) {
             return {
-                title: 'Conclusión: Hacia la Guerrilla Comunicacional en CABA',
-                summary: 'Lineamientos para la adaptabilidad del esquema de bajo presupuesto combinando shock semántico y rigor técnico.'
+                title: 'Matriz Táctica Transnacional de Campañas de Bajo Costo',
+                summary: 'Sistematización de tácticas de guerrilla electoral: shock visual, omnipresencia asimétrica y gamificación digital.'
+            };
+        }
+        if (text.includes('transposición estratégica')) {
+            return {
+                title: 'Transposición Estratégica: Ideas Creativas y Austeras para CABA',
+                summary: 'Ideas y propuestas tácticas (Transparencia Radical, CC-ARI en Bici, El Canal del Auditor) adaptadas a la fisionomía de Buenos Aires.'
+            };
+        }
+        if (text.includes('conclusiones y proyecciones') || text.includes('6. conclusiones')) {
+            return {
+                title: 'Conclusiones y Proyecciones Estratégicas',
+                summary: 'Líneas rectoras finales sobre la viabilidad del modelo disruptivo en el ecosistema electoral porteño.'
             };
         }
     }
@@ -338,10 +350,44 @@ function getHeaderMetadata(docId, rawHtml) {
                 summary: 'Rutinas semanales de recorridas de auditoría, guiones de interacción cívica y protocolo del Auditor Ciudadano.'
             };
         }
+        if (text.includes('4. protocolo de terreno') || text.includes('escucha activa')) {
+            return {
+                title: 'Protocolo de Terreno de la Escucha Activa',
+                summary: 'Directrices físicas y gestuales en el territorio, acercamiento a referentes locales y auditoría descentralizada.'
+            };
+        }
+        if (text.includes('4. benchmarking internacional') || text.includes('lecciones comparadas')) {
+            return {
+                title: 'Benchmarking Internacional (Lecciones Comparadas)',
+                summary: 'Análisis estratégico de Pete Buttigieg, Claudia López y Raphaël Glucksmann aplicados a la figura de Ferraro en CABA.'
+            };
+        }
     }
     
     return null;
 }
+
+// Navegación interactiva desde el índice del documento
+window.expandAndScrollTo = function(elementId) {
+    console.log("Navegación interactiva hacia:", elementId);
+    const target = document.getElementById(elementId);
+    if (target) {
+        target.open = true; // Abrir acordeón
+        
+        // Esperar a que el navegador recalcule el layout
+        setTimeout(() => {
+            const yOffset = -90; // Compensar navbar fija
+            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            
+            // Efecto visual de destello
+            target.classList.add('highlight-glow');
+            setTimeout(() => {
+                target.classList.remove('highlight-glow');
+            }, 1500);
+        }, 50);
+    }
+};
 
 function transformBodyIntoCollapsibles(docId, bodyHtml) {
     const tempDiv = document.createElement('div');
@@ -350,9 +396,17 @@ function transformBodyIntoCollapsibles(docId, bodyHtml) {
     const children = Array.from(tempDiv.childNodes);
     const resultFragment = document.createDocumentFragment();
 
+    const sectionsMetadata = [];
     let introNodes = [];
     let currentSection = null;
+    let currentNestedSection = null;
     let foundFirstHeading = false;
+
+    // Asignar color de acento del índice según documento
+    let accentColor = 'var(--color-naranja)';
+    if (docId === 'doc-automatizacion') accentColor = 'var(--color-verde)';
+    else if (docId === 'doc-campana-austera') accentColor = 'var(--color-fucsia)';
+    else if (docId === 'doc-estrategia-caba') accentColor = 'var(--color-azul-anchor)';
 
     for (let i = 0; i < children.length; i++) {
         const node = children[i];
@@ -360,14 +414,24 @@ function transformBodyIntoCollapsibles(docId, bodyHtml) {
         if (node.nodeType === Node.ELEMENT_NODE && node.tagName.toLowerCase() === 'h3') {
             const metadata = getHeaderMetadata(docId, node.innerHTML);
             if (metadata) {
+                // Sección principal de nivel superior
                 foundFirstHeading = true;
+                currentNestedSection = null; // Reiniciar sección anidada
 
                 if (currentSection) {
                     resultFragment.appendChild(currentSection.details);
                 }
 
+                const secId = `sec-${docId}-${sectionsMetadata.length}`;
+                sectionsMetadata.push({
+                    id: secId,
+                    title: metadata.title,
+                    summary: metadata.summary
+                });
+
                 const details = document.createElement('details');
                 details.className = 'premium-details';
+                details.id = secId;
                 
                 const summary = document.createElement('summary');
                 summary.innerHTML = `
@@ -384,20 +448,41 @@ function transformBodyIntoCollapsibles(docId, bodyHtml) {
 
                 currentSection = { details, contentDiv };
             } else {
+                // Subsección anidada (h3 no mapeado a nivel superior)
                 if (!foundFirstHeading) {
                     introNodes.push(node);
                 } else {
                     if (currentSection) {
-                        currentSection.contentDiv.appendChild(node.cloneNode(true));
+                        currentNestedSection = null; // Cerrar anidación previa
+
+                        const nestedDetails = document.createElement('details');
+                        nestedDetails.className = 'nested-details';
+                        
+                        const nestedSummary = document.createElement('summary');
+                        nestedSummary.className = 'nested-summary';
+                        nestedSummary.innerHTML = node.innerHTML;
+                        nestedDetails.appendChild(nestedSummary);
+
+                        const nestedContentDiv = document.createElement('div');
+                        nestedContentDiv.className = 'nested-content';
+                        nestedDetails.appendChild(nestedContentDiv);
+
+                        currentSection.contentDiv.appendChild(nestedDetails);
+                        currentNestedSection = { details: nestedDetails, contentDiv: nestedContentDiv };
                     }
                 }
             }
         } else {
+            // Nodo normal (p, ul, table, div, etc.)
             if (!foundFirstHeading) {
                 introNodes.push(node);
             } else {
                 if (currentSection) {
-                    currentSection.contentDiv.appendChild(node.cloneNode(true));
+                    if (currentNestedSection) {
+                        currentNestedSection.contentDiv.appendChild(node.cloneNode(true));
+                    } else {
+                        currentSection.contentDiv.appendChild(node.cloneNode(true));
+                    }
                 }
             }
         }
@@ -413,11 +498,38 @@ function transformBodyIntoCollapsibles(docId, bodyHtml) {
         wrapper.appendChild(node.cloneNode(true));
     });
 
-    const summaryCardHtml = getSummaryCardHtml(docId);
-    if (summaryCardHtml) {
-        const cardContainer = document.createElement('div');
-        cardContainer.innerHTML = summaryCardHtml;
-        wrapper.appendChild(cardContainer.firstElementChild);
+    // Generar Índice Interactivo dinámico de Secciones
+    if (sectionsMetadata.length > 0) {
+        const indexCard = document.createElement('div');
+        indexCard.className = 'interactive-index-card premium-card';
+        
+        let indexHtml = `
+            <div class="index-card-header">
+                <span class="mono-tag" style="color: ${accentColor};">[ ÍNDICE INTERACTIVO ]</span>
+                <h3 class="index-card-title">Estructura del Documento</h3>
+                <p class="index-card-desc">Haga clic en cualquiera de las siguientes secciones para expandir su contenido y desplazarse de forma automática.</p>
+            </div>
+            <div class="index-card-grid">
+        `;
+
+        sectionsMetadata.forEach((sec, idx) => {
+            indexHtml += `
+                <div class="index-item" onclick="expandAndScrollTo('${sec.id}')" style="--accent-item: ${accentColor};">
+                    <span class="index-item-num" style="color: ${accentColor};">${String(idx + 1).padStart(2, '0')}</span>
+                    <div class="index-item-body">
+                        <h4 class="index-item-title">${sec.title}</h4>
+                        <p class="index-item-summary">${sec.summary}</p>
+                    </div>
+                    <span class="index-item-arrow">&rarr;</span>
+                </div>
+            `;
+        });
+
+        indexHtml += `
+            </div>
+        `;
+        indexCard.innerHTML = indexHtml;
+        wrapper.appendChild(indexCard);
     }
 
     wrapper.appendChild(resultFragment);

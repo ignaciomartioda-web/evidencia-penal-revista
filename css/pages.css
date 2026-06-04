@@ -2554,3 +2554,219 @@ details.premium-details .details-content h4 {
     transform: translateY(-5px);
 }
 
+/* ==========================================================================
+   INTERACTIVE INDEX CARD & NESTED COLLAPSIBLE STYLES
+   ========================================================================== */
+
+/* Tarjeta del Índice Interactivo */
+.interactive-index-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.index-card-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 1rem;
+}
+
+.index-card-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0.4rem 0;
+}
+
+.index-card-desc {
+    font-size: 0.88rem;
+    color: var(--color-texto-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.index-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .index-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.index-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: var(--radius-md);
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: all var(--transition-fast) cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.index-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--accent-item, var(--color-naranja));
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.index-item:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.index-item:hover::before {
+    opacity: 1;
+}
+
+.index-item-num {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-naranja);
+    opacity: 0.8;
+}
+
+.index-item-body {
+    flex: 1;
+}
+
+.index-item-title {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 0.35rem 0;
+    transition: color var(--transition-fast);
+}
+
+.index-item:hover .index-item-title {
+    color: var(--accent-item, var(--color-naranja));
+}
+
+.index-item-summary {
+    font-size: 0.8rem;
+    color: var(--color-texto-muted);
+    line-height: 1.45;
+    margin: 0;
+}
+
+.index-item-arrow {
+    align-self: center;
+    font-size: 1.1rem;
+    color: var(--color-texto-muted);
+    opacity: 0.4;
+    transition: transform var(--transition-fast) ease, opacity var(--transition-fast) ease;
+}
+
+.index-item:hover .index-item-arrow {
+    transform: translateX(4px);
+    opacity: 1;
+    color: var(--accent-item, var(--color-naranja));
+}
+
+/* Acordeones Anidados (Sub-secciones) */
+details.nested-details {
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all var(--transition-fast);
+}
+
+details.nested-details:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+details.nested-details[open] {
+    background: rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+details.nested-details summary {
+    padding: 1rem 1.4rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--color-texto-dm);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    user-select: none;
+    transition: color var(--transition-fast);
+    font-family: var(--font-serif);
+    border-bottom: none;
+}
+
+details.nested-details summary::-webkit-details-marker {
+    display: none;
+}
+
+details.nested-details summary::after {
+    content: "＋";
+    position: absolute;
+    right: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: var(--color-texto-muted);
+    transition: transform var(--transition-fast);
+}
+
+details.nested-details[open] summary::after {
+    content: "－";
+    color: #fff;
+}
+
+details.nested-details summary:hover {
+    color: var(--color-naranja);
+}
+
+details.nested-details .nested-content {
+    padding: 1.2rem 1.4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    color: var(--color-texto-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+/* Efecto de Resplandor Naranja al Enfocar una Sección */
+@keyframes detailsGlow {
+    0% {
+        box-shadow: 0 0 0 0px rgba(244, 114, 22, 0);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    15% {
+        box-shadow: 0 0 20px 4px rgba(244, 114, 22, 0.35);
+        border-color: var(--color-naranja);
+    }
+    100% {
+        box-shadow: 0 0 0 0px rgba(244, 114, 22, 0);
+        border-color: rgba(255, 255, 255, 0.08);
+    }
+}
+
+details.premium-details.highlight-glow {
+    animation: detailsGlow 1.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
