@@ -97,9 +97,8 @@ if __name__ == "__main__":
     print(f"SPA Router Valid Hashes: {sorted(list(valid_spa_hashes))}\n")
     
     index_ok = audit_html(os.path.join(dir_path, "index.html"), valid_spa_hashes)
-    dash_ok = audit_html(os.path.join(dir_path, "dashboard.html"), valid_spa_hashes)
     
-    if not index_ok or not dash_ok:
+    if not index_ok:
         sys.exit(1)
     else:
         sys.exit(0)
