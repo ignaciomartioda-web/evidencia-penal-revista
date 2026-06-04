@@ -1540,15 +1540,31 @@
 @media (max-width: 992px) {
     .hero-grid-container {
         grid-template-columns: 1fr !important;
-        gap: 3rem;
-        padding: 3rem 2rem;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
         text-align: center;
+    }
+    .hero-section.hero-monolith {
+        min-height: auto;
     }
     .hero-text-side {
         text-align: center !important;
         align-items: center !important;
+        padding-left: 0 !important;
     }
-    .hero-widget-side { justify-content: center !important; }
+    .hero-widget-side {
+        justify-content: center !important;
+        order: -1;
+    }
+    .lighthouse-widget-wrapper {
+        width: 280px !important;
+        height: 280px !important;
+        margin-left: 0 !important;
+    }
+    .lighthouse-link {
+        width: 280px !important;
+        height: 280px !important;
+    }
     .hero-meta-lock { justify-content: center !important; }
     .magazine-kicker { justify-content: center; }
     .abstract-subtitle { margin: 2rem auto 0; }
@@ -1574,6 +1590,17 @@
         padding-right: 0;
         border-bottom: 1px solid var(--color-linea-fuerte);
         padding-bottom: 2rem;
+    }
+    /* Red neuronal: escalar el canvas completo para que quepa en pantallas chicas */
+    .radiografia-container { border-radius: var(--radius-lg) !important; }
+    .radiografia-network-side {
+        min-height: 320px !important;
+        height: auto !important;
+        padding: 1rem 0 !important;
+    }
+    .network-canvas {
+        transform: scale(0.75) !important;
+        transform-origin: center center;
     }
 }
 
@@ -1628,8 +1655,27 @@
 @media (max-width: 480px) {
     .metricas-grid { grid-template-columns: 1fr !important; }
     .metric-columna:nth-child(even) { border-right: none !important; }
-    .lighthouse-widget-wrapper { width: 240px; height: 240px; }
-    .lighthouse-link { width: 240px; height: 240px; }
+    .lighthouse-widget-wrapper { width: 220px !important; height: 220px !important; }
+    .lighthouse-link { width: 220px !important; height: 220px !important; }
+    .hero-grid-container { padding: 2rem 1rem !important; }
+    .magazine-title.massive-title { font-size: clamp(2.8rem, 14vw, 4.5rem) !important; }
+    /* Red neuronal: escalar el canvas completo con transform y mantenerlo en 400x400 */
+    .network-canvas {
+        width: 400px !important;
+        height: 400px !important;
+        transform: scale(0.62) !important;
+        transform-origin: center center !important;
+    }
+    .comite-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 360px) {
+    .lighthouse-widget-wrapper { width: 190px !important; height: 190px !important; }
+    .lighthouse-link { width: 190px !important; height: 190px !important; }
+    .network-canvas {
+        transform: scale(0.52) !important;
+        transform-origin: center center !important;
+    }
 }
 
 /* ==========================================================================
