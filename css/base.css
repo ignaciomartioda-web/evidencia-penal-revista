@@ -225,6 +225,18 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+/* ── Responsividad de Tablas Generadas dinámicamente ── */
+.table-container {
+    width: 100% !important;
+    overflow-x: auto !important;
+    margin: 1.5rem 0 !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-container table {
+    min-width: 750px !important;
+}
+
 
 
 /* ==========================================================================
