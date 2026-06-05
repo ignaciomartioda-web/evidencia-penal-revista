@@ -33,7 +33,8 @@ const PROPUESTAS_FERRARO = {
 <p>Estos ejes no son meros enunciados retóricos, sino que se traducen en acciones legislativas de altísimo impacto, como su reciente rol como presidente de la Comisión Investigadora del escándalo de corrupción conocido como el "Caso \$LIBRA", donde enfrentó directamente al Poder Ejecutivo Nacional. 3 El desarrollo de este informe desagrega, clasifica y audita cada una de estas dimensiones operativas, proveyendo un mapeo hiper-detallado estructurado en el análisis de su labor parlamentaria, su presencia mediática, y su desenvolvimiento en las redes sociales, con el fin de entregar un perfil analítico completo, objetivo y autosuficiente.</p>
 
 
-<h3>Análisis FODA Detallado (10 Fortalezas y 10 Debilidades)</h3>
+<h3>Cuadro Analítico: Fortalezas y Debilidades (Análisis FODA)</h3>
+<h4>Análisis FODA Detallado (10 Fortalezas y 10 Debilidades)</h4>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
   <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
   <thead>
@@ -124,7 +125,7 @@ const PROPUESTAS_FERRARO = {
   </div>
 </div>
 
-<h3>Cuadro Analítico: Fortalezas y Debilidades</h3>
+<h4>Cuadro Analítico: Fortalezas y Debilidades</h4>
 <p>A continuación se resume el análisis FODA de inteligencia política sobre Maximiliano Ferraro en el territorio de CABA:</p>
 <div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
   <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
