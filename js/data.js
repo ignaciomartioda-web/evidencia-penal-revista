@@ -69,6 +69,98 @@ const PROPUESTAS_FERRARO = {
  </table>
 </div>
 
+<h3>Análisis FODA Detallado (10 Fortalezas y 10 Debilidades)</h3>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 20%;">Dimensión</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 40%;">Fortalezas (Capital Político y Operativo)</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 40%;">Debilidades (Vulnerabilidades y Riesgos)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Trayectoria y Liderazgo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">
+ • Liderazgo nacional consolidado (Presidente CC-ARI y referente en la mesa de "Unidos").<br>
+ • Estabilidad temporal garantizada por mandato legislativo estable hasta diciembre de 2027.
+ </td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">
+ • Exposición a estigmatización de "casta" tradicional por su prolongada carrera parlamentaria.<br>
+ • Percepción histórica de dependencia o subordinación al liderazgo directo de Elisa Carrió.
+ </td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Perfil Ético e Institucional</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">
+ • Imagen intachable de fiscal incorruptible, consolidada por presidir el hito del Caso $LIBRA.<br>
+ • Lucha activa y transversal de prevención frente a la ludopatía adolescente y apuestas online.
+ </td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">
+ • Rigidez moral y purismo ético que suelen obstaculizar acuerdos y consensos tácticos locales.<br>
+ • Dificultad para conectar de forma empática con audiencias despolitizadas o apáticas.
+ </td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gestión y Consensos</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">
+ • Probada destreza parlamentaria para tejer acuerdos y resolver crisis de alta fricción (ej. UniCABA).<br>
+ • Co-impulsor del blindaje educativo declarando la educación como "Servicio Estratégico Esencial".
+ </td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">
+ • "Síndrome Institucionalista": percepción pública de legislador de escritorio alejado de la vereda.<br>
+ • Tendencia a usar lenguaje procedimental, citas complejas de expedientes y tecnicismos formales.
+ </td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Anclaje Biográfico</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">
+ • Perfil biográfico común genuino: es inquilino en Barracas y viaja en subte/transporte público.<br>
+ • Legitimidad territorial en comunas del sur (Comunas 4, 8, 9) para contrastar con las élites tradicionales.
+ </td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">
+ • Fuerte sub-comunicación de su realidad biográfica: su vida humilde y real está casi invisibilizada.<br>
+ • Escasa llegada discursiva en electorados jóvenes atraídos por las narrativas libertarias de mercado.
+ </td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Ecosistema Digital</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">
+ • Gran capacidad para viralizar evidencias, denuncias con datos duros e infografías estructuradas.<br>
+ • Digitalización técnica de campañas a costo cero con flujos de datos en Google Sheets e IA.
+ </td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">
+ • Desconexión con códigos humorísticos y narrativas digitales orgánicas (ej. video Pink Floyd).<br>
+ • Alta vulnerabilidad frente a ataques organizados de troll centers oficialistas e infoguerras.
+ </td>
+ </tr>
+ </tbody>
+ </table>
+</div>
+
+<div class="db-grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+ <div class="db-sub-card" style="background: rgba(46, 204, 113, 0.05); padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--color-verde); border: 1px solid rgba(46, 204, 113, 0.15);">
+ <h4 style="color: var(--color-verde); margin-top: 0; margin-bottom: 0.8rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;"><span>💡</span> Oportunidades Estratégicas</h4>
+ <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.5; list-style-type: disc;">
+ <li style="margin-bottom: 0.4rem;"><strong>Pivot al Vecino-Auditor:</strong> Traducir la reputación de transparencia a fiscalización en la vereda de contratos públicos.</li>
+ <li style="margin-bottom: 0.4rem;"><strong>Protector Pyme y Comercio:</strong> Auditar las actas de clausuras arbitrarias de la AGC y defender a comerciantes.</li>
+ <li style="margin-bottom: 0.4rem;"><strong>Monopolizar Oposición de Centro:</strong> Capturar el voto moderado descontento con la desregulación o el populismo.</li>
+ <li><strong>Town Halls in Situ:</strong> Distribuir el informe impreso de $LIBRA y Ley de Ludopatía en charlas barriales.</li>
+ </ul>
+ </div>
+ <div class="db-sub-card" style="background: rgba(231, 76, 60, 0.05); padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--color-fucsia); border: 1px solid rgba(231, 76, 60, 0.15);">
+ <h4 style="color: var(--color-fucsia); margin-top: 0; margin-bottom: 0.8rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;"><span>⚠️</span> Amenazas Identificadas</h4>
+ <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--color-texto-muted); line-height: 1.5; list-style-type: disc;">
+ <li style="margin-bottom: 0.4rem;"><strong>Polarización Mediática Extrema:</strong> Pérdida de relevancia en el choque entre oficialismo y oposición dura.</li>
+ <li style="margin-bottom: 0.4rem;"><strong>Desinformación Coordinada:</strong> Campañas masivas destinadas a deslegitimar la denuncia federal de $LIBRA.</li>
+ <li style="margin-bottom: 0.4rem;"><strong>Gentrificación y Éxodo Electoral:</strong> Desplazamiento habitacional de clase media de su bastión demográfico.</li>
+ <li><strong>Parálisis legislativa intencional:</strong> Trabas en pedidos de informes (ej. Consejo de Paz) para diluir su efectividad.</li>
+ </ul>
+ </div>
+</div>
+
+
 
 <h3>2. Módulo 1: Análisis Exhaustivo de la Trayectoria y</h3>
 <p>Labor Parlamentaria El accionar legislativo de Maximiliano Ferraro requiere ser abordado a través de una periodización estricta que diferencie su etapa de conformación de consensos a nivel local en la Ciudad Autónoma de Buenos Aires, de su actual rol como fiscalizador y articulador de mayorías en el Congreso de la Nación Argentina.</p>
@@ -335,9 +427,42 @@ const PROPUESTAS_FERRARO = {
 <p>Por un lado, mantiene un rechazo visceral hacia las prácticas prebendarias, la opacidad y la macrocefalia estatal del modelo kirchnerista histórico.</p>
 <p>Por el otro, confronta de manera inclaudicable con el modelo anarcocapitalista y autocrático de La Libertad Avanza.</p>
 <p>Su trayectoria promoviendo modificaciones a la Ley de Sangre para erradicar la discriminación de base biológica hacia el colectivo LGTBIQ+, y su enfática defensa presupuestaria en favor de las universidades públicas y el CONICET, lo ubican inequívocamente en un plano que reivindica el rol de un Estado moderno, garantista de libertades individuales, laico y promotor de la movilidad social ascendente. 4 En retrospectiva, su incorporación como pieza clave dentro del naciente interbloque "Unidos" ratifica su comprensión de la aritmética del poder legislativo. 5 Maximiliano Ferraro ha trascendido su histórico rol de "escudero" de las directivas de Elisa Carrió, para posicionarse por derecho propio como uno de los arquitectos neurálgicos de una potencial coalición de centro.</p>
-<p>De cara a la próxima configuración del mapa político nacional, su perfil sugiere la aspiración de consolidar una mayoría moderada capaz de ofrecer alternancia republicana, sostenida en la transparencia administrativa, la inviolabilidad de las instituciones de la ciencia y el resguardo del tejido social frente a los excesos de la desregulación irrestricta.</p>
-<h3>8. Módulo 7: Cuadro Analítico: Fortalezas y</h3>
-<p>Debilidades Dimensión Fortalezas (Capital Político y Estratégico) Debilidades (Vulnerabilidades y Riesgos) Trayectoria y Liderazgo Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal. Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario. Perfil Institucional y Ético Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente. Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con diputados del PRO). Gestión, Formulación y Consensos Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el Prevención de Ludopatía). histrionismo. Ecosistema y Despliegue Digital Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas. Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</p>`
+<p><h3>Cuadro Analítico: Fortalezas y Debilidades</h3>
+<p>A continuación se resume el análisis FODA de inteligencia política sobre Maximiliano Ferraro en el territorio de CABA:</p>
+<div class="table-container" style="overflow-x: auto; margin: 2rem 0; border-radius: var(--radius-lg); border: 1px solid var(--color-linea); background: rgba(30, 41, 59, 0.3); backdrop-filter: blur(12px);">
+ <table class="db-table glass-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; line-height: 1.5;">
+ <thead>
+ <tr style="border-bottom: 1px solid var(--color-linea); background: rgba(0,0,0,0.2);">
+ <th style="padding: 1rem; color: var(--color-texto); font-weight: 600; width: 25%;">Dimensión</th>
+ <th style="padding: 1rem; color: var(--color-verde); font-weight: 600; width: 38%;">Fortalezas (Capital Político y Estratégico)</th>
+ <th style="padding: 1rem; color: var(--color-azul-anchor); font-weight: 600; width: 37%;">Debilidades (Vulnerabilidades y Riesgos)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Trayectoria y Liderazgo</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Liderazgo consolidado como presidente nacional de la CC-ARI y figura clave del interbloque "Unidos". Mandato legislativo asegurado hasta diciembre de 2027, lo que le otorga notable independencia temporal.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Su extensa permanencia ininterrumpida en distintos cargos legislativos lo expone de forma directa a ser estigmatizado como "parte de la casta" por la actual narrativa del oficialismo libertario.</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Perfil Institucional y Ético</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Goza de una sólida imagen de "fiscal de la república" incorruptible, cualidad reforzada por su liderazgo en investigaciones de altísimo impacto (Caso \$LIBRA) y su lucha frontal contra el flagelo de la ludopatía adolescente.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Su tendencia a la intransigencia moral y purismo político puede generar fricciones y provocar su aislamiento táctico frente a aliados parlamentarios potenciales (como quedó en evidencia en los conflictos con de diputados del PRO).</td>
+ </tr>
+ <tr style="border-bottom: 1px solid var(--color-linea);">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Gestión, Consensos y Leyes</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Ha demostrado una elevada capacidad técnica para articular mayorías transversales en el recinto y redactar marcos normativos de gran complejidad administrativa (crisis de la UniCABA, Ley de Prevención de Ludopatía).</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Presenta cierta dificultad para penetrar en audiencias puramente emocionales o despolitizadas, dado que su perfil es fuertemente institucional, técnico y alejado del populismo o el histrionismo.</td>
+ </tr>
+ <tr style="border-bottom: 0px;">
+ <td style="padding: 1.2rem 1rem; font-weight: 700; color: var(--color-texto); background: rgba(255,255,255,0.01);">Ecosistema Digital y Comunicación</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-dm);">Posee una alta destreza para viralizar pruebas documentales, denunciar corrupciones y frenar discursos de odio, logrando un fuerte respaldo y fidelización de los sectores republicanos y progresistas.</td>
+ <td style="padding: 1.2rem 1rem; color: var(--color-texto-muted);">Es un blanco constante y vulnerable frente a campañas organizadas de desinformación masiva (fake news) y ataques coordinados por trolls o milicias digitales que buscan minar su credibilidad personal e investigativa.</td>
+ </tr>
+ </tbody>
+ </table>
+</div>
+`
  },
  "doc-automatizacion": {
  title: "Automatización de Base de Datos y CRM para Inteligencia Territorial",

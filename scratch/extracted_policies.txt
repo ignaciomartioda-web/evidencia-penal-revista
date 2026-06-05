@@ -1,0 +1,81 @@
+DETAILED POLICY EXTRACTIONS
+========================================================================
+
+
+FILE: Analisis politico parte 2.pdf
+============================================================
+[Page 1] fiscalizadora".
+[Page 2] fiscalizador
+[Page 6] Fiscal
+[Page 7] fiscal,
+[Page 8] fiscalizador
+[Page 10] 1.  La  Fiscalización  del  Poder  (El  caso  $LIBRA):  Su  estrategia  alcanza  picos  máximos  de
+[Page 10] fiscal
+[Page 10] celular
+[Page 11] ●  Lo  que  la  audiencia  valora  y  elogia:  1.  Coraje  Institucional  y  Transparencia:  Su  imagen  de  "fiscal  de  la  república"  se
+[Page 15] y  la  inacción  del  fiscal  Taiano
+[Page 17] Perfil  Institucional  y  Ético  Goza  de  una  sólida  imagen  de  "fiscal  de  la  república"  incorruptible,  cualidad  reforzada  por  su  liderazgo  en  investigaciones  de  altísimo  impacto  (Caso  $LIBRA)  y  su  lucha  frontal  contra  el  flagelo  de  la  ludopatía  adolescente.
+
+FILE: Análisis Político de Maximiliano Ferraro.pdf
+============================================================
+[Page 1] fiscalizadora".
+[Page 2] fiscalizador
+[Page 6] Fiscal
+[Page 7] fiscal,
+[Page 8] fiscalizador
+[Page 10] 1.  La  Fiscalización  del  Poder  (El  caso  $LIBRA):  Su  estrategia  alcanza  picos  máximos  de
+[Page 10] fiscal
+[Page 10] celular
+[Page 11] ●  Lo  que  la  audiencia  valora  y  elogia:  1.  Coraje  Institucional  y  Transparencia:  Su  imagen  de  "fiscal  de  la  república"  se  consolida
+[Page 13] Perfil  Institucional  y  Ético  Goza  de  una  sólida  imagen  de  "fiscal  de  la  república"  incorruptible,  cualidad  reforzada  por  su  liderazgo  en  investigaciones  de  altísimo  impacto  (Caso  $LIBRA)  y  su  lucha  frontal  contra  el  flagelo  de  la  ludopatía  adolescente.
+
+FILE: Automatización de Base de Datos Política.pdf
+============================================================
+[Page 3] Celular
+[Page 3] celular
+[Page 4] celulares
+
+FILE: Campaña Austera_ Políticos y Estrategias.pdf
+============================================================
+[Page 4] fiscalización
+[Page 11] n  de  herramientas  digitales  simples  (apps  de  código  abierto,  videojuegos  retro  de  8-bits,  transmisiones  en  vivo  interactivas)  para  explicar  políticas  públicas  complejas,  fiscalizar  servicios  o  transparentar  la  gestión,  atrayendo  ineludiblemente  al  votante  joven  y  tecnológico.
+[Page 13] Fiscalización  Transparente  como  Motor  Electoral
+[Page 15] celular
+[Page 16] 5.4.  Gamificación  Urbana:  "El  Mapa  de  Fiscalización  Abierta"
+[Page 16] fiscalización
+[Page 16] fiscalización
+
+FILE: ejemplos de políticos y estrategias.pdf
+============================================================
+[Page 4] fiscalizar
+[Page 10] ).  Esta  fiscalización  pedagógica  digital  posiciona  a  Ferraro
+[Page 16] Pymes
+[Page 17] fiscalización
+[Page 18] ●  Pivot  Narrativo  para  Maximiliano  Ferraro :  "El  Vecino  del  Sur  que  Fiscaliza" .  Ferraro  es
+[Page 18] fiscalización
+[Page 18] PyME
+[Page 18] ●  Pivot  Narrativo  para  Maximiliano  Ferraro :  "El  Fiscal  del  Espacio  Público  y  Aliado  PyME" .
+[Page 23] df_celulares_oficial
+[Page 23] df_mapa_delito[df_mapa_delito['tipo_delito']  ==  'Robo  de  Celular']
+[Page 23] df_celulares_oficial.groupby('manzana_id').size().reset_index(name='robos_oficiales')
+[Page 25] celulares
+[Page 26] (celular,
+[Page 27] ○  Comuna  7  (Flores) :  Visita  comercial  PyME  para  registrar  zonas  de  comercio  informal  y
+[Page 27] celulares
+
+FILE: Estrategia Política Ferraro CABA.pdf
+============================================================
+[Page 2] fiscalizadora
+[Page 5] fiscalizar
+[Page 6] fiscalizar
+[Page 7] (PyMEs),
+[Page 7] Fiscal
+[Page 7] Pyme
+[Page 8] Fiscalización  territorial  de  pliegos  de  recolección  de  basura  y  auditoría  de  la  red  de  asistencia  del  Ministerio  de  Desarrollo.
+[Page 9] densidad,  fuerte  tracción  del  comercio  local  y  PyMEs.
+[Page 10] fiscal
+[Page 10] celulares
+[Page 14] fiscalización
+[Page 15] fiscalizador
+[Page 15] celular
+[Page 17] Grabación  sistemática  de  todo  el  material  en  crudo  "in  situ"  con  celular.  Restricción  absoluta  (cero  posteos)  sobre  "reuniones  institucionales"  o  debates  en  salones  cerrados.

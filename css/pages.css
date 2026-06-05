@@ -2850,4 +2850,112 @@ details.premium-details.highlight-glow {
     animation: detailsGlow 1.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+/* ==========================================================================
+   MOBILE ISOLATION AND RESPONSIVENESS (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* 1. Containers and Grids: stack rigid side-by-side components */
+    .hero-grid-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 3rem 1.5rem !important;
+        text-align: center !important;
+    }
+    
+    .hero-text-side {
+        padding-left: 0 !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .resumen-inner-core {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 2.5rem 1.5rem !important;
+    }
+    
+    .convocatoria-grid, .institucion-grid, .ejes-grid, .teaser-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .teaser-card-inner {
+        padding: 1.5rem !important;
+    }
+    
+    .page-directory {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        padding: 1rem !important;
+    }
+
+    /* 2. Control Overflow to prevent horizontal scrolling */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+    
+    .app-content-wrapper {
+        overflow-x: hidden !important;
+    }
+    
+    /* 3. Text scaling for long titles and paragraphs */
+    .magazine-title.massive-title {
+        font-size: 3rem !important;
+        line-height: 1.05 !important;
+        text-align: center !important;
+    }
+    
+    .magazine-kicker {
+        justify-content: center !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .magazine-kicker::before {
+        display: none !important;
+    }
+    
+    .abstract-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+        padding-right: 0 !important;
+    }
+
+    /* 4. Table Containers: allow clean mobile horizontal scrolling */
+    .table-container, .db-table-container {
+        width: 100% !important;
+        overflow-x: auto !important;
+        display: block !important;
+        -webkit-overflow-scrolling: touch !important;
+        margin: 1.5rem 0 !important;
+        border-radius: var(--radius-lg) !important;
+    }
+
+    .table-container table, .db-table-container table {
+        min-width: 600px !important;
+    }
+
+    /* 5. Radiografia Graph Canvas layout tweak for mobile touch interaction */
+    .radiografia-container {
+        flex-direction: column !important;
+    }
+    
+    .radiografia-network-side {
+        height: 320px !important;
+        width: 100% !important;
+    }
+    
+    .obsidian-note-container {
+        width: 100% !important;
+        margin-top: 1rem !important;
+    }
+    
+    .obsidian-note-content {
+        padding: 1.2rem !important;
+        max-height: 350px !important;
+    }
+}
+
+
 
